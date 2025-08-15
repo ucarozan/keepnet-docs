@@ -1,0 +1,85 @@
+# Landing Pages
+
+Landing pages direct the user to a specific page, and can be used for a variety of purposes, such as requesting login credentials or other sensitive information.
+
+The [**Phishing Simulator**](https://keepnetlabs.com/products/phishing-simulator) **> Phishing Scenarios > Landing Page Templates** page contains standard default landing pages you can select and use for your phishing scenario or customize according to your preferences. You also have the option to create an entirely new landing page.
+
+The components of the **Landing Page Templates** page are explained below.
+
+<table><thead><tr><th width="150"></th><th width="590.1428571428571"></th></tr></thead><tbody><tr><td>Template name</td><td>The name of the landing page template</td></tr><tr><td>Method</td><td><p>The phishing technique employed.</p><ul><li><strong>Data Submit:</strong> Used to detect target users who submit data on the landing page</li><li><strong>Attachment:</strong> Used to detect target users who download the attachment in the phishing simulation email</li><li><strong>Click-Only:</strong> Used to detect target users who click unknown links in the phishing email</li></ul></td></tr><tr><td>Tags</td><td>Tags can be added to the landing page to enable viewing using related tag lists.</td></tr><tr><td>Difficulty</td><td>The level of difficulty to recognize a phishing attempt <strong>(Easy, Medium, Hard).</strong> Please <a href="../#q-how-is-the-difficulty-level-determined">click here</a> to see how the difficulty level is determined.</td></tr><tr><td>Created By</td><td><p><strong>System:</strong> Standard landing page templates are provided with the product.</p><p></p><p><strong>Custom:</strong> Landing pages created or customized by users</p></td></tr><tr><td>Stop bots to prevent false clicks</td><td>The bots prevention feature is enabled or disabled for the landing page.</td></tr><tr><td>Date Created</td><td>The date and time the landing page was created</td></tr></tbody></table>
+
+## Landing Page Templates Actions
+
+This section explains how to edit, preview, clone, or delete a landing page.
+
+### How to Edit a Landing Page Template
+
+Click on the three dots '⋮' button in the **Actions** option on the far right of the relevant page, and then click the **Edit** button.
+
+### How to Preview a Landing Page
+
+Click on the three dots '⋮' button in the **Actions** option on the far right of the relevant page, and then click the **Preview** button.
+
+### How to Clone a Landing Page
+
+Click on the three dots '⋮' button in the **Actions** option on the far right of the relevant page, and then click the **Duplicate** button.
+
+### How to Delete a Landing Page
+
+Click on the three dots '⋮' button in the **Actions** option on the far right of the relevant page, and then click the **Delete** button.
+
+## How to Add a New Landing Page Template
+
+Follow the steps below to add a new landing page that you can use in a new or existing phishing scenario:
+
+1. Click the **+New** button in the upper right corner of the **Phishing Simulator > Phishing Scenarios > Landing Page Templates** page.
+2. Complete the required fields on the first page, then click **Next**.
+3. On the **Page Settings** page, provide the **Phishing Link:** the URL to be used in the phishing email.&#x20;
+4. Under the **Phishing** **Link** field, you can enable the **"Stop bots to prevent false clicks"** feature to detect and stop bot activity automatically to prevent false clicks, ensuring genuine traffic to your phishing campaign.
+5. Click **Edit** to make any changes or **Save** to complete the process.
+
+## How to Add a new Landing Page with AI
+
+Follow the steps below to effortlessly create custom landing page templates with the help of **AI** **Ally**. Once your landing page template is ready, it can be used in a new or existing phishing campaign:
+
+* Click the **+New** button in the upper right corner of the **Phishing Simulator** > **Phishing Scenarios** > **Landing Page Templates** page.
+* Complete the required fields on the first page, then click **Next**.
+* On the **Page Settings** page, provide the **Phishing Link:** the URL to be used in the phishing email.
+* Under the **Phishing** **Link** field, you can enable the **"Stop bots to prevent false clicks"** feature to detect and stop bot activity automatically to prevent false clicks, ensuring genuine traffic to your phishing campaign.&#x20;
+* Click on **Use AI Ally** and describe the scenario and key details for the landing page you want to generate.
+  * Once described, select the **Language** in which the landing page will be created.
+* After providing the scenario details, click the **Generate Landing Page** button to create your landing page.
+* Once the landing page is generated, click  **Edit** to make any changes, or **Save** to finalize the landing page template creation process.
+
+Here are some helpful ready-to-use AI prompts for creating landing pages.
+
+<table><thead><tr><th width="137">Template Name</th><th width="133">Method Type</th><th width="435">Command Prompt</th></tr></thead><tbody><tr><td>Google Login Page</td><td>Data Submission</td><td>Create a landing page that closely resembles the Google Login Page. Ensure the design includes fields for email and password input, a "Forgot email?" link, and a "Next" button. Include a Google logo at the top and a small text link for "Help" and "Privacy Policy". The page should have a clean, minimalistic design with a white background.</td></tr><tr><td>Amazon Login Page</td><td>Data Submission</td><td>Create a landing page that looks like the Amazon Login Page. Include fields for email and password, a "Forgot Password?" link, and a "Sign-In" button. Add a small Amazon logo at the top and include a checkbox for "Keep me signed in". Below the login form, include a "Create your Amazon account" link. The design should have a white background with light gray borders.</td></tr><tr><td>Company Event Registration Form</td><td>Data Submission</td><td>Create a landing page for a company event registration. Include fields for full name, email, phone number, and a dropdown to select the department. Add a "Register" button at the bottom. The page should also include a banner at the top with the company logo and event name. The color scheme should match typical corporate branding with a professional look.</td></tr><tr><td>Password Reset Page</td><td>Data Submission</td><td>Create a landing page for a system password reset. Include a field for entering the email address, a "Submit" button, and a link for "Contact Support" in case the user has trouble resetting their password. The design should be simple with a white background, and include a small company logo at the top. The instructions should be clear and concise.</td></tr><tr><td>Bank Account Login Page</td><td>Data Submission</td><td>Create a landing page that mimics a bank account login page. Include fields for "Username" and "Password", a "Forgot Username or Password?" link, and a "Sign In" button. Add a small bank logo at the top, and include links for "Enroll Now" and "Help". The design should be secure and professional, with a dark blue and white color scheme.</td></tr><tr><td>Subscription Confirmation Page</td><td>Data Submission</td><td>Create a landing page for subscription confirmation. Include a message saying "Thank you for subscribing!", a field for entering an email address to confirm the subscription, and a "Confirm Subscription" button. Add a small note about privacy at the bottom. The design should be clean and modern, with a focus on ease of use.</td></tr><tr><td>E-commerce Checkout Page</td><td>Data Submission</td><td>Create a landing page for an e-commerce checkout process. Include fields for billing information (name, address, city, state, zip code), payment information (credit card number, expiration date, CVV), and a "Place Order" button. Add a small shopping cart icon at the top, and a summary of the order on the right side. The design should be user-friendly with a focus on security.</td></tr><tr><td>Event Ticket Purchase Page</td><td>Data Submission</td><td>Create a landing page for purchasing event tickets. Include fields for selecting the number of tickets, seating options, and payment details. Add a "Purchase Tickets" button at the bottom, and a small banner at the top with the event name and date. The design should be vibrant and engaging, with a focus on creating excitement for the event.</td></tr><tr><td>Phishing Awareness Oops Page</td><td>Click Only</td><td>Create a landing page that tells the user they've clicked on a simulated phishing email. The message should say "Oops! The email you just clicked was a phishing simulation. Don't worry, this is to help you learn." Include three key rules: 1. Avoid unknown links/attachments. 2. Verify the sender's email. 3. Be cautious of too-good-to-be-true offers. The design should be clear and educational.</td></tr><tr><td>Security Training Oops Page</td><td>Click Only</td><td>Create a landing page that informs the user they interacted with a simulated phishing email. The message should say "Oops! You just clicked on a test phishing email for training purposes." Include three rules: 1. Avoid unknown links. 2. Verify sender legitimacy. 3. Be cautious of urgent requests. Design it to be instructional and easy to understand.</td></tr></tbody></table>
+
+## **Utilizing Merge Tags in Landing Page Templates**
+
+Here's a list of merge tags to help you make your landing pages more personal. Adding these tags can make your phishing campaign more tailored to the recipient.
+
+<table><thead><tr><th width="156.5">Merge Tag</th><th>Description</th></tr></thead><tbody><tr><td>Full Name</td><td>Inserts the target user's first and last name.</td></tr><tr><td>First Name</td><td>Inserts the target user's first name.</td></tr><tr><td>Last Name</td><td>Inserts the target user's last name.</td></tr><tr><td>Email</td><td>Inserts the target user's email address.</td></tr><tr><td>From Name</td><td>Inserts the sender's name from the associated email template for this landing page scenario.</td></tr><tr><td>From Email</td><td>Inserts the sender's email address from the associated email template for this landing page scenario.</td></tr><tr><td>Subject</td><td>Inserts the subject line from the associated email template for this landing page scenario.</td></tr><tr><td>Company Logo</td><td>Displays your organization's logo, sourced from the <a href="../../company/company-settings/white-labeling.md">Whitelabeling</a> page.</td></tr><tr><td>Company Name</td><td>Displays your organization's name, sourced from the company profile.</td></tr><tr><td>Date Sent</td><td>Inserts the date when the campaign is launched.</td></tr><tr><td>Current Date</td><td>Inserts the current date when the campaign is launched.</td></tr><tr><td>Current Date Plus 10 Days</td><td>Inserts a date that is 10 days after the campaign's launch date.</td></tr><tr><td>Current Date Minus 10 Days</td><td>Inserts a date that is 10 days before the campaign's launch date.</td></tr><tr><td>Random Number One Digit</td><td>Generates and inserts a random one-digit number.</td></tr><tr><td>Random Number Two Digit</td><td>Generates and inserts a random two-digit number.</td></tr><tr><td>Random Number Three Digit</td><td>Generates and inserts a random three-digit number.</td></tr></tbody></table>
+
+## Video Tutorial&#x20;
+
+Landing pages direct the user to a specific page and can be used for a variety of purposes, such as requesting login credentials or other sensitive information. This tutorial will walk through the steps of creating/editing a landing page.
+
+{% embed url="https://youtu.be/9k45qxAhHR0" %}
+
+
+
+## FAQs
+
+### Can I divert employees who click the link to a URL not hosted by Keepnet?&#x20;
+
+Yes! You can direct users to your own URL instead of using a standard Keepnet landing page. To set this up, select a Keepnet landing page, and replace the URL in the provided HTML code with the URL of your hosted landing page. Here’s how you do it:
+
+1. Choose a Keepnet landing page for your phishing scenario.
+2.  Insert the following HTML code, substituting `https://www.google.com` with your own landing page URL:
+
+    ```html
+    htmlCopy code<meta http-equiv="refresh" content="1; URL=https://www.your-landing-page.com" />
+    ```
+
+This setup will automatically redirect anyone who clicks on the link to your chosen landing page after 1 second, allowing us to track the click-through.
