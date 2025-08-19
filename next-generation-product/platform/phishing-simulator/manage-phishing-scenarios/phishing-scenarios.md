@@ -4,7 +4,7 @@ The [**Phishing Simulator**](https://keepnetlabs.com/products/phishing-simulator
 
 The components of the **Scenarios** page are explained below.
 
-<table><thead><tr><th width="150"></th><th width="590.1428571428571"></th></tr></thead><tbody><tr><td>Scenario name</td><td>The name of the phishing template</td></tr><tr><td>Category</td><td>Category is used to classify phishing scenarios by threat type.</td></tr><tr><td>Method</td><td><p>The phishing technique.</p><ul><li><strong>Data Submit:</strong> Used to detect target users who submit data on the landing page</li><li><strong>Attachment:</strong> Used to detect target users who download the attachment in the phishing simulation email</li><li><strong>Click-Only:</strong> Used to detect target users who click unknown links in the phishing email.</li><li><strong>MFA:</strong> Used to detect target users who enter their MFA codes on the landing page</li></ul></td></tr><tr><td>Tags</td><td>Tags can be added to the phishing scenario to enable viewing using related tag lists.</td></tr><tr><td>Difficulty</td><td>The level of difficulty to recognize a phishing attempt <strong>(Easy, Medium, Hard).</strong> Please <a href="../#q-how-is-the-difficulty-level-determined">click here</a> to see how the difficulty level is determined.</td></tr><tr><td>Created By</td><td><p><strong>System:</strong> Standard phishing scenario templates provided with the product.</p><p></p><p><strong>Custom:</strong> Phishing scenarios created or customized by system users.</p></td></tr><tr><td>Date Created</td><td>The date and time the phishing scenario was created.</td></tr></tbody></table>
+<table><thead><tr><th width="150"></th><th width="590.1428571428571"></th></tr></thead><tbody><tr><td>Scenario name</td><td>The name of the phishing template</td></tr><tr><td>Category</td><td>Category is used to classify phishing scenarios by threat type.</td></tr><tr><td>Method</td><td><p>The phishing technique.</p><ul><li><strong>Data Submit:</strong> Used to detect target users who submit data on the landing page</li><li><strong>Attachment:</strong> Used to detect target users who download the attachment in the phishing simulation email</li><li><strong>Click-Only:</strong> Used to detect target users who click unknown links in the phishing email.</li><li><strong>MFA:</strong> Used to detect target users who enter their MFA codes on the landing page</li></ul></td></tr><tr><td>Languages</td><td>Filter scenarios based on your preferred languages.</td></tr><tr><td>Tags</td><td>Tags can be added to the phishing scenario to enable viewing using related tag lists.</td></tr><tr><td>Difficulty</td><td>The level of difficulty to recognize a phishing attempt <strong>(Easy, Medium, Hard).</strong> Please <a href="../#q-how-is-the-difficulty-level-determined">click here</a> to see how the difficulty level is determined.</td></tr><tr><td>Created By</td><td><p><strong>System:</strong> Standard phishing scenario templates provided with the product.</p><p></p><p><strong>Custom:</strong> Phishing scenarios created or customized by system users.</p></td></tr><tr><td>Date Created</td><td>The date and time the phishing scenario was created.</td></tr></tbody></table>
 
 {% hint style="info" %}
 Keepnet uses a tiny, 1x1 pixel image from a remote URL to track when files are opened in Microsoft Office applications like Excel, Word.\
@@ -76,15 +76,15 @@ Phishing scenarios have two components: the phishing email template and the land
       2. **Data Submission:** Redirect users to a page where they must enter requested credentials and see who submits this information in the report.
       3. **Attachment:** Redirect users to download a file attached within the simulated email, and see who opens the file within the report.
       4. **MFA:** Redirect users to a Multi-Factor Authentication (MFA) page where they must input a received MFA code to continue, and see who submits MFA codes in the report.&#x20;
-   5. **Language:** Select the language of your scenario.
-   6. **Tags:** Define tags for the scenario.
-   7. **Make Available For:** Make your scenario available to be used by the other customers under your organization. This feature is only available to admins who have Reseller permissions.&#x20;
+   5. **Tags:** Define tags for the scenario.
+   6. **Make Available For:** Make your scenario available to be used by the other customers under your organization. This feature is only available to admins who have Reseller permissions.&#x20;
+   7. Click **Next** to go to the **Email** **Template** page.
    8. On the **Email Template** pag&#x65;**,** select the e-mail template you want to use and then click the **Next** button.
    9. Select the **Landing Page** template you want to use and then click the **Next** button to move on to the **Summary** page.
       1. If the **MFA** **method** is selected, you'll find a sub-menu titled **"MFA Settings"** on the **Landing** **Page**. Here, you can customize the "**Sender** **Phone** **Number"** and the text for the "**SMS** **Verification** **Message".**
    10. The **Summary** page provides you with an overview of the proposed phishing campaign, including the type of campaign, the targeted users, and other important details.
 
-Now you can click the **Save** button to create your scenario.
+Now you can click the **Save** button to create your scenario. Now, you are ready to launch your scenario either using [Fast Launch](phishing-scenarios.md#how-to-launch-a-phishing-campaign) or [Campaign Manager](../phishing-campaign-manager.md#create-a-campaign).
 
 ## Video Tutorial
 

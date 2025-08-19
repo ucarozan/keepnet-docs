@@ -148,9 +148,9 @@ To launch a campaign using this feature:
 
 #### **How Scenarios Are Assigned Based on Language**
 
-* If a scenario is available in the user's preferred language, they will receive that version.
-* If a scenario is not available in the user’s preferred language, the system will send the scenario in the **company’s default language**.
-* If no scenario matches either the user's preferred language or the company’s default language, the system will prompt you to select appropriate language versions before launch.
+* If a scenario template is available in the user's preferred language, they will receive that version.
+* If a scenario template is not available in the user’s preferred language, the system will send the scenario in the **company’s default language**.
+* If no scenario template matches either the user's preferred language or the company’s default language, the system will prompt you to select appropriate language versions before launch.
 
 This ensures that users receive scenarios in the most relevant language for them, improving the effectiveness of phishing simulations.
 

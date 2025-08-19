@@ -4,7 +4,7 @@ The [**Phishing Simulator**](https://keepnetlabs.com/products/phishing-simulator
 
 The components of the **Email Templates** page are explained below.
 
-<table><thead><tr><th width="150"></th><th width="590.1428571428571"></th></tr></thead><tbody><tr><td>Template name</td><td>Name of the email template</td></tr><tr><td>Method</td><td><p>The phishing technique employed.</p><ul><li><strong>Data Submit =</strong> Used to detect target users who submit data on the landing page</li><li><strong>Attachment =</strong> Used to detect target users who download the attachment in the phishing simulation email</li><li><strong>Click-Only =</strong> Used to detect target users who click unknown links in the phishing email</li></ul></td></tr><tr><td>Tags</td><td>Tags can be added to the email template to enable viewing using related tag lists.</td></tr><tr><td>Difficulty</td><td>The level of difficulty to recognize a phishing attempt <strong>(Easy, Medium, Hard).</strong> Please <a href="../#q-how-is-the-difficulty-level-determined">click here</a> to see how the difficulty level is determined.</td></tr><tr><td>Created By</td><td><p><strong>System:</strong> Standard phishing email templates are provided with the product.</p><p></p><p><strong>Custom:</strong> Phishing email created or customized by users</p></td></tr><tr><td>Date Created</td><td>The date and time the email template was created</td></tr></tbody></table>
+<table><thead><tr><th width="150"></th><th width="590.1428571428571"></th></tr></thead><tbody><tr><td>Template name</td><td>Name of the email template</td></tr><tr><td>Method</td><td><p>The phishing technique employed.</p><ul><li><strong>Data Submit =</strong> Used to detect target users who submit data on the landing page</li><li><strong>Attachment =</strong> Used to detect target users who download the attachment in the phishing simulation email</li><li><strong>Click-Only =</strong> Used to detect target users who click unknown links in the phishing email</li></ul></td></tr><tr><td>Languages</td><td>Filter email templates based on your preferred languages.</td></tr><tr><td>Tags</td><td>Tags can be added to the email template to enable viewing using related tag lists.</td></tr><tr><td>Difficulty</td><td>The level of difficulty to recognize a phishing attempt <strong>(Easy, Medium, Hard).</strong> Please <a href="../#q-how-is-the-difficulty-level-determined">click here</a> to see how the difficulty level is determined.</td></tr><tr><td>Creation Type</td><td>Filter email templates based on their creation type (e.g., Manual or AI Ally).</td></tr><tr><td>Created By</td><td><p><strong>System:</strong> Standard phishing email templates are provided with the product.</p><p></p><p><strong>Custom:</strong> Phishing email created or customized by users</p></td></tr><tr><td>Date Created</td><td>The date and time the email template was created</td></tr></tbody></table>
 
 ## Email Template Actions
 
@@ -26,7 +26,7 @@ Click on the three dots '⋮' button in the **Actions** option on the far right 
 
 Click on the three dots '⋮' button in the **Actions** option on the far right of the relevant page, and then click the **Delete** button.
 
-## How to Add a new Email Template
+## How to Add a New Email Template
 
 Follow the steps below to create a new email template for use in a new or existing phishing campaign:
 
@@ -37,15 +37,18 @@ Follow the steps below to create a new email template for use in a new or existi
    2. **From Name:** Sender name that will be visible to the target recipient
    3. **From Email Address:** Sender email address information that will be visible to the target recipient
    4. **CC:** Add a CC email address to your phishing simulation email.
-   5. **Attach file:** If desired, you can attach a file to the phishing email
+   5. **Attach File:** If desired, you can attach a file to the phishing email. This option is only available if the email template method type is set to **Attachment**.
+   6. **View/Edit Template:** View and edit the available email templates in localized languages.
+   7. **Localize:** Localize your main email template to different languages.
+   8. **Import Email:** Use the three-dot button to import an MSG or EML file and customize it.
 4. Click **Edit** to make any changes or **Save** to complete the process.
 
-## How to Add a new Email Template with AI
+## How to Add a New Email Template with AI
 
 Follow the steps below to effortlessly create custom email templates with the help of **AI** **Ally**. Once your template is ready, it can be used in a new or existing phishing campaign:
 
 * Click the **+New** button in the upper right corner of the **Phishing Simulator** > **Phishing Scenarios** > **Email Templates** page.
-* Complete the required fields on the first page, then click **Next**.
+* Complete the required fields on the first **Template** **Info** page, then click **Next**.
 * Click on **Use AI Ally** and describe the scenario and key details for the email template you want to generate.
   * Once described, select the **Language** in which the email template will be created.
   * If you prefer a plain text email template, do not select the **Enable styled HTML format** option. For an HTML-formatted email template, you may choose this option.
