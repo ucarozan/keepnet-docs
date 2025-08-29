@@ -46,6 +46,7 @@
   * [How-to Videos](next-generation-product/customer-success/how-to-videos/README.md)
     * [Phishing Simulator](next-generation-product/customer-success/how-to-videos/phishing-simulator.md)
     * [Awareness Educator](next-generation-product/customer-success/how-to-videos/awareness-educator.md)
+    * [Phishing Reporter Button](next-generation-product/customer-success/how-to-videos/phishing-reporter-button.md)
 * [Platform](next-generation-product/platform/README.md)
   * [Dashboard](next-generation-product/platform/dashboard/README.md)
     * [Dashboard Widgets](next-generation-product/platform/dashboard/dashboard-widgets.md)
