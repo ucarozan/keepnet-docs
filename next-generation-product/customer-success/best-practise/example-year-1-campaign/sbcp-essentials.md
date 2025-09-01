@@ -1,57 +1,13 @@
----
-description: Phishing
----
-
 # SBCP Essentials
 
-## Microsoft
+With SBCP Essentials, you will be using the traditional email phishing campaigns alongside highly interactive awareness training to drive secure behaviours and eliminate risky behaviours of employees.&#x20;
 
-January: **DocuSign: Signature Request**
+### The Automated Approach
 
-February: **Apple You've Won a Special Valentine's Day Gift Card!**
+Use Keepnet to send monthly campaigns to your employees with the option for each employee to receive a different campaign to their colleague. This approach will allow you to collect data consistently on the success of the phishing campaigns and how your employees respond with minimal input needed from you!&#x20;
 
-March: **Policy Announcement – Microsoft Teams**
+### The Targeted Approach
 
-April: **Your Benefit Program Account has invalid information**
+Use Keepnet to send specific scenarios to your employees based on threats you want to raise awareness for. This is great for customers who want to create a truly targeted approach with scenarios selected that will have the most impact on their security posture&#x20;
 
-May: **Microsoft: SETTINGS EXPIRE TODAY**
-
-June: **New Message on Teams**
-
-July: **Someone Sent a Document**
-
-August:
-
-September:
-
-October:
-
-November:
-
-December:
-
-## Google
-
-January: **Google Docs: You were mentioned in a comment**
-
-February: **Apple You've Won a Special Valentine's Day Gift Card!**
-
-March: **DocuSign: Signature Request**
-
-April: **Your Benefit Program Account has invalid information**
-
-May: **Google: Suspicious sign-in prevented**
-
-June:
-
-July:
-
-August:
-
-September:
-
-October:
-
-November:
-
-December:
+### The Blend

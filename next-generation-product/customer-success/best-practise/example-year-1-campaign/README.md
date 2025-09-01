@@ -23,10 +23,10 @@ Select your package to view curated campaign examples designed to help employees
 [sbcp-plus.md](sbcp-plus.md)
 {% endcontent-ref %}
 
-{% content-ref url="sbcp-360.md" %}
-[sbcp-360.md](sbcp-360.md)
+{% content-ref url="sbcp-360-xhrm.md" %}
+[sbcp-360-xhrm.md](sbcp-360-xhrm.md)
 {% endcontent-ref %}
 
-{% content-ref url="xhrm.md" %}
-[xhrm.md](xhrm.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
