@@ -140,6 +140,7 @@
       * [Phishing Reporter Announcement Email Template](next-generation-product/platform/phishing-reporter/phishing-reporter-deployment/phishing-reporter-announcement-email-template.md)
     * [Diagnostic Tool](next-generation-product/platform/phishing-reporter/diagnostic-tool.md)
     * [Integrating Microsoft Phishing Reporting Button with Keepnet](next-generation-product/platform/phishing-reporter/integrating-microsoft-phishing-reporting-button-with-keepnet.md)
+    * [Integrating Email Reporting with Keepnet](next-generation-product/platform/phishing-reporter/integrating-email-reporting-with-keepnet.md)
     * [Integrating Microsoft Defender with Keepnet Phishing Reporter](next-generation-product/platform/phishing-reporter/integrating-microsoft-defender-with-keepnet-phishing-reporter.md)
     * [Troubleshooting Phishing Reporter on Outlook Desktop](next-generation-product/platform/phishing-reporter/troubleshooting-phishing-reporter-on-outlook-desktop.md)
   * [Reports](next-generation-product/platform/reports/README.md)
