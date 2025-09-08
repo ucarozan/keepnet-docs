@@ -37,3 +37,9 @@ Any solution is supported, as long as it forwards reported messages with the ori
 
 * **No analysis performed:** Check that the reported email included the original message as an EML attachment.
 * **Attachment missing:** Review the configuration of your email security solution to ensure EML attachments are preserved when forwarding.
+
+Sample reported email:&#x20;
+
+<figure><img src="../../../.gitbook/assets/image1.png" alt=""><figcaption></figcaption></figure>
+
+{% file src="../../../.gitbook/assets/Suspicious Email.eml" %}

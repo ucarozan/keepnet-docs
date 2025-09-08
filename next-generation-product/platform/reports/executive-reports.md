@@ -205,7 +205,7 @@ The benefit of using this graphic is that it provides a clear and comprehensive 
 
 This presents the average response times of users who clicked on phishing links and submitted data during phishing simulations. The horizontal axis shows the number of users, while the vertical axis represents the time to respond in seconds. The bars are divided into two segments: the lighter red section indicates users who clicked on the phishing link, and the darker red section represents those who also submitted data.
 
-<figure><img src="../../../.gitbook/assets/image1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image1 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The chart also includes two important benchmark lines. The blue dashed line shows the company’s average response time for link clicks and data submission, while the yellow dashed line represents the industry average. The position of these lines relative to the bars provides insight into how quickly your users are being phished compared to the industry average.
 
