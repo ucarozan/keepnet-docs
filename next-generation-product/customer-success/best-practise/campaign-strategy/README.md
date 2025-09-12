@@ -1,8 +1,4 @@
----
-coverY: 0
----
-
-# Campaign Strategy
+# Select Your Approach
 
 This section explains how to structure phishing awareness campaigns using Keepnet. It introduces three approaches — **Randomised, Targeted, and The Blend** — showing how each helps you:
 
@@ -10,15 +6,13 @@ This section explains how to structure phishing awareness campaigns using Keepne
 * Scale campaigns efficiently
 * Collect meaningful data on how employees respond to phishing threats
 
-To help you hit the ground running, our Customer Success team has **hand-picked the most popular and effective phishing campaigns** for your first year. These examples give you tried-and-tested inspiration to build an engaging programme that develops employee awareness from day one.
-
-We’ve also created **separate campaign tracks for Google and Microsoft**, so you can focus on the tools your employees use most and strengthen their ability to spot phishing attempts where it matters.
+To help you hit the ground running, our Customer Success team has **hand-picked the most popular and effective phishing campaigns**. These examples give you tried-and-tested inspiration to build an engaging programme that develops employee awareness from day one.
 
 You can explore each approach in detail using the links below, including step-by-step guidance and tutorial videos for setting up campaigns:
 
-* Randomised Approach →
-* Targeted Approach →
-* The Blend →
+* [Randomised Approach →](the-randomised-relevant-approach.md)
+* [Targeted Approach →](the-targeted-scalable-approach.md)
+* [The Blend →](the-blend.md)
 
 **Quick visual summary:**
 
@@ -29,19 +23,3 @@ You can explore each approach in detail using the links below, including step-by
 | The Blend  | Combination of both approaches         | Broad awareness plus targeted focus on critical users and departments |
 
 Use this page as your starting point to decide which approach works best for your organisation and to access tutorials for each campaign type.
-
-{% content-ref url="select-your-approach/" %}
-[select-your-approach](select-your-approach/)
-{% endcontent-ref %}
-
-{% content-ref url="select-your-simulators.md" %}
-[select-your-simulators.md](select-your-simulators.md)
-{% endcontent-ref %}
-
-{% content-ref url="video-tutorials.md" %}
-[video-tutorials.md](video-tutorials.md)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
