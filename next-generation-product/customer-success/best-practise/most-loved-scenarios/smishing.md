@@ -9,3 +9,23 @@ New Device Policy
 Company Survey
 
 Update MFA MS
+
+Dropbox Verification Notice
+
+LinkedIn Profile Notification
+
+LinkedIn Unusual sign-in detected
+
+Apple Apple ID login
+
+Suspicious Login Detected
+
+Amazon Delivery Failed
+
+Google Account Security
+
+Suspicious Activity on Your Google Account
+
+Slack Security Alert
+
+MS Teams Invite

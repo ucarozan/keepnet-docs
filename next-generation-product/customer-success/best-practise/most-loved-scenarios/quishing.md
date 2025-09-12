@@ -7,3 +7,24 @@ With over 16,000 social engineering scenarios, our customers have a huge range o
 Microsoft: SharePoint has been set up for your account
 
 Microsoft: Re-authenticate your account
+
+LinkedIn Your organization can join LinkedIn Learning
+
+DocuSign: Your Document Has Been Completed
+
+Microsoft Teams : Urgent: Video Meeting Request
+
+Microsoft: SharePoint has been set up for your account
+
+Google Account Security Verification Required
+
+Congratulations! You've Won a Reward as an Active Google User
+
+Dropbox – Simplify Your Workflow
+
+Your Dropbox Storage Is Almost Full
+
+Action Required: Identity Verification
+
+AnyDesk – Remote Desktop Solutions
+
