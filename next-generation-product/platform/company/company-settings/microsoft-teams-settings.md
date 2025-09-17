@@ -14,7 +14,7 @@ All permissions and settings remain under your control in **Company Settings > M
 
 On **Company > Company Settings > Microsoft Teams Settings** you will see two access cards. Enable them in order:
 
-#### Access 1: **Connect to Teams**
+### Access 1: **Connect to Teams**
 
 Links your Microsoft Teams tenant to Keepnet.
 
@@ -23,7 +23,7 @@ Links your Microsoft Teams tenant to Keepnet.
 3. Review and **Accept** the permissions consent.
 4. You’ll return to Keepnet and see **Access Enabled**.
 
-#### Access 2: **Training Delivery**
+### Access 2: **Training Delivery**
 
 Allows Keepnet to send training notifications to Teams.
 
@@ -63,28 +63,30 @@ You can learn how to launch training content through Microsoft Teams integration
 
 ## Troubleshooting
 
-### **I don’t see the Microsoft consent page.**
+### **1. I don’t see the Microsoft consent page.**
 
 Use a Microsoft tenant/global admin account and try again in a private browser window.
 
-### **Access 1 enabled but Access 2 fails.**
+### **2. Access 1 enabled but Access 2 fails.**
 
 Ensure the same admin completes both steps and that Teams is enabled for the tenant. If the issue persists, please take a screenshot of the error and share it with the [support team](../../../../resources/keepnet-support-help-desk.md).
 
-### **Messages aren’t arriving in Teams.**
+### **3. Messages aren’t arriving in Teams.**
 
 * Confirm both accesses show **Access Enabled**.
 * Verify the Bot Name is saved.
 * Check the campaign’s audience actually has Teams licenses and can receive chat messages.
-* If issues persist, disable and re-enable Access 2 to refresh the grant or contact the [support team](../../../../resources/keepnet-support-help-desk.md) for further assistance.
+* Check the '**Activity**' menu on your Microsoft Teams app to confirm if you see the training enrollment.
+
+If this case persists, contact the [support team](../../../../resources/keepnet-support-help-desk.md) for further assistance.
 
 ## FAQ
 
 ### **Q: Who can enable the integration?**
 
-A: A Microsoft tenant/global admin with Keepnet Company Settings permission.
+A: A Microsoft tenant/global admin and access to the Keepnet platform.
 
-### **Q: Does this replace email delivery?**
+### **Q: Does this replace Email or SMS delivery?**
 
 A: No. It adds Microsoft Teams as an additional training-delivery channel.
 
