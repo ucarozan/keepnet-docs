@@ -528,9 +528,9 @@ A: You can use MP4 formatted video in a SCORM format, or convert HTML5 training 
 
 A: Yes. Resellers have the ability to create or modify training content for distribution to their clients.
 
-### Q: Can I upload a training scorm package that is more than 200MB in file size?
+### Q: Can I upload a training scorm package that is more than 500MB in file size?
 
-A: No. The platform only accepts 200MB file size scorm packages due to upload limitations on Cloudflare.
+A: No. The platform only accepts 500MB file size scorm packages due to upload limitations on Cloudflare.
 
 ### Q: How often is the Keepnet Training Content Updated?
 
