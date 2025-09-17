@@ -488,6 +488,10 @@ In this section, you'll learn how to launch training content to your selected ta
 Users who are not found in the Microsoft Teams tenant will receive training via email.
 {% endhint %}
 
+{% hint style="danger" %}
+Before using this feature, you need to enable Microsoft Settings. Please click [here](../company/company-settings/microsoft-teams-settings.md) to complete the setup.
+{% endhint %}
+
 Follow the steps below.
 
 * Go to **Awareness Educator > Training Library** menu.

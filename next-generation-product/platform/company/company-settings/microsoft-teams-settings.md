@@ -2,7 +2,7 @@
 
 Microsoft Teams integration allows you to send training notifications directly inside Teams, where your employees already collaborate every day. Instead of relying only on SMS or email, you can reach users in a familiar workspace without leaving their daily workflow. This makes training invitations harder to miss and easier to act on. Messages arrive from a dedicated bot that you can name, keeping communication clear and professional.
 
-All permissions and settings remain under your control in Company Settings > Microsoft Teams Settings page, so you can enable, update, or revoke access at any time.
+All permissions and settings remain under your control in **Company Settings > Microsoft Teams Settings** page, so you can enable, update, or revoke access at any time.
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@ All permissions and settings remain under your control in Company Settings > Mic
 
 ## Enable the integration (Step 1)
 
-On **Company ➜ Company Settings ➜ Microsoft Teams Settings** you will see two access cards. Enable them in order:
+On **Company > Company Settings > Microsoft Teams Settings** you will see two access cards. Enable them in order:
 
 #### Access 1: **Connect to Teams**
 
