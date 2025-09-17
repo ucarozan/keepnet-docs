@@ -170,6 +170,7 @@
         * [Direct Email Creation for Google Workspace](next-generation-product/platform/company/company-settings/direct-email-creation/direct-email-creation-for-google-workspace.md)
         * [Direct Email Creation for Microsoft 365](next-generation-product/platform/company/company-settings/direct-email-creation/direct-email-creation-for-microsoft-365.md)
       * [Notification Templates](next-generation-product/platform/company/company-settings/notification-templates.md)
+      * [Microsoft Teams Settings](next-generation-product/platform/company/company-settings/microsoft-teams-settings.md)
       * [Google User Provisioning](next-generation-product/platform/company/company-settings/google-user-provisioning.md)
       * [REST API](next-generation-product/platform/company/company-settings/rest-api.md)
       * [White Labeling](next-generation-product/platform/company/company-settings/white-labeling.md)
