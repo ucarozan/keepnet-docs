@@ -57,7 +57,7 @@ If Keepnet releases an integration update for Microsoft Teams, you may see an **
 
 ## How to Launch Training via Microsoft Teams
 
-You can learn how to launch training content through Microsoft Teams integration by going to the document [here](microsoft-teams-settings.md#how-to-launch-training-via-microsoft-teams).
+You can learn how to launch training content through Microsoft Teams integration by going to the document [here](../../awareness-educator/training-library.md#how-to-launch-training-through-microsoft-teams).
 
 ## Troubleshooting
 
