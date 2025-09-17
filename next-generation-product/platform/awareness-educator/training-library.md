@@ -71,9 +71,10 @@ Follow the steps below to preview, edit, download or take any other actions on l
   *   On **Enrollment Settings** page,
 
       * **Enrollment Name:** Enter a name for your report.
-      * **Email:** If this option is enabled, the platform will send the training content via email.
-      * **Microsoft Teams:** If this option is enabled, the platform will send the training content via Microsoft Teams; users who are not found in the Microsoft Teams tenant will receive training via email.
-      * **SMS Notification:** If this option enabled, the platform will simultaneously send them the training content via email and SMS.&#x20;
+      * **Delivery Method:** Please select one of the options below.
+        * **Email:** If this option is enabled, the platform will send the training content via email.
+        * **Microsoft Teams:** If this option is enabled, the platform will send the training content via Microsoft Teams; users who are not found in the Microsoft Teams tenant will receive training via email.
+        * **SMS Notification:** If this option enabled, the platform will simultaneously send them the training content via email and SMS.&#x20;
       * **Schedule:** Select **Send Now** to send the training immediately, or arrange for it to be sent at a specific date and time using the **Schedule To** option.
       * **Distribution:** Schedule the delivery of learning path materials at specified intervals. For example, if set to 2 days, the next training material is sent 2 days after the previous one, regardless of its completion, continuing until all materials are distributed.
       * **Reminder:** Select this option if the platform should automatically send an email to employees to remind them to complete the learning path training with one of the following criteria:
@@ -135,10 +136,11 @@ Follow the steps below to preview, edit, download or take any other actions on s
 
       * **Enrollment Name:** Enter a name for your report.
       * **Content Language:** Choose a language. A language button in the enrollment email lets users complete the training in their chosen language.
-      * **Training Delivery for Your LMS:** Select this option to distribute the training to your employees by uploading the training file onto your Learning Management System (LMS) platform. [Click here](training-library.md#how-to-launch-training-through-your-lms) to see details.
-      * **Email:** If this option is enabled, the platform will send the training content via email.
-      * **Microsoft Teams:** If this option is enabled, the platform will send the training content via Microsoft Teams; users who are not found in the Microsoft Teams tenant will receive training via email.
-      * **SMS Notification:** If this option enabled, the platform will simultaneously send them the training content via email and SMS.&#x20;
+      * **Delivery Method:** Please select one of the options below.
+        * **Email:** If this option is enabled, the platform will send the training content via email.
+        * **Microsoft Teams:** If this option is enabled, the platform will send the training content via Microsoft Teams; users who are not found in the Microsoft Teams tenant will receive training via email.
+        * **SMS Notification:** If this option enabled, the platform will simultaneously send them the training content via email and SMS.&#x20;
+        * **Training Delivery for Your LMS:** Select this option to distribute the training to your employees by uploading the training file onto your Learning Management System (LMS) platform. [Click here](training-library.md#how-to-launch-training-through-your-lms) to see details.
       * **Schedule:** Select **Send Now** to send the training immediately, or arrange for it to be sent at a specific date and time using the **Schedule To** option.
       * **Reminder:** Select this option if the platform should automatically send an email to employees to remind them to complete the training with one of the following criteria:
         * **when the user completes the training:** The users will receive reminder emails until the training is completed.
@@ -203,9 +205,10 @@ Follow the steps below to preview, edit, download or take any other actions on p
 
       * **Enrollment Name:** Enter a name for your report.
       * **Content Language:** Choose a language. A language button in the enrollment email lets users complete the training in their chosen language.
-      * **Email:** If this option is enabled, the platform will send the training content via email.
-      * **Microsoft Teams:** If this option is enabled, the platform will send the training content via Microsoft Teams; users who are not found in the Microsoft Teams tenant will receive training via email.
-      * **SMS Notification:** If this option enabled, the platform will simultaneously send them the training content via email and SMS.&#x20;
+      * **Delivery Method:** Please select one of the options below.
+        * **Email:** If this option is enabled, the platform will send the training content via email.
+        * **Microsoft Teams:** If this option is enabled, the platform will send the training content via Microsoft Teams; users who are not found in the Microsoft Teams tenant will receive training via email.
+        * **SMS Notification:** If this option enabled, the platform will simultaneously send them the training content via email and SMS.&#x20;
       * **Schedule:** Select **Send Now** to send the training immediately, or arrange for it to be sent at a specific date and time using the **Schedule To** option.
       * **Auto-Enroll:** Choose this option to automatically send this training item to new users added to a selected target group during the enrollment process.
       * **Mark as Test:** Select this option to exclude this training report's statistics from platform reports.
@@ -263,9 +266,10 @@ Follow the steps below to preview, edit, download or take any other actions on i
 
       * **Enrollment Name:** Enter a name for your report.
       * **Content Language:** Choose a language. A language button in the enrollment email lets users complete the training in their chosen language.
-      * **Email:** If this option is enabled, the platform will send the training content via email.
-      * **Microsoft Teams:** If this option is enabled, the platform will send the training content via Microsoft Teams; users who are not found in the Microsoft Teams tenant will receive training via email.
-      * **SMS Notification:** If this option enabled, the platform will simultaneously send them the training content via email and SMS.&#x20;
+      * **Delivery Method:** Please select one of the options below.
+        * **Email:** If this option is enabled, the platform will send the training content via email.
+        * **Microsoft Teams:** If this option is enabled, the platform will send the training content via Microsoft Teams; users who are not found in the Microsoft Teams tenant will receive training via email.
+        * **SMS Notification:** If this option enabled, the platform will simultaneously send them the training content via email and SMS.&#x20;
       * **Schedule:** Select **Send Now** to send the training immediately, or arrange for it to be sent at a specific date and time using the **Schedule To** option.
       * **Auto-Enroll:** Choose this option to automatically send this training item to new users added to a selected target group during the enrollment process.
       * **Mark as Test:** Select this option to exclude this training report's statistics from platform reports.
@@ -425,8 +429,8 @@ Follow the steps below.
 * Search your training and click the **Send Training** button on the right under the **Actions** column.
 * The first page is **(1) Enrollment** **Settings** page:
   * **Enrollment Name:** Enter the name for the training enrollment report.
-  * **Training Delivery for Your LMS:** Enable this option.
   * **Content Language:** Select available languages for your training content.
+  * **Delivery Method:** Please select the **LMS** option.
   * **Mark As Test:** Select this option to exclude this training report's statistics from platform reports.
 * Click the **Next** button and go to the second **(2) Target Audience** page:
   * **Select Recipients:** You don't need to select target users since you will deliver the training through your LMS platform.
@@ -452,9 +456,8 @@ Follow the steps below.
 * Search your training and click the **Send Training** button on the right under the **Actions** column.
 * The first page is **(1) Enrollment** **Settings** page:
   * **Enrollment Name:** Enter the name of the training enrollment report.
-  * **Training Delivery for Your LMS:** Leave this option disabled unless you prefer to deliver the training content through your LMS platform.
   * **Content Language:** Select available languages for your training content.
-  * Enable the **"SMS notification for your training"** option and select the following options.
+  * **Delivery Method:** Enable the **"SMS"** option and select the following options.
     * **Sender Phone Number:** Choose the phone number that will appear as the sender of the SMS.
     * **SMS Text:** Enter the message content you want to send to the target users via SMS. Utilize merge tags to insert information dynamically.
       * **{TRAININGURL}:** The system will add each user's training link for users to click and enroll in their training online.
@@ -464,11 +467,11 @@ Follow the steps below.
       * **{FULLNAME}:** First Name and Last Name will be placed in the SMS message. It will be retrieved from the [target users' ](../company/target-users.md)page.
   * **Schedule:** Select **Send Now** to send the training immediately, or arrange for it to be sent at a specific date and time using the **Schedule To** option.
   * **Reminder:** Select this option if the platform should automatically send an email to employees to remind them to complete the training with one of the following criteria:
-    * **when the user completes the training:** The users will receive reminder emails until the training is completed.
-    * **when user completes the quiz:** The users will receive reminder emails until the training exam is completed.
-    * **when user successfully passes the quiz:** The users will receive reminder emails until the training exam is passed.
-    * **after occurrences:** The users will receive reminder emails N times that are specified by the admin.
-    * **on date:** The users will receive reminder emails until the specified date and time by the admin.
+    * **when the user completes the training:** The users will receive SMS or email reminder notifications until the training is completed.
+    * **when user completes the quiz:** The users will receive SMS or email reminder notifications until the training exam is completed.
+    * **when user successfully passes the quiz:** The users will receive reminder SMS or email reminder notifications until the training exam is passed.
+    * **after occurrences:** The users will receive SMS or email reminder notifications N times that are specified by the admin.
+    * **on date:** The users will receive reminder SMS or email reminder notifications until the specified date and time by the admin.
   * **Certificate:** Select this option to send a certificate of completion when the user has completed the training or quiz.
   * **Auto-Enroll:** Choose this option to automatically send this training item to new users added to a selected target group during the enrollment process.
   * **Mark as Test:** Select this option to exclude this training report's statistics from platform reports.
