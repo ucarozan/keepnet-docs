@@ -2,15 +2,13 @@
 
 Microsoft Teams integration allows you to send training notifications directly inside Teams, where your employees already collaborate every day. Instead of relying only on SMS or email, you can reach users in a familiar workspace without leaving their daily workflow. This makes training invitations harder to miss and easier to act on. Messages arrive from a dedicated bot that you can name, keeping communication clear and professional.
 
-All permissions and settings remain under your control in **Company Settings > Microsoft Teams Settings** page, so you can enable, update, or revoke access at any time.
-
 ## Prerequisites
 
 * Microsoft 365 tenant with Microsoft Teams enabled.
 * Tenant admin/global admin permission to grant consent during setup.
 * Keepnet platform access.
 
-## Enable the integration (Step 1)
+## Enable the integration
 
 On **Company > Company Settings > Microsoft Teams Settings** you will see two access cards. Enable them in order:
 
@@ -37,7 +35,7 @@ Allows Keepnet to send training notifications to Teams.
 
 ***
 
-### Bot name (Step 2)
+### Customize Bot Name
 
 Choose the display name that users will see as the sender in Teams.
 
@@ -54,7 +52,7 @@ If Keepnet releases an integration update for Microsoft Teams, you may see an **
 
 ## Disable or Revoke Access
 
-* Click **Disable Accesses** to remove Keepnet’s permissions from your Microsoft Teams tenant.
+* If you need to remove Keepnet’s permissions from your Microsoft Teams tenant for some reason, click the **Disable** **Access** button.
 * You can re-enable it later by repeating **Enable the integration**.
 
 ## How to Launch Training via Microsoft Teams
