@@ -482,49 +482,37 @@ You can view the training statistics from the **Awareness Educator > Enrollments
 
 ## **How to Launch Training** Through **Microsoft Teams**
 
-
-
-In this section, you'll learn how to launch training content to your selected target users using both email and SMS simultaneously. By utilizing this feature, each user will receive the training materials in their email inbox and as an SMS message.
+In this section, you'll learn how to launch training content to your selected target users through Microsoft Teams. By utilizing this feature, each user will receive the training materials in their Microsoft Teams account.
 
 {% hint style="danger" %}
-Before using this feature, verify that the [target users](../company/target-users.md) have their phone numbers registered on the platform. If a user doesn't have a phone number, the platform will only send the training through email and will not dispatch it as an SMS.
+Users who are not found in the Microsoft Teams tenant will receive training via email.
 {% endhint %}
 
 Follow the steps below.
 
 * Go to **Awareness Educator > Training Library** menu.
-* Search your training and click the **Send Training** button on the right under the **Actions** column.
+* Search for your training and click the **Send Training** button on the right under the **Actions** column.
 * The first page is **(1) Enrollment** **Settings** page:
   * **Enrollment Name:** Enter the name of the training enrollment report.
-  * **Training Delivery for Your LMS:** Leave this option disabled unless you prefer to deliver the training content through your LMS platform.
   * **Content Language:** Select available languages for your training content.
-  * Enable the **"SMS notification for your training"** option and select the following options.
-    * **Sender Phone Number:** Choose the phone number that will appear as the sender of the SMS.
-    * **SMS Text:** Enter the message content you want to send to the target users via SMS. Utilize merge tags to insert information dynamically.
-      * **{TRAININGURL}:** The system will add each user's training link for users to click and enroll in their training online.
-      * **{TRAININGNAME}:** The system will add the training name.
-      * **{LASTNAME}:** Last Name of users will be placed in the SMS message. It will be retrieved from the [target users' ](../company/target-users.md)page.
-      * **{FIRSTNAME}:** First Name of users will be placed in the SMS message. It will be retrieved from the [target users' ](../company/target-users.md)page.
-      * **{FULLNAME}:** First Name and Last Name will be placed in the SMS message. It will be retrieved from the [target users' ](../company/target-users.md)page.
+  * Under the '**Delivery Method'** option, please select **Microsoft Teams**.
   * **Schedule:** Select **Send Now** to send the training immediately, or arrange for it to be sent at a specific date and time using the **Schedule To** option.
   * **Reminder:** Select this option if the platform should automatically send an email to employees to remind them to complete the training with one of the following criteria:
-    * **when the user completes the training:** The users will receive reminder emails until the training is completed.
-    * **when user completes the quiz:** The users will receive reminder emails until the training exam is completed.
-    * **when user successfully passes the quiz:** The users will receive reminder emails until the training exam is passed.
-    * **after occurrences:** The users will receive reminder emails N times that are specified by the admin.
-    * **on date:** The users will receive reminder emails until the specified date and time by the admin.
+    * **when the user completes the training:** The users will receive reminder notifications until the training is completed.
+    * **when user completes the quiz:** The users will receive reminder notifications until the training exam is completed.
+    * **when user successfully passes the quiz:** The users will receive reminder notifications until the training exam is passed.
+    * **after occurrences:** The users will receive reminder notifications N times that are specified by the admin.
+    * **on date:** The users will receive reminder notifications until the specified date and time by the admin.
   * **Certificate:** Select this option to send a certificate of completion when the user has completed the training or quiz.
   * **Auto-Enroll:** Choose this option to automatically send this training item to new users added to a selected target group during the enrollment process.
   * **Mark as Test:** Select this option to exclude this training report's statistics from platform reports.
 * Click the **Next** button and go to the second **(2) Target Audience** page:
-  * **Select Recipients:** Select the target groups that will receive the training enrollment via email and SMS messages.
+  * **Select Recipients:** Select the target groups that will receive the training enrollment on Microsoft Teams.
 * Click the **Next** button and go to the third **(3) Summary** page:
   * Review and confirm the settings on the **Summary** page.
 * Click **Launch** to start sending the training to the selected target users.
 
 You can view the training statistics from the **Awareness Educator > Enrollments** menu. For more information about reports, [click here](enrollments.md).
-
-
 
 ## **How to Launch Training** Through **Direct Email Creation**
 
