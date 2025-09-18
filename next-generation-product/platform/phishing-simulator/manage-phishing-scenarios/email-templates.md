@@ -44,6 +44,26 @@ Follow the steps below to create a new email template for use in a new or existi
    9. **Import Email:** Use the three-dot button to import an MSG or EML file and customize it.
 4. Click **Edit** to make any changes or **Save** to complete the process.
 
+## How to Add a New Email Template with Red Flags
+
+Follow the steps below to create a new email template with red flags for use in a new or existing phishing campaign:
+
+1. Click the **+New** button in the upper right corner of the **Phishing Simulator > Phishing Scenarios > Email Templates** page.
+2. Complete the required fields on the first page, then click **Next**.
+3. Complete the sections below on the **Email Settings** page:
+   1. **Subject:** Subject line of the phishing email
+   2. **From Name:** Sender name that will be visible to the target recipient
+   3. **From Email Address:** Sender email address information that will be visible to the target recipient
+   4. **CC:** Add a CC email address to your phishing simulation email. This is optional.
+   5. **Attach File:** If desired, you can attach a file to the phishing email. This option is only available if the email template method type is set to **Attachment**.
+   6. **View/Edit Template:** View and edit the available email templates in localized languages.
+   7. **Localize:** Localize your main email template to different languages.
+   8. **Import Email:** Use the three-dot button to import an MSG or EML file and customize it.
+4. **Show Red Flags:** Click the button for AI Ally to scan the email template and highlight suspicious elements—such as mismatched sender addresses, fake buttons, or misleading icons—while employees are expected to spot these red flags on their own.
+5. Click **Edit** to make any changes or **Save** to complete the process.
+
+Once you save your email template, now you need to create a landing page with red flags, please click here to go that section to proceed.
+
 ## How to Add a New Email Template with AI
 
 Follow the steps below to effortlessly create custom email templates with the help of **AI** **Ally**. Once your template is ready, it can be used in a new or existing phishing campaign:
