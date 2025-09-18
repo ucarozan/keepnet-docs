@@ -50,7 +50,7 @@ Follow the steps below to add a new landing page with red flags that you can use
 6. Review your red flag landing page, or click the **Edit** button to customize it.
 7. Once you complete customization or review, click **Save** to complete the process.
 
-Once you create your red flag landing page, next step is to click here to learn how to combine your red flag email template and red flag landing page in a scenario to be able to launch to your employees.&#x20;
+Once you create your red flag landing page, now click [here](phishing-scenarios.md#how-to-add-a-new-phishing-scenario-with-red-flags) to learn how to combine your red flag email template and red flag landing page in a scenario to be able to launch to your employees.&#x20;
 
 ## How to Add a new Landing Page with AI
 

@@ -90,6 +90,10 @@ Now you can click the **Save** button to create your scenario. Now, you are read
 
 Phishing scenarios have two components: the phishing email template and the landing page. Follow the steps below to add a new phishing scenario that contains red flags of the email template and the landing page:
 
+{% hint style="danger" %}
+Before you proceed with this section, please make sure you have created the [red flag email template](email-templates.md#how-to-add-a-new-email-template-with-red-flags) and [red flag landing page](landing-pages.md#how-to-add-a-new-landing-page-template-with-red-flags).
+{% endhint %}
+
 1. Click the **+NEW** button in the upper right corner of the **Phishing Simulator > Phishing Scenarios** page.
 2. Complete the required fields on the first page, then click **Next**.
    1. **Scenario Name:** Enter a name for your scenario.
