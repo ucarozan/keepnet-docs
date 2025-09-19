@@ -19,7 +19,7 @@ layout:
     visible: true
 ---
 
-# How-to Videos
+# 📽️ How-to Videos
 
 Our collection of short, step-by-step video guides is designed to help you get the most out of Keepnet’s security awareness tools. From setting up and running phishing simulations, to delivering engaging training, through to deploying the Phishing Reporter button, each video provides clear, practical guidance to make every stage simple and effective.
 
