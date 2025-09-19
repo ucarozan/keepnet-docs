@@ -39,7 +39,7 @@ Follow the steps below to create a new email template for use in a new or existi
    4. **CC:** Add a CC email address to your phishing simulation email.
    5. **Attach File:** If desired, you can attach a file to the phishing email. This option is only available if the email template method type is set to **Attachment**.
    6. **View/Edit Template:** View and edit the available email templates in localized languages.
-   7. **Localize:** Localize your main email template to different languages.
+   7. **Localize:** Localize your main email template to different languages. Click [here](https://localization.keepnetlabs.com/) to learn the benefits of the feature and more information.
    8. **Show Red Flags:** Let AI Ally scan the email template and highlight suspicious elements—such as mismatched sender addresses, fake buttons, or misleading icons—while employees are expected to spot these red flags on their own.
    9. **Import Email:** Use the three-dot button to import an MSG or EML file and customize it.
 4. Click **Edit** to make any changes or **Save** to complete the process.
