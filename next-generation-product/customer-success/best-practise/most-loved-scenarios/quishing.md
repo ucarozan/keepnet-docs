@@ -1,6 +1,10 @@
+---
+description: QR Code Phishing
+---
+
 # Quishing
 
-With over 16,000 social engineering scenarios, our customers have a huge range of choice when planning their annual phishing strategy. Our customer success team has cherry-picked our customers' most favourite scenarios across a number of different industries and tech stacks to help you streamline your efforts.&#x20;
+With over 5,500 quishing scenarios, our customers have a huge range of choice when planning their annual social engineering strategy. Our customer success team has cherry-picked our customers' most favourite scenarios across a number of different industries and tech stacks to help you streamline your efforts.&#x20;
 
 **Top Tip: Simply copy and paste these Scenario Titles into Keepnet to find our favourites!**&#x20;
 
@@ -28,3 +32,6 @@ Action Required: Identity Verification
 
 AnyDesk – Remote Desktop Solutions
 
+### **Example:** Microsoft: Re-authenticate your account
+
+<div align="left"><figure><img src="../../../../.gitbook/assets/Screenshot 2025-09-19 at 11.35.22.png" alt="" width="359"><figcaption></figcaption></figure></div>

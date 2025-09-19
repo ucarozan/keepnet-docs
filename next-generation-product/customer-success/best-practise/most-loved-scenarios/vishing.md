@@ -1,6 +1,10 @@
+---
+description: Voice Phishing
+---
+
 # Vishing
 
-With over 16,000 social engineering scenarios, our customers have a huge range of choice when planning their annual phishing strategy. Our customer success team has cherry-picked our customers' most favourite scenarios across a number of different industries and tech stacks to help you streamline your efforts.&#x20;
+With over 5,000 vishing scenarios, our customers have a huge range of choice when planning their annual social engineering strategy. Our customer success team has cherry-picked our customers' most favourite scenarios across a number of different industries and tech stacks to help you streamline your efforts.&#x20;
 
 **Top Tip: Simply copy and paste these Scenario Titles into Keepnet to find our favourites! Get these scenarios in your local accent by duplicating the scenario and change the AI voice 🤖**
 
@@ -16,3 +20,6 @@ Apple Gift Card Promotion
 
 Bank Fraud Alert
 
+### Example: CEO Message
+
+<div align="left"><figure><img src="../../../../.gitbook/assets/ChatGPT Image Sep 19, 2025, 11_46_20 AM.png" alt="" width="375"><figcaption></figcaption></figure></div>
