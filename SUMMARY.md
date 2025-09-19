@@ -61,6 +61,7 @@
     * [🌎 Multi-Language Features](next-generation-product/customer-success/best-practise/multi-language-features.md)
       * [Multi-Language Training](next-generation-product/customer-success/best-practise/multi-language-features/multi-language-training.md)
       * [Localisation](next-generation-product/customer-success/best-practise/multi-language-features/localisation.md)
+      * [Hyper-Personalisation](next-generation-product/customer-success/best-practise/multi-language-features/hyper-personalisation.md)
     * [📊 Build a CISO Report](next-generation-product/customer-success/best-practise/build-a-ciso-report.md)
     * [💬 Communication Tips](next-generation-product/customer-success/best-practise/communication-tips.md)
 * [Platform](next-generation-product/platform/README.md)
