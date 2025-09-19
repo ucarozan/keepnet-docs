@@ -20,7 +20,9 @@ With this approach, you run:
 
 **Getting started:**
 
-_Running a Blended Campaign in Keepnet_
+{% embed url="https://www.loom.com/share/b7d3270e32e94175bdf9a5217596a995?sid=d1cb39f8-90c1-4c0a-918e-376c7dd531af" %}
+
+{% embed url="https://www.loom.com/share/d1f11b716f4b475d9581a55c632342a5?sid=292fae44-8d4b-4a39-89e8-48d2e9d0bc4a" %}
 
 
 

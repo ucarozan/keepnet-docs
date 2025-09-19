@@ -5,9 +5,8 @@ The Targeted Approach is ideal for organisations that want to **focus on specifi
 You can run campaigns in one of two ways:
 
 1. **Distribute scenarios across your target group**
-   * Assign different scenarios to employees at the same time.
+   * Distribute several specific scenarios to employees at the same time.
    * Ensures variety while keeping campaigns focused on key threats.
-   * _CHANGE_
 2. **Pre-schedule a campaign for the year**
    * Select all scenarios you want to use in advance.
    * Run them monthly (e.g., scenario 1 in month 1, scenario 2 in month 2, etc.).
@@ -21,11 +20,5 @@ You can run campaigns in one of two ways:
 
 **Getting started:**
 
-_Creating a Targeted Campaign in Keepnet_
-
-
-
-### FAQs
-
-* Include quick tips or FAQs for common setup questions
+{% embed url="https://www.loom.com/share/d1f11b716f4b475d9581a55c632342a5?sid=292fae44-8d4b-4a39-89e8-48d2e9d0bc4a" %}
 

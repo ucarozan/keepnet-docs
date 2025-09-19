@@ -25,6 +25,8 @@ description: >-
 
 {% embed url="https://www.loom.com/share/c49360e9a6c842c98fd6bbb93b5838e1?sid=4a21fc30-a0cd-4c80-b642-45488d7d7b48" %}
 
+{% embed url="https://youtu.be/uqML_S2aZgI?feature=shared" %}
+
 ## View Reporting For Training Enrollments
 
 {% embed url="https://www.loom.com/share/d1e1b0fa27474f318fb11260a9742250?sid=e08b25b5-1770-4bd1-a3ad-51e3d17e9ae0" %}
