@@ -1,7 +1,5 @@
 # Localisation
 
-Traditional localisation can slow down phishing campaigns by weeks, drive up costs, and still miss the mark when it comes to real-world attack patterns. Keepnet removes these barriers with instant, AI-powered localisation that adapts phishing simulations for any language and culture.
-
 Customers can take any of our 16,000+ phishing templates - or your own custom scenarios -and localise them into any language of your choice. Keepnet doesn’t just translate; it adapts the entire email, including subject lines, body text, currencies, dates, and tone, to feel natural and authentic for the target region. Multiple localisations can be completed at once, making it simple to launch truly global campaigns in minutes.
 
 With optional human review for added quality assurance and unified reporting across all languages, you can scale phishing simulations faster, more cost-effectively, and with greater realism than ever before.
