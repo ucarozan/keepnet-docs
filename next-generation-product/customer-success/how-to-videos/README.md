@@ -39,4 +39,4 @@ Our collection of short, step-by-step video guides is designed to help you get t
 
 [Phishing Reporter Button](phishing-reporter-button.md)
 
-Coming soon... Incident Responder
+Incident Responder

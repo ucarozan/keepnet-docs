@@ -156,7 +156,7 @@ The benefit of using this graphic is that it offers a clear and focused view of 
 
 This chart helps organizations track and reduce repeat offenders of phishing simulations. By identifying these users, it strengthens cybersecurity awareness and mitigates phishing risks.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What Is It?**
 
