@@ -1,4 +1,10 @@
-# 7. Incident Responder Setup
+---
+description: >-
+  This is only relevant for customers who have purchased the Incident Responder
+  module or xHRM package.
+---
+
+# 5. Incident Responder Setup
 
 ## What is the Incident Responder?
 

@@ -25,4 +25,4 @@ You must complete the following steps once the **connector** is defined.
 
 ✅ **You have now Whitelist Domains so your target users can successfully open Keepnet email links. Please also Whitelist in your security solutions if you haven't already.**&#x20;
 
-**Next step is to** [**Setup your Phishing Reporter**](../6.-setup-phishing-reporter/) **➡️**
+**Next step is to** [**Setup your Phishing Reporter**](../4.-setup-phishing-reporter/) **➡️**

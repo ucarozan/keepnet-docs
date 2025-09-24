@@ -59,7 +59,7 @@ For troubleshooting purposes, you can provide the support team with the log and 
 
 **✅ You have now deployed the Phishing Reporter**
 
-**Next step is to** [**Setup Incident Responder**](../../../../7.-incident-responder-setup/) **(only for customers who have purchased the Incident Responder or SOC package)**
+**Next step is to** [**Setup Incident Responder**](../../../../5.-incident-responder-setup/) **(only for customers who have purchased the Incident Responder or SOC package)**
 
 ## Tutorial Video
 

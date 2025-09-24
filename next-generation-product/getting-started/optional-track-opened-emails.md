@@ -1,4 +1,8 @@
-# 4. Track Opened Emails
+# (Optional) Track Opened Emails
+
+{% hint style="info" %}
+**Why is this Optional?** Some customers don't measure Opened Email as a metrics as it does not indicate secure or risky behaviour. When you complete this step, simulated emails may behave differently to other external emails and attentive employees might notice the difference.
+{% endhint %}
 
 Keepnet utilizes a tracking pixel to monitor when users open phishing simulation emails. This tracking pixel is embedded in all phishing simulation emails sent through the platform. When the email is opened, the pixel sends a response to Keepnet, logging the open event.
 

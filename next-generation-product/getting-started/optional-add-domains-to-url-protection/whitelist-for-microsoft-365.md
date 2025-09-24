@@ -1,4 +1,4 @@
-# Whitelist for Office 365
+# Whitelist for Microsoft 365
 
 ## How to Whitelist Using the Safe Links Feature in Office 365 <a href="#how-to-whitelist-using-the-safe-links-feature-in-office-365" id="how-to-whitelist-using-the-safe-links-feature-in-office-365"></a>
 
@@ -24,4 +24,4 @@ To complete this procedure, you must have security administrator privileges with
 
 ✅ **You have now Whitelist Domains so your target users can successfully open Keepnet email links. Please also Whitelist in your security solutions if you haven't already.**&#x20;
 
-**Next step is to** [**Setup your Phishing Reporter**](../6.-setup-phishing-reporter/) **➡️**
+**Next step is to** [**Setup your Phishing Reporter**](../4.-setup-phishing-reporter/) **➡️**

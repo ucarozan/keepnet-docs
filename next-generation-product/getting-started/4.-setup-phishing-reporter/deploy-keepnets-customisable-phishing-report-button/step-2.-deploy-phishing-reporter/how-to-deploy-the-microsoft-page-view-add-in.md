@@ -52,7 +52,7 @@ You will receive an email notification confirming your successful deployment. **
 
 ​✅ **You have now deployed the Phishing Reporter.**&#x20;
 
-**Next step is to** [**Setup Incident Responder**](../../../7.-incident-responder-setup/) **(only for customers who have purchased the Incident Responder or xHRM package)**
+**Next step is to** [**Setup Incident Responder**](../../../5.-incident-responder-setup/) **(only for customers who have purchased the Incident Responder or xHRM package)**
 
 ## Video Tutorial <a href="#video-tutorial" id="video-tutorial"></a>
 

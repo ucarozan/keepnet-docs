@@ -44,14 +44,14 @@ Add as many Threat Intel Partners as you would like. The more you integrate, the
 
 Please follow the steps for Mail Configuration for your email provider:
 
-{% content-ref url="../../../getting-started/7.-incident-responder-setup/step-2.-mail-configurations/microsoft-365.md" %}
-[microsoft-365.md](../../../getting-started/7.-incident-responder-setup/step-2.-mail-configurations/microsoft-365.md)
+{% content-ref url="../../../getting-started/5.-incident-responder-setup/step-2.-mail-configurations/microsoft-365.md" %}
+[microsoft-365.md](../../../getting-started/5.-incident-responder-setup/step-2.-mail-configurations/microsoft-365.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../../getting-started/7.-incident-responder-setup/step-2.-mail-configurations/google-workspace-gsuite.md" %}
-[google-workspace-gsuite.md](../../../getting-started/7.-incident-responder-setup/step-2.-mail-configurations/google-workspace-gsuite.md)
+{% content-ref url="../../../getting-started/5.-incident-responder-setup/step-2.-mail-configurations/google-workspace-gsuite.md" %}
+[google-workspace-gsuite.md](../../../getting-started/5.-incident-responder-setup/step-2.-mail-configurations/google-workspace-gsuite.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../../getting-started/7.-incident-responder-setup/step-2.-mail-configurations/exchange-ews.md" %}
-[exchange-ews.md](../../../getting-started/7.-incident-responder-setup/step-2.-mail-configurations/exchange-ews.md)
+{% content-ref url="../../../getting-started/5.-incident-responder-setup/step-2.-mail-configurations/exchange-ews.md" %}
+[exchange-ews.md](../../../getting-started/5.-incident-responder-setup/step-2.-mail-configurations/exchange-ews.md)
 {% endcontent-ref %}

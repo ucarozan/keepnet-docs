@@ -4,7 +4,7 @@
 
 **Direct Email Creation (DEC)** is a feature that connects to your O365 with a few required API permissions. This feature creates the phishing simulation email directly in the user’s inbox instead of sending the emails over SMTP protocol.**Key Benefits:**
 
-1. Remove false positives that whitelisting tools cause when analyzing links.
+1. Remove false positives that come from email delivery.
 2. Eradicate maintenance and challenges of whitelisting for the purpose of email delivery (you may need to whitelist in your URL protection solutions such as Defender or ZScaler)
 3. Very simple and quick setup (can be completed in a couple of minutes!)
 
@@ -84,7 +84,7 @@ In the logs, you should see activities such as **"Created mailbox item"**, confi
 
 This log indicates that the application is only creating mailbox items and not accessing or reading mailboxes.
 
-✅ **You have now ensured your target users will receive emails through Keepnet. Now you need to** [**Whitelist Domains**](../../5.-allow-phishing-urls/) **so your target users can successfully open Keepnet email links. ➡️**
+✅ **You have now ensured your target users will receive emails through Keepnet. Now you need to** [**Whitelist Domains**](../../optional-add-domains-to-url-protection/) **so your target users can successfully open Keepnet email links. ➡️**
 
 ## Video Tutorial
 

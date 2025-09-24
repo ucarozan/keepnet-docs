@@ -25,7 +25,7 @@ To deploy the Phishing Reporter add-in, follow the steps below.
 It may take up to 12 hours for the add-in to be displayed on users' email applications. Users may need to relaunch their email applications.
 {% endhint %}
 
-✅ **You have now deployed the Phishing Reporter. Next step is to** [**Setup Incident Responder**](../../../7.-incident-responder-setup/) **(only for customers who have purchased the Incident Responder or SOC package)**
+✅ **You have now deployed the Phishing Reporter. Next step is to** [**Setup Incident Responder**](../../../5.-incident-responder-setup/) **(only for customers who have purchased the Incident Responder or SOC package)**
 
 ## Video Tutorial
 

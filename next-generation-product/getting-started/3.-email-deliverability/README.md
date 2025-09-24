@@ -2,7 +2,10 @@
 
 It is essential that your employees are able to receive all emails sent via Keepnet platform for you to accurately measure how your employees behave when faced with evolving social engineering threats.
 
-**To ensure emails are delivered in Microsoft 365, you have 2 options: Direct Email Creation or Whitelisting**​
+**To ensure emails are delivered in Microsoft 365, you have 2 options::**
+
+* [**Direct Email Creation**](../../platform/company/company-settings/direct-email-creation/)
+* [**Whitelisting**](../../miscellaneous/whitelisting/)​
 
 {% hint style="success" %}
 You only need to do one of these options. Customers do not need to complete both.
