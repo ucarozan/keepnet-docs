@@ -69,7 +69,7 @@ The add-in will appear on your Gmail account shortly.
 * Fill in the **Terms of Service URL**, **Private Policy URL**, and **Support URL** with  **https://keepnetlabs.com** for the add-in.
 * Under **Distribution**, select the **Region** that you will be deploying the add-in to and click **Publish**.
 
-{% file src="../../../../.gitbook/assets/Add-In Logos.zip" %}
+{% file src="../../../../../.gitbook/assets/Add-In Logos.zip" %}
 Default Phishing Reporter Add-In Logos
 {% endfile %}
 
@@ -90,4 +90,4 @@ It may take up to 24 hours for this app to be installed for your entire Google W
 
 ✅ **You have now deployed the Phishing Reporter.**&#x20;
 
-**Next step is to** [**Setup Incident Responder**](../../7.-incident-responder-setup/) **(only for customers who have purchased the Incident Responder or SOC package)**
+**Next step is to** [**Setup Incident Responder**](../../../7.-incident-responder-setup/) **(only for customers who have purchased the Incident Responder or SOC package)**

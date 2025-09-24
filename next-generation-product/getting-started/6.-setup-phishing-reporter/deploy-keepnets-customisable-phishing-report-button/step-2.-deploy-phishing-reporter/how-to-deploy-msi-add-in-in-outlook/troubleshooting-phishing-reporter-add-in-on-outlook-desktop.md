@@ -141,4 +141,4 @@ If the above steps don't resolve your issue, it's suggested to ask for assistanc
 1. **Email:** You can send an email to [support@keepnetlabs.com](mailto:support@keepnetlabs.com). Make sure to include all relevant details about your problem, such as your Outlook version, OS version, and any other pertinent information about your system.
 2. **Support Portal:** Alternatively, you can submit a ticket directly via the Keepnet support portal at [https://support.keepnetlabs.com/portal/en/home](https://support.keepnetlabs.com/portal/en/home).
 
-For additional information on how to contact support, please refer to our [Help Desk](../../../../../resources/keepnet-support-help-desk.md) documentation.
+For additional information on how to contact support, please refer to our [Help Desk](../../../../../../resources/keepnet-support-help-desk.md) documentation.
