@@ -59,7 +59,7 @@ For troubleshooting purposes, you can provide the support team with the log and 
 
 **✅ You have now deployed the Phishing Reporter**
 
-**Next step is to** [**Setup Incident Responder**](../../../../5.-incident-responder-setup/) **(only for customers who have purchased the Incident Responder or SOC package)**
+**Next step is to** [**Setup Incident Responder**](../../../7.-incident-responder-setup/) **(only for customers who have purchased the Incident Responder or SOC package)**
 
 ## Tutorial Video
 
@@ -79,4 +79,4 @@ A: If you see the “Inactive" notification, then it is disabled by the user. If
 
 ### Q: Can I have different teams log into the Keepnet Portal and see only the Outlook detail report page?
 
-A: With the [user role](../../../../../platform/company/system-users/user-roles.md) feature, you can authorize your users with custom permissions.
+A: With the [user role](../../../../platform/company/system-users/user-roles.md) feature, you can authorize your users with custom permissions.

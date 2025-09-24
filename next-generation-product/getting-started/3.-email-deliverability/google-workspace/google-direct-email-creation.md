@@ -67,7 +67,7 @@ Go to **Phishing Simulator > Campaign Manager** from the main menu. Click on **+
 * Set up the rest of the settings as you wish, and then click on **Next** to go to the last page.
 * Review all of your settings and click the **Launch** button to create phishing simulation emails in the selected target user's inbox.
 
-✅ **You have now ensured your target users will receive emails through Keepnet. Now you need to** [**Whitelist Domains**](../../optional-add-domains-to-url-protection/) **so your target users can successfully open Keepnet email links ➡️**
+✅ **You have now ensured your target users will receive emails through Keepnet. Now you need to** [**Whitelist Domains**](../../5.-allow-phishing-urls/) **so your target users can successfully open Keepnet email links ➡️**
 
 ## Video Tutorial
 

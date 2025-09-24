@@ -4,7 +4,7 @@
 
 To download the Phishing Reporter, go to the **Phishing Reporter** tab on the left hand side and select **Configure Add-in** (or click on Settings).​
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2024-04-10 at 11.06.42.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-04-10 at 11.06.42.png" alt=""><figcaption></figcaption></figure>
 
 #### **Step 2.**
 

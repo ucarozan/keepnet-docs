@@ -2,11 +2,11 @@
 
 ## Shortcuts
 
-* [How to Deploy the Microsoft Page View Add-in](how-to-deploy-the-microsoft-page-view-add-in.md)
-* [How to Deploy the Microsoft Ribbon Reporter Add-in](how-to-deploy-the-microsoft-ribbon-reporter-add-in.md)
+* [How to Deploy the Microsoft Page View Add-in](how-to-deploy-add-in-in-microsoft-365.md)
+* [How to Deploy the Microsoft Ribbon Reporter Add-in](../../4.-setup-phishing-reporter/deploy-keepnets-customisable-phishing-report-button/step-2.-deploy-phishing-reporter/how-to-deploy-the-microsoft-ribbon-reporter-add-in.md)
 * [How to Deploy the Add-in in Exchange Admin Center](how-to-deploy-add-in-in-exchange-admin-center.md)
 * [How to Deploy the Add-in in Google Workspace](how-to-deploy-add-in-in-google-workspace.md)
-* [Phishing Reporter Announcement Email Template](../../../../platform/phishing-reporter/phishing-reporter-deployment/phishing-reporter-announcement-email-template.md)
+* [Phishing Reporter Announcement Email Template](../../../platform/phishing-reporter/phishing-reporter-deployment/phishing-reporter-announcement-email-template.md)
 
 ## Comparison: Ribbon vs Page View vs MSI Outlook Phishing Reporter (Microsoft 365)
 
@@ -56,7 +56,7 @@ A: Yes, if you distribute the Phishing Reporter Add-In as an XML package (Micros
 
 ### **Q: Does the new Outlook application on Windows 11 support MSI-based add-ins?**
 
-**A:** No, the new Outlook application on Windows 11 does not support MSI-based add-ins. It is designed to work primarily with web-based add-ins such as [XML add-in of Keepnet Phishing Reporter](../../../../platform/phishing-reporter/phishing-reporter-deployment/how-to-deploy-the-add-in-in-microsoft-365.md). If you need MSI-based add-ins, we recommend using the classic Outlook for Windows desktop application. For more information, please find information under the "Extensibility" section in this [document](https://support.microsoft.com/en-us/office/feature-comparison-between-new-outlook-and-classic-outlook-de453583-1e76-48bf-975a-2e9cd2ee16dd).
+**A:** No, the new Outlook application on Windows 11 does not support MSI-based add-ins. It is designed to work primarily with web-based add-ins such as [XML add-in of Keepnet Phishing Reporter](../../../platform/phishing-reporter/phishing-reporter-deployment/how-to-deploy-the-add-in-in-microsoft-365.md). If you need MSI-based add-ins, we recommend using the classic Outlook for Windows desktop application. For more information, please find information under the "Extensibility" section in this [document](https://support.microsoft.com/en-us/office/feature-comparison-between-new-outlook-and-classic-outlook-de453583-1e76-48bf-975a-2e9cd2ee16dd).
 
 ### Q: Can I use the O365 XML Add-In on OWA in a mobile browser?&#x20;
 

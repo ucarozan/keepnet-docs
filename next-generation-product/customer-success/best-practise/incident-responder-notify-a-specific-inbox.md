@@ -12,8 +12,8 @@ To set this up, please follow the below instructions:
 4. **Conditions:** Set to From > exists (this will cover all reported emails)
 5. **Actions:** Create a new workflow
    1. Select "Analyse" from the drop down
-   2. Select all Integrations (if you don't have any setup, please follow [these steps](../../getting-started/5.-incident-responder-setup/step-1.-integrate-threat-intel-partners.md))
+   2. Select all Integrations (if you don't have any setup, please follow [these steps](../../getting-started/7.-incident-responder-setup/step-1.-integrate-threat-intel-partners.md))
    3. Tick the box - "Investigate according to analyze results"
-   4. Select Sources > Select the [Mail Integration](../../getting-started/5.-incident-responder-setup/step-2.-mail-configurations/) you have setup
+   4. Select Sources > Select the [Mail Integration](../../getting-started/7.-incident-responder-setup/step-2.-mail-configurations/) you have setup
    5. Actions > Notify
    6. SAVE

@@ -4,9 +4,9 @@ Most customers choose to deploy Keepnet's highly customisable Phishing Reporter 
 
 Setup is super simple:
 
-[step-1.-configure-the-phishing-reporter.md](step-1.-configure-the-phishing-reporter.md "mention")
+[step-1.-download-phishing-reporter.md](../../6.-setup-phishing-reporter/step-1.-download-phishing-reporter.md "mention")
 
-[step-2.-deploy-phishing-reporter](step-2.-deploy-phishing-reporter/ "mention")&#x20;
+[step-2.-deploy-phishing-reporter](../../6.-setup-phishing-reporter/step-2.-deploy-phishing-reporter/ "mention")&#x20;
 
 
 

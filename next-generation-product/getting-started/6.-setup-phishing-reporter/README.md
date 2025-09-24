@@ -1,4 +1,4 @@
-# 6. Setup Phishing Reporter
+# 4. Setup Phishing Reporter
 
 ## What is the Phishing Reporter?
 

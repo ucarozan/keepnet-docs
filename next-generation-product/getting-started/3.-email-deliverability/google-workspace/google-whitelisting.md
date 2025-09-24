@@ -28,7 +28,7 @@ To complete this procedure, you must have security administrator privileges with
 
 [​Whitelisting in Security Solutions​](../../../miscellaneous/whitelisting/whitelisting-in-other-security-solutions.md)
 
-​✅ **You have now ensured your target users will receive emails through Keepnet. Now you need to** [**Whitelist Domains**](../../optional-add-domains-to-url-protection/) **so your target users can successfully open Keepnet email links ➡️**
+​✅ **You have now ensured your target users will receive emails through Keepnet. Now you need to** [**Whitelist Domains**](../../5.-allow-phishing-urls/) **so your target users can successfully open Keepnet email links ➡️**
 
 ## Video Tutorial <a href="#video-tutorial" id="video-tutorial"></a>
 
