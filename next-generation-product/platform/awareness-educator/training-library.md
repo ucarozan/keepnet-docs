@@ -6,7 +6,7 @@ This section provides details of the capabilities of the **Awareness Educator > 
 
 The table layout of the **Training** **Library** page is explained below. Understand the details of each column in the training library page.
 
-<table data-header-hidden><thead><tr><th width="204"></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>Training Name</td><td>Name of the training item</td><td></td></tr><tr><td>Type</td><td><p></p><p>In <strong>All</strong> <strong>Types</strong> category, select the type of training and filter:</p><ul><li><strong>Training:</strong> List all the training content in scorm type.</li><li><strong>Poster:</strong> List all the training poster content in PDF format.</li><li><strong>Screensaver:</strong> List all the screensaver training content.</li><li><strong>Infographic:</strong> List all the infographic training content.</li><li><strong>Learning Path:</strong> List all the learning path training content.</li></ul></td><td></td></tr><tr><td>Category</td><td>Category used to classify the training topic</td><td></td></tr><tr><td>Role</td><td>Target audience for the training item</td><td></td></tr><tr><td>Languages</td><td>Languages made available for the training item</td><td></td></tr><tr><td>Created By</td><td>Company name that is created the training item</td><td></td></tr><tr><td>Compliance</td><td>Category used to classify the training topic</td><td></td></tr><tr><td>Tags</td><td>Tags assigned to the training item to facilitate search efforts</td><td></td></tr><tr><td>Vendor</td><td>The training provider's name that provides the training material</td><td></td></tr><tr><td>Actions > Send Training</td><td>Send the training to your target groups.</td><td></td></tr><tr><td>Actions > Delete</td><td>Permanently delete the training item</td><td></td></tr><tr><td>Actions > Duplicate</td><td>Create a copy of the training item with the same settings</td><td></td></tr><tr><td>Actions > Add to Favorites</td><td>Add your training item to favorites or remove it from favorites.</td><td></td></tr><tr><td>Filters</td><td><p>Find training materials based on the search criteria below:</p><ul><li>Behaviours</li><li>Type</li><li>Category</li><li>Language</li><li>Created By</li><li>Role</li><li>Compliance</li><li>Vendor</li></ul></td><td></td></tr><tr><td>Filtering Opitons</td><td><p>Use the filtering options:</p><ul><li><strong>Set as default filter:</strong> Set a default filter to apply automatically every time you visit the page.</li><li><strong>Restore default filter:</strong> Restore your filters to the default.</li><li><strong>Filter type:</strong> Select which filter type you want to have in search fields (and&#x26;or)</li><li><strong>Show/Hide filter items:</strong> Show or hide the columns such as Vendor, Material Name, Tags, etc.</li></ul></td><td></td></tr><tr><td>Sort By</td><td>Use this feature to sort the training materials based on different sort criteria.</td><td></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="204"></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>Training Name</td><td>Name of the training item</td><td></td></tr><tr><td>Type</td><td><p></p><p>In <strong>All</strong> <strong>Types</strong> category, select the type of training and filter:</p><ul><li><strong>Training:</strong> List all the training content in scorm type.</li><li><strong>Poster:</strong> List all the training poster content in PDF format.</li><li><strong>Screensaver:</strong> List all the screensaver training content.</li><li><strong>Infographic:</strong> List all the infographic training content.</li><li><strong>Learning Path:</strong> List all the learning path training content.</li><li><strong>Survey:</strong> List all the survey training content.</li></ul></td><td></td></tr><tr><td>Category</td><td>Category used to classify the training topic</td><td></td></tr><tr><td>Role</td><td>Target audience for the training item</td><td></td></tr><tr><td>Languages</td><td>Languages made available for the training item</td><td></td></tr><tr><td>Created By</td><td>Company name that is created the training item</td><td></td></tr><tr><td>Compliance</td><td>Category used to classify the training topic</td><td></td></tr><tr><td>Tags</td><td>Tags assigned to the training item to facilitate search efforts</td><td></td></tr><tr><td>Vendor</td><td>The training provider's name that provides the training material</td><td></td></tr><tr><td>Actions > Send Training</td><td>Send the training to your target groups.</td><td></td></tr><tr><td>Actions > Delete</td><td>Permanently delete the training item</td><td></td></tr><tr><td>Actions > Duplicate</td><td>Create a copy of the training item with the same settings</td><td></td></tr><tr><td>Actions > Add to Favorites</td><td>Add your training item to favorites or remove it from favorites.</td><td></td></tr><tr><td>Filters</td><td><p>Find training materials based on the search criteria below:</p><ul><li>Behaviours</li><li>Type</li><li>Category</li><li>Language</li><li>Created By</li><li>Role</li><li>Compliance</li><li>Vendor</li></ul></td><td></td></tr><tr><td>Filtering Opitons</td><td><p>Use the filtering options:</p><ul><li><strong>Set as default filter:</strong> Set a default filter to apply automatically every time you visit the page.</li><li><strong>Restore default filter:</strong> Restore your filters to the default.</li><li><strong>Filter type:</strong> Select which filter type you want to have in search fields (and&#x26;or)</li><li><strong>Show/Hide filter items:</strong> Show or hide the columns such as Vendor, Material Name, Tags, etc.</li></ul></td><td></td></tr><tr><td>Sort By</td><td>Use this feature to sort the training materials based on different sort criteria.</td><td></td></tr></tbody></table>
 
 ## Main Categories
 
@@ -20,7 +20,7 @@ You can see more information about the subcategories below and how to use each t
 
 ### 1. All Types
 
-This page contains all the types of training materials like **Learning** **Path**, **Training**, **Poster**, **Infographic** and **Screensaver**. You can take actions like Preview, Download, or Send specific types of training materials from this page.&#x20;
+This page contains all the types of training materials like **Learning** **Path**, **Training**, **Survey,** **Poster**, **Infographic** and **Screensaver**. You can take actions like Preview, Download, or Send specific types of training materials from this page.&#x20;
 
 If you want to learn more information about each training material, please go to the following sections.
 
@@ -154,7 +154,7 @@ Follow the steps below to preview, edit, download or take any other actions on s
 
       On **Target Audience** page,
 
-      * Select your **target groups** that will receive the poster training item, and click the **Next** button.
+      * Select your **target groups** that will receive the training item, and click the **Next** button.
 
       On **Summary** page,
 
@@ -318,13 +318,80 @@ Follow the steps below to preview, edit, download or take any other actions on s
   * On **Screensaver** **Info** page, please update each field as you wish and then click **Next**.
   * On **Screensaver** **Content** page, update the screensaver files or add new languages by uploading new screensavers. You can create a screensaver that is available in multiple languages, so the admin can download preferred language.
 
+### 7. Survey
+
+Survey is a SCORM-based content where organizations can create and deliver surveys to employees, gather feedback on security awareness, and generate reports with actionable insights.
+
+Follow the steps below to preview, edit, download or take any other actions on scorm based survey content.
+
+{% hint style="danger" %}
+System administrators are not allowed to upload SCORM survey files to their company profile for a short period of time. You can contact the [support team](../../../resources/keepnet-support-help-desk.md) for them to prepare your survey and upload your company profile.
+{% endhint %}
+
+#### How to Preview Survey
+
+* **Find the survey content** you want to preview and click on the **preview** (eye icon) button under the **Actions** column on the right hand side.
+* Here are some details you will see on the preview page:
+  * **Survey Name:** Name of the survey.
+  * **Survey Language:** Preview the survey with the available languages.
+* On the same page, under **Details** menu, you can find more information below:
+  * **Survey Name:** Name of the survey.
+  * **Vendor Name:** The vendor name of the survey content. By default, it's "Other".&#x20;
+  * **Category Name:** The category of the survey.&#x20;
+  * **Description:** A brief description about the survey.
+  * **Target Audience:** Target audience for the survey.
+  * **Languages:** Available languages for survey.
+  * **Created By:** Company name that is created the survey.
+  * **Compliances:** A list of compliance categories covered by this survey.
+  * **Tags:** Tags assigned to the survey contnet to facilitate search efforts
+  * **Behaviours:** Lists of behaviors that the survey addresses, aiming to educate employees.
+
+#### How to Edit Survey
+
+* **Find the survey** you want to edit and click on **more** (three icon) button under the **Actions** column on the right hand side. Click on **Edit** button.
+* There are two pages, one is **Training** **Info**, and the other one is **Training** **Content**.
+  * On **Survey** **Info** page, please update each field as you wish and then click **Next**.
+  * On **Survey** **Content** page, update the survey scorm files or add new languages by uploading new survey scorm files. You can create a survey that is available in multiple languages, so the employees can enroll the survey with preferred language.
+
+#### How to Send Survey
+
+* **Find the survey** you want to send and click on **more** (three icon) button under the **Actions** column on the right hand side. Click on **Send Survey** button.
+* There are three pages, one is **Enrollment Settings**, **Target Audience** and final one is **Summary**.
+  *   On **Enrollment Settings** page,
+
+      * **Enrollment Name:** Enter a name for your report.
+      * **Content Language:** Choose a language. A language button in the enrollment email lets users complete the survey in their chosen language.
+      * **Delivery Method:** Please select one of the options below.
+        * **Email:** If this option is enabled, the platform will send the survey content via email.
+        * **Microsoft Teams:** If this option is enabled, the platform will simultaneously send them the survey content via Microsoft Teams and Email.&#x20;
+        * **SMS Notification:** If this option enabled, the platform will simultaneously send them the survey content via Email and SMS.&#x20;
+        * **Training Delivery for Your LMS:** Select this option to distribute the survey content to your employees by uploading the survey scorm file onto your Learning Management System (LMS) platform. [Click here](training-library.md#how-to-launch-training-through-your-lms) to see details.
+      * **Schedule:** Select **Send Now** to send the survey content immediately, or arrange for it to be sent at a specific date and time using the **Schedule To** option.
+      * **Reminder:** Select this option if the platform should automatically send an email to employees to remind them to complete the survey with one of the following criteria:
+        * **when the user completes the training:** The users will receive reminder emails until the training is completed.
+        * **after occurrences:** The users will receive reminder emails N times that are specified by the admin.
+        * **on date:** The users will receive reminder emails until the specified date and time by the admin.
+      * **Certificate:** Select this option to send a certificate of completion when the user has completed the survey.
+      * **Auto-Enroll:** Choose this option to automatically send this survey email to new users added to a selected target group during the enrollment process.
+      * **Mark as Test:** Select this option to exclude this training report's statistics from platform reports.
+
+      On **Target Audience** page,
+
+      * Select your **target groups** that will receive the survey training item, and click the **Next** button.
+
+      On **Summary** page,
+
+      * A summary of the survey settings is available for review before sending the survey email.
+
+Click **Launch** to send the survey immediately, or click **Back** to update the settings or click on **Cancel** button to cancel enrollment.
+
 ## How to Create Training Materials
 
-You can follow the steps below to create one of the training materials like **Learning** **Path**, **Training**, **Poster**, **Infographic** or **Screensaver**.
+You can follow the steps below to create one of the training materials like **Learning** **Path**, **Training**, **Poster**, **Survey,** **Infographic** or **Screensaver**.
 
 Go to **Awareness Educator > Training Library** and then click **+ NEW** button on the right hand side of the page on the top. Select which training material you will create.
 
-### Create Learning Path
+### 1. Create Learning Path
 
 Follow the steps below to create Learning Path training.
 
@@ -343,7 +410,7 @@ Follow the steps below to create Learning Path training.
 
 You have created the learning path successfully. Now you can [send it](training-library.md#how-to-send-learning-path) and the employees will start from the beginning training content and go on to the end of the training content to complete the learning path training.&#x20;
 
-### Create Training
+### 2. Create Training
 
 Follow the steps below to create SCORM type of training.
 
@@ -362,7 +429,7 @@ Follow the steps below to create SCORM type of training.
 
 You have created the training successfully. Now you can [send it](training-library.md#how-to-send-training) and the employees can enroll the training via email or SMS.
 
-### Create Poster
+### 3. Create Poster
 
 Follow the steps below to create poster type of training.
 
@@ -381,7 +448,7 @@ Follow the steps below to create poster type of training.
 
 You have created the poster training successfully. Now you can [send it ](training-library.md#how-to-send-poster)and the employees can enroll the poster training via email or SMS.
 
-### Create Infographic
+### 4. Create Infographic
 
 Follow the steps below to create infographic type of training.
 
@@ -400,7 +467,7 @@ Follow the steps below to create infographic type of training.
 
 You have created the infographic training successfully. Now you can [send it ](training-library.md#how-to-send-poster)and the employees can enroll the infographic training via email or SMS.
 
-### Create Screensaver
+### 5. Create Screensaver
 
 Follow the steps below to create screensaver type of training.
 
@@ -418,6 +485,29 @@ Follow the steps below to create screensaver type of training.
 * Click **Save** to create the screensaver training.
 
 Your screensaver training has been created successfully. Now, you can [preview it](training-library.md#how-to-preview-screensaver), download it to your computer, and then deploy it to the employees' workstations. This will help raise awareness about cybersecurity in the workplace.
+
+### 6. Create Survey
+
+Follow the steps below to create a SCORM-type survey.
+
+{% hint style="danger" %}
+System administrators are not allowed to upload SCORM survey files to their company profile for a short period of time. You can contact the [support team](../../../resources/keepnet-support-help-desk.md) for them to prepare your survey and upload your company profile.
+{% endhint %}
+
+* On **Survey Info** page, please fill up the following each field as you wish and then click **Next**.
+  * **Survey Name:** Enter the name for the survey.
+  * **Description:** Enter a brief description of the survey.
+  * **Category:** Select a category for the survey.
+  * **Compliance:** Select the compliance categories that this survey covers.
+  * **Behaviour:**  Select the behaviors that this survey addresses, aims to educate employees.
+  * **Target Audience:** Select the target audience for the survey.
+  * **Tags:** Assign tags to the survey to facilitate search efforts.
+  * **Cover Image:** Upload the cover image for the survey. This cover image will be displayed when the admin uses the "grid view" option to display the training materials.
+  * **Make Available For:** Admin users with a Reseller role can make this survey content accessible to other companies.
+* On the **Survey** **Content** page, you can select the survey language and then upload your SCORM survey package. You can add additional languages and upload corresponding SCORM files, allowing you to create a multilingual surveys suited for organizations with a diverse workforce.
+* Click **Save** to create the survey content.
+
+You have created the survey content successfully. Now you can [send it](training-library.md#how-to-send-survey) and the employees can enroll the survey via Email, SMS, Microsoft Teams or LMS.
 
 ## **How to Launch Training** Through **Your LMS**
 
@@ -604,3 +694,7 @@ A: Certificates are not issued after each training module is completed. Instead,
 ### Q: Do reminders get sent exactly 24 hours after the user receives the training enrollment email?
 
 A:  The reminder email will be delivered at the same time as enrollment at the frequency you select, such as Daily, Weekly, or Monthly.
+
+### Q: Can I upload my custom Survey scorm file?
+
+A: No, system admins are not allowed to upload their Survey scorm files due to technical difficulties for a short period of time. Until then, the support team will help to prepare your survey and upload it to your company profile.
