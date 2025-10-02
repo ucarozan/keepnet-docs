@@ -88,7 +88,11 @@ Now you can click the **Save** button to create your scenario. Now, you are read
 
 ## How to Add a Scenario with Just-in-time Learning Page
 
-Phishing scenarios have two components: the phishing email template and the landing page. Follow the steps below to add a new phishing scenario that contains **just-in-time learning page** and a **red flags email template**:
+The **Just-in-time Learning Page** is an intelligent feature that automatically highlights warning signs (red flags) in simulated phishing emails. It provides employees with instant, contextual training at the exact moment of risk.
+
+To set this up, you first need to create both the **Just-in-time Learning Page** and the **Red Flag Email Template**. Once completed, you can combine them to build a phishing scenario and launch it to your employees.
+
+If you are ready, please follow the steps to create a scenario.
 
 {% hint style="warning" %}
 Before you proceed with this section, please make sure you have created the [just-in-time learning page](landing-pages.md#how-to-add-a-new-just-in-time-learning-page) and [red flag email template](email-templates.md#how-to-add-a-new-email-template-with-red-flags).&#x20;
