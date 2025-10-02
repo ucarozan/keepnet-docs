@@ -44,7 +44,7 @@ Follow the steps below to create a new email template for use in a new or existi
    9. **Import Email:** Use the three-dot button to import an MSG or EML file and customize it.
 4. Click **Edit** to make any changes or **Save** to complete the process.
 
-## How to Add a New Email Template with Red Flags
+## How to Add Email Template with Red Flags
 
 Follow the steps below to create a new email template with red flags for use in a new or existing phishing campaign:
 
