@@ -38,19 +38,19 @@ Follow the steps below to add a new landing page that you can use in a new or ex
 4. Under the **Phishing** **Link** field, you can enable the **"Stop bots to prevent false clicks"** feature to detect and stop bot activity automatically to prevent false clicks, ensuring genuine traffic to your phishing campaign.
 5. Click **Edit** to make any changes or **Save** to complete the process.
 
-## How to Add a New Landing Page Template with Red Flags
+## How to Add a New Just-in-time Learning Page
 
-Follow the steps below to add a new landing page with red flags that you can use in a new or existing phishing scenario:
+Follow the steps below to add a new just-in-time learning page that you can use in a new or existing phishing scenario:
 
 1. Go to **Phishing Simulator > Phishing Scenarios > Landing Page Templates** page.
-2. Search **'Red Flags Landing Page'** and click the **Duplicate** button to customize.
+2. Search **'Just-in-time Learning Page: Email Warning Signs'** and click the **Duplicate** button to customize.
 3. Customize any fields on the first **Template** **Info** page, then click **Next**.
 4. On the **Page Settings** page, provide the **Phishing Link:** the URL to be used in the phishing email.&#x20;
 5. Under the **Phishing** **Link** field, you can enable the **"Stop bots to prevent false clicks"** feature to detect and stop bot activity automatically to prevent false clicks, ensuring genuine traffic to your phishing campaign.
 6. Review your red flag landing page, or click the **Edit** button to customize it.
 7. Once you complete customization or review, click **Save** to complete the process.
 
-Once you create your red flag landing page, now click [here](phishing-scenarios.md#how-to-add-a-new-phishing-scenario-with-red-flags) to learn how to combine your red flag email template and red flag landing page in a scenario to be able to launch to your employees.&#x20;
+Once you create your just-in-time learning page, now click [here](phishing-scenarios.md#how-to-add-a-new-phishing-scenario-with-red-flags) to learn how to combine your red flag email template and just-in-time learning page in a scenario to be able to launch to your employees.&#x20;
 
 ## How to Add a new Landing Page with AI
 

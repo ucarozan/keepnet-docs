@@ -86,12 +86,12 @@ Phishing scenarios have two components: the phishing email template and the land
 
 Now you can click the **Save** button to create your scenario. Now, you are ready to launch your scenario either using [Fast Launch](phishing-scenarios.md#how-to-launch-a-phishing-campaign) or [Campaign Manager](../phishing-campaign-manager.md#create-a-campaign).
 
-## How to Add a New Phishing Scenario with Red Flags
+## How to Add a Scenario with Just-in-time Learning Page
 
-Phishing scenarios have two components: the phishing email template and the landing page. Follow the steps below to add a new phishing scenario that contains red flags of the email template and the landing page:
+Phishing scenarios have two components: the phishing email template and the landing page. Follow the steps below to add a new phishing scenario that contains **just-in-time learning page** and a **red flags email template**:
 
-{% hint style="danger" %}
-Before you proceed with this section, please make sure you have created the [red flag email template](email-templates.md#how-to-add-a-new-email-template-with-red-flags) and [red flag landing page](landing-pages.md#how-to-add-a-new-landing-page-template-with-red-flags).
+{% hint style="warning" %}
+Before you proceed with this section, please make sure you have created the [just-in-time learning page](landing-pages.md#how-to-add-a-new-just-in-time-learning-page) and [red flag email template](email-templates.md#how-to-add-a-new-email-template-with-red-flags).&#x20;
 {% endhint %}
 
 1. Click the **+NEW** button in the upper right corner of the **Phishing Simulator > Phishing Scenarios** page.
@@ -107,12 +107,12 @@ Before you proceed with this section, please make sure you have created the [red
    5. **Tags:** Define tags for the scenario.
    6. **Make Available For:** Make your scenario available to be used by the other customers under your organization. This feature is only available to admins who have Reseller permissions.&#x20;
    7. Click **Next** to go to the **Email** **Template** page.
-   8. On the **Email Template** pag&#x65;**, select the red flags email template** you created and then click the **Next** button.
-   9. On the **Landing Page** page, **select the red flags landing page** template and then click the **Next** button to move on to the **Summary** page.
+   8. On the **Email Template** pag&#x65;**,** select the **red flags email template** you created and then click the **Next** button.
+   9. On the **Landing Page** page, select the **just-in-time learning page** and then click the **Next** button to move on to the **Summary** page.
       1. If the **MFA** **method** is selected, you'll find a sub-menu titled **"MFA Settings"** on the **Landing** **Page**. Here, you can customize the "**Sender** **Phone** **Number"** and the text for the "**SMS** **Verification** **Message".**
    10. The **Summary** page provides you with an overview of the proposed phishing campaign, including the type of campaign, the targeted users, and other important details.
 
-Now you can click the **Save** button to create your scenario. Now, you are ready to launch your red flags scenario either using [Fast Launch](phishing-scenarios.md#how-to-launch-a-phishing-campaign) or [Campaign Manager](../phishing-campaign-manager.md#create-a-campaign).
+Now you can click the **Save** button to create your scenario. Now, you are ready to launch your just-in-time learning page scenario either using [Fast Launch](phishing-scenarios.md#how-to-launch-a-phishing-campaign) or [Campaign Manager](../phishing-campaign-manager.md#create-a-campaign).
 
 ## Video Tutorial
 

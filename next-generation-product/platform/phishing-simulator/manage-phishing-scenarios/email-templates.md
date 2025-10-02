@@ -62,7 +62,7 @@ Follow the steps below to create a new email template with red flags for use in 
 4. **Show Red Flags:** Click the button for AI Ally to scan the email template and highlight suspicious elements—such as mismatched sender addresses, fake buttons, or misleading icons—while employees are expected to spot these red flags on their own.
 5. Click **Edit** to make any changes or **Save** to complete the process.
 
-Once you save your email template, now click [here](landing-pages.md#how-to-add-a-new-landing-page-template-with-red-flags) to learn how to create a landing page with red flags.
+Once you save your email template, now click [here](landing-pages.md#how-to-add-a-new-landing-page-template-with-red-flags) to learn how to create and use the email template with just-in-time learning page.
 
 ## How to Add a New Email Template with AI
 
