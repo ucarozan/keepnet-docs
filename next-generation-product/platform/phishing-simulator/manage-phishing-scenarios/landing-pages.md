@@ -38,7 +38,7 @@ Follow the steps below to add a new landing page that you can use in a new or ex
 4. Under the **Phishing** **Link** field, you can enable the **"Stop bots to prevent false clicks"** feature to detect and stop bot activity automatically to prevent false clicks, ensuring genuine traffic to your phishing campaign.
 5. Click **Edit** to make any changes or **Save** to complete the process.
 
-## How to Add a New Just-in-time Learning Page
+## How to Add Just-in-time Learning Page
 
 Follow the steps below to add a new just-in-time learning page that you can use in a new or existing phishing scenario:
 
