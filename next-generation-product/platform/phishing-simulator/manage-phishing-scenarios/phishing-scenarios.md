@@ -86,7 +86,7 @@ Phishing scenarios have two components: the phishing email template and the land
 
 Now you can click the **Save** button to create your scenario. Now, you are ready to launch your scenario either using [Fast Launch](phishing-scenarios.md#how-to-launch-a-phishing-campaign) or [Campaign Manager](../phishing-campaign-manager.md#create-a-campaign).
 
-## How to Add a Scenario with Just-in-time Learning Page
+## How to Create a Scenario with Just-in-time Learning Page
 
 The **Just-in-time Learning Page** is an intelligent feature that automatically highlights warning signs (red flags) in simulated phishing emails. It provides employees with instant, contextual training at the exact moment of risk.
 
