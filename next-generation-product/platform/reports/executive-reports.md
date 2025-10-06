@@ -256,3 +256,9 @@ This tutorial provides a detailed description of the Executive Reports product. 
 
 
 {% embed url="https://youtu.be/Su-EAfyR_Lk" %}
+
+## **FAQ**
+
+### **Q: Do Executive Reports Include Bot Activity Data?**
+
+A: Bot Activity data is excluded to ensure that the data reflects genuine human engagement and provides accurate insights.

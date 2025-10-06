@@ -138,3 +138,6 @@ A: No, each report type focuses on a specific aspect of your organization's acti
 
 A: The data in the reports is as current as the last completed phishing or training campaign.&#x20;
 
+### **Q: Does Advanced Reports Include Bot Activity Data?**
+
+A: A: Bot Activity data is excluded to ensure that the data reflects genuine human engagement and provides accurate insights.
