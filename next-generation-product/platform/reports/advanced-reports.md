@@ -140,4 +140,4 @@ A: The data in the reports is as current as the last completed phishing or train
 
 ### **Q: Does Advanced Reports Include Bot Activity Data?**
 
-A: A: Bot Activity data is excluded to ensure that the data reflects genuine human engagement and provides accurate insights.
+A: Bot Activity data is excluded to ensure that the data reflects genuine human engagement and provides accurate insights.
