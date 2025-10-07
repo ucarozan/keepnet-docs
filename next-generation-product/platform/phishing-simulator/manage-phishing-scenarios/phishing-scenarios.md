@@ -92,6 +92,8 @@ The **Just-in-time Learning Page** is an intelligent feature that automatically 
 
 To set this up, you first need to create both the **Just-in-time Learning Page** and the **Red Flag Email Template**. Once completed, you can combine them to build a phishing scenario and launch it to your employees.
 
+[Here's a quick video tutorial! ](https://www.loom.com/share/e899debb32cb491b8e97c064fabb7a7a?sid=6b725e25-86e8-4269-b783-e8d2ef0d26d8)
+
 If you are ready, please follow the steps to create a scenario.
 
 {% hint style="warning" %}
