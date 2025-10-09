@@ -21,11 +21,12 @@ Some of our customers add custom fields to add information in addition to email,
 
 **Group Name:** If you would like to synch all users to one target group please select the group here. You can leave empty and group by department instead.
 
-**Grouping Criteria:** Synchronize users by their **Department** or **Custom Mapped Field.** Please leave this empt**y** if you want to synchronize users to **only one group.**
+**Grouping Criteria:** You must select one of these
 
-{% hint style="info" %}
-The users who don’t have mapped information will be synchronized to the target group that is chosen
-{% endhint %}
+* **Select a SCIM field to determine user groups:** Group users by department (or a custom mapped field such as location). This will group all users by the Entra ID property "Department"
+* **Synchronise groups with identity management platform:** Groups are mirrored directly from Entra ID. If you select a group called "Keepnet UK" on Entra ID, this group will be named exactly the same in Keepnet and contain the exact same users.
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-09 at 16.54.19.png" alt=""><figcaption></figcaption></figure>
 
 #### **Step 4: Copy your Secret Token**
 
