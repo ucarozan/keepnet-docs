@@ -48,6 +48,12 @@ Please follow the steps below to allow the '**Keepnet Security Awareness'** app 
 7. The **Keepnet Security Awareness** app will now show under **Installed apps**.
 8. Please make sure you click the **Save** button and then click **Confirm** to apply the changes.
 
+{% hint style="warning" %}
+After installing the Keepnet Security Awareness app, please allow up to 12 hours for changes to take effect in the Microsoft admin center.
+
+If the app takes longer than 12 hours to deploy, it could be due to a conflicting policy. For help with resolving conflicting custom policies in the Microsoft Admin Centre, please reach out to [Keepnet support](../../../../resources/keepnet-support-help-desk.md).
+{% endhint %}
+
 ## Additional Settings
 
 The following settings can be customised and used within the **Company > Company Settings > Microsoft Teams Settings** page.
