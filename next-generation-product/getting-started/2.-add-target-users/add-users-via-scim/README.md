@@ -38,7 +38,7 @@ Click **Save** and make sure to **copy the unique token information.**
 
 ### Shortcuts <a href="#shortcuts" id="shortcuts"></a>
 
-* ​[How to integrate Azure AD SCIM​](scim-setup-in-azure-ad.md)
+* ​[How to integrate Azure AD SCIM​](scim-setup-in-entra-id.md)
 * ​[How to integrate Okta SCIM](scim-setup-in-okta.md)​
 * [​How to integrate Onelogin SCIM​](scim-setup-in-onelogin.md)
 * ​[How to integrate Jumpcloud SCIM](scim-setup-in-jumpcloud.md)​

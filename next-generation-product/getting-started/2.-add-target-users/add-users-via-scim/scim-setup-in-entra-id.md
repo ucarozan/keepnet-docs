@@ -1,10 +1,10 @@
-# SCIM Setup in Azure AD
+# SCIM Setup in Entra ID
 
 This document shows how to synchronize users' information from the Azure AD identity provider to the platform. Please make sure to set up the mandatory settings from the ‘[SCIM Integration](./)’ page before following the below steps:
 
-1. [Add New Enterprise Application](scim-setup-in-azure-ad.md#add-new-enterprise-application)
-2. [Provisioning Settings](scim-setup-in-azure-ad.md#provisioning-settings)
-3. [Synchronize Users / Groups](scim-setup-in-azure-ad.md#synchronize-users-or-groups)
+1. [Add New Enterprise Application](scim-setup-in-entra-id.md#add-new-enterprise-application)
+2. [Provisioning Settings](scim-setup-in-entra-id.md#provisioning-settings)
+3. [Synchronize Users / Groups](scim-setup-in-entra-id.md#synchronize-users-or-groups)
 
 ## **Add New Enterprise Application** <a href="#add-new-enterprise-application" id="add-new-enterprise-application"></a>
 

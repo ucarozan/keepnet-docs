@@ -8,7 +8,7 @@
   * [2. Add Target Users](next-generation-product/getting-started/2.-add-target-users/README.md)
     * [Add Users via CSV](next-generation-product/getting-started/2.-add-target-users/add-users-via-csv.md)
     * [Add users via SCIM](next-generation-product/getting-started/2.-add-target-users/add-users-via-scim/README.md)
-      * [SCIM Setup in Azure AD](next-generation-product/getting-started/2.-add-target-users/add-users-via-scim/scim-setup-in-azure-ad.md)
+      * [SCIM Setup in Entra ID](next-generation-product/getting-started/2.-add-target-users/add-users-via-scim/scim-setup-in-entra-id.md)
       * [SCIM Setup in Okta](next-generation-product/getting-started/2.-add-target-users/add-users-via-scim/scim-setup-in-okta.md)
       * [SCIM Setup in Onelogin](next-generation-product/getting-started/2.-add-target-users/add-users-via-scim/scim-setup-in-onelogin.md)
       * [SCIM Setup in Jumpcloud](next-generation-product/getting-started/2.-add-target-users/add-users-via-scim/scim-setup-in-jumpcloud.md)
