@@ -8,7 +8,7 @@ Microsoft Teams integration allows you to send training notifications directly i
 * Tenant admin/global admin permission to grant consent during setup.
 * Keepnet platform access.
 
-## Enable the integration
+## Step 1: Enable the integration
 
 On **Company > Company Settings > Microsoft Teams Settings** you will see two access cards. Enable them in order:
 
@@ -34,6 +34,23 @@ Allows Keepnet to send training notifications to Teams.
 > Status banner: When both accesses are enabled you’ll see **Access complete. You can now send trainings via Teams**.
 
 ***
+
+### Step 2: Managing Setup Policies in Microsoft Teams
+
+Please follow the steps below to allow the '**Keepnet Security Awareness'** app within your Microsoft Teams.
+
+1. Log in to your [Microsoft Teams admin](https://admin.teams.microsoft.com/) center.
+2. In the sidebar on the left side, click **Teams** **apps** to expand a drop-down menu.
+3. Click **Setup** **policies** from the drop-down menu.
+4. On the **App** **setup** **policies** page, you will need to click the name of the policy your team is under. If your team is under the default global policy, click **Global (Org-wide default)**. If your team is under a custom policy, click that custom policy’s name.
+5. In the following **Global (Org-wide default)** or custom policy page, click **Add apps** under the **Installed** **Apps** field . A new sidebar will open on the right side of the screen.
+6. Use the search bar in the sidebar on the right side of the screen to search for the **'Keepnet Security Awareness'** app. **Select** the app and click **Add**.
+7. The **Keepnet Security Awareness** app will now show under **Installed apps**.
+8. Please make sure you click the **Save** button and then click **Confirm** to apply the changes.
+
+## Additional Settings
+
+The following settings can be customised and used within the **Company > Company Settings > Microsoft Teams Settings** page.
 
 ### Customize Bot Name
 
