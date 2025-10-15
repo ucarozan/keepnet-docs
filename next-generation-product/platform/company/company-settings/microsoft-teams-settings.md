@@ -69,11 +69,11 @@ Choose the display name that users will see as the sender in Teams.
 The bot name is not allowed to be updated at the moment, but it will be available to change in the future.
 {% endhint %}
 
-## Update Integration Version
+### Update Integration Version
 
 If Keepnet releases an integration update for Microsoft Teams, you may see an **Update Integration Version** button. Click it to apply the latest improvements.
 
-## Disable or Revoke Access
+### Disable or Revoke Access
 
 * If you need to remove Keepnet’s permissions from your Microsoft Teams tenant for some reason, click the **Disable** **Access** button.
 * You can re-enable it later by repeating **Enable the integration**.
