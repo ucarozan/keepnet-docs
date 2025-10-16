@@ -50,13 +50,14 @@ To complete this procedure, you must have security administrator privileges with
 
 1. Please ask for the list of the [phishing simulator](https://keepnetlabs.com/products/phishing-simulator) domains from [here](whitelisting-in-other-security-solutions.md#whitelisting-platform-addresses).
 2. Sign into the [**Microsoft Security & Compliance**](https://security.microsoft.com/) Center.
-3. Click **Policies and rules** from the left sidebar menu, click **Threat** **Policies** and select **Safe Links**.
-4. Click **Create**.
-5. Add a name and description for your safe links policy and click **Next**.
-6. Select your company domain to be included in this policy and click **Next**.
-7. Deselect the **"Track user clicks"** option and the **"Office 365 Apps"** option.
-8. Add the **phishing domains** [here](whitelisting-in-other-security-solutions.md#whitelisting-platform-addresses) by using **\*.domain.com/\*** wildcard syntax to the **Do not rewrite the following URLs** section.
-9. Click the **Next** button and select **Submit** to complete the process.
+3. Cick and open the **Email & Collaboration** menu from the left.
+4. Click **Policies and rules** from the left sidebar menu, click **Threat** **Policies** and select **Safe Links**.
+5. Click **Create**.
+6. Add a name and description for your safe links policy and click **Next**.
+7. Select your company domain to be included in this policy and click **Next**.
+8. Deselect the **"Track user clicks"** option and the **"Office 365 Apps"** option.
+9. Add the **phishing domains** [here](whitelisting-in-other-security-solutions.md#whitelisting-platform-addresses) by using **\*.domain.com/\*** wildcard syntax to the **Do not rewrite the following URLs** section.
+10. Click the **Next** button and select **Submit** to complete the process.
 
 ## How to Whitelist Using the Spam Filter Bypass Feature in Office 365
 
