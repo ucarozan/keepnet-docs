@@ -49,7 +49,7 @@ To complete this procedure, you must have security administrator privileges with
 {% endhint %}
 
 1. Please ask for the list of the [phishing simulator](https://keepnetlabs.com/products/phishing-simulator) domains from [here](whitelisting-in-other-security-solutions.md#whitelisting-platform-addresses).
-2. Sign into the **Microsoft Security & Compliance** Center.
+2. Sign into the [**Microsoft Security & Compliance**](https://security.microsoft.com/) Center.
 3. Click **Policies and rules** from the left sidebar menu, click **Threat** **Policies** and select **Safe Links**.
 4. Click **Create**.
 5. Add a name and description for your safe links policy and click **Next**.
