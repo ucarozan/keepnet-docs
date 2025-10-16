@@ -59,6 +59,10 @@ To complete this procedure, you must have security administrator privileges with
 9. Add the **phishing domains** [here](whitelisting-in-other-security-solutions.md#whitelisting-platform-addresses) by using **\*.domain.com/\*** wildcard syntax to the **Do not rewrite the following URLs** section.
 10. Click the **Next** button and select **Submit** to complete the process.
 
+{% hint style="warning" %}
+After creating the rule, it may not effect immediately, please wait a couple of hours before you test it.
+{% endhint %}
+
 ## How to Whitelist Using the Spam Filter Bypass Feature in Office 365
 
 The below instructions will show you how to whitelist the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by whitelisting the **Sender** **IPs** in the O365 environment in the **Bypass Spam Filter f**eature.
