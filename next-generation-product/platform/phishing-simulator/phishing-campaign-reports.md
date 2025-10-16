@@ -206,3 +206,7 @@ A: The differences are explained below.
 1. **Rule 1: User Agent Signatures:** We have a list of 10+ sandbox user agent patterns. If a user action matches these, it's flagged as sandbox activity.
 2. **Rule 2: Honeypot Link:** We embed invisible "Honeypot" links in our emails. While humans can't see or click them, sandboxes often access them, revealing their presence.
 3. **Rule 3: Request Header Analysis:** By examining request headers, we can identify unique characteristics that differentiate sandbox activities from real user actions.
+
+### Q: Some users failed to receive the simulation via DEC and show the error 'The process failed to get the correct properties.'
+
+A: If users did not receive the simulation email via DEC and show the error 'The process failed to get the correct properties' in the Sending Report section of the campaign report, it may indicate that these users have been deleted, do not have an email license, have no inbox, or have been deactivated. Please check the users in your Microsoft 365 admin panel to ensure they are all active and have a valid mailbox license.
