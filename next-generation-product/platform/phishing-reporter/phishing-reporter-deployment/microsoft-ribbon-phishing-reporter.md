@@ -184,10 +184,7 @@ When enabled, the Phishing Reporter add-in acts as a **trusted service** with or
 
 #### Delegated vs Application-Level Access
 
-| Access Type              | Description                                                          | Scope       | Typical Use Case                                                                                              |
-| ------------------------ | -------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------- |
-| Delegated Access         | Add-in acts on behalf of a user, limited by that user’s permissions. | User-based  | When a user reports a phishing email from Outlook.                                                            |
-| Application-Level Access | Add-in acts as itself, using admin-granted permissions.              | Tenant-wide | When the Phishing Reporter add-in performs identity mapping, mailbox scans, or Conditional Access operations. |
+<table><thead><tr><th width="140.97265625">Access Type</th><th width="213.6640625">Description</th><th width="131.3828125">Scope</th><th>Typical Use Case</th></tr></thead><tbody><tr><td>Delegated Access</td><td>Add-in acts on behalf of a user, limited by that user’s permissions.</td><td>User-based</td><td>When a user reports a phishing email from Outlook.</td></tr><tr><td>Application-Level Access</td><td>Add-in acts as itself, using admin-granted permissions.</td><td>Tenant-wide</td><td>When the Phishing Reporter add-in performs identity mapping, mailbox scans, or Conditional Access operations.</td></tr></tbody></table>
 
 #### Why Application-Level Access Is Required
 
