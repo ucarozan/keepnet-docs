@@ -74,7 +74,7 @@ Here is an example view of the **Microsoft Page View Phishing Reporter** button 
 2. Once customization is complete, stay on the **Settings** tab. Scroll down to the bottom and click **Manage and Download**. A pop-up will appear — select **Authorize** for **Delegated** **Access** to proceed.
 
 {% hint style="warning" %}
-Suggested to authorize **Application-Level Access** only for organizations using Conditional Access or Advanced Identity Policies, since managed device or policy restrictions may cause token acquisition to fail when using delegated permissions.
+Suggested to authorize **Application-Level Access** only for organizations using Conditional Access or Advanced Identity Policies, since managed device or policy restrictions may cause token acquisition to fail when using delegated permissions. Please click [here](microsoft-page-view-phishing-reporter.md#troubleshooting-microsoft-graph-authentication-error-aadsts530004) for more information.
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 10.17.18.png" alt="" width="563"><figcaption><p>Picture 3: Download Button panel on Phishing Reporter page</p></figcaption></figure>

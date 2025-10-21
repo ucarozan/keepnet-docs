@@ -53,7 +53,7 @@ The Microsoft Ribbon Phishing Reporter supports installation for [shared mailbox
 3. Click '**Authorize'** for **Delegated Access** permissions.
 
 {% hint style="warning" %}
-Suggested to authorize **Application-Level Access** only for organizations using Conditional Access or Advanced Identity Policies, since managed device or policy restrictions may cause token acquisition to fail when using delegated permissions.
+Suggested to authorize **Application-Level Access** only for organizations using Conditional Access or Advanced Identity Policies, since managed device or policy restrictions may cause token acquisition to fail when using delegated permissions. Please click [here](microsoft-ribbon-phishing-reporter.md#troubleshooting-microsoft-graph-authentication-error-aadsts530004) for more information.
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 10.17.18.png" alt="" width="563"><figcaption></figcaption></figure>
