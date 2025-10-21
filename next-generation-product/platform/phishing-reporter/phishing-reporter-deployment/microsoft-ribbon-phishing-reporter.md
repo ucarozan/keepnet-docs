@@ -51,7 +51,7 @@ The Microsoft Ribbon Phishing Reporter supports installation for [shared mailbox
 1. Customize [Phishing Reporter](../phishing-reporter-customization.md) for your organization's needs
 2. Go to **Phishing Reporter,** scroll down to the bottom and click the **Manage and Download** button.
 3. Click '**Authorize'** for **Delegated Access** permissions.
-4. Suggested to authorize **Application-Level Access** only for organizations using Conditional Access or Advanced Identity Policies, since managed device or policy restrictions may cause token acquisition to fail when using delegated permissions. See more details here.
+4. Suggested to authorize **Application-Level Access** only for organizations using Conditional Access or Advanced Identity Policies, since managed device or policy restrictions may cause token acquisition to fail when using delegated permissions.
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 10.17.18.png" alt="" width="563"><figcaption></figcaption></figure>
 
