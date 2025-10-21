@@ -165,6 +165,78 @@ It is recommended because:
 
 **Try Enabling "New Outlook"** as suggested.
 
+### Troubleshooting: Microsoft Graph Authentication Error (AADSTS530004)
+
+The following issue occurs because **Microsoft Conditional Access** requires devices or sessions to be compliant before granting access to protected resources. When the **Keepnet Phishing Reporter** **add-in** attempts to connect via **Delegated Access** (i.e., on behalf of a signed-in user), the organization’s Conditional Access policies may block the request if it does not originate from a compliant or trusted device.
+
+This is common when:
+
+* The organization enforces device compliance via Intune or Azure AD.
+* The user accessing the Phishing Reporter add-in is considered an external identity.
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 16.05.58.png" alt="Screenshot reference of the error:" width="375"><figcaption></figcaption></figure>
+
+#### Solution: Enable Application-Level Permission
+
+#### What Is Application-Level Access?
+
+**Application-level permissions** allow the **Keepnet Phishing Reporter add-in** to access Microsoft 365 mailboxes and perform phishing reporting tasks **without requiring a signed-in user**. The add-in authenticates using its own identity instead of a user’s.
+
+When enabled, the Phishing Reporter add-in acts as a **trusted service** with organization-wide permissions granted by an administrator. This ensures that Keepnet can operate under Conditional Access, perform automated operations, and maintain consistent behavior even when users are not logged in.
+
+#### Delegated vs Application-Level Access
+
+| Access Type              | Description                                                          | Scope       | Typical Use Case                                                                                              |
+| ------------------------ | -------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------- |
+| Delegated Access         | Add-in acts on behalf of a user, limited by that user’s permissions. | User-based  | When a user reports a phishing email from Outlook.                                                            |
+| Application-Level Access | Add-in acts as itself, using admin-granted permissions.              | Tenant-wide | When the Phishing Reporter add-in performs identity mapping, mailbox scans, or Conditional Access operations. |
+
+#### Why Application-Level Access Is Required
+
+If your organization enforces **Conditional Access**, **device compliance**, or **automated identity** **checks**, Delegated Access will fail because it depends on the user’s compliance state.
+
+**Application-Level Access** ensures:
+
+* **Uninterrupted operation** of the Phishing Reporter add-in across all mailboxes.
+* **Centralized and consistent access** across departments and tenants.
+* **Secure authentication** compatible with Conditional Access requirements.
+
+#### When to Use Application-Level Access
+
+Use Application-Level Access if:
+
+* You require organization-wide authentication for all users.
+* Conditional Access or advanced identity enforcement is active.
+* Consistency across departments/regions is needed.
+
+#### Security Notes
+
+* **Admin Consent Required:** Only global administrators can grant Application-Level permissions.
+* **Least Privilege Principle:** Assign only the permissions needed for the Phishing Reporter add-in to operate.
+* **Governance:** Regularly audit app-only permissions to ensure compliance.
+
+#### Keepnet Recommendation
+
+Use **Application-Level Access** for:
+
+* Reliable, organization-wide authentication and identity mapping.
+* Compatibility with Conditional Access and advanced identity controls.
+
+Keep **Delegated Access** for:
+
+* End-user actions like phishing report submission from the Outlook ribbon.
+
+#### Additional References
+
+* [Microsoft Docs: Conditional Access and Compliant Devices](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-all-users-device-compliance)
+* [Microsoft Docs: On-Behalf-Of Flow](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-on-behalf-of-flow)
+
+#### Summary
+
+This error (AADSTS530004) indicates that your Microsoft 365 tenant blocks delegated access under Conditional Access rules.
+
+To resolve it, configure Application-Level Access (App-only) for the Keepnet Phishing Reporter add-in and reauthorize the application with admin consent
+
 ## How Microsoft Ribbon Phishing Reporter Buttons Look on Outlook Platforms
 
 **Microsoft Ribbon Phishing Reporter** helps users report suspicious emails quickly and easily across multiple email platforms. This section visually showcases how the Phishing Reporter button appears in different environments—**Outlook Desktop (New/Classic)**, **Outlook Web (OWA)**, **Outlook on** **Mac**, **Mobile (IOS/Android)**.
