@@ -176,8 +176,6 @@ This is common when:
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 16.05.58.png" alt="Screenshot reference of the error:" width="375"><figcaption></figcaption></figure>
 
-#### Solution: Enable Application-Level Permission
-
 #### What Is Application-Level Access?
 
 **Application-level permissions** allow the **Keepnet Phishing Reporter add-in** to access Microsoft 365 mailboxes and perform phishing reporting tasks **without requiring a signed-in user**. The add-in authenticates using its own identity instead of a user’s.
