@@ -72,7 +72,10 @@ Here is an example view of the **Microsoft Page View Phishing Reporter** button 
 
 1. Before deploying the button, we recommend customizing it. This can be done in the **Add-In Settings** tab under the [Phishing Reporter](../phishing-reporter-customization.md) menu on the Keepnet platform.
 2. Once customization is complete, stay on the **Settings** tab. Scroll down to the bottom and click **Manage and Download**. A pop-up will appear — select **Authorize** for **Delegated** **Access** to proceed.
-3. Suggested to authorize **Application-Level Access** only for organizations using Conditional Access or Advanced Identity Policies, since managed device or policy restrictions may cause token acquisition to fail when using delegated permissions.
+
+{% hint style="warning" %}
+Suggested to authorize **Application-Level Access** only for organizations using Conditional Access or Advanced Identity Policies, since managed device or policy restrictions may cause token acquisition to fail when using delegated permissions.
+{% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 10.17.18.png" alt="" width="563"><figcaption><p>Picture 3: Download Button panel on Phishing Reporter page</p></figcaption></figure>
 
