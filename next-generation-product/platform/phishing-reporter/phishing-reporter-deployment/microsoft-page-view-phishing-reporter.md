@@ -71,9 +71,10 @@ Here is an example view of the **Microsoft Page View Phishing Reporter** button 
 ### How to Install the Microsoft Page View Phishing Reporter&#x20;
 
 1. Before deploying the button, we recommend customizing it. This can be done in the **Add-In Settings** tab under the [Phishing Reporter](../phishing-reporter-customization.md) menu on the Keepnet platform.
-2. Once customization is complete, stay on the **Settings** tab. Scroll down to the bottom and click **Manage and Download**. A pop-up will appear—select **Connect** **Account** to proceed.
+2. Once customization is complete, stay on the **Settings** tab. Scroll down to the bottom and click **Manage and Download**. A pop-up will appear — select **Authorize** for **Delegated** **Access** to proceed.
+3. If your organization is using **Conditional** **Access** or **Advanced** **Identity** **Policies**, which may affect the reporter button not working, please authorize the **Application-Level Access** too.
 
-<figure><img src="../../../../.gitbook/assets/image (82).png" alt=""><figcaption><p>Picture 3: Download Button panel on Phishing Reporter page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 10.17.18.png" alt="" width="563"><figcaption><p>Picture 3: Download Button panel on Phishing Reporter page</p></figcaption></figure>
 
 3. Log in to your [Microsoft 365](https://admin.microsoft.com/) account using your **global admin credentials**.
 4. Once you log in, the **Permissions** **requested** pop-up window will display. Read the permissions, then click **Accept**.
@@ -101,7 +102,7 @@ Below is a breakdown of the permissions required and their purpose:
 
 5. Once you accept the permissions, the **GRAPH Authorization Successful** window will display.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-05-21 at 14.30.48.png" alt=""><figcaption><p>Picture 5: Graph Authorization Successfull message on Phishing Reporter page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 10.31.25.png" alt="" width="563"><figcaption><p>Picture 5: Graph Authorization Successfull message on Phishing Reporter page</p></figcaption></figure>
 
 6. Click the **Download** button for the **Page** **View** button under the **Microsoft** **365** to download the **Microsoft365PhishingReporterAddin.xml** file.
 7. In a new tab of your browser, log in to your [**Microsoft 365 admin center**](https://admin.microsoft.com/).

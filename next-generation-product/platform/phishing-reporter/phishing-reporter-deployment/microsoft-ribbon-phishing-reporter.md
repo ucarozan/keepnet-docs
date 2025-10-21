@@ -40,7 +40,7 @@ The following table identifies which Outlook clients support the integrated spam
 
 ### Prerequisites
 
-Before you can install the Microsoft Ribbon Phishing Reporter for your organization, your organization will need to have a Microsoft 365 mail server and license. The Phishing Reporter is compatible with the following email clients and requirements.
+Before you can install the Microsoft Ribbon Phishing Reporter for your organization, your organization will need to have a Microsoft 365 mail server and license. The Phishing Reporter is compatible with the above email clients and requirements.
 
 {% hint style="danger" %}
 The Microsoft Ribbon Phishing Reporter supports installation for [shared mailboxes](https://learn.microsoft.com/en-us/microsoft-365/admin/email/about-shared-mailboxes?view=o365-worldwide). This feature requires that Graph API and Nested App Authentication single sign-on (NAA-SSO) permissions are authorized in your Microsoft 365 tenant. See installation steps 5 through 9 below for how to authorize these permissions.
@@ -49,18 +49,20 @@ The Microsoft Ribbon Phishing Reporter supports installation for [shared mailbox
 ### How to Install the Microsoft Ribbon Phishing Reporter&#x20;
 
 1. Customize [Phishing Reporter](../phishing-reporter-customization.md) for your organization's needs
-2. Go to **Phishing Reporter > Manage and Download** section and click **“Connect Account”**
+2. Go to **Phishing Reporter,** scroll down to the bottom and click the **Manage and Download** button.
+3. Click '**Authorize'** for **Delegated Access** permissions.
+4. If your organization is using **Conditional** **Access** or **Advanced** **Identity** **Policies**, which may affect the reporter button not working, please authorize the **Application-Level Access** too.
 
-<figure><img src="../../../../.gitbook/assets/image11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 10.17.18.png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. Log in to your Microsoft 365 account using your admin credentials.
 4. Once you log in, the **Permissions** **requested** pop-up window will display. Read the permissions, then click **Accept**.
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-05-28 at 11.34.26 (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-5. Once you accept the permissions, the GRAPH Authorization Successful window will display.
+5. Once you accept the permissions, the GRAPH APIs Authorization Successful window will display.
 
-<figure><img src="../../../../.gitbook/assets/image2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 10.31.25.png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. Click the **Download** icon below the **Microsoft** **Ribbon** **Phishing** **Reporter** option to download the **PhishingReporterRibbon.xml** file.
 7. In a new tab of your browser, log in to your **Microsoft 365 admin center**.
