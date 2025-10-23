@@ -64,3 +64,22 @@ If not already installed:
 * **Policy Conflicts:** Custom email policies on the customer’s Microsoft tenant could block or redirect reported emails, affecting Keepnet’s tracking.
 * **Server Downtime:** Temporary unavailability of Microsoft or Keepnet’s email servers can result in reporting delays.
 
+## How to Send Only Simulation Emails to Keepnet
+
+If your organisation doesn't prefer to send all reported emails via the Microsoft button to Keepnet for analysis and reporting, you can only send simulation emails to Keepnet.
+
+To do this, please follow the steps below.
+
+1. Please first complete the [Step 1](integrating-microsoft-phishing-reporting-button-with-keepnet.md#step-1-create-a-shared-mailbox-for-reports) , [Step 2](integrating-microsoft-phishing-reporting-button-with-keepnet.md#step-2-set-up-a-mail-flow-rule)  and [Step 3](integrating-microsoft-phishing-reporting-button-with-keepnet.md#step-3-configure-the-microsoft-phishing-reporting-add-in) sections.
+2. Log in to the [Microsoft 365 Admin Centre](https://admin.exchange.microsoft.com/) and open the Exchange Admin Centre.
+3. Go to **Mail Flow > Rules** and edit the rule that you recently created.
+4. Click the **+** button next to **'Apply this rule if'** condition to create an **AND** condition.
+5. Select **'The subject or body'** and then select **'subject or body matches these text patterns'** option.
+6. Add this **'x-keepnet-tid: \[0-9a-zA-Z]+'** to the text field.
+7. Click the **Save** button to apply the changes.
+
+Here is a screenshot reference of the above rule:
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-10-23 at 11.26.51.png" alt="" width="375"><figcaption></figcaption></figure>
+
+Now, when an employee reports an email by using the Microsoft Phishing Reporter button, only simulation emails will be sent to Keepnet; any other emails will not be sent to Keepnet.
