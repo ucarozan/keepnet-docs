@@ -177,7 +177,7 @@ This is common when:
 * The organization enforces device compliance via Intune or Azure AD.
 * The user accessing the Phishing Reporter add-in is considered an external identity.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 16.05.58.png" alt="Screenshot reference of the error:" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (3).png" alt="Screenshot reference of the error:" width="375"><figcaption></figcaption></figure>
 
 #### What Is Application-Level Access?
 
