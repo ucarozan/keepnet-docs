@@ -72,7 +72,7 @@ To do this, please follow the steps below.
 
 1. Please first complete the [Step 1](integrating-microsoft-phishing-reporting-button-with-keepnet.md#step-1-create-a-shared-mailbox-for-reports) , [Step 2](integrating-microsoft-phishing-reporting-button-with-keepnet.md#step-2-set-up-a-mail-flow-rule)  and [Step 3](integrating-microsoft-phishing-reporting-button-with-keepnet.md#step-3-configure-the-microsoft-phishing-reporting-add-in) sections.
 2. Log in to the [Microsoft 365 Admin Centre](https://admin.exchange.microsoft.com/) and open the Exchange Admin Centre.
-3. Go to **Mail Flow > Rules** and edit the rule that you recently created.
+3. Go to **Mail Flow > Rules** and **edit the rule** that you recently created.
 4. Click the **+** button next to **'Apply this rule if'** condition to create an **AND** condition.
 5. Select **'The subject or body'** and then select **'subject or body matches these text patterns'** option.
 6. Add this **'x-keepnet-tid: \[0-9a-zA-Z]+'** to the text field.
