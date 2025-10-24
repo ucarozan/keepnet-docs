@@ -173,7 +173,7 @@ Deleting a target user group will not delete the users defined in the group. It 
 
 ## **Repeat Offenders**
 
-**Repeat Offenders** is an automated target group that includes users who have been phished two or more times in the last 3 months across all phishing simulation campaigns such as from Vishing Simulator, Quishing Simulator, Phishing Simulator, Callback Simulator and Smishing Simulator. You can view the risky users and send them training more frequently.&#x20;
+**Repeat Offenders** is an automated target group that includes users who have been phished two or more times in the last 2 months across all phishing simulation campaigns such as from Vishing Simulator, Quishing Simulator, Phishing Simulator, Callback Simulator and Smishing Simulator. You can view the risky users and send them training more frequently.&#x20;
 
 There are two ways to see the repeat offender users.
 
