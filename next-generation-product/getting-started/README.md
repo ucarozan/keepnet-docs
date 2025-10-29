@@ -12,6 +12,6 @@ This Getting Started guide will be your key resource in successfully implementin
 4. ​[Setup Phishing Reporter​](6.-setup-phishing-reporter/)
 5. [​Incident Responder Setup](7.-incident-responder-setup/) (Only for customers who have Incident Responder product)&#x20;
 
-(Optional) [Track Opened Emails](4.-track-opened-emails.md)
+(Recommended) [Track Opened Emails](recommended-track-opened-emails.md)
 
-(Optional) [Allow Phishing URLs](5.-allow-phishing-urls/)
+(Recommended) [Allow Phishing URLs](recommended-add-domains-to-url-protection/)

@@ -84,7 +84,7 @@ In the logs, you should see activities such as **"Created mailbox item"**, confi
 
 This log indicates that the application is only creating mailbox items and not accessing or reading mailboxes.
 
-✅ **You have now ensured your target users will receive emails through Keepnet. Now you need to** [**Whitelist Domains**](../../5.-allow-phishing-urls/) **so your target users can successfully open Keepnet email links. ➡️**
+✅ **You have now ensured your target users will receive emails through Keepnet. Now you need to** [**Whitelist Domains**](../../recommended-add-domains-to-url-protection/) **so your target users can successfully open Keepnet email links. ➡️**
 
 ## Video Tutorial
 

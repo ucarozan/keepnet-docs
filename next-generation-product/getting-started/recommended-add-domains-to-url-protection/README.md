@@ -1,4 +1,4 @@
-# (Optional) Add domains to URL Protection
+# (Recommended) Add domains to URL Protection
 
 {% hint style="info" %}
 **Why is this Optional?** Not every customer has SafeLinks or URL Protection setup. This step is only necessary for customers who use a URL Protection tool and need to allow Keepnet domains.
@@ -8,7 +8,7 @@ Without this step, your employees will successfully receive the test phishing em
 
 **Below are quick links for you to follow the relevant steps:**&#x200B;
 
-[Whitelist for Office 365](whitelist-for-office-365.md)
+[Whitelist for Office 365](whitelist-for-microsoft-365.md)
 
 [​​Whitelist for Google Workspace](whitelist-for-google-workspace.md)
 
