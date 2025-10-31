@@ -626,6 +626,8 @@ Please follow the steps below:
    6. Enrollment after Failed in a Simulation
    7. Enrollment Reminder
    8. Certificate
+   9. Survey Reminder
+   10. Survey Enrollment
 4. Please **Save** your changes.
 5. As a final step, please click the **More** button under the **Actions** column and make each notification template above **Default** by clicking the **Make** **Default** button.
 
