@@ -54,16 +54,7 @@ If Proofpoint allows per-group settings, apply the forwarding to the groups you�
 
 (Your Keepnet UI may look different — this is a representative example.)
 
-| Field             | Example                                                  |
-| ----------------- | -------------------------------------------------------- |
-| Reporter          | jane.doe@yourcompany.com                                 |
-| Report Time       | 2025-10-27 09:12:03 (Europe/London)                      |
-| Subject           | Urgent: Password Expiry Notice                           |
-| Original Sender   | payroll@fakesender.com                                   |
-| Campaign          | Q4 Security Awareness — Payroll Phish                    |
-| Report Type       | Simulated (auto-linked to campaign)                      |
-| Action Taken      | Scanned by Incident Responder; quarantined in 12 inboxes |
-| Human Risk Impact | +0.6 on Reporter Score (improved)                        |
+<table><thead><tr><th width="227.546875">Field</th><th>Example</th></tr></thead><tbody><tr><td>Reporter</td><td>jane.doe@yourcompany.com</td></tr><tr><td>Report Time</td><td>2025-10-27 09:12:03 (Europe/London)</td></tr><tr><td>Subject</td><td>Urgent: Password Expiry Notice</td></tr><tr><td>Original Sender</td><td>payroll@fakesender.com</td></tr><tr><td>Campaign</td><td>Q4 Security Awareness — Payroll Phish</td></tr><tr><td>Report Type</td><td>Simulated (auto-linked to campaign)</td></tr><tr><td>Action Taken</td><td>Scanned by Incident Responder; quarantined in 12 inboxes</td></tr><tr><td>Human Risk Impact</td><td>+0.6 on Reporter Score (improved)</td></tr></tbody></table>
 
 ## What Keepnet will do after receiving a report
 
