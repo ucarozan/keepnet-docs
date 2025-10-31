@@ -54,8 +54,9 @@ If Proofpoint allows per-group settings, apply the forwarding to the groups youâ
 
 (Your Keepnet UI may look different â€” this is a representative example.)
 
-| Reporter          | jane.doe@yourcompany.com                                 |
+| Field             | Example                                                  |
 | ----------------- | -------------------------------------------------------- |
+| Reporter          | jane.doe@yourcompany.com                                 |
 | Report Time       | 2025-10-27 09:12:03 (Europe/London)                      |
 | Subject           | Urgent: Password Expiry Notice                           |
 | Original Sender   | payroll@fakesender.com                                   |
