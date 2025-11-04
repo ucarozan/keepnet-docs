@@ -84,4 +84,20 @@ A: Yes. The resend function allows you to send the smishing campaign to the user
 
 ### Q: Can I check if SMS messages are delivered successfully to the employees?
 
-A: Yes. The **Sending** **Report** menu  provides you with a view of SMS message delivery to the employee's phone number.
+A: Yes. The **Sending** **Report** menu provides you with a view of SMS message delivery to the employee's phone number.
+
+### **Q: Why SMS Messages Are Not Delivered to Some Users?**
+
+**A:** If you hover over the **Not Delivered** status and see one of the following messages:
+
+* `SMS sending failed. StatusCode: 251, Description: Message successfully sent out for delivery, however final confirmation of delivery to handset was not received.`
+* `SMS sending failed. StatusCode: 207, Description: Error delivering message to handset (reason unknown).`
+
+It indicates that the SMS message was either **blocked by the mobile carrier due to spam-related content** or the **landing page domain used in your scenario was flagged as spam**.
+
+To resolve this issue:
+
+1. Edit your **SMS Template**, then click the **ENHANCE** button to regenerate and optimize the message.
+2. Edit your **Landing Page**, and **update the domain** with another available one from your domain list.
+
+After making these changes, try sending the campaign again.
