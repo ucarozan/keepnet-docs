@@ -76,7 +76,7 @@
   * [💬 Communication Tips](next-generation-product/customer-success/communication-tips/README.md)
     * [New Phishing Reporter Button Announcement](next-generation-product/customer-success/communication-tips/new-phishing-reporter-button-announcement.md)
     * [New Training Provider Announcement](next-generation-product/customer-success/communication-tips/new-training-provider-announcement.md)
-  * [FAQs](next-generation-product/customer-success/faqs.md)
+  * [🧠 FAQs](next-generation-product/customer-success/faqs.md)
   * [💡 Best Practise](next-generation-product/customer-success/best-practise/README.md)
     * [📊 Build a CISO Report](next-generation-product/customer-success/best-practise/build-a-ciso-report.md)
     * [Incident Responder: Notify a Specific Inbox](next-generation-product/customer-success/best-practise/incident-responder-notify-a-specific-inbox.md)
