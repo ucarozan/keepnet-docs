@@ -19,3 +19,9 @@ A: Great idea! When you copy the HTML of the Red Flags landing page to use as a 
 [**https://www.loom.com/share/79889043685147479f35c80696442723**](https://www.loom.com/share/79889043685147479f35c80696442723)
 
 We're also going to be improving the customer experience for adding 2nd landing pages which will allow you to select an existing landing page for page 2 without copying HTML at all!&#x20;
+
+**Q: What is Bot Activity and why might I see it on my Campaign Report?**
+
+Bot Activity means something has scanned the link on your phishing email. This could be a security tool, a chrome extension or an analysis engine. Keepnet has highly sophisticated methods of detecting bot activity to ensure your reports only include the human activity of your employees. Here is an explainer deck which covers each Bot Activity type in more detail 👇
+
+{% file src="../../.gitbook/assets/BOT ACTIVITY EXPLAINED.pdf" %}
