@@ -25,3 +25,7 @@ We're also going to be improving the customer experience for adding 2nd landing 
 Bot Activity means something has scanned the link on your phishing email. This could be a security tool, a chrome extension or an analysis engine. Keepnet has highly sophisticated methods of detecting bot activity to ensure your reports only include the human activity of your employees. Here is an explainer deck which covers each Bot Activity type in more detail 👇
 
 {% file src="../../.gitbook/assets/BOT ACTIVITY EXPLAINED.pdf" %}
+
+**Q: How do I remove users from the platform if I've used SCIM to pull in from Entra ID?**
+
+To remove users from Keepnet when connected to Entra ID, please go to portal.azure.com and find the Enterprise Application you made for Keepnet SCIM. Navigate to **Users & Groups** and manage users from here. Add and remove users to Keepnet from this application. Microsoft updates Keepnet every 40 minutes!&#x20;
