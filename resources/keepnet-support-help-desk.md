@@ -4,7 +4,7 @@ This page explains how to obtain support from the Keepnet support team, as well 
 
 ## How to Use **Keepnet Help Desk**
 
-**Keepnet Help Desk** helps users to create support tickets and get support requests. **Users will soon** be able to create their own user account to access their support portal through the platform, where they can create, track, delete, or reopen their support requests.&#x20;
+**Keepnet Help Desk** helps users to create support tickets and get support requests. **Users will soon** be able to create their own user account to access their support portal through the help desk website, where they can create, track, delete, or reopen their support requests.&#x20;
 
 For now, see how to get support from Keepnet below:
 
