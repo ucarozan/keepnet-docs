@@ -137,7 +137,7 @@ Keepnet has developed a new feature that automatically encrypts all files sent o
 
 AES encryption is a widely used encryption algorithm that is considered to be highly secure and is widely used by governments, financial institutions, and other organizations that need to protect sensitive data. Keepnet's encryption feature uses AES encryption with a randomly generated key to encrypt files, which are stored on its servers. The files can only be accessed by authorized services with the correct decryption key. By using Keepnet's encryption feature, users can rest assured that their files are protected against security threats without needing to worry about any additional steps or features.
 
-For more information, please [contact us.](https://support.keepnetlabs.com/portal/en/home)
+For more information, please [contact us](keepnet-support-help-desk.md).
 
 ## Policies
 

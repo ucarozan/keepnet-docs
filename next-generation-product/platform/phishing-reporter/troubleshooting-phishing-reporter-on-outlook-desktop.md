@@ -172,6 +172,6 @@ System.Net.Http.HttpRequestException: An error occurred while sending the reques
 If the above steps don't resolve your issue, it's suggested to ask for assistance from the Keepnet support team. There are two primary ways to get in touch with them:
 
 1. **Email:** You can send an email to [support@keepnetlabs.com](mailto:support@keepnetlabs.com). Make sure to include all relevant details about your problem, such as your Outlook version, OS version, and any other pertinent information about your system.
-2. **Support Portal:** Alternatively, you can submit a ticket directly via the Keepnet Labs support portal at [https://support.keepnetlabs.com/portal/en/home](https://support.keepnetlabs.com/portal/en/home).
+2. **Support Portal:** Alternatively, you can submit a ticket directly via the Keepnet Help Desk support portal at [https://help.keepnetlabs.com/](https://help.keepnetlabs.com/).
 
 For additional information on how to contact support, please refer to our [Help Desk](../../../resources/keepnet-support-help-desk.md) documentation.
