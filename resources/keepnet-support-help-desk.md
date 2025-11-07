@@ -1,10 +1,12 @@
 # Customer Help Desk
 
-## Customer Help Desk
+This page explains how to obtain support from the Keepnet support team, as well as provides information related to the support cycle, support ticket prioritisation and scope.
 
-**Customer Help Desk** helps users to create support tickets and get support requests. **Users will soon** be able to create their own user account to access their support portal through the platform, where they can create, track, delete, or reopen their support requests. &#x20;
+## How to Use **Keepnet Help Desk**
 
-## How to Use **Keepnet Help Desk**:&#x20;
+**Keepnet Help Desk** helps users to create support tickets and get support requests. **Users will soon** be able to create their own user account to access their support portal through the platform, where they can create, track, delete, or reopen their support requests.&#x20;
+
+For now, see how to get support from Keepnet below:
 
 1. Go to the **Keepnet Help Desk** from the link [here](https://help.keepnetlabs.com/).
 2. Click the **Messenger** button at the bottom, on the right of the page.
