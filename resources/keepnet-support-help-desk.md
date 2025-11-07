@@ -2,19 +2,16 @@
 
 ## Customer Help Desk
 
-**Customer Help Desk** helps users to create support tickets and get support requests. Users can create their user account to access their own support portal through the platform and can create, track, delete, or reopen your support requests. &#x20;
+**Customer Help Desk** helps users to create support tickets and get support requests. **Users will soon** be able to create their own user account to access their support portal through the platform, where they can create, track, delete, or reopen their support requests. &#x20;
 
-## How to Use **Customer Help Desk**:&#x20;
+## How to Use **Keepnet Help Desk**:&#x20;
 
-1-  Go to the **Customer Help Desk** from the link [here](https://support.keepnetlabs.com/portal/en/home).\
-2- Create a new user on the **Sign Up** page.\
-3- Verify the user's password using the confirmation email sent to your inbox.\
-4- After creating the username and password, log in to the support portal from the **Sign In** page.
+1. Go to the **Keepnet Help Desk** from the link [here](https://help.keepnetlabs.com/).
+2. Click the **Messenger** button at the bottom, on the right of the page.
+3. Click the Messages button.
+4. Get support from the **Kai AI Agent** or the **Keepnet** support team.
 
-Now, you can create support tickets through the **Add Ticket** button.\
-You can manage all your support requests on this pag&#x65;**.**
-
-![Figure 1. Keepnet Support Portal](<../.gitbook/assets/Screenshot 2025-03-18 at 12.00.46.png>)
+Alternatively, you can send your support request through email to **support@keepnetlabs.com** to create your ticket.
 
 ## Support Scope
 
