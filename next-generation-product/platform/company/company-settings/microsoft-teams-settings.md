@@ -33,8 +33,6 @@ Allows Keepnet to send training notifications to Teams.
 
 > Status banner: When both accesses are enabled you’ll see **Access complete. You can now send trainings via Teams**.
 
-***
-
 ### Step 2: Managing Setup Policies in Microsoft Teams
 
 Please follow the steps below to allow the '**Keepnet Security Awareness'** app within your Microsoft Teams.
@@ -52,6 +50,10 @@ Please follow the steps below to allow the '**Keepnet Security Awareness'** app 
 After installing the Keepnet Security Awareness app, please allow up to 12 hours for changes to take effect in the Microsoft admin center.
 
 If the app takes longer than 12 hours to deploy, it could be due to a conflicting policy. For help with resolving conflicting custom policies in the Microsoft Admin Centre, please reach out to [Keepnet support](../../../../resources/keepnet-support-help-desk.md).
+{% endhint %}
+
+{% hint style="success" %}
+Once the Keepnet Security Awareness App is added to your Microsoft Admin Center, you can test it by entering your business email address and clicking the 'SEND TEST MESSAGE' button on the Company > Company Settings > Microsoft Teams Settings page.
 {% endhint %}
 
 ## Additional Settings
