@@ -36,7 +36,7 @@ If your Office 365 test account has MFA (Multi Factor Authentication) option tha
 
 ## Attack Vectors
 
-A table provides a list of attack vectors that will be sent in the scan. The details include the name, type, hash, severity, status, and creation date of each attack vector.
+A table provides a list of attack vectors that will be sent in the scan. The details include the name, type, hash, sha256 severity, status, and creation date of each attack vector.
 
 ### Actions
 
