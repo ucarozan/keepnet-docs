@@ -239,7 +239,7 @@ To resolve it, configure Application-Level Access (App-only) for the Keepnet Phi
 
 ### Microsoft Graph Authentication Error (AADSTS50076)
 
-The following issue occurs because Microsoft Conditional Access or another security policy now requires multi-factor authentication (MFA) to access Microsoft Graph. When the Keepnet Page View Phishing Reporter add-in attempts to authenticate using the On-Behalf-Of (OBO) flow, the request fails with the following error:
+The following issue occurs because **Microsoft Conditional Access** or another security policy now requires **multi-factor authentication (MFA)** to access Microsoft Graph. When the **Keepnet Phishing Reporter add-in** attempts to authenticate using the **On-Behalf-Of (OBO)** flow, the request fails with the following error:
 
 > Unknown error: {"data":{},"status":"FAILED",\
 > "message":"OnBehalfOfCredential authentication failed: ||\
@@ -252,9 +252,9 @@ The following issue occurs because Microsoft Conditional Access or another secur
 
 This is common when:
 
-* The organization has recently enabled or updated Conditional Access policies that enforce MFA for Microsoft Graph or specific applications.
-* The signed-in user has not yet completed MFA on the current device/session.
-* The claims challenge returned by Azure AD is not handled by the application during the On-Behalf-Of flow.
+* The organization has recently **enabled or updated Conditional Access** policies that enforce MFA for Microsoft Graph or specific applications.
+* The **signed-in user has not yet completed MFA** on the current device/session.
+* The **claims challenge returned by Azure AD** is not handled by the application during the On-Behalf-Of flow.
 
 #### How to Resolve
 
