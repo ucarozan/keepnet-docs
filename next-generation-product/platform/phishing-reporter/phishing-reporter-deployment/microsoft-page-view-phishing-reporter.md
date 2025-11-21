@@ -168,7 +168,9 @@ After you install and deploy the Phishing Reporter, you might receive an email f
 
 20. Click **Close** to close the pop-up window.
 
-## Troubleshooting: Microsoft Graph Authentication Error (AADSTS530004)
+## Troubleshooting
+
+### Microsoft Graph Authentication Error (AADSTS530004)
 
 The following issue occurs because **Microsoft Conditional Access** requires devices or sessions to be compliant before granting access to protected resources. When the **Keepnet Phishing Reporter** **add-in** attempts to connect via **Delegated Access** (i.e., on behalf of a signed-in user), the organization’s Conditional Access policies may block the request if it does not originate from a compliant or trusted device.
 
@@ -234,6 +236,41 @@ Keep **Delegated Access** for:
 This error (AADSTS530004) indicates that your Microsoft 365 tenant blocks delegated access under Conditional Access rules.
 
 To resolve it, configure Application-Level Access (App-only) for the Keepnet Phishing Reporter add-in and reauthorize the application with admin consent
+
+### Microsoft Graph Authentication Error (AADSTS50076)
+
+The following issue occurs because Microsoft Conditional Access or another security policy now requires multi-factor authentication (MFA) to access Microsoft Graph. When the Keepnet Page View Phishing Reporter add-in attempts to authenticate using the On-Behalf-Of (OBO) flow, the request fails with the following error:
+
+> Unknown error: {"data":{},"status":"FAILED",\
+> "message":"OnBehalfOfCredential authentication failed: ||\
+> **AADSTS50076**: Due to a configuration change made by your administrator,\
+> or because you moved to a new location, you must use multi-factor\
+> authentication to access '00000003-0000-0000-c000-000000000000'.\
+> Trace ID: Correlation ID: Timestamp: . The returned error contains a claims challenge."}
+
+#### Why This Happens
+
+This is common when:
+
+* The organization has recently enabled or updated Conditional Access policies that enforce MFA for Microsoft Graph or specific applications.
+* The signed-in user has not yet completed MFA on the current device/session.
+* The claims challenge returned by Azure AD is not handled by the application during the On-Behalf-Of flow.
+
+#### How to Resolve
+
+Ask your Azure AD / M365 administrator to:
+
+1. **Confirm MFA and Conditional Access requirements**
+   1. Review the Conditional Access policies that apply to the Keepnet Phishing Reporter add-in and Microsoft Graph.
+2. **Ensure the user satisfies MFA**
+   1. Have the affected user sign in to Microsoft 365 or Outlook and complete the required multi-factor authentication (e.g., Authenticator app, SMS, FIDO key).
+   2. After successfully completing MFA, retry using the Phishing Reporter add-in.
+3. **Review claims challenge handling (for advanced configurations)**
+   1. If you are using custom integration or the Microsoft Authentication Library (MSAL) with the OBO flow, make sure that claims challenges are correctly handled as described in Microsoft’s documentation:
+   2. Handling MFA and Conditional Access claims: [https://aka.ms/msal-conditional-access-claims](https://aka.ms/msal-conditional-access-claims)
+   3. Handling claims in On-Behalf-Of flow: [https://aka.ms/msal-conditional-access-claims-obo](https://aka.ms/msal-conditional-access-claims-obo)
+
+If the error persists after the user has completed MFA and policies have been verified, share the Trace ID, Correlation ID, and Timestamp from the error message with your Azure AD administrator for further investigation.
 
 ## How Microsoft Page View Phishing Reporter Buttons Look on Outlook Platforms
 
