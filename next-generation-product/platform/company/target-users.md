@@ -182,9 +182,9 @@ There are two ways to see the repeat offender users.
 
 ## **New Hires**
 
-New Hires is an automated target group designed to include new employees in your organization for a period of 30 days. This group ensures that new hires receive focused training and simulations, helping them quickly adapt to your organization's security culture.
+New Hires is an automated target group designed to include new employees in your organization for a period of 90 days. This group ensures that new hires receive focused training and simulations, helping them quickly adapt to your organization's security culture.
 
-The training and simulations for this group are selected and assigned by system admins. This ensures that the content is tailored to improve their awareness and preparedness against potential security threats. After the 30-day period, the new hires are automatically removed from the group.
+The training and simulations for this group are selected and assigned by system admins. This ensures that the content is tailored to improve their awareness and preparedness against potential security threats. After the 90-day period, the new hires are automatically removed from the group.
 
 To view the **New** **Hires** group:
 
