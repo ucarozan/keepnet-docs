@@ -37,6 +37,16 @@ Click the **Next** button to go to the next page and save your changes in the fi
 
 ### Email Settings
 
+This section includes two email-related features that you can enable and configure.
+
+#### Send Us Copy
+
+When employees use the **Keepnet Reporter** button to report an email, you can enable this option to send the reported emails to the platform reporting or **Incident Responder** product for analysis and response.
+
+If this option is disabled, only platform-generated emails—such as training notifications and simulation emails—are sent to the platform reporting or Incident Responder platform. Any other reported emails from users will **not** be forwarded to the platform.
+
+#### Information Email
+
 You can configure the add-in to send a reported email to the SOC or IT team as an attachment in **.eml** format using the "**Send Information Email for Reported Incidents"** option. You can customize the following settings:
 
 {% hint style="danger" %}
