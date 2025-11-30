@@ -36,7 +36,11 @@ If your Office 365 test account has MFA (Multi Factor Authentication) option tha
 
 ## Attack Vectors
 
-A table provides a list of attack vectors that will be sent in the scan. The details include the name, type, hash, sha256 severity, status, and creation date of each attack vector.
+The **Attack Vectors** page lists all available attack vectors that can be sent to your test email inbox to test your email security gateway infrastructure.
+
+Here are the fields for each attack vector:
+
+<table><thead><tr><th width="187.703125"></th><th></th></tr></thead><tbody><tr><td>Attack Vector Name</td><td>The display name of the attack vector.</td></tr><tr><td>Type</td><td>The category of the attack vector, such as malware, malicious, or other categories.</td></tr><tr><td>Hash</td><td>The hash of the attack vector.</td></tr><tr><td>SHA256</td><td>The SHA-256 hash value of the attack vector.</td></tr><tr><td>Severity</td><td>The severity level of the attack vector. Enter a number from 1 to 10 (1 = lowest severity, 10 = highest).</td></tr><tr><td>Status</td><td>When set to active, this attack vector will be sent to the test email inbox.</td></tr><tr><td>Date Created</td><td>The date and time when the attack vector was added.</td></tr></tbody></table>
 
 ### Actions
 
