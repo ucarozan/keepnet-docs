@@ -157,3 +157,6 @@ This tutorial provides a detailed description of the Gamification Report product
 
 A: The "No Response" users are not shown on the gamification report. The users who had interaction with the simulation and training are shown on the report as explained in the document.
 
+### Q: Can I see deleted training enrollment statistics in the Gamification Report?
+
+**A:** No. Enrollments that have been deleted and moved to the Trash page are no longer displayed or included in the timeline metrics of the Gamification Report.
