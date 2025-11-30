@@ -633,6 +633,38 @@ Please follow the steps below:
 
 That's it! You can now launch a training, and the system will automatically use your DEC setting reference from those notification templates to create the training emails in the user's inbox.
 
+## **How to Localize Training Notification Templates**
+
+This guide explains how to localize training notification templates so that training-related emails—such as enrollment, reminders, certificates, and more—are delivered in each user’s preferred language.
+
+Please follow the steps below:
+
+1. Go to **Company > Company Settings > Notification Templates**.
+2. Click **Edit** or **Duplicate** on the notification templates you want to localize.
+3. Select the **Localize** button and choose the languages you want to add for the email template.
+4. Localize the following notification templates:
+   * Training Enrollment
+   * Learning Path Enrollment Reminder
+   * Poster Enrollment
+   * Learning Path Enrollment
+   * Infographic Enrollment
+   * Enrollment After Failing a Simulation
+   * Enrollment Reminder
+   * Certificate
+   * Survey Reminder
+   * Survey Enrollment
+5. Click **Save** to store your changes.
+6. Under the **Actions** column, click **More**, then select **Make Default** for each localized notification template you want to prioritize. This step is essential—the system uses the template marked as _default_ as its reference when sending notifications.
+7. One of the final step before the test is to set each user’s **Preferred Language**. To learn how to do this, please click [_here_](../company/target-users.md#id-2.-adding-target-users-manually).
+8. Test the feature:\
+   a. Go to **Awareness Educator > Training Library**.\
+   b. Select a training and click **Send Training** from the **Actions** menu.\
+   c. Fill in the required fields, choose **Preferred Language to Send**, and send the training.
+
+{% hint style="warning" %}
+Users who have a **Preferred Language** set will receive emails in the language assigned to them. Users who **do not** have a Preferred Language, or whose language does not match any localized template, will automatically receive the email in your **company’s default language**.
+{% endhint %}
+
 ## Video Tutorial
 
 This tutorial provides details of the capabilities of the **Awareness Educator > Training Library** page.
