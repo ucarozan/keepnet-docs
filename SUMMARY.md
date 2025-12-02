@@ -12,6 +12,7 @@
       * [SCIM Setup in Okta](next-generation-product/getting-started/2.-add-target-users/add-users-via-scim/scim-setup-in-okta.md)
       * [SCIM Setup in Onelogin](next-generation-product/getting-started/2.-add-target-users/add-users-via-scim/scim-setup-in-onelogin.md)
       * [SCIM Setup in Jumpcloud](next-generation-product/getting-started/2.-add-target-users/add-users-via-scim/scim-setup-in-jumpcloud.md)
+    * [Google Provisioning](next-generation-product/getting-started/2.-add-target-users/google-provisioning.md)
     * [Add users via LDAP](next-generation-product/getting-started/2.-add-target-users/add-users-via-ldap.md)
     * [Add Users via API](next-generation-product/getting-started/2.-add-target-users/add-users-via-api.md)
   * [3. Email Deliverability](next-generation-product/getting-started/3.-email-deliverability/README.md)
