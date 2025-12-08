@@ -133,6 +133,16 @@ Before launching a campaign with this feature, you must assign preferred languag
 2. Assign a preferred language to each user.
 3. Add these users into a **Target Group**.
 
+#### Create Multi-Language Scenario with Localization
+
+Before creating a campaign that sends a scenario in your users’ preferred languages, make sure the scenario includes a localized **email template** and **landing page**. This ensures each employee receives both assets in their own preferred language.
+
+1. Create or duplicate an [**email template**](manage-phishing-scenarios/email-templates.md#how-to-add-a-new-email-template), then add localized versions for the required languages using the **localization** feature.
+2. Create or duplicate a [**landing page**](manage-phishing-scenarios/landing-pages.md#how-to-add-a-new-landing-page-template), then add localized versions for the required languages using the **localization** feature.
+3. Create a **scenario** and add your localized email template and landing page.
+
+You can now proceed to the next section to launch your scenario.
+
 #### **Enabling Preferred Language in a Campaign**
 
 To launch a campaign using this feature:
