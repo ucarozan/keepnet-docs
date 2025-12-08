@@ -36,7 +36,8 @@ Follow the steps below to add a new landing page that you can use in a new or ex
 2. Complete the required fields on the first **Template** **Info** page, then click **Next**.
 3. On the **Page Settings** page, provide the **Phishing Link:** the URL to be used in the phishing email.&#x20;
 4. Under the **Phishing** **Link** field, you can enable the **"Stop bots to prevent false clicks"** feature to detect and stop bot activity automatically to prevent false clicks, ensuring genuine traffic to your phishing campaign.
-5. Click **Edit** to make any changes or **Save** to complete the process.
+5. **Localize:** Localize your main landing page template to different languages. Click [here](https://localization.keepnetlabs.com/) to learn the benefits of the feature and more information.
+6. Click **Edit** to make any changes or **Save** to complete the process.
 
 ## How to Add Just-in-time Learning Page
 
@@ -109,9 +110,9 @@ Landing pages direct the user to a specific page and can be used for a variety o
 
 ## FAQs
 
-### Can I divert employees who click the link to a URL not hosted by Keepnet?&#x20;
+### Q: Can I divert employees who click the link to a URL not hosted by Keepnet?&#x20;
 
-Yes! You can direct users to your own URL instead of using a standard Keepnet landing page. To set this up, select a Keepnet landing page, and replace the URL in the provided HTML code with the URL of your hosted landing page. Here’s how you do it:
+A: Yes! You can direct users to your own URL instead of using a standard Keepnet landing page. To set this up, select a Keepnet landing page, and replace the URL in the provided HTML code with the URL of your hosted landing page. Here’s how you do it:
 
 1. Choose a Keepnet landing page for your phishing scenario.
 2.  Insert the following HTML code, substituting `https://www.google.com` with your own landing page URL:
