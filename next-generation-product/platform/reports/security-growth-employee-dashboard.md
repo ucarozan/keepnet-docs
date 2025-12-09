@@ -179,7 +179,7 @@ You can see which behaviours of yours are rewarded for and which achievements yo
 
 ## 4. How to Announce It to Employees
 
-You can use this short template to announce this dashboard to your employees.
+You can use this short template to announce this dashboard to your employees via email.
 
 > **Subject:** Your Security Growth Dashboard is Live
 >
