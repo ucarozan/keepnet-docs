@@ -112,4 +112,4 @@ The primary protocols used for the exchange of SMS messages include SMPP (Short 
 
 Keepnet adheres to strict data privacy and security protocols, ensuring that all collected data is managed responsibly. According to our [data retention policy](../../../resources/compliance.md#data-retention-and-disposal-procedure), all data collected through our services, including the SMS phishing simulator, is securely destroyed after a predetermined period, in compliance with applicable data protection regulations. We can provide documentation detailing our data destruction procedures and timelines upon request, highlighting our commitment to maintaining the privacy and security of our users' data.
 
-\
+<br>

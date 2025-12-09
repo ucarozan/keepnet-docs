@@ -74,8 +74,7 @@ If Proofpoint allows per-group settings, apply the forwarding to the groups you�
 * Delayed reports
   * Check email routing / proofpoint processing delays and Keepnet ingestion queue. Network retries could cause short delays.
 * Duplicate reports
-  * If multiple report buttons or auto-forward rules exist, deduplication settings in Keepnet can be enabled — ask your Keepnet admin.\
-
+  * If multiple report buttons or auto-forward rules exist, deduplication settings in Keepnet can be enabled — ask your Keepnet admin.<br>
 
 ## FAQs
 

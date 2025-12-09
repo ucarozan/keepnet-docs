@@ -62,4 +62,4 @@ To seamlessly integrate with investigative tools for efficient handling and mana
 
 These methods ensure that you can tailor the integration process to meet your organization’s specific needs and existing infrastructure, enabling efficient management of phishing incidents.
 
-\
+<br>

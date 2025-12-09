@@ -110,4 +110,4 @@ Yes, it’s possible to integrate with your master (single) tenant via the graph
 
 1. You need to implement the graph API settings for Incident Responder (following our standard configuration, which includes making the API work for “all’ users - [https://doc.keepnetlabs.com/Next-Generation-Product/platform/incident-responder/mail-configurations/microsoft-365](mail-configurations/microsoft-365.md))
 2. Then you need to limit access to the App from Azure AD as it relates to Exchange Online ([https://docs.microsoft.com/en-us/graph/auth-limit-mailbox-access](https://docs.microsoft.com/en-us/graph/auth-limit-mailbox-access))\
-   \
+   <br>

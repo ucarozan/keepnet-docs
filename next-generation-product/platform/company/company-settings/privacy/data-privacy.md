@@ -33,4 +33,4 @@ Keep in mind that the decision to mask your data is permanent and should be made
 
 ## Summary
 
-Your privacy is our top priority. We provide clear and secure options for how your personal data, including email addresses, usernames, and similar fields, is handled and displayed on our platform.\
+Your privacy is our top priority. We provide clear and secure options for how your personal data, including email addresses, usernames, and similar fields, is handled and displayed on our platform.<br>

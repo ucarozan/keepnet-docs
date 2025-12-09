@@ -56,8 +56,7 @@ We update these terms from time to time. If you have an active Keepnet subscript
 
 “Product Specific Terms" means the additional product-related terms that apply to your use of Keepnet products, our Consulting Services and Third-Party Products. These terms form part of the [Agreement](product-specific-terms.md).
 
-"Sensitive Information" means credit or debit card numbers; financial account numbers or wire instructions; government issued identification numbers (such as Social Security numbers, passport numbers), biometric information, and any other information or combinations of information that falls within the definition of “special categories of data” under GDPR (as defined in the [DPA](data-processing-agreement.md)) or any other applicable law relating to privacy and data protection. Please note that Keepnet products do not require health information or any non-public personally identifiable financial information. It's strongly advised that Customers do not disclose any PHI, GLBA-regulated, PCI DSS-protected, or other sensitive data to Keepnet.\
-
+"Sensitive Information" means credit or debit card numbers; financial account numbers or wire instructions; government issued identification numbers (such as Social Security numbers, passport numbers), biometric information, and any other information or combinations of information that falls within the definition of “special categories of data” under GDPR (as defined in the [DPA](data-processing-agreement.md)) or any other applicable law relating to privacy and data protection. Please note that Keepnet products do not require health information or any non-public personally identifiable financial information. It's strongly advised that Customers do not disclose any PHI, GLBA-regulated, PCI DSS-protected, or other sensitive data to Keepnet.<br>
 
 "Subscription Fee" means the amount you pay for the Subscription Service.
 
