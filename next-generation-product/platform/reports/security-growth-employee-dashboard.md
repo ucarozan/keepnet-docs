@@ -199,7 +199,7 @@ You can use this short template to announce this dashboard to your employees.
 
 ***
 
-## FAQs
+## 5. FAQs
 
 ### **Q: Do employees need a new password?**
 
