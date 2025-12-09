@@ -211,4 +211,4 @@ A: No. Each user only sees their own detailed data. Leaderboards show limited in
 
 ### **Q: What if the email doesn’t arrive?**
 
-A: Ask them to check spam/junk and confirm they used their registered work email. If it still fails, contact Keepnet Support.
+A: Ask them to check spam/junk and confirm they used their registered work email. If it still fails, contact [Keepnet Support](../../../resources/keepnet-support-help-desk.md).
