@@ -1,8 +1,8 @@
 # Security Growth Employee Dashboard
 
-Give every employee a personal view of their security progress. The **Security Growth Employee Dashboard** lets users see their trainings, points, rank, badges, phishing performance and certificates in one place.
+This dashboard gives every employee a personal view of their security awareness progress. The **Security Growth Employee Dashboard** lets employees see their training enrollments, points, rank, badges, phishing performance and certificates all in one place.
 
-## 1. Why Should My Company Use This?
+## 1. Benefits for Your Organization and Employees
 
 **For your organization**
 
@@ -48,8 +48,6 @@ This section explains every card and table on the Security Growth Dashboard so a
   * **What it means:** Shows how this user compares to the other three employees with good performance at the same company.
 * **See Ranking Details**
   * Opens the **Leaderboard** area to see where these numbers sit among all users.
-
-***
 
 ### 3.2 Recent Badges
 
@@ -179,7 +177,9 @@ You can see which behaviours of yours are rewarded for and which achievements yo
 * Lets the user switch the entire dashboard UI to a supported language\
   (e.g. English (UK/US), Turkish, Deutsch, Français, Español).
 
-## 4. How to Announce It to Employees (short template)
+## 4. How to Announce It to Employees
+
+You can use this short template to announce this dashboard to your employees.
 
 > **Subject:** Your Security Growth Dashboard is Live
 >
