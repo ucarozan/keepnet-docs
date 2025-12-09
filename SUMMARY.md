@@ -178,6 +178,7 @@
     * [Executive Reports](next-generation-product/platform/reports/executive-reports.md)
     * [Scheduled Reports](next-generation-product/platform/reports/scheduled-reports.md)
     * [Gamification Report](next-generation-product/platform/reports/gamification-report.md)
+    * [Security Growth Employee Dashboard](next-generation-product/platform/reports/security-growth-employee-dashboard.md)
   * [Company](next-generation-product/platform/company/README.md)
     * [Target Users](next-generation-product/platform/company/target-users.md)
     * [Companies](next-generation-product/platform/company/companies/README.md)
