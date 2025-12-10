@@ -6,7 +6,7 @@ The [**Phishing Simulator**](https://keepnetlabs.com/products/phishing-simulator
 
 The components of the **Landing Page Templates** page are explained below.
 
-<table><thead><tr><th width="150"></th><th width="590.1428571428571"></th></tr></thead><tbody><tr><td>Template name</td><td>The name of the landing page template</td></tr><tr><td>Method</td><td><p>The phishing technique employed.</p><ul><li><strong>Data Submit:</strong> Used to detect target users who submit data on the landing page</li><li><strong>Attachment:</strong> Used to detect target users who download the attachment in the phishing simulation email</li><li><strong>Click-Only:</strong> Used to detect target users who click unknown links in the phishing email</li></ul></td></tr><tr><td>Languages</td><td>Filter landing pages based on your preferred languages.</td></tr><tr><td>Difficulty</td><td>The level of difficulty to recognize a phishing attempt <strong>(Easy, Medium, Hard).</strong> Please <a href="../#q-how-is-the-difficulty-level-determined">click here</a> to see how the difficulty level is determined.</td></tr><tr><td>Creation Type</td><td>Filter landing pages based on their creation type (e.g., Manual or AI Ally).</td></tr><tr><td>Created By</td><td><p><strong>System:</strong> Standard landing page templates are provided with the product.</p><p></p><p><strong>Custom:</strong> Landing pages created or customized by users</p></td></tr><tr><td>Stop Bot Activity</td><td>Filter landing pages based on if stop bot activity feature is enabled or disabled.</td></tr><tr><td>Tags</td><td>Tags can be added to the landing page to enable viewing using related tag lists.</td></tr><tr><td>Date Created</td><td>The date and time the landing page was created</td></tr></tbody></table>
+<table><thead><tr><th width="150"></th><th width="590.1428571428571"></th></tr></thead><tbody><tr><td>Template name</td><td>The name of the landing page template</td></tr><tr><td>Method</td><td><p>The phishing technique employed.</p><ul><li><strong>Data Submit:</strong> Used to detect target users who submit data on the landing page</li><li><strong>Attachment:</strong> Used to detect target users who download the attachment in the phishing simulation email</li><li><strong>Click-Only:</strong> Used to detect target users who click unknown links in the phishing email</li></ul></td></tr><tr><td>Languages</td><td>Filter landing pages based on your preferred languages.</td></tr><tr><td>Difficulty</td><td>The level of difficulty to recognize a phishing attempt <strong>(Easy, Medium, Hard).</strong> Please <a href="../#q-how-is-the-difficulty-level-determined">click here</a> to see how the difficulty level is determined.</td></tr><tr><td>Creation Type</td><td>Filter landing pages based on their creation type (e.g., Manual or AI Ally).</td></tr><tr><td>Created By</td><td><p><strong>System:</strong> Standard landing page templates are provided with the product.</p><p></p><p><strong>Custom:</strong> Landing pages created or customized by users</p></td></tr><tr><td>Stop Bot Activity</td><td>It shows the stop bot activity feature enabled for the landing page. By default, it is enabled and cannot be disabled to ensure that the target user activities are accurately captured.</td></tr><tr><td>Tags</td><td>Tags can be added to the landing page to enable viewing using related tag lists.</td></tr><tr><td>Date Created</td><td>The date and time the landing page was created</td></tr></tbody></table>
 
 ## Landing Page Templates Actions
 
@@ -35,9 +35,8 @@ Follow the steps below to add a new landing page that you can use in a new or ex
 1. Click the **+New** button in the upper right corner of the **Phishing Simulator > Phishing Scenarios > Landing Page Templates** page.
 2. Complete the required fields on the first **Template** **Info** page, then click **Next**.
 3. On the **Page Settings** page, provide the **Phishing Link:** the URL to be used in the phishing email.&#x20;
-4. Under the **Phishing** **Link** field, you can enable the **"Stop bots to prevent false clicks"** feature to detect and stop bot activity automatically to prevent false clicks, ensuring genuine traffic to your phishing campaign.
-5. **Localize:** Localize your main landing page template to different languages. Click [here](https://localization.keepnetlabs.com/) to learn the benefits of the feature and more information.
-6. Click **Edit** to make any changes or **Save** to complete the process.
+4. **Localize:** Localize your main landing page template to different languages. Click [here](https://localization.keepnetlabs.com/) to learn the benefits of the feature and more information.
+5. Click **Edit** to make any changes or **Save** to complete the process.
 
 ## How to Add Just-in-time Learning Page
 
@@ -47,9 +46,8 @@ Follow the steps below to add a new just-in-time learning page that you can use 
 2. Search **'Just-in-time Learning Page: Email Warning Signs'** and click the **Duplicate** button to customize.
 3. Customize any fields on the first **Template** **Info** page, then click **Next**.
 4. On the **Page Settings** page, provide the **Phishing Link:** the URL to be used in the phishing email.&#x20;
-5. Under the **Phishing** **Link** field, you can enable the **"Stop bots to prevent false clicks"** feature to detect and stop bot activity automatically to prevent false clicks, ensuring genuine traffic to your phishing campaign.
-6. Review your red flag landing page, or click the **Edit** button to customize it.
-7. Once you complete customization or review, click **Save** to complete the process.
+5. Review your red flag landing page, or click the **Edit** button to customize it.
+6. Once you complete customization or review, click **Save** to complete the process.
 
 Once you create your just-in-time learning page, now click [here](phishing-scenarios.md#how-to-add-a-new-phishing-scenario-with-red-flags) to learn how to combine your red flag email template and just-in-time learning page in a scenario to be able to launch to your employees.&#x20;
 
@@ -60,7 +58,6 @@ Follow the steps below to effortlessly create custom landing page templates with
 * Click the **+New** button in the upper right corner of the **Phishing Simulator** > **Phishing Scenarios** > **Landing Page Templates** page.
 * Complete the required fields on the first **Template** **Info** page, then click **Next**.
 * On the **Page Settings** page, provide the **Phishing Link:** the URL to be used in the phishing email.
-* Under the **Phishing** **Link** field, you can enable the **"Stop bots to prevent false clicks"** feature to detect and stop bot activity automatically to prevent false clicks, ensuring genuine traffic to your phishing campaign.&#x20;
 * Click on **Use AI Ally** and describe the scenario and key details for the landing page you want to generate.
   * Once described, select the **Language** in which the landing page will be created.
 * After providing the scenario details, click the **Generate Landing Page** button to create your landing page.
