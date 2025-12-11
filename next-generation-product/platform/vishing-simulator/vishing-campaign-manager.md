@@ -54,14 +54,15 @@ When you select a specific target group you will see a table with the users info
 
 <table data-header-hidden><thead><tr><th width="166"></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>First Name</td><td>User’s first name</td><td></td></tr><tr><td>Last Name</td><td>User’s surname</td><td></td></tr><tr><td>Phone Number</td><td>User’s phone number</td><td></td></tr></tbody></table>
 
-Once you have selected the target group you wish to launch the camping to, click **Next**.
+Once you have selected the target group you wish to launch the campaign to, click **Next**.
 
 ### Call Settings
 
 Set up the following fields correctly.
 
 * Select the phone number from the dropdown menu that the end user will see when receiving the vishing call.
-* Set up the call **Distribution** settings. You can call target users over a set of days and hours and a specified time period.
+* Set up the call **Distribution** settings. You can call target users over a set of days and hours and a specified time period in your company's timezone. The timezone information comes from your company profile's timezone settings. If the timezone needs to be updated, go to **Company > Companies** and edit the company profile to update timezone settings.
+  * If you can't see your company on that page, please ask your reseller, or if you don't have a direct reseller, contact the Keepnet support team.
 * Click **Next**.
 
 ### Campaign Summary
