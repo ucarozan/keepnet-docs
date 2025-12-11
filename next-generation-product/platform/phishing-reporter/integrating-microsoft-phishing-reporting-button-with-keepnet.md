@@ -22,13 +22,14 @@ If you don’t already have a shared inbox for phishing reports:
 
 Forward reported phishing emails to Keepnet using a mail flow rule:
 
-1. Please [**contact the support team**](../../../resources/keepnet-support-help-desk.md) of Keepnet to get the **Keepnet email address for forwarding**.
+1. Please follow the steps below to get the **Keepnet email address for forwarding**.
+   1. Log in to the Keepnet platform, go to **Phishing Reporter > Settings > Other Settings** to find your unique **CompanyID** and use the **@reporttokeepnet.com** domain (e.g., CompanyID@reporttokeepnet.com).
 2. Log into the [**Microsoft 365 Admin Center**](https://admin.exchange.microsoft.com) and open the Exchange Admin Center.
 3. Go to **Mail Flow > Rules** and click **Create New Rule**.
 4. Configure the rule:
    * **Name:** Enter a name such as **"Forward Reported Emails to Keepnet"**.
    * **Set Apply this rule** **if:**  Select the **"The recipient"** and then select the **"is this person"** option. Please enter the shared mailbox email address that you created in the previous section.
-   * **Do the following:** Select the **"Add Recipients"** and then select the **"to the To box"** option. Please enter the email address that you got from the Keepnet Support Team.
+   * **Do the following:** Select the **"Add Recipients"** and then select the **"to the To box"** option. Please enter the **Keepnet email address.**
 5. Leave the **"Except if"** option as default and then click **Next**.
 6. Leave the **"Set rule settings"** page settings as default and then click **Next**.
 7. Click **Finish** to create the rule.

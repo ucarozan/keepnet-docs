@@ -5,7 +5,8 @@ Keepnet can integrate with any email security solution that supports reporting s
 ## How It Works
 
 1. A user reports a suspicious email through their email security solution.
-2. The reported message is forwarded to Keepnet (Please [**contact the support team**](../../../resources/keepnet-support-help-desk.md) of Keepnet to get the **Keepnet email address for forwarding**.)
+2. The reported message is forwarded to Keepnet. Please follow the steps below to get the **Keepnet email address for forwarding**.
+   1. Log in to the Keepnet platform, go to **Phishing Reporter > Settings > Other Settings** to find your unique CompanyID and use the **@reporttokeepnet.com domain** (e.g., CompanyID@reporttokeepnet.com).
 3. The original email is attached as an EML file within the forwarded report.
 4. Keepnet workers parse the EML file and perform analysis.
 
