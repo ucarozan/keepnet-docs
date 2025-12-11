@@ -24,7 +24,8 @@ Key benefits:
 ## What you need
 
 * Proofpoint PhishAlarm is enabled for users in your org.
-* Your unique Keepnet inbound address (format): yourCompanyID@reporttokeepnet.com — **use the exact address provided by Keepnet.**
+* Your unique Keepnet inbound address (format): **yourCompanyID@reporttokeepnet.com** — **use the exact domain address.**
+  * To get your **Keepnet inbound address**, please log in to the **Keepnet platform** and go to **Phishing Reporter > Settings > Other Settings** to find your unique CompanyID.
 * Admin access in Proofpoint (or someone who can add/modify the PhishAlarm forwarding address).
 
 ## Step-by-step setup in Proofpoint
