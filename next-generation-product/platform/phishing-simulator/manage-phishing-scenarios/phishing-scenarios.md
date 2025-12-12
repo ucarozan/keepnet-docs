@@ -127,3 +127,9 @@ Now you can click the **Save** button to create your scenario. Now, you are read
 This tutorial will cover the **Scenarios** that are created by combining the **Email** **Template** and/or **Landing** **Page** and making the campaign ready to send to the target users.
 
 {% embed url="https://youtu.be/y1BPobrQXIU" %}
+
+## FAQs
+
+### Q: Can I add a landing page to Attachment scenarios?
+
+A: No. Landing pages are not supported for Attachment scenarios. These scenarios only support Word, Excel, PowerPoint, and HTML attachments. User activity is tracked when the attachment is opened or executed on the device, which is an action users should normally avoid.
