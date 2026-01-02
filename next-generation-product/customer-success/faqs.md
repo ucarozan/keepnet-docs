@@ -29,3 +29,7 @@ Bot Activity means something has scanned the link on your phishing email. This c
 **Q: How do I remove users from the platform if I've used SCIM to pull in from Entra ID?**
 
 To remove users from Keepnet when connected to Entra ID, please go to portal.azure.com and find the Enterprise Application you made for Keepnet SCIM. Navigate to **Users & Groups** and manage users from here. Add and remove users to Keepnet from this application. Microsoft updates Keepnet every 40 minutes!&#x20;
+
+**Q: Can you share the compliance information for Vishing and Smishing?**
+
+{% file src="../../.gitbook/assets/Vishing and Smishing Platform Security and Compliance (1).pdf" %}
