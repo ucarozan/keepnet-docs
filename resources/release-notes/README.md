@@ -4,6 +4,8 @@ This page contains release notes of the platform for each year and each month. Y
 
 ## Shortcuts
 
+[2026 release notes](2026.md)
+
 [2025 release notes](2025.md)
 
 [2024 release notes](2024.md)
