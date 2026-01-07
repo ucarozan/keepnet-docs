@@ -252,6 +252,7 @@
 * [Product Update/Maintenance](resources/product-update-maintenance.md)
 * [Research Methodology](resources/research-methodology.md)
 * [Release Notes](resources/release-notes/README.md)
+  * [2026](resources/release-notes/2026.md)
   * [2025](resources/release-notes/2025.md)
   * [2024](resources/release-notes/2024.md)
   * [2023](resources/release-notes/2023.md)
