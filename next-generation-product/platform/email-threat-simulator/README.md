@@ -1,3 +1,7 @@
+---
+description: This is email threat simulator documentation.
+---
+
 # Email Threat Simulator
 
 Our [Email Threat Simulator](https://keepnetlabs.com/products/email-threat-simulator) allows institutions to defend against major attack vectors. In recent years, the number of target-oriented attacks has increased significantly. Most often, the targets of attacks are large corporations, government agencies, and political organizations. However, any institution that collects data seen as valuable faces a risk of cyberattack. Awareness of potential exposure and preparation to resist an attack are critical in today’s world.
