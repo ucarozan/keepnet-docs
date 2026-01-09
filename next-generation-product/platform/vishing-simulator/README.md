@@ -3,6 +3,20 @@ description: >-
   Technical documentation for the Keepnet Vishing Simulator, detailing setup,
   phone call scenario configuration, campaign execution, and analysis of
   simulated voice phishing tests.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
 ---
 
 # Vishing Simulator&#x20;
