@@ -3,6 +3,20 @@ description: >-
   Technical documentation for the Keepnet Callback Simulator, covering setup,
   callback scenario configuration, triggers, execution flow, and analyzing
   simulated callback test results.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
 ---
 
 # Callback Simulator
