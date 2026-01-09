@@ -3,15 +3,25 @@ description: >-
   Technical documentation for the Keepnet Phishing Reporter, detailing
   installation, configuration, reporting workflows, mailbox setup, and analyzing
   reported phishing attempts.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
 ---
 
 # Phishing Reporter
 
-This section describes in detail how to customize the add-in on the platform and deploy the Phishing Reporter add-in to users in Microsoft 365, Exchange, or Google Workspace platforms.&#x20;
-
-<figure><img src="../../../.gitbook/assets/keepnet-phishing-reporter-32x32.png" alt=""><figcaption><p>Keepnet Phishing Reporter button</p></figcaption></figure>
-
-This page also contains how to customize the Diagnostic Tool service and deploy it to the users to monitor the users' Phishing Reporter Outlook Add-in.&#x20;
+This section describes in detail how to customize the add-in on the platform and deploy the Phishing Reporter add-in to users in Microsoft 365, Exchange, or Google Workspace platforms. This page also contains how to customize the Diagnostic Tool service and deploy it to the users to monitor the users' Phishing Reporter Outlook Add-in.&#x20;
 
 ## Shortcuts
 
