@@ -1,3 +1,10 @@
+---
+description: >-
+  Technical documentation for the Keepnet Awareness Educator, covering
+  configuration, content management, training campaigns, assessment settings,
+  and reporting for user security awareness.
+---
+
 # Awareness Educator
 
 This section provides a brief description of the Awareness Educator and other documents that will guide the admins to use the product more effectively.&#x20;

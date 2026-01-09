@@ -1,3 +1,10 @@
+---
+description: >-
+  Technical documentation for Keepnet Threat Sharing, explaining how to join or
+  create threat-sharing communities, investigate shared incidents, and use
+  intelligence for response and protection.
+---
+
 # Threat Sharing
 
 The Threat Sharing Community platform is an early warning system deployed across a network that provides inbox-level incident response and investigation capability, giving users maximum agility and reducing response time. Users have the ability to expand their threat intelligence reach by using their collective network knowledge, as well as reduce their costs and accelerate implementation of a response. Users can also preemptively initiate inbox investigations before suffering a malicious attack, which provides proactive protection.

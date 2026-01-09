@@ -1,3 +1,10 @@
+---
+description: >-
+  Technical documentation for the Keepnet Smishing Simulator, describing setup
+  steps, SMS phishing scenario configuration, campaign execution, and analysis
+  of simulation results.
+---
+
 # Smishing Simulator
 
 The **Smishing** **Simulator** allows you to create realistic simulated smishing SMS messages sent to employees to assess their ability to recognize suspicious SMS messages and their response to attacks that could compromise organizational data and systems.\

@@ -1,3 +1,10 @@
+---
+description: >-
+  Technical documentation for the Keepnet Phishing Reporter, detailing
+  installation, configuration, reporting workflows, mailbox setup, and analyzing
+  reported phishing attempts.
+---
+
 # Phishing Reporter
 
 This section describes in detail how to customize the add-in on the platform and deploy the Phishing Reporter add-in to users in Microsoft 365, Exchange, or Google Workspace platforms.&#x20;

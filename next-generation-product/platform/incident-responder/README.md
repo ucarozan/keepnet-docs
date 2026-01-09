@@ -1,3 +1,10 @@
+---
+description: >-
+  Technical documentation for the Keepnet Incident Responder, explaining
+  incident investigation workflows, response actions, case management, and tools
+  for tracking and resolving security events.
+---
+
 # Incident Responder
 
 This section provides a brief description of the Incident Responder. This guide will provide instructions on how to use the Incident Responder platform. The [Incident Responder](https://keepnetlabs.com/products/incident-responder) analyses a suspicious email, and according to the results, it takes action at the inbox level. The product also analyses the URLs, IPs, and Files with the engines of different technologies it is integrated where it enables an institution to acquire the technologies that it doesn’t have.

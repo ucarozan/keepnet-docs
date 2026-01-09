@@ -1,3 +1,10 @@
+---
+description: >-
+  Technical documentation for the Keepnet Free Phishing Email Analysis Service,
+  explaining how to upload emails, run automated multi-engine analysis, and
+  interpret email threat reports.
+---
+
 # Free Phishing Email Analysis Service
 
 Email communication is part of our daily life and it’s very important. Cybercriminals know this and steal your data via emails by sending messages that mimic an organization and make you believe that the email is legitimate. They make you to click on a phishing link to steal your credentials or download malware onto your computer.

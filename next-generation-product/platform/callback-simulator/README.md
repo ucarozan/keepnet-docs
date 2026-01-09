@@ -1,3 +1,10 @@
+---
+description: >-
+  Technical documentation for the Keepnet Callback Simulator, covering setup,
+  callback scenario configuration, triggers, execution flow, and analyzing
+  simulated callback test results.
+---
+
 # Callback Simulator
 
 The **Callback** **Simulator** allows you to create realistic simulated callback phishing emails that are sent to employees to assess their ability to recognize suspicious emails and their response to attacks that could compromise organizational data and systems.

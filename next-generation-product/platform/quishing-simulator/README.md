@@ -1,3 +1,10 @@
+---
+description: >-
+  Technical documentation for the Keepnet Quishing Simulator, outlining setup,
+  QR phishing scenario configuration, campaign execution, and analysis of
+  simulated quishing test results.
+---
+
 # Quishing Simulator
 
 The **Quishing** **Simulator** allows you to create realistic simulated quishing attacks using QR codes sent through emails to employees to assess their ability to recognize suspicious QR code-based emails and their response to attacks that could compromise organizational data and systems.
