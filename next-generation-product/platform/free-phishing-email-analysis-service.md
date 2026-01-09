@@ -3,6 +3,20 @@ description: >-
   Technical documentation for the Keepnet Free Phishing Email Analysis Service,
   explaining how to upload emails, run automated multi-engine analysis, and
   interpret email threat reports.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
 ---
 
 # Free Phishing Email Analysis Service
