@@ -1,3 +1,10 @@
+---
+description: >-
+  Technical documentation for Keepnet Threat Intelligence, explaining how to
+  monitor breached accounts, export breach data, configure domain allowlists,
+  and work with breach tables and actions.
+---
+
 # Threat Intelligence
 
 This guide explains the Threat Intelligence product and how to use it.

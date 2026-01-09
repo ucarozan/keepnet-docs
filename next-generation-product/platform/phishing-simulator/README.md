@@ -1,3 +1,24 @@
+---
+description: >-
+  Technical documentation for the Keepnet Phishing Simulator, covering phishing
+  campaign setup, scenario configuration, templates, user targeting, and result
+  analysis.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+---
+
 # Phishing Simulator
 
 The [**Phishing Simulator**](https://keepnetlabs.com/products/phishing-simulator) allows you to create a realistic simulated phishing email that is sent to employees in order to assess their ability to recognize suspicious emails and their response to attacks that could compromise organizational data and systems.
