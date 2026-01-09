@@ -3,6 +3,20 @@ description: >-
   Technical documentation for Keepnet Threat Sharing, explaining how to join or
   create threat-sharing communities, investigate shared incidents, and use
   intelligence for response and protection.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
 ---
 
 # Threat Sharing
