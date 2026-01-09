@@ -3,6 +3,20 @@ description: >-
   Technical documentation for the Keepnet Incident Responder, explaining
   incident investigation workflows, response actions, case management, and tools
   for tracking and resolving security events.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
 ---
 
 # Incident Responder
