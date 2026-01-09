@@ -3,6 +3,20 @@ description: >-
   Technical documentation for the Keepnet Awareness Educator, covering
   configuration, content management, training campaigns, assessment settings,
   and reporting for user security awareness.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
 ---
 
 # Awareness Educator
