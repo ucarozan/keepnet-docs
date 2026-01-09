@@ -50,3 +50,60 @@ Check whether the configuration works or not by following the steps below.
 * The platform will redirect you to the Okta SSO page to authenticate.
 
 You have now successfully logged in to the platform.
+
+## How to Assign Custom System User Roles on Okta over SAML
+
+This section explains how to pass a role value from Okta to Keepnet Platform using a SAML attribute, so specific system users can sign in with custom roles, while everyone else keeps the default role.[ ](https://doc.keepnetlabs.com/next-generation-product/platform/company/company-settings/saml-settings/how-to-configure-saml-on-okta)
+
+### Okta Settings
+
+Follow the steps below to add a role attribute to Okta users, then send it to Keepnet in the SAML assertion.
+
+#### 1) Create a custom user attribute in Okta
+
+1. Log in to the **Okta Admin Dashboard**.
+2. Go to **Directory**, then **Profile Editor**.
+3. Open the **User default profile**, identify where you want the attribute, and click **Add Attribute**.
+4. Fill in the attribute details:
+   1. **Data Type:** String
+   2. **Display name:** Keepnet Role
+   3. **Variable name:** KeepnetRoleName
+   4. Optional, if you want a dropdown: define enum values that match the role names in Keepnet Platform exactly.
+5. Click **Save**.
+
+{% hint style="info" %}
+The value you set for a user must match the **Keepnet role name** exactly, for example Basic Role, Training Role.
+{% endhint %}
+
+#### 2) Add the role attribute to the Keepnet SAML application
+
+1. Go to **Applications**, then **Applications**.
+2. **Open the** **SAML application** you created for Keepnet Platform.
+3. Go to **General**, click **Edit** in the **SAML Settings** section.
+4. In the **Configure** **SAML** step, find **Attribute** **Statements**.
+5. **Add an attribute** statement:
+   1. **Name:** spRole
+   2. **Value:** user.keepnetRole
+   3. Click **Next**, then **Finish**.
+
+{% hint style="warning" %}
+If you used a different variable name than KeepnetRoleName, use that in the Value field, for example user.yourAttributeName.
+{% endhint %}
+
+#### 3) Set role values for specific users in Okta
+
+1. **Find the Okta user** profile for each user.
+2. **Set Keepnet Role**, meaning **KeepnetRoleName**, to the target Keepnet role name.
+
+### Platform Settings
+
+1. **Log in to Keepnet Platform** with a privileged user who can access SAML settings.
+2. Go to **Company**, then **Company** **Settings**, then **SAML** **Settings**.
+3. Set **Default Role** to **Company** **Admin**, so admins without **spRole** still get the usual role.
+4. Make sure the system users exist under **Company**, then **System** **Users**, using the same emails they will use through SSO.
+
+Keepnet behaviour to rely on:
+
+1. **System Users without spRole** use the **Default** **Role** when authenticated over SAML.
+2. To log in without a default role, the user must have **spRole** configured with the correct custom role name.
+3. You can use custom roles as long as the role name you send matches the custom role name in the platform.[ ](https://doc.keepnetlabs.com/next-generation-product/platform/company/company-settings/saml-settings/how-to-configure-saml-on-azure-ad)
