@@ -3,6 +3,20 @@ description: >-
   Technical documentation for the Keepnet Smishing Simulator, describing setup
   steps, SMS phishing scenario configuration, campaign execution, and analysis
   of simulation results.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
 ---
 
 # Smishing Simulator
