@@ -3,6 +3,20 @@ description: >-
   Technical documentation for Keepnet Threat Intelligence, explaining how to
   monitor breached accounts, export breach data, configure domain allowlists,
   and work with breach tables and actions.
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
 ---
 
 # Threat Intelligence
