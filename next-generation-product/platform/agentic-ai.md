@@ -141,16 +141,16 @@ Common PDFs to upload:
 
 ### Upload rules
 
-* **PDF only**
-* **Maximum file size:** **500 MB**
+* PDF only
+* Maximum file size: 500 MB
 
 ### Delete uploaded documents
 
-You can delete uploaded PDFs from the Files page using the **Delete** action.
+You can delete uploaded PDFs from the **Files** page using the **Delete** action.
 
 ## Security, Privacy, and Governance
 
-Agentic AI is designed for enterprise use, with governance-focused controls.
+**Agentic AI** is designed for enterprise use, with governance-focused controls.
 
 ### Data minimization and PII protection
 
@@ -191,7 +191,7 @@ A: Yes. Your company must have an **Agentic AI license**. If you don’t have on
 
 ### Q: Who can use Agentic AI?
 
-A: By default, **Reseller**, **Company Admin**, and **System Admin** users can access it (when licensed). If you use custom roles, your admin can allow or deny access through role permissions.
+A: By default, **Reseller** or **Company Admin** users can access it (when licensed). If you use custom roles, your admin can allow or deny access through role permissions.
 
 ### Q: Does Agentic AI process personal data (PII)?
 
