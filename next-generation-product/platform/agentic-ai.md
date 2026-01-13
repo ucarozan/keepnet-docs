@@ -71,7 +71,9 @@ If your tenant uses **custom system roles**, your admin can allow or deny access
 2. Click **Agentic AI** in the **top-right corner**.
 3. The Agentic AI panel opens.
 
-> If you don’t see Agentic AI, it’s typically due to missing license entitlement or role permissions.
+{% hint style="info" %}
+If you don’t see Agentic AI, it’s typically due to missing license entitlement or role permissions.
+{% endhint %}
 
 ### Panel controls
 
