@@ -1,10 +1,31 @@
+---
+description: >-
+  Agentic AI is Keepnet’s agent-based security awareness product that generates
+  microlearning and phishing simulation scenarios, adapts to roles and behavior
+  signals, and supports multilingual outputs w
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+---
+
 # Agentic AI
 
 **Agentic AI** is Keepnet’s **agent-based product** for running security awareness at scale. It’s **not a chatbot** or a chat-only tool. Instead, it coordinates multiple AI agents to drive a continuous improvement loop: **plan, create, deliver, measure, and improve** your security awareness program.
 
-Agentic AI generates and optimizes **microlearning content** and **phishing simulation scenarios** using behavioral science and your organization’s context. Outputs adapt to **roles and responsibilities**, **observed behavior signals** (such as reporting rates, simulation outcomes, and risk indicators), and **training performance**, so the right content reaches the right audience at the right time.
+**Agentic AI** generates and optimizes **microlearning content** and **phishing simulation scenarios** using behavioral science and your organization’s context. Outputs adapt to **roles and responsibilities**, **observed behavior signals** (such as reporting rates, simulation outcomes, and risk indicators), and **training performance**, so the right content reaches the right audience at the right time.
 
-Agentic AI is also **multilingual**, enabling global teams to work and generate outputs in the languages they use.
+**Agentic AI** is also **multilingual**, enabling global teams to work and generate outputs in the languages they use.
 
 ## Overview
 
