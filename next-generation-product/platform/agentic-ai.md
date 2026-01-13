@@ -150,38 +150,19 @@ You can delete uploaded PDFs from the **Files** page using the **Delete** action
 
 ## Security, Privacy, and Governance
 
-**Agentic AI** is designed for enterprise use, with governance-focused controls.
+Agentic AI is designed for enterprise use with governance-focused controls. For detailed answers, please review:
 
-### Data minimization and PII protection
+* **AI Governance & Data Security (PDF)** – governance, retention/deletion, audit, and lifecycle policies
+* **Security Architecture (PDF)** – end-to-end security architecture and control layers
+* **AI + Data Security FAQ (PDF)** – common security and privacy questions
 
-* **No PII is sent to the AI system.** PII stays within your tenant boundary and is removed before AI requests (Data Minimizer Engine).
-* The system is designed to use **anonymized behavioral attributes** (training/simulation outcomes, reporting behavior, role, region, language, culture).
+{% file src="../../.gitbook/assets/SECURITY ARCHITECTURE.pdf" %}
 
-### Encryption and data residency
+{% file src="../../.gitbook/assets/AI + DATA SECURITY FAQ.pdf" %}
 
-* **TLS 1.2+** in transit and **AES-256** at rest
-* Customer data stays in the selected **Microsoft Azure region**
+{% file src="../../.gitbook/assets/AI GOVERNANCE & DATA SECURITY.pdf" %}
 
-### OpenAI retention and training
-
-Azure OpenAI is configured for **no data retention and no training** (enterprise configuration).
-
-### Safety and quality controls
-
-Keepnet uses layered controls designed to reduce unsafe or incorrect output, including:
-
-* **RAG** to ground outputs in verified sources
-* **Cloudflare AI Gateway** for filtering and governance
-* Keepnet validation layers and optional human approval workflows
-
-#### Retention and deletion (high level)
-
-Governance documentation describes:
-
-* Audit log retention: **7 years** (configurable)
-* GDPR erasure requests: **30-day SLA**
-* Backup deletion: **60-day cycle**
-* Certificate of destruction available on request
+If you have additional questions, contact [**support@keepnetlabs.com**](mailto:support@keepnetlabs.com).
 
 ## FAQ
 
