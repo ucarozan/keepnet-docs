@@ -221,6 +221,7 @@
     * [Audit Log](next-generation-product/platform/company/audit-log.md)
     * [Job Log](next-generation-product/platform/company/job-log.md)
   * [Free Phishing Email Analysis Service](next-generation-product/platform/free-phishing-email-analysis-service.md)
+  * [Agentic AI](next-generation-product/platform/agentic-ai.md)
 * [Miscellaneous](next-generation-product/miscellaneous/README.md)
   * [Whitelisting](next-generation-product/miscellaneous/whitelisting/README.md)
     * [How to Whitelist an IP Address in Office 365](next-generation-product/miscellaneous/whitelisting/how-to-whitelist-an-ip-address-in-office-365.md)
