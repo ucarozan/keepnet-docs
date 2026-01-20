@@ -324,6 +324,30 @@ This policy applies to all employees, management, and stakeholders of Keepnet. I
 * Policy Review: The CSR policy will be reviewed annually to maintain relevance and effectiveness. Updates will reflect evolving societal expectations and industry standards.
 * Continuous Improvement: Keepnet is committed to ongoing improvement in CSR efforts, learning from experiences, and striving for greater impact.
 
+### Anti-Bribery and Anti-Corruption Policy
+
+#### 1. What does this policy cover?
+
+This anti-bribery policy exists to set out the responsibilities of Keepnet and those who work for us in regards to observing and upholding our zero-tolerance position on bribery and corruption.&#x20;
+
+It also exists to act as a source of information and guidance for those working for Keepnet. It helps them recognize and deal with bribery and corruption issues, as well as understand their responsibilities.
+
+#### 2. Policy statement
+
+Keepnet is committed to conducting business in an ethical and honest manner, and is committed to implementing and enforcing systems that ensure bribery is prevented. Keepnet has zero-tolerance for bribery and corrupt activities. We are committed to acting professionally, fairly, and with integrity in all business dealings and relationships, wherever in the country we operate.&#x20;
+
+Keepnet will constantly uphold all laws relating to anti-bribery and corruption in all the jurisdictions in which we operate. We are bound by the laws of the UK, including the Bribery Act 2010, in regards to our conduct both at home and abroad.&#x20;
+
+Keepnet recognizes that bribery and corruption are punishable by up to ten years of imprisonment and a fine. If our company is discovered to have taken part in corrupt activities, we may be subjected to an unlimited fine, be excluded from tendering for public contracts, and face serious damage to our reputation. It is with this in mind that we commit to preventing bribery and corruption in our business, and take our legal responsibilities seriously.
+
+#### 3. Who is covered by the policy?
+
+This anti-bribery policy applies to all employees (whether temporary, fixed-term, or permanent), consultants, contractors, trainees, seconded staff, home workers, casual workers, agency staff, volunteers, interns, agents, sponsors, or any other person or persons associated with us (including third parties), or any of our subsidiaries or their employees, no matter where they are located (within or outside of the UK). The policy also applies to Officers, Trustees, Board, and/or Committee members at any level.&#x20;
+
+In the context of this policy, third-party refers to any individual or organization our company meets and works with. It refers to actual and potential clients, customers, suppliers, distributors, business contacts, agents, advisers, and government and public bodies – this includes their advisors, representatives and officials, politicians, and public parties.&#x20;
+
+Any arrangements our company makes with a third party is subject to clear contractual terms, including specific provisions that require the third party to comply with minimum standards and procedures relating to anti-bribery and anti-corruption.
+
 ### Environmental Policy
 
 #### Introduction
