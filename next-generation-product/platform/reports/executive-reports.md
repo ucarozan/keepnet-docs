@@ -26,6 +26,12 @@ The primary aim of our Executive Reports is to empower our customers with the in
 
 Our Executive Reports are more than just a summary; they are a strategic tool designed to guide your organization toward a more secure future. By focusing on the most critical aspects of your security posture, we help you prioritize actions, allocate resources efficiently, and ensure that your organization remains resilient in the face of evolving cyber threats.
 
+## Example Executive Report PDF
+
+Here is an example **Executive Report** showing the **Phishing Simulation, Security Awareness Training, Suspicious Email Reporting, and Security Culture Score** metrics over time for your organisation.
+
+{% file src="../../../.gitbook/assets/Keepnet's Executive Report - Example.pdf" %}
+
 ## Understanding Graphics in the Executive Report
 
 In the Executive Report, visual representations are essential for simplifying complex data and presenting it in a clear, actionable way. These graphics highlight key metrics, trends, and comparisons that are important for informed decision-making.&#x20;
