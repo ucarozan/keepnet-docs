@@ -67,13 +67,13 @@ If your simulated phishing emails land in users’ spam folders or are being qua
 
 ## Verifying Your Configuration
 
-To confirm successful whitelisting, please follow the steps below.
+To confirm successful allow listing, please follow the steps below.
 
 1. First, launch a phishing campaign to your pilot groups and confirm if the simulation emails are delivered to the inbox.
 2. Second, please check the campaign report on the Keepnet platform to confirm if there are any false positives.
 
 {% hint style="info" %}
-Even after whitelisting is completed, but still the emails go to spam or quarantine, please make sure you have whitelisted Keepnet on your email server too. Please [check this document](./) for more information.
+Even after allow listing is completed, but still the emails go to spam or quarantine, please make sure you have allow listed Keepnet on your email server too. Please [check this document](./) for more information.
 {% endhint %}
 
 If you need further help, [submit a support request](../../../resources/keepnet-support-help-desk.md) — our team is here to assist.

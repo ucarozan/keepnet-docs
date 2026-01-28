@@ -1,6 +1,6 @@
 # How to Allow List an IP Address in Office 365
 
-It's suggested to use all the methods explained in this documentation step by step for allow listing (sometimes called Whitelisting) successfully. The customer may skip the related step if there is no feature in their O365 environment due to the license.
+It's suggested to use all the methods explained in this documentation step by step for allow listing successfully. The customer may skip the related step if there is no feature in their O365 environment due to the license.
 
 ## How to Allow List Using the Third-party Phishing Simulations Feature in Office 365
 
@@ -22,7 +22,7 @@ To complete this procedure, you must have security administrator privileges with
 
 ## How to Allow List Using the Threat Policies Feature in Office 365
 
-The below instructions will show you how to allow list the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by whitelisting **Sender** **IPs** in the O365 environment in the **Threat Policies** feature.
+The below instructions will show you how to allow list the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by allow listing **Sender** **IPs** in the O365 environment in the **Threat Policies** feature.
 
 {% hint style="info" %}
 To complete this procedure, you must have security administrator privileges with the Microsoft Security & Compliance Center or be a member of the Microsoft Exchange Online Organization Management administrator group.
@@ -38,7 +38,7 @@ To complete this procedure, you must have security administrator privileges with
 
 ## How to Allow List Using the Safe Links Feature in Office 365
 
-The below instructions will show you how to allow list the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by whitelisting **Domains** in the O365 environment in the **Safe** **Links** feature.
+The below instructions will show you how to allow list the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by allow listing **Domains** in the O365 environment in the **Safe** **Links** feature.
 
 {% hint style="danger" %}
 This step is suggested to prevent any false clicks on training or phishing reports.
@@ -65,7 +65,7 @@ After creating the rule, it may not effect immediately, please wait a couple of 
 
 ## How to Allow List Using the Spam Filter Bypass Feature in Office 365
 
-The below instructions will show you how to whitelist the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by whitelisting the **Sender** **IPs** in the O365 environment in the **Bypass Spam Filter f**eature.
+The below instructions will show you how to allow list the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by allow listing the **Sender** **IPs** in the O365 environment in the **Bypass Spam Filter f**eature.
 
 {% hint style="info" %}
 To complete this procedure, you must have security administrator privileges with the Microsoft Security & Compliance Center or be a Microsoft Exchange Online Organization Management administrator group member.
@@ -74,7 +74,7 @@ To complete this procedure, you must have security administrator privileges with
 1. Sign in to the [admin](https://admin.microsoft.com/AdminPortal/) portal.
 2. Go to **Exchange > Mail flow > Rules** and click the **+ Add a rule** butto&#x6E;**.**
 3. Select the **Bypass Spam Filter** option.
-4. Enter a name for your whitelisting rule.
+4. Enter a name for your allow listing rule.
 5. Scroll down to the **"Apply this rule if..."** section and select "**The** **sender"** and then select **"IP address is in any of these ranges or exactly matches"**
    1. To the right you'll see **"Enter text...",** click **"Enter Words"** to bring up a new window labeled **specify** **IP** **address** **ranges,** and enter the **IPs** listed [here](./#ip-addresses-and-domains-to-allow) and then click the **Save** button.
 6. Scroll down to the "**Do the following"** section.
@@ -84,12 +84,12 @@ To complete this procedure, you must have security administrator privileges with
    1. Select the **"Modify the message properties"** option and then select the **"set a message header"** option.
    2. Click **"Enter** **Words"** and type **"X-MS-Exchange-Organization-BypassClutter"** and then click the **Save** button.
    3. Next, click **Enter** **Words** under the **"header value"** and type **"true".**
-8. We recommend leaving the rest of the rule settings the same. Once you have completed these steps, click **Save** to save your whitelisting rule.
-9. Make sure the whitelisting rule's status is enabled. If it's disabled, click on it and **Enable** it and click the **Edit** **Rule** **Settings** button on the opened page to save it.
+8. We recommend leaving the rest of the rule settings the same. Once you have completed these steps, click **Save** to save your allow listing rule.
+9. Make sure the allow listing rule's status is enabled. If it's disabled, click on it and **Enable** it and click the **Edit** **Rule** **Settings** button on the opened page to save it.
 
 ## How to Bypass Advanced Threat Protection (ATP) "Link" by Using IP Address in Office 365
 
-The below instructions will show you how to whitelist the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by whitelisting the **Sender** **IPs** in the O365 environment with the **"SkipSafeLinksProcessing**" rule.
+The below instructions will show you how to allow list the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by allow listing the **Sender** **IPs** in the O365 environment with the **"SkipSafeLinksProcessing**" rule.
 
 {% hint style="danger" %}
 This step is suggested to prevent scanning phishing simulation links by O365 sent by the platform.
@@ -102,18 +102,18 @@ To complete this procedure, you must have security administrator privileges with
 1. Sign in to the [admin](https://admin.microsoft.com/AdminPortal/) portal.
 2. Go to **Exchange > Mail flow > Rules** and click the **+ Add a rule** butto&#x6E;**.**
 3. Click on the **Create a new rule** option.
-4. Enter a name for your whitelisting rule.
+4. Enter a name for your allow listing rule.
 5. Scroll down to the **"Apply this rule if..."** section and select "**The** **sender"** and then select **"IP address is in any of these ranges or exactly matches"**
    1. To the right, you'll see **"Enter text...",** click **"Enter Words"** to bring up a new window labelled **specify** **IP** **address** **ranges,** and enter the **IPs** listed [here](./#ip-addresses-and-domains-to-allow) and then click the **Save** button.
 6. Scroll down to the **"Do the following"** section.
    1. Select the **"Modify the message properties"** option and then select the **"Set a message header"** option.
    2. Set the message header to **"X-MS-Exchange-Organization-SkipSafeLinksProcessing"** and set the value to **"1"**.
-7. We recommend leaving the rest of the rule settings the same. Once you have completed these steps, click **Save** to save your whitelisting rule.
-8. Make sure the whitelisting rule's status is enabled. If it's disabled, click on it and **Enable** it and click the **Edit** **Rule** **Settings** button on the opened page to save it.
+7. We recommend leaving the rest of the rule settings the same. Once you have completed these steps, click **Save** to save your allow listing rule.
+8. Make sure the allow listing rule's status is enabled. If it's disabled, click on it and **Enable** it and click the **Edit** **Rule** **Settings** button on the opened page to save it.
 
 ## How to Bypass Advanced Threat Protection (ATP) "Attachment" by Using IP Address in Office 365
 
-The below instructions will show you how to whitelist the attached files in the emails that will be sent from the platform to users by whitelisting the **Sender** **IPs** in the O365 environment with the **"SkipSafeAttachmentProcessing"** rule.
+The below instructions will show you how to allow list the attached files in the emails that will be sent from the platform to users by allow listing the **Sender** **IPs** in the O365 environment with the **"SkipSafeAttachmentProcessing"** rule.
 
 {% hint style="danger" %}
 This step is suggested to prevent scanning phishing simulation attachment files by O365 sent by the platform.
@@ -126,14 +126,14 @@ To complete this procedure, you must have security administrator privileges with
 1. Sign in to the [admin](https://admin.microsoft.com/AdminPortal/) portal.
 2. Go to **Exchange > Mail flow > Rules** and click the **+ Add a rule** butto&#x6E;**.**
 3. Click on the **Create a new rule** option.
-4. Enter a name for your whitelisting rule.
+4. Enter a name for your allow listing rule.
 5. Scroll down to the **"Apply this rule if..."** section and select "**The** **sender"** and then select **"IP address is in any of these ranges or exactly matches"**
    1. To the right, you'll see **"Enter text...",** click **"Enter Words"** to bring up a new window labelled **specify** **IP** **address** **ranges,** and enter the **IPs** listed [here](./#ip-addresses-and-domains-to-allow) and then click the **Save** button.
 6. Scroll down to the **"Do the following"** section.
    1. Select the **"Modify the message properties"** option and then select the **"Set a message header"** option.
    2. Set the message header to **"X-MS-Exchange-Organization-SkipSafeAttachmentProcessing"** and set the value to **"1"**.
-7. We recommend leaving the rest of the rule settings the same. Once you have completed these steps, click **Save** to save your whitelisting rule.
-8. Make sure the whitelisting rule's status is enabled. If it's disabled, click on it and **Enable** it and click the **Edit** **Rule** **Settings** button on the opened page to save it.
+7. We recommend leaving the rest of the rule settings the same. Once you have completed these steps, click **Save** to save your allow listing rule.
+8. Make sure the allow listing rule's status is enabled. If it's disabled, click on it and **Enable** it and click the **Edit** **Rule** **Settings** button on the opened page to save it.
 
 ## Troubleshooting
 
@@ -143,10 +143,10 @@ If the emails sent by the platform somehow is not delivered to the user's inbox,
 2. Go to **Exchange > Mail flow > Message Trace** and click the **+ start a trace** butto&#x6E;**.**
 3. Enter the from address to the **"Senders"** field which is expected to be delivered from the platform and click the **Search** button.
 4. The O365 will list the emails that is delivered from the specified email address and then you can click on the emails to see more information.
-5. While on the Quarantine page, click on the email to view more details. Scroll down to the email body to check the links inside. If you notice a **Mimecast** link, it indicates that Mimecast has interfered with the email. In this case, you need to [whitelist the email in Mimecast](how-to-allow-list-in-mimecast.md).
+5. While on the Quarantine page, click on the email to view more details. Scroll down to the email body to check the links inside. If you notice a **Mimecast** link, it indicates that Mimecast has interfered with the email. In this case, you need to [allow list the email in Mimecast](how-to-allow-list-in-mimecast.md).
 
 ## Video Tutorial
 
-The following video playlist tutorial contains information about how to whitelist in O365 environment.
+The following video playlist tutorial contains information about how to allow list in O365 environment.
 
 {% embed url="https://youtube.com/playlist?list=PLTfpxvprC-_w5co46z8kqxeizCFR6ty2G" %}
