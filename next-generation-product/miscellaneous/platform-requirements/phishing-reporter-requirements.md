@@ -8,11 +8,11 @@ The following are the minimum requirements for Phishing Reporter.
 
 The table below lists the addresses that the users should be able to access through the internet and the minimum connection speed.
 
-The following table shows addresses that should be whitelisted for users who will use the platform via **Cloud**.
+The following table shows addresses that should be allow listed for users who will use the platform via **Cloud**.
 
 <table><thead><tr><th width="265.35483870967744">Host</th><th width="482">Port</th></tr></thead><tbody><tr><td>api.keepnetlabs.com</td><td>80,443</td></tr><tr><td>dash.keepnetlabs.com</td><td>80,443</td></tr><tr><td>addin-api.keepnetlabs.com</td><td>80,443</td></tr><tr><td>Internet Speed</td><td>> 1 Mbps</td></tr></tbody></table>
 
-The following table shows addresses that should be whitelisted for users who will use the platform via **On-Premise**.
+The following table shows addresses that should be allow listed for users who will use the platform via **On-Premise**.
 
 <table><thead><tr><th width="266.35483870967744">Host</th><th width="482">Port</th><th data-hidden></th></tr></thead><tbody><tr><td>On-Premise Domain Address</td><td>80,443</td><td></td></tr><tr><td>Internet Speed</td><td>> 1 Mbps</td><td></td></tr></tbody></table>
 

@@ -58,11 +58,11 @@ A: The System templates can't be deleted by the admin users. The admins are able
 
 ## Q: Which tracking domain is used for Attachment type campaigns?
 
-A: The platform automatically generates unique tracking links for attached files for each target user for Attachment type campaigns. The domain that is used for the attachment type campaign are dynamics. Please make sure you whitelist all the simulation domains.&#x20;
+A: The platform automatically generates unique tracking links for attached files for each target user for Attachment type campaigns. The domain that is used for the attachment type campaign are dynamics. Please make sure you allow list all the simulation domains.&#x20;
 
 ## Q: Emails do not arrive to the target users
 
-A: The delivery status can be checked on Sending Report menu in the campaign report to see if the emails have been delivered successfully to the users. If the emails are successfully delivered, please check your [whitelisting settings](../../miscellaneous/allow-listing/).
+A: The delivery status can be checked on Sending Report menu in the campaign report to see if the emails have been delivered successfully to the users. If the emails are successfully delivered, please check your [allow listing settings](../../miscellaneous/allow-listing/).
 
 ## Q: Why the domain that is used for the campaign gives a red screen on Google?
 

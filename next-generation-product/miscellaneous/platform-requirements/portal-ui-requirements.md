@@ -6,11 +6,11 @@ The following are the minimum requirements to use the platform portal interface.
 
 Users must be able to access the following addresses through the internet at the given minimum connection speed.&#x20;
 
-Addresses that should be whitelisted and minimum internet speed for users who use the platform via **Cloud**.
+Addresses that should be allow listed and minimum internet speed for users who use the platform via **Cloud**.
 
 <table><thead><tr><th width="267.1446246335302">Host</th><th width="482">Port</th></tr></thead><tbody><tr><td>api.keepnetlabs.com</td><td>80,443</td></tr><tr><td>dash.keepnetlabs.com</td><td>80,443</td></tr><tr><td>Internet Speed</td><td>> 1 Mbps</td></tr></tbody></table>
 
-Addresses that should be whitelisted and minimum internet speed for users who use the platform via **On-Premise**.
+Addresses that should be allow listed and minimum internet speed for users who use the platform via **On-Premise**.
 
 <table><thead><tr><th width="265.35483870967744">Host</th><th width="482">Port</th><th data-hidden></th></tr></thead><tbody><tr><td>On-Premise Domain Address</td><td>80,443</td><td></td></tr><tr><td>Internet Speed</td><td>> 1 Mbps</td><td></td></tr></tbody></table>
 
@@ -19,7 +19,7 @@ Addresses that should be whitelisted and minimum internet speed for users who us
 The table below provides the minimum browser version required for users to log in to the platform.
 
 {% hint style="info" %}
-You should whitelist the platform domain addresses with any pop-up blocker to avoid any limitation of your ability to use some features.
+You should allow list the platform domain addresses with any pop-up blocker to avoid any limitation of your ability to use some features.
 {% endhint %}
 
 <table><thead><tr><th width="219.20762927936175">Host</th><th width="482">Port</th><th data-hidden></th></tr></thead><tbody><tr><td>Edge</td><td>> 16</td><td></td></tr><tr><td>Mozilla Firefox</td><td>> 76</td><td></td></tr><tr><td>Opera</td><td>> 62</td><td></td></tr><tr><td>Safari</td><td>> 11.1.1</td><td></td></tr><tr><td>Chrome</td><td>> 88.0.4324.15</td><td></td></tr></tbody></table>

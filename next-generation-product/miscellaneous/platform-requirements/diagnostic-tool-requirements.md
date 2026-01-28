@@ -8,11 +8,11 @@ The following are the minimum system requirements for Diagnostic Tool to run suc
 
 The table below lists the addresses that the users should be able to access through the internet and the minimum connection speed.
 
-The following table shows addresses that should be whitelisted for the users who use the platform as **Cloud**.
+The following table shows addresses that should be allow listed for the users who use the platform as **Cloud**.
 
 <table><thead><tr><th width="265.35483870967744">Host</th><th width="482">Port</th></tr></thead><tbody><tr><td>api.keepnetlabs.com</td><td>80,443</td></tr><tr><td>dash.keepnetlabs.com</td><td>80,443</td></tr><tr><td>addin-api.keepnetlabs.com</td><td>80,443</td></tr><tr><td>Internet Speed</td><td>> 1 Mbps</td></tr></tbody></table>
 
-The following table shows addresses that should be whitelisted for the users who use the platform as **On-Premise**.
+The following table shows addresses that should be allow listed for the users who use the platform as **On-Premise**.
 
 <table><thead><tr><th width="266.35483870967744">Host</th><th width="482">Port</th><th data-hidden></th></tr></thead><tbody><tr><td>On-Premise Domain Address</td><td>80,443</td><td></td></tr><tr><td>Internet Speed</td><td>> 1 Mbps</td><td></td></tr></tbody></table>
 

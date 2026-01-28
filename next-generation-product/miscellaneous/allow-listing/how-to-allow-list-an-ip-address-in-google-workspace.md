@@ -1,8 +1,8 @@
-# How to Whitelist an IP Address in Google Workspace
+# How to Allow List an IP Address in Google Workspace
 
 ## Google Workspace IP Bypass
 
-The below instructions will show you how to whitelist the emails such as notification, training, or [phishing simulation](https://keepnetlabs.com/products/phishing-simulator) emails that will be sent from the platform to users by whitelisting **Sender** **IPs** in the Google Workspace environment.
+The below instructions will show you how to allow list the emails such as notification, training, or [phishing simulation](https://keepnetlabs.com/products/phishing-simulator) emails that will be sent from the platform to users by allow listing **Sender** **IPs** in the Google Workspace environment.
 
 {% hint style="warning" %}
 To complete this procedure, you must have security administrator privileges with Google Workspace.

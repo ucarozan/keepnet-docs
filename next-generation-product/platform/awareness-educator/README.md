@@ -41,7 +41,7 @@ A: There is timeout information that is embedded in the scorm file. According to
 
 ### Q: Emails do not arrive to the target users
 
-A: The delivery status can be checked on Sending Report menu in the training report to see if the emails have been delivered successfully to the users. If the emails are successfully delivered, please check your [whitelisting settings](../../miscellaneous/allow-listing/).
+A: The delivery status can be checked on Sending Report menu in the training report to see if the emails have been delivered successfully to the users. If the emails are successfully delivered, please check your [allow listing settings](../../miscellaneous/allow-listing/).
 
 ### Q: Can users resume their training from where they left off?
 
