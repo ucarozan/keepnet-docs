@@ -158,7 +158,7 @@ The detection rules are:
   * **A4.1** – The phishing link was clicked, but the invisible browser javascript challenge was not passed.
   * **A4.2** – The browser failed to load required scripts that a real user’s browser would normally execute.
 
-If customers see several entries marked as **Bot Activity**, it typically means that their security tools pre-screened the phishing simulation links. To evaluate real user behavior, they should filter the report by **Activity Type** or use the **“Hide Bot Activity”** toggle. For better accuracy in future simulations, they may consider whitelisting Keepnet domains to reduce interference from automated systems.
+If customers see several entries marked as **Bot Activity**, it typically means that their security tools pre-screened the phishing simulation links. To evaluate real user behavior, they should filter the report by **Activity Type** or use the **“Hide Bot Activity”** toggle. For better accuracy in future simulations, they may consider allow listing Keepnet domains to reduce interference from automated systems.
 
 By filtering out bot noise, organizations gain a clearer understanding of **true user actions and risk levels**.
 

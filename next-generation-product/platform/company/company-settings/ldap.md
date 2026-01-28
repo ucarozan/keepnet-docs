@@ -16,7 +16,7 @@ Go to **Company > Company Settings > LDAP** from the platform menu to access the
 
 If the test connection is successful, you will see that it’s successful, if not please see the detailed pop-up message.
 
-Usually, a whitelist rule is needed to access to the local Active Directory from the platform's IP address. You can contact support team to get IP address of the platform.
+Usually, an allow list rule is needed to access to the local Active Directory from the platform's IP address. You can contact support team to get IP address of the platform.
 
 ### Scheduled Syncs
 

@@ -4,7 +4,7 @@
 
 Our Customer Terms of Service is a contract that governs our customers' use of the Keepnet products and services. It consists of the following documents:
 
-* [**General Terms:**](customer-terms-of-service.md) These contain the core legal and commercial terms that apply to your use of our products and services.  Any references to Master Terms means these General Terms.  &#x20;
+* [**General Terms:**](customer-terms-of-service.md) These contain the core legal and commercial terms that apply to your use of our products and services.  Any references to Main Terms means these General Terms.  &#x20;
 * [**Product Specific Terms**](product-specific-terms.md)**:** These include any additional terms that apply to your use of each of our product offerings, our consulting and other services, and third-party services.
 * [**Jurisdiction Specific Terms**](jurisdiction-specific-terms.md)**:** Depending on your location, some of these jurisdiction-specific terms will apply to you. They’ll also explain which Keepnet entity you’re contracting with, and which laws will govern our relationship.
 * [**Data Processing Agreement (DPA)**](data-processing-agreement.md)**:** This explains how we process your data and includes the EU Standard Contractual Clauses.
@@ -116,7 +116,7 @@ You will notify us promptly of any unauthorized use of your Users’ identificat
 2. [Phishing Reporter Requirements ](https://doc.keepnetlabs.com/next-generation-product/miscellaneous/platform-requirements/phishing-reporter-requirements)
 3. [Diagnostic Tool Requirements ](https://doc.keepnetlabs.com/next-generation-product/miscellaneous/platform-requirements/diagnostic-tool-requirements)
 
-By ensuring that your system meets these requirements, you can make the most of the Keepnet platform's capabilities.Please note that all information is subject to change and it is recommended to check the official Keepnet documentation for the most up-to-date system requirements at [https://doc.keepnetlabs.com/Next-Generation-Product/master](https://doc.keepnetlabs.com/Next-Generation-Product/master).
+By ensuring that your system meets these requirements, you can make the most of the Keepnet platform's capabilities.Please note that all information is subject to change and it is recommended to check the official Keepnet documentation for the most up-to-date system requirements at [https://doc.keepnetlabs.com/Next-Generation-Product](https://doc.keepnetlabs.com/Next-Generation-Product/master)/
 
 2.12  Free Trial. If you register for a free trial, we will make the applicable Subscription Service available to you on a trial basis free of charge until the earlier of (a) the end of the free trial period (if not terminated earlier) or (b) the start date of your paid subscription. Unless you purchase a subscription to the applicable Subscription Service before the end of the free trial, all of your data in the Subscription Service may be permanently deleted at the end of the trial, and we will not recover it. If we include additional terms and conditions on the trial registration web page, those will apply as well.
 

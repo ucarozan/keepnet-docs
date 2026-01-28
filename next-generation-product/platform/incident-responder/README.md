@@ -125,9 +125,9 @@ It is human nature to lose track of what’s going on in a hectic information se
 
 It is recommended that you use the Reports generated from the use of the Incident Responder in conjunction with authorised third party technologies to achieve the best results. Reports can be used in line with the organisation’s own procedures and help avert potential cyber threats in the future. Threat Sharing / Threat Intelligence platforms are ideal places in which reported Incidents can be used for the wider benefit of a particular industry or sector.
 
-### **Use Case: I have a single master tenant on O365 but manage multiple business units under that tenant. I would like to restrict the** [**Incident Responder**](https://keepnetlabs.com/products/incident-responder) **integration to specific groups within the Master tenant.**
+### **Use Case: I have a single main tenant on O365 but manage multiple business units under that tenant. I would like to restrict the** [**Incident Responder**](https://keepnetlabs.com/products/incident-responder) **integration to specific groups within the Main tenant.**
 
-Yes, it’s possible to integrate with your master (single) tenant via the graph API, then you can restrict the API integration to a distribution group in Azure AD. i.e., you can decide which user mailboxes to integrate with (it does not have to be all of them). Please follow the steps below:
+Yes, it’s possible to integrate with your main (single) tenant via the graph API, then you can restrict the API integration to a distribution group in Azure AD. i.e., you can decide which user mailboxes to integrate with (it does not have to be all of them). Please follow the steps below:
 
 1. You need to implement the graph API settings for Incident Responder (following our standard configuration, which includes making the API work for “all’ users - [https://doc.keepnetlabs.com/Next-Generation-Product/platform/incident-responder/mail-configurations/microsoft-365](mail-configurations/microsoft-365.md))
 2. Then you need to limit access to the App from Azure AD as it relates to Exchange Online ([https://docs.microsoft.com/en-us/graph/auth-limit-mailbox-access](https://docs.microsoft.com/en-us/graph/auth-limit-mailbox-access))\
