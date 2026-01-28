@@ -4,8 +4,8 @@
 
 **Direct Email Creation (DEC)** is a feature that connects to your O365 with a few required API permissions. This feature creates the phishing simulation email directly in the user’s inbox instead of sending the emails over SMTP protocol.**Key Benefits:**
 
-1. Remove false positives that whitelisting tools cause when analyzing links.
-2. Eradicate maintenance and challenges of whitelisting for the purpose of email delivery (you may need to whitelist in your URL protection solutions such as Defender or ZScaler)
+1. Remove false positives that allow listing tools cause when analyzing links.
+2. Eradicate maintenance and challenges of allow listing for the purpose of email delivery (you may need to allow list in your URL protection solutions such as Defender or ZScaler)
 3. Very simple and quick setup (can be completed in a couple of minutes!)
 
 This page explains how to use the **Direct** **Email** **Creation** feature in **Google** **Workspace**. Please follow the steps below to set up DEC settings within your Google Workspace.

@@ -95,7 +95,7 @@ A: No, you can only launch a campaign with DEC settings using Campaign Manager. 
 
 ### Q: Do I need to whitelist if I use the DEC feature?
 
-A: No, you don't need to [whitelist](../../../../miscellaneous/whitelisting/) if you are using the DEC feature for the [Phishing Simulator](../../../phishing-simulator/) or the [Awareness Educator](../../../awareness-educator/) product.
+A: No, you don't need to [whitelist](../../../../miscellaneous/allow-listing/) if you are using the DEC feature for the [Phishing Simulator](../../../phishing-simulator/) or the [Awareness Educator](../../../awareness-educator/) product.
 
 ### Q: Can I resend the campaign email to the users whose status shows Error in the Sending Report menu in the campaign report?
 

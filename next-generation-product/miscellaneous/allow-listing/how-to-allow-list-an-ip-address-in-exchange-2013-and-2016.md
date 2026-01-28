@@ -1,6 +1,6 @@
-# How to Whitelist an IP Address in Exchange 2013 and 2016
+# How to Allow List an IP Address in Exchange 2013 and 2016
 
-The below instructions will show you how to whitelist the emails such as notification, training, or [phishing simulation](https://keepnetlabs.com/products/phishing-simulator) emails that will be sent from the platform to users by whitelisting **Sender** **IPs** in the Exchange 2013 and 2016 environment.
+The below instructions will show you how to allow list the emails such as notification, training, or [phishing simulation](https://keepnetlabs.com/products/phishing-simulator) emails that will be sent from the platform to users by allow listing **Sender** **IPs** in the Exchange 2013 and 2016 environment.
 
 {% hint style="warning" %}
 To complete this procedure, you must have security administrator privileges with the Microsoft Security & Compliance Center or be a member of the Microsoft Exchange Online Organization Management administrator group.
@@ -29,6 +29,6 @@ You must complete the following steps once the **connector** is defined.
 
 ## Video Tutorial
 
-The following video tutorial contains information about how to whitelist in Exchange 2013 or 2016 environment.
+The following video tutorial contains information about how to allow list in Exchange 2013 or 2016 environment.
 
 {% embed url="https://youtu.be/GsSylrZqlxQ" %}

@@ -6,7 +6,7 @@ It is essential that your employees are able to open all emails sent via Keepnet
 
 ​[Direct Email Creation](google-direct-email-creation.md) (recommended)
 
-​[Whitelisting](google-whitelisting.md)​&#x20;
+​[Allow Listing](google-allow-listing.md)​&#x20;
 
 {% hint style="success" %}
 You only need to do one of these options. Customers do not need to complete both.
@@ -18,12 +18,12 @@ You only need to do one of these options. Customers do not need to complete both
 
 **Key Benefits:**
 
-1. Remove false positives that whitelisting tools cause when analyzing links
-2. Eradicate maintenance and challenges of whitelisting for the purpose of email delivery (you may need to whitelist in your URL protection solutions such as Defender or ZScaler)
+1. Remove false positives that allow listing tools cause when analyzing links
+2. Eradicate maintenance and challenges of allow listing for the purpose of email delivery (you may need to whitelist in your URL protection solutions such as Defender or ZScaler)
 3. Very simple and quick setup (can be completed in a couple of minutes!)
 
-## Whitelisting <a href="#whitelisting" id="whitelisting"></a>
+## Allow Listing <a href="#whitelisting" id="whitelisting"></a>
 
-**Whitelisting** is common practise for ensuring emails from specific domains are delivered successfully to the inboxes of your employees. Whitelisting is a method used by many organisations to ensure emails are successfully delivered.
+**Allow Listing** is common practise for ensuring emails from specific domains are delivered successfully to the inboxes of your employees. Allow Listing is a method used by many organisations to ensure emails are successfully delivered.
 
-The **key challenge** our customers face with whitelisting is email analysis tools often open links within emails to check for maliciousness, impacting the accuracy of your reporting data. For example, it may show that your employees have opened the phishing link when they have not. This will directly influence who receives the behavioural-based training.
+The **key challenge** our customers face with allow listing is email analysis tools often open links within emails to check for maliciousness, impacting the accuracy of your reporting data. For example, it may show that your employees have opened the phishing link when they have not. This will directly influence who receives the behavioural-based training.

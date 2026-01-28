@@ -1,10 +1,10 @@
-# How to Whitelist an IP Address in Office 365
+# How to Allow List an IP Address in Office 365
 
-It's suggested to use all the methods explained in this documentation step by step for whitelisting successfully. The customer may skip the related step if there is no feature in their O365 environment due to the license.
+It's suggested to use all the methods explained in this documentation step by step for allow listing (sometimes called Whitelisting) successfully. The customer may skip the related step if there is no feature in their O365 environment due to the license.
 
-## How to Whitelist Using the Third-party Phishing Simulations Feature in Office 365
+## How to Allow List Using the Third-party Phishing Simulations Feature in Office 365
 
-The below instructions will show you how to whitelist the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by whitelisting **Sender** **IPs** and **Domains** in the O365 environment in the [**Phishing Simulation**](https://keepnetlabs.com/products/phishing-simulator) feature.
+The below instructions will show you how to allow list the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by allow listing **Sender** **IPs** and **Domains** in the O365 environment in the [**Phishing Simulation**](https://keepnetlabs.com/products/phishing-simulator) feature.
 
 {% hint style="info" %}
 To complete this procedure, you must have security administrator privileges with the Microsoft Security & Compliance Center or be a member of the Microsoft Exchange Online Organization Management administrator group.
@@ -17,12 +17,12 @@ To complete this procedure, you must have security administrator privileges with
 5. Click the **Phishing simulations** tab and click **Edit**.
 6. Add the **IP address** to **Sending IP** sectio&#x6E;**.**
 7. Add the **Domain** address (also known as the **MAIL** **FROM** address) used in the phishing campaign into the **Domains** section.
-8. Add the **phishing domains** [here](whitelisting-in-other-security-solutions.md#whitelisting-platform-addresses) by using **\*.domain.com/\*** wildcard syntax to **Simulation URLs to allow** section.
+8. Add the **phishing domains** [here](allow-listing-in-other-security-solutions.md#whitelisting-platform-addresses) by using **\*.domain.com/\*** wildcard syntax to **Simulation URLs to allow** section.
 9. Click **Save** to complete the process.
 
-## How to Whitelist Using the Threat Policies Feature in Office 365
+## How to Allow List Using the Threat Policies Feature in Office 365
 
-The below instructions will show you how to whitelist the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by whitelisting **Sender** **IPs** in the O365 environment in the **Threat Policies** feature.
+The below instructions will show you how to allow list the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by whitelisting **Sender** **IPs** in the O365 environment in the **Threat Policies** feature.
 
 {% hint style="info" %}
 To complete this procedure, you must have security administrator privileges with the Microsoft Security & Compliance Center or be a member of the Microsoft Exchange Online Organization Management administrator group.
@@ -36,9 +36,9 @@ To complete this procedure, you must have security administrator privileges with
 6. Enable the **Turn on safe** list option.
 7. Click **Save** to complete the process.
 
-## How to Whitelist Using the Safe Links Feature in Office 365
+## How to Allow List Using the Safe Links Feature in Office 365
 
-The below instructions will show you how to whitelist the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by whitelisting **Domains** in the O365 environment in the **Safe** **Links** feature.
+The below instructions will show you how to allow list the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by whitelisting **Domains** in the O365 environment in the **Safe** **Links** feature.
 
 {% hint style="danger" %}
 This step is suggested to prevent any false clicks on training or phishing reports.
@@ -48,7 +48,7 @@ This step is suggested to prevent any false clicks on training or phishing repor
 To complete this procedure, you must have security administrator privileges with the Microsoft Security & Compliance Center or be a member of the Microsoft Exchange Online Organization Management administrator group.
 {% endhint %}
 
-1. Please ask for the list of the [phishing simulator](https://keepnetlabs.com/products/phishing-simulator) domains from [here](whitelisting-in-other-security-solutions.md#whitelisting-platform-addresses).
+1. Please ask for the list of the [phishing simulator](https://keepnetlabs.com/products/phishing-simulator) domains from [here](allow-listing-in-other-security-solutions.md#whitelisting-platform-addresses).
 2. Sign into the [**Microsoft Security & Compliance**](https://security.microsoft.com/) Center.
 3. Click and open the **Email & Collaboration** menu from the left.
 4. Click **Policies and rules** from the left sidebar menu, click **Threat** **Policies** and select **Safe Links**.
@@ -56,14 +56,14 @@ To complete this procedure, you must have security administrator privileges with
 6. Add a name and description for your safe links policy and click **Next**.
 7. Select your company domain to be included in this policy and click **Next**.
 8. Deselect the **"Track user clicks"** option and the **"Office 365 Apps"** option.
-9. Add the **phishing domains** [here](whitelisting-in-other-security-solutions.md#whitelisting-platform-addresses) by using **\*.domain.com/\*** wildcard syntax to the **Do not rewrite the following URLs** section.
+9. Add the **phishing domains** [here](allow-listing-in-other-security-solutions.md#whitelisting-platform-addresses) by using **\*.domain.com/\*** wildcard syntax to the **Do not rewrite the following URLs** section.
 10. Click the **Next** button and select **Submit** to complete the process.
 
 {% hint style="warning" %}
 After creating the rule, it may not effect immediately, please wait a couple of hours before you test it.
 {% endhint %}
 
-## How to Whitelist Using the Spam Filter Bypass Feature in Office 365
+## How to Allow List Using the Spam Filter Bypass Feature in Office 365
 
 The below instructions will show you how to whitelist the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by whitelisting the **Sender** **IPs** in the O365 environment in the **Bypass Spam Filter f**eature.
 
@@ -143,7 +143,7 @@ If the emails sent by the platform somehow is not delivered to the user's inbox,
 2. Go to **Exchange > Mail flow > Message Trace** and click the **+ start a trace** butto&#x6E;**.**
 3. Enter the from address to the **"Senders"** field which is expected to be delivered from the platform and click the **Search** button.
 4. The O365 will list the emails that is delivered from the specified email address and then you can click on the emails to see more information.
-5. While on the Quarantine page, click on the email to view more details. Scroll down to the email body to check the links inside. If you notice a **Mimecast** link, it indicates that Mimecast has interfered with the email. In this case, you need to [whitelist the email in Mimecast](how-to-whitelist-in-mimecast.md).
+5. While on the Quarantine page, click on the email to view more details. Scroll down to the email body to check the links inside. If you notice a **Mimecast** link, it indicates that Mimecast has interfered with the email. In this case, you need to [whitelist the email in Mimecast](how-to-allow-list-in-mimecast.md).
 
 ## Video Tutorial
 

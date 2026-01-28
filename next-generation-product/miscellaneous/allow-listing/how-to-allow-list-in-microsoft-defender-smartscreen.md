@@ -1,4 +1,4 @@
-# How to Whitelist in Microsoft Defender SmartScreen
+# How to Allow List in Microsoft Defender SmartScreen
 
 
 
@@ -13,7 +13,7 @@ You should allowlist all domains used in simulations. Please follow the steps be
 * Log in to the **Keepnet Platform**
 * Go to **Phishing Simulator → Settings → Domains**, then export or copy your domain list.
 
-## Step 2: Choose Your Whitelisting Method
+## Step 2: Choose Your Allow Listing Method
 
 | Environment                                | Recommended Method                           |
 | ------------------------------------------ | -------------------------------------------- |

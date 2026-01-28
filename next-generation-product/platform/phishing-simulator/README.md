@@ -62,7 +62,7 @@ A: The platform automatically generates unique tracking links for attached files
 
 ## Q: Emails do not arrive to the target users
 
-A: The delivery status can be checked on Sending Report menu in the campaign report to see if the emails have been delivered successfully to the users. If the emails are successfully delivered, please check your [whitelisting settings](../../miscellaneous/whitelisting/).
+A: The delivery status can be checked on Sending Report menu in the campaign report to see if the emails have been delivered successfully to the users. If the emails are successfully delivered, please check your [whitelisting settings](../../miscellaneous/allow-listing/).
 
 ## Q: Why the domain that is used for the campaign gives a red screen on Google?
 

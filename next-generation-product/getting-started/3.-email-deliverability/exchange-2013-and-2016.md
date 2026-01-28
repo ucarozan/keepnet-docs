@@ -25,14 +25,14 @@ You must complete the following steps once the **connector** is defined.
 6. Set the value information to **true** with the enter text option on the right.
 7. Click **Save** to complete the process.
 
-#### **🚨 If you have additional security solutions (e.g. Mimecast) please make sure to whitelist in these security solutions by following these steps:**
+#### **🚨 If you have additional security solutions (e.g. Mimecast) please make sure to allow list in these security solutions by following these steps:**
 
-[​Whitelisting in Security Solutions​](../../miscellaneous/whitelisting/whitelisting-in-other-security-solutions.md)
+[​Allow Listing in Security Solutions​](../../miscellaneous/allow-listing/allow-listing-in-other-security-solutions.md)
 
-​✅ **You have now ensured your target users will receive emails through Keepnet. Now you need to** [**Whitelist Domains**](../recommended-add-domains-to-url-protection/) **so your target users can successfully open Keepnet email links ➡️**
+​✅ **You have now ensured your target users will receive emails through Keepnet. Now you need to** [**Allow List Domains**](../recommended-add-domains-to-url-protection/) **so your target users can successfully open Keepnet email links ➡️**
 
 ### Video Tutorial <a href="#video-tutorial" id="video-tutorial"></a>
 
-The following video tutorial contains information about how to whitelist in Exchange 2013 or 2016 environment.
+The following video tutorial contains information about how to Allow List in Exchange 2013 or 2016 environment.
 
 {% embed url="https://youtu.be/GsSylrZqlxQ" %}

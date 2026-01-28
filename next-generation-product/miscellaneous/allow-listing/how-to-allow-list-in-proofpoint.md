@@ -1,12 +1,12 @@
-# How to Whitelist in Proofpoint
+# How to Allow List in Proofpoint
 
-To ensure smooth delivery of Keepnet’s simulated phishing campaigns and awareness training notifications, you may need to whitelist Keepnet in your Proofpoint environment. This guide covers configuration steps for both **Proofpoint Essentials** and **Proofpoint Enterprise**.
+To ensure smooth delivery of Keepnet’s simulated phishing campaigns and awareness training notifications, you may need to allow list Keepnet in your Proofpoint environment. This guide covers configuration steps for both **Proofpoint Essentials** and **Proofpoint Enterprise**.
 
 {% hint style="info" %}
 These are third-party configurations. If you encounter any difficulties during the process, we recommend contacting Proofpoint support directly. For any questions specific to Keepnet, feel free to reach out to our support team.
 {% endhint %}
 
-## Whitelisting in Proofpoint Essentials
+## Allow List in Proofpoint Essentials
 
 Follow the steps below to allow Keepnet’s IP addresses through **Proofpoint** **Essentials**:
 
@@ -18,7 +18,7 @@ Follow the steps below to allow Keepnet’s IP addresses through **Proofpoint** 
 For information about Proofpoint’s handling of email attachments, consult their documentation titled _"_[_Blocks by Default_](https://help.proofpoint.com/Proofpoint_Essentials/Email_Security/Administrator_Topics/090_filtersandsenderlists/Attachment_Types_Proofpoint_Essentials_Blocks_By_Default)_."_
 {% endhint %}
 
-## Whitelisting in Proofpoint Enterprise
+## Allow List in Proofpoint Enterprise
 
 To safelist Keepnet in your **Proofpoint** **Enterprise** environment:
 
@@ -44,13 +44,13 @@ To avoid disruptions by **Proofpoint Targeted Attack Protection (TAP)**, you can
      * To get a downloadable CSV of your phishing simulation domains, go to your **Keepnet** **dashboard** and then go to **Phishing Simulator > Settings > Domains** page.
 4. Click **Save Changes**.
 
-## Whitelisting by Simulation Domain
+## Allow Listing by Simulation Domain
 
-To whitelist Keepnet by **simulation domains** in **Proofpoint**:
+To allow list Keepnet by **simulation domains** in **Proofpoint**:
 
 1. Go to **Email Firewall > Rules** in your **Proofpoint** **Admin** **Center**.
 2. Enable the rule by switching **Enable** to **On**.
-3. Set a descriptive name such as **'Keepnet&#x20;**_**Whitelisting Simulation Domains'**_
+3. Set a descriptive name such as **'Keepnet&#x20;**_**Allow Listing Simulation Domains'**_
 4. Under **Conditions**, click **Add Condition** and select **Sender Domain**.
 5. Add the domains listed in the Keepnet platform by logging in and then going to **Phishing Simulator > Settings > Domains** page.
 6. Under **Dispositions**, change **Delivery Method** to **Deliver Now**.

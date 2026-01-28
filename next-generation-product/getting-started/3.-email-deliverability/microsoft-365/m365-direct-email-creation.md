@@ -5,7 +5,7 @@
 **Direct Email Creation (DEC)** is a feature that connects to your O365 with a few required API permissions. This feature creates the phishing simulation email directly in the user’s inbox instead of sending the emails over SMTP protocol.**Key Benefits:**
 
 1. Remove false positives that come from email delivery.
-2. Eradicate maintenance and challenges of whitelisting for the purpose of email delivery (you may need to whitelist in your URL protection solutions such as Defender or ZScaler)
+2. Eradicate maintenance and challenges of allow listing for the purpose of email delivery (you may need to allow list in your URL protection solutions such as Defender or ZScaler)
 3. Very simple and quick setup (can be completed in a couple of minutes!)
 
 ## How to Configure Direct Email Creation <a href="#how-to-configure-direct-email-creation" id="how-to-configure-direct-email-creation"></a>
@@ -104,7 +104,7 @@ A: No, you can only launch a campaign with DEC settings using Campaign Manager. 
 
 ### Q: Do I need to whitelist if I use the DEC feature?
 
-A: If you use only the [Phishing Simulator](https://keepnetlabs.com/products/phishing-simulator) product and use the DEC feature, you don’t need to do [whitelisting](../../../miscellaneous/whitelisting/). If you’re using other products, such as Awareness Educator, you need to do whitelisting since the DEC feature only works for now with the [Phishing Simulator](https://keepnetlabs.com/products/phishing-simulator) product.
+A: If you use only the [Phishing Simulator](https://keepnetlabs.com/products/phishing-simulator) product and use the DEC feature, you don’t need to do [whitelisting](../../../miscellaneous/allow-listing/). If you’re using other products, such as Awareness Educator, you need to do whitelisting since the DEC feature only works for now with the [Phishing Simulator](https://keepnetlabs.com/products/phishing-simulator) product.
 
 ### Q: Can I resend the campaign email to the users whose status shows Error in the Sending Report menu in the campaign report?
 
