@@ -19,7 +19,7 @@ You only need to do one of these options. Customers do not need to complete both
 **Key Benefits:**
 
 1. Remove false positives that allow listing tools cause when analyzing links
-2. Eradicate maintenance and challenges of allow listing for the purpose of email delivery (you may need to whitelist in your URL protection solutions such as Defender or ZScaler)
+2. Eradicate maintenance and challenges of allow listing for the purpose of email delivery (you may need to allow list in your URL protection solutions such as Defender or ZScaler)
 3. Very simple and quick setup (can be completed in a couple of minutes!)
 
 ## Allow Listing <a href="#whitelisting" id="whitelisting"></a>
