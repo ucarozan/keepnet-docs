@@ -16,7 +16,7 @@ You only need to do one of these options. Customers do not need to complete both
 **Direct Email Creation (DEC)** is a feature that connects to your O365 or Google Workspace with a few required API permissions. This feature creates the phishing simulation email directly in the user’s inbox instead of sending the emails over SMTP protocol.**Key Benefits:**
 
 1. Remove false positives that allow listing tools cause when analyzing links.
-2. Eradicate maintenance and challenges of allow listing for the purpose of email delivery (you may need to whitelist in your URL protection solutions such as Defender or ZScaler)
+2. Eradicate maintenance and challenges of allow listing for the purpose of email delivery (you may need to allow list in your URL protection solutions such as Defender or ZScaler)
 3. Very simple and quick setup (can be completed in a couple of minutes!)
 
 ## Allow Listing <a href="#whitelisting" id="whitelisting"></a>
