@@ -1,6 +1,6 @@
 # Allow Listing
 
-This section explains allow listing (sometimes known as Whitelisting) and the steps needed to use the platform effectively. To ensure phishing simulation emails or training enrollments reach users' inboxes without being blocked, whitelist the phishing simulation IP addresses and phishing simulation domains on your server and security solutions.&#x20;
+This section explains allow listing and the steps needed to use the platform effectively. To ensure phishing simulation emails or training enrollments reach users' inboxes without being blocked, allow list the phishing simulation IP addresses and phishing simulation domains on your server and security solutions.&#x20;
 
 It’s strongly recommended to send a test email to a small user group to confirm successful allow listing.
 
@@ -26,10 +26,10 @@ To find the phishing domains specific to your organization and allow list them, 
 
 The shortcuts below will show you how to allow list phishing simulation IP addresses and phishing simulation domains with the most commonly used email services.
 
-* [How to Whitelist an IP Address in Office 365](how-to-allow-list-an-ip-address-in-office-365.md)
-* [How to Whitelist an IP Address in Exchange 2013 and 2016](how-to-allow-list-an-ip-address-in-exchange-2013-and-2016.md)
-* [How to Whitelist an IP Address in Google Workspace](how-to-allow-list-an-ip-address-in-google-workspace.md)
-* [Whitelisting in Security Solutions](allow-listing-in-other-security-solutions.md)
+* [How to Allow List an IP Address in Office 365](how-to-allow-list-an-ip-address-in-office-365.md)
+* [How to Allow List an IP Address in Exchange 2013 and 2016](how-to-allow-list-an-ip-address-in-exchange-2013-and-2016.md)
+* [How to Allow List an IP Address in Google Workspace](how-to-allow-list-an-ip-address-in-google-workspace.md)
+* [Allow Listing in Security Solutions](allow-listing-in-other-security-solutions.md)
 * [Why does "X" appear on Microsoft Emails in the Outlook App?](allow-listing-the-pictures-on-microsoft-outlook-apps.md)
 
 ## FAQ

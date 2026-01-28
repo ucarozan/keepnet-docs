@@ -84,7 +84,7 @@ In the logs, you should see activities such as **"Created mailbox item"**, confi
 
 This log indicates that the application is only creating mailbox items and not accessing or reading mailboxes.
 
-✅ **You have now ensured your target users will receive emails through Keepnet. Now you need to** [**Whitelist Domains**](../../recommended-add-domains-to-url-protection/) **so your target users can successfully open Keepnet email links. ➡️**
+✅ **You have now ensured your target users will receive emails through Keepnet. Now you need to** [**Allow List Domains**](../../recommended-add-domains-to-url-protection/) **so your target users can successfully open Keepnet email links. ➡️**
 
 ## Video Tutorial
 
@@ -102,9 +102,9 @@ A: Click [here](m365-direct-email-creation.md#about-required-api-permissions) fo
 
 A: No, you can only launch a campaign with DEC settings using Campaign Manager. If you launch a campaign with Fast Launch, the campaign will be started with default SMTP settings.
 
-### Q: Do I need to whitelist if I use the DEC feature?
+### Q: Do I need to allow list if I use the DEC feature?
 
-A: If you use only the [Phishing Simulator](https://keepnetlabs.com/products/phishing-simulator) product and use the DEC feature, you don’t need to do [whitelisting](../../../miscellaneous/allow-listing/). If you’re using other products, such as Awareness Educator, you need to do whitelisting since the DEC feature only works for now with the [Phishing Simulator](https://keepnetlabs.com/products/phishing-simulator) product.
+A: If you use only the [Phishing Simulator](https://keepnetlabs.com/products/phishing-simulator) product and use the DEC feature, you don’t need to do [allow listing](../../../miscellaneous/allow-listing/). If you’re using other products, such as Awareness Educator, you need to do allow listing since the DEC feature only works for now with the [Phishing Simulator](https://keepnetlabs.com/products/phishing-simulator) product.
 
 ### Q: Can I resend the campaign email to the users whose status shows Error in the Sending Report menu in the campaign report?
 

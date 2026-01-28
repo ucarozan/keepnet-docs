@@ -61,10 +61,10 @@ For Forcepoint DLP, create a new rule to allow data to be sent to Keepnet Labs' 
 
 ### 4. CrowdStrike Falcon
 
-CrowdStrike Falcon uses a cloud-based system to handle threats. Whitelisting can be done through the Falcon console.
+CrowdStrike Falcon uses a cloud-based system to handle threats. Allow Listing can be done through the Falcon console.
 
-* **Prevention Policy Whitelisting:** Log into the Falcon console. Navigate to Configuration > Prevention Policies. Select the policy to which you wish to add the exceptions. Under the 'Exclusions' section, click on 'Add New' > 'File'. In the dialog box, enter the SHA-256 hash of the Phishing Reporter and Diagnostic Tool files. Make sure to calculate the hash of the downloaded files to ensure their integrity. Set the 'Type' as 'Whitelist' and the 'Platform' as per your environment (Windows, Linux, or macOS). Add a description for your reference, and save the changes.
-* **Network Whitelisting:** In the same policy configuration, navigate to the 'IOCs' section. Click on 'Add New' > 'Indicator'. Add https://api.keepnetlabs.com/api/\* as an Indicator, select 'Network' as the type, and select 'Whitelist' as the action. Save the changes.
+* **Prevention Policy Allow Listing:** Log into the Falcon console. Navigate to Configuration > Prevention Policies. Select the policy to which you wish to add the exceptions. Under the 'Exclusions' section, click on 'Add New' > 'File'. In the dialog box, enter the SHA-256 hash of the Phishing Reporter and Diagnostic Tool files. Make sure to calculate the hash of the downloaded files to ensure their integrity. Set the 'Type' as 'Whitelist' and the 'Platform' as per your environment (Windows, Linux, or macOS). Add a description for your reference, and save the changes.
+* **Network Allow Listing:** In the same policy configuration, navigate to the 'IOCs' section. Click on 'Add New' > 'Indicator'. Add https://api.keepnetlabs.com/api/\* as an Indicator, select 'Network' as the type, and select 'Whitelist' as the action. Save the changes.
 
 ## Need Help? Contact Support Team
 

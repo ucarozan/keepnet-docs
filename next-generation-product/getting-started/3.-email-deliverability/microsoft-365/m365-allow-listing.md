@@ -4,7 +4,7 @@ It's suggested to use all the methods explained in this documentation step by st
 
 #### **🚨 If you have additional security solutions (e.g. Mimecast) please make sure to allow list in these security solutions by following these steps:**
 
-[​Whitelisting in Security Solutions​](../../../miscellaneous/allow-listing/allow-listing-in-other-security-solutions.md)
+[​Allow Listing in Security Solutions​](../../../miscellaneous/allow-listing/allow-listing-in-other-security-solutions.md)
 
 ## How to Allow List Using the Third-party Phishing Simulations Feature in Office 365
 
@@ -123,7 +123,7 @@ If the emails sent by the platform somehow is not delivered to the user's inbox,
 
 #### **🚨 If you have additional security solutions (e.g. Mimecast) please make sure to allow list in these security solutions by following these steps:**
 
-[​Whitelisting in Security Solutions​](../../../miscellaneous/allow-listing/allow-listing-in-other-security-solutions.md)
+[​Allow Listing in Security Solutions​](../../../miscellaneous/allow-listing/allow-listing-in-other-security-solutions.md)
 
 ✅ **You have now ensured your target users will receive emails through Keepnet. Now you need to** [**Allow List Domains**](../../recommended-add-domains-to-url-protection/) **so your target users can successfully open Keepnet email links ➡️**
 
