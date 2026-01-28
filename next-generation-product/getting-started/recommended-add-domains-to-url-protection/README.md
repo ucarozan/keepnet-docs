@@ -8,13 +8,13 @@ Without this step, your employees will successfully receive the test phishing em
 
 **Below are quick links for you to follow the relevant steps:**&#x200B;
 
-[Whitelist for Office 365](whitelist-for-microsoft-365.md)
+[Whitelist for Office 365](allow-list-for-microsoft-365.md)
 
-[​​Whitelist for Google Workspace](whitelist-for-google-workspace.md)
+[​​Whitelist for Google Workspace](allow-list-for-google-workspace.md)
 
-[​​Whitelist for Exchange 2013/2016](whitelist-for-exchange-2013-2016.md)
+[​​Whitelist for Exchange 2013/2016](allow-list-for-exchange-2013-2016.md)
 
-​​[Whitelist in Security Solutions](whitelist-in-security-solutions.md)
+​​[Whitelist in Security Solutions](allow-list-in-security-solutions.md)
 
 
 

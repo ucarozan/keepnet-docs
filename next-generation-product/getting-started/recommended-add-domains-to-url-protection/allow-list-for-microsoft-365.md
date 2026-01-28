@@ -1,8 +1,8 @@
-# Whitelist for Microsoft 365
+# Allow List for Microsoft 365
 
-## How to Whitelist Using the Safe Links Feature in Office 365 <a href="#how-to-whitelist-using-the-safe-links-feature-in-office-365" id="how-to-whitelist-using-the-safe-links-feature-in-office-365"></a>
+## How to Allow List Using the Safe Links Feature in Office 365 <a href="#how-to-whitelist-using-the-safe-links-feature-in-office-365" id="how-to-whitelist-using-the-safe-links-feature-in-office-365"></a>
 
-The below instructions will show you how to whitelist the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by whitelisting **Domains** in the O365 environment in the **Safe** **Links** feature.
+The below instructions will show you how to allow list the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by allow listing **Domains** in the O365 environment in the **Safe** **Links** feature.
 
 {% hint style="danger" %}
 This step is suggested to prevent any false clicks on training or phishing reports.
@@ -22,6 +22,6 @@ To complete this procedure, you must have security administrator privileges with
 8. Add the **phishing domains** by using **\*.domain.com/\*** wildcard syntax to the **Do not rewrite the following URLs** section.
 9. Click the **Next** button and select **Submit** to complete the process.
 
-✅ **You have now Whitelist Domains so your target users can successfully open Keepnet email links. Please also Whitelist in your security solutions if you haven't already.**&#x20;
+✅ **You have now Allow List Domains so your target users can successfully open Keepnet email links. Please also Allow List in your security solutions if you haven't already.**&#x20;
 
 **Next step is to** [**Setup your Phishing Reporter**](../6.-setup-phishing-reporter/) **➡️**

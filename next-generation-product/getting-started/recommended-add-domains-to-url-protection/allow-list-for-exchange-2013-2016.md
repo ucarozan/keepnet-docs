@@ -1,4 +1,4 @@
-# Whitelist for Exchange 2013/2016
+# Allow List for Exchange 2013/2016
 
 To complete this procedure, you must have security administrator privileges with the Microsoft Security & Compliance Center or be a member of the Microsoft Exchange Online Organization Management administrator group.
 
@@ -23,6 +23,6 @@ You must complete the following steps once the **connector** is defined.
 6. Set the value information to **true** with the enter text option on the right.
 7. Click **Save** to complete the process.
 
-✅ **You have now Whitelist Domains so your target users can successfully open Keepnet email links. Please also Whitelist in your security solutions if you haven't already.**&#x20;
+✅ **You have now Allow List Domains so your target users can successfully open Keepnet email links. Please also Allow List in your security solutions if you haven't already.**&#x20;
 
 **Next step is to** [**Setup your Phishing Reporter**](../6.-setup-phishing-reporter/) **➡️**

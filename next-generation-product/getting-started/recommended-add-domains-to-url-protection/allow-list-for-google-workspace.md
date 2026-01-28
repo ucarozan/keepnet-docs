@@ -1,10 +1,10 @@
-# Whitelist for Google Workspace
+# Allow List for Google Workspace
 
-## How to Whitelist an IP Address in Google Workspace <a href="#how-to-whitelist-an-ip-address-in-google-workspace" id="how-to-whitelist-an-ip-address-in-google-workspace"></a>
+## How to Allow List an IP Address in Google Workspace <a href="#how-to-whitelist-an-ip-address-in-google-workspace" id="how-to-whitelist-an-ip-address-in-google-workspace"></a>
 
 ### Google Workspace IP Bypass <a href="#google-workspace-ip-bypass" id="google-workspace-ip-bypass"></a>
 
-The below instructions will show you how to whitelist the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by whitelisting **Sender** **IPs** in the Google Workspace environment.To complete this procedure, you must have security administrator privileges with Google Workspace.
+The below instructions will show you how to allow list the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by allow listing **Sender** **IPs** in the Google Workspace environment.To complete this procedure, you must have security administrator privileges with Google Workspace.
 
 1. Note the [IP addresses](https://doc.keepnetlabs.com/Next-Generation-Product/getting-started/whitelisting#ip-addresses-and-domains-to-allow) to be allowed.
 2. Sign in to [Google Admin.](https://admin.google.com/)​
@@ -22,6 +22,6 @@ The below instructions will show you how to whitelist the emails such as notific
 13. Select the option of **Require TLS for connections from the email gateways listed above**.
 14. Click **Save** to complete the process.
 
-✅ **You have now Whitelist Domains so your target users can successfully open Keepnet email links. Please also Whitelist in your security solutions if you haven't already.**&#x20;
+✅ **You have now Allow List Domains so your target users can successfully open Keepnet email links. Please also Allow List in your security solutions if you haven't already.**&#x20;
 
 **Next step is to** [**Setup your Phishing Reporter**](../6.-setup-phishing-reporter/) **➡️**

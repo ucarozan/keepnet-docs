@@ -22,4 +22,4 @@ Bank Fraud Alert
 
 ### Example: CEO Message
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/ChatGPT Image Sep 19, 2025, 11_46_20 AM.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/ChatGPT Image Sep 19, 2025, 11_46_20 AM.png" alt="" width="375"><figcaption></figcaption></figure></div>

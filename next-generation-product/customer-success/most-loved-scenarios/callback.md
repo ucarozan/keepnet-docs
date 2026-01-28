@@ -24,4 +24,4 @@ Google: Google Workspace Account Recovery
 
 ### Example: Please Contact Support Team
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/Screenshot 2025-09-19 at 11.36.34.png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/Screenshot 2025-09-19 at 11.36.34.png" alt=""><figcaption></figcaption></figure></div>

@@ -34,4 +34,4 @@ AnyDesk – Remote Desktop Solutions
 
 ### **Example:** Microsoft: Re-authenticate your account
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/Screenshot 2025-09-19 at 11.35.22.png" alt="" width="359"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/Screenshot 2025-09-19 at 11.35.22.png" alt="" width="359"><figcaption></figcaption></figure></div>

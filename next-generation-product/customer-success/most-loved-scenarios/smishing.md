@@ -36,4 +36,4 @@ MS Teams Invite
 
 ### Example: New Device Policy
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/ChatGPT Image Sep 19, 2025, 11_40_16 AM.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/ChatGPT Image Sep 19, 2025, 11_40_16 AM.png" alt="" width="375"><figcaption></figcaption></figure></div>

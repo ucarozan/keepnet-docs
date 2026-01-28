@@ -6,7 +6,7 @@ With optional human review for added quality assurance and unified reporting acr
 
 **For example:**
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-09-19 at 12.56.41.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-19 at 12.56.41.png" alt=""><figcaption></figcaption></figure>
 
 ### **Step-by-Step**
 
