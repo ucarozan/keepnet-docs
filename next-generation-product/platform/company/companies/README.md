@@ -16,7 +16,13 @@ The platform provides the ability to view, add, edit, and delete customer compan
 
 The authority to create and manage companies is only available to Resellers. Each customer will access the features of their company based on their license type.
 
-## **How to Create and Define a New Company**
+## Listing Companies
+
+The following details of all companies created can be viewed on the **Company > Companies** page.
+
+<table><thead><tr><th width="151.1145874071177"></th><th width="580.5714285714286"></th></tr></thead><tbody><tr><td>Company Name</td><td>Name of the company</td></tr><tr><td>Reseller Name</td><td>The name of the Reseller company that manages the customer account.</td></tr><tr><td>Industry</td><td>Industry sector of the company</td></tr><tr><td>License Type</td><td>Information of the product license owned by the company</td></tr><tr><td>Target Users</td><td>The number of target users that are active on the customer account.</td></tr><tr><td>Inactive Users</td><td>The number of target users that are inactive on the customer account.</td></tr><tr><td>Deleted Users</td><td>The number of target users that are deleted on the customer account.</td></tr><tr><td>Monthly Users</td><td>The number of target users were added to the customer account during the selected month, regardless of whether they are currently Active, Inactive, or Deleted. You can change the month using the selector. Monthly Users data is available starting from December for all customers.</td></tr><tr><td>License Limit</td><td>The number of total target users permitted to be uploaded to the platform by the customer account.</td></tr><tr><td>Tags</td><td>The tags can be added to the companies for easier filtering or any other purposes.</td></tr><tr><td>Renewal Date</td><td>The date and time when the customer account’s license expires.</td></tr><tr><td>Date Created</td><td>Date the company was created</td></tr><tr><td>Action</td><td><p>The specifics of an existing company can be revised. Click on the the window that opens when the three-dot icon for the following options. </p><p></p><ul><li><strong>Add to a company group =</strong> Add the selected company to a previously created company groups</li><li><strong>Switch to company:</strong> Switch to this company to manage the company.</li><li><strong>Create a new company group with company =</strong> Create a new company group with the selected company</li><li><strong>Switch</strong> <strong>to</strong> <strong>company</strong> <strong>=</strong> Simulate the selected company to manage</li><li><strong>Delete</strong> <strong>=</strong> Delete the selected company</li></ul></td></tr></tbody></table>
+
+## **How to Create a New Company**
 
 Go to the **Company > Companies** page and click on the **+ NEW** button to create a new company. The process of creating a new company consists of 4 stages which are explained below.
 
@@ -78,13 +84,7 @@ Once a company has been created, you can edit the specific settings described be
 
 You can complete the process with the **Close** button, return to the **First System User** page with the **Back** button, or select **Cancel** to rescind the configuration.
 
-## Listing Companies
-
-The following details of all companies created can be viewed on the **Company > Companies** page.
-
-<table><thead><tr><th width="151.1145874071177"></th><th width="580.5714285714286"></th></tr></thead><tbody><tr><td>Company Name</td><td>Name of the company</td></tr><tr><td>Industry</td><td>Industry sector of the company</td></tr><tr><td>License Type</td><td>Information of the product license owned by the company</td></tr><tr><td>User Limit</td><td>The number of users permitted to be uploaded to the platform by the company.</td></tr><tr><td>License Start Date</td><td>Set the license start date</td></tr><tr><td>License Expire Date</td><td>Set the license expire date</td></tr><tr><td>Date Created</td><td>Date the company was created</td></tr><tr><td>Action</td><td><p>The specifics of an existing company can be revised. Click on the the window that opens when the three-dot icon for the following options. </p><p></p><p><strong>Add to a company group =</strong> Add the selected company to a previously created company groups</p><p></p><p><strong>Create a new company group with company =</strong> Create a new company group with the selected company</p><p></p><p><strong>Switch</strong> <strong>to</strong> <strong>company</strong> <strong>=</strong> Simulate the selected company to manage</p><p></p><p><strong>Delete</strong> <strong>=</strong> Delete the selected company</p></td></tr></tbody></table>
-
-## FAQ:
+## FAQs
 
 ### Q: I created a company account, can I delete it at any time?
 
