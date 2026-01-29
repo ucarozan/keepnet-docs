@@ -1,6 +1,6 @@
 # How to Setup Manager Reporting
 
-**Manager Reporting** lets you **automatically email managers** a scheduled report that shows **their team’s Phishing Simulation** and/or **Security Awareness Training** statistics. This helps managers track progress, follow up with their team, and supports a stronger security culture with less manual work for system admins.
+**Manager Reporting** lets you **automatically email managers** a scheduled report in excel format that shows **their team’s Phishing Simulation** and/or **Security Awareness Training** statistics. This helps managers track progress, follow up with their team, and supports a stronger security culture with less manual work for system admins.
 
 ## Prerequisite: Add Manager Information to Target Users
 
@@ -15,10 +15,9 @@ Before scheduling manager reports, ensure each target user has a manager assigne
 
 ### Optional: Sync manager info via SCIM (Entra ID)
 
-If you want to sync Manager data (first name, last name, email address) automatically for your target users, follow this guide:\
-[https://doc.keepnetlabs.com/next-generation-product/platform/company/company-settings/scim-settings/azure-ad-scim-integration](https://doc.keepnetlabs.com/next-generation-product/platform/company/company-settings/scim-settings/azure-ad-scim-integration)
+If you want to automatically sync Manager data (first name, last name, email address) via SCIM for your target users, [follow this guide](../../../getting-started/2.-add-target-users/add-users-via-scim/scim-setup-in-entra-id.md).
 
-### Step 1: Create an Executive Report with Manager Metrics
+## Step 1: Create an Executive Report with Manager Metrics
 
 You create an Executive Report first, then schedule it.
 
