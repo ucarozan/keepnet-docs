@@ -82,7 +82,7 @@ A: The manager receives team-level statistics related to the selected report typ
 
 ### Q: What if managers don’t receive the email?
 
-**A:** Check these common items:
+A: Check these common items:
 
 * Target users include **Manager First Name, Manager Last Name, and Manager Email** under **Company > Target Users** page.
 * The **Scheduled Report** is **Active**
@@ -91,5 +91,5 @@ A: The manager receives team-level statistics related to the selected report typ
 
 ### Q: Can manager info be synced automatically?
 
-**A:** Yes. You can sync manager attributes via SCIM using Entra ID. Follow the SCIM integration guide:\
+A: Yes. You can sync manager attributes via SCIM using Entra ID. Follow the SCIM integration guide:\
 [https://doc.keepnetlabs.com/next-generation-product/platform/company/company-settings/scim-settings/azure-ad-scim-integration](https://doc.keepnetlabs.com/next-generation-product/platform/company/company-settings/scim-settings/azure-ad-scim-integration)
