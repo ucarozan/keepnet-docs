@@ -43,17 +43,18 @@ Please follow the steps below to allow the '**Keepnet Security Awareness'** app 
 4. On the **App** **setup** **policies** page, you will need to click the name of the policy your team is under. If your team is under the default global policy, click **Global (Org-wide default)**. If your team is under a custom policy, click that custom policy’s name.
 5. In the following **Global (Org-wide default)** or custom policy page, click **Add apps** under the **Installed** **Apps** field . A new sidebar will open on the right side of the screen.
 6. Use the search bar in the sidebar on the right side of the screen to search for the **'Keepnet Security Awareness'** app. **Select** the app and click **Add**.
-7. The **Keepnet Security Awareness** app will now show under **Installed apps**.
-8. Please make sure you click the **Save** button and then click **Confirm** to apply the changes.
+7. Click **Save** to apply the changes.
+8. The **Keepnet Security Awareness** app will now show under **Installed Apps** or **Teams Apps > Manage Apps** page.
+9. Open the **Keepnet** app, then go to **Users and Groups** and make sure **Keepnet Security Awareness** is set to **Available to everyone (org-wide default)**.
 
 {% hint style="warning" %}
-After installing the Keepnet Security Awareness app, please allow up to 12 hours for changes to take effect in the Microsoft admin center.
+After installing the Keepnet Security Awareness app, **please allow up to 12 hours** for changes to take effect in the Microsoft admin center.
 
 If the app takes longer than 12 hours to deploy, it could be due to a conflicting policy. For help with resolving conflicting custom policies in the Microsoft Admin Centre, please reach out to [Keepnet support](../../../../resources/keepnet-support-help-desk.md).
 {% endhint %}
 
 {% hint style="success" %}
-Once the Keepnet Security Awareness App is added to your Microsoft Admin Center, you can test it by entering your business email address and clicking the 'SEND TEST MESSAGE' button on the Company > Company Settings > Microsoft Teams Settings page.
+Once the Keepnet Security Awareness App is added to your Microsoft Admin Centre and waited a few hours or 12 hours, you can test it by entering your business email address and clicking the 'SEND TEST MESSAGE' button on the Company > Company Settings > Microsoft Teams Settings page.
 {% endhint %}
 
 ## Additional Settings
