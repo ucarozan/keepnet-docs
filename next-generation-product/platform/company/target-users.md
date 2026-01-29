@@ -223,6 +223,17 @@ By using the **Untrained Users** group, you can ensure that employees who have n
 
 The new **User Activity Timeline** button under the **Company > Target Users > Actions** column allows admins to view a target user's activity history across simulations, reporting and training. This helps track performance and engagement. For more details, visit [Gamification Report](../reports/gamification-report.md) documentation.
 
+## Target Users Widgets
+
+The **Company > Target Users** page includes four widgets that help you quickly understand the status of your user base and track user changes over time. Each widget displays a number and provides a clear summary of who is currently active, who is inactivated, who is deleted, and how many users were added during a selected month for billing purposes.
+
+The widgets are:
+
+* **Active Users:** Shows users who are currently active on the platform. These users can receive emails and can be tracked in simulations and reporting.
+* **Inactive Users:** Shows users who are temporarily inactivated. The simulation or training delivery is paused for these users, but their existing data remains available in the platform.
+* **Deleted Users:** Shows users removed from active use. These users are no longer part of the active user base, but their historical records are retained for reporting and audit purposes.
+* **Monthly Users:** Shows how many users were added to the platform during the selected month, regardless of whether they are currently Active, Inactive, or Deleted. You can change the month using the selector. Monthly Users data is available starting from December for all customers.
+
 ## Video Tutorial
 
 The **Target Users** are those who receive e-mails that will be sent through the platform. This video tutorial explains how to add target users to the platform so that it can send training, phishing, campaigns, and other emails to them.
