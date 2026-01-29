@@ -223,7 +223,7 @@ By using the **Untrained Users** group, you can ensure that employees who have n
 
 The new **User Activity Timeline** button under the **Company > Target Users > Actions** column allows admins to view a target user's activity history across simulations, reporting and training. This helps track performance and engagement. For more details, visit [Gamification Report](../reports/gamification-report.md) documentation.
 
-## Target Users Widgets
+## Target Users Summary Widgets
 
 The **Company > Target Users** page includes four widgets that help you quickly understand the status of your user base and track user changes over time. Each widget displays a number and provides a clear summary of who is currently active, who is inactivated, who is deleted, and how many users were added during a selected month for billing purposes.
 
