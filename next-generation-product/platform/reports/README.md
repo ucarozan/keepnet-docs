@@ -7,7 +7,7 @@ Additionally, this page includes important information on the metrics used in th
 ## Shortcuts
 
 * [How to create advanced high-level reports](advanced-reports.md)
-* [How to create custom executive reports](executive-reports.md)
+* [How to create custom executive reports](executive-reports/)
 * [How to schedule reports](scheduled-reports.md)
 * [How to view the gamification report](gamification-report.md)
 
