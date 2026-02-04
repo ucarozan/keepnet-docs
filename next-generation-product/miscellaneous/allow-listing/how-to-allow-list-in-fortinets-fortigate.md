@@ -9,7 +9,7 @@ FortiGate offers two ways to allow traffic through the web filter:
 1. **Static URL Filter** (recommended here) — add specific domains to a list that is allowed by the firewall.
 2. **Web Rating Overrides** — an alternate method that applies when using FortiGuard category-based filtering. For details on this option, please see Fortinet’s documentation on [Web Rating Overrides](https://docs.fortinet.com/document/fortigate/latest/administration-guide/122974/web-rating-override).
 
-### Allowlisting via Static URL Filter
+## Allowlisting via Static URL Filter
 
 Follow these steps to add Keepnet’s domains to a FortiGate web filter profile.
 
@@ -25,6 +25,6 @@ Follow these steps to add Keepnet’s domains to a FortiGate web filter profile.
    * **Status**: Enabled
 8. Save your web filter profile to enforce the new list of allowed URLs.
 
-### Test the Configuration
+## Test the Configuration
 
 Once complete, **wait a few minutes** for changes to apply and then run a **small test phishing simulation** (for example, targeting 1–2 users) to check whether users can successfully visit the simulation links. If domains are still blocked, review your FortiGate policy order, ensure the web filter is applied to the correct traffic policy, and consult FortiGate support if needed.
