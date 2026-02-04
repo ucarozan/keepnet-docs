@@ -27,4 +27,4 @@ Follow these steps to add Keepnet’s domains to a FortiGate web filter profile.
 
 ## Test the Configuration
 
-Once complete, **wait a few minutes** for changes to apply and then run a **small test phishing simulation** (for example, targeting 1–2 users) to check whether users can successfully visit the simulation links. If domains are still blocked, review your FortiGate policy order, ensure the web filter is applied to the correct traffic policy, and consult FortiGate support if needed.
+Once complete, **wait a few minutes** for changes to apply and then run a **small test phishing simulation** to check whether pilot users can successfully visit the simulation links. If domains are still blocked, review your FortiGate policy order, ensure the web filter is applied to the correct traffic policy, and consult FortiGate support if needed.
