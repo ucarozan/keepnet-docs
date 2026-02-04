@@ -13,17 +13,18 @@ FortiGate offers two ways to allow traffic through the web filter:
 
 Follow these steps to add Keepnet’s domains to a FortiGate web filter profile.
 
-1. Sign in to your Fortinet administration portal.
-2. Go to **Security Profiles** > **Web Filter**.
-3. Choose either a newly created web filter profile or an existing one configured for your phishing simulation traffic.
-4. Inside the web filter settings, expand the **Static URL Filter** section. Turn on **URL Filter** and then click **Create New**.
-5. In the URL field, add each Keepnet's phishing simulation domains— input only the domain (for example `example.com`, _without_ `https://`).
-6. **Set Matching Options**
+1. **Sign in to Keepnet's platform** and go to **Phishing Simulator > Settings > Domains** page to download all the simulation domains.
+2. Sign in to your **Fortinet administration portal.**
+3. Go to **Security Profiles** > **Web Filter**.
+4. Choose either a newly created web filter profile or an existing one configured for your phishing simulation traffic.
+5. Inside the web filter settings, expand the **Static URL Filter** section. Turn on **URL Filter** and then click **Create New**.
+6. In the URL field, add each Keepnet's phishing simulation domains— input only the domain (for example `example.com`, _without_ `https://`).
+7. **Set Matching Options**
    * **Type**: Simple
    * **Action**: Allow
    * **Status**: Enabled
-7. Save your web filter profile to enforce the new list of allowed URLs.
+8. Save your web filter profile to enforce the new list of allowed URLs.
 
 ### Test the Configuration
 
-Once complete, run a **small test phishing simulation** (for example, targeting 1–2 users) to check whether users can successfully visit the simulation links. If domains are still blocked, review your FortiGate policy order, ensure the web filter is applied to the correct traffic policy, and consult FortiGate support if needed.
+Once complete, **wait a few minutes** for changes to apply and then run a **small test phishing simulation** (for example, targeting 1–2 users) to check whether users can successfully visit the simulation links. If domains are still blocked, review your FortiGate policy order, ensure the web filter is applied to the correct traffic policy, and consult FortiGate support if needed.
