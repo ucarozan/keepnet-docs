@@ -230,6 +230,7 @@
     * [How to Allow List an IP Address in Google Workspace](next-generation-product/miscellaneous/allow-listing/how-to-allow-list-an-ip-address-in-google-workspace.md)
     * [How to Allow List in Mimecast](next-generation-product/miscellaneous/allow-listing/how-to-allow-list-in-mimecast.md)
     * [How to Allow List in Proofpoint](next-generation-product/miscellaneous/allow-listing/how-to-allow-list-in-proofpoint.md)
+    * [How to Allow List in Fortinet's FortiGate](next-generation-product/miscellaneous/allow-listing/how-to-allow-list-in-fortinets-fortigate.md)
     * [How to Allow List in Microsoft Defender SmartScreen](next-generation-product/miscellaneous/allow-listing/how-to-allow-list-in-microsoft-defender-smartscreen.md)
     * [Allow Listing in Other Security Solutions](next-generation-product/miscellaneous/allow-listing/allow-listing-in-other-security-solutions.md)
     * [Allow Listing the Pictures on Microsoft Outlook Apps](next-generation-product/miscellaneous/allow-listing/allow-listing-the-pictures-on-microsoft-outlook-apps.md)
