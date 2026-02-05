@@ -3,10 +3,6 @@
 This document explains how to deploy **Keepnet's Phishing Reporter** button in Google Workspace to **all employees** or to **specific Organisation Units/Groups**.
 
 {% hint style="warning" %}
-Please [customise the Keepnet Phishing Reporter ](../phishing-reporter-customization.md)button to match your organisation's needs, including logo, text, and other settings.&#x20;
-{% endhint %}
-
-{% hint style="warning" %}
 This installation requires a Google Workspace Admin account.&#x20;
 {% endhint %}
 
@@ -158,3 +154,7 @@ A: Yes, if you have already deployed the Phishing Reporter button on Google Work
 ### Q: Is there a quick way to redeploy the add-in if I've made changes?
 
 A: No, you need to remove your current Phishing Reporter button from all employees and follow all the steps in the [document here](how-to-deploy-the-add-in-in-google-workspace.md) to re-deploy the new reporter button.
+
+### Q: Do I need to accept the permissions required for the reporter button to use?
+
+A: Yes, once you deploy the button to your employees, when they click the reporter button to use, for a one-time purpose, they need to approve the required permissions to be able to use the reporter button.
