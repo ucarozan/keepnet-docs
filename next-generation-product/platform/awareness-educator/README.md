@@ -35,6 +35,14 @@ This section provides a brief description of the Awareness Educator and other do
 
 ## FAQ
 
+### Q: How do employees access their assigned training?
+
+Each employee receives a unique training URL which will open their training in a new tab. This method removes the need for password management and reduces friction in training completion process
+
+### Q: How do I resend training to employees if they each have their own unique training URL?
+
+You can resend training to employees by going into Enrolment Reports and using the Resend button on the summary page. From here you can bulk re-send training to groups of people (e.g. those who have not completed or those who have not responded). Alternatively, you can click into Sending Report and send to individual users. Top Tip: search for users by email in the search bar!&#x20;
+
 ### Q: What is the 'You have exceeded available time' prompt message that target users see while they watch the training?
 
 A: There is timeout information that is embedded in the scorm file. According to this information, when the training timeout, an alert is displayed on the screen. The target user may click the 'OK' button to continue to training.
