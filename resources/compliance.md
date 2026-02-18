@@ -94,7 +94,7 @@ Keepnet has an on-premise installation that gives the ability to host the produc
 
 ## Data in Transit
 
-Keepnet leverages Cloudflare's advanced security services to protect data in transit. This includes full SSL encryption with TLS 1.2, which encrypts all data before it travels across the internet, ensuring that sensitive information remains secure from interception. Additional layers of security are provided by Cloudflare’s suite of features, including:
+Keepnet leverages Cloudflare's advanced security services to protect data in transit. This includes full SSL encryption with TLS 1.2 and TLS 1.3, which encrypts all data before it travels across the internet, ensuring that sensitive information remains secure from interception. Additional layers of security are provided by Cloudflare’s suite of features, including:
 
 * **Web Application Firewall (WAF):** This firewall guards against common web exploits and vulnerabilities, ensuring that malicious traffic is blocked before reaching Keepnet's infrastructure.
 * **Bot Protection:** This feature distinguishes between legitimate users and malicious bots, blocking harmful traffic while allowing genuine user access.
