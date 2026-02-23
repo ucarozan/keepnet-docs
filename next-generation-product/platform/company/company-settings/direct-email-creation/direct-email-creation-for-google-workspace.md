@@ -3,7 +3,7 @@
 This page explains how to use the **Direct** **Email** **Creation** feature in **Google** **Workspace**. Please follow the steps below to set up DEC settings within your Google Workspace.
 
 {% hint style="info" %}
-The Google Workspace settings section requires global administrator privileges.&#x20;
+You must have Google Workspace Global Administrator privileges to set up this integration on Google. This permission isn't required for the platform.
 {% endhint %}
 
 ## First Settings on Platform
