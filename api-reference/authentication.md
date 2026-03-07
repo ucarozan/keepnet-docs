@@ -33,7 +33,7 @@ Configure the following fields when creating credentials:
 Send a `POST` request to `https://api.keepnetlabs.com/connect/token` with `Content-Type: application/x-www-form-urlencoded` and body parameters: `grant_type=client_credentials`, `client_id`, `client_secret`, `scope=api1`.
 
 {% hint style="info" %}
-**Request format, parameters, and Try it:** See the **Account** or **Authentication** section in the Endpoints API Reference (OpenAPI). All request details are maintained in the spec and update automatically.
+**Request format, parameters, and Test it:** Open the **Endpoints** section in the sidebar, then go to **Account** or **Authentication**. Use the **Test it** button to send a token request with your credentials and see the response live.
 {% endhint %}
 
 The response includes your token and its expiry time:
@@ -61,7 +61,7 @@ The response includes your token and its expiry time:
 Include the token in every API request: `Authorization: Bearer <access_token>`. Example: list trainings via `GET /api/awareness-educator/trainings`.
 
 {% hint style="info" %}
-**Exact path, parameters, request/response schema, and Try it:** See the **Awareness Educator** or **Training** section in the Endpoints API Reference (OpenAPI).
+**Exact path, parameters, request/response schema, and Test it:** Open the **Endpoints** section in the sidebar, then go to **Awareness Educator** or **Training**. Use the **Test it** button to send an authenticated request and see the response.
 {% endhint %}
 
 ***
