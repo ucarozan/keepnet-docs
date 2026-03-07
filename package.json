@@ -1,0 +1,9 @@
+{
+  "name": "keepnet-docs",
+  "private": true,
+  "scripts": {
+    "openapi:enrich": "node scripts/enrich-openapi-spec.mjs openapi/keepnet-api-spec.json",
+    "openapi:validate": "node scripts/validate-spec.mjs openapi/keepnet-api-spec.json",
+    "openapi": "npm run openapi:enrich && npm run openapi:validate"
+  }
+}
