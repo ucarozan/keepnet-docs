@@ -284,3 +284,11 @@
     * [Terms of Service](legal-hub/for-everyone/free-phishing-email-analysis/terms-of-service.md)
     * [Privacy Policy](legal-hub/for-everyone/free-phishing-email-analysis/privacy-policy.md)
   * [Transparency Report](legal-hub/for-everyone/transparency-report.md)
+
+## API Reference
+
+* [Overview](api-reference/overview.md)
+* [Authentication](api-reference/authentication.md)
+* [Guides](api-reference/guides/README.md)
+  * [Manage System Users](api-reference/guides/manage-system-users.md)
+  * [Pull Training List](api-reference/guides/pull-training-list.md)
