@@ -285,13 +285,48 @@
     * [Privacy Policy](legal-hub/for-everyone/free-phishing-email-analysis/privacy-policy.md)
   * [Transparency Report](legal-hub/for-everyone/transparency-report.md)
 
-## API Reference
+## 🔌 API REFERENCE
 
 * [Overview](api-reference/overview.md)
 * [Authentication](api-reference/authentication.md)
-* [Guides](api-reference/guides/README.md)
+* [Changelog](api-reference/changelog.md)
+
+* Guides
   * [Manage System Users](api-reference/guides/manage-system-users.md)
   * [Pull Training List](api-reference/guides/pull-training-list.md)
+  * [Export Audit Logs to SIEM](api-reference/guides/export-audit-logs.md)
+
+* 👤 Company & Users
+  * [Account](api-reference/endpoints/account.md)
+  * [Company](api-reference/endpoints/company.md)
+  * [Company Groups](api-reference/endpoints/company-group.md)
+  * [System Users](api-reference/endpoints/system-user.md)
+  * [Target Users](api-reference/endpoints/target-user.md)
+
+* 🎓 Awareness Educator
+  * [Training Library](api-reference/endpoints/training.md)
+  * [Learning Paths](api-reference/endpoints/learning-path.md)
+  * [Certificates](api-reference/endpoints/certificate.md)
+  * [Enrollments](api-reference/endpoints/enrollment.md)
+
+* 🎣 Phishing Simulator
+  * [Campaigns](api-reference/endpoints/phishing-campaign.md)
+  * [Scenarios](api-reference/endpoints/phishing-scenario.md)
+  * [Email Templates](api-reference/endpoints/phishing-email-template.md)
+
+* 📱 Multi-Channel Simulators
+  * [Smishing Campaigns](api-reference/endpoints/smishing-campaign.md)
+  * [Quishing Campaigns](api-reference/endpoints/quishing-campaign.md)
+  * [Callback Campaigns](api-reference/endpoints/callback-campaign.md)
+  * [Callback Scenarios](api-reference/endpoints/callback-scenario.md)
+
+* 🛡️ Incident Responder
+  * [Analysis Engines](api-reference/endpoints/analysis-engine.md)
+  * [Audit Logs](api-reference/endpoints/audit-log.md)
+
+* ⚙️ Platform Settings
+  * [Allow List](api-reference/endpoints/allow-list.md)
+  * [Dashboard](api-reference/endpoints/dashboard.md)
 * ```yaml
   type: builtin:openapi
   props:
