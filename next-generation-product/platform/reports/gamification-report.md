@@ -97,8 +97,9 @@ Each simulation type has specific actions with associated points based on the di
      * Easy: -400 points
      * Medium: -200 points
      * Hard: -100 points
-
-***
+   * **Incident Responder (an employee reports an email)**
+     * Reported Malicious email: +500 points
+     * Reported Phishing email: +500 points
 
 ### Security Awareness Training Scoring
 

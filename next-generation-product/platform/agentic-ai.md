@@ -3,20 +3,6 @@ description: >-
   Agentic AI is Keepnet’s agent-based security awareness product that generates
   microlearning and phishing simulation scenarios, adapts to roles and behavior
   signals, and supports multilingual outputs w
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 ---
 
 # Agentic AI

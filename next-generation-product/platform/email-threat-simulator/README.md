@@ -3,20 +3,6 @@ description: >-
   Technical documentation for the Keepnet Email Threat Simulator, detailing how
   to start threat scans, view simulation reports, configure test email accounts,
   and analyze email security results.
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 ---
 
 # Email Threat Simulator

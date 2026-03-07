@@ -3,20 +3,6 @@ description: >-
   Technical documentation for the Keepnet Phishing Reporter, detailing
   installation, configuration, reporting workflows, mailbox setup, and analyzing
   reported phishing attempts.
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 ---
 
 # Phishing Reporter

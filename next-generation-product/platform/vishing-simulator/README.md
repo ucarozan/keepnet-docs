@@ -3,23 +3,9 @@ description: >-
   Technical documentation for the Keepnet Vishing Simulator, detailing setup,
   phone call scenario configuration, campaign execution, and analysis of
   simulated voice phishing tests.
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 ---
 
-# Vishing Simulator&#x20;
+# Vishing Simulator
 
 The **Vishing** **Simulator** allows you to create a realistic simulated vishing call that is sent to employees in order to assess their ability to recognize suspicious calls and their response to attacks that could compromise organizational data and systems.\
 \

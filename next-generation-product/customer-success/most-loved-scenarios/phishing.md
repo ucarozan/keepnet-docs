@@ -24,7 +24,7 @@ Microsoft Teams: Director added you to a project team!
 
 ### Google
 
-Google Docs: You were mentioned in a comment
+Google Docs: You were mentioned in a document
 
 Google: Suspicious sign-in prevented
 
