@@ -20,7 +20,7 @@ Generate **Client ID** and **Client Secret** from the platform:
 Send a `POST` request to `https://api.keepnetlabs.com/connect/token` with OAuth2 client credentials (`grant_type=client_credentials`, `client_id`, `client_secret`, `scope=api1`).
 
 {% hint style="info" %}
-**Request format, parameters, and Try it:** See the **Account** or **Authentication** section in the [Endpoints](.) API Reference (OpenAPI). All request/response details are maintained in the OpenAPI spec and update automatically.
+**Request format, parameters, and Try it:** See the [Authentication](authentication.md) section or the **Endpoints** API Reference (OpenAPI) in the sidebar. All request/response details are maintained in the spec and update automatically.
 {% endhint %}
 
 ---
@@ -30,7 +30,7 @@ Send a `POST` request to `https://api.keepnetlabs.com/connect/token` with OAuth2
 Use the `access_token` from Step 1 in the `Authorization: Bearer <token>` header. Example: list trainings from Awareness Educator.
 
 {% hint style="info" %}
-**Exact path, parameters, request/response schema, and Try it:** See the **Awareness Educator** or **Training** section in the [Endpoints](.) API Reference (OpenAPI). The spec is the single source of truth for all endpoints.
+**Exact path, parameters, request/response schema, and Try it:** See the **Awareness Educator** or **Training** section in the **Endpoints** API Reference (OpenAPI) in the sidebar. The spec is the single source of truth for all endpoints.
 {% endhint %}
 
 ---
