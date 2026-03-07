@@ -290,47 +290,40 @@
 * [Overview](api-reference/overview.md)
 * [Authentication](api-reference/authentication.md)
 * [Changelog](api-reference/changelog.md)
-
-* Guides
+* [Guides](api-reference/guides/README.md)
   * [Manage System Users](api-reference/guides/manage-system-users.md)
   * [Pull Training List](api-reference/guides/pull-training-list.md)
-  * [Export Audit Logs to SIEM](api-reference/guides/export-audit-logs.md)
-
-* 👤 Company & Users
-  * [Account](api-reference/endpoints/account.md)
-  * [Company](api-reference/endpoints/company.md)
-  * [Company Groups](api-reference/endpoints/company-group.md)
-  * [System Users](api-reference/endpoints/system-user.md)
-  * [Target Users](api-reference/endpoints/target-user.md)
-
-* 🎓 Awareness Educator
-  * [Training Library](api-reference/endpoints/training.md)
-  * [Learning Paths](api-reference/endpoints/learning-path.md)
-  * [Certificates](api-reference/endpoints/certificate.md)
-  * [Enrollments](api-reference/endpoints/enrollment.md)
-
-* 🎣 Phishing Simulator
-  * [Campaigns](api-reference/endpoints/phishing-campaign.md)
-  * [Scenarios](api-reference/endpoints/phishing-scenario.md)
-  * [Email Templates](api-reference/endpoints/phishing-email-template.md)
-
-* 📱 Multi-Channel Simulators
-  * [Smishing Campaigns](api-reference/endpoints/smishing-campaign.md)
-  * [Quishing Campaigns](api-reference/endpoints/quishing-campaign.md)
-  * [Callback Campaigns](api-reference/endpoints/callback-campaign.md)
-  * [Callback Scenarios](api-reference/endpoints/callback-scenario.md)
-
-* 🛡️ Incident Responder
-  * [Analysis Engines](api-reference/endpoints/analysis-engine.md)
-  * [Audit Logs](api-reference/endpoints/audit-log.md)
-
-* ⚙️ Platform Settings
-  * [Allow List](api-reference/endpoints/allow-list.md)
-  * [Dashboard](api-reference/endpoints/dashboard.md)
+  * [Export Audit Logs to SIEM](api-reference/guides/export-audit-logs-to-siem.md)
+* [👤 Company & Users](api-reference/company-and-users/README.md)
+  * [Account](api-reference/company-and-users/account.md)
+  * [Company](api-reference/company-and-users/company.md)
+  * [Company Groups](api-reference/company-and-users/company-groups.md)
+  * [System Users](api-reference/company-and-users/system-users.md)
+  * [Target Users](api-reference/company-and-users/target-users.md)
+* [🎓 Awareness Educator](api-reference/awareness-educator/README.md)
+  * [Training Library](api-reference/awareness-educator/training-library.md)
+  * [Learning Paths](api-reference/awareness-educator/learning-paths.md)
+  * [Certificates](api-reference/awareness-educator/certificates.md)
+  * [Enrollments](api-reference/awareness-educator/enrollments.md)
+* [🎣 Phishing Simulator](api-reference/phishing-simulator/README.md)
+  * [Campaigns](api-reference/phishing-simulator/campaigns.md)
+  * [Scenarios](api-reference/phishing-simulator/scenarios.md)
+  * [Email Templates](api-reference/phishing-simulator/email-templates.md)
+* [📱 Multi-Channel Simulators](api-reference/multi-channel-simulators/README.md)
+  * [Smishing Campaigns](api-reference/multi-channel-simulators/smishing-campaigns.md)
+  * [Quishing Campaigns](api-reference/multi-channel-simulators/quishing-campaigns.md)
+  * [Callback Campaigns](api-reference/multi-channel-simulators/callback-campaigns.md)
+  * [Callback Scenarios](api-reference/multi-channel-simulators/callback-scenarios.md)
+* [🛡️ Incident Responder](api-reference/incident-responder/README.md)
+  * [Analysis Engines](api-reference/incident-responder/analysis-engines.md)
+  * [Audit Logs](api-reference/incident-responder/audit-logs.md)
+* [⚙️ Platform Settings](api-reference/platform-settings/README.md)
+  * [Allow List](api-reference/platform-settings/allow-list.md)
+  * [Dashboard](api-reference/platform-settings/dashboard.md)
 * ```yaml
   type: builtin:openapi
   props:
-    models: true
+    models: false
     downloadLink: true
   dependencies:
     spec:
