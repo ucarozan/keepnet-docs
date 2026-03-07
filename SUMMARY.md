@@ -324,7 +324,7 @@
   type: builtin:openapi
   props:
     models: false
-    downloadLink: true
+    downloadLink: false
   dependencies:
     spec:
       ref:
