@@ -1,4 +1,4 @@
-# Authenticate your requests
+# Authentication
 
 Keepnet API uses **OAuth 2.0 Client Credentials** flow. Every request requires a Bearer token in the `Authorization` header.
 
@@ -15,12 +15,12 @@ Before making any API calls, generate a **Client ID** and **Client Secret** from
 
 Configure the following fields when creating credentials:
 
-| Field              | Description                                                                    |
-| ------------------ | ------------------------------------------------------------------------------ |
-| **Name**           | A label for this credential set (e.g. `prod-integration`, `siem-connector`)   |
-| **Client Role**    | `Company Admin` for full access, or a custom role with limited privileges      |
-| **IP Restriction** | Optionally restrict access to specific IP addresses                            |
-| **Status**         | Set to `Active`                                                                |
+| Field              | Description                                                                 |
+| ------------------ | --------------------------------------------------------------------------- |
+| **Name**           | A label for this credential set (e.g. `prod-integration`, `siem-connector`) |
+| **Client Role**    | `Company Admin` for full access, or a custom role with limited privileges   |
+| **IP Restriction** | Optionally restrict access to specific IP addresses                         |
+| **Status**         | Set to `Active`                                                             |
 
 {% hint style="warning" %}
 **The Client Secret is shown only once.** Copy and store it securely immediately after creation — it cannot be retrieved later.
@@ -91,12 +91,12 @@ The response includes your token and its expiry time:
 }
 ```
 
-| Field           | Description                                        |
-| --------------- | -------------------------------------------------- |
-| `access_token`  | Include this in every API request                  |
-| `expires_in`    | Seconds until expiry — typically `3600` (1 hour)   |
-| `token_type`    | Always `Bearer`                                    |
-| `scope`         | Always `api1` for Keepnet API                      |
+| Field          | Description                                      |
+| -------------- | ------------------------------------------------ |
+| `access_token` | Include this in every API request                |
+| `expires_in`   | Seconds until expiry — typically `3600` (1 hour) |
+| `token_type`   | Always `Bearer`                                  |
+| `scope`        | Always `api1` for Keepnet API                    |
 
 ***
 
@@ -195,11 +195,11 @@ class KeepnetClient {
 
 The **Client Role** on your credentials determines which endpoints are accessible.
 
-| Role          | Access level                                  |
-| ------------- | --------------------------------------------- |
-| `Company Admin` | Full access to all endpoints                |
-| `Reseller`    | Cross-company management endpoints            |
-| Custom role   | Scoped to specific products or actions        |
+| Role            | Access level                           |
+| --------------- | -------------------------------------- |
+| `Company Admin` | Full access to all endpoints           |
+| `Reseller`      | Cross-company management endpoints     |
+| Custom role     | Scoped to specific products or actions |
 
 {% hint style="info" %}
 To restrict a credential set to specific products (e.g. Awareness Educator only), create a custom role with limited privileges.\
@@ -210,12 +210,12 @@ To restrict a credential set to specific products (e.g. Awareness Educator only)
 
 ## Handle authentication errors
 
-| HTTP status           | Cause                          | Action                                      |
-| --------------------- | ------------------------------ | ------------------------------------------- |
-| `401 Unauthorized`    | Missing or invalid token       | Re-authenticate and retry                   |
-| `401 Unauthorized`    | Token expired                  | Request a new token                         |
-| `403 Forbidden`       | Insufficient role permissions  | Check the Client Role in platform settings  |
-| `429 Too Many Requests` | Rate limit exceeded           | Back off and retry after a delay            |
+| HTTP status             | Cause                         | Action                                     |
+| ----------------------- | ----------------------------- | ------------------------------------------ |
+| `401 Unauthorized`      | Missing or invalid token      | Re-authenticate and retry                  |
+| `401 Unauthorized`      | Token expired                 | Request a new token                        |
+| `403 Forbidden`         | Insufficient role permissions | Check the Client Role in platform settings |
+| `429 Too Many Requests` | Rate limit exceeded           | Back off and retry after a delay           |
 
 ***
 
@@ -241,5 +241,5 @@ To restrict a credential set to specific products (e.g. Awareness Educator only)
 
 ## What's next
 
-* [Manage System Users →](guides/manage-system-users.md)
-* [Pull Training List →](guides/pull-training-list.md)
+* [Manage System Users →](/broken/pages/3cCWbcy5lIEYt1EAu1qs)
+* [Pull Training List →](/broken/pages/Zxd3nqtaDUdpJLO4vHQn)

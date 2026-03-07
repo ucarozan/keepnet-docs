@@ -3,20 +3,6 @@ description: >-
   Technical documentation for the Keepnet Phishing Simulator, covering phishing
   campaign setup, scenario configuration, templates, user targeting, and result
   analysis.
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 ---
 
 # Phishing Simulator

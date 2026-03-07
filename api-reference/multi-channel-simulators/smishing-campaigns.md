@@ -1,2 +1,0 @@
-# Smishing Campaigns
-
