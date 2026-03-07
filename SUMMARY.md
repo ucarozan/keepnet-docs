@@ -1,6 +1,6 @@
 # Table of contents
 
-## 💫 NEXT-GENERATION PRODUCT <a href="#Next-Generation-Product" id="Next-Generation-Product"></a>
+## 💫 NEXT-GENERATION PRODUCT
 
 * [Introduction](README.md)
 * [Getting Started](next-generation-product/getting-started/README.md)
@@ -117,7 +117,7 @@
     * [Callback Campaign Reports](next-generation-product/platform/callback-simulator/callback-campaign-reports.md)
     * [Settings](next-generation-product/platform/callback-simulator/settings/README.md)
       * [Callback Phone Numbers](next-generation-product/platform/callback-simulator/settings/callback-phone-numbers.md)
-  * [Vishing Simulator ](next-generation-product/platform/vishing-simulator/README.md)
+  * [Vishing Simulator](next-generation-product/platform/vishing-simulator/README.md)
     * [Vishing Templates](next-generation-product/platform/vishing-simulator/vishing-templates.md)
     * [Vishing Campaign Manager](next-generation-product/platform/vishing-simulator/vishing-campaign-manager.md)
     * [Vishing Campaign Reports](next-generation-product/platform/vishing-simulator/vishing-campaign-reports.md)
@@ -292,3 +292,14 @@
 * [Guides](api-reference/guides/README.md)
   * [Manage System Users](api-reference/guides/manage-system-users.md)
   * [Pull Training List](api-reference/guides/pull-training-list.md)
+* ```yaml
+  type: builtin:openapi
+  props:
+    models: true
+    downloadLink: true
+  dependencies:
+    spec:
+      ref:
+        kind: openapi
+        spec: keepnet-api
+  ```
