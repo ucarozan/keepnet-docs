@@ -1,2 +1,0 @@
-# Pull Training List
-
