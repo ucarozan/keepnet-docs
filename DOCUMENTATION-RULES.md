@@ -206,16 +206,19 @@ Field|Description
 | **Name** | A label for this credential set |
 ```
 
-### H8b: Swagger + tablo — HTML table kullan
+### H8b: Swagger + tablo — tablo kullanma
 
-`{% swagger %}` (Test it) olan sayfalarda markdown tabloları bozulabiliyor. **HTML table** kullan:
+`{% swagger %}` (Test it) olan sayfalarda markdown ve HTML tabloları bozulabiliyor. **Tablo yerine bullet list** kullan:
 
-```html
-<table><thead><tr><th>Field</th><th>Description</th></tr></thead><tbody>
-<tr><td><code>companyResourceId</code></td><td>Company ID</td></tr>
-<tr><td><code>companyName</code></td><td>Company name</td></tr>
-</tbody></table>
+```markdown
+## Common errors
+
+* **403 Forbidden** — Credential is not Reseller. Set Client Role = **Reseller** in **Company → Company Settings → REST API**.
+* **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
+* **400 Bad Request** — Invalid request body. Include required fields.
 ```
+
+Format: `* **HTTP status** — Cause. Fix.`
 
 ---
 

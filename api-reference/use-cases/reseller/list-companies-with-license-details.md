@@ -26,8 +26,6 @@ Retrieve all companies you manage with license information: License Type, Target
 
 ## Common errors
 
-HTTP status|Cause|Fix
-:---|:---|:---
-`403 Forbidden`|Credential is not Reseller|Set Client Role = **Reseller** in **Company → Company Settings → REST API**
-`401 Unauthorized`|Missing or invalid token|Request a new token via `POST /connect/token`
-`400 Bad Request`|Invalid request body (e.g. missing `orderBy`)|Include `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter`
+* **403 Forbidden** — Credential is not Reseller. Set Client Role = **Reseller** in **Company → Company Settings → REST API**.
+* **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
+* **400 Bad Request** — Invalid request body (e.g. missing `orderBy`). Include `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter`.
