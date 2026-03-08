@@ -91,8 +91,8 @@ function enrichSpec(spec) {
     ...tagsFromPaths.map((name) => ({ name, 'x-parent': PARENT_TAG })),
   ];
 
-  // OAuth token endpoint — Test it + embedded OpenAPI için
-  const paths = { ...CONNECT_TOKEN_PATH, ...spec.paths };
+  // OAuth token endpoint + merged paths
+  const mergedPaths = { ...CONNECT_TOKEN_PATH, ...spec.paths };
 
   // GitBook "Test it" için servers gerekli (base URL)
   const servers = spec.servers?.length
@@ -126,7 +126,92 @@ function enrichSpec(spec) {
   // Bearer as fallback: users can paste token if they already have one
   const security = [{ oauth2: ['api1'] }, { bearerAuth: [] }];
 
-  return { ...spec, paths, tags: specTags, servers, components, security };
+  // Request body examples — Test it panelinde hazır body ile Send
+  const enrichedPaths = injectRequestExamples(mergedPaths);
+
+  return { ...spec, paths: enrichedPaths, tags: specTags, servers, components, security };
+}
+
+/** Test it için hazır request body — schema'dan gelen karmaşık filter yapısı 400 hatası veriyor, minimal body kullan */
+const COMPANIES_SEARCH_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 10,
+  orderBy: 'CreateTime',
+  ascending: false,
+  filter: null,
+};
+
+/** Export endpoint — CSV/Excel export, aynı sayfada Test it. */
+const COMPANIES_SEARCH_EXPORT_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 10,
+  orderBy: 'CreateTime',
+  ascending: false,
+  filter: null,
+  reportAllPages: false,
+  exportType: 'Csv',
+};
+
+function injectRequestExamples(paths) {
+  const result = { ...paths };
+
+  if (result['/api/companies/search']?.post?.requestBody?.content) {
+    // Schema'dan gelen default (filterGroups, filterItems vs.) API'de 400 Invalid request veriyor.
+    // Sadece example kullan — schema yok, client example'ı default body olarak göstersin.
+    const content = {
+      schema: {
+        type: 'object',
+        required: ['pageNumber', 'pageSize', 'orderBy', 'ascending'],
+        properties: {
+          pageNumber: { type: 'integer', example: 1 },
+          pageSize: { type: 'integer', example: 10 },
+          orderBy: { type: 'string', example: 'CreateTime' },
+          ascending: { type: 'boolean', example: false },
+          filter: { type: 'object', nullable: true },
+        },
+      },
+      example: COMPANIES_SEARCH_EXAMPLE,
+      examples: {
+        default: {
+          summary: 'Minimal (Authorize sonrası Send ile çalışır)',
+          value: COMPANIES_SEARCH_EXAMPLE,
+        },
+      },
+    };
+    for (const key of Object.keys(result['/api/companies/search'].post.requestBody.content)) {
+      result['/api/companies/search'].post.requestBody.content[key] = { ...content };
+    }
+  }
+
+  if (result['/api/companies/search/export']?.post?.requestBody?.content) {
+    const exportContent = {
+      schema: {
+        type: 'object',
+        required: ['pageNumber', 'pageSize', 'orderBy', 'ascending', 'exportType'],
+        properties: {
+          pageNumber: { type: 'integer', example: 1 },
+          pageSize: { type: 'integer', example: 10 },
+          orderBy: { type: 'string', example: 'CreateTime' },
+          ascending: { type: 'boolean', example: false },
+          filter: { type: 'object', nullable: true },
+          reportAllPages: { type: 'boolean', example: false },
+          exportType: { type: 'string', example: 'Csv' },
+        },
+      },
+      example: COMPANIES_SEARCH_EXPORT_EXAMPLE,
+      examples: {
+        default: {
+          summary: 'Minimal CSV export (Authorize sonrası Send ile çalışır)',
+          value: COMPANIES_SEARCH_EXPORT_EXAMPLE,
+        },
+      },
+    };
+    for (const key of Object.keys(result['/api/companies/search/export'].post.requestBody.content)) {
+      result['/api/companies/search/export'].post.requestBody.content[key] = { ...exportContent };
+    }
+  }
+
+  return result;
 }
 
 async function main() {

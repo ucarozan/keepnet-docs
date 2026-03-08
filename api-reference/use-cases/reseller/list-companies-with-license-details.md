@@ -6,7 +6,7 @@ Retrieve all companies you manage with license information: License Type, Target
 
 ## POST /api/companies/search
 
-> Retrieves a list of all companies with license details. Paginated, filterable, sortable.
+> Retrieves a list of all companies with license details. Paginated, filterable, sortable. **Test it:** Authorize with Client ID/Secret, then Send — request body is pre-filled (`pageNumber: 1`, `pageSize: 10`, `orderBy: CreateTime`).
 
 {% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/search" method="post" expanded="true" %}
 <a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
@@ -16,7 +16,7 @@ Retrieve all companies you manage with license information: License Type, Target
 
 ## POST /api/companies/search/export
 
-> Exports the list of companies to CSV or Excel for reporting or billing.
+> Exports the list of companies to CSV or Excel for reporting or billing. **Test it:** Authorize with Client ID/Secret, then Send — request body is pre-filled (minimal pagination + `exportType: Csv`).
 
 {% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/search/export" method="post" expanded="true" %}
 <a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
