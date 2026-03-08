@@ -301,5 +301,7 @@
   * [Set up SCIM for a customer](api-reference/use-cases/reseller/set-up-scim-for-customer.md)
   * [Export customer list for billing](api-reference/use-cases/reseller/export-customer-list-for-billing.md)
   * [Create a new company](api-reference/use-cases/reseller/onboard-new-customer.md)
-  * [Manage companies](api-reference/use-cases/reseller/manage-companies.md)
+  * [Get a company](api-reference/use-cases/reseller/get-a-company.md)
+  * [Update a company](api-reference/use-cases/reseller/update-a-company.md)
+  * [Delete a company](api-reference/use-cases/reseller/delete-a-company.md)
   * [List and manage company groups](api-reference/use-cases/reseller/list-and-manage-company-groups.md)

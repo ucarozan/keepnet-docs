@@ -1,0 +1,39 @@
+# Get a company
+
+Retrieve a single company you manage by its ID. Reseller-only — use a credential with Client Role = **Reseller**. Get the company `resourceId` from the companies list, then call **GET /api/companies/{resourceId}** to fetch full details (license, settings, etc.).
+
+---
+
+## POST /api/companies/search
+
+Get the company's `resourceId` by calling this endpoint; use it in the next step as `{resourceId}`.
+
+> Retrieves a paginated list of all companies you manage with license details. Each item includes `resourceId` — use it as the Company ID. **Test it:** Authorize with Client ID/Secret, then Send — request body is pre-filled.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/search" method="post" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
+From the response, pick the company (e.g. by `name`) and note its `resourceId`. Example: `"resourceId": "xC5kfGz7w2Nz"` → use in `GET /api/companies/xC5kfGz7w2Nz`.
+
+---
+
+## GET /api/companies/{resourceId}
+
+Returns full details for that company (license, settings, etc.). Replace `{resourceId}` with the company ID from the search response. No request body.
+
+> Retrieves a single company by ID. **Test it:** Authorize, then set path parameter to a company ID from companies/search.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/{resourceId}" method="get" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
+---
+
+## Common errors
+
+* **403 Forbidden** — Credential is not Reseller, or company is not one you manage. Set Client Role = **Reseller**. <a href="../../../next-generation-product/platform/company/system-users/user-roles.md" target="_blank" rel="noopener noreferrer">Roles and permissions →</a>
+* **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
+* **404 Not Found** — Invalid or unknown company ID. Verify from `POST /api/companies/search`.
+
+**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>. <a href="list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>. <a href="update-a-company.md" target="_blank" rel="noopener noreferrer">Update a company →</a>.
