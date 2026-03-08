@@ -6,9 +6,7 @@ As a Reseller you can retrieve gamification (leaderboard) data for a customer �
 
 ## POST /api/companies/search
 
-Get the customer's Company ID. Use the `resourceId` of the desired company as `X-KEEPNET-Company-Id` in the leaderboard requests below.
-
-> Retrieves a paginated list of companies you manage with license details. **Test it:** Authorize with Client ID/Secret, then Send — request body is pre-filled.
+> Use this to get the customer's Company ID; use the `resourceId` of the desired company as `X-KEEPNET-Company-Id` in the leaderboard requests below. Retrieves a paginated list of companies you manage with license details. **Test it:** Authorize with Client ID/Secret, then Send — request body is pre-filled.
 
 {% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/search" method="post" expanded="true" %}
 <a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>

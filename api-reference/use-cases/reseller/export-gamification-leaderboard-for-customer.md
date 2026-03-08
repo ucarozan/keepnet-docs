@@ -6,9 +6,7 @@ As a Reseller you export the gamification leaderboard or user timeline for a cus
 
 ## POST /api/companies/search
 
-Get the customer's Company ID. Use the `resourceId` as `X-KEEPNET-Company-Id` in the export requests below.
-
-> Retrieves a paginated list of companies you manage. **Test it:** Authorize with Client ID/Secret, then Send.
+> Use this to get the customer's Company ID; use the `resourceId` as `X-KEEPNET-Company-Id` in the export requests below. Retrieves a paginated list of companies you manage. **Test it:** Authorize with Client ID/Secret, then Send.
 
 {% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/search" method="post" expanded="true" %}
 <a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
