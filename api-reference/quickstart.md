@@ -160,22 +160,42 @@ Convention|Description
 
 ## What the token contains
 
-The access token is a **JWT**. It includes your company context — use these values when an endpoint requires Company ID in the path, header, or query.
+The access token is a **JWT**. Decode it to read company context, role, and other values — useful when endpoints require Company ID in the path, header, or query.
 
 **To decode:** Paste the token at [jwt.io](https://jwt.io) (signature verification optional) or Base64URL-decode the middle part (between the two dots).
 
-The token contains:
+### Company context
 
 Claim|Description|Example
 :---|:---|:---
 `user_company_resourceid`|**Company ID** — use in `X-KEEPNET-Company-Id`, path `/api/.../companies/{id}/...`, or `?companyId=`|`uB4jcFz9x1My`
-`user_company_name`|Company name|`My Company`
+`user_company_name`|Company name|`System`
+`user_company_id`|Numeric company ID|`1`
+`user_company_logopath`|Company logo URL|`https://api.keepnetlabs.com/companylogo/...`
+`user_company_industry_name`|Industry (e.g. Technology)|`Technology`
+`user_company_parentcompany_resourceid`|Parent company ID (Reseller hierarchy)|Empty for single company
+
+### Role and access
+
+Claim|Description|Example
+:---|:---|:---
 `role`|`Company Admin` or `Reseller`|`Company Admin`
 `company_admin_access`|`true` if Company Admin|`true`
+`reseller_access`|`true` if Reseller|`false`
+`root_access`|`true` if root/admin|`false`
+`scope`|API scope (always `api1` for Keepnet API)|`["api1"]`
+
+### Token metadata
+
+Claim|Description|Example
+:---|:---|:---
+`exp`|Expiry (Unix timestamp)|`1772935488`
+`iat`|Issued at (Unix timestamp)|`1772931888`
+`client_id`|Client ID used to obtain the token|`R5SS0MCusE2yKD7kbraVTfyfVRKHyLsN`
 
 {% hint style="info" %}
-**Company Admin:** Your Company ID is in every token. Use it when an endpoint requires a company context (e.g. `GET /api/companies/{resourceId}`).
-**Reseller:** Get Company IDs from `POST /api/companies/search`. The token's `user_company_resourceid` is your Reseller org, not the managed company.
+**Company Admin:** Your Company ID is in every token (`user_company_resourceid`). Use it when an endpoint requires a company context (e.g. `GET /api/companies/{resourceId}`).
+**Reseller:** Get managed company IDs from `POST /api/companies/search`. The token's `user_company_resourceid` is your Reseller org, not the managed company.
 {% endhint %}
 
 ---
