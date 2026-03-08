@@ -292,6 +292,9 @@
 * Reseller
   * [Onboard a new customer](api-reference/use-cases/reseller/onboard-new-customer.md)
   * [List companies with license details](api-reference/use-cases/reseller/list-companies-with-license-details.md)
+  * [List and manage company groups](api-reference/use-cases/reseller/list-and-manage-company-groups.md)
+  * [Export customer list for billing](api-reference/use-cases/reseller/export-customer-list-for-billing.md)
+  * [Scope API requests to a customer (Reseller)](api-reference/use-cases/reseller/scope-api-requests-to-customer.md)
   * [Manage companies](api-reference/use-cases/reseller/manage-companies.md)
 
 * Reports

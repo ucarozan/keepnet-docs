@@ -8227,22 +8227,210 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.CompanyGroup.Search.SearchCompanyGroupRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 10
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "nullable": true
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 10,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": null
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (Authorize sonrası Send ile çalışır)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": null
+                  }
+                }
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.CompanyGroup.Search.SearchCompanyGroupRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 10
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "nullable": true
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 10,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": null
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (Authorize sonrası Send ile çalışır)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": null
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.CompanyGroup.Search.SearchCompanyGroupRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 10
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "nullable": true
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 10,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": null
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (Authorize sonrası Send ile çalışır)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": null
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.CompanyGroup.Search.SearchCompanyGroupRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 10
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "nullable": true
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 10,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": null
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (Authorize sonrası Send ile çalışır)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": null
+                  }
+                }
               }
             }
           }
@@ -8272,22 +8460,262 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "exportType"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 10
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "nullable": true
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "Csv"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 10,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": null,
+                "reportAllPages": false,
+                "exportType": "Csv"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal CSV export (Authorize sonrası Send ile çalışır)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": null,
+                    "reportAllPages": false,
+                    "exportType": "Csv"
+                  }
+                }
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "exportType"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 10
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "nullable": true
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "Csv"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 10,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": null,
+                "reportAllPages": false,
+                "exportType": "Csv"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal CSV export (Authorize sonrası Send ile çalışır)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": null,
+                    "reportAllPages": false,
+                    "exportType": "Csv"
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "exportType"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 10
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "nullable": true
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "Csv"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 10,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": null,
+                "reportAllPages": false,
+                "exportType": "Csv"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal CSV export (Authorize sonrası Send ile çalışır)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": null,
+                    "reportAllPages": false,
+                    "exportType": "Csv"
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "exportType"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 10
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "nullable": true
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "Csv"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 10,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": null,
+                "reportAllPages": false,
+                "exportType": "Csv"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal CSV export (Authorize sonrası Send ile çalışır)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": null,
+                    "reportAllPages": false,
+                    "exportType": "Csv"
+                  }
+                }
               }
             }
           }

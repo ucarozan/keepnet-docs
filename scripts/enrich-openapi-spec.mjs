@@ -152,6 +152,26 @@ const COMPANIES_SEARCH_EXPORT_EXAMPLE = {
   exportType: 'Csv',
 };
 
+/** Company groups search — Reseller: list groups, Test it minimal body. */
+const COMPANY_GROUPS_SEARCH_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 10,
+  orderBy: 'CreateTime',
+  ascending: false,
+  filter: null,
+};
+
+/** Company groups export — Reseller: export groups to CSV. */
+const COMPANY_GROUPS_SEARCH_EXPORT_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 10,
+  orderBy: 'CreateTime',
+  ascending: false,
+  filter: null,
+  reportAllPages: false,
+  exportType: 'Csv',
+};
+
 function injectRequestExamples(paths) {
   const result = { ...paths };
 
@@ -208,6 +228,60 @@ function injectRequestExamples(paths) {
     };
     for (const key of Object.keys(result['/api/companies/search/export'].post.requestBody.content)) {
       result['/api/companies/search/export'].post.requestBody.content[key] = { ...exportContent };
+    }
+  }
+
+  if (result['/api/company-groups/search']?.post?.requestBody?.content) {
+    const groupSearchContent = {
+      schema: {
+        type: 'object',
+        required: ['pageNumber', 'pageSize', 'orderBy', 'ascending'],
+        properties: {
+          pageNumber: { type: 'integer', example: 1 },
+          pageSize: { type: 'integer', example: 10 },
+          orderBy: { type: 'string', example: 'CreateTime' },
+          ascending: { type: 'boolean', example: false },
+          filter: { type: 'object', nullable: true },
+        },
+      },
+      example: COMPANY_GROUPS_SEARCH_EXAMPLE,
+      examples: {
+        default: {
+          summary: 'Minimal (Authorize sonrası Send ile çalışır)',
+          value: COMPANY_GROUPS_SEARCH_EXAMPLE,
+        },
+      },
+    };
+    for (const key of Object.keys(result['/api/company-groups/search'].post.requestBody.content)) {
+      result['/api/company-groups/search'].post.requestBody.content[key] = { ...groupSearchContent };
+    }
+  }
+
+  if (result['/api/company-groups/search/export']?.post?.requestBody?.content) {
+    const groupExportContent = {
+      schema: {
+        type: 'object',
+        required: ['pageNumber', 'pageSize', 'orderBy', 'ascending', 'exportType'],
+        properties: {
+          pageNumber: { type: 'integer', example: 1 },
+          pageSize: { type: 'integer', example: 10 },
+          orderBy: { type: 'string', example: 'CreateTime' },
+          ascending: { type: 'boolean', example: false },
+          filter: { type: 'object', nullable: true },
+          reportAllPages: { type: 'boolean', example: false },
+          exportType: { type: 'string', example: 'Csv' },
+        },
+      },
+      example: COMPANY_GROUPS_SEARCH_EXPORT_EXAMPLE,
+      examples: {
+        default: {
+          summary: 'Minimal CSV export (Authorize sonrası Send ile çalışır)',
+          value: COMPANY_GROUPS_SEARCH_EXPORT_EXAMPLE,
+        },
+      },
+    };
+    for (const key of Object.keys(result['/api/company-groups/search/export'].post.requestBody.content)) {
+      result['/api/company-groups/search/export'].post.requestBody.content[key] = { ...groupExportContent };
     }
   }
 

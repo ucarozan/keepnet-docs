@@ -220,6 +220,44 @@ Field|Description
 
 Format: `* **HTTP status** — Cause. Fix.`
 
+### H8c: Test it — Request body minimal example
+
+Test it panelinde body içeren (POST/PUT) endpoint'lerde **schema'dan gelen karmaşık default** (filterGroups, filterItems, nested null'lar) API'de `400 Invalid request` hatası veriyor. **Minimal inline schema + example** kullan.
+
+**Uygulama:** `scripts/enrich-openapi-spec.mjs` içinde `injectRequestExamples()` — her yeni endpoint için ekle.
+
+Kural|Açıklama
+:---|:---
+**Minimal schema**|Sadece gerekli alanlar — `$ref` ile gelen karmaşık filter yapısı kullanma
+**Example**|Authorize sonrası direkt Send ile çalışacak değerler (örn. `pageNumber: 1`, `pageSize: 10`, `orderBy: "CreateTime"`, `filter: null`)
+**Pagination**|Search endpoint'leri: `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter: null`
+
+**Örnek (companies/search):**
+```json
+{
+  "pageNumber": 1,
+  "pageSize": 10,
+  "orderBy": "CreateTime",
+  "ascending": false,
+  "filter": null
+}
+```
+
+Yeni endpoint dokümante ederken: `enrich-openapi-spec.mjs` → `injectRequestExamples()` içine path + example ekle.
+
+### H8d: Test ve örnek veriler — sadece dummy / seed / placeholder
+
+Yeni doküman veya use-case eklerken **test ederek ekle**; örneklerde ve Test it açıklamalarında **gerçek veri kullanma**. Sadece dummy, seed veya placeholder (sallama) veriler kullan.
+
+Kural|Açıklama
+:---|:---
+**Token / credential**|Örnekte `eyJ...`, `xxxxxxxxxxxxxxxx` gibi anonim placeholder. Gerçek `access_token`, Client ID/Secret yazma.
+**Şirket / kullanıcı adı**|Örnekte "Acme Corp", "demo-user", "Company A" gibi dummy isimler. Gerçek müşteri veya şirket adı kullanma.
+**ID / resourceId**|Örnekte `xC5kfGz7w2Nz`, `abc123` gibi seed/placeholder. Gerçek production ID’leri dokümana koyma.
+**E-posta / telefon**|Örnekte `user@example.com`, `+15551234567` gibi test değerleri.
+
+**Amaç:** Dokümanı test ederken ve okuyucu Test it kullanırken güvenli, tekrarlanabilir örnekler; production verisi veya gizlilik ihlali yok.
+
 ---
 
 ## 📐 Page Templates
@@ -257,6 +295,7 @@ Kural|Açıklama
 **H2**|`METHOD /path` formatında (örn. `POST /api/companies/search`)
 **Blockquote**|OpenAPI `summary` değeri veya kısa özet
 **Swagger**|Her endpoint için `{% swagger %}` — Test it zorunlu
+**Request body**|Body içeren endpoint'lerde H8c — `enrich-openapi-spec.mjs` içinde minimal example ekle
 **Opsiyonel**|Reseller/role hint, Common errors tablosu (sayfa sonunda)
 
 **Yasak:** Who can use this, Prerequisites, Steps, What's next gibi uzun bölümler — sadece referans odaklı, endpoint-first.
@@ -364,6 +403,8 @@ Sıra|Bölüm|İçerik
 | `Endpoint` | `API call`, `method` |
 | `Returns` | `Responds with`, `gives back` |
 
+**Participants (company group):** Bir company group’un **üyesi olan şirketler**. API’de "participants" = gruptaki şirketlerin listesi (company `resourceId` dizisi). `PUT /api/company-groups/{resourceId}/participants` ile gruba eklenecek veya güncellenecek şirket ID’lerini gönderirsin. Kullanıcı veya kullanıcı grubu değil, **şirket (company)** listesidir.
+
 ---
 
 ## 🔧 Hint blocks
@@ -379,11 +420,12 @@ Sıra|Bölüm|İçerik
 
 ## 📁 Related files
 
-| File | Description |
-|------|-------------|
-| `GITBOOK-OPENAPI-SETUP.md` | OpenAPI spec, Test it, x-parent setup |
-| `api-reference/` | Use-case pages, Quickstart |
-| `SUMMARY.md` | Left menu structure (API Reference section) |
+File|Description
+:---|:---
+`GITBOOK-OPENAPI-SETUP.md`|OpenAPI spec, Test it, x-parent setup
+`scripts/enrich-openapi-spec.mjs`|Spec zenginleştirme — token endpoint, request body examples (H8c)
+`api-reference/`|Use-case pages, Quickstart
+`SUMMARY.md`|Left menu structure (API Reference section)
 
 ---
 
