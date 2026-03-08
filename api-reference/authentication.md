@@ -10,7 +10,7 @@ Before making any API calls, generate a **Client ID** and **Client Secret** from
 
 {% hint style="info" %}
 **Platform UI:** Go to **Company → Company Settings → REST API** and click **+ NEW**.\
-<a href="https://doc.keepnetlabs.com/next-generation-product/platform/company/company-settings/rest-api" target="_blank" rel="noopener noreferrer">REST API Settings →</a>
+<a href="../next-generation-product/platform/company/company-settings/rest-api.md" target="_blank" rel="noopener noreferrer">REST API Settings →</a>
 {% endhint %}
 
 Configure the following fields when generating credentials:
@@ -142,7 +142,7 @@ The **Client Role** on your credentials determines which endpoints are accessibl
 
 {% hint style="info" %}
 To restrict a credential set to specific products (e.g. Awareness Educator only), create a custom role with limited privileges.\
-<a href="https://doc.keepnetlabs.com/next-generation-product/platform/company/system-users" target="_blank" rel="noopener noreferrer">Roles and permissions →</a>
+<a href="../next-generation-product/platform/company/system-users/user-roles.md" target="_blank" rel="noopener noreferrer">Roles and permissions →</a>
 {% endhint %}
 
 ---
@@ -197,7 +197,7 @@ When calling endpoints that require a company context, include the Company ID vi
 
 {% hint style="info" %}
 **Platform UI:** View Company IDs in **Company → Companies**.
-<a href="https://doc.keepnetlabs.com/next-generation-product/platform/company/companies" target="_blank" rel="noopener noreferrer">Companies →</a>
+<a href="../next-generation-product/platform/company/companies/README.md" target="_blank" rel="noopener noreferrer">Companies →</a>
 {% endhint %}
 
 ---
