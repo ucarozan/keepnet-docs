@@ -244,29 +244,24 @@ Every use-case page follows the **same section order**:
 
 ---
 
-### API Reference — Core pages (Overview, Quickstart, Authentication)
+### API Reference — Quickstart (standard hierarchy)
 
-```markdown
-# [Verb] [object]
+Quickstart tek core page'dir. Bölüm sırası **sabit** — değiştirme.
 
-One-sentence description.
+Sıra|Bölüm|İçerik
+:---|:---|:---
+1|Intro|Title, kısa açıklama, API kullanım alanları (bullet), OAuth mention
+2|{% stepper %}|3 adım: Getting started → Request token → First API call
+3|Base URL and response format|Base URL, `isSuccess`, `data`, `messages`
+4|Common conventions|Pagination, Filter, Sorting, Company scope
+5|What the token contains|JWT claim tabloları (Company context, Role and access, Token metadata) + ayrı hint'ler (Company Admin, Reseller)
+6|Who can use the API|Role tablosu
+7|Token expiry and errors|HTTP status tablosu
+8|Reseller: scope by Company ID|Header, path, query — Company ID kullanımı
+9|Keep credentials secure|Do / Don't hint'leri
+10|**Explore the API**|Use-case linkleri tablosu — **sayfanın sonunda**
 
----
-
-## [First task heading]
-[Code or OpenAPI reference first]
-[Brief explanation]
-
----
-
-## Handle errors
-[Error table]
-
----
-
-## What's next
-- [Link →]
-```
+**Hint blokları:** Company Admin ve Reseller için **ayrı** hint kullan — tek paragrafta sıkıştırma.
 
 ---
 
@@ -334,7 +329,7 @@ One-sentence description.
 | File | Description |
 |------|-------------|
 | `GITBOOK-OPENAPI-SETUP.md` | OpenAPI spec, Test it, x-parent setup |
-| `api-reference/` | Use-case pages, Overview, Quickstart, Authentication |
+| `api-reference/` | Use-case pages, Quickstart |
 | `SUMMARY.md` | Left menu structure (API Reference section) |
 
 ---
