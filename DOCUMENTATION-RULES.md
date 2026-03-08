@@ -39,7 +39,7 @@ The following are implemented in this project. New changes must not break this s
 |-------------|----------------|
 | **x-parent** | All tags grouped with `"x-parent": "endpoints"` |
 | **Endpoints parent** | 98 tags under single "Endpoints" |
-| **Menu order** | Quickstart → Reseller → Reports → Company & Users → Endpoints |
+| **Menu order** | Quickstart → Reseller → Company → Endpoints (see API Reference menu structure below) |
 
 ### builtin:openapi block (SUMMARY.md)
 
@@ -59,6 +59,53 @@ In SUMMARY.md, the Endpoints entry is defined as follows (actual format: `SUMMAR
         spec: keepnet-api
   ```
 ```
+
+### API Reference menu structure (SUMMARY.md)
+
+Menü **ölçeklenebilir** olmalı: use-case sayısı arttıkça alt gruplar kullanılır; **Reseller** ve **Company** (Company Admin) ayrı üst bölümlerdir.
+
+**Üst seviye (sabit sıra):**
+1. Quickstart  
+2. Use the API with AI assistants (MCP)  
+3. **Reseller** — müşteri (tenant) bazlı use-case'ler; credential = Reseller  
+4. **Company** — tek şirket (Company Admin) use-case'leri; credential = Company Admin (ileride eklenecek)  
+5. Endpoints (builtin:openapi)
+
+**Reseller alt yapı:**
+- **&lt; 15 use-case:** Tek liste (mevcut gibi).  
+- **≥ 15 use-case:** Alt gruplar aç; her grupta **en fazla ~8–10** madde olsun.
+
+Önerilen Reseller alt grupları (başlıklar link değil):
+
+| Alt grup | İçerik |
+|----------|--------|
+| **Companies** | Scope, List companies, Create/Get/Update/Delete a company, List and manage company groups |
+| **Users & groups** | Add target users, List or export target users, List and create target groups, Add system user, Set up SCIM |
+| **Training** | View enrollment list and report, View enrollment sending, certificates, and notifications |
+| **Phishing simulation** | View campaign list and report, List phishing scenarios, Create and start phishing campaign |
+| **Reports & billing** | Pull executive report data, Export customer list for billing |
+
+**Company bölümü (ileride):** Company Admin use-case'leri `api-reference/use-cases/company/` altında; SUMMARY'de **Company** başlığı altında listelenir.
+
+**SUMMARY örnek (Reseller alt gruplı + Company placeholder):**
+```markdown
+* Reseller
+  * Companies
+    * [Scope API requests to a customer](...)
+    * [List companies with license details](...) ... [Delete a company](...)
+  * Users & groups
+    * [Add target users for a customer](...) ... [Set up SCIM for a customer](...)
+  * Training
+    * [View customer's enrollment list and report](...) ...
+  * Phishing simulation
+    * [View customer's campaign list and report](...) ...
+  * Reports & billing
+    * [Pull executive report data for a customer](...) ...
+* Company
+  * (Company Admin use-cases — add when pages exist)
+```
+
+Yeni use-case eklerken: doğru **rol** (Reseller vs Company) ve **alt gruba** koy; bir grupta 10'u geçerse grubu böl veya yeni alt grup aç.
 
 ### Spec source (GitBook Integration only — not for doc content)
 
