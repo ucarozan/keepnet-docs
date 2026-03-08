@@ -36,6 +36,12 @@ Configure the following fields when generating credentials:
 <a href="../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
 {% endswagger %}
 
+**Test it — steps:**
+1. Expand **Body** → **Form URL Encoded**.
+2. Replace `client_id` and `client_secret` with your real credentials from **Company → Company Settings → REST API**.
+3. Do **not** leave them as "Value" or empty — that returns `invalid_client`.
+4. Click **Send**.
+
 The response includes your token and its expiry time.
 
 ```json
@@ -145,6 +151,7 @@ To restrict a credential set to specific products (e.g. Awareness Educator only)
 
 |HTTP status|Cause|Action|
 |:---|:---|:---|
+|`400 Bad Request` — `invalid_client`|Wrong or placeholder `client_id`/`client_secret`|Use real credentials from **Company → Company Settings → REST API**. Replace "Value" in Body with your Client ID and Client Secret.|
 |`401 Unauthorized`|Missing or invalid token|Re-authenticate and retry|
 |`401 Unauthorized`|Token expired|Request a new token|
 |`403 Forbidden`|Insufficient role permissions|Check the Client Role in platform settings|
