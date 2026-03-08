@@ -30,13 +30,13 @@ Configure the following fields when creating credentials:
 
 ## Request an access token
 
-Send a `POST` request to `https://api.keepnetlabs.com/connect/token` with `Content-Type: application/x-www-form-urlencoded` and body parameters: `grant_type=client_credentials`, `client_id`, `client_secret`, `scope=api1`.
+**Endpoint:** `POST /connect/token`
 
-{% hint style="info" %}
-**Test it:** Sol menüden **Endpoints** → herhangi bir endpoint'e gidin. Sağdaki panelde **Authorization** alanına `Bearer <access_token>` yapıştırıp **Test it** ile isteği doğrudan dokümandan gönderin.
-{% endhint %}
+{% swagger src="../openapi/keepnet-api-spec.json" path="/connect/token" method="post" expanded="true" %}
+[keepnet-api-spec.json](../openapi/keepnet-api-spec.json)
+{% endswagger %}
 
-The response includes your token and its expiry time:
+The response includes your token and its expiry time.
 
 ```json
 {
@@ -54,6 +54,10 @@ The response includes your token and its expiry time:
 | `token_type`    | Always `Bearer`                                    |
 | `scope`         | Always `api1` for Keepnet API                      |
 
+{% hint style="info" %}
+**Test it:** Sol menüden **Endpoints** → **Authentication** → **Request an access token** sayfasında sağ panelde **Test it** ile token isteği gönderin.
+{% endhint %}
+
 ***
 
 ## Make an authenticated request
@@ -61,7 +65,7 @@ The response includes your token and its expiry time:
 Include the token in every API request: `Authorization: Bearer <access_token>`. Example: list trainings via `GET /api/awareness-educator/trainings`.
 
 {% hint style="info" %}
-**Test it:** **Endpoints** → **Training** (veya ilgili tag) → **Test it** ile token'ınızı girip isteği gönderin.
+**Test it:** Sol menüden **Endpoints** → ilgili endpoint sayfasında sağ panelde **Authorization** alanına `Bearer <access_token>` yapıştırıp **Test it** ile isteği gönderin.
 {% endhint %}
 
 ***

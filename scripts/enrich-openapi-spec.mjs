@@ -30,12 +30,67 @@ function collectTagsFromPaths(spec) {
   return [...tags].sort();
 }
 
+/** OAuth token endpoint — GitBook Test it + authentication sayfası embed için */
+const CONNECT_TOKEN_PATH = {
+  '/connect/token': {
+    post: {
+      tags: ['Authentication'],
+      operationId: 'requestAccessToken',
+      summary: 'Request an access token',
+      description:
+        'OAuth 2.0 Client Credentials flow. Returns a Bearer token for API requests. Use this token in the Authorization header.',
+      requestBody: {
+        required: true,
+        content: {
+          'application/x-www-form-urlencoded': {
+            schema: {
+              type: 'object',
+              required: ['grant_type', 'client_id', 'client_secret', 'scope'],
+              properties: {
+                grant_type: { type: 'string', enum: ['client_credentials'], description: 'Must be client_credentials' },
+                client_id: { type: 'string', description: 'Client ID from REST API settings' },
+                client_secret: { type: 'string', description: 'Client Secret from REST API settings' },
+                scope: { type: 'string', enum: ['api1'], description: 'Must be api1 for Keepnet API' },
+              },
+            },
+          },
+        },
+      },
+      responses: {
+        '200': {
+          description: 'Token issued successfully',
+          content: {
+            'application/json': {
+              schema: {
+                type: 'object',
+                properties: {
+                  access_token: { type: 'string', description: 'Bearer token for API requests' },
+                  expires_in: { type: 'integer', description: 'Seconds until expiry (typically 3600)' },
+                  token_type: { type: 'string', enum: ['Bearer'] },
+                  scope: { type: 'string', example: 'api1' },
+                },
+              },
+            },
+          },
+        },
+        '400': { description: 'Invalid request (missing or invalid credentials)' },
+        '401': { description: 'Invalid client_id or client_secret' },
+      },
+      security: [], // Token endpoint — auth gerekmez
+    },
+  },
+};
+
 function enrichSpec(spec) {
   const tagsFromPaths = collectTagsFromPaths(spec);
+  if (!tagsFromPaths.includes('Authentication')) tagsFromPaths.push('Authentication');
   const specTags = [
     { name: PARENT_TAG, description: 'API endpoint reference. Expand to browse by resource.' },
     ...tagsFromPaths.map((name) => ({ name, 'x-parent': PARENT_TAG })),
   ];
+
+  // OAuth token endpoint — Test it + embedded OpenAPI için
+  const paths = { ...CONNECT_TOKEN_PATH, ...spec.paths };
 
   // GitBook "Test it" için servers gerekli (base URL)
   const servers = spec.servers?.length
@@ -57,7 +112,7 @@ function enrichSpec(spec) {
   // Bearer + OAuth2: Test it'te Bearer ile token yapıştırma veya OAuth2 client credentials
   const security = [{ bearerAuth: [] }, ...(spec.security || [])];
 
-  return { ...spec, tags: specTags, servers, components, security };
+  return { ...spec, paths, tags: specTags, servers, components, security };
 }
 
 async function main() {
