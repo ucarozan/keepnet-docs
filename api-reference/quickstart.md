@@ -196,8 +196,18 @@ Claim|Description|Example
 `client_id`|Client ID used to obtain the token|`R5SS0MCusE2yKD7kbraVTfyfVRKHyLsN`
 
 {% hint style="info" %}
-**Company Admin:** `user_company_resourceid` is your Company ID. Use it when an endpoint requires a company context (e.g. `GET /api/companies/{resourceId}`). `user_company_parentcompany_*` is empty.
-**Reseller:** `user_company_resourceid` is your Reseller company. `user_company_parentcompany_resourceid` is the parent/MSSP company. Get managed company IDs from `POST /api/companies/search` — use those IDs in `X-KEEPNET-Company-Id` for company-scoped requests.
+**Company Admin**
+
+* `user_company_resourceid` = your Company ID — use when an endpoint requires a company context (e.g. `GET /api/companies/{resourceId}`)
+* `user_company_parentcompany_*` = empty
+{% endhint %}
+
+{% hint style="info" %}
+**Reseller**
+
+* `user_company_resourceid` = your Reseller company
+* `user_company_parentcompany_resourceid` = parent/MSSP company
+* Managed company IDs → `POST /api/companies/search` — use those IDs in `X-KEEPNET-Company-Id` for company-scoped requests
 {% endhint %}
 
 ---
@@ -225,18 +235,6 @@ HTTP status|Cause|Action
 
 ---
 
-## Explore the API
-
-What you want to do|Use case
-:---|:---
-Pull phishing campaign reports|<a href="use-cases/reports/phishing-campaign-reports.md" target="_blank" rel="noopener noreferrer">Pull phishing campaign reports →</a>
-List companies (Reseller)|<a href="use-cases/reseller/list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>
-Export audit logs to SIEM|<a href="use-cases/reports/export-audit-logs-to-siem.md" target="_blank" rel="noopener noreferrer">Export audit logs to SIEM →</a>
-Add target users|<a href="use-cases/company-users/add-target-users.md" target="_blank" rel="noopener noreferrer">Add target users →</a>
-Enroll users in training|<a href="use-cases/company-users/enroll-users-in-training.md" target="_blank" rel="noopener noreferrer">Enroll users in training →</a>
-
----
-
 ## Reseller: scope by Company ID
 
 If your credential has the **Reseller** role, include Company ID when calling company-scoped endpoints:
@@ -258,3 +256,15 @@ Retrieve Company IDs via `POST /api/companies/search`. See <a href="use-cases/re
 {% hint style="danger" %}
 **Don't:** Hard-code `client_id` or `client_secret` in source code. Don't commit credentials to version control.
 {% endhint %}
+
+---
+
+## Explore the API
+
+What you want to do|Use case
+:---|:---
+Pull phishing campaign reports|<a href="use-cases/reports/phishing-campaign-reports.md" target="_blank" rel="noopener noreferrer">Pull phishing campaign reports →</a>
+List companies (Reseller)|<a href="use-cases/reseller/list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>
+Export audit logs to SIEM|<a href="use-cases/reports/export-audit-logs-to-siem.md" target="_blank" rel="noopener noreferrer">Export audit logs to SIEM →</a>
+Add target users|<a href="use-cases/company-users/add-target-users.md" target="_blank" rel="noopener noreferrer">Add target users →</a>
+Enroll users in training|<a href="use-cases/company-users/enroll-users-in-training.md" target="_blank" rel="noopener noreferrer">Enroll users in training →</a>
