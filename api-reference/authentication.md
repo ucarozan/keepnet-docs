@@ -2,38 +2,38 @@
 
 Keepnet API uses **OAuth 2.0 Client Credentials** flow. Every request requires a Bearer token in the `Authorization` header.
 
-***
+---
 
-## Create API credentials
+## Generate API credentials
 
 Before making any API calls, generate a **Client ID** and **Client Secret** from the platform.
 
 {% hint style="info" %}
 **Platform UI:** Go to **Company → Company Settings → REST API** and click **+ NEW**.\
-[REST API Settings →](https://doc.keepnetlabs.com/next-generation-product/platform/company/company-settings/rest-api)
+<a href="https://doc.keepnetlabs.com/next-generation-product/platform/company/company-settings/rest-api" target="_blank" rel="noopener noreferrer">REST API Settings →</a>
 {% endhint %}
 
-Configure the following fields when creating credentials:
+Configure the following fields when generating credentials:
 
-| Field              | Description                                                                    |
-| ------------------ | ------------------------------------------------------------------------------ |
-| **Name**           | A label for this credential set (e.g. `prod-integration`, `siem-connector`)   |
-| **Client Role**    | `Company Admin` for full access, or a custom role with limited privileges      |
-| **IP Restriction** | Optionally restrict access to specific IP addresses                            |
-| **Status**         | Set to `Active`                                                                |
+| Field | Description |
+| --- | --- |
+| **Name** | A label for this credential set (e.g. `prod-integration`, `siem-connector`) |
+| **Client Role** | `Company Admin` for full access, or a custom role with limited privileges |
+| **IP Restriction** | Optionally restrict access to specific IP addresses |
+| **Status** | Set to `Active` |
 
 {% hint style="warning" %}
-**The Client Secret is shown only once.** Copy and store it securely immediately after creation — it cannot be retrieved later.
+**The Client Secret is shown only once.** Copy and store it securely immediately after you generate it — it cannot be retrieved later.
 {% endhint %}
 
-***
+---
 
 ## Request an access token
 
 **Endpoint:** `POST /connect/token`
 
 {% swagger src="../openapi/keepnet-api-spec.json" path="/connect/token" method="post" expanded="true" %}
-[keepnet-api-spec.json](../openapi/keepnet-api-spec.json)
+<a href="../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
 {% endswagger %}
 
 The response includes your token and its expiry time.
@@ -47,28 +47,28 @@ The response includes your token and its expiry time.
 }
 ```
 
-| Field           | Description                                        |
-| --------------- | -------------------------------------------------- |
-| `access_token`  | Include this in every API request                  |
-| `expires_in`    | Seconds until expiry — typically `3600` (1 hour)   |
-| `token_type`    | Always `Bearer`                                    |
-| `scope`         | Always `api1` for Keepnet API                      |
+| Field | Description |
+| --- | --- |
+| `access_token` | Include this in every API request |
+| `expires_in` | Seconds until expiry — typically `3600` (1 hour) |
+| `token_type` | Always `Bearer` |
+| `scope` | Always `api1` for Keepnet API |
 
 {% hint style="info" %}
-**Test it:** Sol menüden **Endpoints** → **Authentication** → **Request an access token** sayfasında sağ panelde **Test it** ile token isteği gönderin.
+[Endpoints → Authentication → Request an access token → Test it](sidebar)
 {% endhint %}
 
-***
+---
 
 ## Make an authenticated request
 
 Include the token in every API request: `Authorization: Bearer <access_token>`. Example: list trainings via `GET /api/awareness-educator/trainings`.
 
 {% hint style="info" %}
-**Test it:** Sol menüden **Endpoints** → ilgili endpoint sayfasında sağ panelde **Authorization** alanına `Bearer <access_token>` yapıştırıp **Test it** ile isteği gönderin.
+[Endpoints → Test it](sidebar) — Paste `Bearer <access_token>` in **Authorization**.
 {% endhint %}
 
-***
+---
 
 ## Handle token expiry
 
@@ -122,35 +122,35 @@ class KeepnetClient {
 }
 ```
 
-***
+---
 
 ## Understand roles and permissions
 
 The **Client Role** on your credentials determines which endpoints are accessible.
 
-| Role          | Access level                                  |
-| ------------- | --------------------------------------------- |
-| `Company Admin` | Full access to all endpoints                |
-| `Reseller`    | Cross-company management endpoints            |
-| Custom role   | Scoped to specific products or actions        |
+| Role | Access level |
+| --- | --- |
+| `Company Admin` | Full access to all endpoints |
+| `Reseller` | Cross-company management endpoints |
+| Custom role | Scoped to specific products or actions |
 
 {% hint style="info" %}
 To restrict a credential set to specific products (e.g. Awareness Educator only), create a custom role with limited privileges.\
-[Roles and permissions →](https://doc.keepnetlabs.com/next-generation-product/platform/company/system-users)
+<a href="https://doc.keepnetlabs.com/next-generation-product/platform/company/system-users" target="_blank" rel="noopener noreferrer">Roles and permissions →</a>
 {% endhint %}
 
-***
+---
 
 ## Handle authentication errors
 
-| HTTP status           | Cause                          | Action                                      |
-| --------------------- | ------------------------------ | ------------------------------------------- |
-| `401 Unauthorized`    | Missing or invalid token       | Re-authenticate and retry                   |
-| `401 Unauthorized`    | Token expired                  | Request a new token                         |
-| `403 Forbidden`       | Insufficient role permissions  | Check the Client Role in platform settings  |
-| `429 Too Many Requests` | Rate limit exceeded           | Back off and retry after a delay            |
+| HTTP status | Cause | Action |
+| --- | --- | --- |
+| `401 Unauthorized` | Missing or invalid token | Re-authenticate and retry |
+| `401 Unauthorized` | Token expired | Request a new token |
+| `403 Forbidden` | Insufficient role permissions | Check the Client Role in platform settings |
+| `429 Too Many Requests` | Rate limit exceeded | Back off and retry after a delay |
 
-***
+---
 
 ## Keep credentials secure
 
@@ -160,7 +160,7 @@ To restrict a credential set to specific products (e.g. Awareness Educator only)
 * Store credentials in environment variables or a secrets manager (e.g. Azure Key Vault)
 * Enable IP Restriction if your integration runs from a fixed IP
 * Use a custom role scoped to only the endpoints your integration needs
-* Create separate credentials per integration — don't share between systems
+* Generate separate credentials per integration — don't share between systems
 {% endhint %}
 
 {% hint style="danger" %}
@@ -170,7 +170,7 @@ To restrict a credential set to specific products (e.g. Awareness Educator only)
 * Commit credentials to version control
 {% endhint %}
 
-***
+---
 
 ## Use the API as a Reseller
 
@@ -190,13 +190,13 @@ When calling endpoints that require a company context, include the Company ID vi
 
 {% hint style="info" %}
 **Platform UI:** View Company IDs in **Company → Companies**.
-[Companies →](https://doc.keepnetlabs.com/next-generation-product/platform/company/companies)
+<a href="https://doc.keepnetlabs.com/next-generation-product/platform/company/companies" target="_blank" rel="noopener noreferrer">Companies →</a>
 {% endhint %}
 
 ---
 
 ## What's next
 
-* [Pull phishing campaign reports →](use-cases/reports/phishing-campaign-reports.md)
-* [List companies with license details →](use-cases/reseller/list-companies-with-license-details.md)
-* [Export audit logs to SIEM →](use-cases/reports/export-audit-logs-to-siem.md)
+* <a href="use-cases/reports/phishing-campaign-reports.md" target="_blank" rel="noopener noreferrer">Pull phishing campaign reports →</a>
+* <a href="use-cases/reseller/list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>
+* <a href="use-cases/reports/export-audit-logs-to-siem.md" target="_blank" rel="noopener noreferrer">Export audit logs to SIEM →</a>
