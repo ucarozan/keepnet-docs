@@ -169,7 +169,7 @@ The access token is a **JWT**. Decode it to read company context, role, and othe
 Claim|Description|Example
 :---|:---|:---
 `user_company_resourceid`|**Company ID** — use in `X-KEEPNET-Company-Id`, path `/api/.../companies/{id}/...`, or `?companyId=`|`xC5kfGz7w2Nz`
-`user_company_name`|Company name|`System`
+`user_company_name`|Company name|`ACME LLC`
 `user_company_id`|Numeric company ID|`1`
 `user_company_logopath`|Company logo URL|`https://api.keepnetlabs.com/companylogo/...`
 `user_company_industry_name`|Industry (e.g. Technology)|`Technology`
