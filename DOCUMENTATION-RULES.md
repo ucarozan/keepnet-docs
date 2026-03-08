@@ -206,6 +206,17 @@ Field|Description
 | **Name** | A label for this credential set |
 ```
 
+### H8b: Swagger + tablo — HTML table kullan
+
+`{% swagger %}` (Test it) olan sayfalarda markdown tabloları bozulabiliyor. **HTML table** kullan:
+
+```html
+<table><thead><tr><th>Field</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>companyResourceId</code></td><td>Company ID</td></tr>
+<tr><td><code>companyName</code></td><td>Company name</td></tr>
+</tbody></table>
+```
+
 ---
 
 ## 📐 Page Templates

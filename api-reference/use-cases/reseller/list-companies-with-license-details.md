@@ -6,10 +6,10 @@ Retrieve all companies you manage with license information: License Type, Target
 
 ## Who can use this
 
-Your role|Can use?|What you need
-:---|:---|:---
-**Company Admin**|No|—
-**Reseller**|Yes|Token with Reseller credential
+<table><thead><tr><th>Your role</th><th>Can use?</th><th>What you need</th></tr></thead><tbody>
+<tr><td><strong>Company Admin</strong></td><td>No</td><td>—</td></tr>
+<tr><td><strong>Reseller</strong></td><td>Yes</td><td>Token with Reseller credential</td></tr>
+</tbody></table>
 
 {% hint style="warning" %}
 **403 Forbidden?** This use case requires the **Reseller** role. Check your credential's Client Role in **Company → Company Settings → REST API**.
@@ -57,17 +57,17 @@ Send a JSON body with `pageNumber`, `pageSize`, `orderBy`, `ascending`, and opti
 
 Response: `data.results` array. Pagination: `data.pageNumber`, `data.totalNumberOfRecords`, `data.totalNumberOfPages`.
 
-Field|Description
-:---|:---
-`companyResourceId`|Company ID — use in `X-KEEPNET-Company-Id` for scoped requests
-`companyName`|Company name
-`licenseTypeName`|License type (e.g. Custom)
-`numberOfUsers`|License user limit
-`targetUserCount`|Current target user count
-`monthlyActiveUserCount`|Monthly active users
-`licenseEndDate`|License renewal/expiry date
-`industryName`|Industry (e.g. Technology, Legal)
-`resellerName`|Reseller company name
+<table><thead><tr><th>Field</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>companyResourceId</code></td><td>Company ID — use in <code>X-KEEPNET-Company-Id</code> for scoped requests</td></tr>
+<tr><td><code>companyName</code></td><td>Company name</td></tr>
+<tr><td><code>licenseTypeName</code></td><td>License type (e.g. Custom)</td></tr>
+<tr><td><code>numberOfUsers</code></td><td>License user limit</td></tr>
+<tr><td><code>targetUserCount</code></td><td>Current target user count</td></tr>
+<tr><td><code>monthlyActiveUserCount</code></td><td>Monthly active users</td></tr>
+<tr><td><code>licenseEndDate</code></td><td>License renewal/expiry date</td></tr>
+<tr><td><code>industryName</code></td><td>Industry (e.g. Technology, Legal)</td></tr>
+<tr><td><code>resellerName</code></td><td>Reseller company name</td></tr>
+</tbody></table>
 
 ---
 
@@ -85,21 +85,21 @@ Export the full company list to CSV or Excel for reporting or billing.
 
 ## Common errors
 
-HTTP status|Cause|Fix
-:---|:---|:---
-`403 Forbidden`|Credential is not Reseller|Set Client Role = **Reseller** in **Company → Company Settings → REST API**
-`401 Unauthorized`|Missing or invalid token|Request a new token via `POST /connect/token`
-`400 Bad Request`|Invalid request body (e.g. missing `orderBy`)|Include `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter`
+<table><thead><tr><th>HTTP status</th><th>Cause</th><th>Fix</th></tr></thead><tbody>
+<tr><td><code>403 Forbidden</code></td><td>Credential is not Reseller</td><td>Set Client Role = <strong>Reseller</strong> in <strong>Company → Company Settings → REST API</strong></td></tr>
+<tr><td><code>401 Unauthorized</code></td><td>Missing or invalid token</td><td>Request a new token via <code>POST /connect/token</code></td></tr>
+<tr><td><code>400 Bad Request</code></td><td>Invalid request body (e.g. missing <code>orderBy</code>)</td><td>Include <code>pageNumber</code>, <code>pageSize</code>, <code>orderBy</code>, <code>ascending</code>, <code>filter</code></td></tr>
+</tbody></table>
 
 ---
 
 ## Quick reference
 
-What you need|Endpoint|Method
-:---|:---|:---
-Search companies|`/api/companies/search`|POST
-Export companies|`/api/companies/search/export`|POST
-Get single company|`/api/companies/{resourceId}`|GET
+<table><thead><tr><th>What you need</th><th>Endpoint</th><th>Method</th></tr></thead><tbody>
+<tr><td>Search companies</td><td><code>/api/companies/search</code></td><td>POST</td></tr>
+<tr><td>Export companies</td><td><code>/api/companies/search/export</code></td><td>POST</td></tr>
+<tr><td>Get single company</td><td><code>/api/companies/{resourceId}</code></td><td>GET</td></tr>
+</tbody></table>
 
 ---
 
