@@ -111,15 +111,22 @@ const { access_token } = await response.json();
 
 ### Make your first API call
 
-Use the token in the `Authorization: Bearer <token>` header. Example: list trainings from Awareness Educator.
+Verify your token and company access with `GET /api/companies/my` — returns your company (Company Admin) or companies you manage (Reseller). No request body, no extra parameters.
+
+{% swagger src="../openapi/keepnet-api-spec.json" path="/api/companies/my" method="get" expanded="true" %}
+<a href="../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
 
 ```bash
-curl -X GET "https://api.keepnetlabs.com/api/awareness-educator/trainings" \
+curl -X GET "https://api.keepnetlabs.com/api/companies/my" \
   -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
   -H "Content-Type: application/json"
 ```
 
-**Exact path, parameters, request/response schema, and Try it:** See the **Awareness Educator** or **Training** section in the **Endpoints** API Reference (OpenAPI) in the sidebar.
+If successful, you'll get `isSuccess: true` and a `data` array with your company details (id, name, etc.). This confirms:
+* Token is valid
+* Credentials have API access
+* You can fetch your own company data
 
 {% endstep %}
 {% endstepper %}
