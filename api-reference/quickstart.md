@@ -71,11 +71,12 @@ Response:
   "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...",
   "expires_in": 3600,
   "token_type": "Bearer",
-  "scope": "api1"
+  "scope": "api1",
+  "permissions": ["tags/search|POST", "companies/search|POST", "..."]
 }
 ```
 
-Include `access_token` in every API request as `Authorization: Bearer <token>`.
+Include `access_token` in every API request as `Authorization: Bearer <token>`. The optional `permissions` array lists endpoints your credential can call (e.g. `companies/search|POST`).
 {% endtab %}
 
 {% tab title="JavaScript" %}
@@ -173,17 +174,18 @@ Claim|Description|Example
 `user_company_id`|Numeric company ID|`1`
 `user_company_logopath`|Company logo URL|`https://api.keepnetlabs.com/companylogo/...`
 `user_company_industry_name`|Industry (e.g. Technology)|`Technology`
-`user_company_parentcompany_resourceid`|Parent company ID (Reseller hierarchy)|Empty for single company
+`user_company_parentcompany_resourceid`|Parent/MSSP company ID — **Reseller only**, empty for Company Admin|`xC5kfGz7w2Nz` (Reseller) or empty
+`user_company_parentcompany_name`|Parent company name — **Reseller only**|`ACME Corp`
 
 ### Role and access
 
-Claim|Description|Example
-:---|:---|:---
-`role`|`Company Admin` or `Reseller`|`Company Admin`
-`company_admin_access`|`true` if Company Admin|`true`
-`reseller_access`|`true` if Reseller|`false`
-`root_access`|`true` if root/admin|`false`
-`scope`|API scope (always `api1` for Keepnet API)|`["api1"]`
+Claim|Description|Company Admin|Reseller
+:---|:---|:---|:---
+`role`|User role|`Company Admin`|`Reseller`
+`company_admin_access`|Can manage own company|`true`|`true`
+`reseller_access`|Can manage multiple companies|`false`|`true`
+`root_access`|Platform root/admin|`false`|`false`
+`scope`|API scope|`["api1"]`|`["api1"]`
 
 ### Token metadata
 
@@ -194,8 +196,8 @@ Claim|Description|Example
 `client_id`|Client ID used to obtain the token|`R5SS0MCusE2yKD7kbraVTfyfVRKHyLsN`
 
 {% hint style="info" %}
-**Company Admin:** Your Company ID is in every token (`user_company_resourceid`). Use it when an endpoint requires a company context (e.g. `GET /api/companies/{resourceId}`).
-**Reseller:** Get managed company IDs from `POST /api/companies/search`. The token's `user_company_resourceid` is your Reseller org, not the managed company.
+**Company Admin:** `user_company_resourceid` is your Company ID. Use it when an endpoint requires a company context (e.g. `GET /api/companies/{resourceId}`). `user_company_parentcompany_*` is empty.
+**Reseller:** `user_company_resourceid` is your Reseller company. `user_company_parentcompany_resourceid` is the parent/MSSP company. Get managed company IDs from `POST /api/companies/search` — use those IDs in `X-KEEPNET-Company-Id` for company-scoped requests.
 {% endhint %}
 
 ---
