@@ -30,13 +30,13 @@ function collectTagsFromPaths(spec) {
   return [...tags].sort();
 }
 
-/** OAuth token endpoint — GitBook Test it + authentication sayfası embed için */
+/** OAuth token endpoint — GitBook Test it için. Endpoints menüsünde gösterme (Quickstart'ta dokümante). */
 /** x-scalar-ignore: Token endpoint'i API client listesinden gizler. Kullanıcı sadece Authorize kullanır; Send ile invalid_client hatası önlenir. */
 const CONNECT_TOKEN_PATH = {
   '/connect/token': {
     post: {
       'x-scalar-ignore': true,
-      tags: ['Authentication'],
+      tags: [], // Endpoints menüsünde Authentication bölümü yok — token Quickstart'ta
       operationId: 'requestAccessToken',
       summary: 'Request an access token',
       description:
@@ -85,7 +85,7 @@ const CONNECT_TOKEN_PATH = {
 
 function enrichSpec(spec) {
   const tagsFromPaths = collectTagsFromPaths(spec);
-  if (!tagsFromPaths.includes('Authentication')) tagsFromPaths.push('Authentication');
+  // Authentication tag ekleme — token endpoint Quickstart'ta, Endpoints menüsünde gösterme
   const specTags = [
     { name: PARENT_TAG, description: 'API endpoint reference. Expand to browse by resource.' },
     ...tagsFromPaths.map((name) => ({ name, 'x-parent': PARENT_TAG })),
@@ -117,7 +117,7 @@ function enrichSpec(spec) {
       type: 'http',
       scheme: 'bearer',
       bearerFormat: 'JWT',
-      description: 'Paste token if you already have one (obtained via OAuth2). [Get token](https://doc.keepnetlabs.com/api-reference/authentication)',
+      description: 'Paste token if you already have one (obtained via OAuth2). [Quickstart →](https://doc.keepnetlabs.com/api-reference/quickstart)',
     },
   };
   const components = { ...spec.components, securitySchemes };

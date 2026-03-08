@@ -17,9 +17,7 @@
     "/connect/token": {
       "post": {
         "x-scalar-ignore": true,
-        "tags": [
-          "Authentication"
-        ],
+        "tags": [],
         "operationId": "requestAccessToken",
         "summary": "Request an access token",
         "description": "OAuth 2.0 Client Credentials flow. Returns a Bearer token for API requests. Use this token in the Authorization header.",
@@ -82668,7 +82666,7 @@
         "type": "http",
         "scheme": "bearer",
         "bearerFormat": "JWT",
-        "description": "Paste token if you already have one (obtained via OAuth2). [Get token](https://doc.keepnetlabs.com/api-reference/authentication)"
+        "description": "Paste token if you already have one (obtained via OAuth2). [Quickstart →](https://doc.keepnetlabs.com/api-reference/quickstart)"
       }
     }
   },
@@ -83077,10 +83075,6 @@
     },
     {
       "name": "WhiteLabeling",
-      "x-parent": "endpoints"
-    },
-    {
-      "name": "Authentication",
       "x-parent": "endpoints"
     }
   ],
