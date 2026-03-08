@@ -1,37 +1,33 @@
-# Keepnet API Documentation
+# Introduction
 
-GitBook ile yayınlanan Keepnet API dokümantasyonu ve doc.keepnetlabs.com içerik deposu.
+The document covers all aspects of [Keepnet’s Extended Human Risk Management Platform](https://keepnetlabs.com/), which not only addresses traditional phishing methods but also provides robust defenses against more complex attacks such as Vishing (Voice Phishing), Smishing (SMS Phishing), MFA Phishing (Multi-Factor Authentication), Quishing (QR code phishing), and Callback Phishing (Telephone Oriented Attack Delivery).&#x20;
 
----
+Our documentation ensures you get maximum value from our products. It comprehensively covers its core functionalities and detailed features, providing clear, step-by-step instructions for effective utilization.&#x20;
 
-## İçerik
+## Target Audience
 
-| Klasör / dosya | Açıklama |
-|----------------|----------|
-| `api-reference/` | Quickstart, use-case'ler (Reseller → Companies, Users & groups, Training, Phishing simulation, Reports & billing) |
-| `SUMMARY.md` | GitBook sol menü yapısı; API Reference bölümü burada tanımlı |
+Our documentation is designed for anyone who works with Keepnet products—whether you’re actively using them, selling them, or exploring their capabilities. It supports roles such as HR, IT, Compliance, and SOC teams, helping them maximize value from the platform. Whether sending targeted training, analyzing and containing email threats, or managing human risk across the organization, the resources are tailored to guide each role in achieving their objectives effectively.
 
----
+## Purpose of the documentation
 
-## Yazım kuralları ve Cursor
+The primary purpose of our documentation is to empower customers to independently use our products without relying heavily on the Keepnet support team. We provide comprehensive resources, including articles, tutorials, and troubleshooting guides, to ensure customers have the knowledge and tools to maximize our platform's capabilities.
 
-Yazım standartları, zorunlu kurallar ve Cursor rule dosyaları **ayrı bir private repoda** tutuluyor:
+## The scope of the documentation
 
-**→ [api-writing](https://github.com/ucarozan/api-writing)** (private) — DOCUMENTATION-RULES.md, keepnet-api-docs-standards.md, .cursor/rules
+The documentation covers an extensive scope, encompassing details about various products within the Keepnet ecosystem. It includes the [Dashboard](next-generation-product/platform/dashboard/),[ Threat Intelligence](https://keepnetlabs.com/products/threat-intelligence), [Awareness Educator](https://keepnetlabs.com/products/security-awareness-training),[ Phishing Simulator](https://keepnetlabs.com/products/phishing-simulator),[ Vishing Simulation](https://keepnetlabs.com/products/vishing), [Callback Simulator,](next-generation-product/platform/callback-simulator/) [ Email Threat Simulator](https://keepnetlabs.com/products/email-threat-simulator),[ Smishing Simulator](https://keepnetlabs.com/products/smishing-simulator),  [Quishing Simulator](next-generation-product/platform/quishing-simulator/), [Threat Sharing](next-generation-product/platform/threat-sharing/), [Phishing Reporter](next-generation-product/platform/phishing-reporter/), and[ Incident Responder](https://keepnetlabs.com/products/incident-responder). Each product's functionalities, features, and usage guidelines are explained to help users understand and utilize them effectively.
 
-Bu repoda dokümantasyon üzerinde çalışırken api-writing reposundaki kuralları referans alın; Cursor rules için api-writing’i klonlayıp `.cursor/rules` dosyalarını kullanabilirsiniz.
+## The structure of the documentation
 
----
+To ensure a seamless experience, our documentation is structured in alignment with the Keepnet product interface. Starting with the Dashboard, users can navigate through each section, such as Threat Intelligence, Awareness Educator, and beyond. This intuitive structure allows users to easily find relevant information and logically progress through the documentation.
 
-## GitBook ile senkron
+## For contributors
 
-- İçerik GitBook Space’e bu repo üzerinden bağlıdır (GitHub entegrasyonu).
-- OpenAPI spec: GitBook’da Integrations → OpenAPI → `keepnet-api` ile yapılandırılır.
+If you're writing or updating documentation, follow the rules in [DOCUMENTATION-RULES.md](DOCUMENTATION-RULES.md). Hard rules apply to all API Reference and platform docs.
 
----
+## How to get help with the documentation
 
-## Yeni use-case veya sayfa eklerken
+Should you require assistance using our documentation, we recommend carefully reading the instructions and guidelines. The outlined steps and best practices will help you derive the most value from available resources. If you need further support, our support team is available to address any specific queries or concerns. [Reach out to us](resources/keepnet-support-help-desk.md), and we will be more than happy to assist you in making the most of our documentation and achieving your desired outcomes.
 
-- **Rol:** Reseller → `api-reference/use-cases/reseller/`; Company Admin (ileride) → `api-reference/use-cases/company/`
-- **Menü:** `SUMMARY.md` içinde ilgili alt gruba link ekleyin; bir grupta 10’dan fazla madde olursa grubu bölün.
-- **Şablon ve kurallar:** api-writing reposundaki DOCUMENTATION-RULES.md ve keepnet-api-docs-standards.md.
+Thank you for choosing Keepnet as your cybersecurity partner. Together, we can create a safer digital environment for businesses worldwide.
+
+Build your security culture to STOP phishing!&#x20;
