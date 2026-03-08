@@ -1,6 +1,6 @@
 # Table of contents
 
-## 💫 NEXT-GENERATION PRODUCT <a href="#Next-Generation-Product" id="Next-Generation-Product"></a>
+## 💫 NEXT-GENERATION PRODUCT
 
 * [Introduction](README.md)
 * [Getting Started](next-generation-product/getting-started/README.md)
@@ -117,7 +117,7 @@
     * [Callback Campaign Reports](next-generation-product/platform/callback-simulator/callback-campaign-reports.md)
     * [Settings](next-generation-product/platform/callback-simulator/settings/README.md)
       * [Callback Phone Numbers](next-generation-product/platform/callback-simulator/settings/callback-phone-numbers.md)
-  * [Vishing Simulator ](next-generation-product/platform/vishing-simulator/README.md)
+  * [Vishing Simulator](next-generation-product/platform/vishing-simulator/README.md)
     * [Vishing Templates](next-generation-product/platform/vishing-simulator/vishing-templates.md)
     * [Vishing Campaign Manager](next-generation-product/platform/vishing-simulator/vishing-campaign-manager.md)
     * [Vishing Campaign Reports](next-generation-product/platform/vishing-simulator/vishing-campaign-reports.md)
@@ -289,13 +289,11 @@
 * [Overview](api-reference/overview.md)
 * [Quickstart](api-reference/quickstart.md)
 * [Authenticate your requests](api-reference/authentication.md)
-
-* Reseller
+* [Reseller](api-reference/reseller/README.md)
   * [Onboard a new customer](api-reference/use-cases/reseller/onboard-new-customer.md)
   * [List companies with license details](api-reference/use-cases/reseller/list-companies-with-license-details.md)
   * [Manage companies](api-reference/use-cases/reseller/manage-companies.md)
-
-* Reports
+* [Reports](api-reference/reports/README.md)
   * [Pull phishing campaign reports](api-reference/use-cases/reports/phishing-campaign-reports.md)
   * [Pull training reports](api-reference/use-cases/reports/training-reports.md)
   * [Pull gamification report](api-reference/use-cases/reports/gamification-report.md)
@@ -306,19 +304,16 @@
   * [Pull vishing campaign reports](api-reference/use-cases/reports/vishing-campaign-reports.md)
   * [Pull callback campaign reports](api-reference/use-cases/reports/callback-campaign-reports.md)
   * [Pull MSSP Billing Report](api-reference/use-cases/reports/mssp-billing-report.md)
-
-* Company & Users
+* [Company & Users](api-reference/company-and-users/README.md)
   * [Add target users](api-reference/use-cases/company-users/add-target-users.md)
   * [Manage system users](api-reference/use-cases/company-users/manage-system-users.md)
   * [Pull training list](api-reference/use-cases/company-users/pull-training-list.md)
   * [Enroll users in training](api-reference/use-cases/company-users/enroll-users-in-training.md)
-
-* Endpoints
 * ```yaml
-  type: builtin:openapi
   props:
     models: true
     downloadLink: true
+  type: builtin:openapi
   dependencies:
     spec:
       ref:
