@@ -97,20 +97,32 @@ function enrichSpec(spec) {
     ? spec.servers
     : [{ url: API_BASE_URL, description: 'Keepnet API' }];
 
-  // Bearer token seçeneği: Kullanıcı token'ı doğrudan yapıştırabilir (OAuth2 client credentials ile alınan)
+  // OAuth2: Primary — Test it shows client_id, client_secret; Scalar auto-fetches token
+  // Bearer: Fallback — paste token if already obtained
   const securitySchemes = {
     ...spec.components?.securitySchemes,
+    oauth2: {
+      type: 'oauth2',
+      flows: {
+        clientCredentials: {
+          tokenUrl: 'https://api.keepnetlabs.com/connect/token',
+          scopes: { api1: 'API' },
+        },
+      },
+      description: 'Client ID and Client Secret from Company → Company Settings → REST API. Enter credentials to auto-fetch token.',
+    },
     bearerAuth: {
       type: 'http',
       scheme: 'bearer',
       bearerFormat: 'JWT',
-      description: 'OAuth2 client credentials ile alınan access_token. [Token al](https://doc.keepnetlabs.com/api-reference/authentication)',
+      description: 'Paste token if you already have one (obtained via OAuth2). [Get token](https://doc.keepnetlabs.com/api-reference/authentication)',
     },
   };
   const components = { ...spec.components, securitySchemes };
 
-  // Bearer + OAuth2: Test it'te Bearer ile token yapıştırma veya OAuth2 client credentials
-  const security = [{ bearerAuth: [] }, ...(spec.security || [])];
+  // OAuth2 first: Test it shows OAuth2 client credentials (client_id, client_secret) by default
+  // Bearer as fallback: users can paste token if they already have one
+  const security = [{ oauth2: ['api1'] }, { bearerAuth: [] }];
 
   return { ...spec, paths, tags: specTags, servers, components, security };
 }

@@ -82660,24 +82660,25 @@
               "api1": "API"
             }
           }
-        }
+        },
+        "description": "Client ID and Client Secret from Company → Company Settings → REST API. Enter credentials to auto-fetch token."
       },
       "bearerAuth": {
         "type": "http",
         "scheme": "bearer",
         "bearerFormat": "JWT",
-        "description": "OAuth2 client credentials ile alınan access_token. [Token al](https://doc.keepnetlabs.com/api-reference/authentication)"
+        "description": "Paste token if you already have one (obtained via OAuth2). [Get token](https://doc.keepnetlabs.com/api-reference/authentication)"
       }
     }
   },
   "security": [
     {
-      "bearerAuth": []
-    },
-    {
       "oauth2": [
         "api1"
       ]
+    },
+    {
+      "bearerAuth": []
     }
   ],
   "tags": [
