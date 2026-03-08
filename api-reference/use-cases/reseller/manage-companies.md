@@ -50,6 +50,8 @@ Get, update, or delete a single company you manage, and add companies to a compa
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
 * **404 Not Found** — Invalid or unknown company ID. Verify from `POST /api/companies/search`.
 
+**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>. <a href="list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>. <a href="list-and-manage-company-groups.md" target="_blank" rel="noopener noreferrer">List and manage company groups →</a>.
+
 {% hint style="danger" %}
 Deleting a company is irreversible. All associated data is removed.
 {% endhint %}

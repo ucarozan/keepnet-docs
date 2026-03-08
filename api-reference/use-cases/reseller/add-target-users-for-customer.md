@@ -1,4 +1,4 @@
-# Add target users for a customer (Reseller)
+# Add target users for a customer
 
 Get a customer’s Company ID from the companies list, then add target users for that company by sending the Company ID in the request. Reseller-only — use a credential with Client Role = **Reseller**. This use-case ties together listing companies and scoping the target-users API to one customer.
 
@@ -54,4 +54,4 @@ Example body (dummy data):
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
 * **404 Not Found** / **400 Bad Request** — Invalid Company ID or missing required body fields. Verify Company ID from `POST /api/companies/search` and check Endpoints → **TargetUser** for the request body schema.
 
-**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer (Reseller) →</a> for how Company ID is used across endpoints. <a href="../company-users/add-target-users.md" target="_blank" rel="noopener noreferrer">Add target users →</a> (Company & Users) for the full target-users API without Reseller focus.
+**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a> for how Company ID is used across endpoints. <a href="../company-users/add-target-users.md" target="_blank" rel="noopener noreferrer">Add target users →</a> (Company & Users) for the full target-users API without Reseller focus.

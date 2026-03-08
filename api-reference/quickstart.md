@@ -262,7 +262,7 @@ If your credential has the **Reseller** role, include Company ID when calling co
 * **Path:** `/api/.../companies/{companyId}/...`
 * **Query:** `?companyId={companyId}`
 
-Company IDs are returned by `POST /api/companies/search`. For a full explanation and usage in report and user endpoints, see <a href="use-cases/reseller/scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer (Reseller) →</a>. For the list: <a href="use-cases/reseller/list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>.
+Company IDs are returned by `POST /api/companies/search`. For a full explanation and usage in report and user endpoints, see <a href="use-cases/reseller/scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>. For the list: <a href="use-cases/reseller/list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>.
 
 ---
 

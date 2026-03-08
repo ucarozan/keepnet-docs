@@ -16,8 +16,8 @@ Export the list of companies you manage to CSV or Excel for billing, MSSP report
 
 ## Common errors
 
-* **403 Forbidden** — Credential is not Reseller. Set Client Role = **Reseller** in **Company → Company Settings → REST API**.
+* **403 Forbidden** — Credential is not Reseller. Set Client Role = **Reseller** in **Company → Company Settings → REST API**. <a href="../../../next-generation-product/platform/company/system-users/user-roles.md" target="_blank" rel="noopener noreferrer">Roles and permissions →</a>
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
 * **400 Bad Request** — Invalid request body. Use minimal body: `pageNumber`, `pageSize`, `orderBy`, `ascending`, `exportType` (e.g. `Csv`).
 
-**Related:** Paginated list without file download: <a href="list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>. MSSP billing report data: <a href="../reports/mssp-billing-report.md" target="_blank" rel="noopener noreferrer">Pull MSSP Billing Report →</a>.
+**Related:** Paginated list without file download: <a href="list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>. MSSP billing report data: <a href="../reports/mssp-billing-report.md" target="_blank" rel="noopener noreferrer">Pull MSSP Billing Report →</a>. <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>.

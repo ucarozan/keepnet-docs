@@ -1,4 +1,4 @@
-# View customer's training enrollment list and report (Reseller)
+# View customer's training enrollment list and report
 
 As a Reseller you can list a customer’s training enrollments and get reports for a specific enrollment. Get the customer’s Company ID, then call the enrollment search and training-report endpoints with **`X-KEEPNET-Company-Id`** so results are scoped to that company. Use a credential with Client Role = **Reseller**.
 
@@ -64,13 +64,9 @@ Example: `GET /api/enrollments/eNrl9Ab3k2Qp` with header `X-KEEPNET-Company-Id: 
 
 ---
 
-## Get a report for an enrollment
+## GET /api/training-reports/{enrollmentId}/summary
 
-Use the enrollment `resourceId` from the list as `enrollmentId` in the training-report endpoints. Send **`X-KEEPNET-Company-Id`** so the report is scoped to that customer.
-
-### GET /api/training-reports/{enrollmentId}/summary
-
-Returns the enrollment summary report (overview for that enrollment).
+Use the enrollment `resourceId` from the list as `enrollmentId`. Send **`X-KEEPNET-Company-Id`** so the report is scoped to that customer. Returns the enrollment summary report (overview for that enrollment).
 
 > Returns enrollment summary report. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**. Optional query: `trainingType`.
 
@@ -80,9 +76,17 @@ Returns the enrollment summary report (overview for that enrollment).
 
 Example: `GET /api/training-reports/eNrl9Ab3k2Qp/summary` with header `X-KEEPNET-Company-Id: xC5kfGz7w2Nz`.
 
-### Export enrollment list (bulk report)
+---
 
-To export the enrollment list (e.g. CSV/Excel) for that customer, use **POST /api/enrollments/search/export** with the same Company ID and a body similar to search (filter, exportType, etc.). See Endpoints → **Enrollment** → **Exports the list of enrollment** for the full request schema.
+## POST /api/enrollments/search/export
+
+Export the enrollment list (e.g. CSV/Excel) for that customer. Send the same **`X-KEEPNET-Company-Id`** and a body similar to search (filter, exportType, etc.). See Endpoints → **Enrollment** for the full request schema.
+
+> Exports the list of enrollment. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/enrollments/search/export" method="post" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
 
 ---
 
@@ -92,4 +96,4 @@ To export the enrollment list (e.g. CSV/Excel) for that customer, use **POST /ap
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
 * **404 Not Found** / **400 Bad Request** — Invalid Company ID or enrollment ID. Verify Company ID from `POST /api/companies/search` and enrollment ID from `POST /api/enrollments/search`; ensure you send `X-KEEPNET-Company-Id` for the customer that owns the enrollment.
 
-**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer (Reseller) →</a> for how Company ID is used. <a href="../company-users/enroll-users-in-training.md" target="_blank" rel="noopener noreferrer">Enroll users in training →</a> (Company & Users). For training reports without Reseller focus: see the **TrainingReport** section in the Endpoints API Reference.
+**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a> for how Company ID is used. <a href="../company-users/enroll-users-in-training.md" target="_blank" rel="noopener noreferrer">Enroll users in training →</a> (Company & Users). For training reports without Reseller focus: see the **TrainingReport** section in the Endpoints API Reference.

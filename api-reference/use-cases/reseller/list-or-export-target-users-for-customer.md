@@ -1,4 +1,4 @@
-# List or export target users for a customer (Reseller)
+# List or export target users for a customer
 
 As a Reseller you can list or export a customer’s target users (learners) scoped to that company. Get the customer’s Company ID, then call the target-user search and export endpoints with **`X-KEEPNET-Company-Id`** so results are limited to that customer. Use a credential with Client Role = **Reseller**.
 
@@ -59,9 +59,15 @@ Exports the target user list (e.g. CSV/Excel) for that customer. Send the same *
 
 ---
 
-## Optional: count summary
+## GET /api/target-users/count-summary
 
-**GET /api/target-users/count-summary** returns counts (active, inactive, deleted, monthly active users). As a Reseller, send **`X-KEEPNET-Company-Id`** to get the summary for one customer. See Endpoints → **TargetUser** for parameters.
+Optional. Returns counts (active, inactive, deleted, monthly active users) for that customer. Send **`X-KEEPNET-Company-Id`**. See Endpoints → **TargetUser** for parameters.
+
+> Returns the count summary of active, inactive, deleted target users and monthly active users. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/target-users/count-summary" method="get" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
 
 ---
 
@@ -71,4 +77,4 @@ Exports the target user list (e.g. CSV/Excel) for that customer. Send the same *
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
 * **404 Not Found** / **400 Bad Request** — Invalid Company ID. Verify Company ID from `POST /api/companies/search` and ensure you send `X-KEEPNET-Company-Id` for the customer.
 
-**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer (Reseller) →</a>. <a href="add-target-users-for-customer.md" target="_blank" rel="noopener noreferrer">Add target users for a customer (Reseller) →</a> to create users for that company. <a href="../company-users/add-target-users.md" target="_blank" rel="noopener noreferrer">Add target users →</a> (Company & Users, generic).
+**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>. <a href="add-target-users-for-customer.md" target="_blank" rel="noopener noreferrer">Add target users for a customer →</a> to create users for that company. <a href="../company-users/add-target-users.md" target="_blank" rel="noopener noreferrer">Add target users →</a> (Company & Users, generic).

@@ -1,4 +1,4 @@
-# Add system user for a customer (Reseller)
+# Add system user for a customer
 
 Get a customer’s Company ID from the companies list, then create a system user (platform admin) for that company by sending the Company ID in the request. Reseller-only — use a credential with Client Role = **Reseller**. System users can log in to the Keepnet platform and manage that company; scoping by Company ID ensures the user is created under the correct customer.
 
@@ -55,4 +55,4 @@ Example body (dummy data):
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
 * **404 Not Found** / **400 Bad Request** — Invalid Company ID or missing required body fields (`email`, `firstName`, `lastName`, `phoneNumber`). Verify Company ID from `POST /api/companies/search` and check Endpoints → **SystemUser** for the request body schema.
 
-**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer (Reseller) →</a> for how Company ID is used across endpoints. <a href="add-target-users-for-customer.md" target="_blank" rel="noopener noreferrer">Add target users for a customer (Reseller) →</a> for the same flow with target users instead of system users.
+**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a> for how Company ID is used across endpoints. <a href="add-target-users-for-customer.md" target="_blank" rel="noopener noreferrer">Add target users for a customer →</a> for the same flow with target users instead of system users.

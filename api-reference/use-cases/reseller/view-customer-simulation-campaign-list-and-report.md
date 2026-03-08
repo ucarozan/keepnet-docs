@@ -1,4 +1,4 @@
-# View customer's simulation campaign list and report (Reseller)
+# View customer's simulation campaign list and report
 
 As a Reseller you can list a customer’s phishing, smishing, or quishing campaigns and get reports for a specific campaign or campaign job. Get the customer’s Company ID, then call the campaign search and campaign-job-report endpoints with **`X-KEEPNET-Company-Id`** so results are scoped to that company. Use a credential with Client Role = **Reseller**. The same pattern applies to **phishing**, **smishing**, and **quishing** simulators — only the base path changes.
 
@@ -18,15 +18,11 @@ From the response, pick the company (e.g. by `name`) and note its `resourceId`. 
 
 ---
 
-## List campaigns for the customer (phishing example)
+## POST /api/phishing-simulator/phishing-campaign/search
 
-Send the Company ID in the **`X-KEEPNET-Company-Id`** header so the list is scoped to the chosen company.
+Send the Company ID in the **`X-KEEPNET-Company-Id`** header so the list is scoped to the chosen company. Returns a paginated list of phishing campaigns for that customer. Response includes campaign `resourceId`, name, status, and other fields.
 
-### POST /api/phishing-simulator/phishing-campaign/search
-
-Returns a paginated list of phishing campaigns for that customer. Response includes campaign `resourceId`, name, status, and other fields.
-
-> Returns a list of the phishing campaigns. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**. Request body: optional `filter`, `pageNumber`, `pageSize`, `orderBy`, `ascending`. **Test it:** Endpoints → **PhishingCampaign** → **Returns a list of the phishing campaigns** — use dummy data (H8d) and set the header to a Company ID from companies/search.
+> Returns a list of the phishing campaigns. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**. Request body: optional `filter`, `pageNumber`, `pageSize`, `orderBy`, `ascending`. **Test it:** Endpoints → **PhishingCampaign** → **Returns a list of the phishing campaigns** — use dummy data (H8d) and set the header to a Company ID from companies/search. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**. Request body: optional `filter`, `pageNumber`, `pageSize`, `orderBy`, `ascending`. **Test it:** Endpoints → **PhishingCampaign** → **Returns a list of the phishing campaigns** — use dummy data (H8d) and set the header to a Company ID from companies/search.
 
 {% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/phishing-simulator/phishing-campaign/search" method="post" expanded="true" %}
 <a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
@@ -58,13 +54,9 @@ Same flow with a different base path and same header:
 
 ---
 
-## List campaign jobs and get a report
+## POST /api/phishing-simulator/phishing-campaign-job-report/search
 
-Campaign **jobs** are run instances of a campaign. To get job-level reports (summary, clicked users, export), use the campaign job report search — it returns jobs with `resourceId` and `instanceGroup` that you need for the summary and export endpoints.
-
-### POST /api/phishing-simulator/phishing-campaign-job-report/search
-
-Retrieves the campaign job list for that customer. Send **`X-KEEPNET-Company-Id`**. From the response, note `resourceId` and `instanceGroup` for the job you want to report on.
+Campaign **jobs** are run instances of a campaign. To get job-level reports (summary, clicked users, export), use this endpoint — it returns jobs with `resourceId` and `instanceGroup` that you need for the summary and export endpoints. Send **`X-KEEPNET-Company-Id`**. From the response, note `resourceId` and `instanceGroup` for the job you want to report on.
 
 > Retrieves campaign job's list. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**. Request body: see Endpoints → **PhishingCampaignJobReport** for the search request schema.
 
@@ -72,7 +64,7 @@ Retrieves the campaign job list for that customer. Send **`X-KEEPNET-Company-Id`
 <a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
 {% endswagger %}
 
-### GET /api/phishing-simulator/phishing-campaign-job-report/summary/{resourceId}/{instanceGroup}
+## GET /api/phishing-simulator/phishing-campaign-job-report/summary/{resourceId}/{instanceGroup}
 
 Returns the summary report for one campaign job (sent, opened, clicked, etc.). Send **`X-KEEPNET-Company-Id`**.
 
@@ -99,4 +91,4 @@ Smishing and quishing have equivalent paths under `smishing-simulator` and `quis
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
 * **404 Not Found** / **400 Bad Request** — Invalid Company ID or campaign/job ID. Verify Company ID from `POST /api/companies/search` and job `resourceId`/`instanceGroup` from the campaign-job-report search; ensure you send `X-KEEPNET-Company-Id` for the customer that owns the campaign.
 
-**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer (Reseller) →</a>. <a href="../reports/phishing-campaign-reports.md" target="_blank" rel="noopener noreferrer">Pull phishing campaign reports →</a>, <a href="../reports/smishing-campaign-reports.md" target="_blank" rel="noopener noreferrer">Pull smishing campaign reports →</a>, <a href="../reports/quishing-campaign-reports.md" target="_blank" rel="noopener noreferrer">Pull quishing campaign reports →</a> (generic; no Reseller flow).
+**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>. <a href="../reports/phishing-campaign-reports.md" target="_blank" rel="noopener noreferrer">Pull phishing campaign reports →</a>, <a href="../reports/smishing-campaign-reports.md" target="_blank" rel="noopener noreferrer">Pull smishing campaign reports →</a>, <a href="../reports/quishing-campaign-reports.md" target="_blank" rel="noopener noreferrer">Pull quishing campaign reports →</a> (generic; no Reseller flow).

@@ -1,0 +1,86 @@
+# Set up SCIM for a customer
+
+As a Reseller you can create a SCIM integration for a **customer (sub-company)** so that customer can sync target users from their identity provider (Entra ID, Okta, OneLogin, JumpCloud, etc.) into Keepnet. The SCIM integration is created in the **customer’s** context, not your Reseller company. Get the customer’s Company ID, then call the SCIM endpoints with **`X-KEEPNET-Company-Id`**. Use a credential with Client Role = **Reseller**. After creation, share the returned **SCIM token** and endpoint URL with the customer so they can configure their IdP.
+
+---
+
+## POST /api/companies/search
+
+Get the customer’s Company ID. Use the `resourceId` of the desired company in the next steps.
+
+> Retrieves a paginated list of all companies you manage with license details. Each item includes `resourceId` — use it as the Company ID for scoped requests. **Test it:** Authorize with Client ID/Secret, then Send — request body is pre-filled.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/search" method="post" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
+From the response, pick the company and note its `resourceId`. Example: `"resourceId": "xC5kfGz7w2Nz"` → use `xC5kfGz7w2Nz` as Company ID when creating the SCIM integration.
+
+---
+
+## Optional: Get SCIM fields and target groups for the customer
+
+To map custom attributes or choose a target group, scope the following calls to the customer with **`X-KEEPNET-Company-Id`**:
+
+* **GET /api/scim/fields** — Returns available SCIM fields for mapping (e.g. to map IdP attributes to Keepnet custom fields). Send the Company ID header.
+* **Target group:** The SCIM integration can sync users into a specific target group. If the customer already has target groups, get their IDs via the target-groups API scoped to that company. You can pass `groupResourceId` in the create-SCIM request; if omitted, synced users appear under **Target Users > People** (no group). To create a group for that customer first, use the target-groups create endpoint with `X-KEEPNET-Company-Id`.
+
+---
+
+## POST /api/scim
+
+Creates a new SCIM integration **for that customer**. Send the Company ID in the **`X-KEEPNET-Company-Id`** header. The request body requires **`name`** (e.g. `"Entra ID Sync"`). Optional: **`groupResourceId`** (target group to sync users into), **`groupBySCIMFieldResourceId`** (e.g. group by department), **`fieldMappings`** (array of SCIM attribute → custom field mapping), **`syncPlatformGroup`** (boolean). The response includes the **SCIM token** and endpoint URL — the customer uses these in their identity provider to complete the SCIM setup.
+
+> Creates a new scim integration. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`** so the integration is created for the chosen customer. **Test it:** Endpoints → **SCIM** → **Creates a new scim integration** — use dummy data (H8d) and set the header to a Company ID from companies/search.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/scim" method="post" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
+Example request headers:
+
+```http
+Authorization: Bearer <your_access_token>
+Content-Type: application/json
+X-KEEPNET-Company-Id: xC5kfGz7w2Nz
+```
+
+Example body (dummy data — minimal; syncs users to no specific group):
+
+```json
+{
+  "name": "Acme Entra ID Sync"
+}
+```
+
+With an optional target group (use a valid `groupResourceId` for that customer):
+
+```json
+{
+  "name": "Acme Entra ID Sync",
+  "groupResourceId": "gR4pL2mK9xYz"
+}
+```
+
+After creation, provide the customer with the **SCIM token** and the Keepnet SCIM base URL from the response so they can configure their IdP (e.g. <a href="../../../next-generation-product/getting-started/2.-add-target-users/add-users-via-scim/scim-setup-in-entra-id.md" target="_blank" rel="noopener noreferrer">SCIM Setup in Entra ID</a>, <a href="../../../next-generation-product/getting-started/2.-add-target-users/add-users-via-scim/scim-setup-in-okta.md" target="_blank" rel="noopener noreferrer">Okta</a>, etc.).
+
+---
+
+## List, update, or revoke SCIM for the customer
+
+Send **`X-KEEPNET-Company-Id`** for the same customer when calling:
+
+* **POST /api/scim/search** — List SCIM integrations for that company.
+* **GET /api/scim/{resourceId}** — Get SCIM integration details.
+* **PUT /api/scim/{resourceId}** — Update the integration.
+* **POST /api/scim/{resourceId}/revoke** — Revoke the current token and generate a new one (e.g. if the token was exposed).
+
+---
+
+## Common errors
+
+* **403 Forbidden** — Credential is not Reseller, or the Company ID is not one you manage. Set Client Role = **Reseller**. <a href="../../../next-generation-product/platform/company/system-users/user-roles.md" target="_blank" rel="noopener noreferrer">Roles and permissions →</a>
+* **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
+* **404 Not Found** / **400 Bad Request** — Invalid Company ID or invalid `groupResourceId` (must be a target group belonging to that customer). Verify Company ID from `POST /api/companies/search` and ensure you send `X-KEEPNET-Company-Id` for the customer.
+
+**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>. <a href="list-or-export-target-users-for-customer.md" target="_blank" rel="noopener noreferrer">List or export target users for a customer →</a>. For SCIM setup in the UI and IdP-specific guides: <a href="../../../next-generation-product/platform/company/company-settings/scim-settings/getting-started-with-scim.md" target="_blank" rel="noopener noreferrer">Getting Started with SCIM</a>.
