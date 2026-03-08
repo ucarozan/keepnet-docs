@@ -221,9 +221,48 @@ Field|Description
 
 ## 📐 Page Templates
 
-### API Reference — Use-case page
+### API Reference — Tag page (GitBook standard)
 
-Every use-case page follows the **same section order**:
+**Referans:** <a href="https://gitbook.com/docs/developers/gitbook-api/api-reference/organizations" target="_blank" rel="noopener noreferrer">GitBook Organizations API →</a>
+
+Tag veya use-case bazlı her API sayfası **aynı yapıyı** takip eder:
+
+```markdown
+# [Sayfa başlığı — task-based]
+
+[1 paragraf: İş hedefi — ne yapar, kim kullanır. 2–3 cümle.]
+
+## METHOD /path
+
+> [OpenAPI summary — tek cümle özet]
+
+{% swagger src="..." path="/path" method="..." expanded="true" %}
+{% endswagger %}
+
+## METHOD /path
+
+> [OpenAPI summary]
+
+{% swagger ... %}
+{% endswagger %}
+```
+
+Kural|Açıklama
+:---|:---
+**H1**|Task-based başlık (örn. `List companies with license details`)
+**Intro**|Tek paragraf — iş hedefi, rol (Reseller/Company Admin)
+**H2**|`METHOD /path` formatında (örn. `POST /api/companies/search`)
+**Blockquote**|OpenAPI `summary` değeri veya kısa özet
+**Swagger**|Her endpoint için `{% swagger %}` — Test it zorunlu
+**Opsiyonel**|Reseller/role hint, Common errors tablosu (sayfa sonunda)
+
+**Yasak:** Who can use this, Prerequisites, Steps, What's next gibi uzun bölümler — sadece referans odaklı, endpoint-first.
+
+---
+
+### API Reference — Use-case page (Legacy)
+
+Eski use-case sayfaları yukarıdaki **Tag page** standardına migrate edilmeli. Geçiş sürecinde aşağıdaki yapı hâlâ kabul edilir:
 
 ```markdown
 # [Use-case title — task-based]
