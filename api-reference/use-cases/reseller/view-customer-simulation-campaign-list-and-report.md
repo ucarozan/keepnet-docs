@@ -1,0 +1,102 @@
+# View customer's simulation campaign list and report (Reseller)
+
+As a Reseller you can list a customer’s phishing, smishing, or quishing campaigns and get reports for a specific campaign or campaign job. Get the customer’s Company ID, then call the campaign search and campaign-job-report endpoints with **`X-KEEPNET-Company-Id`** so results are scoped to that company. Use a credential with Client Role = **Reseller**. The same pattern applies to **phishing**, **smishing**, and **quishing** simulators — only the base path changes.
+
+---
+
+## POST /api/companies/search
+
+Get the customer’s Company ID. Use the `resourceId` of the desired company in the next steps.
+
+> Retrieves a paginated list of all companies you manage with license details. Each item includes `resourceId` — use it as the Company ID for scoped requests. **Test it:** Authorize with Client ID/Secret, then Send — request body is pre-filled.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/search" method="post" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
+From the response, pick the company (e.g. by `name`) and note its `resourceId`. Example: `"resourceId": "xC5kfGz7w2Nz"` → use `xC5kfGz7w2Nz` as Company ID in the campaign and report requests below.
+
+---
+
+## List campaigns for the customer (phishing example)
+
+Send the Company ID in the **`X-KEEPNET-Company-Id`** header so the list is scoped to the chosen company.
+
+### POST /api/phishing-simulator/phishing-campaign/search
+
+Returns a paginated list of phishing campaigns for that customer. Response includes campaign `resourceId`, name, status, and other fields.
+
+> Returns a list of the phishing campaigns. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**. Request body: optional `filter`, `pageNumber`, `pageSize`, `orderBy`, `ascending`. **Test it:** Endpoints → **PhishingCampaign** → **Returns a list of the phishing campaigns** — use dummy data (H8d) and set the header to a Company ID from companies/search.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/phishing-simulator/phishing-campaign/search" method="post" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
+Example request headers:
+
+```http
+Authorization: Bearer <your_access_token>
+Content-Type: application/json
+X-KEEPNET-Company-Id: xC5kfGz7w2Nz
+```
+
+Example body (dummy data — first page):
+
+```json
+{
+  "pageNumber": 1,
+  "pageSize": 20
+}
+```
+
+### Smishing and quishing
+
+Same flow with a different base path and same header:
+
+* **Smishing:** `POST /api/smishing-simulator/smishing-campaign/search`
+* **Quishing:** `POST /api/quishing-simulator/quishing-campaign/search`
+
+---
+
+## List campaign jobs and get a report
+
+Campaign **jobs** are run instances of a campaign. To get job-level reports (summary, clicked users, export), use the campaign job report search — it returns jobs with `resourceId` and `instanceGroup` that you need for the summary and export endpoints.
+
+### POST /api/phishing-simulator/phishing-campaign-job-report/search
+
+Retrieves the campaign job list for that customer. Send **`X-KEEPNET-Company-Id`**. From the response, note `resourceId` and `instanceGroup` for the job you want to report on.
+
+> Retrieves campaign job's list. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**. Request body: see Endpoints → **PhishingCampaignJobReport** for the search request schema.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/phishing-simulator/phishing-campaign-job-report/search" method="post" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
+### GET /api/phishing-simulator/phishing-campaign-job-report/summary/{resourceId}/{instanceGroup}
+
+Returns the summary report for one campaign job (sent, opened, clicked, etc.). Send **`X-KEEPNET-Company-Id`**.
+
+> Returns campaign job summary. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/phishing-simulator/phishing-campaign-job-report/summary/{resourceId}/{instanceGroup}" method="get" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
+Example: `GET /api/phishing-simulator/phishing-campaign-job-report/summary/pJb2kL9mNq/1` with header `X-KEEPNET-Company-Id: xC5kfGz7w2Nz`.
+
+### Export campaign or job report list
+
+* **Export campaign list:** `POST /api/phishing-simulator/phishing-campaign/search/export` — same Company ID header and body shape as search (see Endpoints → **PhishingCampaign**).
+* **Export campaign job report list:** `POST /api/phishing-simulator/phishing-campaign-job-report/search/export` — same header, request body per Endpoints → **PhishingCampaignJobReport**.
+
+Smishing and quishing have equivalent paths under `smishing-simulator` and `quishing-simulator` (e.g. `.../smishing-campaign/search`, `.../smishing-campaign-job-report/search`, `.../summary/{resourceId}/{instanceGroup}`, `.../search/export`).
+
+---
+
+## Common errors
+
+* **403 Forbidden** — Credential is not Reseller, or the Company ID is not one you manage. Set Client Role = **Reseller**. <a href="../../../next-generation-product/platform/company/system-users/user-roles.md" target="_blank" rel="noopener noreferrer">Roles and permissions →</a>
+* **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
+* **404 Not Found** / **400 Bad Request** — Invalid Company ID or campaign/job ID. Verify Company ID from `POST /api/companies/search` and job `resourceId`/`instanceGroup` from the campaign-job-report search; ensure you send `X-KEEPNET-Company-Id` for the customer that owns the campaign.
+
+**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer (Reseller) →</a>. <a href="../reports/phishing-campaign-reports.md" target="_blank" rel="noopener noreferrer">Pull phishing campaign reports →</a>, <a href="../reports/smishing-campaign-reports.md" target="_blank" rel="noopener noreferrer">Pull smishing campaign reports →</a>, <a href="../reports/quishing-campaign-reports.md" target="_blank" rel="noopener noreferrer">Pull quishing campaign reports →</a> (generic; no Reseller flow).
