@@ -158,6 +158,28 @@ Convention|Description
 
 ---
 
+## Get Company ID from the token
+
+The access token is a **JWT**. The payload contains your company context — useful when an endpoint requires Company ID in the path, header, or query.
+
+**Decode the token:** Use [jwt.io](https://jwt.io) (paste the token, ignore signature verification) or decode the middle part (between the two dots) as Base64URL.
+
+Relevant claims in the payload:
+
+Claim|Description|Example
+:---|:---|:---
+`user_company_resourceid`|**Company ID** — use in `X-KEEPNET-Company-Id`, path `/api/.../companies/{id}/...`, or `?companyId=`|`uB4jcFz9x1My`
+`user_company_name`|Company name|`My Company`
+`role`|`Company Admin` or `Reseller`|`Company Admin`
+`company_admin_access`|`true` if Company Admin|`true`
+
+{% hint style="info" %}
+**Company Admin:** Your Company ID is in every token. Use it when an endpoint requires a company context (e.g. `GET /api/companies/{resourceId}`).
+**Reseller:** Get Company IDs from `POST /api/companies/search`. The token's `user_company_resourceid` is your Reseller org, not the managed company.
+{% endhint %}
+
+---
+
 ## Who can use the API
 
 Role|Access
