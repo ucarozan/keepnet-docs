@@ -1,52 +1,209 @@
 # Quickstart
 
-Get a token and make your first API call in three steps.
+The Keepnet API lets you automate platform operations: pull reports, manage users, onboard customers, and integrate with SIEM, SOAR, or identity systems.
+
+You can use the Keepnet API to:
+
+* Pull campaign reports (phishing, smishing, quishing, vishing, callback)
+* Export training reports, gamification data, and executive summaries
+* Add target users and enroll them in training
+* List and manage companies (Reseller)
+* Export audit logs to SIEM
+
+…and more, all via REST calls with OAuth 2.0 Client Credentials.
 
 ---
 
-## Before you begin
+{% stepper %}
+{% step %}
 
-Generate **Client ID** and **Client Secret** from the platform:
+### Getting started
+
+You need a Keepnet platform account with API access. Generate **Client ID** and **Client Secret** from **Company → Company Settings → REST API** before making any API calls.
 
 {% hint style="info" %}
-**Platform UI:** Go to **Company → Company Settings → REST API** and click **+ NEW**.\
-[REST API Settings →](https://doc.keepnetlabs.com/next-generation-product/platform/company/company-settings/rest-api)
+**Platform UI:** Go to **Company → Company Settings → REST API** and click **+ NEW**.
+<a href="../next-generation-product/platform/company/company-settings/rest-api.md" target="_blank" rel="noopener noreferrer">REST API Settings →</a>
 {% endhint %}
 
----
+Field|Description
+:---|:---
+**Name**|A label for this credential set (e.g. `prod-integration`, `siem-connector`)
+**Client Role**|`Company Admin` for full access, or a custom role with limited privileges
+**IP Restriction**|Optionally restrict access to specific IP addresses
+**Status**|Set to `Active`
 
-## Step 1: Request an access token
-
-Send a `POST` request to `https://api.keepnetlabs.com/connect/token` with OAuth2 client credentials (`grant_type=client_credentials`, `client_id`, `client_secret`, `scope=api1`).
-
-{% hint style="info" %}
-**Request format, parameters, and Try it:** See the [Authentication](authentication.md) section or the **Endpoints** API Reference (OpenAPI) in the sidebar. All request/response details are maintained in the spec and update automatically.
+{% hint style="warning" %}
+**The Client Secret is shown only once.** Copy and store it securely immediately after you generate it — it cannot be retrieved later.
 {% endhint %}
 
----
+{% endstep %}
 
-## Step 2: Call an endpoint
+{% step %}
 
-Use the `access_token` from Step 1 in the `Authorization: Bearer <token>` header. Example: list trainings from Awareness Educator.
+### Request an access token
 
-{% hint style="info" %}
-**Exact path, parameters, request/response schema, and Try it:** See the **Awareness Educator** or **Training** section in the **Endpoints** API Reference (OpenAPI) in the sidebar. The spec is the single source of truth for all endpoints.
+Keepnet API uses **OAuth 2.0 Client Credentials**. Every request requires a Bearer token in the `Authorization` header.
+
+**Endpoint:** `POST /connect/token`
+
+{% swagger src="../openapi/keepnet-api-spec.json" path="/connect/token" method="post" expanded="true" %}
+<a href="../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
+{% tabs %}
+{% tab title="HTTP" %}
+Send a POST request with form-encoded body:
+
+```bash
+curl -X POST https://api.keepnetlabs.com/connect/token \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -d "grant_type=client_credentials" \
+  -d "client_id=YOUR_CLIENT_ID" \
+  -d "client_secret=YOUR_CLIENT_SECRET" \
+  -d "scope=api1"
+```
+
+Response:
+
+```json
+{
+  "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "expires_in": 3600,
+  "token_type": "Bearer",
+  "scope": "api1"
+}
+```
+
+Include `access_token` in every API request as `Authorization: Bearer <token>`.
+{% endtab %}
+
+{% tab title="JavaScript" %}
+```javascript
+const response = await fetch('https://api.keepnetlabs.com/connect/token', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+  body: new URLSearchParams({
+    grant_type: 'client_credentials',
+    client_id: process.env.CLIENT_ID,
+    client_secret: process.env.CLIENT_SECRET,
+    scope: 'api1',
+  }),
+});
+
+const { access_token } = await response.json();
+// Use: Authorization: Bearer ${access_token}
+```
+{% endtab %}
+{% endtabs %}
+
+{% hint style="success" %}
+**Use Authorize to get your token**
+
+1. Open the **Authentication** panel (OAuth2) in the **Endpoints** sidebar.
+2. Enter your **Client ID** and **Client Secret**.
+3. Click **Authorize** — the token is fetched and applied to all subsequent requests.
 {% endhint %}
 
+{% endstep %}
+
+{% step %}
+
+### Make your first API call
+
+Use the token in the `Authorization: Bearer <token>` header. Example: list trainings from Awareness Educator.
+
+```bash
+curl -X GET "https://api.keepnetlabs.com/api/awareness-educator/trainings" \
+  -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
+  -H "Content-Type: application/json"
+```
+
+**Exact path, parameters, request/response schema, and Try it:** See the **Awareness Educator** or **Training** section in the **Endpoints** API Reference (OpenAPI) in the sidebar.
+
+{% endstep %}
+{% endstepper %}
+
 ---
 
-## Step 3: Explore use cases
+## Base URL and response format
 
-| What you want to do              | Use case                                      |
-| -------------------------------- | --------------------------------------------- |
-| Pull phishing campaign reports   | [Pull phishing campaign reports →](use-cases/reports/phishing-campaign-reports.md) |
-| List companies (Reseller)        | [List companies with license details →](use-cases/reseller/list-companies-with-license-details.md) |
-| Export audit logs to SIEM       | [Export audit logs to SIEM →](use-cases/reports/export-audit-logs-to-siem.md) |
-| Add target users                | [Add target users →](use-cases/company-users/add-target-users.md) |
+**Base URL:** `https://api.keepnetlabs.com`
+
+All API responses include an `isSuccess` field. When `isSuccess` is `false`, check the `messages` array for error details.
+
+Field|Type|Description
+:---|:---|:---
+`isSuccess`|boolean|Indicates whether the request succeeded
+`data`|object|Response payload when successful
+`messages`|array|Error or validation messages when failed
 
 ---
 
-## What's next
+## Common conventions
 
-* [Authenticate your requests →](authentication.md)
-* [Pull phishing campaign reports →](use-cases/reports/phishing-campaign-reports.md)
+Convention|Description
+:---|:---
+**Pagination**|Search endpoints use `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter` in the request body
+**Filter**|Use `filter: null` for no filtering, or a filter object with operators (`eq`, `neq`, `contains`, `gt`, `lt`, etc.)
+**Sorting**|`orderBy` is often required — use `CreateTime` for chronological ordering
+**Company scope**|Most endpoints require a company context. Company Admin: automatic. Reseller: include Company ID (header/path/query)
+
+---
+
+## Who can use the API
+
+Role|Access
+:---|:---
+**Company Admin**|Full access to your company's data — no Company ID needed
+**Reseller**|Cross-company management — list companies, onboard customers, pull reports per company using Company ID
+**Custom role**|Scoped to specific products or actions based on role definition
+
+---
+
+## Token expiry and errors
+
+Tokens expire after **1 hour**. No refresh token — request a new one when the current token expires.
+
+HTTP status|Cause|Action
+:---|:---|:---
+`400 Bad Request` — `invalid_client`|Wrong or placeholder credentials|Use real credentials from **Company → Company Settings → REST API**
+`401 Unauthorized`|Missing or invalid token|Re-authenticate and retry
+`403 Forbidden`|Insufficient role permissions|Check the Client Role in platform settings
+`429 Too Many Requests`|Rate limit exceeded|Back off and retry after a delay
+
+---
+
+## Explore the API
+
+What you want to do|Use case
+:---|:---
+Pull phishing campaign reports|<a href="use-cases/reports/phishing-campaign-reports.md" target="_blank" rel="noopener noreferrer">Pull phishing campaign reports →</a>
+List companies (Reseller)|<a href="use-cases/reseller/list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>
+Export audit logs to SIEM|<a href="use-cases/reports/export-audit-logs-to-siem.md" target="_blank" rel="noopener noreferrer">Export audit logs to SIEM →</a>
+Add target users|<a href="use-cases/company-users/add-target-users.md" target="_blank" rel="noopener noreferrer">Add target users →</a>
+Enroll users in training|<a href="use-cases/company-users/enroll-users-in-training.md" target="_blank" rel="noopener noreferrer">Enroll users in training →</a>
+
+---
+
+## Reseller: scope by Company ID
+
+If your credential has the **Reseller** role, include Company ID when calling company-scoped endpoints:
+
+* **Header:** `X-KEEPNET-Company-Id: {companyId}` (when supported)
+* **Path:** `/api/.../companies/{companyId}/...`
+* **Query:** `?companyId={companyId}`
+
+Retrieve Company IDs via `POST /api/companies/search`. See <a href="use-cases/reseller/list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>.
+
+---
+
+## Keep credentials secure
+
+{% hint style="success" %}
+**Do:** Store credentials in environment variables or a secrets manager. Enable IP Restriction if your integration runs from a fixed IP. Use a custom role scoped to only the endpoints you need.
+{% endhint %}
+
+{% hint style="danger" %}
+**Don't:** Hard-code `client_id` or `client_secret` in source code. Don't commit credentials to version control.
+{% endhint %}

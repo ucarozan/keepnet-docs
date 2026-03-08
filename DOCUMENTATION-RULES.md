@@ -39,7 +39,7 @@ The following are implemented in this project. New changes must not break this s
 |-------------|----------------|
 | **x-parent** | All tags grouped with `"x-parent": "endpoints"` |
 | **Endpoints parent** | 98 tags under single "Endpoints" |
-| **Menu order** | Overview → Quickstart → Auth → Reseller → Reports → Company & Users → Endpoints |
+| **Menu order** | Quickstart → Reseller → Reports → Company & Users → Endpoints |
 
 ### builtin:openapi block (SUMMARY.md)
 
@@ -69,8 +69,8 @@ In SUMMARY.md, the Endpoints entry is defined as follows (actual format: `SUMMAR
 ### Internal links
 
 - Do **not** use `[Endpoints](.)`, `github.com`, or `raw.githubusercontent.com` in doc content
-- **Always** use relative paths (e.g. `api-reference/authentication.md`); links open in new tab
-- Correct: `<a href="next-generation-product/platform/rest-api-settings.md" target="_blank" rel="noopener noreferrer">REST API Settings →</a>`, `[Authentication](authentication.md)`, `**Endpoints** (sidebar)`
+- **Always** use relative paths (e.g. `api-reference/quickstart.md`); links open in new tab
+- Correct: `<a href="next-generation-product/platform/rest-api-settings.md" target="_blank" rel="noopener noreferrer">REST API Settings →</a>`, `[Quickstart](quickstart.md)`, `**Endpoints** (sidebar)`
 
 ---
 
@@ -137,7 +137,7 @@ Use inline arrow-style links. Do not write "For more information, see X".
 
 - **Never** use `github.com` or `raw.githubusercontent.com` in documentation content.
 - **Never** hardcode `doc.keepnetlabs.com` or `github.com` as static base URLs.
-- **Always** use relative paths so GitBook resolves them: `api-reference/authentication.md`, `next-generation-product/platform/rest-api-settings.md`
+- **Always** use relative paths so GitBook resolves them: `api-reference/quickstart.md`, `next-generation-product/platform/rest-api-settings.md`
 - Links must open in new tab (`target="_blank"`).
 - Do not use broken links like `[Endpoints](.)`.
 
@@ -172,7 +172,7 @@ When using `{% hint style="info" %}`, add a platform doc link. Links must open i
 
 ### H7: OpenAPI embed + Test it (Core pages)
 
-**Overview, Quickstart, Authentication** ve endpoint dokümante eden her sayfada OpenAPI embed ve Test it butonu **zorunludur**.
+**Quickstart** (tek core page) ve endpoint dokümante eden her sayfada OpenAPI embed ve Test it butonu **zorunludur**.
 
 ```markdown
 {% swagger src="../openapi/keepnet-api-spec.json" path="/ENDPOINT_PATH" method="post" expanded="true" %}
@@ -180,10 +180,31 @@ When using `{% hint style="info" %}`, add a platform doc link. Links must open i
 {% endswagger %}
 ```
 
-| Sayfa tipi | Kural |
-|------------|-------|
-| Core pages (Overview, Quickstart, Authentication) | Endpoint varsa `{% swagger %}` block zorunlu |
-| Use-case pages | `[Endpoints → Test it](sidebar)` veya ilgili endpoint referansı |
+Sayfa tipi|Kural
+:---|:---
+Quickstart (tek core page)|Endpoint varsa `{% swagger %}` block zorunlu
+Use-case pages|`[Endpoints → Test it](sidebar)` veya ilgili endpoint referansı
+
+---
+
+### H8: Tablo formatı — başta `|` yok (GitBook bug workaround)
+
+GitBook'da satır başında `|` olan tablolar gereksiz boşluk gösteriyor. **Baştaki pipe kullanma.**
+
+**✅ Do:**
+```markdown
+Field|Description
+:---|:---
+**Name**|A label for this credential set
+**Client Role**|`Company Admin` for full access
+```
+
+**❌ Don't:**
+```markdown
+| Field | Description |
+|-------|-------------|
+| **Name** | A label for this credential set |
+```
 
 ---
 
