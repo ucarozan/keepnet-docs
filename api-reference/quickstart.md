@@ -158,13 +158,13 @@ Convention|Description
 
 ---
 
-## Get Company ID from the token
+## What the token contains
 
-The access token is a **JWT**. The payload contains your company context — useful when an endpoint requires Company ID in the path, header, or query.
+The access token is a **JWT**. It includes your company context — use these values when an endpoint requires Company ID in the path, header, or query.
 
-**Decode the token:** Use [jwt.io](https://jwt.io) (paste the token, ignore signature verification) or decode the middle part (between the two dots) as Base64URL.
+**To decode:** Paste the token at [jwt.io](https://jwt.io) (signature verification optional) or Base64URL-decode the middle part (between the two dots).
 
-Relevant claims in the payload:
+The token contains:
 
 Claim|Description|Example
 :---|:---|:---
