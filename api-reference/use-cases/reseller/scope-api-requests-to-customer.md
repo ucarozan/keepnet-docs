@@ -4,6 +4,20 @@ As a Reseller you manage multiple customer companies. Most list/report endpoints
 
 ---
 
+## POST /api/companies/search
+
+Get the customer's Company ID. Use the `resourceId` of the desired company as `X-KEEPNET-Company-Id` in scoped requests.
+
+> Retrieves a paginated list of all companies you manage with license details. Each item includes `resourceId` — use it as the Company ID for scoped requests. **Test it:** Authorize with Client ID/Secret, then Send — request body is pre-filled.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/search" method="post" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
+From the response, pick the company and note its `resourceId`. Use that value as `X-KEEPNET-Company-Id` or `companyId` in the endpoints listed under "Where to use Company ID" below.
+
+---
+
 ## How Reseller scope works
 
 * **Without Company ID:** Endpoints such as `POST /api/companies/search` and `GET /api/companies/my` return data for every company you (the Reseller) manage.
@@ -25,8 +39,8 @@ Obtain customer Company IDs from <a href="list-companies-with-license-details.md
 
 ## Where to use Company ID
 
-* **Reports:** Training, phishing, gamification, executive summaries, audit logs — pass Company ID to get that customer’s data. <a href="view-customer-enrollment-list-and-report.md" target="_blank" rel="noopener noreferrer">View customer's training enrollment list and report →</a>, <a href="view-customer-simulation-campaign-list-and-report.md" target="_blank" rel="noopener noreferrer">View customer's simulation campaign list and report →</a>, <a href="../reports/training-reports.md" target="_blank" rel="noopener noreferrer">Pull training reports →</a>, <a href="../reports/phishing-campaign-reports.md" target="_blank" rel="noopener noreferrer">Pull phishing campaign reports →</a>, and other report use-cases.
-* **Company & Users:** Add target users, enroll users in training, manage system users, set up SCIM — use Company ID to scope the operation to one customer. <a href="../company-users/add-target-users.md" target="_blank" rel="noopener noreferrer">Add target users →</a> (generic). For a Reseller flow: <a href="add-target-users-for-customer.md" target="_blank" rel="noopener noreferrer">Add target users for a customer →</a>, <a href="list-or-export-target-users-for-customer.md" target="_blank" rel="noopener noreferrer">List or export target users for a customer →</a>, <a href="set-up-scim-for-customer.md" target="_blank" rel="noopener noreferrer">Set up SCIM for a customer →</a>, <a href="add-system-user-for-customer.md" target="_blank" rel="noopener noreferrer">Add system user for a customer →</a>. <a href="../company-users/enroll-users-in-training.md" target="_blank" rel="noopener noreferrer">Enroll users in training →</a>. To create a new company (onboard): <a href="onboard-new-customer.md" target="_blank" rel="noopener noreferrer">Create a new company →</a>. To get, update, or delete a company: <a href="get-a-company.md" target="_blank" rel="noopener noreferrer">Get a company →</a>, <a href="update-a-company.md" target="_blank" rel="noopener noreferrer">Update a company →</a>, <a href="delete-a-company.md" target="_blank" rel="noopener noreferrer">Delete a company →</a>.
+* **Reports:** Training, phishing, gamification, executive summaries, audit logs — pass Company ID to get that customer’s data. <a href="view-customer-enrollment-list-and-report.md" target="_blank" rel="noopener noreferrer">View customer's training enrollment list and report →</a>, <a href="view-customer-enrollment-sending-certificates-notifications.md" target="_blank" rel="noopener noreferrer">View customer's training enrollment sending, certificates, and notifications →</a>, <a href="view-customer-simulation-campaign-list-and-report.md" target="_blank" rel="noopener noreferrer">View customer's simulation campaign list and report →</a>. Endpoint details: see **Endpoints** in the API Reference sidebar (TrainingReport, PhishingCampaign, etc.).
+* **Company & Users:** Add target users, enroll users in training, manage system users, set up SCIM — use Company ID to scope the operation to one customer. <a href="add-target-users-for-customer.md" target="_blank" rel="noopener noreferrer">Add target users for a customer →</a>, <a href="list-or-export-target-users-for-customer.md" target="_blank" rel="noopener noreferrer">List or export target users for a customer →</a>, <a href="set-up-scim-for-customer.md" target="_blank" rel="noopener noreferrer">Set up SCIM for a customer →</a>, <a href="add-system-user-for-customer.md" target="_blank" rel="noopener noreferrer">Add system user for a customer →</a>. To create a new company (onboard): <a href="onboard-new-customer.md" target="_blank" rel="noopener noreferrer">Create a new company →</a>. To get, update, or delete a company: <a href="get-a-company.md" target="_blank" rel="noopener noreferrer">Get a company →</a>, <a href="update-a-company.md" target="_blank" rel="noopener noreferrer">Update a company →</a>, <a href="delete-a-company.md" target="_blank" rel="noopener noreferrer">Delete a company →</a>.
 
 {% hint style="info" %}
 **Quickstart:** Company ID usage is summarized in the <a href="../../quickstart.md" target="_blank" rel="noopener noreferrer">Quickstart →</a> under “Reseller: scope by Company ID”.

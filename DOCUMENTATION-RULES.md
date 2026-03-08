@@ -135,7 +135,7 @@ Use inline arrow-style links. Do not write "For more information, see X".
 | ✅ Do | ❌ Don't |
 |------|----------|
 | `<a href="next-generation-product/platform/rest-api-settings.md" target="_blank" rel="noopener noreferrer">REST API Settings →</a>` | `For more information about REST API, see...` |
-| `<a href="api-reference/use-cases/company-users/pull-training-list.md" target="_blank" rel="noopener noreferrer">Pull Training List →</a>` | `Refer to the Pull Training List guide for details.` |
+| `<a href="api-reference/use-cases/reseller/list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>` | `Refer to the Pull Training List guide for details.` |
 
 ---
 

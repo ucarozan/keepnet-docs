@@ -18,12 +18,17 @@ From the response, pick the company and note its `resourceId`. Example: `"resour
 
 ---
 
-## Optional: Get SCIM fields and target groups for the customer
+## GET /api/scim/fields
 
-To map custom attributes or choose a target group, scope the following calls to the customer with **`X-KEEPNET-Company-Id`**:
+Returns available SCIM fields for mapping (e.g. IdP attributes to Keepnet custom fields). Send **`X-KEEPNET-Company-Id`** for the customer.
 
-* **GET /api/scim/fields** — Returns available SCIM fields for mapping (e.g. to map IdP attributes to Keepnet custom fields). Send the Company ID header.
-* **Target group:** The SCIM integration can sync users into a specific target group. If the customer already has target groups, get their IDs via the target-groups API scoped to that company. You can pass `groupResourceId` in the create-SCIM request; if omitted, synced users appear under **Target Users > People** (no group). To create a group for that customer first, use the target-groups create endpoint with `X-KEEPNET-Company-Id`.
+> Returns all available scim fields. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/scim/fields" method="get" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
+**Target group:** To sync users into a specific target group, get the customer's target groups via the target-groups API with the same header. Pass `groupResourceId` in the create-SCIM request; if omitted, synced users appear under **Target Users > People**.
 
 ---
 
@@ -66,14 +71,51 @@ After creation, provide the customer with the **SCIM token** and the Keepnet SCI
 
 ---
 
-## List, update, or revoke SCIM for the customer
+## POST /api/scim/search
 
-Send **`X-KEEPNET-Company-Id`** for the same customer when calling:
+List SCIM integrations for that customer. Send **`X-KEEPNET-Company-Id`**.
 
-* **POST /api/scim/search** — List SCIM integrations for that company.
-* **GET /api/scim/{resourceId}** — Get SCIM integration details.
-* **PUT /api/scim/{resourceId}** — Update the integration.
-* **POST /api/scim/{resourceId}/revoke** — Revoke the current token and generate a new one (e.g. if the token was exposed).
+> Returns a list of the scim integrations. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/scim/search" method="post" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
+---
+
+## GET /api/scim/{resourceId}
+
+Get SCIM integration details. Replace `{resourceId}` with the SCIM integration ID from the search response. Send **`X-KEEPNET-Company-Id`**.
+
+> Retrieves the details of an existing scim setting. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/scim/{resourceId}" method="get" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
+---
+
+## PUT /api/scim/{resourceId}
+
+Update the SCIM integration (e.g. name, field mappings). Replace `{resourceId}` with the SCIM integration ID. Send **`X-KEEPNET-Company-Id`**.
+
+> Updates an existing scim integration. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/scim/{resourceId}" method="put" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
+---
+
+## POST /api/scim/{resourceId}/revoke
+
+Revoke the current token and generate a new one (e.g. if the token was exposed). Replace `{resourceId}` with the SCIM integration ID. Send **`X-KEEPNET-Company-Id`**.
+
+> Revokes the current token of the scim integration and generates a new token. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/scim/{resourceId}/revoke" method="post" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
 
 ---
 

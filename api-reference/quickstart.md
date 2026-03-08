@@ -284,8 +284,8 @@ Company IDs are returned by `POST /api/companies/search`. For a full explanation
 
 What you want to do|Use case
 :---|:---
-Pull phishing campaign reports|<a href="use-cases/reports/phishing-campaign-reports.md" target="_blank" rel="noopener noreferrer">Pull phishing campaign reports →</a>
 List companies (Reseller)|<a href="use-cases/reseller/list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>
-Export audit logs to SIEM|<a href="use-cases/reports/export-audit-logs-to-siem.md" target="_blank" rel="noopener noreferrer">Export audit logs to SIEM →</a>
-Add target users|<a href="use-cases/company-users/add-target-users.md" target="_blank" rel="noopener noreferrer">Add target users →</a>
-Enroll users in training|<a href="use-cases/company-users/enroll-users-in-training.md" target="_blank" rel="noopener noreferrer">Enroll users in training →</a>
+Scope requests to a customer|<a href="use-cases/reseller/scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>
+Export customer list for billing|<a href="use-cases/reseller/export-customer-list-for-billing.md" target="_blank" rel="noopener noreferrer">Export customer list for billing →</a>
+View customer's training enrollments|<a href="use-cases/reseller/view-customer-enrollment-list-and-report.md" target="_blank" rel="noopener noreferrer">View customer's training enrollment list and report →</a>
+View customer's simulation campaigns|<a href="use-cases/reseller/view-customer-simulation-campaign-list-and-report.md" target="_blank" rel="noopener noreferrer">View customer's simulation campaign list and report →</a>

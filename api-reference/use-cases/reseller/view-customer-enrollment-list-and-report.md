@@ -96,4 +96,4 @@ Export the enrollment list (e.g. CSV/Excel) for that customer. Send the same **`
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
 * **404 Not Found** / **400 Bad Request** — Invalid Company ID or enrollment ID. Verify Company ID from `POST /api/companies/search` and enrollment ID from `POST /api/enrollments/search`; ensure you send `X-KEEPNET-Company-Id` for the customer that owns the enrollment.
 
-**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a> for how Company ID is used. <a href="../company-users/enroll-users-in-training.md" target="_blank" rel="noopener noreferrer">Enroll users in training →</a> (Company & Users). For training reports without Reseller focus: see the **TrainingReport** section in the Endpoints API Reference.
+**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a> for how Company ID is used. For training reports and enrollment endpoints: see **Endpoints** → **Enrollment**, **TrainingReport** in the API Reference.

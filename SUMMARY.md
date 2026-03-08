@@ -296,6 +296,7 @@
   * [Add target users for a customer](api-reference/use-cases/reseller/add-target-users-for-customer.md)
   * [Add system user for a customer](api-reference/use-cases/reseller/add-system-user-for-customer.md)
   * [View customer's training enrollment list and report](api-reference/use-cases/reseller/view-customer-enrollment-list-and-report.md)
+  * [View customer's training enrollment sending, certificates, and notifications](api-reference/use-cases/reseller/view-customer-enrollment-sending-certificates-notifications.md)
   * [View customer's simulation campaign list and report](api-reference/use-cases/reseller/view-customer-simulation-campaign-list-and-report.md)
   * [List or export target users for a customer](api-reference/use-cases/reseller/list-or-export-target-users-for-customer.md)
   * [Set up SCIM for a customer](api-reference/use-cases/reseller/set-up-scim-for-customer.md)
