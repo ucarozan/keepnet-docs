@@ -87,7 +87,13 @@ From **SUMMARY.md** (sidebar in GitBook). The **Endpoints** node is filled by th
 │   │   └── List scheduled reports for a customer
 │   │
 │   └── Billing
-│       └── Export customer list for billing
+│       ├── Export customer list for billing
+│       ├── List customers exceeding license limit
+│       ├── List companies for cross-sell by license and usage
+│       ├── List recently created companies
+│       ├── Get total monthly user count across customers
+│       ├── List customers with renewals in the next N days
+│       └── List customers with expired licenses
 │
 └── Endpoints  ← from OpenAPI spec (builtin), expands when clicked
     ├── Account

@@ -319,3 +319,9 @@
     * [List scheduled reports for a customer](api-reference/use-cases/reseller/list-scheduled-reports-for-customer.md)
   * Billing
     * [Export customer list for billing](api-reference/use-cases/reseller/export-customer-list-for-billing.md)
+    * [List customers exceeding license limit](api-reference/use-cases/reseller/list-customers-exceeding-license-limit.md)
+    * [List companies for cross-sell by license and usage](api-reference/use-cases/reseller/list-companies-for-cross-sell-license-and-usage.md)
+    * [List recently created companies](api-reference/use-cases/reseller/list-recently-created-companies.md)
+    * [Get total monthly user count across customers](api-reference/use-cases/reseller/get-total-monthly-user-count-across-customers.md)
+    * [List customers with renewals in the next N days](api-reference/use-cases/reseller/list-customers-with-renewals-in-next-n-days.md)
+    * [List customers with expired licenses](api-reference/use-cases/reseller/list-customers-with-expired-licenses.md)
