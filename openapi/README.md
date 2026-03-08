@@ -1,51 +1,51 @@
-# OpenAPI Spec — GitBook Menü Hiyerarşisi
+# OpenAPI Spec — GitBook Menu Hierarchy
 
-Bu klasör, GitBook API Reference için `x-parent` ile zenginleştirilmiş OpenAPI spec içerir. Tüm endpoint grupları **Endpoints** altında toplanır.
+This folder contains the OpenAPI spec enriched with `x-parent` for GitBook API Reference. All endpoint groups are grouped under **Endpoints**.
 
-## Dosyalar
+## Files
 
-| Dosya | Açıklama |
-|-------|----------|
-| `keepnet-api-spec.json` | Canlı API spec + tags + x-parent (GitBook için) |
+| File | Description |
+|------|-------------|
+| `keepnet-api-spec.json` | Live API spec + tags + x-parent (for GitBook) |
 
-## GitBook'da Kullanım
+## Using in GitBook
 
-### Seçenek 1: URL ile (Önerilen)
+### Option 1: By URL (Recommended)
 
-1. Bu dosyayı repo'ya ekleyip push edin.
-2. GitBook Space → **Integrations** → **OpenAPI** → `keepnet-api` spec'ini düzenleyin.
-3. **Source** olarak **URL** seçin.
-4. URL'yi şu formata ayarlayın:
+1. Add this file to the repo and push.
+2. GitBook Space → **Integrations** → **OpenAPI** → edit the `keepnet-api` spec.
+3. Select **URL** as **Source**.
+4. Set the URL to this format:
    ```
    https://raw.githubusercontent.com/ORGANIZATION/keepnet-docs/BRANCH/openapi/keepnet-api-spec.json
    ```
-   (Örn: `https://raw.githubusercontent.com/keepnetlabs/keepnet-docs/main/openapi/keepnet-api-spec.json`)
-5. **Check for updates** ile güncellemeyi tetikleyin.
+   (e.g. `https://raw.githubusercontent.com/keepnetlabs/keepnet-docs/main/openapi/keepnet-api-spec.json`)
+5. Trigger an update with **Check for updates**.
 
-### Seçenek 2: Dosya Yükleme
+### Option 2: File Upload
 
-1. `scripts/enrich-openapi-spec.mjs` script'ini çalıştırın.
-2. GitBook → OpenAPI → `keepnet-api` → **Update** ile yeni dosyayı yükleyin.
+1. Run the `scripts/enrich-openapi-spec.mjs` script.
+2. GitBook → OpenAPI → `keepnet-api` → **Update** to upload the new file.
 
-### ⚠️ Test it'te Body yanlış görünüyorsa (filterGroups, orderBy: null, 400 hatası)
+### ⚠️ If Test it shows wrong Body (filterGroups, orderBy: null, 400 error)
 
-**Sebep:** GitBook, canlı API URL'sini (`https://api.keepnetlabs.com/swagger/v1/swagger.json`) kullanıyor olabilir. Bu spec'te request body schema karmaşık — API 400 döner.
+**Cause:** GitBook may be using the live API URL (`https://api.keepnetlabs.com/swagger/v1/swagger.json`). The request body schema in that spec is complex — the API returns 400.
 
-**Çözüm:** GitBook Integration → OpenAPI → `keepnet-api` → **Source URL** mutlaka **GitHub raw** olmalı:
+**Fix:** In GitBook Integration → OpenAPI → `keepnet-api`, **Source URL** must be the **GitHub raw** URL:
 ```
 https://raw.githubusercontent.com/ORGANIZATION/keepnet-docs/BRANCH/openapi/keepnet-api-spec.json
 ```
-Enriched spec minimal body içerir (`pageNumber`, `pageSize`, `orderBy`, `filter: null`). **Check for updates** tıklayın.
+The enriched spec includes a minimal body (`pageNumber`, `pageSize`, `orderBy`, `filter: null`). Click **Check for updates**.
 
-## Spec Güncelleme
+## Updating the Spec
 
-API değiştiğinde spec'i yeniden oluşturun. Repo root'tan:
+When the API changes, regenerate the spec. From the repo root:
 
 ```bash
 node scripts/enrich-openapi-spec.mjs openapi/keepnet-api-spec.json
 ```
 
-## Beklenen Menü Yapısı
+## Expected Menu Structure
 
 ```
 API REFERENCE
@@ -55,9 +55,9 @@ API REFERENCE
 ├── Reseller
 ├── Reports
 ├── Company & Users
-└── Endpoints  ← Tıklanınca açılır
+└── Endpoints  ← Expands when clicked
     ├── Account
     ├── PhishingCampaign
     ├── Training
-    └── ... (98 tag)
+    └── ... (98 tags)
 ```

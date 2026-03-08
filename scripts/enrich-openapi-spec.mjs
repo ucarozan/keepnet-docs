@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * OpenAPI spec zenginleştirme script'i
- * Canlı Keepnet API spec'ini alır, tags + x-parent ekleyerek GitBook menü hiyerarşisi oluşturur.
+ * OpenAPI spec enrichment script
+ * Fetches the live Keepnet API spec and adds tags + x-parent to build the GitBook menu hierarchy.
  *
- * Kullanım: node scripts/enrich-openapi-spec.mjs [output-path]
- * Varsayılan output: openapi/keepnet-api-spec.json
+ * Usage: node scripts/enrich-openapi-spec.mjs [output-path]
+ * Default output: openapi/keepnet-api-spec.json
  */
 
 const SPEC_URL = 'https://api.keepnetlabs.com/swagger/v1/swagger.json';
@@ -30,13 +30,13 @@ function collectTagsFromPaths(spec) {
   return [...tags].sort();
 }
 
-/** OAuth token endpoint — GitBook Test it için. Endpoints menüsünde gösterme (Quickstart'ta dokümante). */
-/** x-scalar-ignore: Token endpoint'i API client listesinden gizler. Kullanıcı sadece Authorize kullanır; Send ile invalid_client hatası önlenir. */
+/** OAuth token endpoint — for GitBook Test it. Do not show in Endpoints menu (documented in Quickstart). */
+/** x-scalar-ignore: Hides token endpoint from API client list. User only uses Authorize; avoids invalid_client when using Send. */
 const CONNECT_TOKEN_PATH = {
   '/connect/token': {
     post: {
       'x-scalar-ignore': true,
-      tags: [], // Endpoints menüsünde Authentication bölümü yok — token Quickstart'ta
+      tags: [], // No Authentication section in Endpoints menu — token is in Quickstart
       operationId: 'requestAccessToken',
       summary: 'Request an access token',
       description:
@@ -85,7 +85,7 @@ const CONNECT_TOKEN_PATH = {
 
 function enrichSpec(spec) {
   const tagsFromPaths = collectTagsFromPaths(spec);
-  // Authentication tag ekleme — token endpoint Quickstart'ta, Endpoints menüsünde gösterme
+  // Add authentication tag — token endpoint is in Quickstart, do not show in Endpoints menu
   const specTags = [
     { name: PARENT_TAG, description: 'API endpoint reference. Expand to browse by resource.' },
     ...tagsFromPaths.map((name) => ({ name, 'x-parent': PARENT_TAG })),
@@ -94,7 +94,7 @@ function enrichSpec(spec) {
   // OAuth token endpoint + merged paths
   const mergedPaths = { ...CONNECT_TOKEN_PATH, ...spec.paths };
 
-  // GitBook "Test it" için servers gerekli (base URL)
+  // servers required for GitBook "Test it" (base URL)
   const servers = spec.servers?.length
     ? spec.servers
     : [{ url: API_BASE_URL, description: 'Keepnet API' }];
@@ -126,13 +126,13 @@ function enrichSpec(spec) {
   // Bearer as fallback: users can paste token if they already have one
   const security = [{ oauth2: ['api1'] }, { bearerAuth: [] }];
 
-  // Request body examples — Test it panelinde hazır body ile Send
+  // Request body examples — Test it panel shows ready-to-send body
   const enrichedPaths = injectRequestExamples(mergedPaths);
 
   return { ...spec, paths: enrichedPaths, tags: specTags, servers, components, security };
 }
 
-/** Test it için hazır request body — schema'dan gelen karmaşık filter yapısı 400 hatası veriyor, minimal body kullan */
+/** Ready-to-use request body for Test it — complex filter from schema causes 400; use minimal body */
 const COMPANIES_SEARCH_EXAMPLE = {
   pageNumber: 1,
   pageSize: 10,
@@ -141,7 +141,7 @@ const COMPANIES_SEARCH_EXAMPLE = {
   filter: null,
 };
 
-/** Export endpoint — CSV/Excel export, aynı sayfada Test it. */
+/** Export endpoint — CSV/Excel export, Test it on the same page. */
 const COMPANIES_SEARCH_EXPORT_EXAMPLE = {
   pageNumber: 1,
   pageSize: 10,
@@ -176,8 +176,8 @@ function injectRequestExamples(paths) {
   const result = { ...paths };
 
   if (result['/api/companies/search']?.post?.requestBody?.content) {
-    // Schema'dan gelen default (filterGroups, filterItems vs.) API'de 400 Invalid request veriyor.
-    // Sadece example kullan — schema yok, client example'ı default body olarak göstersin.
+    // Default from schema (filterGroups, filterItems etc.) causes 400 Invalid request from API.
+    // Use example only — no schema; client shows this example as default body.
     const content = {
       schema: {
         type: 'object',
