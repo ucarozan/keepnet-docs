@@ -315,3 +315,6 @@
   * Reports & billing
     * [Pull executive report data for a customer](api-reference/use-cases/reseller/pull-executive-report-data-for-customer.md)
     * [Export customer list for billing](api-reference/use-cases/reseller/export-customer-list-for-billing.md)
+    * [Pull gamification report data for a customer](api-reference/use-cases/reseller/pull-gamification-report-data-for-customer.md)
+    * [Export gamification leaderboard for a customer](api-reference/use-cases/reseller/export-gamification-leaderboard-for-customer.md)
+    * [List scheduled reports for a customer](api-reference/use-cases/reseller/list-scheduled-reports-for-customer.md)
