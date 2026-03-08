@@ -60,16 +60,17 @@ In SUMMARY.md, the Endpoints entry is defined as follows (actual format: `SUMMAR
   ```
 ```
 
-### Spec source
+### Spec source (GitBook Integration only — not for doc content)
 
 - **GitBook Space:** Integrations → OpenAPI → `keepnet-api` → URL
-- **Spec URL:** `https://raw.githubusercontent.com/ucarozan/keepnet-docs/main/openapi/keepnet-api-spec.json`
+- Spec URL is configured in GitBook Integration (do not paste GitHub URLs in user-facing docs)
 - **Update:** `npm run openapi` → commit → push → GitBook "Check for updates"
 
 ### Internal links
 
-- Do **not** use `[Endpoints](.)` or GitHub links
-- Correct: `[Authentication](authentication.md)`, `**Endpoints** (sidebar)`, `[Test it →](Endpoints)`
+- Do **not** use `[Endpoints](.)`, `github.com`, or `raw.githubusercontent.com` in doc content
+- **Always** use relative paths (e.g. `api-reference/authentication.md`); links open in new tab
+- Correct: `<a href="next-generation-product/platform/rest-api-settings.md" target="_blank" rel="noopener noreferrer">REST API Settings →</a>`, `[Authentication](authentication.md)`, `**Endpoints** (sidebar)`
 
 ---
 
@@ -127,14 +128,18 @@ Use inline arrow-style links. Do not write "For more information, see X".
 
 | ✅ Do | ❌ Don't |
 |------|----------|
-| `<a href="..." target="_blank" rel="noopener noreferrer">REST API Settings →</a>` | `For more information about REST API, see...` |
-| `<a href="use-cases/..." target="_blank" rel="noopener noreferrer">Pull Training List →</a>` | `Refer to the Pull Training List guide for details.` |
+| `<a href="next-generation-product/platform/rest-api-settings.md" target="_blank" rel="noopener noreferrer">REST API Settings →</a>` | `For more information about REST API, see...` |
+| `<a href="api-reference/use-cases/company-users/pull-training-list.md" target="_blank" rel="noopener noreferrer">Pull Training List →</a>` | `Refer to the Pull Training List guide for details.` |
 
 ---
 
-### H4: Internal links — no GitHub
+### H4: Internal links — no GitHub, no static domains
 
-Use relative paths like `api-reference/`, `next-generation-product/` for in-doc links. Do not use `github.com` or broken links like `[Endpoints](.)`.
+- **Never** use `github.com` or `raw.githubusercontent.com` in documentation content.
+- **Never** hardcode `doc.keepnetlabs.com` or `github.com` as static base URLs.
+- **Always** use relative paths so GitBook resolves them: `api-reference/authentication.md`, `next-generation-product/platform/rest-api-settings.md`
+- Links must open in new tab (`target="_blank"`).
+- Do not use broken links like `[Endpoints](.)`.
 
 ---
 
@@ -143,7 +148,7 @@ Use relative paths like `api-reference/`, `next-generation-product/` for in-doc 
 All external and internal links must open in a new tab. Use HTML with `target="_blank"` and `rel="noopener noreferrer"`:
 
 ```markdown
-<a href="https://doc.keepnetlabs.com/..." target="_blank" rel="noopener noreferrer">REST API Settings →</a>
+<a href="next-generation-product/platform/rest-api-settings.md" target="_blank" rel="noopener noreferrer">REST API Settings →</a>
 ```
 
 | ✅ Do | ❌ Don't |
@@ -159,9 +164,26 @@ When using `{% hint style="info" %}`, add a platform doc link. Links must open i
 ```markdown
 {% hint style="info" %}
 **Platform UI:** Go to **Company → Company Settings → REST API**.
-<a href="https://doc.keepnetlabs.com/..." target="_blank" rel="noopener noreferrer">REST API Settings →</a>
+<a href="next-generation-product/platform/rest-api-settings.md" target="_blank" rel="noopener noreferrer">REST API Settings →</a>
 {% endhint %}
 ```
+
+---
+
+### H7: OpenAPI embed + Test it (Core pages)
+
+**Overview, Quickstart, Authentication** ve endpoint dokümante eden her sayfada OpenAPI embed ve Test it butonu **zorunludur**.
+
+```markdown
+{% swagger src="../openapi/keepnet-api-spec.json" path="/ENDPOINT_PATH" method="post" expanded="true" %}
+<a href="../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+```
+
+| Sayfa tipi | Kural |
+|------------|-------|
+| Core pages (Overview, Quickstart, Authentication) | Endpoint varsa `{% swagger %}` block zorunlu |
+| Use-case pages | `[Endpoints → Test it](sidebar)` veya ilgili endpoint referansı |
 
 ---
 
@@ -191,7 +213,8 @@ Every use-case page follows the **same section order**:
 [If applicable]
 
 ## Common errors
-| Code | Cause | Fix |
+|Code|Cause|Fix|
+|:---|:---|:---|
 
 ## What's next
 - [Related use-case →]
@@ -253,6 +276,10 @@ One-sentence description.
 - `code font`: endpoint paths, parameters, HTTP methods, status codes
 - **bold**: UI elements (**Company → Settings → REST API**)
 - Do not use code font for UI
+
+**Tables (no leading padding):**
+- Use compact format: `|Field|Description|` (no spaces between pipe and content)
+- Use left alignment: `|:---|:---|` to avoid extra column padding
 
 ---
 
