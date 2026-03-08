@@ -312,9 +312,10 @@
     * [View customer's campaign list and report](api-reference/use-cases/reseller/view-customer-simulation-campaign-list-and-report.md)
     * [List phishing scenarios for a customer](api-reference/use-cases/reseller/list-phishing-scenarios-for-customer.md)
     * [Create and start phishing campaign for a customer](api-reference/use-cases/reseller/create-and-start-phishing-campaign-for-customer.md)
-  * Reports & billing
+  * Reports
     * [Pull executive report data for a customer](api-reference/use-cases/reseller/pull-executive-report-data-for-customer.md)
-    * [Export customer list for billing](api-reference/use-cases/reseller/export-customer-list-for-billing.md)
     * [Pull gamification report data for a customer](api-reference/use-cases/reseller/pull-gamification-report-data-for-customer.md)
     * [Export gamification leaderboard for a customer](api-reference/use-cases/reseller/export-gamification-leaderboard-for-customer.md)
     * [List scheduled reports for a customer](api-reference/use-cases/reseller/list-scheduled-reports-for-customer.md)
+  * Billing
+    * [Export customer list for billing](api-reference/use-cases/reseller/export-customer-list-for-billing.md)

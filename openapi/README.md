@@ -45,19 +45,53 @@ When the API changes, regenerate the spec. From the repo root:
 node scripts/enrich-openapi-spec.mjs openapi/keepnet-api-spec.json
 ```
 
-## Expected Menu Structure
+## API Reference menu structure
+
+From **SUMMARY.md** (sidebar in GitBook). The **Endpoints** node is filled by the OpenAPI integration; the rest are static pages.
 
 ```
-API REFERENCE
-├── Overview
+🔌 API REFERENCE
 ├── Quickstart
-├── Authenticate your requests
+├── Use the API with AI assistants (MCP)
+│
 ├── Reseller
-├── Reports
-├── Company & Users
-└── Endpoints  ← Expands when clicked
+│   ├── Companies
+│   │   ├── Scope API requests to a customer
+│   │   ├── List companies with license details
+│   │   ├── Create a company
+│   │   ├── Get a company
+│   │   ├── Update a company
+│   │   ├── Delete a company
+│   │   └── List and manage company groups
+│   │
+│   ├── Users & groups
+│   │   ├── Add target users for a customer
+│   │   ├── List or export target users for a customer
+│   │   ├── List and create target groups for a customer
+│   │   ├── Add system user for a customer
+│   │   └── Set up SCIM for a customer
+│   │
+│   ├── Training
+│   │   ├── View customer's enrollment list and report
+│   │   └── View customer's enrollment sending, certificates, and notifications
+│   │
+│   ├── Phishing simulation
+│   │   ├── View customer's campaign list and report
+│   │   ├── List phishing scenarios for a customer
+│   │   └── Create and start phishing campaign for a customer
+│   │
+│   ├── Reports
+│   │   ├── Pull executive report data for a customer
+│   │   ├── Pull gamification report data for a customer
+│   │   ├── Export gamification leaderboard for a customer
+│   │   └── List scheduled reports for a customer
+│   │
+│   └── Billing
+│       └── Export customer list for billing
+│
+└── Endpoints  ← from OpenAPI spec (builtin), expands when clicked
     ├── Account
     ├── PhishingCampaign
     ├── Training
-    └── ... (98 tags)
+    └── ... (all API tags from keepnet-api-spec.json)
 ```
