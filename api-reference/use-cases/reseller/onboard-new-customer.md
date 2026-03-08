@@ -1,84 +1,46 @@
 # Onboard a new customer
 
-Create a new company via the API. Only available to Resellers.
+Create a new company (customer) via the API and optionally set license and add it to a company group. Reseller-only — use a credential with Client Role = **Reseller**. After creation, use the returned Company ID for license configuration, groups, and scoped API calls.
 
 ---
 
-## Who can use this
+## POST /api/companies
 
-| Your role       | Can use? | What you need                    |
-| --------------- | -------- | -------------------------------- |
-| **Company Admin** | No      | —                                |
-| **Reseller**     | Yes     | Token with Reseller credential   |
+> Creates a new company. Send JSON with `name`, `industryId`, `licenseTypeId`, `targetUserLimit`, `expiryDate` and other required fields. **Test it:** Endpoints → **Company** → **Creates a new company** — use dummy data (e.g. name `"Acme Corp"`, placeholder IDs).
 
-{% hint style="warning" %}
-**403 Forbidden?** This use case requires the **Reseller** role. Check your credential's Client Role in **Company → Company Settings → REST API**.
-[Roles and permissions →](https://doc.keepnetlabs.com/next-generation-product/platform/company/system-users/user-roles)
-{% endhint %}
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies" method="post" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
 
 ---
 
-## Prerequisites
+## PUT /api/companies/{resourceId}
 
-* **Credential:** Client Role = **Reseller**
-* **Token:** OAuth2 Client Credentials flow
+> Updates company details and license (type, target user limit, expiry). Replace `{resourceId}` with the new company’s ID from the create response. Use after creation to adjust license or company info.
 
----
-
-## Onboarding flow
-
-Reseller onboarding typically involves four steps:
-
-1. **Company Info** — Create the company with basic details
-2. **License** — Set license type, expiry, user limits
-3. **Groups** — Add to company groups if needed
-4. **Content Management** — Configure training, phishing scenarios, etc.
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/{resourceId}" method="put" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
 
 ---
 
-## Step 1: Create the company
+## PUT /api/company-groups/{resourceId}/participants
 
-**Endpoint:** `POST /api/companies`
+> Adds the new company to a company group. Replace the first `{resourceId}` with the **group** ID; send in the body the list of company resource IDs (including the new company). Participants = the companies in the group. See <a href="list-and-manage-company-groups.md" target="_blank" rel="noopener noreferrer">List and manage company groups →</a>.
 
-Send a JSON body with `name`, `industryId`, `licenseTypeId`, `targetUserLimit`, `expiryDate`, and other required fields. Include `Authorization: Bearer <access_token>` and `Content-Type: application/json`.
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/company-groups/{resourceId}/participants" method="put" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
+---
+
+## Common errors
+
+* **403 Forbidden** — Credential is not Reseller. Set Client Role = **Reseller** in **Company → Company Settings → REST API**. <a href="../../../next-generation-product/platform/company/system-users/user-roles.md" target="_blank" rel="noopener noreferrer">Roles and permissions →</a>
+* **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
+* **400 Bad Request** — Invalid or missing required fields. Check Endpoints → **Company** for request body schema.
 
 {% hint style="info" %}
-**Request body schema, required fields, and Try it:** See the **Company** section in the Endpoints API Reference (OpenAPI).
+**Platform UI:** Create companies and set REST API credentials in **Company → Company Settings → REST API**.
+<a href="../../../next-generation-product/platform/company/company-settings/rest-api.md" target="_blank" rel="noopener noreferrer">REST API Settings →</a>
 {% endhint %}
-
-The response includes the new company's `resourceId` (Company ID). Use it for license configuration, groups, and content management.
-
----
-
-## Step 2: Configure license and groups
-
-Use the Company ID from Step 1 to:
-
-* Update license settings via `PUT /api/companies/{resourceId}`
-* Add the company to a company group via `PUT /api/company-groups/{resourceId}/participants`
-
----
-
-## Quick reference
-
-| What you need           | Endpoint                          | Method |
-| ----------------------- | --------------------------------- | ------ |
-| Create company          | `/api/companies`                  | POST   |
-| Update company          | `/api/companies/{resourceId}`     | PUT    |
-| Add to company group    | `/api/company-groups/{id}/participants` | PUT |
-
----
-
-## Handle errors
-
-| HTTP | Cause                          | Action                                      |
-| ---- | ------------------------------ | ------------------------------------------- |
-| 403  | Credential is not Reseller     | Use a credential with Reseller role         |
-| 400  | Invalid request body           | Check the Endpoints API Reference for required fields and format |
-
----
-
-## What's next
-
-* [List companies with license details →](list-companies-with-license-details.md)
-* [Manage companies →](manage-companies.md)

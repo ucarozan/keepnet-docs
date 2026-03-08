@@ -1,6 +1,6 @@
 # List and manage company groups
 
-List, search, export, create, and update company groups and their participants. Reseller-only — use a credential with Client Role = **Reseller**. Company groups let you share training content, notification templates, and custom roles across multiple customer companies.
+List, search, export, create, and update company groups and their participants. Reseller-only — use a credential with Client Role = **Reseller**. **Participants** = the companies that belong to the group (company `resourceId` list). Company groups let you share training content, notification templates, and custom roles across multiple customer companies.
 
 ---
 
@@ -46,7 +46,7 @@ List, search, export, create, and update company groups and their participants. 
 
 ## POST /api/company-groups
 
-> Creates a new company group. Send `name` and optionally `companyResourceIdArray` (company IDs to add). **Test it:** See Endpoints → **CompanyGroup** for request body schema.
+> Creates a new company group. Send `name` and optionally `companyResourceIdArray` (company IDs to add as participants). **Test it:** Endpoints → **CompanyGroup** — use dummy name (e.g. `"Demo Group"`) and placeholder IDs (H8d).
 
 {% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/company-groups" method="post" expanded="true" %}
 <a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
@@ -66,7 +66,7 @@ List, search, export, create, and update company groups and their participants. 
 
 ## PUT /api/company-groups/{resourceId}/participants
 
-> Adds or updates participants (companies) in a company group. Send an array of company resource IDs.
+> Sets the participants (companies) in a company group. Replace `{resourceId}` with the **group** ID; request body = array of company resource IDs. Replaces the full member list. Participants = the companies in the group (see Terminology in DOCUMENTATION-RULES).
 
 {% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/company-groups/{resourceId}/participants" method="put" expanded="true" %}
 <a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
@@ -78,7 +78,7 @@ List, search, export, create, and update company groups and their participants. 
 
 * **403 Forbidden** — Credential is not Reseller. Set Client Role = **Reseller** in **Company → Company Settings → REST API**.
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
-* **400 Bad Request** — Invalid request body (e.g. missing required fields). For search/export use minimal body: `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter`.
+* **400 Bad Request** — Invalid request body. For search/export use minimal body: `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter`.
 
 {% hint style="info" %}
 **Platform UI:** Manage company groups in **Company → Company Groups**.

@@ -1,81 +1,55 @@
 # Manage companies
 
-Edit, update, or delete companies you manage. Only available to Resellers.
+Get, update, or delete a single company you manage, and add companies to a company group. Reseller-only — use a credential with Client Role = **Reseller**. Company ID comes from <a href="list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a> (`POST /api/companies/search` response `resourceId`).
 
 ---
 
-## Who can use this
+## GET /api/companies/{resourceId}
 
-| Your role       | Can use? | What you need                    |
-| --------------- | -------- | -------------------------------- |
-| **Company Admin** | No      | —                                |
-| **Reseller**     | Yes     | Token with Reseller credential   |
+> Retrieves a single company by ID. Replace `{resourceId}` with the company’s resource ID. No request body. **Test it:** Authorize, then set path parameter to a dummy ID (e.g. from search response).
 
-{% hint style="warning" %}
-**403 Forbidden?** This use case requires the **Reseller** role. Check your credential's Client Role in **Company → Company Settings → REST API**.
-[Roles and permissions →](https://doc.keepnetlabs.com/next-generation-product/platform/company/system-users/user-roles)
-{% endhint %}
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/{resourceId}" method="get" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
 
 ---
 
-## Prerequisites
+## PUT /api/companies/{resourceId}
 
-* **Credential:** Client Role = **Reseller**
-* **Token:** OAuth2 Client Credentials flow
-* **Company ID:** From [List companies with license details](list-companies-with-license-details.md)
+> Updates company details, license (type, target user limit, expiry), or other settings. Replace `{resourceId}` with the company ID. **Test it:** Endpoints → **Company** → **Updates a company** — use dummy/placeholder values (H8d).
 
----
-
-## Get company details
-
-**Endpoint:** `GET /api/companies/{resourceId}`
-
-Replace `{resourceId}` with the Company ID. Include `Authorization: Bearer <access_token>` in the request header.
-
-{% hint style="info" %}
-**Parameters, request/response schema, and Try it:** See the **Company** section in the Endpoints API Reference (OpenAPI).
-{% endhint %}
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/{resourceId}" method="put" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
 
 ---
 
-## Update a company
+## PUT /api/company-groups/{resourceId}/participants
 
-**Endpoint:** `PUT /api/companies/{resourceId}`
+> Adds or updates participants (companies) in a company group. First `{resourceId}` = group ID; request body = array of company resource IDs. Replaces the group’s member list. See <a href="list-and-manage-company-groups.md" target="_blank" rel="noopener noreferrer">List and manage company groups →</a>.
 
-Update company details, license, or settings. See the Endpoints API Reference (OpenAPI) for the request body schema.
-
----
-
-## Add company to a group
-
-**Endpoint:** `PUT /api/company-groups/{resourceId}/participants`
-
-Add one or more companies to a company group.
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/company-groups/{resourceId}/participants" method="put" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
 
 ---
 
-## Delete a company
+## DELETE /api/companies/{resourceId}
 
-**Endpoint:** `DELETE /api/companies/{resourceId}`
+> Permanently deletes a company and all associated data. Replace `{resourceId}` with the company ID. Irreversible.
+
+{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/{resourceId}" method="delete" expanded="true" %}
+<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
+---
+
+## Common errors
+
+* **403 Forbidden** — Credential is not Reseller, or company is not one you manage. Set Client Role = **Reseller**. <a href="../../../next-generation-product/platform/company/system-users/user-roles.md" target="_blank" rel="noopener noreferrer">Roles and permissions →</a>
+* **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
+* **404 Not Found** — Invalid or unknown company ID. Verify from `POST /api/companies/search`.
 
 {% hint style="danger" %}
 Deleting a company is irreversible. All associated data is removed.
 {% endhint %}
-
----
-
-## Quick reference
-
-| What you need           | Endpoint                          | Method |
-| ----------------------- | --------------------------------- | ------ |
-| Get company             | `/api/companies/{resourceId}`     | GET    |
-| Update company          | `/api/companies/{resourceId}`     | PUT    |
-| Delete company          | `/api/companies/{resourceId}`     | DELETE |
-| Add to company group    | `/api/company-groups/{id}/participants` | PUT |
-
----
-
-## What's next
-
-* [List companies with license details →](list-companies-with-license-details.md)
-* [Onboard a new customer →](onboard-new-customer.md)
