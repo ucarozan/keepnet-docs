@@ -288,6 +288,7 @@
 ## 🔌 API REFERENCE
 
 * [Quickstart](api-reference/quickstart.md)
+* [Use the API with AI assistants (MCP)](api-reference/use-the-api-with-ai-assistants-mcp.md)
 
 * Reseller
   * [Scope API requests to a customer](api-reference/use-cases/reseller/scope-api-requests-to-customer.md)

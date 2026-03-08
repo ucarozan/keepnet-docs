@@ -12,6 +12,8 @@ You can use the Keepnet API to:
 
 …and more, all via REST calls with OAuth 2.0 Client Credentials.
 
+Use the API from AI assistants (Cursor, Claude, ChatGPT, etc.) via MCP: <a href="use-the-api-with-ai-assistants-mcp.md" target="_blank" rel="noopener noreferrer">Use the API with AI assistants (MCP) →</a>
+
 ---
 
 {% stepper %}
