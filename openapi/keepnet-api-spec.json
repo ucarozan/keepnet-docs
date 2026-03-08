@@ -6039,6 +6039,10 @@
                   "filter": {
                     "type": "object",
                     "nullable": true
+                  },
+                  "isTargetUserCountExceededLimit": {
+                    "type": "boolean",
+                    "description": "If true, only companies exceeding license limit are returned"
                   }
                 }
               },
@@ -6058,6 +6062,17 @@
                     "orderBy": "CreateTime",
                     "ascending": false,
                     "filter": null
+                  }
+                },
+                "overage": {
+                  "summary": "Customers exceeding license limit",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": null,
+                    "isTargetUserCountExceededLimit": true
                   }
                 }
               }
@@ -6091,6 +6106,10 @@
                   "filter": {
                     "type": "object",
                     "nullable": true
+                  },
+                  "isTargetUserCountExceededLimit": {
+                    "type": "boolean",
+                    "description": "If true, only companies exceeding license limit are returned"
                   }
                 }
               },
@@ -6110,6 +6129,17 @@
                     "orderBy": "CreateTime",
                     "ascending": false,
                     "filter": null
+                  }
+                },
+                "overage": {
+                  "summary": "Customers exceeding license limit",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": null,
+                    "isTargetUserCountExceededLimit": true
                   }
                 }
               }
@@ -6143,6 +6173,10 @@
                   "filter": {
                     "type": "object",
                     "nullable": true
+                  },
+                  "isTargetUserCountExceededLimit": {
+                    "type": "boolean",
+                    "description": "If true, only companies exceeding license limit are returned"
                   }
                 }
               },
@@ -6162,6 +6196,17 @@
                     "orderBy": "CreateTime",
                     "ascending": false,
                     "filter": null
+                  }
+                },
+                "overage": {
+                  "summary": "Customers exceeding license limit",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": null,
+                    "isTargetUserCountExceededLimit": true
                   }
                 }
               }
@@ -6195,6 +6240,10 @@
                   "filter": {
                     "type": "object",
                     "nullable": true
+                  },
+                  "isTargetUserCountExceededLimit": {
+                    "type": "boolean",
+                    "description": "If true, only companies exceeding license limit are returned"
                   }
                 }
               },
@@ -6214,6 +6263,17 @@
                     "orderBy": "CreateTime",
                     "ascending": false,
                     "filter": null
+                  }
+                },
+                "overage": {
+                  "summary": "Customers exceeding license limit",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": null,
+                    "isTargetUserCountExceededLimit": true
                   }
                 }
               }
@@ -6281,6 +6341,10 @@
                   "exportType": {
                     "type": "string",
                     "example": "Csv"
+                  },
+                  "isTargetUserCountExceededLimit": {
+                    "type": "boolean",
+                    "description": "If true, export only companies exceeding license limit"
                   }
                 }
               },
@@ -6304,6 +6368,19 @@
                     "filter": null,
                     "reportAllPages": false,
                     "exportType": "Csv"
+                  }
+                },
+                "overage": {
+                  "summary": "Export customers exceeding license limit",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": null,
+                    "reportAllPages": false,
+                    "exportType": "Csv",
+                    "isTargetUserCountExceededLimit": true
                   }
                 }
               }
@@ -6346,6 +6423,10 @@
                   "exportType": {
                     "type": "string",
                     "example": "Csv"
+                  },
+                  "isTargetUserCountExceededLimit": {
+                    "type": "boolean",
+                    "description": "If true, export only companies exceeding license limit"
                   }
                 }
               },
@@ -6369,6 +6450,19 @@
                     "filter": null,
                     "reportAllPages": false,
                     "exportType": "Csv"
+                  }
+                },
+                "overage": {
+                  "summary": "Export customers exceeding license limit",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": null,
+                    "reportAllPages": false,
+                    "exportType": "Csv",
+                    "isTargetUserCountExceededLimit": true
                   }
                 }
               }
@@ -6411,6 +6505,10 @@
                   "exportType": {
                     "type": "string",
                     "example": "Csv"
+                  },
+                  "isTargetUserCountExceededLimit": {
+                    "type": "boolean",
+                    "description": "If true, export only companies exceeding license limit"
                   }
                 }
               },
@@ -6434,6 +6532,19 @@
                     "filter": null,
                     "reportAllPages": false,
                     "exportType": "Csv"
+                  }
+                },
+                "overage": {
+                  "summary": "Export customers exceeding license limit",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": null,
+                    "reportAllPages": false,
+                    "exportType": "Csv",
+                    "isTargetUserCountExceededLimit": true
                   }
                 }
               }
@@ -6476,6 +6587,10 @@
                   "exportType": {
                     "type": "string",
                     "example": "Csv"
+                  },
+                  "isTargetUserCountExceededLimit": {
+                    "type": "boolean",
+                    "description": "If true, export only companies exceeding license limit"
                   }
                 }
               },
@@ -6499,6 +6614,19 @@
                     "filter": null,
                     "reportAllPages": false,
                     "exportType": "Csv"
+                  }
+                },
+                "overage": {
+                  "summary": "Export customers exceeding license limit",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 10,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": null,
+                    "reportAllPages": false,
+                    "exportType": "Csv",
+                    "isTargetUserCountExceededLimit": true
                   }
                 }
               }
@@ -10935,22 +11063,518 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.ApplicationService.Models.SearchEnrollmentRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      },
+                      "FilterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  },
+                  "enrollmentType": {
+                    "type": "string",
+                    "example": "Survey",
+                    "description": "Optional: use \"Survey\" to list only survey enrollments"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": "",
+                  "FilterGroups": [
+                    {
+                      "Condition": "AND",
+                      "FilterItems": [],
+                      "FilterGroups": []
+                    },
+                    {
+                      "Condition": "OR",
+                      "FilterItems": [],
+                      "FilterGroups": []
+                    }
+                  ]
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": "",
+                      "FilterGroups": [
+                        {
+                          "Condition": "AND",
+                          "FilterItems": [],
+                          "FilterGroups": []
+                        },
+                        {
+                          "Condition": "OR",
+                          "FilterItems": [],
+                          "FilterGroups": []
+                        }
+                      ]
+                    }
+                  }
+                },
+                "surveyOnly": {
+                  "summary": "Survey enrollments only",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": "",
+                      "FilterGroups": [
+                        {
+                          "Condition": "AND",
+                          "FilterItems": [],
+                          "FilterGroups": []
+                        },
+                        {
+                          "Condition": "OR",
+                          "FilterItems": [],
+                          "FilterGroups": []
+                        }
+                      ]
+                    },
+                    "enrollmentType": "Survey"
+                  }
+                }
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.ApplicationService.Models.SearchEnrollmentRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      },
+                      "FilterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  },
+                  "enrollmentType": {
+                    "type": "string",
+                    "example": "Survey",
+                    "description": "Optional: use \"Survey\" to list only survey enrollments"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": "",
+                  "FilterGroups": [
+                    {
+                      "Condition": "AND",
+                      "FilterItems": [],
+                      "FilterGroups": []
+                    },
+                    {
+                      "Condition": "OR",
+                      "FilterItems": [],
+                      "FilterGroups": []
+                    }
+                  ]
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": "",
+                      "FilterGroups": [
+                        {
+                          "Condition": "AND",
+                          "FilterItems": [],
+                          "FilterGroups": []
+                        },
+                        {
+                          "Condition": "OR",
+                          "FilterItems": [],
+                          "FilterGroups": []
+                        }
+                      ]
+                    }
+                  }
+                },
+                "surveyOnly": {
+                  "summary": "Survey enrollments only",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": "",
+                      "FilterGroups": [
+                        {
+                          "Condition": "AND",
+                          "FilterItems": [],
+                          "FilterGroups": []
+                        },
+                        {
+                          "Condition": "OR",
+                          "FilterItems": [],
+                          "FilterGroups": []
+                        }
+                      ]
+                    },
+                    "enrollmentType": "Survey"
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.ApplicationService.Models.SearchEnrollmentRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      },
+                      "FilterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  },
+                  "enrollmentType": {
+                    "type": "string",
+                    "example": "Survey",
+                    "description": "Optional: use \"Survey\" to list only survey enrollments"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": "",
+                  "FilterGroups": [
+                    {
+                      "Condition": "AND",
+                      "FilterItems": [],
+                      "FilterGroups": []
+                    },
+                    {
+                      "Condition": "OR",
+                      "FilterItems": [],
+                      "FilterGroups": []
+                    }
+                  ]
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": "",
+                      "FilterGroups": [
+                        {
+                          "Condition": "AND",
+                          "FilterItems": [],
+                          "FilterGroups": []
+                        },
+                        {
+                          "Condition": "OR",
+                          "FilterItems": [],
+                          "FilterGroups": []
+                        }
+                      ]
+                    }
+                  }
+                },
+                "surveyOnly": {
+                  "summary": "Survey enrollments only",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": "",
+                      "FilterGroups": [
+                        {
+                          "Condition": "AND",
+                          "FilterItems": [],
+                          "FilterGroups": []
+                        },
+                        {
+                          "Condition": "OR",
+                          "FilterItems": [],
+                          "FilterGroups": []
+                        }
+                      ]
+                    },
+                    "enrollmentType": "Survey"
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.ApplicationService.Models.SearchEnrollmentRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      },
+                      "FilterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  },
+                  "enrollmentType": {
+                    "type": "string",
+                    "example": "Survey",
+                    "description": "Optional: use \"Survey\" to list only survey enrollments"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": "",
+                  "FilterGroups": [
+                    {
+                      "Condition": "AND",
+                      "FilterItems": [],
+                      "FilterGroups": []
+                    },
+                    {
+                      "Condition": "OR",
+                      "FilterItems": [],
+                      "FilterGroups": []
+                    }
+                  ]
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": "",
+                      "FilterGroups": [
+                        {
+                          "Condition": "AND",
+                          "FilterItems": [],
+                          "FilterGroups": []
+                        },
+                        {
+                          "Condition": "OR",
+                          "FilterItems": [],
+                          "FilterGroups": []
+                        }
+                      ]
+                    }
+                  }
+                },
+                "surveyOnly": {
+                  "summary": "Survey enrollments only",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": "",
+                      "FilterGroups": [
+                        {
+                          "Condition": "AND",
+                          "FilterItems": [],
+                          "FilterGroups": []
+                        },
+                        {
+                          "Condition": "OR",
+                          "FilterItems": [],
+                          "FilterGroups": []
+                        }
+                      ]
+                    },
+                    "enrollmentType": "Survey"
+                  }
+                }
               }
             }
           }
@@ -11344,22 +11968,374 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.ApplicationService.Models.ExportEnrollmentRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter",
+                  "exportType"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "Csv"
+                  },
+                  "enrollmentType": {
+                    "type": "string",
+                    "description": "Optional: e.g. Survey"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                },
+                "reportAllPages": false,
+                "exportType": "Csv"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal CSV export (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "condition": "and",
+                      "searchInputTextValue": null,
+                      "filterGroups": []
+                    },
+                    "reportAllPages": false,
+                    "exportType": "Csv"
+                  }
+                }
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.ApplicationService.Models.ExportEnrollmentRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter",
+                  "exportType"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "Csv"
+                  },
+                  "enrollmentType": {
+                    "type": "string",
+                    "description": "Optional: e.g. Survey"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                },
+                "reportAllPages": false,
+                "exportType": "Csv"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal CSV export (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "condition": "and",
+                      "searchInputTextValue": null,
+                      "filterGroups": []
+                    },
+                    "reportAllPages": false,
+                    "exportType": "Csv"
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.ApplicationService.Models.ExportEnrollmentRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter",
+                  "exportType"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "Csv"
+                  },
+                  "enrollmentType": {
+                    "type": "string",
+                    "description": "Optional: e.g. Survey"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                },
+                "reportAllPages": false,
+                "exportType": "Csv"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal CSV export (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "condition": "and",
+                      "searchInputTextValue": null,
+                      "filterGroups": []
+                    },
+                    "reportAllPages": false,
+                    "exportType": "Csv"
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.ApplicationService.Models.ExportEnrollmentRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter",
+                  "exportType"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "Csv"
+                  },
+                  "enrollmentType": {
+                    "type": "string",
+                    "description": "Optional: e.g. Survey"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                },
+                "reportAllPages": false,
+                "exportType": "Csv"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal CSV export (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "condition": "and",
+                      "searchInputTextValue": null,
+                      "filterGroups": []
+                    },
+                    "reportAllPages": false,
+                    "exportType": "Csv"
+                  }
+                }
               }
             }
           }
@@ -38076,22 +39052,326 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.ApplicationService.Models.SearchUsersRestRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  },
+                  "trainingType": {
+                    "type": "integer",
+                    "nullable": true,
+                    "description": "Optional: e.g. 0 for Survey enrollment"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": true,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": true,
+                    "filter": {
+                      "condition": "and",
+                      "searchInputTextValue": null,
+                      "filterGroups": []
+                    }
+                  }
+                }
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.ApplicationService.Models.SearchUsersRestRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  },
+                  "trainingType": {
+                    "type": "integer",
+                    "nullable": true,
+                    "description": "Optional: e.g. 0 for Survey enrollment"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": true,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": true,
+                    "filter": {
+                      "condition": "and",
+                      "searchInputTextValue": null,
+                      "filterGroups": []
+                    }
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.ApplicationService.Models.SearchUsersRestRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  },
+                  "trainingType": {
+                    "type": "integer",
+                    "nullable": true,
+                    "description": "Optional: e.g. 0 for Survey enrollment"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": true,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": true,
+                    "filter": {
+                      "condition": "and",
+                      "searchInputTextValue": null,
+                      "filterGroups": []
+                    }
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.ApplicationService.Models.SearchUsersRestRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  },
+                  "trainingType": {
+                    "type": "integer",
+                    "nullable": true,
+                    "description": "Optional: e.g. 0 for Survey enrollment"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": true,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": true,
+                    "filter": {
+                      "condition": "and",
+                      "searchInputTextValue": null,
+                      "filterGroups": []
+                    }
+                  }
+                }
               }
             }
           }

@@ -22,7 +22,7 @@ From the response, pick the company and note its `resourceId`. Example: `"resour
 
 Get the customer's enrollment list so you can choose an enrollment to inspect. Send **`X-KEEPNET-Company-Id`**. From the response, take the `resourceId` of the enrollment you want (e.g. `"resourceId": "eNrl9Ab3k2Qp"`) — that is the `enrollmentId` for the sending, certificates, reminder, and notification endpoints below.
 
-> Returns a list of enrollments. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**. Request body: `filter` (required; use `{}` for no filters), optional `pageNumber`, `pageSize`, `orderBy`, `ascending`, `enrollmentType`.
+> Returns a list of enrollments. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**. Request body: `filter` (required — use the structure with `Condition`, `SearchInputTextValue`, `FilterGroups`; see [View customer's enrollment list and report](view-customer-enrollment-list-and-report.md) for a full example), optional `pageNumber`, `pageSize`, `orderBy`, `ascending`, `enrollmentType`.
 
 {% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/enrollments/search" method="post" expanded="true" %}
 <a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>

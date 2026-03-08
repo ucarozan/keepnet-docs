@@ -141,6 +141,16 @@ const COMPANIES_SEARCH_EXAMPLE = {
   filter: null,
 };
 
+/** Companies search for overage list — Reseller: isTargetUserCountExceededLimit. */
+const COMPANIES_SEARCH_OVERAGE_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 10,
+  orderBy: 'CreateTime',
+  ascending: false,
+  filter: null,
+  isTargetUserCountExceededLimit: true,
+};
+
 /** Export endpoint — CSV/Excel export, Test it on the same page. */
 const COMPANIES_SEARCH_EXPORT_EXAMPLE = {
   pageNumber: 1,
@@ -150,6 +160,18 @@ const COMPANIES_SEARCH_EXPORT_EXAMPLE = {
   filter: null,
   reportAllPages: false,
   exportType: 'Csv',
+};
+
+/** Companies export for overage list — isTargetUserCountExceededLimit. */
+const COMPANIES_SEARCH_EXPORT_OVERAGE_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 10,
+  orderBy: 'CreateTime',
+  ascending: false,
+  filter: null,
+  reportAllPages: false,
+  exportType: 'Csv',
+  isTargetUserCountExceededLimit: true,
 };
 
 /** Company groups search — Reseller: list groups, Test it minimal body. */
@@ -172,6 +194,50 @@ const COMPANY_GROUPS_SEARCH_EXPORT_EXAMPLE = {
   exportType: 'Csv',
 };
 
+/** Enrollments search — Reseller: list enrollments; filter structure required by API. */
+const ENROLLMENTS_SEARCH_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 20,
+  orderBy: 'CreateTime',
+  ascending: false,
+  filter: {
+    Condition: 'AND',
+    SearchInputTextValue: '',
+    FilterGroups: [
+      { Condition: 'AND', FilterItems: [], FilterGroups: [] },
+      { Condition: 'OR', FilterItems: [], FilterGroups: [] },
+    ],
+  },
+};
+
+/** Training report users search — per-user report for an enrollment; filter required. */
+const TRAINING_REPORTS_USERS_SEARCH_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 100,
+  orderBy: 'Email',
+  ascending: true,
+  filter: {
+    condition: 'and',
+    searchInputTextValue: null,
+    filterGroups: [],
+  },
+};
+
+/** Enrollments search export — CSV/Excel; filter uses Common.Core (camelCase). */
+const ENROLLMENTS_SEARCH_EXPORT_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 20,
+  orderBy: 'CreateTime',
+  ascending: false,
+  filter: {
+    condition: 'and',
+    searchInputTextValue: null,
+    filterGroups: [],
+  },
+  reportAllPages: false,
+  exportType: 'Csv',
+};
+
 function injectRequestExamples(paths) {
   const result = { ...paths };
 
@@ -188,6 +254,7 @@ function injectRequestExamples(paths) {
           orderBy: { type: 'string', example: 'CreateTime' },
           ascending: { type: 'boolean', example: false },
           filter: { type: 'object', nullable: true },
+          isTargetUserCountExceededLimit: { type: 'boolean', description: 'If true, only companies exceeding license limit are returned' },
         },
       },
       example: COMPANIES_SEARCH_EXAMPLE,
@@ -195,6 +262,10 @@ function injectRequestExamples(paths) {
         default: {
           summary: 'Minimal (works with Send after Authorize)',
           value: COMPANIES_SEARCH_EXAMPLE,
+        },
+        overage: {
+          summary: 'Customers exceeding license limit',
+          value: COMPANIES_SEARCH_OVERAGE_EXAMPLE,
         },
       },
     };
@@ -216,6 +287,7 @@ function injectRequestExamples(paths) {
           filter: { type: 'object', nullable: true },
           reportAllPages: { type: 'boolean', example: false },
           exportType: { type: 'string', example: 'Csv' },
+          isTargetUserCountExceededLimit: { type: 'boolean', description: 'If true, export only companies exceeding license limit' },
         },
       },
       example: COMPANIES_SEARCH_EXPORT_EXAMPLE,
@@ -223,6 +295,10 @@ function injectRequestExamples(paths) {
         default: {
           summary: 'Minimal CSV export (works with Send after Authorize)',
           value: COMPANIES_SEARCH_EXPORT_EXAMPLE,
+        },
+        overage: {
+          summary: 'Export customers exceeding license limit',
+          value: COMPANIES_SEARCH_EXPORT_OVERAGE_EXAMPLE,
         },
       },
     };
@@ -282,6 +358,114 @@ function injectRequestExamples(paths) {
     };
     for (const key of Object.keys(result['/api/company-groups/search/export'].post.requestBody.content)) {
       result['/api/company-groups/search/export'].post.requestBody.content[key] = { ...groupExportContent };
+    }
+  }
+
+  if (result['/api/enrollments/search']?.post?.requestBody?.content) {
+    const enrollmentSearchContent = {
+      schema: {
+        type: 'object',
+        required: ['pageNumber', 'pageSize', 'orderBy', 'ascending', 'filter'],
+        properties: {
+          pageNumber: { type: 'integer', example: 1 },
+          pageSize: { type: 'integer', example: 20 },
+          orderBy: { type: 'string', example: 'CreateTime' },
+          ascending: { type: 'boolean', example: false },
+          filter: {
+            type: 'object',
+            properties: {
+              Condition: { type: 'string', example: 'AND' },
+              SearchInputTextValue: { type: 'string', example: '' },
+              FilterGroups: { type: 'array', items: { type: 'object' } },
+            },
+          },
+          enrollmentType: { type: 'string', example: 'Survey', description: 'Optional: use "Survey" to list only survey enrollments' },
+        },
+      },
+      example: ENROLLMENTS_SEARCH_EXAMPLE,
+      examples: {
+        default: {
+          summary: 'Minimal (works with Send after Authorize)',
+          value: ENROLLMENTS_SEARCH_EXAMPLE,
+        },
+        surveyOnly: {
+          summary: 'Survey enrollments only',
+          value: { ...ENROLLMENTS_SEARCH_EXAMPLE, enrollmentType: 'Survey' },
+        },
+      },
+    };
+    for (const key of Object.keys(result['/api/enrollments/search'].post.requestBody.content)) {
+      result['/api/enrollments/search'].post.requestBody.content[key] = { ...enrollmentSearchContent };
+    }
+  }
+
+  if (result['/api/training-reports/{enrollmentId}/users/search']?.post?.requestBody?.content) {
+    const usersSearchContent = {
+      schema: {
+        type: 'object',
+        required: ['pageNumber', 'pageSize', 'orderBy', 'ascending', 'filter'],
+        properties: {
+          pageNumber: { type: 'integer', example: 1 },
+          pageSize: { type: 'integer', example: 100 },
+          orderBy: { type: 'string', example: 'Email' },
+          ascending: { type: 'boolean', example: true },
+          filter: {
+            type: 'object',
+            properties: {
+              condition: { type: 'string', example: 'and' },
+              searchInputTextValue: { type: 'string', nullable: true },
+              filterGroups: { type: 'array', items: { type: 'object' } },
+            },
+          },
+          trainingType: { type: 'integer', nullable: true, description: 'Optional: e.g. 0 for Survey enrollment' },
+        },
+      },
+      example: TRAINING_REPORTS_USERS_SEARCH_EXAMPLE,
+      examples: {
+        default: {
+          summary: 'Minimal (works with Send after Authorize)',
+          value: TRAINING_REPORTS_USERS_SEARCH_EXAMPLE,
+        },
+      },
+    };
+    for (const key of Object.keys(result['/api/training-reports/{enrollmentId}/users/search'].post.requestBody.content)) {
+      result['/api/training-reports/{enrollmentId}/users/search'].post.requestBody.content[key] = { ...usersSearchContent };
+    }
+  }
+
+  if (result['/api/enrollments/search/export']?.post?.requestBody?.content) {
+    const enrollmentExportContent = {
+      schema: {
+        type: 'object',
+        required: ['pageNumber', 'pageSize', 'orderBy', 'ascending', 'filter', 'exportType'],
+        properties: {
+          pageNumber: { type: 'integer', example: 1 },
+          pageSize: { type: 'integer', example: 20 },
+          orderBy: { type: 'string', example: 'CreateTime' },
+          ascending: { type: 'boolean', example: false },
+          filter: {
+            type: 'object',
+            properties: {
+              condition: { type: 'string', example: 'and' },
+              searchInputTextValue: { type: 'string', nullable: true },
+              filterGroups: { type: 'array', items: { type: 'object' } },
+            },
+          },
+          reportAllPages: { type: 'boolean', example: false },
+          exportType: { type: 'string', example: 'Csv' },
+          enrollmentType: { type: 'string', description: 'Optional: e.g. Survey' },
+        },
+      },
+      example: ENROLLMENTS_SEARCH_EXPORT_EXAMPLE,
+      examples: {
+        default: {
+          summary: 'Minimal CSV export (works with Send after Authorize)',
+          value: ENROLLMENTS_SEARCH_EXPORT_EXAMPLE,
+        },
+      },
+    };
+    for (const key of Object.keys(result['/api/enrollments/search/export'].post.requestBody.content)) {
+      result['/api/enrollments/search/export'].post.requestBody.content[key] = { ...enrollmentExportContent };
     }
   }
 
