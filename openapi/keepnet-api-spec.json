@@ -6051,7 +6051,7 @@
               },
               "examples": {
                 "default": {
-                  "summary": "Minimal (Authorize sonrası Send ile çalışır)",
+                  "summary": "Minimal (works with Send after Authorize)",
                   "value": {
                     "pageNumber": 1,
                     "pageSize": 10,
@@ -6103,7 +6103,7 @@
               },
               "examples": {
                 "default": {
-                  "summary": "Minimal (Authorize sonrası Send ile çalışır)",
+                  "summary": "Minimal (works with Send after Authorize)",
                   "value": {
                     "pageNumber": 1,
                     "pageSize": 10,
@@ -6155,7 +6155,7 @@
               },
               "examples": {
                 "default": {
-                  "summary": "Minimal (Authorize sonrası Send ile çalışır)",
+                  "summary": "Minimal (works with Send after Authorize)",
                   "value": {
                     "pageNumber": 1,
                     "pageSize": 10,
@@ -6207,7 +6207,7 @@
               },
               "examples": {
                 "default": {
-                  "summary": "Minimal (Authorize sonrası Send ile çalışır)",
+                  "summary": "Minimal (works with Send after Authorize)",
                   "value": {
                     "pageNumber": 1,
                     "pageSize": 10,
@@ -6295,7 +6295,7 @@
               },
               "examples": {
                 "default": {
-                  "summary": "Minimal CSV export (Authorize sonrası Send ile çalışır)",
+                  "summary": "Minimal CSV export (works with Send after Authorize)",
                   "value": {
                     "pageNumber": 1,
                     "pageSize": 10,
@@ -6360,7 +6360,7 @@
               },
               "examples": {
                 "default": {
-                  "summary": "Minimal CSV export (Authorize sonrası Send ile çalışır)",
+                  "summary": "Minimal CSV export (works with Send after Authorize)",
                   "value": {
                     "pageNumber": 1,
                     "pageSize": 10,
@@ -6425,7 +6425,7 @@
               },
               "examples": {
                 "default": {
-                  "summary": "Minimal CSV export (Authorize sonrası Send ile çalışır)",
+                  "summary": "Minimal CSV export (works with Send after Authorize)",
                   "value": {
                     "pageNumber": 1,
                     "pageSize": 10,
@@ -6490,7 +6490,7 @@
               },
               "examples": {
                 "default": {
-                  "summary": "Minimal CSV export (Authorize sonrası Send ile çalışır)",
+                  "summary": "Minimal CSV export (works with Send after Authorize)",
                   "value": {
                     "pageNumber": 1,
                     "pageSize": 10,
@@ -8266,7 +8266,7 @@
               },
               "examples": {
                 "default": {
-                  "summary": "Minimal (Authorize sonrası Send ile çalışır)",
+                  "summary": "Minimal (works with Send after Authorize)",
                   "value": {
                     "pageNumber": 1,
                     "pageSize": 10,
@@ -8318,7 +8318,7 @@
               },
               "examples": {
                 "default": {
-                  "summary": "Minimal (Authorize sonrası Send ile çalışır)",
+                  "summary": "Minimal (works with Send after Authorize)",
                   "value": {
                     "pageNumber": 1,
                     "pageSize": 10,
@@ -8370,7 +8370,7 @@
               },
               "examples": {
                 "default": {
-                  "summary": "Minimal (Authorize sonrası Send ile çalışır)",
+                  "summary": "Minimal (works with Send after Authorize)",
                   "value": {
                     "pageNumber": 1,
                     "pageSize": 10,
@@ -8422,7 +8422,7 @@
               },
               "examples": {
                 "default": {
-                  "summary": "Minimal (Authorize sonrası Send ile çalışır)",
+                  "summary": "Minimal (works with Send after Authorize)",
                   "value": {
                     "pageNumber": 1,
                     "pageSize": 10,
@@ -8510,7 +8510,7 @@
               },
               "examples": {
                 "default": {
-                  "summary": "Minimal CSV export (Authorize sonrası Send ile çalışır)",
+                  "summary": "Minimal CSV export (works with Send after Authorize)",
                   "value": {
                     "pageNumber": 1,
                     "pageSize": 10,
@@ -8575,7 +8575,7 @@
               },
               "examples": {
                 "default": {
-                  "summary": "Minimal CSV export (Authorize sonrası Send ile çalışır)",
+                  "summary": "Minimal CSV export (works with Send after Authorize)",
                   "value": {
                     "pageNumber": 1,
                     "pageSize": 10,
@@ -8640,7 +8640,7 @@
               },
               "examples": {
                 "default": {
-                  "summary": "Minimal CSV export (Authorize sonrası Send ile çalışır)",
+                  "summary": "Minimal CSV export (works with Send after Authorize)",
                   "value": {
                     "pageNumber": 1,
                     "pageSize": 10,
@@ -8705,7 +8705,7 @@
               },
               "examples": {
                 "default": {
-                  "summary": "Minimal CSV export (Authorize sonrası Send ile çalışır)",
+                  "summary": "Minimal CSV export (works with Send after Authorize)",
                   "value": {
                     "pageNumber": 1,
                     "pageSize": 10,

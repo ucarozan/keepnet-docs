@@ -292,38 +292,8 @@
 * Reseller
   * [Scope API requests to a customer (Reseller)](api-reference/use-cases/reseller/scope-api-requests-to-customer.md)
   * [List companies with license details](api-reference/use-cases/reseller/list-companies-with-license-details.md)
+  * [Add target users for a customer (Reseller)](api-reference/use-cases/reseller/add-target-users-for-customer.md)
   * [Export customer list for billing](api-reference/use-cases/reseller/export-customer-list-for-billing.md)
   * [Onboard a new customer](api-reference/use-cases/reseller/onboard-new-customer.md)
   * [Manage companies](api-reference/use-cases/reseller/manage-companies.md)
   * [List and manage company groups](api-reference/use-cases/reseller/list-and-manage-company-groups.md)
-
-* Reports
-  * [Pull phishing campaign reports](api-reference/use-cases/reports/phishing-campaign-reports.md)
-  * [Pull training reports](api-reference/use-cases/reports/training-reports.md)
-  * [Pull gamification report](api-reference/use-cases/reports/gamification-report.md)
-  * [Pull executive summaries](api-reference/use-cases/reports/executive-summaries.md)
-  * [Export audit logs to SIEM](api-reference/use-cases/reports/export-audit-logs-to-siem.md)
-  * [Pull smishing campaign reports](api-reference/use-cases/reports/smishing-campaign-reports.md)
-  * [Pull quishing campaign reports](api-reference/use-cases/reports/quishing-campaign-reports.md)
-  * [Pull vishing campaign reports](api-reference/use-cases/reports/vishing-campaign-reports.md)
-  * [Pull callback campaign reports](api-reference/use-cases/reports/callback-campaign-reports.md)
-  * [Pull MSSP Billing Report](api-reference/use-cases/reports/mssp-billing-report.md)
-
-* Company & Users
-  * [Add target users](api-reference/use-cases/company-users/add-target-users.md)
-  * [Manage system users](api-reference/use-cases/company-users/manage-system-users.md)
-  * [Pull training list](api-reference/use-cases/company-users/pull-training-list.md)
-  * [Enroll users in training](api-reference/use-cases/company-users/enroll-users-in-training.md)
-
-* Endpoints
-* ```yaml
-  type: builtin:openapi
-  props:
-    models: true
-    downloadLink: true
-  dependencies:
-    spec:
-      ref:
-        kind: openapi
-        spec: keepnet-api
-  ```

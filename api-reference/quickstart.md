@@ -99,11 +99,14 @@ const { access_token } = await response.json();
 {% endtabs %}
 
 {% hint style="success" %}
-**Test it — adım adım**
+**Test it — step by step**
 
-1. **Authorize:** Endpoints panelinde herhangi bir endpoint açın → **Authorize** (kilit ikonu) → **Client ID** ve **Client Secret** girin → **Authorize** tıklayın. Token otomatik alınır ve tüm isteklere eklenir.
-2. **GET /api/companies/my:** Endpoints → **Company** → **Retrieves the companies which can be simulated by user** → **Send**. Body yok, direkt sonuç alırsınız.
-3. **POST /api/companies/search:** Endpoints → **Company** → **Retrieves a list of all companies** → Body hazır (`pageNumber: 1`, `pageSize: 10`, `orderBy: CreateTime`) → **Send**. Reseller credential gerekir.
+**Authorize** is not on this page; it is in the **Endpoints** section. Open **Endpoints** in the left sidebar → pick an endpoint (e.g. **Company** → **Retrieves a list of all companies**) → in the right panel click the lock icon **Authorize** → enter **Client ID** and **Client Secret** → click **Authorize**. The token is fetched and applied to all requests. Then click **Send** in the same panel to send the request.
+
+* **GET /api/companies/my:** Endpoints → **Company** → **Retrieves the companies which can be simulated by user** → **Send**. No body.
+* **POST /api/companies/search:** Endpoints → **Company** → **Retrieves a list of all companies** → Body is pre-filled → **Send**. Reseller credential required.
+
+Alternatively, get a token from the **POST /connect/token** block on this page, copy `access_token` from the response, and paste it into the Bearer field in Endpoints instead of using Authorize.
 {% endhint %}
 
 {% endstep %}
@@ -134,18 +137,18 @@ If successful, you'll get a `data` array with your company details (id, name, et
 
 ---
 
-## Test it — hızlı kontrol listesi
+## Test it — quick checklist
 
-Endpoints panelinde (sağ sidebar) aşağıdaki sırayla test edin:
+The **Authorize** button is not on the Quickstart page; it appears in the right panel when you open an endpoint under **Endpoints** (left sidebar). Order:
 
-Adım|Ne yap|Sonuç
+Step|Action|Result
 :---|:---|:---
-1|**Authorize** → Client ID + Client Secret gir → Authorize tıkla|Token alınır, tüm isteklere otomatik eklenir
-2|**GET /api/companies/my** (Company) → Send|Company listesi döner (Company Admin) veya yönettiğiniz şirketler (Reseller)
-3|**POST /api/companies/search** (Company) → Body hazır → Send|Company listesi + license bilgileri (Reseller credential gerekir)
+1|**Endpoints** → open any endpoint (e.g. Company → Retrieves a list…) → **Authorize** (lock icon) → enter Client ID + Client Secret → click **Authorize**|Token is fetched and applied to all requests
+2|**GET /api/companies/my** (Company) → Send|Returns your company (Company Admin) or companies you manage (Reseller)
+3|**POST /api/companies/search** (Company) → Body pre-filled → Send|Company list with license details (Reseller credential required)
 
 {% hint style="info" %}
-**Company Admin** credential ile adım 3 → `403 Forbidden`. Bu normal — companies/search sadece Reseller için.
+With a **Company Admin** credential, step 3 returns `403 Forbidden`. This is expected — `companies/search` is for Reseller only.
 {% endhint %}
 
 ---
@@ -259,7 +262,7 @@ If your credential has the **Reseller** role, include Company ID when calling co
 * **Path:** `/api/.../companies/{companyId}/...`
 * **Query:** `?companyId={companyId}`
 
-Retrieve Company IDs via `POST /api/companies/search`. See <a href="use-cases/reseller/list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>.
+Company IDs are returned by `POST /api/companies/search`. For a full explanation and usage in report and user endpoints, see <a href="use-cases/reseller/scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer (Reseller) →</a>. For the list: <a href="use-cases/reseller/list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>.
 
 ---
 

@@ -193,7 +193,7 @@ function injectRequestExamples(paths) {
       example: COMPANIES_SEARCH_EXAMPLE,
       examples: {
         default: {
-          summary: 'Minimal (Authorize sonrası Send ile çalışır)',
+          summary: 'Minimal (works with Send after Authorize)',
           value: COMPANIES_SEARCH_EXAMPLE,
         },
       },
@@ -221,7 +221,7 @@ function injectRequestExamples(paths) {
       example: COMPANIES_SEARCH_EXPORT_EXAMPLE,
       examples: {
         default: {
-          summary: 'Minimal CSV export (Authorize sonrası Send ile çalışır)',
+          summary: 'Minimal CSV export (works with Send after Authorize)',
           value: COMPANIES_SEARCH_EXPORT_EXAMPLE,
         },
       },
@@ -247,7 +247,7 @@ function injectRequestExamples(paths) {
       example: COMPANY_GROUPS_SEARCH_EXAMPLE,
       examples: {
         default: {
-          summary: 'Minimal (Authorize sonrası Send ile çalışır)',
+          summary: 'Minimal (works with Send after Authorize)',
           value: COMPANY_GROUPS_SEARCH_EXAMPLE,
         },
       },
@@ -275,7 +275,7 @@ function injectRequestExamples(paths) {
       example: COMPANY_GROUPS_SEARCH_EXPORT_EXAMPLE,
       examples: {
         default: {
-          summary: 'Minimal CSV export (Authorize sonrası Send ile çalışır)',
+          summary: 'Minimal CSV export (works with Send after Authorize)',
           value: COMPANY_GROUPS_SEARCH_EXPORT_EXAMPLE,
         },
       },

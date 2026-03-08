@@ -78,6 +78,12 @@ In SUMMARY.md, the Endpoints entry is defined as follows (actual format: `SUMMAR
 
 The following rules apply to **every new or updated page**. Violation = review rejection.
 
+### H0: Documentation language — English only
+
+All user-facing documentation (API Reference, use-cases, Quickstart, guides) must be written in **English**. No Turkish or other languages in body text, headings, hints, table headers, or button/step labels. Exception: internal project notes or comments in code/config that are not published to doc.keepnetlabs.com.
+
+---
+
 ### H1: Task-based headings
 
 | ✅ Do | ❌ Don't |
