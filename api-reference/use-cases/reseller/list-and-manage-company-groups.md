@@ -80,7 +80,7 @@ List, search, export, create, and update company groups and their participants. 
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
 * **400 Bad Request** — Invalid request body. For search/export use minimal body: `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter`.
 
-**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>. <a href="list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>. <a href="onboard-new-customer.md" target="_blank" rel="noopener noreferrer">Create a new company →</a> (add new company to a group).
+**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>. <a href="list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>. <a href="onboard-new-customer.md" target="_blank" rel="noopener noreferrer">Create a company →</a> (add new company to a group).
 
 {% hint style="info" %}
 **Platform UI:** Manage company groups in **Company → Company Groups**.

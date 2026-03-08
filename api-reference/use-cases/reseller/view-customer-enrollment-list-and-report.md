@@ -1,4 +1,4 @@
-# View customer's training enrollment list and report
+# View customer's enrollment list and report
 
 As a Reseller you can list a customer’s training enrollments and get reports for a specific enrollment. Get the customer’s Company ID, then call the enrollment search and training-report endpoints with **`X-KEEPNET-Company-Id`** so results are scoped to that company. Use a credential with Client Role = **Reseller**.
 

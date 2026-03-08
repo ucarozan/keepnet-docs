@@ -1,4 +1,4 @@
-# View customer's training enrollment sending, certificates, and notifications
+# View customer's enrollment sending, certificates, and notifications
 
 As a Reseller you can view a customer's training enrollment **sending report** (emails sent, delivery status), **certificates**, **reminder mails**, and **notification activity logs** for a specific enrollment. Get the customer's Company ID and the enrollment ID from the enrollment list, then call the training-report and enrollment endpoints with **`X-KEEPNET-Company-Id`** so results are scoped to that customer. Use a credential with Client Role = **Reseller**.
 
@@ -86,4 +86,4 @@ Search **notification activity logs** for that enrollment (e.g. email/Teams noti
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
 * **404 Not Found** / **400 Bad Request** — Invalid Company ID or enrollment ID. Verify Company ID from `POST /api/companies/search` and enrollment ID from `POST /api/enrollments/search`; ensure you send `X-KEEPNET-Company-Id` for the customer that owns the enrollment.
 
-**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>. <a href="view-customer-enrollment-list-and-report.md" target="_blank" rel="noopener noreferrer">View customer's training enrollment list and report →</a> (list enrollments and summary). For enrollment and training endpoints: see **Endpoints** → **Enrollment**, **TrainingReport** in the API Reference.
+**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>. <a href="view-customer-enrollment-list-and-report.md" target="_blank" rel="noopener noreferrer">View customer's enrollment list and report →</a> (list enrollments and summary). For enrollment and training endpoints: see **Endpoints** → **Enrollment**, **TrainingReport** in the API Reference.

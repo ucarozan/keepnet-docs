@@ -287,5 +287,5 @@ What you want to do|Use case
 List companies (Reseller)|<a href="use-cases/reseller/list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>
 Scope requests to a customer|<a href="use-cases/reseller/scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>
 Export customer list for billing|<a href="use-cases/reseller/export-customer-list-for-billing.md" target="_blank" rel="noopener noreferrer">Export customer list for billing →</a>
-View customer's training enrollments|<a href="use-cases/reseller/view-customer-enrollment-list-and-report.md" target="_blank" rel="noopener noreferrer">View customer's training enrollment list and report →</a>
-View customer's simulation campaigns|<a href="use-cases/reseller/view-customer-simulation-campaign-list-and-report.md" target="_blank" rel="noopener noreferrer">View customer's simulation campaign list and report →</a>
+View customer's training enrollments|<a href="use-cases/reseller/view-customer-enrollment-list-and-report.md" target="_blank" rel="noopener noreferrer">View customer's enrollment list and report →</a>
+View customer's simulation campaigns|<a href="use-cases/reseller/view-customer-simulation-campaign-list-and-report.md" target="_blank" rel="noopener noreferrer">View customer's campaign list and report →</a>

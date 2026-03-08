@@ -48,7 +48,7 @@ Once credentials are set and you have (or can obtain) an access token, you can a
 
 **Example prompt:** *“Please list training enrollment for customer Acme LLC.”*
 
-**Maps to:** Reseller use-case **View customer's training enrollment list and report**.  
+**Maps to:** Reseller use-case **View customer's enrollment list and report**.  
 **Flow:**
 
 1. Get the customer’s Company ID: `POST /api/companies/search` → find the company by name (e.g. “Acme LLC”) and take its `resourceId`.
@@ -91,8 +91,8 @@ Or: *“Create a SCIM integration for customer Acme LLC.”*
 | “Export my company list for billing.” | **Export customer list for billing** — `POST /api/companies/search/export` |
 | “List target users for customer X.” | **List or export target users for a customer** — `POST /api/target-users/search` with `X-KEEPNET-Company-Id` |
 | “Add target users to customer Acme.” | **Add target users for a customer** — `POST /api/target-users` with header + body |
-| “Show me phishing campaign list for customer Y.” | **View customer's simulation campaign list and report** — `POST /api/phishing-simulator/phishing-campaign/search` with `X-KEEPNET-Company-Id` |
-| “Create a new company.” | **Create a new company** — `POST /api/companies` (multipart/form-data) |
+| “Show me phishing campaign list for customer Y.” | **View customer's campaign list and report** — `POST /api/phishing-simulator/phishing-campaign/search` with `X-KEEPNET-Company-Id` |
+| “Create a new company.” | **Create a company** — `POST /api/companies` (multipart/form-data) |
 
 The assistant uses the MCP documentation to resolve the correct endpoint, method, headers, and body shape.
 
