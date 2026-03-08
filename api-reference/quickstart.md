@@ -68,7 +68,7 @@ Response:
 
 ```json
 {
-  "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "access_token": "eyJ...",
   "expires_in": 3600,
   "token_type": "Bearer",
   "scope": "api1",
@@ -99,11 +99,11 @@ const { access_token } = await response.json();
 {% endtabs %}
 
 {% hint style="success" %}
-**Use Authorize to get your token**
+**Test it — adım adım**
 
-1. Open the **Authentication** panel (OAuth2) in the **Endpoints** sidebar.
-2. Enter your **Client ID** and **Client Secret**.
-3. Click **Authorize** — the token is fetched and applied to all subsequent requests.
+1. **Authorize:** Endpoints panelinde herhangi bir endpoint açın → **Authorize** (kilit ikonu) → **Client ID** ve **Client Secret** girin → **Authorize** tıklayın. Token otomatik alınır ve tüm isteklere eklenir.
+2. **GET /api/companies/my:** Endpoints → **Company** → **Retrieves the companies which can be simulated by user** → **Send**. Body yok, direkt sonuç alırsınız.
+3. **POST /api/companies/search:** Endpoints → **Company** → **Retrieves a list of all companies** → Body hazır (`pageNumber: 1`, `pageSize: 10`, `orderBy: CreateTime`) → **Send**. Reseller credential gerekir.
 {% endhint %}
 
 {% endstep %}
@@ -124,13 +124,29 @@ curl -X GET "https://api.keepnetlabs.com/api/companies/my" \
   -H "Content-Type: application/json"
 ```
 
-If successful, you'll get `isSuccess: true` and a `data` array with your company details (id, name, etc.). This confirms:
+If successful, you'll get a `data` array with your company details (id, name, etc.). This confirms:
 * Token is valid
 * Credentials have API access
 * You can fetch your own company data
 
 {% endstep %}
 {% endstepper %}
+
+---
+
+## Test it — hızlı kontrol listesi
+
+Endpoints panelinde (sağ sidebar) aşağıdaki sırayla test edin:
+
+Adım|Ne yap|Sonuç
+:---|:---|:---
+1|**Authorize** → Client ID + Client Secret gir → Authorize tıkla|Token alınır, tüm isteklere otomatik eklenir
+2|**GET /api/companies/my** (Company) → Send|Company listesi döner (Company Admin) veya yönettiğiniz şirketler (Reseller)
+3|**POST /api/companies/search** (Company) → Body hazır → Send|Company listesi + license bilgileri (Reseller credential gerekir)
+
+{% hint style="info" %}
+**Company Admin** credential ile adım 3 → `403 Forbidden`. Bu normal — companies/search sadece Reseller için.
+{% endhint %}
 
 ---
 
@@ -193,7 +209,7 @@ Claim|Description|Example
 :---|:---|:---
 `exp`|Expiry (Unix timestamp)|`1772935488`
 `iat`|Issued at (Unix timestamp)|`1772931888`
-`client_id`|Client ID used to obtain the token|`R5SS0MCusE2yKD7kbraVTfyfVRKHyLsN`
+`client_id`|Client ID used to obtain the token|`xxxxxxxxxxxxxxxx`
 
 {% hint style="info" %}
 **Company Admin**

@@ -27,6 +27,16 @@ Bu klasör, GitBook API Reference için `x-parent` ile zenginleştirilmiş OpenA
 1. `scripts/enrich-openapi-spec.mjs` script'ini çalıştırın.
 2. GitBook → OpenAPI → `keepnet-api` → **Update** ile yeni dosyayı yükleyin.
 
+### ⚠️ Test it'te Body yanlış görünüyorsa (filterGroups, orderBy: null, 400 hatası)
+
+**Sebep:** GitBook, canlı API URL'sini (`https://api.keepnetlabs.com/swagger/v1/swagger.json`) kullanıyor olabilir. Bu spec'te request body schema karmaşık — API 400 döner.
+
+**Çözüm:** GitBook Integration → OpenAPI → `keepnet-api` → **Source URL** mutlaka **GitHub raw** olmalı:
+```
+https://raw.githubusercontent.com/ORGANIZATION/keepnet-docs/BRANCH/openapi/keepnet-api-spec.json
+```
+Enriched spec minimal body içerir (`pageNumber`, `pageSize`, `orderBy`, `filter: null`). **Check for updates** tıklayın.
+
 ## Spec Güncelleme
 
 API değiştiğinde spec'i yeniden oluşturun. Repo root'tan:
