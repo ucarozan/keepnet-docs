@@ -20,10 +20,6 @@ The documentation covers an extensive scope, encompassing details about various 
 
 To ensure a seamless experience, our documentation is structured in alignment with the Keepnet product interface. Starting with the Dashboard, users can navigate through each section, such as Threat Intelligence, Awareness Educator, and beyond. This intuitive structure allows users to easily find relevant information and logically progress through the documentation.
 
-## For contributors
-
-If you're writing or updating documentation, follow the rules in [DOCUMENTATION-RULES.md](DOCUMENTATION-RULES.md). Hard rules apply to all API Reference and platform docs.
-
 ## How to get help with the documentation
 
 Should you require assistance using our documentation, we recommend carefully reading the instructions and guidelines. The outlined steps and best practices will help you derive the most value from available resources. If you need further support, our support team is available to address any specific queries or concerns. [Reach out to us](resources/keepnet-support-help-desk.md), and we will be more than happy to assist you in making the most of our documentation and achieving your desired outcomes.
