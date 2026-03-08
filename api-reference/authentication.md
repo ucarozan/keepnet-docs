@@ -30,6 +30,10 @@ Field|Description
 
 **Endpoint:** `POST /connect/token`
 
+{% swagger src="../openapi/keepnet-api-spec.json" path="/connect/token" method="post" expanded="true" %}
+<a href="../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
+{% endswagger %}
+
 ```bash
 curl -X POST https://api.keepnetlabs.com/connect/token \
   -H "Content-Type: application/x-www-form-urlencoded" \
