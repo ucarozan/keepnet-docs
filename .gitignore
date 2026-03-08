@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Dependencies (if any)
+node_modules/
+
+# Local / temp
+*.log
+.env
+.env.local
+*.zip
+
+# Optional: one-off audits (uncomment if you don’t want to track them)
+# *-AUDIT.md

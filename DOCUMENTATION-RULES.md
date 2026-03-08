@@ -4,6 +4,16 @@ This file defines **mandatory (hard) rules** for doc.keepnetlabs.com and API Ref
 
 ---
 
+## 📄 How this file relates to keepnet-api-docs-standards.md
+
+**DOCUMENTATION-RULES.md** (this file) = **What to do and how to structure:** GitBook references, OpenAPI/Test it, x-parent, SUMMARY menu, hard rules H0–H8d (links, tables, swagger, dummy data), Tag page / Quickstart templates, 7 Cs, terminology. Use when adding pages, changing the menu, or checking review criteria.
+
+**keepnet-api-docs-standards.md** = **How to write:** Task-based headings, code first, direct links, Google Style (voice, tense, capitalization, lists, code formatting), page skeleton, hint usage, terminology. Use when writing or editing sentences and paragraphs.
+
+Both are used together. Where they overlap, **DOCUMENTATION-RULES** wins.
+
+---
+
 ## 📚 GitBook API Documentation References
 
 | Source | URL | Use |
@@ -475,6 +485,9 @@ Sıra|Bölüm|İçerik
 
 File|Description
 :---|:---
+`README.md`|Repo onboarding, clone, Cursor, GitBook sync
+`keepnet-api-docs-standards.md`|Writing standards (Google Style + 3 Keepnet rules)
+`.cursor/rules/*.mdc`|Cursor rules for API docs (language, pages, links, menu)
 `GITBOOK-OPENAPI-SETUP.md`|OpenAPI spec, Test it, x-parent setup
 `scripts/enrich-openapi-spec.mjs`|Spec zenginleştirme — token endpoint, request body examples (H8c)
 `api-reference/`|Use-case pages, Quickstart
