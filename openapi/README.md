@@ -73,7 +73,8 @@ From **SUMMARY.md** (sidebar in GitBook). The **Endpoints** node is filled by th
 │   │
 │   ├── Training
 │   │   ├── View customer's enrollment list and report
-│   │   └── View customer's enrollment sending, certificates, and notifications
+│   │   ├── View customer's enrollment sending, certificates, and notifications
+│   │   └── Pull survey results for a customer
 │   │
 │   ├── Phishing simulation
 │   │   ├── View customer's campaign list and report

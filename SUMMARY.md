@@ -308,6 +308,7 @@
   * Training
     * [View customer's enrollment list and report](api-reference/use-cases/reseller/view-customer-enrollment-list-and-report.md)
     * [View customer's enrollment sending, certificates, and notifications](api-reference/use-cases/reseller/view-customer-enrollment-sending-certificates-notifications.md)
+    * [Pull survey results for a customer](api-reference/use-cases/reseller/pull-survey-results-for-customer.md)
   * Phishing simulation
     * [View customer's campaign list and report](api-reference/use-cases/reseller/view-customer-simulation-campaign-list-and-report.md)
     * [List phishing scenarios for a customer](api-reference/use-cases/reseller/list-phishing-scenarios-for-customer.md)
