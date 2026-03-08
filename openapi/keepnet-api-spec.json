@@ -16,6 +16,7 @@
   "paths": {
     "/connect/token": {
       "post": {
+        "x-scalar-ignore": true,
         "tags": [
           "Authentication"
         ],

@@ -31,9 +31,11 @@ function collectTagsFromPaths(spec) {
 }
 
 /** OAuth token endpoint — GitBook Test it + authentication sayfası embed için */
+/** x-scalar-ignore: Token endpoint'i API client listesinden gizler. Kullanıcı sadece Authorize kullanır; Send ile invalid_client hatası önlenir. */
 const CONNECT_TOKEN_PATH = {
   '/connect/token': {
     post: {
+      'x-scalar-ignore': true,
       tags: ['Authentication'],
       operationId: 'requestAccessToken',
       summary: 'Request an access token',

@@ -6,21 +6,19 @@ Keepnet API uses **OAuth 2.0 Client Credentials** flow. Every request requires a
 
 ## Generate API credentials
 
-Before making any API calls, generate a **Client ID** and **Client Secret** from the platform.
+Generate a **Client ID** and **Client Secret** from the platform before making any API calls.
 
 {% hint style="info" %}
-**Platform UI:** Go to **Company → Company Settings → REST API** and click **+ NEW**.\
+**Platform UI:** Go to **Company → Company Settings → REST API** and click **+ NEW**.
 <a href="../next-generation-product/platform/company/company-settings/rest-api.md" target="_blank" rel="noopener noreferrer">REST API Settings →</a>
 {% endhint %}
 
-Configure the following fields when generating credentials:
-
-|Field|Description|
-|:---|:---|
-|**Name**|A label for this credential set (e.g. `prod-integration`, `siem-connector`)|
-|**Client Role**|`Company Admin` for full access, or a custom role with limited privileges|
-|**IP Restriction**|Optionally restrict access to specific IP addresses|
-|**Status**|Set to `Active`|
+Field|Description
+:---|:---
+**Name**|A label for this credential set (e.g. `prod-integration`, `siem-connector`)
+**Client Role**|`Company Admin` for full access, or a custom role with limited privileges
+**IP Restriction**|Optionally restrict access to specific IP addresses
+**Status**|Set to `Active`
 
 {% hint style="warning" %}
 **The Client Secret is shown only once.** Copy and store it securely immediately after you generate it — it cannot be retrieved later.
@@ -32,15 +30,14 @@ Configure the following fields when generating credentials:
 
 **Endpoint:** `POST /connect/token`
 
-{% swagger src="../openapi/keepnet-api-spec.json" path="/connect/token" method="post" expanded="true" %}
-<a href="../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
-
-**Test it — steps:**
-1. Expand **Body** → **Form URL Encoded**.
-2. Replace `client_id` and `client_secret` with your real credentials from **Company → Company Settings → REST API**.
-3. Do **not** leave them as "Value" or empty — that returns `invalid_client`.
-4. Click **Send**.
+```bash
+curl -X POST https://api.keepnetlabs.com/connect/token \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -d "grant_type=client_credentials" \
+  -d "client_id=YOUR_CLIENT_ID" \
+  -d "client_secret=YOUR_CLIENT_SECRET" \
+  -d "scope=api1"
+```
 
 The response includes your token and its expiry time.
 
@@ -53,26 +50,35 @@ The response includes your token and its expiry time.
 }
 ```
 
-|Field|Description|
-|:---|:---|
-|`access_token`|Include this in every API request|
-|`expires_in`|Seconds until expiry — typically `3600` (1 hour)|
-|`token_type`|Always `Bearer`|
-|`scope`|Always `api1` for Keepnet API|
+Field|Description
+:---|:---
+`access_token`|Include this in every API request
+`expires_in`|Seconds until expiry — typically `3600` (1 hour)
+`token_type`|Always `Bearer`
+`scope`|Always `api1` for Keepnet API
+
+### Test it in the API client
+
+{% hint style="success" %}
+**Use Authorize to get your token**
+
+1. Open the **Authentication** panel (OAuth2).
+2. Enter your **Client ID** and **Client Secret** from **Company → Company Settings → REST API**.
+3. Click **Authorize** — the token is fetched and applied to all subsequent requests.
+4. For other endpoints (e.g. list campaigns), go to that page and execute the request — the token is already applied.
+{% endhint %}
 
 {% hint style="info" %}
-[Endpoints → Authentication → Request an access token → Test it](sidebar)
+<a href="../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">OpenAPI spec →</a> — Full endpoint definition in **Endpoints** (sidebar).
 {% endhint %}
 
 ---
 
 ## Make an authenticated request
 
-Include the token in every API request: `Authorization: Bearer <access_token>`. Example: list trainings via `GET /api/awareness-educator/trainings`.
+Include the token in every API request: `Authorization: Bearer <access_token>`.
 
-{% hint style="info" %}
-[Endpoints → Test it](sidebar) — Paste `Bearer <access_token>` in **Authorization**.
-{% endhint %}
+Example: list trainings via `GET /api/awareness-educator/trainings`. After you **Authorize** once, the token is sent automatically with each request.
 
 ---
 
@@ -92,7 +98,6 @@ class KeepnetClient {
   }
 
   async getToken() {
-    // Refresh 60 seconds before expiry
     if (this.token && Date.now() < this.tokenExpiresAt - 60_000) {
       return this.token;
     }
@@ -134,14 +139,14 @@ class KeepnetClient {
 
 The **Client Role** on your credentials determines which endpoints are accessible.
 
-|Role|Access level|
-|:---|:---|
-|`Company Admin`|Full access to all endpoints|
-|`Reseller`|Cross-company management endpoints|
-|Custom role|Scoped to specific products or actions|
+Role|Access level
+:---|:---
+`Company Admin`|Full access to all endpoints
+`Reseller`|Cross-company management endpoints
+Custom role|Scoped to specific products or actions
 
 {% hint style="info" %}
-To restrict a credential set to specific products (e.g. Awareness Educator only), create a custom role with limited privileges.\
+To restrict a credential set to specific products (e.g. Awareness Educator only), create a custom role with limited privileges.
 <a href="../next-generation-product/platform/company/system-users/user-roles.md" target="_blank" rel="noopener noreferrer">Roles and permissions →</a>
 {% endhint %}
 
@@ -149,13 +154,13 @@ To restrict a credential set to specific products (e.g. Awareness Educator only)
 
 ## Handle authentication errors
 
-|HTTP status|Cause|Action|
-|:---|:---|:---|
-|`400 Bad Request` — `invalid_client`|Wrong or placeholder `client_id`/`client_secret`|Use real credentials from **Company → Company Settings → REST API**. Replace "Value" in Body with your Client ID and Client Secret.|
-|`401 Unauthorized`|Missing or invalid token|Re-authenticate and retry|
-|`401 Unauthorized`|Token expired|Request a new token|
-|`403 Forbidden`|Insufficient role permissions|Check the Client Role in platform settings|
-|`429 Too Many Requests`|Rate limit exceeded|Back off and retry after a delay|
+HTTP status|Cause|Action
+:---|:---|:---
+`400 Bad Request` — `invalid_client`|Wrong or placeholder `client_id`/`client_secret`|Use real credentials from **Company → Company Settings → REST API**. Ensure Client ID and Client Secret are correct in the OAuth2 panel.
+`401 Unauthorized`|Missing or invalid token|Re-authenticate and retry
+`401 Unauthorized`|Token expired|Request a new token
+`403 Forbidden`|Insufficient role permissions|Check the Client Role in platform settings
+`429 Too Many Requests`|Rate limit exceeded|Back off and retry after a delay
 
 ---
 
