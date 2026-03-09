@@ -6017,7 +6017,8 @@
                   "pageNumber",
                   "pageSize",
                   "orderBy",
-                  "ascending"
+                  "ascending",
+                  "filter"
                 ],
                 "properties": {
                   "pageNumber": {
@@ -6038,10 +6039,20 @@
                   },
                   "filter": {
                     "type": "object",
-                    "nullable": true
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
                   },
                   "isTargetUserCountExceededLimit": {
                     "type": "boolean",
+                    "example": false,
                     "description": "If true, only companies exceeding license limit are returned"
                   }
                 }
@@ -6051,7 +6062,10 @@
                 "pageSize": 10,
                 "orderBy": "CreateTime",
                 "ascending": false,
-                "filter": null
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               },
               "examples": {
                 "default": {
@@ -6061,7 +6075,10 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 },
                 "overage": {
@@ -6071,7 +6088,10 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    },
                     "isTargetUserCountExceededLimit": true
                   }
                 }
@@ -6084,7 +6104,8 @@
                   "pageNumber",
                   "pageSize",
                   "orderBy",
-                  "ascending"
+                  "ascending",
+                  "filter"
                 ],
                 "properties": {
                   "pageNumber": {
@@ -6105,10 +6126,20 @@
                   },
                   "filter": {
                     "type": "object",
-                    "nullable": true
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
                   },
                   "isTargetUserCountExceededLimit": {
                     "type": "boolean",
+                    "example": false,
                     "description": "If true, only companies exceeding license limit are returned"
                   }
                 }
@@ -6118,7 +6149,10 @@
                 "pageSize": 10,
                 "orderBy": "CreateTime",
                 "ascending": false,
-                "filter": null
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               },
               "examples": {
                 "default": {
@@ -6128,7 +6162,10 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 },
                 "overage": {
@@ -6138,7 +6175,10 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    },
                     "isTargetUserCountExceededLimit": true
                   }
                 }
@@ -6151,7 +6191,8 @@
                   "pageNumber",
                   "pageSize",
                   "orderBy",
-                  "ascending"
+                  "ascending",
+                  "filter"
                 ],
                 "properties": {
                   "pageNumber": {
@@ -6172,10 +6213,20 @@
                   },
                   "filter": {
                     "type": "object",
-                    "nullable": true
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
                   },
                   "isTargetUserCountExceededLimit": {
                     "type": "boolean",
+                    "example": false,
                     "description": "If true, only companies exceeding license limit are returned"
                   }
                 }
@@ -6185,7 +6236,10 @@
                 "pageSize": 10,
                 "orderBy": "CreateTime",
                 "ascending": false,
-                "filter": null
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               },
               "examples": {
                 "default": {
@@ -6195,7 +6249,10 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 },
                 "overage": {
@@ -6205,7 +6262,10 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    },
                     "isTargetUserCountExceededLimit": true
                   }
                 }
@@ -6218,7 +6278,8 @@
                   "pageNumber",
                   "pageSize",
                   "orderBy",
-                  "ascending"
+                  "ascending",
+                  "filter"
                 ],
                 "properties": {
                   "pageNumber": {
@@ -6239,10 +6300,20 @@
                   },
                   "filter": {
                     "type": "object",
-                    "nullable": true
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
                   },
                   "isTargetUserCountExceededLimit": {
                     "type": "boolean",
+                    "example": false,
                     "description": "If true, only companies exceeding license limit are returned"
                   }
                 }
@@ -6252,7 +6323,10 @@
                 "pageSize": 10,
                 "orderBy": "CreateTime",
                 "ascending": false,
-                "filter": null
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               },
               "examples": {
                 "default": {
@@ -6262,7 +6336,10 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 },
                 "overage": {
@@ -6272,7 +6349,10 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    },
                     "isTargetUserCountExceededLimit": true
                   }
                 }
@@ -6311,7 +6391,8 @@
                   "pageSize",
                   "orderBy",
                   "ascending",
-                  "exportType"
+                  "exportType",
+                  "filter"
                 ],
                 "properties": {
                   "pageNumber": {
@@ -6330,9 +6411,14 @@
                     "type": "boolean",
                     "example": false
                   },
-                  "filter": {
-                    "type": "object",
-                    "nullable": true
+                  "isClustered": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "isTargetUserCountExceededLimit": {
+                    "type": "boolean",
+                    "example": false,
+                    "description": "If true, export only companies exceeding license limit"
                   },
                   "reportAllPages": {
                     "type": "boolean",
@@ -6340,11 +6426,20 @@
                   },
                   "exportType": {
                     "type": "string",
-                    "example": "Csv"
+                    "example": "CSV"
                   },
-                  "isTargetUserCountExceededLimit": {
-                    "type": "boolean",
-                    "description": "If true, export only companies exceeding license limit"
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
                   }
                 }
               },
@@ -6353,9 +6448,14 @@
                 "pageSize": 10,
                 "orderBy": "CreateTime",
                 "ascending": false,
-                "filter": null,
+                "isClustered": false,
+                "isTargetUserCountExceededLimit": false,
                 "reportAllPages": false,
-                "exportType": "Csv"
+                "exportType": "CSV",
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               },
               "examples": {
                 "default": {
@@ -6365,9 +6465,14 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null,
+                    "isClustered": false,
+                    "isTargetUserCountExceededLimit": false,
                     "reportAllPages": false,
-                    "exportType": "Csv"
+                    "exportType": "CSV",
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 },
                 "overage": {
@@ -6377,10 +6482,14 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null,
+                    "isClustered": false,
+                    "isTargetUserCountExceededLimit": true,
                     "reportAllPages": false,
-                    "exportType": "Csv",
-                    "isTargetUserCountExceededLimit": true
+                    "exportType": "CSV",
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 }
               }
@@ -6393,7 +6502,8 @@
                   "pageSize",
                   "orderBy",
                   "ascending",
-                  "exportType"
+                  "exportType",
+                  "filter"
                 ],
                 "properties": {
                   "pageNumber": {
@@ -6412,9 +6522,14 @@
                     "type": "boolean",
                     "example": false
                   },
-                  "filter": {
-                    "type": "object",
-                    "nullable": true
+                  "isClustered": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "isTargetUserCountExceededLimit": {
+                    "type": "boolean",
+                    "example": false,
+                    "description": "If true, export only companies exceeding license limit"
                   },
                   "reportAllPages": {
                     "type": "boolean",
@@ -6422,11 +6537,20 @@
                   },
                   "exportType": {
                     "type": "string",
-                    "example": "Csv"
+                    "example": "CSV"
                   },
-                  "isTargetUserCountExceededLimit": {
-                    "type": "boolean",
-                    "description": "If true, export only companies exceeding license limit"
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
                   }
                 }
               },
@@ -6435,9 +6559,14 @@
                 "pageSize": 10,
                 "orderBy": "CreateTime",
                 "ascending": false,
-                "filter": null,
+                "isClustered": false,
+                "isTargetUserCountExceededLimit": false,
                 "reportAllPages": false,
-                "exportType": "Csv"
+                "exportType": "CSV",
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               },
               "examples": {
                 "default": {
@@ -6447,9 +6576,14 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null,
+                    "isClustered": false,
+                    "isTargetUserCountExceededLimit": false,
                     "reportAllPages": false,
-                    "exportType": "Csv"
+                    "exportType": "CSV",
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 },
                 "overage": {
@@ -6459,10 +6593,14 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null,
+                    "isClustered": false,
+                    "isTargetUserCountExceededLimit": true,
                     "reportAllPages": false,
-                    "exportType": "Csv",
-                    "isTargetUserCountExceededLimit": true
+                    "exportType": "CSV",
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 }
               }
@@ -6475,7 +6613,8 @@
                   "pageSize",
                   "orderBy",
                   "ascending",
-                  "exportType"
+                  "exportType",
+                  "filter"
                 ],
                 "properties": {
                   "pageNumber": {
@@ -6494,9 +6633,14 @@
                     "type": "boolean",
                     "example": false
                   },
-                  "filter": {
-                    "type": "object",
-                    "nullable": true
+                  "isClustered": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "isTargetUserCountExceededLimit": {
+                    "type": "boolean",
+                    "example": false,
+                    "description": "If true, export only companies exceeding license limit"
                   },
                   "reportAllPages": {
                     "type": "boolean",
@@ -6504,11 +6648,20 @@
                   },
                   "exportType": {
                     "type": "string",
-                    "example": "Csv"
+                    "example": "CSV"
                   },
-                  "isTargetUserCountExceededLimit": {
-                    "type": "boolean",
-                    "description": "If true, export only companies exceeding license limit"
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
                   }
                 }
               },
@@ -6517,9 +6670,14 @@
                 "pageSize": 10,
                 "orderBy": "CreateTime",
                 "ascending": false,
-                "filter": null,
+                "isClustered": false,
+                "isTargetUserCountExceededLimit": false,
                 "reportAllPages": false,
-                "exportType": "Csv"
+                "exportType": "CSV",
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               },
               "examples": {
                 "default": {
@@ -6529,9 +6687,14 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null,
+                    "isClustered": false,
+                    "isTargetUserCountExceededLimit": false,
                     "reportAllPages": false,
-                    "exportType": "Csv"
+                    "exportType": "CSV",
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 },
                 "overage": {
@@ -6541,10 +6704,14 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null,
+                    "isClustered": false,
+                    "isTargetUserCountExceededLimit": true,
                     "reportAllPages": false,
-                    "exportType": "Csv",
-                    "isTargetUserCountExceededLimit": true
+                    "exportType": "CSV",
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 }
               }
@@ -6557,7 +6724,8 @@
                   "pageSize",
                   "orderBy",
                   "ascending",
-                  "exportType"
+                  "exportType",
+                  "filter"
                 ],
                 "properties": {
                   "pageNumber": {
@@ -6576,9 +6744,14 @@
                     "type": "boolean",
                     "example": false
                   },
-                  "filter": {
-                    "type": "object",
-                    "nullable": true
+                  "isClustered": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "isTargetUserCountExceededLimit": {
+                    "type": "boolean",
+                    "example": false,
+                    "description": "If true, export only companies exceeding license limit"
                   },
                   "reportAllPages": {
                     "type": "boolean",
@@ -6586,11 +6759,20 @@
                   },
                   "exportType": {
                     "type": "string",
-                    "example": "Csv"
+                    "example": "CSV"
                   },
-                  "isTargetUserCountExceededLimit": {
-                    "type": "boolean",
-                    "description": "If true, export only companies exceeding license limit"
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
                   }
                 }
               },
@@ -6599,9 +6781,14 @@
                 "pageSize": 10,
                 "orderBy": "CreateTime",
                 "ascending": false,
-                "filter": null,
+                "isClustered": false,
+                "isTargetUserCountExceededLimit": false,
                 "reportAllPages": false,
-                "exportType": "Csv"
+                "exportType": "CSV",
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               },
               "examples": {
                 "default": {
@@ -6611,9 +6798,14 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null,
+                    "isClustered": false,
+                    "isTargetUserCountExceededLimit": false,
                     "reportAllPages": false,
-                    "exportType": "Csv"
+                    "exportType": "CSV",
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 },
                 "overage": {
@@ -6623,10 +6815,14 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null,
+                    "isClustered": false,
+                    "isTargetUserCountExceededLimit": true,
                     "reportAllPages": false,
-                    "exportType": "Csv",
-                    "isTargetUserCountExceededLimit": true
+                    "exportType": "CSV",
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 }
               }
@@ -8390,7 +8586,10 @@
                 "pageSize": 10,
                 "orderBy": "CreateTime",
                 "ascending": false,
-                "filter": null
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               },
               "examples": {
                 "default": {
@@ -8400,7 +8599,10 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 }
               }
@@ -8442,7 +8644,10 @@
                 "pageSize": 10,
                 "orderBy": "CreateTime",
                 "ascending": false,
-                "filter": null
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               },
               "examples": {
                 "default": {
@@ -8452,7 +8657,10 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 }
               }
@@ -8494,7 +8702,10 @@
                 "pageSize": 10,
                 "orderBy": "CreateTime",
                 "ascending": false,
-                "filter": null
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               },
               "examples": {
                 "default": {
@@ -8504,7 +8715,10 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 }
               }
@@ -8546,7 +8760,10 @@
                 "pageSize": 10,
                 "orderBy": "CreateTime",
                 "ascending": false,
-                "filter": null
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               },
               "examples": {
                 "default": {
@@ -8556,7 +8773,10 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 }
               }
@@ -8623,7 +8843,7 @@
                   },
                   "exportType": {
                     "type": "string",
-                    "example": "Csv"
+                    "example": "CSV"
                   }
                 }
               },
@@ -8632,9 +8852,13 @@
                 "pageSize": 10,
                 "orderBy": "CreateTime",
                 "ascending": false,
-                "filter": null,
+                "isClustered": false,
                 "reportAllPages": false,
-                "exportType": "Csv"
+                "exportType": "CSV",
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               },
               "examples": {
                 "default": {
@@ -8644,9 +8868,13 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null,
+                    "isClustered": false,
                     "reportAllPages": false,
-                    "exportType": "Csv"
+                    "exportType": "CSV",
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 }
               }
@@ -8688,7 +8916,7 @@
                   },
                   "exportType": {
                     "type": "string",
-                    "example": "Csv"
+                    "example": "CSV"
                   }
                 }
               },
@@ -8697,9 +8925,13 @@
                 "pageSize": 10,
                 "orderBy": "CreateTime",
                 "ascending": false,
-                "filter": null,
+                "isClustered": false,
                 "reportAllPages": false,
-                "exportType": "Csv"
+                "exportType": "CSV",
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               },
               "examples": {
                 "default": {
@@ -8709,9 +8941,13 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null,
+                    "isClustered": false,
                     "reportAllPages": false,
-                    "exportType": "Csv"
+                    "exportType": "CSV",
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 }
               }
@@ -8753,7 +8989,7 @@
                   },
                   "exportType": {
                     "type": "string",
-                    "example": "Csv"
+                    "example": "CSV"
                   }
                 }
               },
@@ -8762,9 +8998,13 @@
                 "pageSize": 10,
                 "orderBy": "CreateTime",
                 "ascending": false,
-                "filter": null,
+                "isClustered": false,
                 "reportAllPages": false,
-                "exportType": "Csv"
+                "exportType": "CSV",
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               },
               "examples": {
                 "default": {
@@ -8774,9 +9014,13 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null,
+                    "isClustered": false,
                     "reportAllPages": false,
-                    "exportType": "Csv"
+                    "exportType": "CSV",
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 }
               }
@@ -8818,7 +9062,7 @@
                   },
                   "exportType": {
                     "type": "string",
-                    "example": "Csv"
+                    "example": "CSV"
                   }
                 }
               },
@@ -8827,9 +9071,13 @@
                 "pageSize": 10,
                 "orderBy": "CreateTime",
                 "ascending": false,
-                "filter": null,
+                "isClustered": false,
                 "reportAllPages": false,
-                "exportType": "Csv"
+                "exportType": "CSV",
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               },
               "examples": {
                 "default": {
@@ -8839,9 +9087,13 @@
                     "pageSize": 10,
                     "orderBy": "CreateTime",
                     "ascending": false,
-                    "filter": null,
+                    "isClustered": false,
                     "reportAllPages": false,
-                    "exportType": "Csv"
+                    "exportType": "CSV",
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
                   }
                 }
               }
@@ -12019,7 +12271,7 @@
                   },
                   "exportType": {
                     "type": "string",
-                    "example": "Csv"
+                    "example": "CSV"
                   },
                   "enrollmentType": {
                     "type": "string",
@@ -12038,7 +12290,7 @@
                   "filterGroups": []
                 },
                 "reportAllPages": false,
-                "exportType": "Csv"
+                "exportType": "CSV"
               },
               "examples": {
                 "default": {
@@ -12054,7 +12306,7 @@
                       "filterGroups": []
                     },
                     "reportAllPages": false,
-                    "exportType": "Csv"
+                    "exportType": "CSV"
                   }
                 }
               }
@@ -12112,7 +12364,7 @@
                   },
                   "exportType": {
                     "type": "string",
-                    "example": "Csv"
+                    "example": "CSV"
                   },
                   "enrollmentType": {
                     "type": "string",
@@ -12131,7 +12383,7 @@
                   "filterGroups": []
                 },
                 "reportAllPages": false,
-                "exportType": "Csv"
+                "exportType": "CSV"
               },
               "examples": {
                 "default": {
@@ -12147,7 +12399,7 @@
                       "filterGroups": []
                     },
                     "reportAllPages": false,
-                    "exportType": "Csv"
+                    "exportType": "CSV"
                   }
                 }
               }
@@ -12205,7 +12457,7 @@
                   },
                   "exportType": {
                     "type": "string",
-                    "example": "Csv"
+                    "example": "CSV"
                   },
                   "enrollmentType": {
                     "type": "string",
@@ -12224,7 +12476,7 @@
                   "filterGroups": []
                 },
                 "reportAllPages": false,
-                "exportType": "Csv"
+                "exportType": "CSV"
               },
               "examples": {
                 "default": {
@@ -12240,7 +12492,7 @@
                       "filterGroups": []
                     },
                     "reportAllPages": false,
-                    "exportType": "Csv"
+                    "exportType": "CSV"
                   }
                 }
               }
@@ -12298,7 +12550,7 @@
                   },
                   "exportType": {
                     "type": "string",
-                    "example": "Csv"
+                    "example": "CSV"
                   },
                   "enrollmentType": {
                     "type": "string",
@@ -12317,7 +12569,7 @@
                   "filterGroups": []
                 },
                 "reportAllPages": false,
-                "exportType": "Csv"
+                "exportType": "CSV"
               },
               "examples": {
                 "default": {
@@ -12333,7 +12585,7 @@
                       "filterGroups": []
                     },
                     "reportAllPages": false,
-                    "exportType": "Csv"
+                    "exportType": "CSV"
                   }
                 }
               }

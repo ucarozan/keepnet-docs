@@ -138,7 +138,10 @@ const COMPANIES_SEARCH_EXAMPLE = {
   pageSize: 10,
   orderBy: 'CreateTime',
   ascending: false,
-  filter: null,
+  filter: {
+    Condition: 'AND',
+    SearchInputTextValue: '',
+  },
 };
 
 /** Companies search for overage list — Reseller: isTargetUserCountExceededLimit. */
@@ -147,7 +150,10 @@ const COMPANIES_SEARCH_OVERAGE_EXAMPLE = {
   pageSize: 10,
   orderBy: 'CreateTime',
   ascending: false,
-  filter: null,
+  filter: {
+    Condition: 'AND',
+    SearchInputTextValue: '',
+  },
   isTargetUserCountExceededLimit: true,
 };
 
@@ -157,9 +163,14 @@ const COMPANIES_SEARCH_EXPORT_EXAMPLE = {
   pageSize: 10,
   orderBy: 'CreateTime',
   ascending: false,
-  filter: null,
+  isClustered: false,
+  isTargetUserCountExceededLimit: false,
   reportAllPages: false,
-  exportType: 'Csv',
+  exportType: 'CSV',
+  filter: {
+    Condition: 'AND',
+    SearchInputTextValue: '',
+  },
 };
 
 /** Companies export for overage list — isTargetUserCountExceededLimit. */
@@ -168,10 +179,14 @@ const COMPANIES_SEARCH_EXPORT_OVERAGE_EXAMPLE = {
   pageSize: 10,
   orderBy: 'CreateTime',
   ascending: false,
-  filter: null,
-  reportAllPages: false,
-  exportType: 'Csv',
+  isClustered: false,
   isTargetUserCountExceededLimit: true,
+  reportAllPages: false,
+  exportType: 'CSV',
+  filter: {
+    Condition: 'AND',
+    SearchInputTextValue: '',
+  },
 };
 
 /** Company groups search — Reseller: list groups, Test it minimal body. */
@@ -180,7 +195,10 @@ const COMPANY_GROUPS_SEARCH_EXAMPLE = {
   pageSize: 10,
   orderBy: 'CreateTime',
   ascending: false,
-  filter: null,
+  filter: {
+    Condition: 'AND',
+    SearchInputTextValue: '',
+  },
 };
 
 /** Company groups export — Reseller: export groups to CSV. */
@@ -189,9 +207,13 @@ const COMPANY_GROUPS_SEARCH_EXPORT_EXAMPLE = {
   pageSize: 10,
   orderBy: 'CreateTime',
   ascending: false,
-  filter: null,
+  isClustered: false,
   reportAllPages: false,
-  exportType: 'Csv',
+  exportType: 'CSV',
+  filter: {
+    Condition: 'AND',
+    SearchInputTextValue: '',
+  },
 };
 
 /** Enrollments search — Reseller: list enrollments; filter structure required by API. */
@@ -235,26 +257,30 @@ const ENROLLMENTS_SEARCH_EXPORT_EXAMPLE = {
     filterGroups: [],
   },
   reportAllPages: false,
-  exportType: 'Csv',
+  exportType: 'CSV',
 };
 
 function injectRequestExamples(paths) {
   const result = { ...paths };
 
   if (result['/api/companies/search']?.post?.requestBody?.content) {
-    // Default from schema (filterGroups, filterItems etc.) causes 400 Invalid request from API.
-    // Use example only — no schema; client shows this example as default body.
     const content = {
       schema: {
         type: 'object',
-        required: ['pageNumber', 'pageSize', 'orderBy', 'ascending'],
+        required: ['pageNumber', 'pageSize', 'orderBy', 'ascending', 'filter'],
         properties: {
           pageNumber: { type: 'integer', example: 1 },
           pageSize: { type: 'integer', example: 10 },
           orderBy: { type: 'string', example: 'CreateTime' },
           ascending: { type: 'boolean', example: false },
-          filter: { type: 'object', nullable: true },
-          isTargetUserCountExceededLimit: { type: 'boolean', description: 'If true, only companies exceeding license limit are returned' },
+          filter: {
+            type: 'object',
+            properties: {
+              Condition: { type: 'string', example: 'AND' },
+              SearchInputTextValue: { type: 'string', example: '' },
+            },
+          },
+          isTargetUserCountExceededLimit: { type: 'boolean', example: false, description: 'If true, only companies exceeding license limit are returned' },
         },
       },
       example: COMPANIES_SEARCH_EXAMPLE,
@@ -278,16 +304,23 @@ function injectRequestExamples(paths) {
     const exportContent = {
       schema: {
         type: 'object',
-        required: ['pageNumber', 'pageSize', 'orderBy', 'ascending', 'exportType'],
+        required: ['pageNumber', 'pageSize', 'orderBy', 'ascending', 'exportType', 'filter'],
         properties: {
           pageNumber: { type: 'integer', example: 1 },
           pageSize: { type: 'integer', example: 10 },
           orderBy: { type: 'string', example: 'CreateTime' },
           ascending: { type: 'boolean', example: false },
-          filter: { type: 'object', nullable: true },
+          isClustered: { type: 'boolean', example: false },
+          isTargetUserCountExceededLimit: { type: 'boolean', example: false, description: 'If true, export only companies exceeding license limit' },
           reportAllPages: { type: 'boolean', example: false },
-          exportType: { type: 'string', example: 'Csv' },
-          isTargetUserCountExceededLimit: { type: 'boolean', description: 'If true, export only companies exceeding license limit' },
+          exportType: { type: 'string', example: 'CSV' },
+          filter: {
+            type: 'object',
+            properties: {
+              Condition: { type: 'string', example: 'AND' },
+              SearchInputTextValue: { type: 'string', example: '' },
+            },
+          },
         },
       },
       example: COMPANIES_SEARCH_EXPORT_EXAMPLE,
@@ -345,7 +378,7 @@ function injectRequestExamples(paths) {
           ascending: { type: 'boolean', example: false },
           filter: { type: 'object', nullable: true },
           reportAllPages: { type: 'boolean', example: false },
-          exportType: { type: 'string', example: 'Csv' },
+          exportType: { type: 'string', example: 'CSV' },
         },
       },
       example: COMPANY_GROUPS_SEARCH_EXPORT_EXAMPLE,
@@ -452,7 +485,7 @@ function injectRequestExamples(paths) {
             },
           },
           reportAllPages: { type: 'boolean', example: false },
-          exportType: { type: 'string', example: 'Csv' },
+          exportType: { type: 'string', example: 'CSV' },
           enrollmentType: { type: 'string', description: 'Optional: e.g. Survey' },
         },
       },
