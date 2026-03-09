@@ -33,7 +33,7 @@ You can add a second page to any landing page template without building it from 
 3. Select any existing **Click-Only** or **Data Submission** landing page from your library — it will be added as Page 2 automatically.
 4. Click **Save** to apply. You no longer need to build the second page manually or copy HTML.
 
-The same feature is available in [Phishing Simulator](../../../phishing-simulator/manage-phishing-scenarios/landing-pages.md#how-to-add-a-second-page-using-the-template-picker) and [Quishing Simulator](../../../quishing-simulator/manage-quishing-scenarios/quishing-landing-page-templates.md#how-to-add-a-second-page-using-the-template-picker).
+The same feature is available in [Phishing Simulator](../../../phishing-simulator/manage-phishing-scenarios/landing-pages#how-to-add-a-second-page-using-the-template-picker) and [Quishing Simulator](../../../quishing-simulator/manage-quishing-scenarios/quishing-landing-page-templates#how-to-add-a-second-page-using-the-template-picker).
 
 ### How to Edit a Landing Page Template
 
