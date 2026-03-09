@@ -6,7 +6,7 @@ The [**Phishing Simulator**](https://keepnetlabs.com/products/phishing-simulator
 
 The components of the **Landing Page Templates** page are explained below.
 
-<table><thead><tr><th width="150"></th><th width="590.1428571428571"></th></tr></thead><tbody><tr><td>Template name</td><td>The name of the landing page template</td></tr><tr><td>Method</td><td><p>The phishing technique employed.</p><ul><li><strong>Data Submit:</strong> Used to detect target users who submit data on the landing page</li><li><strong>Attachment:</strong> Used to detect target users who download the attachment in the phishing simulation email</li><li><strong>Click-Only:</strong> Used to detect target users who click unknown links in the phishing email</li></ul></td></tr><tr><td>Languages</td><td>Filter landing pages based on your preferred languages.</td></tr><tr><td>Difficulty</td><td>The level of difficulty to recognize a phishing attempt <strong>(Easy, Medium, Hard).</strong> Please <a href="../#q-how-is-the-difficulty-level-determined">click here</a> to see how the difficulty level is determined.</td></tr><tr><td>Creation Type</td><td>Filter landing pages based on their creation type (e.g., Manual or AI Ally).</td></tr><tr><td>Created By</td><td><p><strong>System:</strong> Standard landing page templates are provided with the product.</p><p></p><p><strong>Custom:</strong> Landing pages created or customized by users</p></td></tr><tr><td>Stop Bot Activity</td><td>It shows the stop bot activity feature enabled for the landing page. By default, it is enabled and cannot be disabled to ensure that the target user activities are accurately captured.</td></tr><tr><td>Tags</td><td>Tags can be added to the landing page to enable viewing using related tag lists.</td></tr><tr><td>Date Created</td><td>The date and time the landing page was created</td></tr></tbody></table>
+<table><thead><tr><th width="150"></th><th width="590.1428571428571"></th></tr></thead><tbody><tr><td>Template name</td><td>The name of the landing page template</td></tr><tr><td>Method</td><td><p>The phishing technique employed.</p><ul><li><strong>Data Submit:</strong> Used to detect target users who submit data on the landing page</li><li><strong>Attachment:</strong> Used to detect target users who download the attachment in the phishing simulation email</li><li><strong>Click-Only:</strong> Used to detect target users who click unknown links in the phishing email</li></ul></td></tr><tr><td>Languages</td><td>Filter landing pages based on your preferred languages.</td></tr><tr><td>Difficulty</td><td>The level of difficulty to recognize a phishing attempt <strong>(Easy, Medium, Hard).</strong> Please <a href="../#q-how-is-the-difficulty-level-determined">click here</a> to see how the difficulty level is determined.</td></tr><tr><td>Creation Type</td><td>Filter landing pages based on their creation type (e.g., Manual or AI Ally).</td></tr><tr><td>Created By</td><td><p><strong>System:</strong> Standard landing page templates are provided with the product.</p><p><strong>Custom:</strong> Landing pages created or customized by users</p></td></tr><tr><td>Stop Bot Activity</td><td>It shows the stop bot activity feature enabled for the landing page. By default, it is enabled and cannot be disabled to ensure that the target user activities are accurately captured.</td></tr><tr><td>Tags</td><td>Tags can be added to the landing page to enable viewing using related tag lists.</td></tr><tr><td>Date Created</td><td>The date and time the landing page was created</td></tr></tbody></table>
 
 ## Landing Page Templates Actions
 
@@ -34,7 +34,7 @@ Follow the steps below to add a new landing page that you can use in a new or ex
 
 1. Click the **+New** button in the upper right corner of the **Phishing Simulator > Phishing Scenarios > Landing Page Templates** page.
 2. Complete the required fields on the first **Template** **Info** page, then click **Next**.
-3. On the **Page Settings** page, provide the **Phishing Link:** the URL to be used in the phishing email.&#x20;
+3. On the **Page Settings** page, provide the **Phishing Link:** the URL to be used in the phishing email.
 4. **Localize:** Localize your main landing page template to different languages. Click [here](https://localization.keepnetlabs.com/) to learn the benefits of the feature and more information.
 5. Click **Edit** to make any changes or **Save** to complete the process.
 
@@ -44,12 +44,12 @@ You can add a second page to any landing page template without building it from 
 
 **To add a second page to a landing page template:**
 
-1. Create a new landing page or open an existing one for editing (see [How to Add a New Landing Page Template](#how-to-add-a-new-landing-page-template) or [How to Edit a Landing Page Template](#how-to-edit-a-landing-page-template)).
+1. Create a new landing page or open an existing one for editing (see [How to Add a New Landing Page Template](landing-pages.md#how-to-add-a-new-landing-page-template) or [How to Edit a Landing Page Template](landing-pages.md#how-to-edit-a-landing-page-template)).
 2. On the **Page Settings** step (or when editing the template), use the **template picker for Page 2** to choose a second page.
 3. Select any existing **Click-Only** or **Data Submission** landing page from your library — it will be added as Page 2 automatically.
 4. Click **Save** to apply. You no longer need to build the second page manually or copy HTML.
 
-This applies to landing page templates in **Phishing Simulator**. The same template picker for Page 2 is also available in [Smishing Simulator](/next-generation-product/platform/smishing-simulator/manage-smishing-scenarios/landing-page-templates#how-to-add-a-second-page-using-the-template-picker) and [Quishing Simulator](/next-generation-product/platform/quishing-simulator/manage-quishing-scenarios/quishing-landing-page-templates#how-to-add-a-second-page-using-the-template-picker).
+This applies to landing page templates in **Phishing Simulator**. The same template picker for Page 2 is also available in [Smishing Simulator](../../smishing-simulator/manage-smishing-scenarios/landing-page-templates.md#how-to-add-a-second-page-using-the-template-picker) and [Quishing Simulator](../../quishing-simulator/manage-quishing-scenarios/quishing-landing-page-templates.md#how-to-add-a-second-page-using-the-template-picker).
 
 ## How to Add Just-in-time Learning Page
 
@@ -58,11 +58,11 @@ Follow the steps below to add a new just-in-time learning page that you can use 
 1. Go to **Phishing Simulator > Phishing Scenarios > Landing Page Templates** page.
 2. Search **'Just-in-time Learning Page: Email Warning Signs'** and click the **Duplicate** button to customize.
 3. Customize any fields on the first **Template** **Info** page, then click **Next**.
-4. On the **Page Settings** page, provide the **Phishing Link:** the URL to be used in the phishing email.&#x20;
+4. On the **Page Settings** page, provide the **Phishing Link:** the URL to be used in the phishing email.
 5. Review your red flag landing page, or click the **Edit** button to customize it.
 6. Once you complete customization or review, click **Save** to complete the process.
 
-Once you create your just-in-time learning page, now click [here](phishing-scenarios.md#how-to-add-a-new-phishing-scenario-with-red-flags) to learn how to combine your red flag email template and just-in-time learning page in a scenario to be able to launch to your employees.&#x20;
+Once you create your just-in-time learning page, now click [here](phishing-scenarios.md#how-to-add-a-new-phishing-scenario-with-red-flags) to learn how to combine your red flag email template and just-in-time learning page in a scenario to be able to launch to your employees.
 
 ## How to Add a new Landing Page with AI
 
@@ -74,7 +74,7 @@ Follow the steps below to effortlessly create custom landing page templates with
 * Click on **Use AI Ally** and describe the scenario and key details for the landing page you want to generate.
   * Once described, select the **Language** in which the landing page will be created.
 * After providing the scenario details, click the **Generate Landing Page** button to create your landing page.
-* Once the landing page is generated, click  **Edit** to make any changes, or **Save** to finalize the landing page template creation process.
+* Once the landing page is generated, click **Edit** to make any changes, or **Save** to finalize the landing page template creation process.
 
 Here are some helpful ready-to-use AI prompts for creating landing pages.
 
@@ -110,17 +110,15 @@ Here's a list of merge tags to help you make your landing pages more personal. A
 
 <table><thead><tr><th width="197.96484375">Merge Tag</th><th>Description</th></tr></thead><tbody><tr><td>Full Name</td><td>Inserts the target user's first and last name.</td></tr><tr><td>First Name</td><td>Inserts the target user's first name.</td></tr><tr><td>Last Name</td><td>Inserts the target user's last name.</td></tr><tr><td>Email</td><td>Inserts the target user's email address.</td></tr><tr><td>From Name</td><td>Inserts the sender's name from the associated email template for this landing page scenario.</td></tr><tr><td>From Email</td><td>Inserts the sender's email address from the associated email template for this landing page scenario.</td></tr><tr><td>Subject</td><td>Inserts the subject line from the associated email template for this landing page scenario.</td></tr><tr><td>Company Logo</td><td>Displays your organization's logo, sourced from the <a href="../../company/company-settings/white-labeling.md">Whitelabeling</a> page.</td></tr><tr><td>Company Name</td><td>Displays your organization's name, sourced from the company profile.</td></tr><tr><td>Date Sent</td><td>Inserts the date when the campaign is launched.</td></tr><tr><td>Current Date</td><td>Inserts the current date when the campaign is launched.</td></tr><tr><td>Current Date Plus 10 Days</td><td>Inserts a date that is 10 days after the campaign's launch date.</td></tr><tr><td>Current Date Minus 10 Days</td><td>Inserts a date that is 10 days before the campaign's launch date.</td></tr><tr><td>Random Number One Digit</td><td>Generates and inserts a random one-digit number.</td></tr><tr><td>Random Number Two Digit</td><td>Generates and inserts a random two-digit number.</td></tr><tr><td>Random Number Three Digit</td><td>Generates and inserts a random three-digit number.</td></tr><tr><td>User Language</td><td>Inserts the target user's Preferred Language information on the landing page</td></tr><tr><td>User Department</td><td>Inserts the target user's Department information on the landing page.</td></tr></tbody></table>
 
-## Video Tutorial&#x20;
+## Video Tutorial
 
 Landing pages direct the user to a specific page and can be used for a variety of purposes, such as requesting login credentials or other sensitive information. This tutorial will walk through the steps of creating/editing a landing page.
 
 {% embed url="https://youtu.be/9k45qxAhHR0" %}
 
-
-
 ## FAQs
 
-### Q: Can I divert employees who click the link to a URL not hosted by Keepnet?&#x20;
+### Q: Can I divert employees who click the link to a URL not hosted by Keepnet?
 
 A: Yes! You can direct users to your own URL instead of using a standard Keepnet landing page. To set this up, select a Keepnet landing page, and replace the URL in the provided HTML code with the URL of your hosted landing page. Here’s how you do it:
 
