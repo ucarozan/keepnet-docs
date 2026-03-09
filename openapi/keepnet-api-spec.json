@@ -37032,22 +37032,106 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "exportType"
+                ],
+                "properties": {
+                  "exportType": {
+                    "type": "string",
+                    "example": "Excel",
+                    "description": "Excel or Csv"
+                  }
+                }
+              },
+              "example": {
+                "exportType": "Excel"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Download Excel template",
+                  "value": {
+                    "exportType": "Excel"
+                  }
+                }
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "exportType"
+                ],
+                "properties": {
+                  "exportType": {
+                    "type": "string",
+                    "example": "Excel",
+                    "description": "Excel or Csv"
+                  }
+                }
+              },
+              "example": {
+                "exportType": "Excel"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Download Excel template",
+                  "value": {
+                    "exportType": "Excel"
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "exportType"
+                ],
+                "properties": {
+                  "exportType": {
+                    "type": "string",
+                    "example": "Excel",
+                    "description": "Excel or Csv"
+                  }
+                }
+              },
+              "example": {
+                "exportType": "Excel"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Download Excel template",
+                  "value": {
+                    "exportType": "Excel"
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "exportType"
+                ],
+                "properties": {
+                  "exportType": {
+                    "type": "string",
+                    "example": "Excel",
+                    "description": "Excel or Csv"
+                  }
+                }
+              },
+              "example": {
+                "exportType": "Excel"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Download Excel template",
+                  "value": {
+                    "exportType": "Excel"
+                  }
+                }
               }
             }
           }
@@ -37141,22 +37225,346 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.TargetUser.CreateTargetUserFieldMappingRequest"
+                "type": "object",
+                "required": [
+                  "transactionId",
+                  "fieldMappings"
+                ],
+                "properties": {
+                  "transactionId": {
+                    "type": "string",
+                    "example": "<transactionId-from-upload>"
+                  },
+                  "targetGroupResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Optional: assign users to groups"
+                  },
+                  "fieldMappings": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "excelColumnName": {
+                          "type": "string"
+                        },
+                        "fieldName": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "description": "Map each Excel column to a target user field (email, firstName, lastName, department, etc.)"
+                  }
+                }
+              },
+              "example": {
+                "transactionId": "<transactionId-from-upload>",
+                "targetGroupResourceIds": [],
+                "fieldMappings": [
+                  {
+                    "excelColumnName": "Email",
+                    "fieldName": "email"
+                  },
+                  {
+                    "excelColumnName": "First Name",
+                    "fieldName": "firstName"
+                  },
+                  {
+                    "excelColumnName": "Last Name",
+                    "fieldName": "lastName"
+                  },
+                  {
+                    "excelColumnName": "Department",
+                    "fieldName": "department"
+                  }
+                ]
+              },
+              "examples": {
+                "default": {
+                  "summary": "Map Email, First Name, Last Name, Department",
+                  "value": {
+                    "transactionId": "<transactionId-from-upload>",
+                    "targetGroupResourceIds": [],
+                    "fieldMappings": [
+                      {
+                        "excelColumnName": "Email",
+                        "fieldName": "email"
+                      },
+                      {
+                        "excelColumnName": "First Name",
+                        "fieldName": "firstName"
+                      },
+                      {
+                        "excelColumnName": "Last Name",
+                        "fieldName": "lastName"
+                      },
+                      {
+                        "excelColumnName": "Department",
+                        "fieldName": "department"
+                      }
+                    ]
+                  }
+                }
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.TargetUser.CreateTargetUserFieldMappingRequest"
+                "type": "object",
+                "required": [
+                  "transactionId",
+                  "fieldMappings"
+                ],
+                "properties": {
+                  "transactionId": {
+                    "type": "string",
+                    "example": "<transactionId-from-upload>"
+                  },
+                  "targetGroupResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Optional: assign users to groups"
+                  },
+                  "fieldMappings": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "excelColumnName": {
+                          "type": "string"
+                        },
+                        "fieldName": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "description": "Map each Excel column to a target user field (email, firstName, lastName, department, etc.)"
+                  }
+                }
+              },
+              "example": {
+                "transactionId": "<transactionId-from-upload>",
+                "targetGroupResourceIds": [],
+                "fieldMappings": [
+                  {
+                    "excelColumnName": "Email",
+                    "fieldName": "email"
+                  },
+                  {
+                    "excelColumnName": "First Name",
+                    "fieldName": "firstName"
+                  },
+                  {
+                    "excelColumnName": "Last Name",
+                    "fieldName": "lastName"
+                  },
+                  {
+                    "excelColumnName": "Department",
+                    "fieldName": "department"
+                  }
+                ]
+              },
+              "examples": {
+                "default": {
+                  "summary": "Map Email, First Name, Last Name, Department",
+                  "value": {
+                    "transactionId": "<transactionId-from-upload>",
+                    "targetGroupResourceIds": [],
+                    "fieldMappings": [
+                      {
+                        "excelColumnName": "Email",
+                        "fieldName": "email"
+                      },
+                      {
+                        "excelColumnName": "First Name",
+                        "fieldName": "firstName"
+                      },
+                      {
+                        "excelColumnName": "Last Name",
+                        "fieldName": "lastName"
+                      },
+                      {
+                        "excelColumnName": "Department",
+                        "fieldName": "department"
+                      }
+                    ]
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.TargetUser.CreateTargetUserFieldMappingRequest"
+                "type": "object",
+                "required": [
+                  "transactionId",
+                  "fieldMappings"
+                ],
+                "properties": {
+                  "transactionId": {
+                    "type": "string",
+                    "example": "<transactionId-from-upload>"
+                  },
+                  "targetGroupResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Optional: assign users to groups"
+                  },
+                  "fieldMappings": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "excelColumnName": {
+                          "type": "string"
+                        },
+                        "fieldName": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "description": "Map each Excel column to a target user field (email, firstName, lastName, department, etc.)"
+                  }
+                }
+              },
+              "example": {
+                "transactionId": "<transactionId-from-upload>",
+                "targetGroupResourceIds": [],
+                "fieldMappings": [
+                  {
+                    "excelColumnName": "Email",
+                    "fieldName": "email"
+                  },
+                  {
+                    "excelColumnName": "First Name",
+                    "fieldName": "firstName"
+                  },
+                  {
+                    "excelColumnName": "Last Name",
+                    "fieldName": "lastName"
+                  },
+                  {
+                    "excelColumnName": "Department",
+                    "fieldName": "department"
+                  }
+                ]
+              },
+              "examples": {
+                "default": {
+                  "summary": "Map Email, First Name, Last Name, Department",
+                  "value": {
+                    "transactionId": "<transactionId-from-upload>",
+                    "targetGroupResourceIds": [],
+                    "fieldMappings": [
+                      {
+                        "excelColumnName": "Email",
+                        "fieldName": "email"
+                      },
+                      {
+                        "excelColumnName": "First Name",
+                        "fieldName": "firstName"
+                      },
+                      {
+                        "excelColumnName": "Last Name",
+                        "fieldName": "lastName"
+                      },
+                      {
+                        "excelColumnName": "Department",
+                        "fieldName": "department"
+                      }
+                    ]
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.TargetUser.CreateTargetUserFieldMappingRequest"
+                "type": "object",
+                "required": [
+                  "transactionId",
+                  "fieldMappings"
+                ],
+                "properties": {
+                  "transactionId": {
+                    "type": "string",
+                    "example": "<transactionId-from-upload>"
+                  },
+                  "targetGroupResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Optional: assign users to groups"
+                  },
+                  "fieldMappings": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "excelColumnName": {
+                          "type": "string"
+                        },
+                        "fieldName": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "description": "Map each Excel column to a target user field (email, firstName, lastName, department, etc.)"
+                  }
+                }
+              },
+              "example": {
+                "transactionId": "<transactionId-from-upload>",
+                "targetGroupResourceIds": [],
+                "fieldMappings": [
+                  {
+                    "excelColumnName": "Email",
+                    "fieldName": "email"
+                  },
+                  {
+                    "excelColumnName": "First Name",
+                    "fieldName": "firstName"
+                  },
+                  {
+                    "excelColumnName": "Last Name",
+                    "fieldName": "lastName"
+                  },
+                  {
+                    "excelColumnName": "Department",
+                    "fieldName": "department"
+                  }
+                ]
+              },
+              "examples": {
+                "default": {
+                  "summary": "Map Email, First Name, Last Name, Department",
+                  "value": {
+                    "transactionId": "<transactionId-from-upload>",
+                    "targetGroupResourceIds": [],
+                    "fieldMappings": [
+                      {
+                        "excelColumnName": "Email",
+                        "fieldName": "email"
+                      },
+                      {
+                        "excelColumnName": "First Name",
+                        "fieldName": "firstName"
+                      },
+                      {
+                        "excelColumnName": "Last Name",
+                        "fieldName": "lastName"
+                      },
+                      {
+                        "excelColumnName": "Department",
+                        "fieldName": "department"
+                      }
+                    ]
+                  }
+                }
               }
             }
           }
@@ -37228,22 +37636,294 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.TmpTargetUser.TmpTargetUserSearchRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Email",
+                "ascending": true,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Preview parsed users (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "Email",
+                    "ascending": true,
+                    "filter": {
+                      "condition": "and",
+                      "searchInputTextValue": null,
+                      "filterGroups": []
+                    }
+                  }
+                }
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.TmpTargetUser.TmpTargetUserSearchRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Email",
+                "ascending": true,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Preview parsed users (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "Email",
+                    "ascending": true,
+                    "filter": {
+                      "condition": "and",
+                      "searchInputTextValue": null,
+                      "filterGroups": []
+                    }
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.TmpTargetUser.TmpTargetUserSearchRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Email",
+                "ascending": true,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Preview parsed users (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "Email",
+                    "ascending": true,
+                    "filter": {
+                      "condition": "and",
+                      "searchInputTextValue": null,
+                      "filterGroups": []
+                    }
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.TmpTargetUser.TmpTargetUserSearchRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Email",
+                "ascending": true,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Preview parsed users (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "Email",
+                    "ascending": true,
+                    "filter": {
+                      "condition": "and",
+                      "searchInputTextValue": null,
+                      "filterGroups": []
+                    }
+                  }
+                }
               }
             }
           }
@@ -37333,22 +38013,142 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.TmpTargetUser.TmpTargetUserImportRequest"
+                "type": "object",
+                "required": [
+                  "importType"
+                ],
+                "properties": {
+                  "importType": {
+                    "type": "string",
+                    "example": "All",
+                    "description": "All or Selected"
+                  },
+                  "selectedResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Required when importType is Selected"
+                  }
+                }
+              },
+              "example": {
+                "importType": "All",
+                "selectedResourceIds": []
+              },
+              "examples": {
+                "default": {
+                  "summary": "Import all parsed users",
+                  "value": {
+                    "importType": "All",
+                    "selectedResourceIds": []
+                  }
+                }
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.TmpTargetUser.TmpTargetUserImportRequest"
+                "type": "object",
+                "required": [
+                  "importType"
+                ],
+                "properties": {
+                  "importType": {
+                    "type": "string",
+                    "example": "All",
+                    "description": "All or Selected"
+                  },
+                  "selectedResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Required when importType is Selected"
+                  }
+                }
+              },
+              "example": {
+                "importType": "All",
+                "selectedResourceIds": []
+              },
+              "examples": {
+                "default": {
+                  "summary": "Import all parsed users",
+                  "value": {
+                    "importType": "All",
+                    "selectedResourceIds": []
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.TmpTargetUser.TmpTargetUserImportRequest"
+                "type": "object",
+                "required": [
+                  "importType"
+                ],
+                "properties": {
+                  "importType": {
+                    "type": "string",
+                    "example": "All",
+                    "description": "All or Selected"
+                  },
+                  "selectedResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Required when importType is Selected"
+                  }
+                }
+              },
+              "example": {
+                "importType": "All",
+                "selectedResourceIds": []
+              },
+              "examples": {
+                "default": {
+                  "summary": "Import all parsed users",
+                  "value": {
+                    "importType": "All",
+                    "selectedResourceIds": []
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.TmpTargetUser.TmpTargetUserImportRequest"
+                "type": "object",
+                "required": [
+                  "importType"
+                ],
+                "properties": {
+                  "importType": {
+                    "type": "string",
+                    "example": "All",
+                    "description": "All or Selected"
+                  },
+                  "selectedResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Required when importType is Selected"
+                  }
+                }
+              },
+              "example": {
+                "importType": "All",
+                "selectedResourceIds": []
+              },
+              "examples": {
+                "default": {
+                  "summary": "Import all parsed users",
+                  "value": {
+                    "importType": "All",
+                    "selectedResourceIds": []
+                  }
+                }
               }
             }
           }

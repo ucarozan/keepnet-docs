@@ -260,6 +260,42 @@ const ENROLLMENTS_SEARCH_EXPORT_EXAMPLE = {
   exportType: 'CSV',
 };
 
+/** Target users — download example Excel/CSV template. */
+const TARGET_USERS_EXAMPLE_FILE_EXAMPLE = {
+  exportType: 'Excel',
+};
+
+/** Target users — create column-to-field mapping after file upload. */
+const TARGET_USERS_CREATE_MAPPING_EXAMPLE = {
+  transactionId: '<transactionId-from-upload>',
+  targetGroupResourceIds: [],
+  fieldMappings: [
+    { excelColumnName: 'Email', fieldName: 'email' },
+    { excelColumnName: 'First Name', fieldName: 'firstName' },
+    { excelColumnName: 'Last Name', fieldName: 'lastName' },
+    { excelColumnName: 'Department', fieldName: 'department' },
+  ],
+};
+
+/** Target users — preview parsed tmp users before import. */
+const TARGET_USERS_TMP_SEARCH_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 20,
+  orderBy: 'Email',
+  ascending: true,
+  filter: {
+    condition: 'and',
+    searchInputTextValue: null,
+    filterGroups: [],
+  },
+};
+
+/** Target users — confirm and import parsed users. */
+const TARGET_USERS_IMPORT_EXAMPLE = {
+  importType: 'All',
+  selectedResourceIds: [],
+};
+
 function injectRequestExamples(paths) {
   const result = { ...paths };
 
@@ -499,6 +535,120 @@ function injectRequestExamples(paths) {
     };
     for (const key of Object.keys(result['/api/enrollments/search/export'].post.requestBody.content)) {
       result['/api/enrollments/search/export'].post.requestBody.content[key] = { ...enrollmentExportContent };
+    }
+  }
+
+  // --- Target users: Excel/CSV import flow ---
+
+  if (result['/api/target-users/example-file']?.post?.requestBody?.content) {
+    const exampleFileContent = {
+      schema: {
+        type: 'object',
+        required: ['exportType'],
+        properties: {
+          exportType: { type: 'string', example: 'Excel', description: 'Excel or Csv' },
+        },
+      },
+      example: TARGET_USERS_EXAMPLE_FILE_EXAMPLE,
+      examples: {
+        default: {
+          summary: 'Download Excel template',
+          value: TARGET_USERS_EXAMPLE_FILE_EXAMPLE,
+        },
+      },
+    };
+    for (const key of Object.keys(result['/api/target-users/example-file'].post.requestBody.content)) {
+      result['/api/target-users/example-file'].post.requestBody.content[key] = { ...exampleFileContent };
+    }
+  }
+
+  if (result['/api/target-users/create-mapping']?.post?.requestBody?.content) {
+    const mappingContent = {
+      schema: {
+        type: 'object',
+        required: ['transactionId', 'fieldMappings'],
+        properties: {
+          transactionId: { type: 'string', example: '<transactionId-from-upload>' },
+          targetGroupResourceIds: { type: 'array', items: { type: 'string' }, description: 'Optional: assign users to groups' },
+          fieldMappings: {
+            type: 'array',
+            items: {
+              type: 'object',
+              properties: {
+                excelColumnName: { type: 'string' },
+                fieldName: { type: 'string' },
+              },
+            },
+            description: 'Map each Excel column to a target user field (email, firstName, lastName, department, etc.)',
+          },
+        },
+      },
+      example: TARGET_USERS_CREATE_MAPPING_EXAMPLE,
+      examples: {
+        default: {
+          summary: 'Map Email, First Name, Last Name, Department',
+          value: TARGET_USERS_CREATE_MAPPING_EXAMPLE,
+        },
+      },
+    };
+    for (const key of Object.keys(result['/api/target-users/create-mapping'].post.requestBody.content)) {
+      result['/api/target-users/create-mapping'].post.requestBody.content[key] = { ...mappingContent };
+    }
+  }
+
+  if (result['/api/target-users/{transactionId}/search']?.post?.requestBody?.content) {
+    const tmpSearchContent = {
+      schema: {
+        type: 'object',
+        required: ['pageNumber', 'pageSize'],
+        properties: {
+          pageNumber: { type: 'integer', example: 1 },
+          pageSize: { type: 'integer', example: 20 },
+          orderBy: { type: 'string', example: 'Email' },
+          ascending: { type: 'boolean', example: true },
+          filter: {
+            type: 'object',
+            properties: {
+              condition: { type: 'string', example: 'and' },
+              searchInputTextValue: { type: 'string', nullable: true },
+              filterGroups: { type: 'array', items: { type: 'object' } },
+            },
+          },
+        },
+      },
+      example: TARGET_USERS_TMP_SEARCH_EXAMPLE,
+      examples: {
+        default: {
+          summary: 'Preview parsed users (works with Send after Authorize)',
+          value: TARGET_USERS_TMP_SEARCH_EXAMPLE,
+        },
+      },
+    };
+    for (const key of Object.keys(result['/api/target-users/{transactionId}/search'].post.requestBody.content)) {
+      result['/api/target-users/{transactionId}/search'].post.requestBody.content[key] = { ...tmpSearchContent };
+    }
+  }
+
+  if (result['/api/target-users/{transactionId}/import']?.post?.requestBody?.content) {
+    const importContent = {
+      schema: {
+        type: 'object',
+        required: ['importType'],
+        properties: {
+          importType: { type: 'string', example: 'All', description: 'All or Selected' },
+          selectedResourceIds: { type: 'array', items: { type: 'string' }, description: 'Required when importType is Selected' },
+        },
+      },
+      example: TARGET_USERS_IMPORT_EXAMPLE,
+      examples: {
+        default: {
+          summary: 'Import all parsed users',
+          value: TARGET_USERS_IMPORT_EXAMPLE,
+        },
+      },
+    };
+    for (const key of Object.keys(result['/api/target-users/{transactionId}/import'].post.requestBody.content)) {
+      result['/api/target-users/{transactionId}/import'].post.requestBody.content[key] = { ...importContent };
     }
   }
 
