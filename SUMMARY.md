@@ -301,6 +301,7 @@
     * [List and manage company groups](api-reference/use-cases/reseller/list-and-manage-company-groups.md)
   * Users & groups
     * [Add target users for a customer](api-reference/use-cases/reseller/add-target-users-for-customer.md)
+    * [Import target users from Excel for a customer](api-reference/use-cases/reseller/import-target-users-from-excel-for-customer.md)
     * [List or export target users for a customer](api-reference/use-cases/reseller/list-or-export-target-users-for-customer.md)
     * [List and create target groups for a customer](api-reference/use-cases/reseller/list-and-create-target-groups-for-customer.md)
     * [Add system user for a customer](api-reference/use-cases/reseller/add-system-user-for-customer.md)
