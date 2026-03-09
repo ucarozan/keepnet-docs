@@ -20,6 +20,19 @@ Follow the steps below to add a new landing page that you can use in a new or ex
 4. Under the **QR Code** **Link** field, you can enable the **"Stop bots to prevent false clicks"** feature to detect and stop bot activity automatically to prevent false clicks, ensuring genuine traffic to your quishing campaign.
 5. Click **Edit** to make any customization on the landing page or **Save** to complete the process.
 
+## How to Add a Second Page Using the Template Picker
+
+You can add a second page to any landing page template without building it from scratch. A **template picker for Page 2** lets you reuse an existing landing page as the second page with a single click.
+
+**To add a second page to a landing page template:**
+
+1. Create a new landing page or open an existing one for editing (see [How to Create a New Landing Page Template](#how-to-create-a-new-landing-page-template) or [How to Edit a Landing Page Template](#how-to-edit-a-landing-page-template)).
+2. On the **Page Settings** step (or when editing the template), use the **template picker for Page 2** to choose a second page.
+3. Select any existing **Click-Only** or **Data Submission** landing page from your library — it will be added as Page 2 automatically.
+4. Click **Save** to apply. You no longer need to build the second page manually or copy HTML.
+
+The same feature is available in [Phishing Simulator](../../../phishing-simulator/manage-phishing-scenarios/landing-pages.md#how-to-add-a-second-page-using-the-template-picker) and [Smishing Simulator](../../../smishing-simulator/manage-smishing-scenarios/landing-page-templates.md#how-to-add-a-second-page-using-the-template-picker).
+
 ### How to Edit a Landing Page Template
 
 Click on the **three dots '⋮'** button in the **Actions** option on the far right of the relevant page, and then click the **Edit** button.

@@ -38,6 +38,19 @@ Follow the steps below to add a new landing page that you can use in a new or ex
 4. **Localize:** Localize your main landing page template to different languages. Click [here](https://localization.keepnetlabs.com/) to learn the benefits of the feature and more information.
 5. Click **Edit** to make any changes or **Save** to complete the process.
 
+## How to Add a Second Page Using the Template Picker
+
+You can add a second page to any landing page template without building it from scratch. A **template picker for Page 2** lets you reuse an existing landing page as the second page with a single click.
+
+**To add a second page to a landing page template:**
+
+1. Create a new landing page or open an existing one for editing (see [How to Add a New Landing Page Template](#how-to-add-a-new-landing-page-template) or [How to Edit a Landing Page Template](#how-to-edit-a-landing-page-template)).
+2. On the **Page Settings** step (or when editing the template), use the **template picker for Page 2** to choose a second page.
+3. Select any existing **Click-Only** or **Data Submission** landing page from your library — it will be added as Page 2 automatically.
+4. Click **Save** to apply. You no longer need to build the second page manually or copy HTML.
+
+This applies to landing page templates in **Phishing Simulator**. The same template picker for Page 2 is also available in [Smishing Simulator](../../../smishing-simulator/manage-smishing-scenarios/landing-page-templates.md#how-to-add-a-second-page-using-the-template-picker) and [Quishing Simulator](../../../quishing-simulator/manage-quishing-scenarios/quishing-landing-page-templates.md#how-to-add-a-second-page-using-the-template-picker).
+
 ## How to Add Just-in-time Learning Page
 
 Follow the steps below to add a new just-in-time learning page that you can use in a new or existing phishing scenario:
