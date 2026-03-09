@@ -9450,22 +9450,174 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.DirectEmailSetting.CreateDirectEmailSettingRequest"
+                "type": "object",
+                "required": [
+                  "name",
+                  "tenantId",
+                  "allowedDomains"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "maxLength": 64,
+                    "example": "Acme Corp M365 DEC"
+                  },
+                  "tenantId": {
+                    "type": "string",
+                    "example": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+                  },
+                  "allowedDomains": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "example": [
+                      "acmecorp.com"
+                    ]
+                  },
+                  "type": {
+                    "type": "integer",
+                    "example": 1,
+                    "description": "1 = Microsoft 365, 2 = Google Workspace"
+                  }
+                }
+              },
+              "example": {
+                "name": "Acme Corp M365 DEC",
+                "tenantId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+                "allowedDomains": [
+                  "acmecorp.com"
+                ],
+                "type": 1
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.DirectEmailSetting.CreateDirectEmailSettingRequest"
+                "type": "object",
+                "required": [
+                  "name",
+                  "tenantId",
+                  "allowedDomains"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "maxLength": 64,
+                    "example": "Acme Corp M365 DEC"
+                  },
+                  "tenantId": {
+                    "type": "string",
+                    "example": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+                  },
+                  "allowedDomains": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "example": [
+                      "acmecorp.com"
+                    ]
+                  },
+                  "type": {
+                    "type": "integer",
+                    "example": 1,
+                    "description": "1 = Microsoft 365, 2 = Google Workspace"
+                  }
+                }
+              },
+              "example": {
+                "name": "Acme Corp M365 DEC",
+                "tenantId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+                "allowedDomains": [
+                  "acmecorp.com"
+                ],
+                "type": 1
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.DirectEmailSetting.CreateDirectEmailSettingRequest"
+                "type": "object",
+                "required": [
+                  "name",
+                  "tenantId",
+                  "allowedDomains"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "maxLength": 64,
+                    "example": "Acme Corp M365 DEC"
+                  },
+                  "tenantId": {
+                    "type": "string",
+                    "example": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+                  },
+                  "allowedDomains": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "example": [
+                      "acmecorp.com"
+                    ]
+                  },
+                  "type": {
+                    "type": "integer",
+                    "example": 1,
+                    "description": "1 = Microsoft 365, 2 = Google Workspace"
+                  }
+                }
+              },
+              "example": {
+                "name": "Acme Corp M365 DEC",
+                "tenantId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+                "allowedDomains": [
+                  "acmecorp.com"
+                ],
+                "type": 1
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.DirectEmailSetting.CreateDirectEmailSettingRequest"
+                "type": "object",
+                "required": [
+                  "name",
+                  "tenantId",
+                  "allowedDomains"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "maxLength": 64,
+                    "example": "Acme Corp M365 DEC"
+                  },
+                  "tenantId": {
+                    "type": "string",
+                    "example": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+                  },
+                  "allowedDomains": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "example": [
+                      "acmecorp.com"
+                    ]
+                  },
+                  "type": {
+                    "type": "integer",
+                    "example": 1,
+                    "description": "1 = Microsoft 365, 2 = Google Workspace"
+                  }
+                }
+              },
+              "example": {
+                "name": "Acme Corp M365 DEC",
+                "tenantId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+                "allowedDomains": [
+                  "acmecorp.com"
+                ],
+                "type": 1
               }
             }
           }
@@ -9712,22 +9864,178 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.DirectEmailSetting.TestDirectEmailSettingRequest"
+                "type": "object",
+                "properties": {
+                  "resourceId": {
+                    "type": "string",
+                    "example": "<decResourceId>"
+                  },
+                  "from": {
+                    "type": "string",
+                    "example": "noreply@acmecorp.com"
+                  },
+                  "fromName": {
+                    "type": "string",
+                    "example": "Keepnet"
+                  },
+                  "to": {
+                    "type": "string",
+                    "example": "admin@acmecorp.com"
+                  },
+                  "message": {
+                    "type": "string",
+                    "example": "DEC test email"
+                  },
+                  "tenantId": {
+                    "type": "string",
+                    "example": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+                  },
+                  "type": {
+                    "type": "integer",
+                    "example": 1
+                  }
+                }
+              },
+              "example": {
+                "resourceId": "<decResourceId>",
+                "from": "noreply@acmecorp.com",
+                "fromName": "Keepnet",
+                "to": "admin@acmecorp.com",
+                "message": "DEC test email",
+                "tenantId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+                "type": 1
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.DirectEmailSetting.TestDirectEmailSettingRequest"
+                "type": "object",
+                "properties": {
+                  "resourceId": {
+                    "type": "string",
+                    "example": "<decResourceId>"
+                  },
+                  "from": {
+                    "type": "string",
+                    "example": "noreply@acmecorp.com"
+                  },
+                  "fromName": {
+                    "type": "string",
+                    "example": "Keepnet"
+                  },
+                  "to": {
+                    "type": "string",
+                    "example": "admin@acmecorp.com"
+                  },
+                  "message": {
+                    "type": "string",
+                    "example": "DEC test email"
+                  },
+                  "tenantId": {
+                    "type": "string",
+                    "example": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+                  },
+                  "type": {
+                    "type": "integer",
+                    "example": 1
+                  }
+                }
+              },
+              "example": {
+                "resourceId": "<decResourceId>",
+                "from": "noreply@acmecorp.com",
+                "fromName": "Keepnet",
+                "to": "admin@acmecorp.com",
+                "message": "DEC test email",
+                "tenantId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+                "type": 1
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.DirectEmailSetting.TestDirectEmailSettingRequest"
+                "type": "object",
+                "properties": {
+                  "resourceId": {
+                    "type": "string",
+                    "example": "<decResourceId>"
+                  },
+                  "from": {
+                    "type": "string",
+                    "example": "noreply@acmecorp.com"
+                  },
+                  "fromName": {
+                    "type": "string",
+                    "example": "Keepnet"
+                  },
+                  "to": {
+                    "type": "string",
+                    "example": "admin@acmecorp.com"
+                  },
+                  "message": {
+                    "type": "string",
+                    "example": "DEC test email"
+                  },
+                  "tenantId": {
+                    "type": "string",
+                    "example": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+                  },
+                  "type": {
+                    "type": "integer",
+                    "example": 1
+                  }
+                }
+              },
+              "example": {
+                "resourceId": "<decResourceId>",
+                "from": "noreply@acmecorp.com",
+                "fromName": "Keepnet",
+                "to": "admin@acmecorp.com",
+                "message": "DEC test email",
+                "tenantId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+                "type": 1
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.DirectEmailSetting.TestDirectEmailSettingRequest"
+                "type": "object",
+                "properties": {
+                  "resourceId": {
+                    "type": "string",
+                    "example": "<decResourceId>"
+                  },
+                  "from": {
+                    "type": "string",
+                    "example": "noreply@acmecorp.com"
+                  },
+                  "fromName": {
+                    "type": "string",
+                    "example": "Keepnet"
+                  },
+                  "to": {
+                    "type": "string",
+                    "example": "admin@acmecorp.com"
+                  },
+                  "message": {
+                    "type": "string",
+                    "example": "DEC test email"
+                  },
+                  "tenantId": {
+                    "type": "string",
+                    "example": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+                  },
+                  "type": {
+                    "type": "integer",
+                    "example": 1
+                  }
+                }
+              },
+              "example": {
+                "resourceId": "<decResourceId>",
+                "from": "noreply@acmecorp.com",
+                "fromName": "Keepnet",
+                "to": "admin@acmecorp.com",
+                "message": "DEC test email",
+                "tenantId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+                "type": 1
               }
             }
           }
@@ -11194,22 +11502,302 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.Core.Models.Enrollment.EnrollmentStartDTO"
+                "type": "object",
+                "required": [
+                  "trainingId",
+                  "name",
+                  "targetGroupResourceIds"
+                ],
+                "properties": {
+                  "trainingId": {
+                    "type": "string",
+                    "example": "<trainingResourceId>"
+                  },
+                  "name": {
+                    "type": "string",
+                    "example": "Q1 Security Awareness Training"
+                  },
+                  "targetGroupResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "enrollmentScheduler": {
+                    "type": "object",
+                    "properties": {
+                      "scheduledDate": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "scheduledTimeZoneId": {
+                        "type": "string",
+                        "example": "Europe/Istanbul"
+                      },
+                      "useOwnTimeZone": {
+                        "type": "boolean",
+                        "example": false
+                      },
+                      "dueDate": {
+                        "type": "string",
+                        "format": "date-time"
+                      }
+                    }
+                  },
+                  "awardCertificate": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "markedAsTest": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "sendTeamsNotification": {
+                    "type": "boolean",
+                    "example": false
+                  }
+                }
+              },
+              "example": {
+                "trainingId": "<trainingResourceId>",
+                "name": "Q1 Security Awareness Training",
+                "targetGroupResourceIds": [
+                  "<targetGroupResourceId>"
+                ],
+                "enrollmentScheduler": {
+                  "scheduledDate": "2026-04-01T09:00:00Z",
+                  "scheduledTimeZoneId": "Europe/Istanbul",
+                  "useOwnTimeZone": false,
+                  "dueDate": "2026-04-30T23:59:59Z"
+                },
+                "awardCertificate": true,
+                "markedAsTest": false,
+                "sendTeamsNotification": false
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.Core.Models.Enrollment.EnrollmentStartDTO"
+                "type": "object",
+                "required": [
+                  "trainingId",
+                  "name",
+                  "targetGroupResourceIds"
+                ],
+                "properties": {
+                  "trainingId": {
+                    "type": "string",
+                    "example": "<trainingResourceId>"
+                  },
+                  "name": {
+                    "type": "string",
+                    "example": "Q1 Security Awareness Training"
+                  },
+                  "targetGroupResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "enrollmentScheduler": {
+                    "type": "object",
+                    "properties": {
+                      "scheduledDate": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "scheduledTimeZoneId": {
+                        "type": "string",
+                        "example": "Europe/Istanbul"
+                      },
+                      "useOwnTimeZone": {
+                        "type": "boolean",
+                        "example": false
+                      },
+                      "dueDate": {
+                        "type": "string",
+                        "format": "date-time"
+                      }
+                    }
+                  },
+                  "awardCertificate": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "markedAsTest": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "sendTeamsNotification": {
+                    "type": "boolean",
+                    "example": false
+                  }
+                }
+              },
+              "example": {
+                "trainingId": "<trainingResourceId>",
+                "name": "Q1 Security Awareness Training",
+                "targetGroupResourceIds": [
+                  "<targetGroupResourceId>"
+                ],
+                "enrollmentScheduler": {
+                  "scheduledDate": "2026-04-01T09:00:00Z",
+                  "scheduledTimeZoneId": "Europe/Istanbul",
+                  "useOwnTimeZone": false,
+                  "dueDate": "2026-04-30T23:59:59Z"
+                },
+                "awardCertificate": true,
+                "markedAsTest": false,
+                "sendTeamsNotification": false
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.Core.Models.Enrollment.EnrollmentStartDTO"
+                "type": "object",
+                "required": [
+                  "trainingId",
+                  "name",
+                  "targetGroupResourceIds"
+                ],
+                "properties": {
+                  "trainingId": {
+                    "type": "string",
+                    "example": "<trainingResourceId>"
+                  },
+                  "name": {
+                    "type": "string",
+                    "example": "Q1 Security Awareness Training"
+                  },
+                  "targetGroupResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "enrollmentScheduler": {
+                    "type": "object",
+                    "properties": {
+                      "scheduledDate": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "scheduledTimeZoneId": {
+                        "type": "string",
+                        "example": "Europe/Istanbul"
+                      },
+                      "useOwnTimeZone": {
+                        "type": "boolean",
+                        "example": false
+                      },
+                      "dueDate": {
+                        "type": "string",
+                        "format": "date-time"
+                      }
+                    }
+                  },
+                  "awardCertificate": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "markedAsTest": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "sendTeamsNotification": {
+                    "type": "boolean",
+                    "example": false
+                  }
+                }
+              },
+              "example": {
+                "trainingId": "<trainingResourceId>",
+                "name": "Q1 Security Awareness Training",
+                "targetGroupResourceIds": [
+                  "<targetGroupResourceId>"
+                ],
+                "enrollmentScheduler": {
+                  "scheduledDate": "2026-04-01T09:00:00Z",
+                  "scheduledTimeZoneId": "Europe/Istanbul",
+                  "useOwnTimeZone": false,
+                  "dueDate": "2026-04-30T23:59:59Z"
+                },
+                "awardCertificate": true,
+                "markedAsTest": false,
+                "sendTeamsNotification": false
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.Core.Models.Enrollment.EnrollmentStartDTO"
+                "type": "object",
+                "required": [
+                  "trainingId",
+                  "name",
+                  "targetGroupResourceIds"
+                ],
+                "properties": {
+                  "trainingId": {
+                    "type": "string",
+                    "example": "<trainingResourceId>"
+                  },
+                  "name": {
+                    "type": "string",
+                    "example": "Q1 Security Awareness Training"
+                  },
+                  "targetGroupResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "enrollmentScheduler": {
+                    "type": "object",
+                    "properties": {
+                      "scheduledDate": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "scheduledTimeZoneId": {
+                        "type": "string",
+                        "example": "Europe/Istanbul"
+                      },
+                      "useOwnTimeZone": {
+                        "type": "boolean",
+                        "example": false
+                      },
+                      "dueDate": {
+                        "type": "string",
+                        "format": "date-time"
+                      }
+                    }
+                  },
+                  "awardCertificate": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "markedAsTest": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "sendTeamsNotification": {
+                    "type": "boolean",
+                    "example": false
+                  }
+                }
+              },
+              "example": {
+                "trainingId": "<trainingResourceId>",
+                "name": "Q1 Security Awareness Training",
+                "targetGroupResourceIds": [
+                  "<targetGroupResourceId>"
+                ],
+                "enrollmentScheduler": {
+                  "scheduledDate": "2026-04-01T09:00:00Z",
+                  "scheduledTimeZoneId": "Europe/Istanbul",
+                  "useOwnTimeZone": false,
+                  "dueDate": "2026-04-30T23:59:59Z"
+                },
+                "awardCertificate": true,
+                "markedAsTest": false,
+                "sendTeamsNotification": false
               }
             }
           }
@@ -18898,22 +19486,326 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaign.CreatePhishingCampaignRequest"
+                "type": "object",
+                "required": [
+                  "name",
+                  "scheduleTypeId"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "example": "Q1 Phishing Simulation"
+                  },
+                  "scheduleTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "phishingScenarioResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "targetGroupResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "duration": {
+                    "type": "integer",
+                    "example": 7
+                  },
+                  "distributionTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "distributionDelayEvery": {
+                    "type": "integer",
+                    "example": 0
+                  },
+                  "distributionDelayTimeTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "sendingLimit": {
+                    "type": "integer",
+                    "example": 0
+                  },
+                  "emailDeliverySettingType": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "excludeFromReports": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "sendOnlyActiveUsers": {
+                    "type": "boolean",
+                    "example": true
+                  }
+                }
+              },
+              "example": {
+                "name": "Q1 Phishing Simulation",
+                "scheduleTypeId": 1,
+                "phishingScenarioResourceIds": [
+                  "<scenarioResourceId>"
+                ],
+                "targetGroupResourceIds": [
+                  "<targetGroupResourceId>"
+                ],
+                "duration": 7,
+                "distributionTypeId": 1,
+                "distributionDelayEvery": 0,
+                "distributionDelayTimeTypeId": 1,
+                "sendingLimit": 0,
+                "emailDeliverySettingType": 1,
+                "excludeFromReports": false,
+                "sendOnlyActiveUsers": true
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaign.CreatePhishingCampaignRequest"
+                "type": "object",
+                "required": [
+                  "name",
+                  "scheduleTypeId"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "example": "Q1 Phishing Simulation"
+                  },
+                  "scheduleTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "phishingScenarioResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "targetGroupResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "duration": {
+                    "type": "integer",
+                    "example": 7
+                  },
+                  "distributionTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "distributionDelayEvery": {
+                    "type": "integer",
+                    "example": 0
+                  },
+                  "distributionDelayTimeTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "sendingLimit": {
+                    "type": "integer",
+                    "example": 0
+                  },
+                  "emailDeliverySettingType": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "excludeFromReports": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "sendOnlyActiveUsers": {
+                    "type": "boolean",
+                    "example": true
+                  }
+                }
+              },
+              "example": {
+                "name": "Q1 Phishing Simulation",
+                "scheduleTypeId": 1,
+                "phishingScenarioResourceIds": [
+                  "<scenarioResourceId>"
+                ],
+                "targetGroupResourceIds": [
+                  "<targetGroupResourceId>"
+                ],
+                "duration": 7,
+                "distributionTypeId": 1,
+                "distributionDelayEvery": 0,
+                "distributionDelayTimeTypeId": 1,
+                "sendingLimit": 0,
+                "emailDeliverySettingType": 1,
+                "excludeFromReports": false,
+                "sendOnlyActiveUsers": true
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaign.CreatePhishingCampaignRequest"
+                "type": "object",
+                "required": [
+                  "name",
+                  "scheduleTypeId"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "example": "Q1 Phishing Simulation"
+                  },
+                  "scheduleTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "phishingScenarioResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "targetGroupResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "duration": {
+                    "type": "integer",
+                    "example": 7
+                  },
+                  "distributionTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "distributionDelayEvery": {
+                    "type": "integer",
+                    "example": 0
+                  },
+                  "distributionDelayTimeTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "sendingLimit": {
+                    "type": "integer",
+                    "example": 0
+                  },
+                  "emailDeliverySettingType": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "excludeFromReports": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "sendOnlyActiveUsers": {
+                    "type": "boolean",
+                    "example": true
+                  }
+                }
+              },
+              "example": {
+                "name": "Q1 Phishing Simulation",
+                "scheduleTypeId": 1,
+                "phishingScenarioResourceIds": [
+                  "<scenarioResourceId>"
+                ],
+                "targetGroupResourceIds": [
+                  "<targetGroupResourceId>"
+                ],
+                "duration": 7,
+                "distributionTypeId": 1,
+                "distributionDelayEvery": 0,
+                "distributionDelayTimeTypeId": 1,
+                "sendingLimit": 0,
+                "emailDeliverySettingType": 1,
+                "excludeFromReports": false,
+                "sendOnlyActiveUsers": true
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaign.CreatePhishingCampaignRequest"
+                "type": "object",
+                "required": [
+                  "name",
+                  "scheduleTypeId"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "example": "Q1 Phishing Simulation"
+                  },
+                  "scheduleTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "phishingScenarioResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "targetGroupResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "duration": {
+                    "type": "integer",
+                    "example": 7
+                  },
+                  "distributionTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "distributionDelayEvery": {
+                    "type": "integer",
+                    "example": 0
+                  },
+                  "distributionDelayTimeTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "sendingLimit": {
+                    "type": "integer",
+                    "example": 0
+                  },
+                  "emailDeliverySettingType": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "excludeFromReports": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "sendOnlyActiveUsers": {
+                    "type": "boolean",
+                    "example": true
+                  }
+                }
+              },
+              "example": {
+                "name": "Q1 Phishing Simulation",
+                "scheduleTypeId": 1,
+                "phishingScenarioResourceIds": [
+                  "<scenarioResourceId>"
+                ],
+                "targetGroupResourceIds": [
+                  "<targetGroupResourceId>"
+                ],
+                "duration": 7,
+                "distributionTypeId": 1,
+                "distributionDelayEvery": 0,
+                "distributionDelayTimeTypeId": 1,
+                "sendingLimit": 0,
+                "emailDeliverySettingType": 1,
+                "excludeFromReports": false,
+                "sendOnlyActiveUsers": true
               }
             }
           }
@@ -19563,22 +20455,194 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.ApplicationService.PhishingCampaignJob.Dto.PhishingCampaignInstance"
+                "type": "object",
+                "properties": {
+                  "scheduleTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "targetGroupResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "excludeFromReports": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "sendingLimit": {
+                    "type": "integer",
+                    "example": 0
+                  },
+                  "distributionDelayEvery": {
+                    "type": "integer",
+                    "example": 0
+                  },
+                  "distributionDelayTimeTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "useTargetUserTimeZone": {
+                    "type": "boolean",
+                    "example": false
+                  }
+                }
+              },
+              "example": {
+                "scheduleTypeId": 1,
+                "targetGroupResourceIds": [
+                  "<targetGroupResourceId>"
+                ],
+                "excludeFromReports": false,
+                "sendingLimit": 0,
+                "distributionDelayEvery": 0,
+                "distributionDelayTimeTypeId": 1,
+                "useTargetUserTimeZone": false
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.ApplicationService.PhishingCampaignJob.Dto.PhishingCampaignInstance"
+                "type": "object",
+                "properties": {
+                  "scheduleTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "targetGroupResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "excludeFromReports": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "sendingLimit": {
+                    "type": "integer",
+                    "example": 0
+                  },
+                  "distributionDelayEvery": {
+                    "type": "integer",
+                    "example": 0
+                  },
+                  "distributionDelayTimeTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "useTargetUserTimeZone": {
+                    "type": "boolean",
+                    "example": false
+                  }
+                }
+              },
+              "example": {
+                "scheduleTypeId": 1,
+                "targetGroupResourceIds": [
+                  "<targetGroupResourceId>"
+                ],
+                "excludeFromReports": false,
+                "sendingLimit": 0,
+                "distributionDelayEvery": 0,
+                "distributionDelayTimeTypeId": 1,
+                "useTargetUserTimeZone": false
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.ApplicationService.PhishingCampaignJob.Dto.PhishingCampaignInstance"
+                "type": "object",
+                "properties": {
+                  "scheduleTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "targetGroupResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "excludeFromReports": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "sendingLimit": {
+                    "type": "integer",
+                    "example": 0
+                  },
+                  "distributionDelayEvery": {
+                    "type": "integer",
+                    "example": 0
+                  },
+                  "distributionDelayTimeTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "useTargetUserTimeZone": {
+                    "type": "boolean",
+                    "example": false
+                  }
+                }
+              },
+              "example": {
+                "scheduleTypeId": 1,
+                "targetGroupResourceIds": [
+                  "<targetGroupResourceId>"
+                ],
+                "excludeFromReports": false,
+                "sendingLimit": 0,
+                "distributionDelayEvery": 0,
+                "distributionDelayTimeTypeId": 1,
+                "useTargetUserTimeZone": false
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.ApplicationService.PhishingCampaignJob.Dto.PhishingCampaignInstance"
+                "type": "object",
+                "properties": {
+                  "scheduleTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "targetGroupResourceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "excludeFromReports": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "sendingLimit": {
+                    "type": "integer",
+                    "example": 0
+                  },
+                  "distributionDelayEvery": {
+                    "type": "integer",
+                    "example": 0
+                  },
+                  "distributionDelayTimeTypeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "useTargetUserTimeZone": {
+                    "type": "boolean",
+                    "example": false
+                  }
+                }
+              },
+              "example": {
+                "scheduleTypeId": 1,
+                "targetGroupResourceIds": [
+                  "<targetGroupResourceId>"
+                ],
+                "excludeFromReports": false,
+                "sendingLimit": 0,
+                "distributionDelayEvery": 0,
+                "distributionDelayTimeTypeId": 1,
+                "useTargetUserTimeZone": false
               }
             }
           }
@@ -23303,22 +24367,202 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingScenario.PhishingScenarioSearchRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Name",
+                "ascending": true,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingScenario.PhishingScenarioSearchRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Name",
+                "ascending": true,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingScenario.PhishingScenarioSearchRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Name",
+                "ascending": true,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingScenario.PhishingScenarioSearchRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Name",
+                "ascending": true,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               }
             }
           }
@@ -30026,22 +31270,178 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.SCIM.CreateScimIntegrationRequest"
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "maxLength": 30,
+                    "example": "Entra ID SCIM"
+                  },
+                  "groupResourceId": {
+                    "type": "string",
+                    "nullable": true,
+                    "description": "Assign provisioned users to a target group"
+                  },
+                  "fieldMappings": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "customFieldResourceId": {
+                          "type": "string"
+                        },
+                        "scimFieldResourceId": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "syncPlatformGroup": {
+                    "type": "boolean",
+                    "example": false
+                  }
+                }
+              },
+              "example": {
+                "name": "Entra ID SCIM",
+                "groupResourceId": null,
+                "fieldMappings": [],
+                "syncPlatformGroup": false
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.SCIM.CreateScimIntegrationRequest"
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "maxLength": 30,
+                    "example": "Entra ID SCIM"
+                  },
+                  "groupResourceId": {
+                    "type": "string",
+                    "nullable": true,
+                    "description": "Assign provisioned users to a target group"
+                  },
+                  "fieldMappings": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "customFieldResourceId": {
+                          "type": "string"
+                        },
+                        "scimFieldResourceId": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "syncPlatformGroup": {
+                    "type": "boolean",
+                    "example": false
+                  }
+                }
+              },
+              "example": {
+                "name": "Entra ID SCIM",
+                "groupResourceId": null,
+                "fieldMappings": [],
+                "syncPlatformGroup": false
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.SCIM.CreateScimIntegrationRequest"
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "maxLength": 30,
+                    "example": "Entra ID SCIM"
+                  },
+                  "groupResourceId": {
+                    "type": "string",
+                    "nullable": true,
+                    "description": "Assign provisioned users to a target group"
+                  },
+                  "fieldMappings": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "customFieldResourceId": {
+                          "type": "string"
+                        },
+                        "scimFieldResourceId": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "syncPlatformGroup": {
+                    "type": "boolean",
+                    "example": false
+                  }
+                }
+              },
+              "example": {
+                "name": "Entra ID SCIM",
+                "groupResourceId": null,
+                "fieldMappings": [],
+                "syncPlatformGroup": false
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.SCIM.CreateScimIntegrationRequest"
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "maxLength": 30,
+                    "example": "Entra ID SCIM"
+                  },
+                  "groupResourceId": {
+                    "type": "string",
+                    "nullable": true,
+                    "description": "Assign provisioned users to a target group"
+                  },
+                  "fieldMappings": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "customFieldResourceId": {
+                          "type": "string"
+                        },
+                        "scimFieldResourceId": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "syncPlatformGroup": {
+                    "type": "boolean",
+                    "example": false
+                  }
+                }
+              },
+              "example": {
+                "name": "Entra ID SCIM",
+                "groupResourceId": null,
+                "fieldMappings": [],
+                "syncPlatformGroup": false
               }
             }
           }
@@ -36338,22 +37738,230 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.TargetGroup.TargetGroupSearchRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Name",
+                "ascending": true,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                }
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.TargetGroup.TargetGroupSearchRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Name",
+                "ascending": true,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.TargetGroup.TargetGroupSearchRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Name",
+                "ascending": true,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.TargetGroup.TargetGroupSearchRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Name",
+                "ascending": true,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                }
               }
             }
           }
@@ -39081,22 +40689,230 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.ApplicationService.Models.SearchTrainingRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Name",
+                "ascending": true,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                }
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.ApplicationService.Models.SearchTrainingRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Name",
+                "ascending": true,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.ApplicationService.Models.SearchTrainingRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Name",
+                "ascending": true,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.AwarenessEducator.ApplicationService.Models.SearchTrainingRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string",
+                        "example": "and"
+                      },
+                      "searchInputTextValue": {
+                        "type": "string",
+                        "nullable": true
+                      },
+                      "filterGroups": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Name",
+                "ascending": true,
+                "filter": {
+                  "condition": "and",
+                  "searchInputTextValue": null,
+                  "filterGroups": []
+                }
               }
             }
           }

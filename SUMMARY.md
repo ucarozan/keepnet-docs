@@ -295,6 +295,7 @@
     * [Scope API requests to a customer](api-reference/use-cases/reseller/scope-api-requests-to-customer.md)
     * [List companies with license details](api-reference/use-cases/reseller/list-companies-with-license-details.md)
     * [Create a company](api-reference/use-cases/reseller/onboard-new-customer.md)
+    * [Create a company with SCIM and DEC](api-reference/use-cases/reseller/create-company-with-scim-and-dec.md)
     * [Get a company](api-reference/use-cases/reseller/get-a-company.md)
     * [Update a company](api-reference/use-cases/reseller/update-a-company.md)
     * [Delete a company](api-reference/use-cases/reseller/delete-a-company.md)
@@ -307,10 +308,12 @@
     * [Add system user for a customer](api-reference/use-cases/reseller/add-system-user-for-customer.md)
     * [Set up SCIM for a customer](api-reference/use-cases/reseller/set-up-scim-for-customer.md)
   * Training
+    * [Start training enrollment for a customer](api-reference/use-cases/reseller/start-training-enrollment-for-customer.md)
     * [View customer's enrollment list and report](api-reference/use-cases/reseller/view-customer-enrollment-list-and-report.md)
     * [View customer's enrollment sending, certificates, and notifications](api-reference/use-cases/reseller/view-customer-enrollment-sending-certificates-notifications.md)
     * [Pull survey results for a customer](api-reference/use-cases/reseller/pull-survey-results-for-customer.md)
   * Phishing simulation
+    * [Start phishing simulation for a customer](api-reference/use-cases/reseller/start-phishing-simulation-for-customer.md)
     * [View customer's campaign list and report](api-reference/use-cases/reseller/view-customer-simulation-campaign-list-and-report.md)
     * [List phishing scenarios for a customer](api-reference/use-cases/reseller/list-phishing-scenarios-for-customer.md)
     * [Create and start phishing campaign for a customer](api-reference/use-cases/reseller/create-and-start-phishing-campaign-for-customer.md)

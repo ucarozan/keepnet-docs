@@ -296,6 +296,114 @@ const TARGET_USERS_IMPORT_EXAMPLE = {
   selectedResourceIds: [],
 };
 
+/** Enrollment create — minimal body for Test it. */
+const ENROLLMENT_CREATE_EXAMPLE = {
+  trainingId: '<trainingResourceId>',
+  name: 'Q1 Security Awareness Training',
+  targetGroupResourceIds: ['<targetGroupResourceId>'],
+  enrollmentScheduler: {
+    scheduledDate: '2026-04-01T09:00:00Z',
+    scheduledTimeZoneId: 'Europe/Istanbul',
+    useOwnTimeZone: false,
+    dueDate: '2026-04-30T23:59:59Z',
+  },
+  awardCertificate: true,
+  markedAsTest: false,
+  sendTeamsNotification: false,
+};
+
+/** Trainings search — minimal paginated search. */
+const TRAININGS_SEARCH_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 20,
+  orderBy: 'Name',
+  ascending: true,
+  filter: {
+    condition: 'and',
+    searchInputTextValue: null,
+    filterGroups: [],
+  },
+};
+
+/** Target groups search (current company) — minimal paginated search. */
+const TARGET_GROUPS_SEARCH_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 20,
+  orderBy: 'Name',
+  ascending: true,
+  filter: {
+    condition: 'and',
+    searchInputTextValue: null,
+    filterGroups: [],
+  },
+};
+
+/** Phishing scenario search — minimal paginated search. */
+const PHISHING_SCENARIO_SEARCH_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 20,
+  orderBy: 'Name',
+  ascending: true,
+  filter: {
+    Condition: 'AND',
+    SearchInputTextValue: '',
+  },
+};
+
+/** Phishing campaign create — minimal body for Test it. */
+const PHISHING_CAMPAIGN_CREATE_EXAMPLE = {
+  name: 'Q1 Phishing Simulation',
+  scheduleTypeId: 1,
+  phishingScenarioResourceIds: ['<scenarioResourceId>'],
+  targetGroupResourceIds: ['<targetGroupResourceId>'],
+  duration: 7,
+  distributionTypeId: 1,
+  distributionDelayEvery: 0,
+  distributionDelayTimeTypeId: 1,
+  sendingLimit: 0,
+  emailDeliverySettingType: 1,
+  excludeFromReports: false,
+  sendOnlyActiveUsers: true,
+};
+
+/** Phishing campaign job start — minimal body. */
+const PHISHING_CAMPAIGN_JOB_START_EXAMPLE = {
+  scheduleTypeId: 1,
+  targetGroupResourceIds: ['<targetGroupResourceId>'],
+  excludeFromReports: false,
+  sendingLimit: 0,
+  distributionDelayEvery: 0,
+  distributionDelayTimeTypeId: 1,
+  useTargetUserTimeZone: false,
+};
+
+/** SCIM create — minimal body. */
+const SCIM_CREATE_EXAMPLE = {
+  name: 'Entra ID SCIM',
+  groupResourceId: null,
+  fieldMappings: [],
+  syncPlatformGroup: false,
+};
+
+/** Direct Email Creation (DEC) create — M365 example. */
+const DEC_CREATE_EXAMPLE = {
+  name: 'Acme Corp M365 DEC',
+  tenantId: 'a1b2c3d4-e5f6-7890-abcd-ef1234567890',
+  allowedDomains: ['acmecorp.com'],
+  type: 1,
+};
+
+/** DEC test — send test email. */
+const DEC_TEST_EXAMPLE = {
+  resourceId: '<decResourceId>',
+  from: 'noreply@acmecorp.com',
+  fromName: 'Keepnet',
+  to: 'admin@acmecorp.com',
+  message: 'DEC test email',
+  tenantId: 'a1b2c3d4-e5f6-7890-abcd-ef1234567890',
+  type: 1,
+};
+
 function injectRequestExamples(paths) {
   const result = { ...paths };
 
@@ -649,6 +757,225 @@ function injectRequestExamples(paths) {
     };
     for (const key of Object.keys(result['/api/target-users/{transactionId}/import'].post.requestBody.content)) {
       result['/api/target-users/{transactionId}/import'].post.requestBody.content[key] = { ...importContent };
+    }
+  }
+
+  // --- Enrollment, training, target-group, phishing, SCIM, DEC ---
+
+  if (result['/api/enrollments']?.post?.requestBody?.content) {
+    const enrollContent = {
+      schema: {
+        type: 'object',
+        required: ['trainingId', 'name', 'targetGroupResourceIds'],
+        properties: {
+          trainingId: { type: 'string', example: '<trainingResourceId>' },
+          name: { type: 'string', example: 'Q1 Security Awareness Training' },
+          targetGroupResourceIds: { type: 'array', items: { type: 'string' } },
+          enrollmentScheduler: {
+            type: 'object',
+            properties: {
+              scheduledDate: { type: 'string', format: 'date-time' },
+              scheduledTimeZoneId: { type: 'string', example: 'Europe/Istanbul' },
+              useOwnTimeZone: { type: 'boolean', example: false },
+              dueDate: { type: 'string', format: 'date-time' },
+            },
+          },
+          awardCertificate: { type: 'boolean', example: true },
+          markedAsTest: { type: 'boolean', example: false },
+          sendTeamsNotification: { type: 'boolean', example: false },
+        },
+      },
+      example: ENROLLMENT_CREATE_EXAMPLE,
+    };
+    for (const key of Object.keys(result['/api/enrollments'].post.requestBody.content)) {
+      result['/api/enrollments'].post.requestBody.content[key] = { ...enrollContent };
+    }
+  }
+
+  if (result['/api/trainings/search']?.post?.requestBody?.content) {
+    const trainSearchContent = {
+      schema: {
+        type: 'object',
+        required: ['pageNumber', 'pageSize'],
+        properties: {
+          pageNumber: { type: 'integer', example: 1 },
+          pageSize: { type: 'integer', example: 20 },
+          orderBy: { type: 'string', example: 'Name' },
+          ascending: { type: 'boolean', example: true },
+          filter: {
+            type: 'object',
+            properties: {
+              condition: { type: 'string', example: 'and' },
+              searchInputTextValue: { type: 'string', nullable: true },
+              filterGroups: { type: 'array', items: { type: 'object' } },
+            },
+          },
+        },
+      },
+      example: TRAININGS_SEARCH_EXAMPLE,
+    };
+    for (const key of Object.keys(result['/api/trainings/search'].post.requestBody.content)) {
+      result['/api/trainings/search'].post.requestBody.content[key] = { ...trainSearchContent };
+    }
+  }
+
+  if (result['/api/target-groups/search/current-company']?.post?.requestBody?.content) {
+    const tgSearchContent = {
+      schema: {
+        type: 'object',
+        required: ['pageNumber', 'pageSize'],
+        properties: {
+          pageNumber: { type: 'integer', example: 1 },
+          pageSize: { type: 'integer', example: 20 },
+          orderBy: { type: 'string', example: 'Name' },
+          ascending: { type: 'boolean', example: true },
+          filter: {
+            type: 'object',
+            properties: {
+              condition: { type: 'string', example: 'and' },
+              searchInputTextValue: { type: 'string', nullable: true },
+              filterGroups: { type: 'array', items: { type: 'object' } },
+            },
+          },
+        },
+      },
+      example: TARGET_GROUPS_SEARCH_EXAMPLE,
+    };
+    for (const key of Object.keys(result['/api/target-groups/search/current-company'].post.requestBody.content)) {
+      result['/api/target-groups/search/current-company'].post.requestBody.content[key] = { ...tgSearchContent };
+    }
+  }
+
+  if (result['/api/phishing-simulator/phishing-scenario/search']?.post?.requestBody?.content) {
+    const scenarioSearchContent = {
+      schema: {
+        type: 'object',
+        required: ['pageNumber', 'pageSize'],
+        properties: {
+          pageNumber: { type: 'integer', example: 1 },
+          pageSize: { type: 'integer', example: 20 },
+          orderBy: { type: 'string', example: 'Name' },
+          ascending: { type: 'boolean', example: true },
+          filter: {
+            type: 'object',
+            properties: {
+              Condition: { type: 'string', example: 'AND' },
+              SearchInputTextValue: { type: 'string', example: '' },
+            },
+          },
+        },
+      },
+      example: PHISHING_SCENARIO_SEARCH_EXAMPLE,
+    };
+    for (const key of Object.keys(result['/api/phishing-simulator/phishing-scenario/search'].post.requestBody.content)) {
+      result['/api/phishing-simulator/phishing-scenario/search'].post.requestBody.content[key] = { ...scenarioSearchContent };
+    }
+  }
+
+  if (result['/api/phishing-simulator/phishing-campaign']?.post?.requestBody?.content) {
+    const campaignContent = {
+      schema: {
+        type: 'object',
+        required: ['name', 'scheduleTypeId'],
+        properties: {
+          name: { type: 'string', example: 'Q1 Phishing Simulation' },
+          scheduleTypeId: { type: 'integer', example: 1 },
+          phishingScenarioResourceIds: { type: 'array', items: { type: 'string' } },
+          targetGroupResourceIds: { type: 'array', items: { type: 'string' } },
+          duration: { type: 'integer', example: 7 },
+          distributionTypeId: { type: 'integer', example: 1 },
+          distributionDelayEvery: { type: 'integer', example: 0 },
+          distributionDelayTimeTypeId: { type: 'integer', example: 1 },
+          sendingLimit: { type: 'integer', example: 0 },
+          emailDeliverySettingType: { type: 'integer', example: 1 },
+          excludeFromReports: { type: 'boolean', example: false },
+          sendOnlyActiveUsers: { type: 'boolean', example: true },
+        },
+      },
+      example: PHISHING_CAMPAIGN_CREATE_EXAMPLE,
+    };
+    for (const key of Object.keys(result['/api/phishing-simulator/phishing-campaign'].post.requestBody.content)) {
+      result['/api/phishing-simulator/phishing-campaign'].post.requestBody.content[key] = { ...campaignContent };
+    }
+  }
+
+  if (result['/api/phishing-simulator/phishing-campaign-job/start/{resourceId}']?.post?.requestBody?.content) {
+    const jobStartContent = {
+      schema: {
+        type: 'object',
+        properties: {
+          scheduleTypeId: { type: 'integer', example: 1 },
+          targetGroupResourceIds: { type: 'array', items: { type: 'string' } },
+          excludeFromReports: { type: 'boolean', example: false },
+          sendingLimit: { type: 'integer', example: 0 },
+          distributionDelayEvery: { type: 'integer', example: 0 },
+          distributionDelayTimeTypeId: { type: 'integer', example: 1 },
+          useTargetUserTimeZone: { type: 'boolean', example: false },
+        },
+      },
+      example: PHISHING_CAMPAIGN_JOB_START_EXAMPLE,
+    };
+    for (const key of Object.keys(result['/api/phishing-simulator/phishing-campaign-job/start/{resourceId}'].post.requestBody.content)) {
+      result['/api/phishing-simulator/phishing-campaign-job/start/{resourceId}'].post.requestBody.content[key] = { ...jobStartContent };
+    }
+  }
+
+  if (result['/api/scim']?.post?.requestBody?.content) {
+    const scimContent = {
+      schema: {
+        type: 'object',
+        required: ['name'],
+        properties: {
+          name: { type: 'string', maxLength: 30, example: 'Entra ID SCIM' },
+          groupResourceId: { type: 'string', nullable: true, description: 'Assign provisioned users to a target group' },
+          fieldMappings: { type: 'array', items: { type: 'object', properties: { customFieldResourceId: { type: 'string' }, scimFieldResourceId: { type: 'string' } } } },
+          syncPlatformGroup: { type: 'boolean', example: false },
+        },
+      },
+      example: SCIM_CREATE_EXAMPLE,
+    };
+    for (const key of Object.keys(result['/api/scim'].post.requestBody.content)) {
+      result['/api/scim'].post.requestBody.content[key] = { ...scimContent };
+    }
+  }
+
+  if (result['/api/companies/direct-email-settings']?.post?.requestBody?.content) {
+    const decContent = {
+      schema: {
+        type: 'object',
+        required: ['name', 'tenantId', 'allowedDomains'],
+        properties: {
+          name: { type: 'string', maxLength: 64, example: 'Acme Corp M365 DEC' },
+          tenantId: { type: 'string', example: 'a1b2c3d4-e5f6-7890-abcd-ef1234567890' },
+          allowedDomains: { type: 'array', items: { type: 'string' }, example: ['acmecorp.com'] },
+          type: { type: 'integer', example: 1, description: '1 = Microsoft 365, 2 = Google Workspace' },
+        },
+      },
+      example: DEC_CREATE_EXAMPLE,
+    };
+    for (const key of Object.keys(result['/api/companies/direct-email-settings'].post.requestBody.content)) {
+      result['/api/companies/direct-email-settings'].post.requestBody.content[key] = { ...decContent };
+    }
+  }
+
+  if (result['/api/companies/direct-email-settings/test']?.post?.requestBody?.content) {
+    const decTestContent = {
+      schema: {
+        type: 'object',
+        properties: {
+          resourceId: { type: 'string', example: '<decResourceId>' },
+          from: { type: 'string', example: 'noreply@acmecorp.com' },
+          fromName: { type: 'string', example: 'Keepnet' },
+          to: { type: 'string', example: 'admin@acmecorp.com' },
+          message: { type: 'string', example: 'DEC test email' },
+          tenantId: { type: 'string', example: 'a1b2c3d4-e5f6-7890-abcd-ef1234567890' },
+          type: { type: 'integer', example: 1 },
+        },
+      },
+      example: DEC_TEST_EXAMPLE,
+    };
+    for (const key of Object.keys(result['/api/companies/direct-email-settings/test'].post.requestBody.content)) {
+      result['/api/companies/direct-email-settings/test'].post.requestBody.content[key] = { ...decTestContent };
     }
   }
 
