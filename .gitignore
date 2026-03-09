@@ -20,3 +20,11 @@ node_modules/
 
 # Optional: one-off audits (uncomment if you don’t want to track them)
 # *-AUDIT.md
+
+# Survey / report data (generated or local, not part of docs)
+survey-results-full.json
+survey-results-for-analysis.csv
+survey-responses-by-question.csv
+survey-users-list.json
+reseller-survey-users-report.json
+fetch_survey_results.py
