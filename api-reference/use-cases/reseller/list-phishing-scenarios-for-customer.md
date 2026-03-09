@@ -2,7 +2,7 @@
 
 As a Reseller you can list a customer's phishing scenarios (templates used to run campaigns) scoped to that company. Get the customer's Company ID, then call the phishing-scenario search endpoint with **`X-KEEPNET-Company-Id`**. Use a credential with Client Role = **Reseller**. Use the scenario `resourceId` when creating or managing phishing campaigns for that customer.
 
----
+***
 
 ## POST /api/companies/search
 
@@ -10,13 +10,13 @@ Get the customer's Company ID. Use the `resourceId` of the desired company in th
 
 > Retrieves a paginated list of all companies you manage with license details. Each item includes `resourceId` — use it as the Company ID for scoped requests. **Test it:** Authorize with Client ID/Secret, then Send — request body is pre-filled.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/search" method="post" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/companies/search" method="post" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
 From the response, pick the company and note its `resourceId`. Example: `"resourceId": "xC5kfGz7w2Nz"` → use as `X-KEEPNET-Company-Id` in the scenario requests below.
 
----
+***
 
 ## POST /api/phishing-simulator/phishing-scenario/search
 
@@ -24,18 +24,18 @@ Returns a paginated list of phishing scenarios for that customer. Send **`X-KEEP
 
 > Returns a list of the phishing scenarios. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**. Request body: optional `filter`, `pageNumber`, `pageSize`, `orderBy`, `ascending`. **Test it:** Endpoints → **PhishingScenario** — use dummy data (H8d) and set the header to a Company ID from companies/search.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/phishing-simulator/phishing-scenario/search" method="post" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/phishing-simulator/phishing-scenario/search" method="post" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
 To export the scenario list: **POST /api/phishing-simulator/phishing-scenario/search/export** — same header and body shape; see Endpoints → **PhishingScenario**.
 
----
+***
 
 ## Common errors
 
-* **403 Forbidden** — Credential is not Reseller, or the Company ID is not one you manage. Set Client Role = **Reseller**. <a href="../../../next-generation-product/platform/company/system-users/user-roles.md" target="_blank" rel="noopener noreferrer">Roles and permissions →</a>
+* **403 Forbidden** — Credential is not Reseller, or the Company ID is not one you manage. Set Client Role = **Reseller**. [Roles and permissions →](../../../next-generation-product/platform/company/system-users/user-roles.md)
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
 * **404 Not Found** / **400 Bad Request** — Invalid Company ID. Verify Company ID from `POST /api/companies/search` and ensure you send `X-KEEPNET-Company-Id` for the customer.
 
-**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>. <a href="view-customer-simulation-campaign-list-and-report.md" target="_blank" rel="noopener noreferrer">View customer's campaign list and report →</a> (campaigns and job reports). <a href="create-and-start-phishing-campaign-for-customer.md" target="_blank" rel="noopener noreferrer">Create and start phishing campaign for a customer →</a>.
+**Related:** [Scope API requests to a customer →](scope-api-requests-to-customer.md). [View customer's campaign list and report →](view-customer-simulation-campaign-list-and-report.md) (campaigns and job reports). [Create and start phishing campaign for a customer →](create-and-start-phishing-campaign-for-customer.md).

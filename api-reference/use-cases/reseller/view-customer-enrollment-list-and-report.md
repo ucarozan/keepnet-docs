@@ -2,7 +2,7 @@
 
 As a Reseller you can list a customer's enrollments (training or survey), get details and summary reports, and pull the **Users** report for an enrollment so you have per-user data for custom reporting. Use a credential with Client Role = **Reseller**. Send **`X-KEEPNET-Company-Id`** (and for enrollment search, **`x-ir-company-id`** with the same value) so results are scoped to that customer.
 
----
+***
 
 ## Get the customer's Company ID
 
@@ -12,13 +12,13 @@ Use the `resourceId` of the desired company as the Company ID in the enrollment 
 
 > Retrieves a paginated list of all companies you manage with license details. Each item includes `resourceId` — use it as the Company ID for scoped requests. **Test it:** Authorize in the Endpoints panel, then Send — request body is pre-filled.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/search" method="post" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/companies/search" method="post" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
 From the response, pick the company (e.g. by `companyName`) and note its `companyResourceId`. Use that value in the **`X-KEEPNET-Company-Id`** and **`x-ir-company-id`** headers in the next steps.
 
----
+***
 
 ## List enrollments for the customer
 
@@ -28,9 +28,9 @@ Returns a paginated list of enrollments for that customer. Send the Company ID i
 
 > Returns a list of enrollments. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`** and **`x-ir-company-id: <companyResourceId>`** with the same customer Company ID.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/enrollments/search" method="post" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/enrollments/search" method="post" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
 Example headers:
 
@@ -62,7 +62,7 @@ Example body (first page; filter structure required):
 
 From the response, use `enrollmentId` (or `resourceId`) of the enrollment you want to report on.
 
----
+***
 
 ### List only Survey enrollments
 
@@ -88,7 +88,7 @@ To restrict the list to **Survey** enrollments (e.g. security culture surveys), 
 
 Each result includes `"type": "Survey"`, `name`, `enrollmentId`, and delivery info. Use that `enrollmentId` for the summary and Users report endpoints below.
 
----
+***
 
 ## Get enrollment details
 
@@ -98,11 +98,11 @@ Returns full details for one enrollment. Send **`X-KEEPNET-Company-Id`** with th
 
 > Get enrollment by Id. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`** for the customer that owns this enrollment.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/enrollments/{resourceId}" method="get" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/enrollments/{resourceId}" method="get" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
----
+***
 
 ## Get enrollment summary report
 
@@ -112,11 +112,11 @@ Returns the enrollment summary (overview). Send **`X-KEEPNET-Company-Id`**. For 
 
 > Returns enrollment summary report. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/training-reports/{enrollmentId}/summary" method="get" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/training-reports/{enrollmentId}/summary" method="get" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
----
+***
 
 ## Pull Users report for an enrollment
 
@@ -126,9 +126,9 @@ Returns the per-user training (or survey) report for that enrollment — one row
 
 > Returns target user training report for an enrollment. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**. Request body: `filter` (required), `pageNumber`, `pageSize`, `orderBy`, `ascending`; for Survey enrollments include **`trainingType`** (e.g. `0`) in the body. See Endpoints → **TrainingReport** for the full schema.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/training-reports/{enrollmentId}/users/search" method="post" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/training-reports/{enrollmentId}/users/search" method="post" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
 Example body (first page; filter with `condition` and `filterGroups` as required by the schema):
 
@@ -148,7 +148,7 @@ Example body (first page; filter with `condition` and `filterGroups` as required
 
 For Survey enrollments, add **`trainingType`** to the body (value depends on API; e.g. `0` for Survey). Paginate until `results` is empty or `totalNumberOfRecords` is reached.
 
----
+***
 
 ## Export the enrollment list
 
@@ -158,17 +158,17 @@ Export the enrollment list (e.g. CSV/Excel) for that customer. Send the same **`
 
 > Exports the list of enrollments. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/enrollments/search/export" method="post" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/enrollments/search/export" method="post" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
----
+***
 
 ## Common errors
 
-* **403 Forbidden** — Credential is not Reseller, or the Company ID is not one you manage. Set Client Role = **Reseller**. <a href="../../../next-generation-product/platform/company/system-users/user-roles.md" target="_blank" rel="noopener noreferrer">Roles and permissions →</a>
+* **403 Forbidden** — Credential is not Reseller, or the Company ID is not one you manage. Set Client Role = **Reseller**. [Roles and permissions →](../../../next-generation-product/platform/company/system-users/user-roles.md)
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
 * **400 Bad Request** — Invalid request body. For `POST /api/enrollments/search`, ensure `filter` is sent with the structure above (e.g. `Condition`, `FilterGroups`). For Survey-only results, include `enrollmentType: "Survey"`.
 * **404 Not Found** — Invalid Company ID or enrollment ID. Verify Company ID from `POST /api/companies/search` and enrollment ID from `POST /api/enrollments/search`; send **`X-KEEPNET-Company-Id`** (and for enrollment search **`x-ir-company-id`**) for the customer that owns the enrollment.
 
-**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>. For training report and enrollment schemas: **Endpoints** → **Enrollment**, **TrainingReport** in the API Reference sidebar.
+**Related:** [Scope API requests to a customer →](scope-api-requests-to-customer.md). For training report and enrollment schemas: **Endpoints** → **Enrollment**, **TrainingReport** in the API Reference sidebar.

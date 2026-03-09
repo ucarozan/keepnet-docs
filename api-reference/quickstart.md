@@ -12,46 +12,38 @@ You can use the Keepnet API to:
 
 …and more, all via REST calls with OAuth 2.0 Client Credentials.
 
-Use the API from AI assistants (Cursor, Claude, ChatGPT, etc.) via MCP: <a href="use-the-api-with-ai-assistants-mcp.md" target="_blank" rel="noopener noreferrer">Use the API with AI assistants (MCP) →</a>
+Use the API from AI assistants (Cursor, Claude, ChatGPT, etc.) via MCP: [Use the API with AI assistants (MCP) →](use-the-api-with-ai-assistants-mcp.md)
 
----
+***
 
 {% stepper %}
 {% step %}
-
-### Getting started
+#### Getting started
 
 You need a Keepnet platform account with API access. Generate **Client ID** and **Client Secret** from **Company → Company Settings → REST API** before making any API calls.
 
 {% hint style="info" %}
-**Platform UI:** Go to **Company → Company Settings → REST API** and click **+ NEW**.
-<a href="../next-generation-product/platform/company/company-settings/rest-api.md" target="_blank" rel="noopener noreferrer">REST API Settings →</a>
+**Platform UI:** Go to **Company → Company Settings → REST API** and click **+ NEW**. [REST API Settings →](../next-generation-product/platform/company/company-settings/rest-api.md)
 {% endhint %}
 
-Field|Description
-:---|:---
-**Name**|A label for this credential set (e.g. `prod-integration`, `siem-connector`)
-**Client Role**|`Company Admin` for full access, or a custom role with limited privileges
-**IP Restriction**|Optionally restrict access to specific IP addresses
-**Status**|Set to `Active`
+| Field              | Description                                                                 |
+| ------------------ | --------------------------------------------------------------------------- |
+| **Name**           | A label for this credential set (e.g. `prod-integration`, `siem-connector`) |
+| **Client Role**    | `Company Admin` for full access, or a custom role with limited privileges   |
+| **IP Restriction** | Optionally restrict access to specific IP addresses                         |
+| **Status**         | Set to `Active`                                                             |
 
 {% hint style="warning" %}
 **The Client Secret is shown only once.** Copy and store it securely immediately after you generate it — it cannot be retrieved later.
 {% endhint %}
-
 {% endstep %}
 
 {% step %}
-
-### Request an access token
+#### Request an access token
 
 Keepnet API uses **OAuth 2.0 Client Credentials**. Every request requires a Bearer token in the `Authorization` header.
 
 **Endpoint:** `POST /connect/token`
-
-{% swagger src="../openapi/keepnet-api-spec.json" path="/connect/token" method="post" expanded="true" %}
-<a href="../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
 
 {% tabs %}
 {% tab title="HTTP" %}
@@ -110,18 +102,12 @@ const { access_token } = await response.json();
 
 Alternatively, get a token from the **POST /connect/token** block on this page, copy `access_token` from the response, and paste it into the Bearer field in Endpoints instead of using Authorize.
 {% endhint %}
-
 {% endstep %}
 
 {% step %}
-
-### Make your first API call
+#### Make your first API call
 
 Verify your token and company access with `GET /api/companies/my` — returns your company (Company Admin) or companies you manage (Reseller). No request body, no extra parameters.
-
-{% swagger src="../openapi/keepnet-api-spec.json" path="/api/companies/my" method="get" expanded="true" %}
-<a href="../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
 
 ```bash
 curl -X GET "https://api.keepnetlabs.com/api/companies/my" \
@@ -130,30 +116,30 @@ curl -X GET "https://api.keepnetlabs.com/api/companies/my" \
 ```
 
 If successful, you'll get a `data` array with your company details (id, name, etc.). This confirms:
+
 * Token is valid
 * Credentials have API access
 * You can fetch your own company data
-
 {% endstep %}
 {% endstepper %}
 
----
+***
 
 ## Test it — quick checklist
 
 The **Authorize** button is not on the Quickstart page; it appears in the right panel when you open an endpoint under **Endpoints** (left sidebar). Order:
 
-Step|Action|Result
-:---|:---|:---
-1|**Endpoints** → open any endpoint (e.g. Company → Retrieves a list…) → **Authorize** (lock icon) → enter Client ID + Client Secret → click **Authorize**|Token is fetched and applied to all requests
-2|**GET /api/companies/my** (Company) → Send|Returns your company (Company Admin) or companies you manage (Reseller)
-3|**POST /api/companies/search** (Company) → Body pre-filled → Send|Company list with license details (Reseller credential required)
+| Step | Action                                                                                                                                                   | Result                                                                  |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| 1    | **Endpoints** → open any endpoint (e.g. Company → Retrieves a list…) → **Authorize** (lock icon) → enter Client ID + Client Secret → click **Authorize** | Token is fetched and applied to all requests                            |
+| 2    | **GET /api/companies/my** (Company) → Send                                                                                                               | Returns your company (Company Admin) or companies you manage (Reseller) |
+| 3    | **POST /api/companies/search** (Company) → Body pre-filled → Send                                                                                        | Company list with license details (Reseller credential required)        |
 
 {% hint style="info" %}
 With a **Company Admin** credential, step 3 returns `403 Forbidden`. This is expected — `companies/search` is for Reseller only.
 {% endhint %}
 
----
+***
 
 ## Base URL and response format
 
@@ -161,24 +147,24 @@ With a **Company Admin** credential, step 3 returns `403 Forbidden`. This is exp
 
 All API responses include an `isSuccess` field. When `isSuccess` is `false`, check the `messages` array for error details.
 
-Field|Type|Description
-:---|:---|:---
-`isSuccess`|boolean|Indicates whether the request succeeded
-`data`|object|Response payload when successful
-`messages`|array|Error or validation messages when failed
+| Field       | Type    | Description                              |
+| ----------- | ------- | ---------------------------------------- |
+| `isSuccess` | boolean | Indicates whether the request succeeded  |
+| `data`      | object  | Response payload when successful         |
+| `messages`  | array   | Error or validation messages when failed |
 
----
+***
 
 ## Common conventions
 
-Convention|Description
-:---|:---
-**Pagination**|Search endpoints use `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter` in the request body
-**Filter**|Use `filter: null` for no filtering, or a filter object with operators (`eq`, `neq`, `contains`, `gt`, `lt`, etc.)
-**Sorting**|`orderBy` is often required — use `CreateTime` for chronological ordering
-**Company scope**|Most endpoints require a company context. Company Admin: automatic. Reseller: include Company ID (header/path/query)
+| Convention        | Description                                                                                                          |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **Pagination**    | Search endpoints use `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter` in the request body                  |
+| **Filter**        | Use `filter: null` for no filtering, or a filter object with operators (`eq`, `neq`, `contains`, `gt`, `lt`, etc.)   |
+| **Sorting**       | `orderBy` is often required — use `CreateTime` for chronological ordering                                            |
+| **Company scope** | Most endpoints require a company context. Company Admin: automatic. Reseller: include Company ID (header/path/query) |
 
----
+***
 
 ## What the token contains
 
@@ -188,33 +174,33 @@ The access token is a **JWT**. Decode it to read company context, role, and othe
 
 ### Company context
 
-Claim|Description|Example
-:---|:---|:---
-`user_company_resourceid`|**Company ID** — use in `X-KEEPNET-Company-Id`, path `/api/.../companies/{id}/...`, or `?companyId=`|`xC5kfGz7w2Nz`
-`user_company_name`|Company name|`ACME LLC`
-`user_company_id`|Numeric company ID|`1`
-`user_company_logopath`|Company logo URL|`https://api.keepnetlabs.com/companylogo/...`
-`user_company_industry_name`|Industry (e.g. Technology)|`Technology`
-`user_company_parentcompany_resourceid`|Parent/MSSP company ID — **Reseller only**, empty for Company Admin|`xC5kfGz7w2Nz` (Reseller) or empty
-`user_company_parentcompany_name`|Parent company name — **Reseller only**|`ACME Corp`
+| Claim                                   | Description                                                                                          | Example                                       |
+| --------------------------------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| `user_company_resourceid`               | **Company ID** — use in `X-KEEPNET-Company-Id`, path `/api/.../companies/{id}/...`, or `?companyId=` | `xC5kfGz7w2Nz`                                |
+| `user_company_name`                     | Company name                                                                                         | `ACME LLC`                                    |
+| `user_company_id`                       | Numeric company ID                                                                                   | `1`                                           |
+| `user_company_logopath`                 | Company logo URL                                                                                     | `https://api.keepnetlabs.com/companylogo/...` |
+| `user_company_industry_name`            | Industry (e.g. Technology)                                                                           | `Technology`                                  |
+| `user_company_parentcompany_resourceid` | Parent/MSSP company ID — **Reseller only**, empty for Company Admin                                  | `xC5kfGz7w2Nz` (Reseller) or empty            |
+| `user_company_parentcompany_name`       | Parent company name — **Reseller only**                                                              | `ACME Corp`                                   |
 
 ### Role and access
 
-Claim|Description|Company Admin|Reseller
-:---|:---|:---|:---
-`role`|User role|`Company Admin`|`Reseller`
-`company_admin_access`|Can manage own company|`true`|`true`
-`reseller_access`|Can manage multiple companies|`false`|`true`
-`root_access`|Platform root/admin|`false`|`false`
-`scope`|API scope|`["api1"]`|`["api1"]`
+| Claim                  | Description                   | Company Admin   | Reseller   |
+| ---------------------- | ----------------------------- | --------------- | ---------- |
+| `role`                 | User role                     | `Company Admin` | `Reseller` |
+| `company_admin_access` | Can manage own company        | `true`          | `true`     |
+| `reseller_access`      | Can manage multiple companies | `false`         | `true`     |
+| `root_access`          | Platform root/admin           | `false`         | `false`    |
+| `scope`                | API scope                     | `["api1"]`      | `["api1"]` |
 
 ### Token metadata
 
-Claim|Description|Example
-:---|:---|:---
-`exp`|Expiry (Unix timestamp)|`1772935488`
-`iat`|Issued at (Unix timestamp)|`1772931888`
-`client_id`|Client ID used to obtain the token|`xxxxxxxxxxxxxxxx`
+| Claim       | Description                        | Example            |
+| ----------- | ---------------------------------- | ------------------ |
+| `exp`       | Expiry (Unix timestamp)            | `1772935488`       |
+| `iat`       | Issued at (Unix timestamp)         | `1772931888`       |
+| `client_id` | Client ID used to obtain the token | `xxxxxxxxxxxxxxxx` |
 
 {% hint style="info" %}
 **Company Admin**
@@ -231,30 +217,30 @@ Claim|Description|Example
 * Managed company IDs → `POST /api/companies/search` — use those IDs in `X-KEEPNET-Company-Id` for company-scoped requests
 {% endhint %}
 
----
+***
 
 ## Who can use the API
 
-Role|Access
-:---|:---
-**Company Admin**|Full access to your company's data — no Company ID needed
-**Reseller**|Cross-company management — list companies, onboard customers, pull reports per company using Company ID
-**Custom role**|Scoped to specific products or actions based on role definition
+| Role              | Access                                                                                                  |
+| ----------------- | ------------------------------------------------------------------------------------------------------- |
+| **Company Admin** | Full access to your company's data — no Company ID needed                                               |
+| **Reseller**      | Cross-company management — list companies, onboard customers, pull reports per company using Company ID |
+| **Custom role**   | Scoped to specific products or actions based on role definition                                         |
 
----
+***
 
 ## Token expiry and errors
 
 Tokens expire after **1 hour**. No refresh token — request a new one when the current token expires.
 
-HTTP status|Cause|Action
-:---|:---|:---
-`400 Bad Request` — `invalid_client`|Wrong or placeholder credentials|Use real credentials from **Company → Company Settings → REST API**
-`401 Unauthorized`|Missing or invalid token|Re-authenticate and retry
-`403 Forbidden`|Insufficient role permissions|Check the Client Role in platform settings
-`429 Too Many Requests`|Rate limit exceeded|Back off and retry after a delay
+| HTTP status                          | Cause                            | Action                                                              |
+| ------------------------------------ | -------------------------------- | ------------------------------------------------------------------- |
+| `400 Bad Request` — `invalid_client` | Wrong or placeholder credentials | Use real credentials from **Company → Company Settings → REST API** |
+| `401 Unauthorized`                   | Missing or invalid token         | Re-authenticate and retry                                           |
+| `403 Forbidden`                      | Insufficient role permissions    | Check the Client Role in platform settings                          |
+| `429 Too Many Requests`              | Rate limit exceeded              | Back off and retry after a delay                                    |
 
----
+***
 
 ## Reseller: scope by Company ID
 
@@ -264,9 +250,9 @@ If your credential has the **Reseller** role, include Company ID when calling co
 * **Path:** `/api/.../companies/{companyId}/...`
 * **Query:** `?companyId={companyId}`
 
-Company IDs are returned by `POST /api/companies/search`. For a full explanation and usage in report and user endpoints, see <a href="use-cases/reseller/scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>. For the list: <a href="use-cases/reseller/list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>.
+Company IDs are returned by `POST /api/companies/search`. For a full explanation and usage in report and user endpoints, see [Scope API requests to a customer →](use-cases/reseller/scope-api-requests-to-customer.md). For the list: [List companies with license details →](use-cases/reseller/list-companies-with-license-details.md).
 
----
+***
 
 ## Keep credentials secure
 
@@ -278,14 +264,14 @@ Company IDs are returned by `POST /api/companies/search`. For a full explanation
 **Don't:** Hard-code `client_id` or `client_secret` in source code. Don't commit credentials to version control.
 {% endhint %}
 
----
+***
 
 ## Explore the API
 
-What you want to do|Use case
-:---|:---
-List companies (Reseller)|<a href="use-cases/reseller/list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>
-Scope requests to a customer|<a href="use-cases/reseller/scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>
-Export customer list for billing|<a href="use-cases/reseller/export-customer-list-for-billing.md" target="_blank" rel="noopener noreferrer">Export customer list for billing →</a>
-View customer's training enrollments|<a href="use-cases/reseller/view-customer-enrollment-list-and-report.md" target="_blank" rel="noopener noreferrer">View customer's enrollment list and report →</a>
-View customer's simulation campaigns|<a href="use-cases/reseller/view-customer-simulation-campaign-list-and-report.md" target="_blank" rel="noopener noreferrer">View customer's campaign list and report →</a>
+| What you want to do                  | Use case                                                                                                              |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| List companies (Reseller)            | [List companies with license details →](use-cases/reseller/list-companies-with-license-details.md)                    |
+| Scope requests to a customer         | [Scope API requests to a customer →](use-cases/reseller/scope-api-requests-to-customer.md)                            |
+| Export customer list for billing     | [Export customer list for billing →](use-cases/reseller/export-customer-list-for-billing.md)                          |
+| View customer's training enrollments | [View customer's enrollment list and report →](use-cases/reseller/view-customer-enrollment-list-and-report.md)        |
+| View customer's simulation campaigns | [View customer's campaign list and report →](use-cases/reseller/view-customer-simulation-campaign-list-and-report.md) |

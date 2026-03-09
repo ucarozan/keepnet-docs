@@ -289,9 +289,8 @@
 
 * [Quickstart](api-reference/quickstart.md)
 * [Use the API with AI assistants (MCP)](api-reference/use-the-api-with-ai-assistants-mcp.md)
-
-* Reseller
-  * Companies
+* [Reseller](api-reference/reseller/README.md)
+  * [Companies](api-reference/reseller/companies/README.md)
     * [Scope API requests to a customer](api-reference/use-cases/reseller/scope-api-requests-to-customer.md)
     * [List companies with license details](api-reference/use-cases/reseller/list-companies-with-license-details.md)
     * [Create a company](api-reference/use-cases/reseller/onboard-new-customer.md)
@@ -300,29 +299,29 @@
     * [Update a company](api-reference/use-cases/reseller/update-a-company.md)
     * [Delete a company](api-reference/use-cases/reseller/delete-a-company.md)
     * [List and manage company groups](api-reference/use-cases/reseller/list-and-manage-company-groups.md)
-  * Users & groups
+  * [Users & groups](api-reference/reseller/users-and-groups/README.md)
     * [Add target users for a customer](api-reference/use-cases/reseller/add-target-users-for-customer.md)
     * [Import target users from Excel for a customer](api-reference/use-cases/reseller/import-target-users-from-excel-for-customer.md)
     * [List or export target users for a customer](api-reference/use-cases/reseller/list-or-export-target-users-for-customer.md)
     * [List and create target groups for a customer](api-reference/use-cases/reseller/list-and-create-target-groups-for-customer.md)
     * [Add system user for a customer](api-reference/use-cases/reseller/add-system-user-for-customer.md)
     * [Set up SCIM for a customer](api-reference/use-cases/reseller/set-up-scim-for-customer.md)
-  * Training
+  * [Training](api-reference/reseller/training/README.md)
     * [Start training enrollment for a customer](api-reference/use-cases/reseller/start-training-enrollment-for-customer.md)
     * [View customer's enrollment list and report](api-reference/use-cases/reseller/view-customer-enrollment-list-and-report.md)
     * [View customer's enrollment sending, certificates, and notifications](api-reference/use-cases/reseller/view-customer-enrollment-sending-certificates-notifications.md)
     * [Pull survey results for a customer](api-reference/use-cases/reseller/pull-survey-results-for-customer.md)
-  * Phishing simulation
+  * [Phishing simulation](api-reference/reseller/phishing-simulation/README.md)
     * [Start phishing simulation for a customer](api-reference/use-cases/reseller/start-phishing-simulation-for-customer.md)
     * [View customer's campaign list and report](api-reference/use-cases/reseller/view-customer-simulation-campaign-list-and-report.md)
     * [List phishing scenarios for a customer](api-reference/use-cases/reseller/list-phishing-scenarios-for-customer.md)
     * [Create and start phishing campaign for a customer](api-reference/use-cases/reseller/create-and-start-phishing-campaign-for-customer.md)
-  * Reports
+  * [Reports](api-reference/reseller/reports/README.md)
     * [Pull executive report data for a customer](api-reference/use-cases/reseller/pull-executive-report-data-for-customer.md)
     * [Pull gamification report data for a customer](api-reference/use-cases/reseller/pull-gamification-report-data-for-customer.md)
     * [Export gamification leaderboard for a customer](api-reference/use-cases/reseller/export-gamification-leaderboard-for-customer.md)
     * [List scheduled reports for a customer](api-reference/use-cases/reseller/list-scheduled-reports-for-customer.md)
-  * Billing
+  * [Billing](api-reference/reseller/billing/README.md)
     * [Export customer list for billing](api-reference/use-cases/reseller/export-customer-list-for-billing.md)
     * [List customers exceeding license limit](api-reference/use-cases/reseller/list-customers-exceeding-license-limit.md)
     * [List companies for cross-sell by license and usage](api-reference/use-cases/reseller/list-companies-for-cross-sell-license-and-usage.md)

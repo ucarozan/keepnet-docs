@@ -2,7 +2,7 @@
 
 As a Reseller you list or export companies with license details (license type, license limit, user count, renewal date, tags) to identify cross-sell or upsell opportunities. Use a credential with Client Role = **Reseller**. Use the same company search endpoint; filter or sort by license type, usage, or renewal date to find candidates. Request body: see Endpoints → **Company** for filter and sort options.
 
----
+***
 
 ## POST /api/companies/search
 
@@ -10,11 +10,11 @@ Returns a paginated list of companies with license details. Use **`filter`** to 
 
 > Retrieves a list of all companies with license details. Use filter and orderBy to identify cross-sell candidates by license type, usage, or renewal date.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/search" method="post" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/companies/search" method="post" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
----
+***
 
 ## POST /api/companies/search/export
 
@@ -22,16 +22,16 @@ Exports the same list to CSV or Excel for analysis in a spreadsheet or BI tool. 
 
 > Exports the list of companies to CSV or Excel. Apply the same filter and sort as in search for cross-sell reporting.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/search/export" method="post" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/companies/search/export" method="post" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
----
+***
 
 ## Common errors
 
-* **403 Forbidden** — Credential is not Reseller. Set Client Role = **Reseller** in **Company → Company Settings → REST API**. <a href="../../../next-generation-product/platform/company/system-users/user-roles.md" target="_blank" rel="noopener noreferrer">Roles and permissions →</a>
+* **403 Forbidden** — Credential is not Reseller. Set Client Role = **Reseller** in **Company → Company Settings → REST API**. [Roles and permissions →](../../../next-generation-product/platform/company/system-users/user-roles.md)
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
 * **400 Bad Request** — Invalid request body or filter. Include `pageNumber`, `pageSize`, `orderBy`, `ascending`; check Endpoints → **Company** for supported filter fields and orderBy values.
 
-**Related:** <a href="list-companies-with-license-details.md" target="_blank" rel="noopener noreferrer">List companies with license details →</a>. <a href="export-customer-list-for-billing.md" target="_blank" rel="noopener noreferrer">Export customer list for billing →</a>. <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>.
+**Related:** [List companies with license details →](list-companies-with-license-details.md). [Export customer list for billing →](export-customer-list-for-billing.md). [Scope API requests to a customer →](scope-api-requests-to-customer.md).

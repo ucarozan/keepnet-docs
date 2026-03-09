@@ -2,7 +2,7 @@
 
 As a Reseller you can create a SCIM integration for a **customer (sub-company)** so that customer can sync target users from their identity provider (Entra ID, Okta, OneLogin, JumpCloud, etc.) into Keepnet. The SCIM integration is created in the **customer’s** context, not your Reseller company. Get the customer’s Company ID, then call the SCIM endpoints with **`X-KEEPNET-Company-Id`**. Use a credential with Client Role = **Reseller**. After creation, share the returned **SCIM token** and endpoint URL with the customer so they can configure their IdP.
 
----
+***
 
 ## POST /api/companies/search
 
@@ -10,13 +10,13 @@ Get the customer’s Company ID. Use the `resourceId` of the desired company in 
 
 > Retrieves a paginated list of all companies you manage with license details. Each item includes `resourceId` — use it as the Company ID for scoped requests. **Test it:** Authorize with Client ID/Secret, then Send — request body is pre-filled.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/companies/search" method="post" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/companies/search" method="post" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
 From the response, pick the company and note its `resourceId`. Example: `"resourceId": "xC5kfGz7w2Nz"` → use `xC5kfGz7w2Nz` as Company ID when creating the SCIM integration.
 
----
+***
 
 ## GET /api/scim/fields
 
@@ -24,13 +24,13 @@ Returns available SCIM fields for mapping (e.g. IdP attributes to Keepnet custom
 
 > Returns all available scim fields. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/scim/fields" method="get" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/scim/fields" method="get" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
 **Target group:** To sync users into a specific target group, get the customer's target groups via the target-groups API with the same header. Pass `groupResourceId` in the create-SCIM request; if omitted, synced users appear under **Target Users > People**.
 
----
+***
 
 ## POST /api/scim
 
@@ -38,9 +38,9 @@ Creates a new SCIM integration **for that customer**. Send the Company ID in the
 
 > Creates a new scim integration. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`** so the integration is created for the chosen customer. **Test it:** Endpoints → **SCIM** → **Creates a new scim integration** — use dummy data (H8d) and set the header to a Company ID from companies/search.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/scim" method="post" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/scim" method="post" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
 Example request headers:
 
@@ -67,9 +67,9 @@ With an optional target group (use a valid `groupResourceId` for that customer):
 }
 ```
 
-After creation, provide the customer with the **SCIM token** and the Keepnet SCIM base URL from the response so they can configure their IdP (e.g. <a href="../../../next-generation-product/getting-started/2.-add-target-users/add-users-via-scim/scim-setup-in-entra-id.md" target="_blank" rel="noopener noreferrer">SCIM Setup in Entra ID</a>, <a href="../../../next-generation-product/getting-started/2.-add-target-users/add-users-via-scim/scim-setup-in-okta.md" target="_blank" rel="noopener noreferrer">Okta</a>, etc.).
+After creation, provide the customer with the **SCIM token** and the Keepnet SCIM base URL from the response so they can configure their IdP (e.g. [SCIM Setup in Entra ID](../../../next-generation-product/getting-started/2.-add-target-users/add-users-via-scim/scim-setup-in-entra-id.md), [Okta](../../../next-generation-product/getting-started/2.-add-target-users/add-users-via-scim/scim-setup-in-okta.md), etc.).
 
----
+***
 
 ## POST /api/scim/search
 
@@ -77,11 +77,11 @@ List SCIM integrations for that customer. Send **`X-KEEPNET-Company-Id`**.
 
 > Returns a list of the scim integrations. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/scim/search" method="post" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/scim/search" method="post" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
----
+***
 
 ## GET /api/scim/{resourceId}
 
@@ -89,11 +89,11 @@ Get SCIM integration details. Replace `{resourceId}` with the SCIM integration I
 
 > Retrieves the details of an existing scim setting. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/scim/{resourceId}" method="get" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/scim/{resourceId}" method="get" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
----
+***
 
 ## PUT /api/scim/{resourceId}
 
@@ -101,11 +101,11 @@ Update the SCIM integration (e.g. name, field mappings). Replace `{resourceId}` 
 
 > Updates an existing scim integration. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/scim/{resourceId}" method="put" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/scim/{resourceId}" method="put" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
----
+***
 
 ## POST /api/scim/{resourceId}/revoke
 
@@ -113,16 +113,16 @@ Revoke the current token and generate a new one (e.g. if the token was exposed).
 
 > Revokes the current token of the scim integration and generates a new token. As a Reseller, send **`X-KEEPNET-Company-Id: <companyResourceId>`**.
 
-{% swagger src="../../../openapi/keepnet-api-spec.json" path="/api/scim/{resourceId}/revoke" method="post" expanded="true" %}
-<a href="../../../openapi/keepnet-api-spec.json" target="_blank" rel="noopener noreferrer">keepnet-api-spec.json</a>
-{% endswagger %}
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/scim/{resourceId}/revoke" method="post" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
 
----
+***
 
 ## Common errors
 
-* **403 Forbidden** — Credential is not Reseller, or the Company ID is not one you manage. Set Client Role = **Reseller**. <a href="../../../next-generation-product/platform/company/system-users/user-roles.md" target="_blank" rel="noopener noreferrer">Roles and permissions →</a>
+* **403 Forbidden** — Credential is not Reseller, or the Company ID is not one you manage. Set Client Role = **Reseller**. [Roles and permissions →](../../../next-generation-product/platform/company/system-users/user-roles.md)
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
 * **404 Not Found** / **400 Bad Request** — Invalid Company ID or invalid `groupResourceId` (must be a target group belonging to that customer). Verify Company ID from `POST /api/companies/search` and ensure you send `X-KEEPNET-Company-Id` for the customer.
 
-**Related:** <a href="scope-api-requests-to-customer.md" target="_blank" rel="noopener noreferrer">Scope API requests to a customer →</a>. <a href="list-or-export-target-users-for-customer.md" target="_blank" rel="noopener noreferrer">List or export target users for a customer →</a>. For SCIM setup in the UI and IdP-specific guides: <a href="../../../next-generation-product/platform/company/company-settings/scim-settings/getting-started-with-scim.md" target="_blank" rel="noopener noreferrer">Getting Started with SCIM</a>.
+**Related:** [Scope API requests to a customer →](scope-api-requests-to-customer.md). [List or export target users for a customer →](list-or-export-target-users-for-customer.md). For SCIM setup in the UI and IdP-specific guides: [Getting Started with SCIM](../../../next-generation-product/platform/company/company-settings/scim-settings/getting-started-with-scim.md).
