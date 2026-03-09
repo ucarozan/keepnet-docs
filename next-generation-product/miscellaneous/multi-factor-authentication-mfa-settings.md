@@ -42,7 +42,7 @@ To resync your MFA settings, follow the instructions below.
 
 1. After login into the platform, go to the left menu and click on the company name or company logo above the menu.
 2. Click **Security** on the pop-up menu.
-3. Click **Resycnc** next to the Multi-Factor Authentication heading.
+3. Click **Resync** next to the Multi-Factor Authentication heading.
 4. Follow the instructions in the Setup Multi-factor Authentication window.
 5. Scan the **QR code** with the related application on your mobile device.
 6. Enter the **MFA code** given on the application and click Confirm to complete the process.
@@ -83,6 +83,6 @@ A: MFA is mandatory by default, and it cannot be disabled. For companies using S
 
 A: No, the platform will disable MFA by default in that case.
 
-### Q: How long does platfrom remember me if I click the "Don't ask again on this computer" option?
+### Q: How long does platform remember me if I click the "Don't ask again on this computer" option?
 
 A: If you select "Don't ask again on this computer" while login to the platform, the platform will remember your browser and will not ask you to enter MFA code each time you login until 14 days.&#x20;

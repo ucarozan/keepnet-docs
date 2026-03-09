@@ -39,7 +39,7 @@ Follow the steps below to add a new callback scenario:
    3. **Language:** Select the language of your scenario.
    4. **Tags:** Define tags for the scenario.
    5. **Make Available For:** Make your scenario available to be used by the other customers under your organization. This feature is only available to admins who have Reseller permissions.&#x20;
-   6. On the **Email Template** pag&#x65;**,** select the email template you want to use and then click the **Next** button.
+   6. On the **Email Template** page**,** select the email template you want to use and then click the **Next** button.
    7. On the **Callback Template** page, select the callback template you want to use and then click the **Next** button to move on to the **Summary** page.
    8. The **Summary** page provides you with an overview of the proposed phishing campaign, including the type of campaign, the targeted users, and other important details.
 

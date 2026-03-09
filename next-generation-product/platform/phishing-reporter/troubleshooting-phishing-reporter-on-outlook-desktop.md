@@ -1,6 +1,6 @@
 # Troubleshooting Phishing Reporter on Outlook Desktop
 
-If you've installed the Phishing Reporter on the Microsoft Outlook Desktop version successfully to report any suspucious [phishing](https://keepnetlabs.com/products/phishing-simulator) emails but are unable to see the Phishing Reporter button, here are some steps you can follow to troubleshoot the issue.&#x20;
+If you've installed the Phishing Reporter on the Microsoft Outlook Desktop version successfully to report any suspicious [phishing](https://keepnetlabs.com/products/phishing-simulator) emails but are unable to see the Phishing Reporter button, here are some steps you can follow to troubleshoot the issue.&#x20;
 
 ## Step 1: Check your Outlook Version
 

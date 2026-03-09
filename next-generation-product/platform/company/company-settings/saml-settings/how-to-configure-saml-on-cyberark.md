@@ -27,7 +27,7 @@ Please follow the steps below to set up SAML settings correctly on the CyberArk 
 * Go to **Permissions** menu on the CyberArk SAML settings page and then **add the users** who are going to login the platform over SAML authentication.  Please make sure the added users has **"Run"** and **"Automatically Deploy"** options selected.
 * Click the **Save** button to apply changes.
 * Return back to the platform and confirm the last setting, which is the **Default** **Role** of the users who will be logged in to the platform. This is by default **"Company Admin"** role, you may change it depends on your needs.
-  * **Default Role:** Assing a default role to the users who will log in to the platform. If this option is not enabled, the user must have the **‘spRole’** attribute configured in the CyberArk with the correct system role name to log in to the platform.
+  * **Default Role:** Assign a default role to the users who will log in to the platform. If this option is not enabled, the user must have the **‘spRole’** attribute configured in the CyberArk with the correct system role name to log in to the platform.
 * Click the **Save** button to create the SAML settings on the platform.
 
 ## **How to Test SAML Configuration**

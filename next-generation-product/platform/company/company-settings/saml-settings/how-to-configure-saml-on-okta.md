@@ -38,7 +38,7 @@ Log in to the platform with the privileged user who can access the SAML settings
   * **Issuer URL of the IdP:** Enter the **"Identity Provider Issuer"** address that you noted from the Okta SAML instructions page.
   * **IdP SSO URL:** Enter the **"Identity Provider Single Sign-On URL"** address that you noted from the Okta SAML instructions page.
   * **Upload Certificate:** Upload the Okta SAML certificate.
-  * **Default Role:** Assing a default role to the users who will log in to the platform. If this option is not enabled, the user must have the **‘spRole’** attribute configured in the Okta with the correct system role name to log in to the platform.
+  * **Default Role:** Assign a default role to the users who will log in to the platform. If this option is not enabled, the user must have the **‘spRole’** attribute configured in the Okta with the correct system role name to log in to the platform.
 
 ## **How to Test SAML Configuration**
 

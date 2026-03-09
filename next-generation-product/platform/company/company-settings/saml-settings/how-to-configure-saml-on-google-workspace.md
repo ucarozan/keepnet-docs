@@ -52,7 +52,7 @@ Please follow the steps below to set up SAML settings correctly on the platform.
   * **SAML Name:** Enter a name for SAML setting.
   * **Allowed Domains:** Enter the domain name that the admin will be using to log in to the platform. The platform will recognize the user with the domain and redirect to the SSO authentication.
   * **SAML Configuration For Keepnet Labs:** By clicking the **"Upload Metadata"** button under this field and then uploading the **Google Workspace metadata file** to the platform. According to the information in the metadata, the "Issuer URL of the IdP", "IdP SSO URL" and "IdP Certificate" fields will be filled automatically.
-  * **Default Role:** Assing a default role to the users who will log in to the platform. If this option is not enabled, the user must have the **‘spRole’** attribute configured in the Google Workspace with the correct system role name to log in to the platform.
+  * **Default Role:** Assign a default role to the users who will log in to the platform. If this option is not enabled, the user must have the **‘spRole’** attribute configured in the Google Workspace with the correct system role name to log in to the platform.
 
 ## **How to Test SAML Configuration**
 

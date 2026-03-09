@@ -89,7 +89,7 @@ The add-in will appear on your Gmail account shortly. You can remove the add-in 
     * **Language:** Select a language such as **English**.
     * **Application Name:** Keepnet Phishing Reporter Button
     * **Short Description:** Keepnet Phishing Reporter helps you to report suspicious emails to the security team.&#x20;
-    * **Detailed Description:** Keepnet Phishing Reporter helps you to report suspicious emails to the security team for automated or manual analysis. Thank you for reporting suspicious emails to protect our organization againts email-based attacks.
+    * **Detailed Description:** Keepnet Phishing Reporter helps you to report suspicious emails to the security team for automated or manual analysis. Thank you for reporting suspicious emails to protect our organization against email-based attacks.
     * Click the **Done** button.
   * **Pricing:** Select the **Paid** option.
   * **Category:** Select the **Web Development** option.

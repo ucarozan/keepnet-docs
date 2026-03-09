@@ -42,7 +42,7 @@ Follow the steps below to preview, edit, download or take any other actions on l
   * **Compliances:** A list of compliance categories covered by this learning path training.
   * **Tags:** Tags assigned to the learning path training to facilitate search efforts
   * **Behaviours:** Lists of behaviors that learning path training addresses, aiming to educate employees.
-* On the same page, you will see the details of selected training contents. In each training content, you can find the following informations.
+* On the same page, you will see the details of selected training contents. In each training content, you can find the following information.
   * **Preview**
     * You can preview the selected training content.
   * **Details**
@@ -343,7 +343,7 @@ System administrators are not allowed to upload SCORM survey files to their comp
   * **Languages:** Available languages for survey.
   * **Created By:** Company name that is created the survey.
   * **Compliances:** A list of compliance categories covered by this survey.
-  * **Tags:** Tags assigned to the survey contnet to facilitate search efforts
+  * **Tags:** Tags assigned to the survey content to facilitate search efforts
   * **Behaviours:** Lists of behaviors that the survey addresses, aiming to educate employees.
 
 #### How to Edit Survey
@@ -443,7 +443,7 @@ Follow the steps below to create poster type of training.
   * **Tags:** Assign tags to the poster training to facilitate search efforts.
   * **Cover Image:** Upload the cover image for the poster training. This cover image will be displayed when the admin uses the "grid view" option to display the training materials.
   * **Make Available For:** Admin users with a Reseller role can make this poster training accessible to other companies.
-* On the **Poster** **Content** page, you can select the training language and then upload your poster file with .jpg, .png, .pdf, .tiff extentions. You can add additional languages and upload corresponding poster files, allowing you to create a multilingual poster training suited for organizations with a diverse workforce.
+* On the **Poster** **Content** page, you can select the training language and then upload your poster file with .jpg, .png, .pdf, .tiff extensions. You can add additional languages and upload corresponding poster files, allowing you to create a multilingual poster training suited for organizations with a diverse workforce.
 * Click **Save** to create the poster training.
 
 You have created the poster training successfully. Now you can [send it ](training-library.md#how-to-send-poster)and the employees can enroll the poster training via email or SMS.
@@ -462,7 +462,7 @@ Follow the steps below to create infographic type of training.
   * **Tags:** Assign tags to the infographic training to facilitate search efforts.
   * **Cover Image:** Upload the cover image for the infographic training. This cover image will be displayed when the admin uses the "grid view" option to display the training materials.
   * **Make Available For:** Admin users with a Reseller role can make this infographic training accessible to other companies.
-* On the **Infographic** **Content** page, you can select the training language and then upload your infographic file with .jpg, .png, .pdf, .tiff extentions. You can add additional languages and upload corresponding infographic files, allowing you to create a multilingual infographic training suited for organizations with a diverse workforce.
+* On the **Infographic** **Content** page, you can select the training language and then upload your infographic file with .jpg, .png, .pdf, .tiff extensions. You can add additional languages and upload corresponding infographic files, allowing you to create a multilingual infographic training suited for organizations with a diverse workforce.
 * Click **Save** to create the infographic training.
 
 You have created the infographic training successfully. Now you can [send it ](training-library.md#how-to-send-poster)and the employees can enroll the infographic training via email or SMS.
@@ -481,7 +481,7 @@ Follow the steps below to create screensaver type of training.
   * **Tags:** Assign tags to the screensaver training to facilitate search efforts.
   * **Cover Image:** Upload the cover image for the screensaver training. This cover image will be displayed when the admin uses the "grid view" option to display the training materials.
   * **Make Available For:** Admin users with a Reseller role can make this screensaver training accessible to other companies.
-* On the **Screensaver** **Content** page, you can select the training language and then upload your screensaver file with .jpg, .png, .pdf, .tiff extentions. You can add additional languages and upload corresponding screensaver files, allowing you to create a multilingual screensaver training suited for organizations with a diverse workforce.
+* On the **Screensaver** **Content** page, you can select the training language and then upload your screensaver file with .jpg, .png, .pdf, .tiff extensions. You can add additional languages and upload corresponding screensaver files, allowing you to create a multilingual screensaver training suited for organizations with a diverse workforce.
 * Click **Save** to create the screensaver training.
 
 Your screensaver training has been created successfully. Now, you can [preview it](training-library.md#how-to-preview-screensaver), download it to your computer, and then deploy it to the employees' workstations. This will help raise awareness about cybersecurity in the workplace.

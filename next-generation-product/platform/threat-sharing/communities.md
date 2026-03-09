@@ -18,13 +18,13 @@ A search window is available to help quickly find a name on the community homepa
 
 Go to **Dashboard > Threat Sharing > Communities** and click on the **Create** **Community** button.
 
-Next, you will be asked to enter the following from the table below:
+Next, you willl be asked to enter the following from the table below:
 
 <table data-header-hidden><thead><tr><th width="166"></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>Community Name</td><td>The name for your community</td><td></td></tr><tr><td>Community Description</td><td>A description of the community with its rules and goals (max. 300 words)</td><td></td></tr><tr><td>Industry</td><td>The industry most relevant to the community</td><td></td></tr><tr><td>Privacy</td><td><p></p><ul><li><strong>Public:</strong> Anyone can find the community and see posted threats</li></ul><ul><li><strong>Private:</strong> Only members invited by the community owner can see posted threats, but the name of the community is listed publicly in the communities list</li></ul><ul><li><strong>Hidden:</strong> Only members can see posted threats and the name of the group is not displayed in the list of communities</li></ul></td><td></td></tr></tbody></table>
 
 Please read and accept the terms and conditions. Then click on **Create** to complete the process.
 
-After creating your community, you will be directed to the new Threat Sharing Community homepage.
+After creating your community, you willl be directed to the new Threat Sharing Community homepage.
 
 You will now be able to **post your first incident**.
 
@@ -32,7 +32,7 @@ You will now be able to **post your first incident**.
 
 Go to **Dashboard > Threat Sharing > Communities** and click on the **Three Dots.** You will be able to edit the interaction with the fields in the table below.
 
-<table><thead><tr><th width="178.5"></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>Edit Community</td><td>Edit the general information and settings of the community.</td><td></td></tr><tr><td>Notification Settings</td><td><p></p><ul><li>Enable Email notifications</li></ul><ul><li>Disable Email notifications</li></ul><p>NOTE: If you disable the first notifications setting, no notifications will be sent out to the community to inform them of posted incidents.</p></td><td></td></tr><tr><td>Leave</td><td>To withdraw from the community. <br>NOTE: You will no longer be able to post incidents to this community; you will have to rejoin or be re-invited.</td><td></td></tr><tr><td>Delete</td><td>To delete the community</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="178.5"></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>Edit Community</td><td>Edit the general information and settings of the community.</td><td></td></tr><tr><td>Notification Settings</td><td><p></p><ul><li>Enable Email notifications</li></ul><ul><li>Disable Email notifications</li></ul><p>NOTE: If you disable the first notifications setting, no notifications will be sent out to the community to inform them of posted incidents.</p></td><td></td></tr><tr><td>Leave</td><td>To withdraw from the community. <br>NOTE: You will no longer be able to post incidents to this community; you willl have to rejoin or be re-invited.</td><td></td></tr><tr><td>Delete</td><td>To delete the community</td><td></td></tr></tbody></table>
 
 ### **How to Transfer Ownership of a Community**
 

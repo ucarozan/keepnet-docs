@@ -77,7 +77,7 @@ This section outlines the steps to create and customize different types of advan
    2. **For**: Choose the **companies** to be included in the report.
 3. Click the **Apply Filters** button to update the report based on the filters.
 
-### Creating a "A**wareness Educator Executive Summary" Report**
+### Creating a "**Awareness Educator Executive Summary" Report**
 
 1. Click the **CREATE REPORT** button for the "**Awareness Educator Executive Summary"** report type.
 2. Configure the report filters as follows or leave it as default settings:
@@ -85,7 +85,7 @@ This section outlines the steps to create and customize different types of advan
    2. **For**: Choose the **companies** to be included in the report.
 3. Click the **Apply Filters** button to update the report based on the filters.
 
-### Creating a "Social Engineering All Simulations Executive Summar&#x79;**" Report**
+### Creating a "Social Engineering All Simulations Executive Summary**" Report**
 
 1. Click the **CREATE REPORT** button for the "**Social Engineering All Simulations Executive Summary"** report type.
 2. Configure the report filters as follows or leave it as default settings:
@@ -111,7 +111,7 @@ This section outlines the steps to create and customize different types of advan
    3. **In**: Choose the **campaign** **method** **type**, **campaign** **reports**, and **organizations** to be included in the report.
 3. Click the **Apply Filters** button to update the report based on the filters.
 
-### Creating a "Phishing Simulation Activitie&#x73;**" Report**
+### Creating a "Phishing Simulation Activities**" Report**
 
 1. Click the **CREATE REPORT** button for the **"Phishing Simulation Activities"** report type.
 2. Configure the report filters as follows or leave it as default settings:

@@ -171,7 +171,7 @@ Cyber X-Ray is a commercial AI-powered threat analysis engine, also available in
 
 #### **Cyber X-Ray API Key Creation Steps**
 
-1. Complete the registration process through the Roksik platform [here](https://portal.roksit.com/#/register).
+1. Complete the registration process through the Roksit platform [here](https://portal.roksit.com/#/register).
 2. Verify your account with the activation email sent to your email and log in to your account.
 3. Click on **Settings > API Key** on the left menu.
 4. Click the **Create New API Key** button in the upper right corner of the page that opens. Fill in the relevant fields in the API Key Information in the new window.
@@ -198,7 +198,7 @@ Please follow the steps below to create an API to use OPSWAT integration on the 
 * Create an account on [https://my.opswat.com/register](https://my.opswat.com/register) and then log in.
 * Go to the **Home > Licensed Products > Cloud-based Products** tab, and you can find the **API** **Key** on the same page.
 
-#### **How to Integrate** OPSWA&#x54;**?**
+#### **How to Integrate** OPSWAT**?**
 
 By following the steps below on the Incident Responder platform, you can integrate OPSWAT and its capabilities.
 

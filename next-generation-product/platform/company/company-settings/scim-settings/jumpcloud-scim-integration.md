@@ -10,7 +10,7 @@ Please make sure to set up the mandatory settings from the ‘[Getting Started�
 2. Please create a group and assign users to the group for synchronization.
 3. Go to **SSO** > **+** > and then click the **Custom SSO SAML.**
 4. Enter a name for the **Application name**.
-5. Go to the **SSO s**ubmenu and **enter a number like ‘1’** into the **‘IdP Entity ID’** and **‘SP Identity ID’** fields.
+5. Go to the **SSO** submenu and **enter a number like ‘1’** into the **‘IdP Entity ID’** and **‘SP Identity ID’** fields.
 6. Go to the **Identity Management** submenu and then go to the bottom of the page to fill up the following fields.
    1. **SCIM Version:** SCIM 2.0&#x20;
    2. **Base URL:** https://scim-api.keepnetlabs.com/scim

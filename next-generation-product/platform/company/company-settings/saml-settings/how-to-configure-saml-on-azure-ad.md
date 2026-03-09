@@ -27,7 +27,7 @@ After the application is created, please follow the steps below.
   * Click on the existing rule under "**Required claim"**, change the "**user.principalname"** to **"user.mail",** and save.
   * Delete the **four existing rules** under the **"Additional Claims"**.
   * At the top of the page, click on the **"+ Add New Claim"** button and create the following claims:
-    * **First Claim**: Name it "**firstName**" with the source attribute "**user.givennam**e". Leave the "**Namespace**" field empty and save.
+    * **First Claim**: Name it "**firstName**" with the source attribute "**user.givenname**". Leave the "**Namespace**" field empty and save.
     * **Second Claim**: Name it "**lastName**" with the source attribute "**user.surname**". Leave the "**Namespace**" field empty and save.
     * **Third Claim**: Name it "**phoneNumber**" with the source attribute as either "**user.mobilephone**" or "**user.telephonenumber**". Leave the "**Namespace**" field empty and save.
 * Under the "**SAML Certificates**" field, click on the "**Federation Metadata XML"** button to download the XML file.
@@ -67,7 +67,7 @@ In this example, let's follow the steps below.
   * **Attribute Name** will be **"user.userprincipalname".**
   * For **Value** field, please write the **William's** **email** **address** who is Reseller.
   * **Parameter 2 (Output)** will be **Attribute** format.
-  * **Attrbiute Name** will be "**Reseller**".
+  * **Attribute Name** will be "**Reseller**".
   * For William, that's all we do. Now let's repeat the same steps for Robert.
   * Click **+ Add Transformation** button and select the **Transformation** as **"Contains()"**.
   * **Value** will be **Robert's email address** such as "robert@test.com"
@@ -78,7 +78,7 @@ In this example, let's follow the steps below.
 
 Now, the William and Robert who will log in to the platform over SAML will have the Reseller role. The other users who will log in to the platform over SAML will have the default role which is Company Admin.
 
-You can do this with any permission. You can create a [custom role](../../system-users/user-roles.md) in the platfrom and define the custom role name instead of Reseller and the users will login to the platfrom over the specified custom permission role.
+You can do this with any permission. You can create a [custom role](../../system-users/user-roles.md) in the platform and define the custom role name instead of Reseller and the users will login to the platform over the specified custom permission role.
 
 ## Video Tutorial
 

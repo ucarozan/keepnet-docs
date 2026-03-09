@@ -8,11 +8,11 @@ The components of a campaign reports page are explained below.
 
 ## View Report Details
 
-You can review the details of a smishing campaign report by navigating to **Smishing** S**imulator > Campaign Manager**, then clicking the **instance** of the smishing campaign, and selecting the **View Report** button under the **Actions** column.
+You can review the details of a smishing campaign report by navigating to **Smishing Simulator** > Campaign Manager, then clicking the **instance** of the smishing campaign, and selecting the **View Report** button under the **Actions** column.
 
 ### Summary
 
-The **Summary** provides a brief synopsis of the smishing campaignn and options for further action.
+The **Summary** provides a brief synopsis of the smishing campaign and options for further action.
 
 <table data-header-hidden><thead><tr><th width="198"></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>Download Report</td><td>An .xls format version of the smishing campaign report is available for download by clicking the <strong>Download Report</strong> button.</td><td></td></tr><tr><td>Resend Campaign</td><td>Resend the smishing campaign to the same target user group with the same settings by clicking the <strong>Resend Campaign</strong> button.</td><td></td></tr></tbody></table>
 

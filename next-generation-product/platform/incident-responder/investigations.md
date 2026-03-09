@@ -96,7 +96,7 @@ A: No, you cannot. Platform administrators are only able to see the Subject, To,
 
 ### **Q: Can emails that are permanently deleted be restored?**
 
-A: Emails that are permanently deteled can be recovered from the "**Recover Deleted Items**" menu on Outlook within 14 days.
+A: Emails that are permanently deleted can be recovered from the "**Recover Deleted Items**" menu on Outlook within 14 days.
 
 ### **Q: How can I view the logs related to this product?**
 

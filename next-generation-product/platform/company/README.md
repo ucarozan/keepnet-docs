@@ -13,7 +13,7 @@ The features or settings related to the company are listed below.
 * [How to create REST API to use APIs?](company-settings/rest-api.md)
 * [How to create custom Proxy settings?](company-settings/proxy-settings.md)
 * [How to set up SAML to log in to the platform with SSO?](company-settings/saml-settings/)
-* [How to set up SCIM to syncronize target users automatically?](company-settings/scim-settings/)
+* [How to set up SCIM to synchronize target users automatically?](company-settings/scim-settings/)
 * [How to set up SIEM integration to send Audit Logs in real-time?](company-settings/siem-integrations/)
 * [How to set up LDAP to synchronize target users automatically?](company-settings/ldap.md)
 * [How to create a system user who will manage the platform?](system-users/)

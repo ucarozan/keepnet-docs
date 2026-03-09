@@ -80,7 +80,7 @@ Phishing scenarios have two components: the phishing email template and the land
    6. **Tags:** Define tags for the scenario.
    7. **Make Available For:** Make your scenario available to be used by the other customers under your organization. This feature is only available to admins who have Reseller permissions.&#x20;
    8. Click **Next** to go to the **Email** **Template** page.
-   9. On the **Email Template** pag&#x65;**,** select the e-mail template you want to use and then click the **Next** button.
+   9. On the **Email Template** page**,** select the e-mail template you want to use and then click the **Next** button.
    10. Select the **Landing Page** template you want to use and then click the **Next** button to move on to the **Summary** page.
        1. If the **MFA** **method** is selected, you'll find a sub-menu titled **"MFA Settings"** on the **Landing** **Page**. Here, you can customize the "**Sender** **Phone** **Number"** and the text for the "**SMS** **Verification** **Message".**
        2. If the **Attachment** **method** is selected, the Landing Page selection is not supported for this method. The attachment scenarios only support Word, PowerPoint, Excel or HTML files.
@@ -116,7 +116,7 @@ Before you proceed with this section, please make sure you have created the [jus
    6. **Tags:** Define tags for the scenario.
    7. **Make Available For:** Make your scenario available to be used by the other customers under your organization. This feature is only available to admins who have Reseller permissions.&#x20;
    8. Click **Next** to go to the **Email** **Template** page.
-   9. On the **Email Template** pag&#x65;**,** select the **red flags email template** you created and then click the **Next** button.
+   9. On the **Email Template** page**,** select the **red flags email template** you created and then click the **Next** button.
    10. On the **Landing Page** page, select the **just-in-time learning page** and then click the **Next** button to move on to the **Summary** page.
        1. If the **MFA** **method** is selected, you'll find a sub-menu titled **"MFA Settings"** on the **Landing** **Page**. Here, you can customize the "**Sender** **Phone** **Number"** and the text for the "**SMS** **Verification** **Message".**
    11. The **Summary** page provides you with an overview of the proposed phishing campaign, including the type of campaign, the targeted users, and other important details.

@@ -91,7 +91,7 @@ This column will later be used to sync users based on their **Country / Region**
    * Click **Next**.
 5. Leave the **Group Name** field empty.
 6. Under **Grouping Criteria**, select the **Country / Region** option.
-7. Leave the **Syncronize groups with** **Identity Management Platform** option empty.
+7. Leave the **Synchronize groups with** **Identity Management Platform** option empty.
 8. Click **Save**.
 9. Copy the **Token** and paste it into your SCIM application.
    1. If you haven't created a SCIM application yet, refer to the beginning of this document for setup instructions.

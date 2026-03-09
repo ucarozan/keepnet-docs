@@ -9,7 +9,7 @@ Email addresses are required for all users even for our Vishing, Smishing and Ca
 **⬇️ You have several options for adding target users:**&#x20;
 
 * [**Manually Add Users**](add-users-via-csv.md)
-* [**SCIM Integration**](add-users-via-scim/) **(most common:** add users from your identity management provider directly into Keepnet. Automatically add people who join your business and remove people who leav&#x65;**)**
+* [**SCIM Integration**](add-users-via-scim/) **(most common:** add users from your identity management provider directly into Keepnet. Automatically add people who join your business and remove people who leave**)**
 * [**LDAP integration**](add-users-via-ldap.md)
 * [**Add users via API**](add-users-via-api.md)
 

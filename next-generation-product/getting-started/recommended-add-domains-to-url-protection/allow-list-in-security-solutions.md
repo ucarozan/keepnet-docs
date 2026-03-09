@@ -16,7 +16,7 @@ The domain names of the [Phishing Simulator](https://keepnetlabs.com/products/ph
 
 You can find the phishing simulation domains by logging into the platform and then go to **Phishing Simulator > Settings > Domains** page.
 
-### **Allow Lisiting in Data Loss Prevention (DLP)**
+### **Allow Listing in Data Loss Prevention (DLP)**
 
 System administrators may upload the target users' first name, last name, email address, department, or such other information to the platform; however, because [DLP](https://digitalguardian.com/blog/what-data-loss-prevention-dlp-definition-data-loss-prevention) can be very sensitive, the platform domain information should be allow listed to ensure DLP allows you to upload these pieces of information to the platform.
 

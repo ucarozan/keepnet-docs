@@ -23,7 +23,7 @@ Please follow the steps to **create** training.
   * **Make Available For:** This feature is available only to admins who have a reseller role and wish to make this certificate available to other companies for them to use as well.
   * **Certificate Template:** Click the **Edit** button to update the company logo, add text, or modify the template's appearance.
 
-Click **Save** to save your new certificate. Once created, the certificate will populate under the **Certificates** pag&#x65;**.**
+Click **Save** to save your new certificate. Once created, the certificate will populate under the **Certificates** page**.**
 
 ### **How to make a default Certificate**
 

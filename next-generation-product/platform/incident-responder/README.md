@@ -14,7 +14,7 @@ This section provides a brief description of the Incident Responder. This guide 
 * [How to see reported emails and their analyses results](incident-responder-dashboard.md#reported-emails)
 * [How to understand widgets on the Incident Responder](incident-responder-dashboard.md#widgets)
 * [How can I start an investigation to find malicious emails on email users](investigations.md)
-* [How can I integrate anaylsis engines that the platform supports into my company profile](integrations.md)
+* [How can I integrate analysis engines that the platform supports into my company profile](integrations.md)
 * [How to create automated playbook rules](playbook.md)
 * [How can I integrate O365, Exchange or Google Workspace to start an investigation on the email server](mail-configurations/)
 * [How can I customize the Phishing Reporter add-on and how can I deploy it to the email users after customization](../phishing-reporter/)

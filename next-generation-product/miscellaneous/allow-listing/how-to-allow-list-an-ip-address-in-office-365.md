@@ -15,7 +15,7 @@ To complete this procedure, you must have security administrator privileges with
 3. Click the **Policies & rules** item on the left sidebar menu.
 4. Go to **Threat policies > Advanced delivery**.
 5. Click the **Phishing simulations** tab and click **Edit**.
-6. Add the **IP address** to **Sending IP** sectio&#x6E;**.**
+6. Add the **IP address** to **Sending IP** section**.**
 7. Add the **Domain** address (also known as the **MAIL** **FROM** address) used in the phishing campaign into the **Domains** section.
 8. Add the **phishing domains** [here](allow-listing-in-other-security-solutions.md#whitelisting-platform-addresses) by using **\*.domain.com/\*** wildcard syntax to **Simulation URLs to allow** section.
 9. Click **Save** to complete the process.

@@ -74,7 +74,7 @@ ComponentSpace ADFS Relying Party Integration Guide.pdf
 
 After you have completed the SSO requirements, you can log in to the platform by following the steps below to make sure SSO works successfully.
 
-* Make sure the admin who will log in to the platform over SAML is created in the platfrom under the Company > System Users page.
+* Make sure the admin who will log in to the platform over SAML is created in the platform under the Company > System Users page.
 * Access the platform's login page.
 * In the **Username** **or** **Email** field, enter the user email address of the domain defined for AD FS SAML. You will then be directed to your company's AD FS SSO page in the SAML definition where you can log in to the platform with your active directory account.
 
