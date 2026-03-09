@@ -1,6 +1,6 @@
 # List companies with license details
 
-Retrieve all companies you manage with license information: License Type, Target Users, Monthly Users, License Limit, Renewal Date. Reseller-only — use a credential with Client Role = **Reseller**. Use this list to get Company IDs for scoped API calls and for export to CSV/Excel.
+As a Reseller you can retrieve all companies you manage with license information: License Type, Target Users, Monthly Users, License Limit, Renewal Date. Use this list to get Company IDs for scoped API calls and for export to CSV/Excel. Use a credential with Client Role = **Reseller**.
 
 ***
 

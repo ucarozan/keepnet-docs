@@ -1,6 +1,6 @@
 # Add target users for a customer
 
-Get a customer’s Company ID from the companies list, then add target users for that company by sending the Company ID in the request. Reseller-only — use a credential with Client Role = **Reseller**. This use-case ties together listing companies and scoping the target-users API to one customer.
+As a Reseller you can add target users for a customer by getting their Company ID from the companies list and sending it in the request. The flow: list companies, pick the customer, then call the target-users endpoint with **`X-KEEPNET-Company-Id`**. Use a credential with Client Role = **Reseller**.
 
 ***
 

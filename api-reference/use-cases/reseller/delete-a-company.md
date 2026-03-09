@@ -1,6 +1,6 @@
 # Delete a company
 
-Permanently delete a company you manage and all its associated data. Reseller-only — use a credential with Client Role = **Reseller**. Get the company's `resourceId` from the companies list, then call **DELETE /api/companies/{resourceId}**. This action is **irreversible**.
+As a Reseller you can permanently delete a company you manage and all its associated data. Get the company's `resourceId` from the companies list, then call **DELETE /api/companies/{resourceId}**. Use a credential with Client Role = **Reseller**. This action is **irreversible**.
 
 ***
 

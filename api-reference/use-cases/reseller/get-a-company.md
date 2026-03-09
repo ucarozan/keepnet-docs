@@ -1,6 +1,6 @@
 # Get a company
 
-Retrieve a single company you manage by its ID. Reseller-only — use a credential with Client Role = **Reseller**. Get the company `resourceId` from the companies list, then call **GET /api/companies/{resourceId}** to fetch full details (license, settings, etc.).
+As a Reseller you can retrieve a single company you manage by its ID to view full details (license, settings, etc.). Get the company `resourceId` from the companies list, then call **GET /api/companies/{resourceId}**. Use a credential with Client Role = **Reseller**.
 
 ***
 

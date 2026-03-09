@@ -1,6 +1,6 @@
 # Add system user for a customer
 
-Get a customer’s Company ID from the companies list, then create a system user (platform admin) for that company by sending the Company ID in the request. Reseller-only — use a credential with Client Role = **Reseller**. System users can log in to the Keepnet platform and manage that company; scoping by Company ID ensures the user is created under the correct customer.
+As a Reseller you can create a system user (platform admin) for a customer so they can log in and manage their company. Get the customer's Company ID from the companies list, then call the system-users endpoint with **`X-KEEPNET-Company-Id`**. Use a credential with Client Role = **Reseller**.
 
 ***
 

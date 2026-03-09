@@ -1,6 +1,6 @@
 # Update a company
 
-Update a customer company's details, license (type, target user limit, expiry), or other settings. Reseller-only — use a credential with Client Role = **Reseller**. Get the company's `resourceId` from the companies list, then call **PUT /api/companies/{resourceId}** with the fields you want to change.
+As a Reseller you can update a customer company's details, license (type, target user limit, expiry), or other settings. Get the company's `resourceId` from the companies list, then call **PUT /api/companies/{resourceId}** with the fields you want to change. Use a credential with Client Role = **Reseller**.
 
 ***
 
