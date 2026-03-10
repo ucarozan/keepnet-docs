@@ -52,6 +52,17 @@ Understanding this graphic helps you decide where to focus your security efforts
 
 The benefit of using this graphic is that it gives you a clear picture of your company's phishing risk compared to others, helping you make smart decisions to protect your business from phishing attacks.
 
+### Security Culture Score (Survey Gauge) widget
+
+The **Security Culture Score** widget in **Reports > Executive Reports** shows your organization's overall security culture as a **single, participant-weighted survey score**. It helps executives see at a glance how the organization compares to:
+
+- **Trend vs previous period** — Whether the score has improved or declined.
+- **Industry benchmark** — How you compare to typical scores in your sector.
+
+<figure><img src="../../../../.gitbook/assets/security-culture-score-gauge.png" alt="Security Culture Score gauge showing 0-5 scale with At Risk, Weak, Needs Improvement, Moderate, and Strong zones; industry average comparison and score interpretation"><figcaption>Security Culture Score (Survey Gauge) — score, industry comparison, and maturity level</figcaption></figure>
+
+The gauge uses a **0–5 scale** with maturity levels from **At Risk** (0–1) to **Strong** (4–5). The overall score is the **participant-weighted average** of 1–5 Likert ratings from your security culture surveys (e.g. across multiple surveys: *Survey Avg × Participants + … / Total Participants*). This widget is based on survey responses and is weighted by participants, so it reflects collective security culture rather than a simple average. Use it for quick executive-level insight and to track the impact of awareness and training initiatives over time.
+
 ### Training Completion
 
 This graphic shows how well the training program is being completed across the company. You can see different types of charts representing the percentage of users, as well as the various stages of training: Completed, In Progress, and Incomplete.

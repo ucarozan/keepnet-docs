@@ -101,6 +101,8 @@ Each simulation type has specific actions with associated points based on the di
      * Reported Malicious email: +500 points
      * Reported Phishing email: +500 points
 
+When a user **reports a real (non-simulated) email** and an analyst **confirms it as Phishing or Malicious** in **Incident Responder**, the user receives **+500 points**. These points are shown in the **Gamification Report > User Timeline** within the Activity Timeline card for that user, so both admins and users can see that secure reporting behavior was recognized.
+
 ### Security Awareness Training Scoring
 
 1. **No Response**: 0 points.

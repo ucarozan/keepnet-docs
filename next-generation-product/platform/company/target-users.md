@@ -223,6 +223,15 @@ By using the **Untrained Users** group, you can ensure that employees who have n
 
 The new **User Activity Timeline** button under the **Company > Target Users > Actions** column allows admins to view a target user's activity history across simulations, reporting and training. This helps track performance and engagement. For more details, visit [Gamification Report](../reports/gamification-report.md) documentation.
 
+## Deleted users in the list
+
+When you view **Company > Target Users**, users who have been deleted from the platform are still listed for reporting and audit purposes. Deleted users appear with:
+
+- **Disabled or greyed-out rows** — So you can quickly distinguish them from active and inactive users.
+- **Status text** such as **"This user has been deleted"** — Shown in the user row or status column.
+
+You cannot perform **Delete User** or **Add to Group** on already deleted users. This avoids "Not Found" errors and makes it clear that deleted users are no longer manageable.
+
 ## Target Users Summary Widgets
 
 The **Company > Target Users** page includes four widgets that help you quickly understand the status of your user base and track user changes over time. Each widget displays a number and provides a clear summary of who is currently active, who is inactivated, who is deleted, and how many users were added during a selected month for billing purposes.
@@ -253,6 +262,8 @@ A: No, when a target user is added, your remaining license is reduced appropriat
 ### Q: What will happen when the license count is exceeded?
 
 A: The system will warn the admin when add a new user although the license count is exceeded. If the admin goes further and adds new users, each unique user will be charged. Please contact the support team for the additional license.
+
+The **license warning** pop-up (when adding users or when the count is near or over the limit) counts only **Active** target users. Inactive and Deleted users are excluded from this count, so the warning reflects actual license usage for active users.
 
 ### Q: What will happen when the license date is expired?
 

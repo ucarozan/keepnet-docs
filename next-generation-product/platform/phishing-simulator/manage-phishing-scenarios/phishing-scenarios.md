@@ -92,6 +92,8 @@ Now you can click the **Save** button to create your scenario. Now, you are read
 
 The **Just-in-time Learning Page** is an intelligent feature that automatically highlights warning signs (red flags) in simulated phishing emails. It provides employees with instant, contextual training at the exact moment of risk.
 
+When a user reaches the Just-in-Time (JIT) learning page (red flags in the simulated email), the platform shows **how many points they will earn** before they start reviewing the red flags. After they complete the training, it confirms **how many points they earned**. This makes rewards clear and the experience more motivating.
+
 To set this up, you first need to create both the **Just-in-time Learning Page** and the **Red Flag Email Template**. Once completed, you can combine them to build a phishing scenario and launch it to your employees.
 
 [Here's a quick video tutorial! ](https://www.loom.com/share/e899debb32cb491b8e97c064fabb7a7a?sid=6b725e25-86e8-4269-b783-e8d2ef0d26d8)
