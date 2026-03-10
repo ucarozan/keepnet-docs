@@ -92,6 +92,11 @@ const { access_token } = await response.json();
 {% endtab %}
 {% endtabs %}
 
+{% hint style="warning" %}
+**Integration tools (Zapier, Make, n8n, Postman, etc.)**  
+The token endpoint accepts **only** `application/x-www-form-urlencoded`. Do **not** send a JSON body or use "Raw" with `Content-Type: application/json` — that returns a **500 Internal Server Error**. In your tool, choose **Form** (or form-urlencoded) as the body type and send the fields: `grant_type`, `client_id`, `client_secret`, `scope`.
+{% endhint %}
+
 {% hint style="success" %}
 **Test it — step by step**
 
@@ -157,12 +162,24 @@ All API responses include an `isSuccess` field. When `isSuccess` is `false`, che
 
 ## Common conventions
 
-| Convention        | Description                                                                                                          |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **Pagination**    | Search endpoints use `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter` in the request body                  |
-| **Filter**        | Use `filter: null` for no filtering, or a filter object with operators (`eq`, `neq`, `contains`, `gt`, `lt`, etc.)   |
-| **Sorting**       | `orderBy` is often required — use `CreateTime` for chronological ordering                                            |
-| **Company scope** | Most endpoints require a company context. Company Admin: automatic. Reseller: include Company ID (header/path/query) |
+| Convention           | Description                                                                                                          |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **Pagination**       | Search endpoints use `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter` in the request body                  |
+| **Search request body** | **Do not send an empty body** for search endpoints. Always include at least `pageNumber`, `pageSize`, `orderBy`, `ascending`, and `filter` (or the structure shown in the endpoint). Empty or missing body can cause errors or unreliable results in automation tools. |
+| **Filter**           | Use `filter: null` for no filtering, or a filter object with operators (`eq`, `neq`, `contains`, `gt`, `lt`, etc.)   |
+| **Sorting**          | `orderBy` is often required — use `CreateTime` for chronological ordering                                            |
+| **Company scope**    | Most endpoints require a company context. Company Admin: automatic. Reseller: include Company ID (header/path/query) |
+
+***
+
+## Integration and automation
+
+When calling the API from automation platforms (Zapier, Make, n8n, custom scripts, etc.), follow these rules to avoid common errors:
+
+| Topic | Requirement | If you don't |
+| ----- | ----------- | ------------- |
+| **Token (`POST /connect/token`)** | Body must be **form-encoded** (`application/x-www-form-urlencoded`). Use the **Form** body type in your tool; send `grant_type`, `client_id`, `client_secret`, `scope`. | Sending JSON or Raw with `Content-Type: application/json` returns **500 Internal Server Error**. |
+| **Search endpoints** (e.g. `POST /api/companies/search`) | Send a **non-empty request body** with at least `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter`. Use the example in each endpoint's docs. | Empty body can cause **500** or unreliable/empty results. |
 
 ***
 
@@ -238,6 +255,7 @@ Tokens expire after **1 hour**. No refresh token — request a new one when the 
 | `400 Bad Request` — `invalid_client` | Wrong or placeholder credentials | Use real credentials from **Company → Company Settings → REST API** |
 | `401 Unauthorized`                   | Missing or invalid token         | Re-authenticate and retry                                           |
 | `403 Forbidden`                      | Insufficient role permissions    | Check the Client Role in platform settings                          |
+| `500 Internal Server Error` (on token) | Token request sent with JSON or wrong Content-Type | Use **form-encoded** body only: `Content-Type: application/x-www-form-urlencoded` and Form body type in your tool. |
 | `429 Too Many Requests`              | Rate limit exceeded              | Back off and retry after a delay                                    |
 
 ***

@@ -8,6 +8,10 @@ As a Reseller you can export the list of companies you manage to CSV or Excel fo
 
 > Exports the list of companies (with license details) to CSV or Excel. **Test it:** Authorize with Client ID/Secret, then Send — request body is pre-filled (minimal pagination + `exportType: Csv`). Use `exportType: "Excel"` for Excel output.
 
+{% hint style="info" %}
+**Automation tools:** Send a non-empty request body (`pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter`, `exportType`). Empty body can cause errors. See [Quickstart → Integration and automation](../quickstart.md#integration-and-automation) and [List companies with license details →](list-companies-with-license-details.md).
+{% endhint %}
+
 {% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/companies/search/export" method="post" expanded="true" %}
 [keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
 {% endopenapi %}
