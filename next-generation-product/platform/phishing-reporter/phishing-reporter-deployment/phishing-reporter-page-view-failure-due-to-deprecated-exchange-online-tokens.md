@@ -10,7 +10,7 @@ The **Phishing** **Reporter** **Page** **View** feature fails due to Microsoft's
 
 If you are using the **Phishing** **Reporter** **Page** **View** version, it  may fail with the following empty message:
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-26 at 16.48.23.png" alt="" width="320"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-26 at 16.48.23.png" alt="" width="320"><figcaption>Empty message shown when Phishing Reporter Page View fails due to deprecated Exchange Online tokens.</figcaption></figure>
 
 ## **Root Cause**
 

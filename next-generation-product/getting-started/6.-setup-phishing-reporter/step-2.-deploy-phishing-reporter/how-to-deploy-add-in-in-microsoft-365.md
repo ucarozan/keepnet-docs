@@ -42,7 +42,7 @@ Below is a breakdown of the permissions required and their purpose:
 10. Select **I have the manifesto.xml file**.
 11. Click **Upload**.
 
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2Fa7mDhuhEs201oU8fKZQT%2Fadd-in%20step%201.gif?alt=media&#x26;token=c263c2cd-424f-4a1a-9471-390720123089" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2Fa7mDhuhEs201oU8fKZQT%2Fadd-in%20step%201.gif?alt=media&#x26;token=c263c2cd-424f-4a1a-9471-390720123089" alt=""><figcaption>Add-in deployment — step 1 (authorize or download).</figcaption></figure>
 
 12. **Assign the users** who will have access to the add-in. We recommend selecting **Everyone** so the add-in will be installed on every user under the Microsoft 365 tenant.
 13. **Select Deployment Method.** We recommend selecting Fixed which is the default option.

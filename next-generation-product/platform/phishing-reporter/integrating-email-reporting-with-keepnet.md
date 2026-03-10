@@ -41,6 +41,6 @@ Any solution is supported, as long as it forwards reported messages with the ori
 
 Sample reported email:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image1.png" alt=""><figcaption>Sample reported email forwarded to Keepnet with EML attachment.</figcaption></figure>
 
 {% file src="../../../.gitbook/assets/Suspicious Email.eml" %}

@@ -47,7 +47,7 @@ When an employee uses the **Page View Phishing Reporter Add-in** to report a sus
 If you purchased the [Keepnet Incident Responder](../../incident-responder/) product, the email will also be sent for automated analysis, automated response, and case management.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-05-22 at 17.38.50.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-05-22 at 17.38.50.png" alt=""><figcaption>Example of reported email content sent to SOC/IT — attachment and report structure.</figcaption></figure>
 
 The email that is sent to the SOC/IT team inbox includes:
 
@@ -179,7 +179,7 @@ This is common when:
 * The organization enforces device compliance via Intune or Azure AD.
 * The user accessing the Phishing Reporter add-in is considered an external identity.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (3).png" alt="Screenshot reference of the error:" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (3).png" alt="Screenshot reference of the error:" width="375"><figcaption>Error or troubleshooting screenshot for Page View Phishing Reporter (e.g. AADSTS530004).</figcaption></figure>
 
 #### What Is Application-Level Access?
 
@@ -285,7 +285,7 @@ In the redesigned **New Outlook** interface, the **Phishing** **Reporter** butto
 3. Click the **Apps icon** (grid icon) on the right-hand side panel.
 4. Choose **Phishing** **Reporter** from the list.
 
-<div align="center" data-full-width="false"><figure><img src="../../../../.gitbook/assets/s5 (2).png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="center" data-full-width="false"><figure><img src="../../../../.gitbook/assets/s5 (2).png" alt="" width="563"><figcaption>Page View Phishing Reporter — New Outlook, Apps panel and Phishing Reporter option.</figcaption></figure></div>
 
 ### Classic Outlook
 
@@ -295,7 +295,7 @@ In the **Classic** **Outlook** interface, the button is integrated into the **ri
 2. Open the email you want to report.
 3. Click the **Phishing Reporter** button on the ribbon at the top of the message window.
 
-<figure><img src="../../../../.gitbook/assets/s4.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s4.png" alt="" width="563"><figcaption>Page View Phishing Reporter — Classic Outlook, ribbon toolbar.</figcaption></figure>
 
 ### Outlook Web App (OWA)
 
@@ -306,7 +306,7 @@ For users accessing **Outlook via a web browser**:
 3. Click the **Apps icon** (grid icon) located in the message view panel.
 4. Click on **Phishing Reporter**.
 
-<figure><img src="../../../../.gitbook/assets/s1 (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s1 (2).png" alt="" width="563"><figcaption>Page View Phishing Reporter — Outlook Web App (OWA), Apps icon and Phishing Reporter.</figcaption></figure>
 
 ### Outlook for Mac
 
@@ -316,7 +316,7 @@ In **macOS** versions of Outlook, the button is accessible through the top toolb
 2. Click the **three-dot icon (•••)** in the top-right corner.
 3. Select **Phishing Reporter** from the dropdown menu.
 
-<figure><img src="../../../../.gitbook/assets/s3.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s3.png" alt="" width="563"><figcaption>Page View Phishing Reporter — Outlook for Mac, three-dot menu and Phishing Reporter.</figcaption></figure>
 
 ### Outlook Mobile (iOS / Android)
 
@@ -325,7 +325,7 @@ On mobile devices, the reporting option is available via the message action menu
 1. While viewing the suspicious email, tap the **three-dot menu (•••)** in the top-right corner.
 2. Tap on the **Phishing Reporter** icon from the list of options.
 
-<div data-full-width="true"><figure><img src="../../../../.gitbook/assets/s2.png" alt="" width="188"><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../../../.gitbook/assets/s2.png" alt="" width="188"><figcaption>Page View Phishing Reporter — Outlook Mobile, three-dot menu and Phishing Reporter icon.</figcaption></figure></div>
 
 ## Why Do Some Users See a Popup or Redirection?
 
