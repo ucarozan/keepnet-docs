@@ -57,6 +57,10 @@ ISO/IEC 42001:2023 establishes a framework for managing artificial intelligence 
 
 {% file src="../.gitbook/assets/Keepnet - 42001 Cert.pdf" %}
 
+## Accessibility and WCAG 2.1
+
+Keepnet is committed to making our products and training content accessible to all users. We align with **WCAG 2.1** (Web Content Accessibility Guidelines) and strive to meet applicable conformance levels for the platform and for security awareness training delivered through Awareness Educator. Our accessibility efforts cover the learner-facing experience and, where applicable, authoring and administration interfaces. For questions or to request accessibility-related documentation, please contact [Keepnet Support](keepnet-support-help-desk.md).
+
 ## Architecture
 
 Keepnet's platform is designed for **high scalability, reliability, and security**, leveraging partnerships with **Cloudflare, Azure, and Amazon**. It operates on a globally distributed infrastructure, ensuring resilience and high availability.
