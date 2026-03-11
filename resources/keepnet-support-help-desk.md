@@ -8,7 +8,7 @@ This page explains how to obtain support from the Keepnet support team, as well 
 
 For now, see how to get support from Keepnet below:
 
-1. Go to the **Keepnet Help Desk** from the link [here](https://help.keepnetlabs.com/).
+1. Go to the **Keepnet Help Desk** from the link [here](https://support.keepnetlabs.com/).
 2. Click the **Messenger** button at the bottom, on the right of the page.
 3. Click the Messages button.
 4. Get support from the **Kai AI Agent** or the **Keepnet** support team.
