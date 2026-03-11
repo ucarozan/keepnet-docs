@@ -14,6 +14,8 @@ Our Executive Reports focus on delivering clear, concise, and relevant informati
 * **Incident Distribution and High-Risk Profiles:** The reports provide insights into how security incidents are distributed across your organization, highlighting high-risk individuals or departments. This helps prioritize security measures and allocate resources effectively.
 * **Comparison Against Industry Averages:** We benchmark your organization’s performance against industry standards, offering a clear perspective on where you stand relative to your peers. This comparison helps identify competitive strengths and weaknesses.
 
+**Test data is not included.** All metrics and charts in the Executive Report (phishing risk trend, training completion, security culture score, etc.) exclude campaigns and training reports marked as **Mark as Test**. Only non-test (production) data is used.
+
 ## The Aim of Executive Reports
 
 The primary aim of our Executive Reports is to empower our customers with the insights needed to drive strategic decisions that enhance their cybersecurity posture. These reports are designed to:

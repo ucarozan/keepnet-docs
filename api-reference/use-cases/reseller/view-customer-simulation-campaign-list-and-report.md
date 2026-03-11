@@ -28,6 +28,8 @@ Send the Company ID in the **`X-KEEPNET-Company-Id`** header so the list is scop
 [keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
 {% endopenapi %}
 
+Campaigns or enrollments with **Mark as Test** (`excludeFromReports: true`) are excluded from dashboard and report statistics in the platform UI; they may still appear in API list responses. When aggregating metrics for reporting, filter or ignore items where `excludeFromReports` is `true`.
+
 Example request headers:
 
 ```http

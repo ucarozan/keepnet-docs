@@ -7,6 +7,10 @@
 1. Navigate to **Reports > Advanced Reports** from the main menu.
 2. Here, you will see multiple report types under two different sub-menu. You can create a report by clicking the **CREATE REPORT** button for the report type that suits your needs.
 
+{% hint style="info" %}
+**Test data:** Statistics shown in reports do **not** include campaigns or training reports marked as **Mark as Test**. When selecting "campaign reports" or "organizations" in filters, test-marked items may appear in the list; however, charts and numeric metrics use only data that is not marked as test.
+{% endhint %}
+
 The available reports are separated into two different sub-menus; please see the report types and their benefits below:
 
 ### Reseller Reports

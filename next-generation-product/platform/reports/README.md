@@ -11,6 +11,15 @@ Additionally, this page includes important information on the metrics used in th
 * [How to schedule reports](scheduled-reports.md)
 * [How to view the gamification report](gamification-report.md)
 
+## Test data is excluded from reports
+
+**Mark as Test** (or **Marked As Test**) campaign and training report data is **not included** in platform reports. Specifically:
+
+- **Simulation campaigns** (Phishing, Smishing, Quishing, Vishing, Callback): If a campaign is marked as "Mark as Test" when created or edited, its statistics are not used in dashboard widgets, Advanced Reports, Executive Reports, or risk score / KPI calculations.
+- **Training reports (Awareness Educator):** If "Mark as Test" is selected when creating an enrollment, that training report's statistics are not included in platform reports or metrics.
+
+Use test campaigns only for trial or demo purposes; they do not affect real KPI or reporting numbers.
+
 ## Understanding Risk Scores
 
 This document explains the purpose and calculations of **Phishing Risk Scores** and **Human** **Cyber Risk Scores**. It details metrics used in phishing simulations (email phishing, smishing, quishing, vishing, and callback phishing) to evaluate user responses and assess training effectiveness.&#x20;

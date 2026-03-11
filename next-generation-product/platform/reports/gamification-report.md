@@ -25,6 +25,10 @@ The **Gamification** **Report** comprises several key components:
 
 The **Gamification Report** awards points for positive actions and deducts points for risky actions. This scoring system applies across different simulation types (Phishing, Callback, Vishing, Smishing, Quishing) and Security Awareness Training.&#x20;
 
+{% hint style="info" %}
+**Mark as Test:** Gamification points and leaderboard rankings do **not** include actions from campaigns or training reports marked as **Mark as Test**. Test campaigns and test enrollments are excluded from point and statistics calculations.
+{% endhint %}
+
 ### Simulations Scoring
 
 Each simulation type has specific actions with associated points based on the difficulty level (Easy, Medium, Hard):

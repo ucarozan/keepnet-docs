@@ -201,6 +201,10 @@ You can use this short template to announce this dashboard to your employees via
 
 ## 5. FAQs
 
+### **Q: Do test campaigns count on my dashboard?**
+
+A: No. Campaigns or training enrollments marked as **Mark as Test** are not included in your phishing test results, points, or leaderboard. Only non-test data is shown.
+
 ### **Q: Do employees need a new password?**
 
 A: No. They either use SSO/SAML or a one-time email login link.
