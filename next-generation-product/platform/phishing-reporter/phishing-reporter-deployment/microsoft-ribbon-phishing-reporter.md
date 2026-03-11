@@ -232,6 +232,10 @@ This error (AADSTS530004) indicates that your Microsoft 365 tenant blocks delega
 
 To resolve it, configure Application-Level Access (App-only) for the Keepnet Phishing Reporter add-in and reauthorize the application with admin consent
 
+### Reporter button not working for some users — UPN and primary email mismatch
+
+If the Phishing Reporter button does not appear, is greyed out, or fails only for certain users while others can use it, the cause may be a mismatch between the user's **Microsoft Entra ID (Azure AD) User Principal Name (UPN)** and their **primary email address** in Outlook. For identification steps and resolution, see [Troubleshooting: Phishing Reporter Button — UPN and Email Mismatch](troubleshooting-reporter-button-upn-email-mismatch.md).
+
 ## How Microsoft Ribbon Phishing Reporter Buttons Look on Outlook Platforms
 
 **Microsoft Ribbon Phishing Reporter** helps users report suspicious emails quickly and easily across multiple email platforms. This section visually showcases how the Phishing Reporter button appears in different environments—**Outlook Desktop (New/Classic)**, **Outlook Web (OWA)**, **Outlook on** **Mac**, **Mobile (IOS/Android)**.

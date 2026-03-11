@@ -68,6 +68,10 @@ Here is an example view of the **Microsoft Page View Phishing Reporter** button 
 
 <figure><img src="../../../../.gitbook/assets/2 (1) (1).png" alt=""><figcaption><p>Picture 2: Reporting side panel of Microsoft Page View Phishing Reporter Button on New Outlook Desktop App</p></figcaption></figure>
 
+{% hint style="info" %}
+**User Principal Name (UPN) and primary email:** For the Phishing Reporter add-in to work, each user's **Microsoft Entra ID (Azure AD) User Principal Name** must match their **primary email address** in Outlook. If they differ, the add-in may not work for those users. For identification steps and resolution, see [Troubleshooting: Phishing Reporter Button — UPN and Email Mismatch](troubleshooting-reporter-button-upn-email-mismatch.md).
+{% endhint %}
+
 ### How to Install the Microsoft Page View Phishing Reporter&#x20;
 
 1. Before deploying the button, we recommend customizing it. This can be done in the **Add-In Settings** tab under the [Phishing Reporter](../phishing-reporter-customization.md) menu on the Keepnet platform.
@@ -271,6 +275,10 @@ Ask your Azure AD / M365 administrator to:
    3. Handling claims in On-Behalf-Of flow: [https://aka.ms/msal-conditional-access-claims-obo](https://aka.ms/msal-conditional-access-claims-obo)
 
 If the error persists after the user has completed MFA and policies have been verified, share the Trace ID, Correlation ID, and Timestamp from the error message with your Azure AD administrator for further investigation.
+
+### Reporter button not working for some users — UPN and primary email mismatch
+
+If the Phishing Reporter button does not appear, is greyed out, or fails only for certain users while others can use it, the cause may be a mismatch between the user's **Microsoft Entra ID (Azure AD) User Principal Name (UPN)** and their **primary email address** in Outlook. For identification steps and resolution, see [Troubleshooting: Phishing Reporter Button — UPN and Email Mismatch](troubleshooting-reporter-button-upn-email-mismatch.md).
 
 ## How Microsoft Page View Phishing Reporter Buttons Look on Outlook Platforms
 

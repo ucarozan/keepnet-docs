@@ -167,6 +167,10 @@ Request url: https://addin-api.keepnetlabs.com/api/heartbeat response content : 
 System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'addin-api.keepnetlabs.com'
 ```
 
+#### See also
+
+If the add-in is deployed via **Microsoft 365** (Page View or Ribbon) and only some users cannot use the Phishing Reporter button, the cause may be a mismatch between the user's **User Principal Name (UPN)** in Microsoft Entra ID and their **primary email address**. See [Troubleshooting: Phishing Reporter Button — UPN and Email Mismatch](phishing-reporter-deployment/troubleshooting-reporter-button-upn-email-mismatch.md).
+
 ## Step 8: Contact Support
 
 If the above steps don't resolve your issue, it's suggested to ask for assistance from the Keepnet support team. There are two primary ways to get in touch with them:

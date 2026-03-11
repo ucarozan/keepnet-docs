@@ -162,6 +162,7 @@
     * [Phishing Reporter Deployment](next-generation-product/platform/phishing-reporter/phishing-reporter-deployment/README.md)
       * [How to Deploy the Add-in in Microsoft 365](next-generation-product/platform/phishing-reporter/phishing-reporter-deployment/how-to-deploy-the-add-in-in-microsoft-365.md)
       * [Phishing Reporter Page View Failure Due to Deprecated Exchange Online Tokens](next-generation-product/platform/phishing-reporter/phishing-reporter-deployment/phishing-reporter-page-view-failure-due-to-deprecated-exchange-online-tokens.md)
+      * [Troubleshooting: Phishing Reporter Button — UPN and Email Mismatch](next-generation-product/platform/phishing-reporter/phishing-reporter-deployment/troubleshooting-reporter-button-upn-email-mismatch.md)
       * [Microsoft Ribbon Phishing Reporter](next-generation-product/platform/phishing-reporter/phishing-reporter-deployment/microsoft-ribbon-phishing-reporter.md)
       * [Microsoft Page View Phishing Reporter](next-generation-product/platform/phishing-reporter/phishing-reporter-deployment/microsoft-page-view-phishing-reporter.md)
       * [How to Deploy the Add-in in Exchange Admin Center](next-generation-product/platform/phishing-reporter/phishing-reporter-deployment/how-to-deploy-the-add-in-in-exchange-admin-center.md)
