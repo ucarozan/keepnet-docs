@@ -18,9 +18,9 @@ If you are using the **Phishing** **Reporter** **Page** **View** version, it  ma
 
 ## Short Term Solution
 
-Customers can turn on legacy Exchange Online tokens following below documentation.
+Admins can re-enable legacy Exchange Online tokens for their tenant by using **Exchange Online PowerShell** and the **Set-AuthenticationPolicy** command. For the deprecation timeline, token behavior, and migration guidance (NAA/MSAL), see Microsoft's [Nested app authentication FAQ - Legacy tokens](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens).
 
-[https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/turn-exchange-tokens-on-off](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/turn-exchange-tokens-on-off)
+**See also:** [Regarding deprecation of exchange tokens](https://learn.microsoft.com/en-us/answers/questions/4756209/regarding-deprecation-of-exchange-tokens) (Microsoft Q&A) for community discussion and admin re-enable options.
 
 {% hint style="warning" %}
 It can take up to 24 hours before all requests from Outlook add-ins for legacy tokens are allowed.
