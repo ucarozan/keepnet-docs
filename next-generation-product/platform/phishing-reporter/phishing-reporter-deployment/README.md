@@ -8,7 +8,6 @@ For instructions on the required initial installation of the add-in, please refe
 
 * [How to Deploy Microsoft Ribbon Phishing Reporter](microsoft-ribbon-phishing-reporter.md)
 * [How to Deploy Microsoft Page View Phishing Reporter](microsoft-page-view-phishing-reporter.md)
-* [Troubleshooting: Phishing Reporter Button — UPN and Email Mismatch](troubleshooting-reporter-button-upn-email-mismatch.md)
 * [How to Deploy the Add-in in Exchange Admin Center](how-to-deploy-the-add-in-in-exchange-admin-center.md)
 * [How to Deploy the Add-in in Google Workspace](how-to-deploy-the-add-in-in-google-workspace.md)
 * [Phishing Reporter Announcement Email Template](phishing-reporter-announcement-email-template.md)

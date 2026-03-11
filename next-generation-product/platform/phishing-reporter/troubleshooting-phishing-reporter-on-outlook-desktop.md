@@ -169,7 +169,7 @@ System.Net.Http.HttpRequestException: An error occurred while sending the reques
 
 #### See also
 
-If the add-in is deployed via **Microsoft 365** (Page View or Ribbon) and only some users cannot use the Phishing Reporter button, the cause may be a mismatch between the user's **User Principal Name (UPN)** in Microsoft Entra ID and their **primary email address**. See [Troubleshooting: Phishing Reporter Button — UPN and Email Mismatch](phishing-reporter-deployment/troubleshooting-reporter-button-upn-email-mismatch.md).
+If the add-in is deployed via **Microsoft 365** (Page View or Ribbon) and only some users cannot use the Phishing Reporter button, the cause may be a mismatch between the user's **User Principal Name (UPN)** in Microsoft Entra ID and their **primary email address**. Identify affected users in Entra ID (compare User principal name with primary email); update UPN to match primary email in Microsoft 365 admin center or Azure portal; then have the user sign out and sign in again. For full steps, see the **Reporter button not working for some users — UPN and primary email mismatch** subsection under Troubleshooting in [Microsoft Page View Phishing Reporter](phishing-reporter-deployment/microsoft-page-view-phishing-reporter.md) or [Microsoft Ribbon Phishing Reporter](phishing-reporter-deployment/microsoft-ribbon-phishing-reporter.md).
 
 ## Step 8: Contact Support
 

@@ -234,7 +234,24 @@ To resolve it, configure Application-Level Access (App-only) for the Keepnet Phi
 
 ### Reporter button not working for some users — UPN and primary email mismatch
 
-If the Phishing Reporter button does not appear, is greyed out, or fails only for certain users while others can use it, the cause may be a mismatch between the user's **Microsoft Entra ID (Azure AD) User Principal Name (UPN)** and their **primary email address** in Outlook. For identification steps and resolution, see [Troubleshooting: Phishing Reporter Button — UPN and Email Mismatch](troubleshooting-reporter-button-upn-email-mismatch.md).
+The Keepnet Phishing Reporter add-in may fail for **some users** when their **Microsoft Entra ID (formerly Azure AD) User Principal Name (UPN)** does not match their **primary email address** used in Outlook. Typically only a subset of users in the organization are affected.
+
+#### Why This Happens
+
+* The add-in identifies the user by **primary email address** (e.g. SMTP/mailbox address). Sign-in uses **UPN**. If UPN and primary email differ, the add-in cannot match the signed-in identity to the correct user in Entra ID.
+* **Symptoms:** The Phishing Reporter button does not appear, is greyed out, or does not respond for certain users; other users in the same tenant can use it. The user can open Outlook and use email normally, but reporting fails when they click the Reporter button.
+
+#### How to Resolve
+
+Ask your Microsoft Entra ID / M365 administrator to:
+
+1. **Identify affected users:** In Microsoft Entra ID, open the user's profile and compare **User principal name** with **primary email address** (Mail/Primary SMTP). If they differ, the user is affected.
+2. **Update UPN:** In [Microsoft 365 admin center](https://admin.microsoft.com/) or [Azure portal](https://portal.azure.com/), go to **Users** → **Active users**, open the user, edit **User principal name** to match their **primary email address**, and save. See [Add or update a user's profile information in Azure AD](https://learn.microsoft.com/en-us/entra/identity/enterprise-users/users-profile-edit) for details and constraints.
+3. **Verify:** Have the user sign out and sign in again, then try the Phishing Reporter button.
+
+#### Best practice
+
+Ensure UPN matches primary email for all users who will use the add-in, and include this in your Phishing Reporter deployment checklist.
 
 ## How Microsoft Ribbon Phishing Reporter Buttons Look on Outlook Platforms
 
