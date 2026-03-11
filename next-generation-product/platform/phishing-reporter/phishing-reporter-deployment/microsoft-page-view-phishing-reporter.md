@@ -290,7 +290,7 @@ The Keepnet Phishing Reporter add-in may fail for **some users** when their **Mi
 Ask your Microsoft Entra ID / M365 administrator to:
 
 1. **Identify affected users:** In Microsoft Entra ID, open the user’s profile and compare **User principal name** with **primary email address** (Mail/Primary SMTP). If they differ, the user is affected.
-2. **Update UPN:** In [Microsoft 365 admin center](https://admin.microsoft.com/) or [Azure portal](https://portal.azure.com/), go to **Users** → **Active users**, open the user, edit **User principal name** to match their **primary email address**, and save. See [Add or update a user's profile information in Azure AD](https://learn.microsoft.com/en-us/entra/identity/enterprise-users/users-profile-edit) for details and constraints.
+2. **Update UPN:** In [Microsoft 365 admin center](https://admin.microsoft.com/) or [Azure portal](https://portal.azure.com/), go to **Users** → **Active users**, open the user, edit **User principal name** to match their **primary email address**, and save. See [Add or update a user's profile information in Azure AD](https://learn.microsoft.com/en-us/entra/fundamentals/how-to-manage-user-profile-info) for details and constraints.
 3. **Verify:** Have the user sign out and sign in again, then try the Phishing Reporter button.
 
 #### Best practice
