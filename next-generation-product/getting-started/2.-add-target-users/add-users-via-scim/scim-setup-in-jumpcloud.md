@@ -1,14 +1,10 @@
----
-description: "Learn about SCIM Setup in JumpCloud in Keepnet Labs human risk management documentation."
----
+# SCIM Setup in Jumpcloud
 
-# SCIM Setup in JumpCloud
+The document show step-by-step how to synchronize users' information from the Jumpcloud identity provider to the platform.
 
-The document show step-by-step how to synchronize users' information from the JumpCloud identity provider to the platform.
+## **SCIM Configuration in Jumpcloud**
 
-## **SCIM Configuration in JumpCloud**
-
-1. Please log in to JumpCloud as an **admin** and follow the following steps.
+1. Please log in to Jumpcloud as an **admin** and follow the following steps.
 2. Please create a group and assign users to the group for synchronization.
 3. Go to **SSO** > **+** > and then click the **Custom SSO SAML.**
 4. Enter a name for the **Application name**.
@@ -20,7 +16,7 @@ The document show step-by-step how to synchronize users' information from the Ju
    4. Click the **‘Test Connection’** button to test the connection and then please click the **‘Activate’** button next to the **‘Test Connection’ button**.&#x20;
    5. Edit the **SSO** rule and then go to the **SSO** menu to **Disable the SSO** at the bottom of the page.
 
-JumpCloud configuration has been successfully finished. You can proceed with the following step.
+Jumpcloud configuration has been successfully finished. You can proceed with the following step.
 
 ## **Synchronization Users or Groups**
 

@@ -1,7 +1,3 @@
----
-description: "Learn about Terms of Use in Keepnet Labs human risk management documentation."
----
-
 # Terms of Use
 
 **PLEASE READ THESE WEBSITE TERMS OF USE CAREFULLY.**

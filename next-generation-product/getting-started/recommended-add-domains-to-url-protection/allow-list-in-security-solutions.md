@@ -1,7 +1,3 @@
----
-description: "Learn about Allow List in Security Solutions in Keepnet Labs human risk management documentation."
----
-
 # Allow List in Security Solutions
 
 ## Allow Listing in Content Filtering (Proxy) <a href="#whitelisting-in-content-filtering-proxy" id="whitelisting-in-content-filtering-proxy"></a>

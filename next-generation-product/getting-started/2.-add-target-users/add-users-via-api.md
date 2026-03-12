@@ -1,7 +1,3 @@
----
-description: "Learn about Add Users via API in Keepnet Labs human risk management documentation."
----
-
 # Add Users via API
 
 Using the platform's APIs, target users may be effortlessly migrated. The API endpoints that are required are detailed below.

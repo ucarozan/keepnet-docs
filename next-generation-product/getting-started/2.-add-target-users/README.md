@@ -1,7 +1,3 @@
----
-description: "Learn about 2. Add Target Users in Keepnet Labs human risk management documentation."
----
-
 # 2. Add Target Users
 
 Your Target Users are the people who will receive simulation emails, training emails or any other emails from the platform. They will not have a login to Keepnet or require any access to the platform.

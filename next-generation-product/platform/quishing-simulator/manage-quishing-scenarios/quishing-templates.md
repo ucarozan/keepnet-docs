@@ -1,7 +1,3 @@
----
-description: "Learn about Quishing Templates in Keepnet Labs human risk management documentation."
----
-
 # Quishing Templates
 
 The **Quishing Simulator > Quishing Scenarios > Quishing Templates** page provides you with system default quishing email templates. You can use them as they are or customize them as needed for your quishing campaign.

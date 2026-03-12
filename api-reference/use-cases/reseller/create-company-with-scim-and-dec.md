@@ -1,7 +1,3 @@
----
-description: "Learn about Create a company with SCIM and DEC in Keepnet Labs human risk management documentation."
----
-
 # Create a company with SCIM and DEC
 
 As a Reseller you can onboard a new customer and configure SCIM (user provisioning) and Direct Email Creation (DEC) for that company in a single workflow. The flow: create the company, then configure SCIM so the customer's IdP provisions users, and set up DEC so phishing simulations and training emails are sent via the customer's Microsoft 365 or Google Workspace tenant. Use a credential with Client Role = **Reseller**. After company creation, send **`X-KEEPNET-Company-Id`** with the new company's `resourceId`.

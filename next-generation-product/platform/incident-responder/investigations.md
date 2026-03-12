@@ -1,7 +1,3 @@
----
-description: "Learn about Investigations in Keepnet Labs human risk management documentation."
----
-
 # Investigations
 
 This document displays the functions on **Incident Responder > Investigation**. Users will learn how to handle Investigations and carry out Incident Response processes.

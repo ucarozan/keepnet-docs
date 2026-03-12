@@ -1,7 +1,3 @@
----
-description: "Learn about M365: Allow Listing in Keepnet Labs human risk management documentation."
----
-
 # M365: Allow Listing
 
 It's suggested to use all the methods explained in this documentation step by step for allow listing successfully. The customer may skip the related step if there is no feature in their O365 environment due to the license.

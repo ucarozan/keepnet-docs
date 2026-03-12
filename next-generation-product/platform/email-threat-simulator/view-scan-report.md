@@ -1,7 +1,3 @@
----
-description: "Learn about View Scan Report in Keepnet Labs human risk management documentation."
----
-
 # View Scan Report
 
 This section describes the capabilities and features of the threat simulation reports that can be generated using the **Email Threat Simulator > Scan > Report** button.&#x20;

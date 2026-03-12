@@ -1,7 +1,3 @@
----
-description: "Learn about How to Allow List an IP Address in Exchange 2013 and 2016 in Keepnet Labs human risk management documentation."
----
-
 # How to Allow List an IP Address in Exchange 2013 and 2016
 
 The below instructions will show you how to allow list the emails such as notification, training, or [phishing simulation](https://keepnetlabs.com/products/phishing-simulator) emails that will be sent from the platform to users by allow listing **Sender** **IPs** in the Exchange 2013 and 2016 environment.

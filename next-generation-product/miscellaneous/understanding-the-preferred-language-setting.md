@@ -1,7 +1,3 @@
----
-description: "Learn about Understanding the Preferred Language Setting in Keepnet Labs human risk management documentation."
----
-
 # Understanding the Preferred Language Setting
 
 The Keepnet platform allows organizations to configure language preferences at different levels:

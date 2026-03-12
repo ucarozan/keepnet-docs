@@ -1,7 +1,3 @@
----
-description: "Learn about Deploy Keepnet's Customisable Phishing Report Button in Keepnet Labs human risk management documentation."
----
-
 # Deploy Keepnet's Customisable Phishing Report Button
 
 Most customers choose to deploy Keepnet's highly customisable Phishing Reporter Button. Our Keepnet button is fully customisable and allows customers to set up automatic positive  messages to employees to reinforce secure behaviour.&#x20;

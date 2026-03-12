@@ -1,7 +1,3 @@
----
-description: "Learn about Phishing Scenarios in Keepnet Labs human risk management documentation."
----
-
 # Phishing Scenarios
 
 The [**Phishing Simulator**](https://keepnetlabs.com/products/phishing-simulator) **> Phishing Scenarios > Scenarios** page provides a selection of ready-to-use phishing campaigns. These standard system scenarios are available to all clients and can be launched with just a few clicks. You also have the option to customize a scenario to your needs or to create a unique phishing campaign.

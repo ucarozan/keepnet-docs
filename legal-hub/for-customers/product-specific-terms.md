@@ -1,7 +1,3 @@
----
-description: "Learn about Product Specific Terms in Keepnet Labs human risk management documentation."
----
-
 # Product Specific Terms
 
 **PLEASE READ THESE TERMS CAREFULLY.**

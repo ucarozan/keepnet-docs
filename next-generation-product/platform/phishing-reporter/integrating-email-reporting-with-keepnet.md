@@ -1,7 +1,3 @@
----
-description: "Learn about Integrating Email Reporting with Keepnet in Keepnet Labs human risk management documentation."
----
-
 # Integrating Email Reporting with Keepnet
 
 Keepnet can integrate with any email security solution that supports reporting suspicious emails. The key requirement is that the original reported email must be included as an EML attachment. Once forwarded, Keepnet automatically parses and analyzes the attached email.
@@ -45,6 +41,6 @@ Any solution is supported, as long as it forwards reported messages with the ori
 
 Sample reported email:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image1.png" alt="Sample reported email forwarded to Keepnet with EML attachment."><figcaption>Sample reported email forwarded to Keepnet with EML attachment.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image1.png" alt=""><figcaption>Sample reported email forwarded to Keepnet with EML attachment.</figcaption></figure>
 
 {% file src="../../../.gitbook/assets/Suspicious Email.eml" %}

@@ -1,7 +1,3 @@
----
-description: "Learn about Research Methodology in Keepnet Labs human risk management documentation."
----
-
 # Research Methodology
 
 At Keepnet, we follow a rigorous research methodology to ensure that our reports, whitepapers, and insights are reliable, data-driven, and actionable. Our research approach is designed to provide high-quality analysis of cybersecurity threats, human risk management, and security awareness trends. Below is an overview of our methodology.

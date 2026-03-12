@@ -1,7 +1,3 @@
----
-description: "Learn about Manage Quishing Scenarios in Keepnet Labs human risk management documentation."
----
-
 # Manage Quishing Scenarios
 
 This section is designed to guide you through the essential functions of the **Quishing** **Simulator** product. We've outlined direct access to key features within the **Quishing** **Simulator** product for your convenience.

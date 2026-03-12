@@ -1,7 +1,3 @@
----
-description: "Learn about Set up SCIM for a customer in Keepnet Labs human risk management documentation."
----
-
 # Set up SCIM for a customer
 
 As a Reseller you can create a SCIM integration for a **customer (sub-company)** so that customer can sync target users from their identity provider (Entra ID, Okta, OneLogin, JumpCloud, etc.) into Keepnet. The SCIM integration is created in the **customer’s** context, not your Reseller company. Get the customer’s Company ID, then call the SCIM endpoints with **`X-KEEPNET-Company-Id`**. Use a credential with Client Role = **Reseller**. After creation, share the returned **SCIM token** and endpoint URL with the customer so they can configure their IdP.

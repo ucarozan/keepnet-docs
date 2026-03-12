@@ -1,7 +1,3 @@
----
-description: "Learn about How to Configure SAML on Okta in Keepnet Labs human risk management documentation."
----
-
 # How to Configure SAML on Okta
 
 This document explains the steps of integrating the Okta identity provider with the platform over SAML to log in to the platform by using your Okta account.

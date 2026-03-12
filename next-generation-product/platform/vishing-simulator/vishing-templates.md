@@ -1,7 +1,3 @@
----
-description: "Learn about Vishing Templates in Keepnet Labs human risk management documentation."
----
-
 # Vishing Templates
 
 The **Vishing** **Simulator** template page will show you all the available templates you have to send to your target users. From this page, you can create, edit, or delete any vishing templates that you would like.

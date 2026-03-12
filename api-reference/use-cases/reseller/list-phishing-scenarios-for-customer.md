@@ -1,7 +1,3 @@
----
-description: "Learn about List phishing scenarios for a customer in Keepnet Labs human risk management documentation."
----
-
 # List phishing scenarios for a customer
 
 As a Reseller you can list a customer's phishing scenarios (templates used to run campaigns) scoped to that company. Get the customer's Company ID, then call the phishing-scenario search endpoint with **`X-KEEPNET-Company-Id`**. Use a credential with Client Role = **Reseller**. Use the scenario `resourceId` when creating or managing phishing campaigns for that customer.

@@ -1,7 +1,3 @@
----
-description: "Learn about SIEM Integrations in Keepnet Labs human risk management documentation."
----
-
 # SIEM Integrations
 
 This section explains how to integrate the data in the audit log, a record of all system activity, with your security information and event management (SIEM) products.

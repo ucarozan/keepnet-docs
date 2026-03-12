@@ -1,7 +1,3 @@
----
-description: "Learn about Quishing Campaign Manager in Keepnet Labs human risk management documentation."
----
-
 # Quishing Campaign Manager
 
 A quishing campaign can be launched to target users in two ways. The **Fast** **Launch** option allows you to initiate a quishing campaign quickly and easily, without having to designate any settings. However, if you prefer customization, advanced features are available to refine the campaign using the **Campaign** **Manager** option, such as **Schedule**, **Multiple** **Target** **Groups**, **SMTP** **Delay**, **Expire** **Date**, **Multiple** **Scenarios,** and **Randomize** to allow you to modify a variety of elements to suit your needs.&#x20;

@@ -1,7 +1,3 @@
----
-description: "Learn about SAML Settings in Keepnet Labs human risk management documentation."
----
-
 # SAML Settings
 
 This document explains the functionality of the SAML feature as well as how to set up a SAML to log in to the platform without using email/password credentials.

@@ -1,7 +1,3 @@
----
-description: "Learn about Pull gamification report data for a customer in Keepnet Labs human risk management documentation."
----
-
 # Pull gamification report data for a customer
 
 As a Reseller you can retrieve gamification (leaderboard) data for a customer — top performers, full leaderboard, user performance, and user timeline — scoped by Company ID. Use a credential with Client Role = **Reseller**. Send **`X-KEEPNET-Company-Id`** on each request so data is for that customer.

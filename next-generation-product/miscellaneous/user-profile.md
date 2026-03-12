@@ -1,7 +1,3 @@
----
-description: "Learn about User Profile in Keepnet Labs human risk management documentation."
----
-
 # User Profile
 
 This section explains all the functions and features of the user profile section. You can find it on the top of the left menu where you will see the company name, user name, company logo after logging into the platform.

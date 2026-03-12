@@ -1,7 +1,3 @@
----
-description: "Learn about Quishing Landing Page Templates in Keepnet Labs human risk management documentation."
----
-
 # Quishing Landing Page Templates
 
 The **Quishing Simulator > Quishing Scenarios > Landing Page Templates** page has ready-to-use landing page designs. You can use these pages as they are or customize them for your quishing campaigns. Landing pages take users to a specific webpage, which can either give them information about the phishing campaign or ask for their credentials.

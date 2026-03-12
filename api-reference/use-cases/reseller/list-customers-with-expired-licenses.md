@@ -1,7 +1,3 @@
----
-description: "Learn about List customers with expired licenses in Keepnet Labs human risk management documentation."
----
-
 # List customers with expired licenses
 
 As a Reseller you list or export companies whose license renewal date is in the past (expired licenses) for compliance, renewal campaigns, or billing cleanup. Use a credential with Client Role = **Reseller**. Call company search with a **`filter`** on renewal date (e.g. renewal date before today) if the API supports it; otherwise export the full list and filter by the renewal date column client-side. Request body: see Endpoints → **Company** for filter structure and supported fields.

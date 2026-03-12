@@ -1,7 +1,3 @@
----
-description: "Learn about Landing Page Templates in Keepnet Labs human risk management documentation."
----
-
 # Landing Page Templates
 
 Landing pages direct the user to a specific page and can be used for various purposes, such as redirecting the user to an informative page or requesting credentials.

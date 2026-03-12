@@ -1,7 +1,3 @@
----
-description: "Learn about Microsoft 365 in Keepnet Labs human risk management documentation."
----
-
 # Microsoft 365
 
 It is essential that your employees are able to receive all emails sent via Keepnet platform for you to accurately measure how your employees behave when faced with evolving social engineering threats.

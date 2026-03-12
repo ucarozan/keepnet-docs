@@ -1,7 +1,3 @@
----
-description: "Learn about Target Users in Keepnet Labs human risk management documentation."
----
-
 # Target Users
 
 The **Target Users** are those who receive e-mails that will be sent through the platform. This document explains how to add target users to the platform so that it can send training, phishing, campaigns, and other emails to them.

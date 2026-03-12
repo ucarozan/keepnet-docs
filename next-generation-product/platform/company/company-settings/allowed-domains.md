@@ -1,7 +1,3 @@
----
-description: "Learn about Allowed Domains in Keepnet Labs human risk management documentation."
----
-
 # Allowed Domains
 
 This section explains the functionality of **Allowed** **Domains** and provides some related use cases to assist you in creating an optimal configuration. To access the **Allowed** **Domains**, go to **Company > Company Settings > Allowed Domains**.

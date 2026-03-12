@@ -1,7 +1,3 @@
----
-description: "Learn about Azure AD SCIM Integration in Keepnet Labs human risk management documentation."
----
-
 # Azure AD SCIM Integration
 
 This document shows step-by-step how to synchronize users' information from the Azure AD identity provider to the platform.

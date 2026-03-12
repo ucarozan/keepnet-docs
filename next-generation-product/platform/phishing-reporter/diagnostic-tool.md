@@ -1,7 +1,3 @@
----
-description: "Learn about Diagnostic Tool in Keepnet Labs human risk management documentation."
----
-
 # Diagnostic Tool
 
 In standard Windows, the MS Outlook service does not support monitoring and reporting the functionality of the installed add-ins on it. This service has been developed in order to monitor and report whether Keepnet Outlook add-in functions properly or not.

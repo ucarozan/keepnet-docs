@@ -1,6 +1,5 @@
 ---
 coverY: 0
-description: "Learn about 🩵 Most Loved Scenarios in Keepnet Labs human risk management documentation."
 ---
 
 # 🩵 Most Loved Scenarios

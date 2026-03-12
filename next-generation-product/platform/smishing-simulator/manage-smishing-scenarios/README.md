@@ -1,7 +1,3 @@
----
-description: "Learn about Manage Smishing Scenarios in Keepnet Labs human risk management documentation."
----
-
 # Manage Smishing Scenarios
 
 This section will help you comprehend and utilize the fundamental features within the Smishing Scenarios page. Below, we have provided shortcuts to the parameters within the Smishing Scenarios page.

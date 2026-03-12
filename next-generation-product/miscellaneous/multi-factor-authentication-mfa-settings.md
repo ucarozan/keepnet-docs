@@ -1,7 +1,3 @@
----
-description: "Learn about Multi-Factor Authentication (MFA) Settings in Keepnet Labs human risk management documentation."
----
-
 # Multi-Factor Authentication (MFA) Settings
 
 This article covers how system users can enable Multi-Factor Authentication to log in to the platform more securely.

@@ -1,7 +1,3 @@
----
-description: "Learn about Direct Email Creation in Keepnet Labs human risk management documentation."
----
-
 # Direct Email Creation
 
 This page explains the benefits of the **Direct Email Creation (DEC)** feature and how to use it with [Google Workspace](direct-email-creation-for-google-workspace.md) or [Microsoft 365](direct-email-creation-for-microsoft-365.md). Direct Email Creation (DEC) is a feature that connects to your Google Workspace or Microsoft 365 to the platform. By using this feature, you can create phishing simulation emails directly in the user’s inbox instead of sending the emails over SMTP protocol.

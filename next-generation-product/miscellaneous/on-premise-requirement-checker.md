@@ -1,7 +1,3 @@
----
-description: "Learn about On-Premise Requirement Checker in Keepnet Labs human risk management documentation."
----
-
 # On-Premise Requirement Checker
 
 ## **On-premise Requirement Checker**

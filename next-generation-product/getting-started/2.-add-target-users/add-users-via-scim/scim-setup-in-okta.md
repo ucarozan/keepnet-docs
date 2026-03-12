@@ -1,7 +1,3 @@
----
-description: "Learn about SCIM Setup in Okta in Keepnet Labs human risk management documentation."
----
-
 # SCIM Setup in Okta
 
 The document show step-by-step how to synchronize users' information from the Okta identity provider to the platform.

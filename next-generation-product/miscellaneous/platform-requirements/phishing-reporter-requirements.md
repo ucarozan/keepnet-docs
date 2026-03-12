@@ -1,7 +1,3 @@
----
-description: "Learn about Phishing Reporter Requirements in Keepnet Labs human risk management documentation."
----
-
 # Phishing Reporter Requirements
 
 ## Requirements

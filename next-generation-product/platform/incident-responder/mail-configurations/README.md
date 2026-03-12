@@ -1,7 +1,3 @@
----
-description: "Learn about Mail Configurations in Keepnet Labs human risk management documentation."
----
-
 # Mail Configurations
 
 This article section describes how to integrate the [Incident Responder](https://keepnetlabs.com/products/incident-responder) module with Google Workspace, Exchange, or Microsoft Office 365 email services. It's crucial to follow the steps accurately. Please contact your email server administrator if you don’t have the required permissions to make these configurations.

@@ -1,7 +1,3 @@
----
-description: "Learn about The Randomised, Relevant Approach in Keepnet Labs human risk management documentation."
----
-
 # The Randomised, Relevant Approach
 
 The Randomised Approach is ideal for organisations looking to raise awareness broadly while collecting meaningful data on employee responses. Each employee receives a unique, randomly selected scenario from categories you’ve chosen, keeping campaigns relevant to their role or department.

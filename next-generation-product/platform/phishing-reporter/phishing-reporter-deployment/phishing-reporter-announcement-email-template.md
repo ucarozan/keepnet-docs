@@ -1,7 +1,3 @@
----
-description: "Learn about Phishing Reporter Announcement Email Template in Keepnet Labs human risk management documentation."
----
-
 # Phishing Reporter Announcement Email Template
 
 This text has been prepared for customers to use who want to inform their users about the Phishing Reporter add-in.

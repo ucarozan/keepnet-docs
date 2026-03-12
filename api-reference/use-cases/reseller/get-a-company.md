@@ -1,7 +1,3 @@
----
-description: "Learn about Get a company in Keepnet Labs human risk management documentation."
----
-
 # Get a company
 
 As a Reseller you can retrieve a single company you manage by its ID to view full details (license, settings, etc.). Get the company `resourceId` from the companies list, then call **GET /api/companies/{resourceId}**. Use a credential with Client Role = **Reseller**.

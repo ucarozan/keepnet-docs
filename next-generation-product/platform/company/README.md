@@ -1,7 +1,3 @@
----
-description: "Learn about Company in Keepnet Labs human risk management documentation."
----
-
 # Company
 
 ​This section provides a brief description of the **Company** menu which you can find on the left menu of the platform. The Company menu provides many features or settings for the company.&#x20;

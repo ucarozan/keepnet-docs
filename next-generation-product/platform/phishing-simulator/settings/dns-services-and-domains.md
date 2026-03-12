@@ -1,7 +1,3 @@
----
-description: "Learn about DNS Services and Domains in Keepnet Labs human risk management documentation."
----
-
 # DNS Services and Domains
 
 This page explains the capabilities available to create and use **Domains** and **DNS Services** in the [phishing simulator.](https://keepnetlabs.com/products/phishing-simulator) You can integrate your DNS service provider if the platform supports it already and then you will be able to create phishing domains on the platform to use them in the phishing campaigns.

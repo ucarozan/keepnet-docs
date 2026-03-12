@@ -1,7 +1,3 @@
----
-description: "Learn about Understanding Email Delivery Errors in Keepnet Labs human risk management documentation."
----
-
 # Understanding Email Delivery Errors
 
 This document provides an overview of the common issues related to the non-delivery of training emails sent to users. It is designed to help system users understand the error messages they may encounter, specifically focusing on the "bounce" and "dropped" statuses.

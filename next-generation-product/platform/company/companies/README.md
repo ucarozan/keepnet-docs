@@ -1,7 +1,3 @@
----
-description: "Learn about Companies in Keepnet Labs human risk management documentation."
----
-
 # Companies
 
 This section provides details of the functionality and flexibility available to those who administer multiple company accounts.

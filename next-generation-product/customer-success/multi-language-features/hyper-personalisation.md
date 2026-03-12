@@ -1,7 +1,3 @@
----
-description: "Learn about Hyper-Personalisation in Keepnet Labs human risk management documentation."
----
-
 # Hyper-Personalisation
 
 The Hyper-Personalisation feature allows you to send phishing simulation scenarios in each recipient’s preferred language. If a preferred language is not set, the system will default to the company's preferred language.

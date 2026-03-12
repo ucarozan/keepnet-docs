@@ -1,7 +1,3 @@
----
-description: "Learn about The Blend in Keepnet Labs human risk management documentation."
----
-
 # The Blend
 
 The Blend Approach combines the strengths of both the Randomised and Targeted methods, giving organisations a **balanced, scalable, and highly effective phishing awareness programme**.

@@ -1,7 +1,3 @@
----
-description: "Learn about Job Log in Keepnet Labs human risk management documentation."
----
-
 # Job Log
 
 This document provides insight into the Job Log under **Company > Job Log** page. Here you can view the status of the target users you add/update to the platform. The log will be added to the page every time you add or update the target users either manually or through LDAP integration.

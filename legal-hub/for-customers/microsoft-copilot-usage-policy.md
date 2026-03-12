@@ -1,7 +1,3 @@
----
-description: "Learn about Microsoft CoPilot Usage Policy in Keepnet Labs human risk management documentation."
----
-
 # Microsoft CoPilot Usage Policy
 
 Keepnet is committed to delivering cutting-edge solutions to enhance our services. To this end, we have integrated Microsoft CoPilot into our platform to assist with customer support and user interaction. This document outlines the terms of use, data handling, privacy implications, and other relevant details regarding the use of Microsoft CoPilot within Keepnet's platform.

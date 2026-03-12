@@ -1,7 +1,3 @@
----
-description: "Learn about Microsoft Teams Settings in Keepnet Labs human risk management documentation."
----
-
 # Microsoft Teams Settings
 
 Microsoft Teams integration allows you to send training notifications directly inside Teams, where your employees already collaborate every day. Instead of relying only on SMS or email, you can reach users in a familiar workspace without leaving their daily workflow. This makes training invitations harder to miss and easier to act on. Messages arrive from a dedicated bot that you can name, keeping communication clear and professional.

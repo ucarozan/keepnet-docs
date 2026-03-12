@@ -1,7 +1,3 @@
----
-description: "Learn about Scheduled Reports in Keepnet Labs human risk management documentation."
----
-
 # Scheduled Reports
 
 The **Scheduled** **Reports** feature allows administrators to automate the delivery of executive reports. This feature ensures that up-to-date, comprehensive reports of your organization's human risk management activities are regularly sent to specified email inboxes. This automation is particularly useful for keeping executives informed without the need for manual intervention.

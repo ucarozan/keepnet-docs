@@ -1,7 +1,3 @@
----
-description: "Learn about Smishing Campaign Reports in Keepnet Labs human risk management documentation."
----
-
 # Smishing Campaign Reports
 
 This section describes the basic functionalities of phishing campaign reports, which you can find from the **Smishing >** [**Campaign Manager** ](smishing-campaign-manager.md#campaign-instances)menu.

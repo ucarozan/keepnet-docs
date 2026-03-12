@@ -1,7 +1,3 @@
----
-description: "Learn about List recently created companies in Keepnet Labs human risk management documentation."
----
-
 # List recently created companies
 
 As a Reseller you list or count companies created in a recent period for billing, onboarding reports, or growth metrics. Use a credential with Client Role = **Reseller**. Call company search with **`orderBy: "CreateTime"`** and **`ascending: false`** to get newest first; use **`filter`** with a date range on creation date if the API supports it. Total count is in the response or sum across pages.

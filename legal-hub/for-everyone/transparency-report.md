@@ -1,7 +1,3 @@
----
-description: "Learn about Transparency Report in Keepnet Labs human risk management documentation."
----
-
 # Transparency Report
 
 At Keepnet, we believe in fostering trust and openness with our stakeholders, including customers, employees, partners, and the public. As part of our commitment to protecting the privacy rights and information of our customers and users, we openly share our transparency report.&#x20;

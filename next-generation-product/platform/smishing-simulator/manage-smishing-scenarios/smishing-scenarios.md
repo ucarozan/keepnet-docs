@@ -1,7 +1,3 @@
----
-description: "Learn about Smishing Scenarios in Keepnet Labs human risk management documentation."
----
-
 # Smishing Scenarios
 
 The **Smishing Simulator > Scenarios** page provides a selection of ready-to-use smishing campaigns. These standard system scenarios are available to all clients and can be launched with just a few clicks. You also have the option to customize a scenario to your needs or to create a unique smishing campaign.

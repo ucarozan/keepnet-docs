@@ -1,7 +1,3 @@
----
-description: "Learn about How to Configure SAML on Google Workspace in Keepnet Labs human risk management documentation."
----
-
 # How to Configure SAML on Google Workspace
 
 This document explains the steps of integrating the Google Workspace identity provider with the platform over SAML to log in to the platform by using your Google Workspace email account.

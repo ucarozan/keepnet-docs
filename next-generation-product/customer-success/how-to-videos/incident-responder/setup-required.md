@@ -1,7 +1,3 @@
----
-description: "Learn about Setup Required in Keepnet Labs human risk management documentation."
----
-
 # Setup Required
 
 For successful analysis, you need to integrate one or many Threat Intel Partners. By integrating Threat Intel partners you will automate identifying malicious emails. Each email reported through the Phishing Reporter add-in will automatically be analysed for malicious content via multiple integrations.

@@ -1,7 +1,3 @@
----
-description: "Learn about Create Trusted Account on Exchange in Keepnet Labs human risk management documentation."
----
-
 # Create Trusted Account on Exchange
 
 Our [E-Mail Threat Simulator](https://keepnetlabs.com/products/email-threat-simulator) requires a test account for making and reporting the tests listed here. This document contains sample configurations for making possible security and reliability checks with this test account.

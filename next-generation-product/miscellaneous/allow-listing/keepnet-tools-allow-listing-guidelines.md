@@ -1,7 +1,3 @@
----
-description: "Learn about Keepnet Tools Allow Listing Guidelines in Keepnet Labs human risk management documentation."
----
-
 # Keepnet Tools Allow Listing Guidelines
 
 It's important to note that both the Phishing Reporter and Diagnostic Tool are legitimate and secure applications developed by Keepnet Labs. They have been thoroughly tested and should not trigger any issues with Antivirus or Endpoint Detection and Response (EDR) solutions under normal circumstances.

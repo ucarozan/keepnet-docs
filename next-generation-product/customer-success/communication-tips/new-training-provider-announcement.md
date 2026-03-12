@@ -1,7 +1,3 @@
----
-description: "Learn about New Training Provider Announcement in Keepnet Labs human risk management documentation."
----
-
 # New Training Provider Announcement
 
 This text has been prepared for customers to use who want to inform their users that Keepnet will be their new cybersecurity awareness training provider.

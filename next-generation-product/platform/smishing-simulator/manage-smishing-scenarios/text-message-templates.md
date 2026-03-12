@@ -1,7 +1,3 @@
----
-description: "Learn about Text Message Templates in Keepnet Labs human risk management documentation."
----
-
 # Text Message Templates
 
 The **Smishing Simulator > Scenarios > Text Message Templates** page provides you with system default smishing text templates. You can use them as they are or customize them as needed for your smishing campaign.

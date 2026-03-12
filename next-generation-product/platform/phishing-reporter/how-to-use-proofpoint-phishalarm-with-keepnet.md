@@ -1,7 +1,3 @@
----
-description: "Learn about How to Use Proofpoint PhishAlarm with Keepnet in Keepnet Labs human risk management documentation."
----
-
 # How to Use Proofpoint PhishAlarm with Keepnet
 
 A short, customer-facing guide that explains why you should connect Proofpoint’s PhishAlarm to Keepnet, the benefits you’ll get, and clear step-by-step setup instructions so simulated phishing reports land in Keepnet automatically.

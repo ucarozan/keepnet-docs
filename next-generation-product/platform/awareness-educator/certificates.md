@@ -1,7 +1,3 @@
----
-description: "Learn about Certificates in Keepnet Labs human risk management documentation."
----
-
 # Certificates
 
 Recognition of cooperation and effort can provide valuable incentives and motivation. Certificates that reward employees for performing training exercises can be a valuable part of a company’s plans to ensure security awareness.&#x20;

@@ -1,7 +1,3 @@
----
-description: "Learn about Google: Direct Email Creation in Keepnet Labs human risk management documentation."
----
-
 # Google: Direct Email Creation
 
 ## **Direct Email Creation** <a href="#direct-email-creation" id="direct-email-creation"></a>

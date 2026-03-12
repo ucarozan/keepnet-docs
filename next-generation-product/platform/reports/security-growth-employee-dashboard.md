@@ -1,7 +1,3 @@
----
-description: "Learn about Security Growth Employee Dashboard in Keepnet Labs human risk management documentation."
----
-
 # Security Growth Employee Dashboard
 
 This dashboard gives every employee a personal view of their security awareness progress. The **Security Growth Employee Dashboard** lets employees see their training enrollments, points, rank, badges, phishing performance and certificates all in one place.

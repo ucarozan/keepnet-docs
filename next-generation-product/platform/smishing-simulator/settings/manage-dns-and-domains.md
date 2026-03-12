@@ -1,7 +1,3 @@
----
-description: "Learn about Manage DNS and Domains in Keepnet Labs human risk management documentation."
----
-
 # Manage DNS and Domains
 
 This page explains the capabilities available to create and use **Domains** and **DNS Services** in the **Smishing** **Simulator** product. You can integrate your DNS service provider if the platform supports it already and then you will be able to create phishing domains on the platform to use them in the smishing campaigns.

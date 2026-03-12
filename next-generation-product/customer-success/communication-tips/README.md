@@ -1,7 +1,3 @@
----
-description: "Learn about 💬 Communication Tips in Keepnet Labs human risk management documentation."
----
-
 # 💬 Communication Tips
 
 {% content-ref url="new-phishing-reporter-button-announcement.md" %}

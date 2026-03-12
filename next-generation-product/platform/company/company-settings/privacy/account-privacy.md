@@ -1,7 +1,3 @@
----
-description: "Learn about Account Privacy in Keepnet Labs human risk management documentation."
----
-
 # Account Privacy
 
 This section explains the benefits of the Account Privacy feature and how to use it. Account Privacy is a feature that allows you to control the access of Keepnet Labs' support team or your account manager to your account on the platform. This feature is designed to provide you with flexibility and control over your account's privacy.

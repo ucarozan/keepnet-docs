@@ -1,7 +1,3 @@
----
-description: "Learn about Start Scan in Keepnet Labs human risk management documentation."
----
-
 # Start Scan
 
 Go to the **Email Threat Simulator** page from the left menu on the dashboard to see the following fields.&#x20;

@@ -1,7 +1,3 @@
----
-description: "Learn about List customers with renewals in the next N days in Keepnet Labs human risk management documentation."
----
-
 # List customers with renewals in the next N days
 
 As a Reseller you list or export companies whose license renewal date falls within the next N days (e.g. 90 days) for renewal forecasting and sales follow-up. Use a credential with Client Role = **Reseller**. Call company search with a **`filter`** on renewal date (e.g. renewal date between today and today + N days) if the API supports it; otherwise export the full list and filter by the renewal date column client-side. Request body: see Endpoints → **Company** for filter structure and supported fields.

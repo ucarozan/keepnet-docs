@@ -1,7 +1,3 @@
----
-description: "Learn about How to Allow List in Microsoft Defender SmartScreen in Keepnet Labs human risk management documentation."
----
-
 # How to Allow List in Microsoft Defender SmartScreen
 
 

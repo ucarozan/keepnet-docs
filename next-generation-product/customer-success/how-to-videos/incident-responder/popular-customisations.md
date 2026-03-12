@@ -1,7 +1,3 @@
----
-description: "Learn about Popular Customisations in Keepnet Labs human risk management documentation."
----
-
 # Popular Customisations
 
 Some customers like to customise the default behaviour of the Incident Responder and the relevant Notification Templates associated with the default workflow. Below are some popular customisation our customers request and how to achieve each one:

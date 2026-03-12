@@ -1,7 +1,3 @@
----
-description: "Learn about Getting Started with SCIM in Keepnet Labs human risk management documentation."
----
-
 # Getting Started with SCIM
 
 You can create a SCIM setting by following the steps below and then authenticate your identity provider with the platform over the SCIM endpoint and token to synchronize users.

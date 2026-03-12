@@ -1,7 +1,3 @@
----
-description: "Learn about Incident Responder Widgets in Keepnet Labs human risk management documentation."
----
-
 # Incident Responder Widgets
 
 Your license model determines which widgets are available on the Dashboard page.

@@ -1,7 +1,3 @@
----
-description: "Learn about Google User Provisioning in Keepnet Labs human risk management documentation."
----
-
 # Google User Provisioning
 
 This document provides a step-by-step guide on how to synchronize users' information, such as **First** **Name**, **Last** **Name**, **Email** **Address**, **Department** **Name**, etc., from the **Google** **Workspace** email server to the platform.

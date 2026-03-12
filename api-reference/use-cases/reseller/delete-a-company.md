@@ -1,7 +1,3 @@
----
-description: "Learn about Delete a company in Keepnet Labs human risk management documentation."
----
-
 # Delete a company
 
 As a Reseller you can permanently delete a company you manage and all its associated data. Get the company's `resourceId` from the companies list, then call **DELETE /api/companies/{resourceId}**. Use a credential with Client Role = **Reseller**. This action is **irreversible**.

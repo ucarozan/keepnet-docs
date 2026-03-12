@@ -1,7 +1,3 @@
----
-description: "Learn about Syslog Integration in Keepnet Labs human risk management documentation."
----
-
 # Syslog Integration
 
 This document will provide the details of Syslog integration to send Audit Logs data from the platform to the Syslog server for log/alert management. The Syslog CEF format allows you to send data and application events to a Syslog server over UDP and TCP protocols.

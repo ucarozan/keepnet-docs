@@ -1,7 +1,3 @@
----
-description: "Learn about Cross Company Integration in Keepnet Labs human risk management documentation."
----
-
 # Cross Company Integration
 
 This section explains the functions in **Incident Responder > Cross Company Integration**. You will see basic functions such as adding Cross Company Integration, editing, disabling deleting and an existing integration in the Incident Responder.

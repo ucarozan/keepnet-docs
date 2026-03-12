@@ -1,7 +1,3 @@
----
-description: "Learn about Use the API with AI assistants (MCP) in Keepnet Labs human risk management documentation."
----
-
 # Use the API with AI assistants (MCP)
 
 Keepnet’s API documentation is available via **MCP (Model Context Protocol)** so you can use it inside AI-powered tools (Cursor, Codex, Claude, ChatGPT, or any client that supports MCP). Once connected, you can ask in plain language for things like *“List all companies I have”* or *“List training enrollments for customer Acme LLC”* and the assistant will use the API docs and endpoints to guide you or perform the calls (if the tool supports it).

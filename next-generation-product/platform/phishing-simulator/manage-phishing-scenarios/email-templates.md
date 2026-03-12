@@ -1,7 +1,3 @@
----
-description: "Learn about Email Templates in Keepnet Labs human risk management documentation."
----
-
 # Email Templates
 
 The [**Phishing Simulator**](https://keepnetlabs.com/products/phishing-simulator) **> Phishing Scenarios > Email Templates** page provides you with system default phishing email templates. You can use them as they are or customize them as needed for your phishing campaign.

@@ -1,7 +1,3 @@
----
-description: "Learn about Dashboard in Keepnet Labs human risk management documentation."
----
-
 # Dashboard
 
 The **Dashboard** is the first page that the system administrator sees after logging into the platform. This section explains how to use the Dashboard widgets to enhance functionality to suit your needs.

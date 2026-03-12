@@ -1,7 +1,3 @@
----
-description: "Learn about Import target users from Excel for a customer in Keepnet Labs human risk management documentation."
----
-
 # Import target users from Excel for a customer
 
 As a Reseller you can bulk-import target users for a customer by uploading an Excel or CSV file through the API. The flow mirrors the platform UI: upload the file, map columns to user fields, preview the parsed rows, then confirm the import. Use a credential with Client Role = **Reseller**. Send **`X-KEEPNET-Company-Id`** with every request so the users are created under the correct customer.

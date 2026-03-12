@@ -1,7 +1,3 @@
----
-description: "Learn about Volume & Performance in Keepnet Labs human risk management documentation."
----
-
 # Volume & Performance
 
 Keepnet's platform is built to support high-volume operations with optimized performance across all its cybersecurity simulations and training services. Our infrastructure ensures seamless scalability, allowing organizations to conduct phishing, smishing, vishing simulations, and security training efficiently and securely. Below is a detailed breakdown of our platform's capacity and speed across different services.

@@ -1,7 +1,3 @@
----
-description: "Learn about Terms of Service in Keepnet Labs human risk management documentation."
----
-
 # Terms of Service
 
 These Terms of Service govern your access to and use of [https://keepnetlabs.com/free-phishing-email-analysis](https://keepnetlabs.com/free-phishing-email-analysis), and any information, text, graphics, URLs, files, audio, video, photos or other materials uploaded, downloaded or appearing on the Service ("Samples"). Any reference to “you” or “your” means you as a user of the Service, any reference to “we”, “us”, “our” or “Keepnet” is to Keepnet Labs LTD, a UK Limited Company with registered number 11047987, that owns Keepnet Inc.

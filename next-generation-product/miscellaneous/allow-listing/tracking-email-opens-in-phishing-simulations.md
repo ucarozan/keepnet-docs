@@ -1,7 +1,3 @@
----
-description: "Learn about Tracking Email Opens in Phishing Simulations in Keepnet Labs human risk management documentation."
----
-
 # Tracking Email Opens in Phishing Simulations
 
 Keepnet utilizes a tracking pixel to monitor when users open phishing simulation emails. This tracking pixel is embedded in all phishing simulation emails sent through the platform. When the email is opened, the pixel sends a response to Keepnet, logging the open event.

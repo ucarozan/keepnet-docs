@@ -1,7 +1,3 @@
----
-description: "Learn about Google Workspace in Keepnet Labs human risk management documentation."
----
-
 # Google Workspace
 
 You can integrate your Google Workspace environment with the Incident Responder product by following the steps below.

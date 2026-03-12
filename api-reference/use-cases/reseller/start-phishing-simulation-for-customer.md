@@ -1,7 +1,3 @@
----
-description: "Learn about Start phishing simulation for a customer in Keepnet Labs human risk management documentation."
----
-
 # Start phishing simulation for a customer
 
 As a Reseller you can create a phishing campaign for a customer and immediately start it so the simulation emails go out to target users. The flow: get the customer's Company ID, pick a scenario and target group, create the campaign, then start the campaign job. Use a credential with Client Role = **Reseller**. Send **`X-KEEPNET-Company-Id`** with every request.

@@ -1,7 +1,3 @@
----
-description: "Learn about Customer Success in Keepnet Labs human risk management documentation."
----
-
 # Customer Success
 
 Welcome to the Customer Success Hub! This is your one-stop destination for guidance, best practices, and resources to help you get the most out of Keepnet. This self-service model is designed to put success at your fingertips, so you can find the answers you need quickly and start seeing results right away.

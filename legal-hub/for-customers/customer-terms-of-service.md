@@ -1,7 +1,3 @@
----
-description: "Learn about Customer Terms of Service in Keepnet Labs human risk management documentation."
----
-
 # Customer Terms of Service
 
 **PLEASE READ THESE CUSTOMER TERMS OF SERVICE CAREFULLY.**

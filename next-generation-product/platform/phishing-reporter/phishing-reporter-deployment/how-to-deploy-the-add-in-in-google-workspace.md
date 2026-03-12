@@ -1,7 +1,3 @@
----
-description: "Learn about How to Deploy the Add-in in Google Workspace in Keepnet Labs human risk management documentation."
----
-
 # How to Deploy the Add-in in Google Workspace
 
 This document explains how to deploy **Keepnet's Phishing Reporter** button in Google Workspace to **all employees** or to **specific Organisation Units/Groups**.

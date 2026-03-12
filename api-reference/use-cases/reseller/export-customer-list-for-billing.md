@@ -1,7 +1,3 @@
----
-description: "Learn about Export customer list for billing in Keepnet Labs human risk management documentation."
----
-
 # Export customer list for billing
 
 As a Reseller you can export the list of companies you manage to CSV or Excel for billing, MSSP reporting, license reconciliation, or partner dashboards. Use a credential with Client Role = **Reseller**. Same endpoint as the export in [List companies with license details →](list-companies-with-license-details.md); this page focuses on billing and export use cases.

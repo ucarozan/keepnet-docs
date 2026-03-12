@@ -1,7 +1,3 @@
----
-description: "Learn about How to Allow List in Proofpoint in Keepnet Labs human risk management documentation."
----
-
 # How to Allow List in Proofpoint
 
 To ensure smooth delivery of Keepnet’s simulated phishing campaigns and awareness training notifications, you may need to allow list Keepnet in your Proofpoint environment. This guide covers configuration steps for both **Proofpoint Essentials** and **Proofpoint Enterprise**.

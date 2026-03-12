@@ -1,7 +1,3 @@
----
-description: "Learn about Training Library in Keepnet Labs human risk management documentation."
----
-
 # Training Library
 
 This section provides details of the capabilities of the **Awareness Educator > Training Library** page. It provides the opportunity to review all of the current training options available, launch the training content of your choice, edit an item to customize it to your needs, or create entirely new training.

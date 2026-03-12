@@ -1,7 +1,3 @@
----
-description: "Learn about Integrating Microsoft Defender with Keepnet Phishing Reporter in Keepnet Labs human risk management documentation."
----
-
 # Integrating Microsoft Defender with Keepnet Phishing Reporter
 
 This integration allows your employees to report suspicious emails using the [**Keepnet** **Phishing** **Reporter**](./) button, forwarding them to both your **SOC team** and **Microsoft Defender**. Additionally, reported emails are sent to [**Keepnet’s** **Incident** **Responder**](../incident-responder/), enabling deeper analysis and enhanced tracking while maintaining your current reporting workflow.

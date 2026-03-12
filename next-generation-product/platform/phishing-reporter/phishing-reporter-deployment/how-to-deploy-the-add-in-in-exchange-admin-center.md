@@ -1,7 +1,3 @@
----
-description: "Learn about How to Deploy the Add-in in Exchange Admin Center in Keepnet Labs human risk management documentation."
----
-
 # How to Deploy the Add-in in Exchange Admin Center
 
 ## Requirements

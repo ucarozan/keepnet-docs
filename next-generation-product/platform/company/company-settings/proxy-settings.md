@@ -1,7 +1,3 @@
----
-description: "Learn about Proxy Settings in Keepnet Labs human risk management documentation."
----
-
 # Proxy Settings
 
 This section explains the purpose and basic functions of proxy server settings. Go to **Company > Company Settings > Proxy Settings** to access all of the settings options described below.

@@ -1,7 +1,3 @@
----
-description: "Learn about Landing Pages in Keepnet Labs human risk management documentation."
----
-
 # Landing Pages
 
 Landing pages direct the user to a specific page, and can be used for a variety of purposes, such as requesting login credentials or other sensitive information.

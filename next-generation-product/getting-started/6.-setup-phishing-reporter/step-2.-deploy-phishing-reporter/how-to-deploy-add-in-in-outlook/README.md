@@ -1,7 +1,3 @@
----
-description: "Learn about How to Deploy MSI Add-In in Outlook in Keepnet Labs human risk management documentation."
----
-
 # How to Deploy MSI Add-In in Outlook
 
 ## Diagnostic Tool

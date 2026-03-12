@@ -1,7 +1,3 @@
----
-description: "Learn about Export gamification leaderboard for a customer in Keepnet Labs human risk management documentation."
----
-
 # Export gamification leaderboard for a customer
 
 As a Reseller you export the gamification leaderboard or user timeline for a customer to CSV or Excel for reporting, MSSP dashboards, or audits. Use a credential with Client Role = **Reseller**. Send **`X-KEEPNET-Company-Id`** so the export is scoped to that company.

@@ -1,7 +1,3 @@
----
-description: "Learn about Direct Email Creation for Google Workspace in Keepnet Labs human risk management documentation."
----
-
 # Direct Email Creation for Google Workspace
 
 This page explains how to use the **Direct** **Email** **Creation** feature in **Google** **Workspace**. Please follow the steps below to set up DEC settings within your Google Workspace.

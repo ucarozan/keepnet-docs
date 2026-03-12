@@ -1,7 +1,3 @@
----
-description: "Learn about SMTP Settings in Keepnet Labs human risk management documentation."
----
-
 # SMTP Settings
 
 This section explains the functionality of SMTP Settings and provides some related use cases to assist you in creating an optimal configuration.&#x20;

@@ -1,7 +1,3 @@
----
-description: "Learn about Callback Campaign Reports in Keepnet Labs human risk management documentation."
----
-
 # Callback Campaign Reports
 
 This section describes the basic functionalities of callback campaign reports, which you can find from the **Callback Simulator >** [**Campaign Manager**](callback-campaign-manager.md#campaign-instances) menu.

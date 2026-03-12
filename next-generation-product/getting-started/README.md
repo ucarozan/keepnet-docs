@@ -1,7 +1,3 @@
----
-description: "Learn about Getting Started in Keepnet Labs human risk management documentation."
----
-
 # Getting Started
 
 Welcome to Keepnet! We're excited to be partnering with you on your human-risk management strategy.

@@ -1,7 +1,3 @@
----
-description: "Learn about Exchange 2013 and 2016 in Keepnet Labs human risk management documentation."
----
-
 # Exchange 2013 and 2016
 
 {% hint style="warning" %}

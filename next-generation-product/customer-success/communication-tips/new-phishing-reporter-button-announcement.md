@@ -1,7 +1,3 @@
----
-description: "Learn about New Phishing Reporter Button Announcement in Keepnet Labs human risk management documentation."
----
-
 # New Phishing Reporter Button Announcement
 
 This text has been prepared for customers to use who want to inform their users about the Phishing Reporter add-in.

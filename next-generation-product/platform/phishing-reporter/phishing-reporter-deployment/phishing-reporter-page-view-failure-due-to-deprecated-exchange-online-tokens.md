@@ -1,7 +1,3 @@
----
-description: "Learn about Phishing Reporter Page View Failure Due to Deprecated Exchange Online Tokens in Keepnet Labs human risk management documentation."
----
-
 # Phishing Reporter Page View Failure Due to Deprecated Exchange Online Tokens
 
 The **Phishing** **Reporter** **Page** **View** feature fails due to Microsoft's deprecation of legacy Exchange Online tokens earlier than expected date, June 2025.
@@ -14,7 +10,7 @@ The **Phishing** **Reporter** **Page** **View** feature fails due to Microsoft's
 
 If you are using the **Phishing** **Reporter** **Page** **View** version, it  may fail with the following empty message:
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-26 at 16.48.23.png" alt="Empty message shown when Phishing Reporter Page View fails due to deprecated Exchange Online tokens." width="320"><figcaption>Empty message shown when Phishing Reporter Page View fails due to deprecated Exchange Online tokens.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-26 at 16.48.23.png" alt="" width="320"><figcaption>Empty message shown when Phishing Reporter Page View fails due to deprecated Exchange Online tokens.</figcaption></figure>
 
 ## **Root Cause**
 
@@ -30,7 +26,7 @@ Admins can re-enable legacy Exchange Online tokens for their tenant by using **E
 It can take up to 24 hours before all requests from Outlook add-ins for legacy tokens are allowed.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-26 153928.png" alt="Exchange Online PowerShell — Allow Legacy Token sample."><figcaption><p>Picture 1: Exchange Online Powershell - Allow Legacy Token Sample</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-26 153928.png" alt=""><figcaption><p>Picture 1: Exchange Online Powershell - Allow Legacy Token Sample</p></figcaption></figure>
 
 ## Long-Term Solution
 

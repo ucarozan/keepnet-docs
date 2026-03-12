@@ -1,7 +1,3 @@
----
-description: "Learn about Communities in Keepnet Labs human risk management documentation."
----
-
 # Communities
 
 ## **How to Use the Threat Sharing Community**

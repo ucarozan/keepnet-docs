@@ -1,7 +1,3 @@
----
-description: "Learn about Company Groups in Keepnet Labs human risk management documentation."
----
-
 # Company Groups
 
 This section provides a detailed explanation of the basic functions available on the Company Groups page.

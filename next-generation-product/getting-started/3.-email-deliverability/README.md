@@ -1,7 +1,3 @@
----
-description: "Learn about 3. Email Deliverability in Keepnet Labs human risk management documentation."
----
-
 # 3. Email Deliverability
 
 It is essential that your employees are able to receive all emails sent via Keepnet platform for you to accurately measure how your employees behave when faced with evolving social engineering threats.

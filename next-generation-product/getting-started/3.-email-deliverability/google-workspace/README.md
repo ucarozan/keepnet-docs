@@ -1,7 +1,3 @@
----
-description: "Learn about Google Workspace in Keepnet Labs human risk management documentation."
----
-
 # Google Workspace
 
 It is essential that your employees are able to open all emails sent via Keepnet platform for you to accurately measure how your employees behave when faced with evolving social engineering threats.

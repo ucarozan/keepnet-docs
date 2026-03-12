@@ -1,7 +1,3 @@
----
-description: "Learn about Training Completion Queries in Keepnet Labs human risk management documentation."
----
-
 # Training Completion Queries
 
 ### Overview
@@ -12,11 +8,11 @@ This document guides the address of issues related to training completion and ce
 
 Users may report having completed their training without receiving the appropriate completion certificate. Investigations often reveal that these users have completed the training but have yet to trigger the necessary system signals to register their completion officially.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-04-16 at 16.40.36.png" alt="Training or completion status screen — example 1."><figcaption>Training or completion status screen — example 1.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-04-16 at 16.40.36.png" alt=""><figcaption>Training or completion status screen — example 1.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-05-14 at 08.57.10.png" alt="Training or completion status screen — example 2."><figcaption>Training or completion status screen — example 2.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-05-14 at 08.57.10.png" alt=""><figcaption>Training or completion status screen — example 2.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-05-14 at 09.09.17.png" alt="Training or completion status screen — example 3."><figcaption>Training or completion status screen — example 3.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-05-14 at 09.09.17.png" alt=""><figcaption>Training or completion status screen — example 3.</figcaption></figure>
 
 ### **Technical Explanation**
 
@@ -48,5 +44,5 @@ Handling Discrepancies:
 
 * If a user claims to have completed the training but the report indicates otherwise, MSPs should instruct the user to ensure they have clicked the "Save/Exit" button at the end of the session or have closed the training window to signal completion properly.
 
-<figure><img src="../../../.gitbook/assets/This one.png" alt="Training Report Users — verifying completion status."><figcaption>Training Report > Users — verifying completion status.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/This one.png" alt=""><figcaption>Training Report > Users — verifying completion status.</figcaption></figure>
 

@@ -1,7 +1,3 @@
----
-description: "Learn about LDAP in Keepnet Labs human risk management documentation."
----
-
 # LDAP
 
 This document explains the functionality of the LDAP feature as well as how to set up an LDAP to synchronize target users information such as **Name**, **Surname**, **Email**, **Department**, **Phone Number** or other information to the platform automatically.

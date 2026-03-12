@@ -1,7 +1,3 @@
----
-description: "Learn about Phishing Reporter Deployment in Keepnet Labs human risk management documentation."
----
-
 # Phishing Reporter Deployment
 
 This section describes in detail how to deploy the Phishing Reporter add-in to users in Microsoft 365, Exchange, or Google Workspace platforms.&#x20;
