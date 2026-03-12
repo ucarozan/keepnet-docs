@@ -1,3 +1,7 @@
+---
+description: "Learn about Default Behaviour of Incident Responder in Keepnet Labs human risk management documentation."
+---
+
 # Default Behaviour of Incident Responder
 
 ### **🤖 Analysis**

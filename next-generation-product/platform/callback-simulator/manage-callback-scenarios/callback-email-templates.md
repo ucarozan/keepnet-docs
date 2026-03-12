@@ -1,3 +1,7 @@
+---
+description: "Learn about Callback Email Templates in Keepnet Labs human risk management documentation."
+---
+
 # Callback Email Templates
 
 The **Callback Simulator > Callback Scenarios > Email Templates** page provides you with system default callback email templates. You can use them as they are or customize them as needed for your phishing campaign.

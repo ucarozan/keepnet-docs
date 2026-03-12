@@ -1,3 +1,7 @@
+---
+description: "Learn about Integrations in Keepnet Labs human risk management documentation."
+---
+
 # Integrations
 
 This section explains the functions of **Incident Responder > Integrations**. The Incident Responder product can be used to perform simple tasks like adding a new integration, modifying, deactivating, and deleting the existing integration.

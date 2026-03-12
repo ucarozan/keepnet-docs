@@ -1,3 +1,7 @@
+---
+description: "Learn about Callback Campaign Manager in Keepnet Labs human risk management documentation."
+---
+
 # Callback Campaign Manager
 
 Launch a callback campaign targeting users with enhanced options like **Expiration Date, Mark As Test, Multiple Scenario Selection, SMTP or DEC delivery, Frequency** or **Distribution** via the Campaign Manager.

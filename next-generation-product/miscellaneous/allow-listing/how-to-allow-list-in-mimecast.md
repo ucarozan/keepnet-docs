@@ -1,3 +1,7 @@
+---
+description: "Learn about How to Whitelist in Mimecast in Keepnet Labs human risk management documentation."
+---
+
 # How to Whitelist in Mimecast
 
 Ensure that important emails from trusted sources, like training notifications or [phishing simulation](https://keepnetlabs.com/products/phishing-simulator) emails, bypass Mimecast's usual filtering processes by following these steps. This document guides you through setting up various policies within Mimecast to improve the deliverability and reliability of these critical communications.

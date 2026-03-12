@@ -1,3 +1,7 @@
+---
+description: "Learn about Manage Phishing Scenarios in Keepnet Labs human risk management documentation."
+---
+
 # Manage Phishing Scenarios
 
 This section will help you comprehend and utilize the fundamental features within the Phishing Scenarios page. Below, we have provided shortcuts to the parameters within the Phishing Scenarios page.

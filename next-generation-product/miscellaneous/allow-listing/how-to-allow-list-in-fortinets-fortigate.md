@@ -1,3 +1,7 @@
+---
+description: "Learn about How to Allow List in Fortinet's FortiGate in Keepnet Labs human risk management documentation."
+---
+
 # How to Allow List in Fortinet's FortiGate
 
 Fortinet **FortiGate’s Web Filter** can be configured to allow user access to Keepnet’s phishing simulation domains that may otherwise be blocked due to filtering. If your users can't access the simulation links during simulations, it’s recommended to allowlist the domains in FortiGate’s web filtering settings. This article provides step-by-step guidance for allowlisting using the FortiGate's **Static URL Filter** feature.

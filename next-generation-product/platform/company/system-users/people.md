@@ -1,3 +1,7 @@
+---
+description: "Learn about People in Keepnet Labs human risk management documentation."
+---
+
 # People
 
 This section describes how to create authorized accounts with various permission levels, called System Users, who manage and perform all activities on the platform.

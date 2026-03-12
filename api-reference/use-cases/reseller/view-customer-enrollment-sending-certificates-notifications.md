@@ -1,3 +1,7 @@
+---
+description: "Learn about View customer's enrollment sending, certificates, and notifications in Keepnet Labs human risk management documentation."
+---
+
 # View customer's enrollment sending, certificates, and notifications
 
 As a Reseller you can view a customer's training enrollment **sending report** (emails sent, delivery status), **certificates**, **reminder mails**, and **notification activity logs** for a specific enrollment. Get the customer's Company ID and the enrollment ID from the enrollment list, then call the training-report and enrollment endpoints with **`X-KEEPNET-Company-Id`** so results are scoped to that customer. Use a credential with Client Role = **Reseller**.

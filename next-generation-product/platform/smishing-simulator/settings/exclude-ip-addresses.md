@@ -1,3 +1,7 @@
+---
+description: "Learn about Exclude IP Addresses in Keepnet Labs human risk management documentation."
+---
+
 # Exclude IP Addresses
 
 The **Exclude** **IP** **Address** feature is designed to prevent false positive reporting due to security applications that analyze the links in the SMS message in cooperation. It is designed as an alternative option to prevent false positive reporting.&#x20;

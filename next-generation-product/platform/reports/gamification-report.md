@@ -1,3 +1,7 @@
+---
+description: "Learn about Gamification Report in Keepnet Labs human risk management documentation."
+---
+
 # Gamification Report
 
 The **Gamification Report** motivates users to actively engage in phishing simulations (Phishing, Callback, Vishing, Smishing, Quishing) and security awareness training by using a points system. Users earn points for positive actions and lose points for risky behaviors, helping to improve security awareness.&#x20;

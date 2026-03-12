@@ -1,3 +1,7 @@
+---
+description: "Learn about Regional Data Hosting Policy in Keepnet Labs human risk management documentation."
+---
+
 # Regional Data Hosting Policy
 
 **PLEASE READ THESE TERMS CAREFULLY**

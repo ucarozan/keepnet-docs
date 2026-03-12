@@ -1,3 +1,7 @@
+---
+description: "Learn about Get total monthly user count across customers in Keepnet Labs human risk management documentation."
+---
+
 # Get total monthly user count across customers
 
 As a Reseller you get the total monthly user count across all companies you manage for billing or capacity reporting. Use a credential with Client Role = **Reseller**. Call company search (with a month parameter if the API supports it for Monthly Users), then sum the **monthly user** value from each company in the response. Paginate through all pages to include every company, or export to CSV/Excel and sum the monthly user column client-side.

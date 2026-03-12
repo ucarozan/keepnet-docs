@@ -1,3 +1,7 @@
+---
+description: "Learn about View customer's enrollment list and report in Keepnet Labs human risk management documentation."
+---
+
 # View customer's enrollment list and report
 
 As a Reseller you can list a customer's enrollments (training or survey), get details and summary reports, and pull the **Users** report for an enrollment so you have per-user data for custom reporting. Use a credential with Client Role = **Reseller**. Send **`X-KEEPNET-Company-Id`** (and for enrollment search, **`x-ir-company-id`** with the same value) so results are scoped to that customer.

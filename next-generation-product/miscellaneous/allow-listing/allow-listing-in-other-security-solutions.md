@@ -1,3 +1,7 @@
+---
+description: "Learn about Allow Listing in Other Security Solutions in Keepnet Labs human risk management documentation."
+---
+
 # Allow Listing in Other Security Solutions
 
 ## Allow Listing in Content Filtering (Proxy)

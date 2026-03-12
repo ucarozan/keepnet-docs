@@ -1,3 +1,7 @@
+---
+description: "Learn about Company Settings in Keepnet Labs human risk management documentation."
+---
+
 # Company Settings
 
 This section will help you comprehend and utilize the fundamental features within the Company Settings page. Below, we have provided shortcuts to the parameters within the Company Settings.&#x20;

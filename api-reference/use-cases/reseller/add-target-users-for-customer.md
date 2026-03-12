@@ -1,3 +1,7 @@
+---
+description: "Learn about Add target users for a customer in Keepnet Labs human risk management documentation."
+---
+
 # Add target users for a customer
 
 As a Reseller you can add target users for a customer by getting their Company ID from the companies list and sending it in the request. The flow: list companies, pick the customer, then call the target-users endpoint with **`X-KEEPNET-Company-Id`**. Use a credential with Client Role = **Reseller**.

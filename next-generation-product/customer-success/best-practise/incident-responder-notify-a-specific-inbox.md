@@ -1,3 +1,7 @@
+---
+description: "Learn about Incident Responder: Notify a Specific Inbox in Keepnet Labs human risk management documentation."
+---
+
 # Incident Responder: Notify a Specific Inbox
 
 ## Notify a Specific Inbox

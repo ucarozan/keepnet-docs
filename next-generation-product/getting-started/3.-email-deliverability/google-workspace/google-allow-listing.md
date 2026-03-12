@@ -1,3 +1,7 @@
+---
+description: "Learn about Google: Allow Listing in Keepnet Labs human risk management documentation."
+---
+
 # Google: Allow Listing
 
 ## Google Workspace IP Bypass <a href="#google-workspace-ip-bypass" id="google-workspace-ip-bypass"></a>

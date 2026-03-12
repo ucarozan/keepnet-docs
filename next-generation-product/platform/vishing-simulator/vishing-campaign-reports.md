@@ -1,3 +1,7 @@
+---
+description: "Learn about Vishing Campaign Reports in Keepnet Labs human risk management documentation."
+---
+
 # Vishing Campaign Reports
 
 This section provides the opportunity to review user activity in response to a vishing exercise, such as those who have answered the vishing call, who responded to the vishing dialog, and those who have not answered the vishing call.

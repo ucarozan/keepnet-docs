@@ -1,3 +1,7 @@
+---
+description: "Learn about Pull executive report data for a customer in Keepnet Labs human risk management documentation."
+---
+
 # Pull executive report data for a customer
 
 As a Reseller you can search executive reports and retrieve executive report widget data (raw metrics) for a customer. Get the customer's Company ID, then call the executive-report endpoints with **`X-KEEPNET-Company-Id`** so data is scoped to that company. Use a credential with Client Role = **Reseller**.

@@ -1,3 +1,7 @@
+---
+description: "Learn about List customers exceeding license limit in Keepnet Labs human risk management documentation."
+---
+
 # List customers exceeding license limit
 
 As a Reseller you list or export companies that currently exceed their license limit (more users than the licensed maximum) for billing review, true-up, or compliance. Use a credential with Client Role = **Reseller**. Send **`isTargetUserCountExceededLimit: true`** in the request body so only overage customers are returned.

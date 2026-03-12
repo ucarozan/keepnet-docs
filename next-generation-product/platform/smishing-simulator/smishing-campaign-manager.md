@@ -1,3 +1,7 @@
+---
+description: "Learn about Smishing Campaign Manager in Keepnet Labs human risk management documentation."
+---
+
 # Smishing Campaign Manager
 
 The campaign manager assists admins in launching smishing campaigns to the end users. The settings such as **Save for Later, Send Now, Schedule, Target Groups, Distribution, Scenarios** or **Message Settings** are set up from here before launching the campaign to end users.

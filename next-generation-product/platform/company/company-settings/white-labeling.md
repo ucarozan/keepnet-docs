@@ -1,3 +1,7 @@
+---
+description: "Learn about White Labeling in Keepnet Labs human risk management documentation."
+---
+
 # White Labeling
 
 White labeling is the rebranding of a product or service. Distributors and MSP partners can create a unique, customized corporate identity for the platform, including the company name, platform access URL, platform logos, notification template logos, footer links, and many other fields.

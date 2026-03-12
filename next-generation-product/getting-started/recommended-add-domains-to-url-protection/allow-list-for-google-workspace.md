@@ -1,3 +1,7 @@
+---
+description: "Learn about Allow List for Google Workspace in Keepnet Labs human risk management documentation."
+---
+
 # Allow List for Google Workspace
 
 ## How to Allow List an IP Address in Google Workspace <a href="#how-to-whitelist-an-ip-address-in-google-workspace" id="how-to-whitelist-an-ip-address-in-google-workspace"></a>

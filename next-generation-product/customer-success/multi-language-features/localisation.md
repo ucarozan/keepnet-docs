@@ -1,3 +1,7 @@
+---
+description: "Learn about Localisation in Keepnet Labs human risk management documentation."
+---
+
 # Localisation
 
 Customers can take any of our 16,000+ phishing templates - or your own custom scenarios -and localise them into any language of your choice. Keepnet doesn’t just translate; it adapts the entire email, including subject lines, body text, currencies, dates, and tone, to feel natural and authentic for the target region. Multiple localisations can be completed at once, making it simple to launch truly global campaigns in minutes.
@@ -6,7 +10,7 @@ With optional human review for added quality assurance and unified reporting acr
 
 **For example:**
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-19 at 12.56.41.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-19 at 12.56.41.png" alt="Localisation settings in Keepnet platform."><figcaption></figcaption></figure>
 
 ### **Step-by-Step**
 

@@ -1,3 +1,7 @@
+---
+description: "Learn about Exchange (EWS) in Keepnet Labs human risk management documentation."
+---
+
 # Exchange (EWS)
 
 You can integrate your EWS environment with the Incident Responder product by following the steps below.

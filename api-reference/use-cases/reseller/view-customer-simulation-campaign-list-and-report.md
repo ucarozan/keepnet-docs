@@ -1,3 +1,7 @@
+---
+description: "Learn about View customer's campaign list and report in Keepnet Labs human risk management documentation."
+---
+
 # View customer's campaign list and report
 
 As a Reseller you can list a customer’s phishing, smishing, or quishing campaigns and get reports for a specific campaign or campaign job. Get the customer’s Company ID, then call the campaign search and campaign-job-report endpoints with **`X-KEEPNET-Company-Id`** so results are scoped to that company. Use a credential with Client Role = **Reseller**. The same pattern applies to **phishing**, **smishing**, and **quishing** simulators — only the base path changes.

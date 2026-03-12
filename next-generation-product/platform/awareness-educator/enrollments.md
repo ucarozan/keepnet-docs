@@ -1,3 +1,7 @@
+---
+description: "Learn about Enrollments in Keepnet Labs human risk management documentation."
+---
+
 # Enrollments
 
 This section provides details of the resources available on the **Awareness Educator > Enrollments** page. These include the ability to review or edit the details of training reports and the users who are enrolled, view the status of enrolled users (completed, not completed, in progress), and access report functions.

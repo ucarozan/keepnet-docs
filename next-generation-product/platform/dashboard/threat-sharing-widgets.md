@@ -1,3 +1,7 @@
+---
+description: "Learn about Threat Sharing Widgets in Keepnet Labs human risk management documentation."
+---
+
 # Threat Sharing Widgets
 
 Your license model determines which widgets are available on the dashboard.

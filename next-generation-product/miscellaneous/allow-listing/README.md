@@ -1,3 +1,7 @@
+---
+description: "Learn about Allow Listing in Keepnet Labs human risk management documentation."
+---
+
 # Allow Listing
 
 This section explains allow listing and the steps needed to use the platform effectively. To ensure phishing simulation emails or training enrollments reach users' inboxes without being blocked, allow list the phishing simulation IP addresses and phishing simulation domains on your server and security solutions.&#x20;

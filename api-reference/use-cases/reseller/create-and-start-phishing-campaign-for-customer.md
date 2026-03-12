@@ -1,3 +1,7 @@
+---
+description: "Learn about Create and start phishing campaign for a customer in Keepnet Labs human risk management documentation."
+---
+
 # Create and start phishing campaign for a customer
 
 As a Reseller you can create a phishing campaign for a customer and start a campaign job (run) so that the campaign sends emails to the customer's target users. Get the customer's Company ID, create the campaign with **`X-KEEPNET-Company-Id`**, then start a job using the campaign `resourceId`. Use a credential with Client Role = **Reseller**. You need a phishing scenario and target group or target users for that customer (see related use-cases).

@@ -1,3 +1,7 @@
+---
+description: "Learn about List and create target groups for a customer in Keepnet Labs human risk management documentation."
+---
+
 # List and create target groups for a customer
 
 As a Reseller you can list and create target groups (user groups used for campaigns and training) for a customer. Get the customer's Company ID, then call the target-groups endpoints with **`X-KEEPNET-Company-Id`** so groups are scoped to that company. Use a credential with Client Role = **Reseller**.

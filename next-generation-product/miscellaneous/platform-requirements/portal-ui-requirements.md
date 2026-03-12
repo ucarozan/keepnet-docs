@@ -1,3 +1,7 @@
+---
+description: "Learn about Portal UI Requirements in Keepnet Labs human risk management documentation."
+---
+
 # Portal UI Requirements
 
 The following are the minimum requirements to use the platform portal interface.

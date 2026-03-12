@@ -1,3 +1,7 @@
+---
+description: "Learn about Troubleshooting Phishing Reporter Add-In on Outlook Desktop in Keepnet Labs human risk management documentation."
+---
+
 # Troubleshooting Phishing Reporter Add-In on Outlook Desktop
 
 If you've installed the Phishing Reporter on the Microsoft Outlook Desktop version successfully but are unable to see the Phishing Reporter button, here are some steps you can follow to troubleshoot the issue.&#x20;

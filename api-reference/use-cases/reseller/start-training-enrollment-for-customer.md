@@ -1,3 +1,7 @@
+---
+description: "Learn about Start training enrollment for a customer in Keepnet Labs human risk management documentation."
+---
+
 # Start training enrollment for a customer
 
 As a Reseller you can create and send a training enrollment for a customer's target users. The flow: get the customer's Company ID, find the training and target group, create the enrollment, and send it. Use a credential with Client Role = **Reseller**. Send **`X-KEEPNET-Company-Id`** with every request.

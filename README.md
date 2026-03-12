@@ -1,3 +1,7 @@
+---
+description: "Learn about Introduction in Keepnet Labs human risk management documentation."
+---
+
 # Introduction
 
 The document covers all aspects of [Keepnet’s Extended Human Risk Management Platform](https://keepnetlabs.com/), which not only addresses traditional phishing methods but also provides robust defenses against more complex attacks such as Vishing (Voice Phishing), Smishing (SMS Phishing), MFA Phishing (Multi-Factor Authentication), Quishing (QR code phishing), and Callback Phishing (Telephone Oriented Attack Delivery).&#x20;

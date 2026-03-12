@@ -1,3 +1,7 @@
+---
+description: "Learn about List or export target users for a customer in Keepnet Labs human risk management documentation."
+---
+
 # List or export target users for a customer
 
 As a Reseller you can list or export a customer’s target users (learners) scoped to that company. Get the customer’s Company ID, then call the target-user search and export endpoints with **`X-KEEPNET-Company-Id`** so results are limited to that customer. Use a credential with Client Role = **Reseller**.

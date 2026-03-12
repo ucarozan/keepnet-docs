@@ -1,3 +1,7 @@
+---
+description: "Learn about How to Configure SAML on Azure AD in Keepnet Labs human risk management documentation."
+---
+
 # How to Configure SAML on Azure AD
 
 This document explains the steps of integrating the Azure AD identity provider with the platform over SAML to log in to the platform by using your Azure AD account.

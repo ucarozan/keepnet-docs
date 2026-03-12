@@ -1,3 +1,7 @@
+---
+description: "Learn about Quishing Campaign Reports in Keepnet Labs human risk management documentation."
+---
+
 # Quishing Campaign Reports
 
 This section describes the basic functionalities of quishing campaign reports, which you can find from the **Quishing Simulator >** [**Campaign Manager** ](../smishing-simulator/smishing-campaign-manager.md#campaign-instances)menu.

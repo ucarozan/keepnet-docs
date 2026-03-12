@@ -1,3 +1,7 @@
+---
+description: "Learn about Callback Phone Numbers in Keepnet Labs human risk management documentation."
+---
+
 # Callback Phone Numbers
 
 This page lists the phone numbers available for callback campaigns provided by the platform. If no numbers are available, [contact the support team](../../../../resources/keepnet-support-help-desk.md), as numbers are allocated based on the customer's license.

@@ -1,3 +1,7 @@
+---
+description: "Learn about Playbook in Keepnet Labs human risk management documentation."
+---
+
 # Playbook
 
 The Incident Responder Playbook feature is used to create rules that automate the analysis and incident response to suspicious emails, which saves valuable time.

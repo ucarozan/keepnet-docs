@@ -1,3 +1,7 @@
+---
+description: "Learn about User Roles in Keepnet Labs human risk management documentation."
+---
+
 # User Roles
 
 This section describes how to create custom roles to restrict platform access usage for system users. The platform provides default roles such as Company Admin and Reseller for system users to use on the platform. The admin has the option to restrict system users’ activities on the platform.

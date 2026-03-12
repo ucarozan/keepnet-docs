@@ -1,3 +1,7 @@
+---
+description: "Learn about The Targeted, Scalable Approach in Keepnet Labs human risk management documentation."
+---
+
 # The Targeted, Scalable Approach
 
 The Targeted Approach is ideal for organisations that want to **focus on specific threats or high-risk areas**. With this method, you choose exactly which scenarios to send, giving you complete control over your campaign content and timing.

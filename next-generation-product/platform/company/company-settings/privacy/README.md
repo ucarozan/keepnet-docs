@@ -1,3 +1,7 @@
+---
+description: "Learn about Privacy in Keepnet Labs human risk management documentation."
+---
+
 # Privacy
 
 This section will help you access the **Account** and **Data** **Privacy** documents. Below, we have provided shortcuts to access both features easily.

@@ -1,3 +1,7 @@
+---
+description: "Learn about Training Reports in Keepnet Labs human risk management documentation."
+---
+
 # Training Reports
 
 This section allows you to check user engagement to a training exercise, including who opened the training email, who began the training, who has or hasn't completed it, and more statistics.&#x20;

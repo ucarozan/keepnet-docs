@@ -1,3 +1,7 @@
+---
+description: "Learn about Onelogin SCIM Integration in Keepnet Labs human risk management documentation."
+---
+
 # Onelogin SCIM Integration
 
 The document show step by step how to synchronize users' information from the Onelogin identity provider to the platform.

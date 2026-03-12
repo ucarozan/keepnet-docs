@@ -1,3 +1,7 @@
+---
+description: "Learn about AI Ally Settings in Keepnet Labs human risk management documentation."
+---
+
 # AI Ally Settings
 
 **AI** **Ally** is an intelligent feature designed to help generate email and landing page templates based on your prompts. It streamlines the process of creating phishing simulations by using AI-driven content, making it easier and faster to generate realistic simulation materials. This feature also supports merge tags, allowing you to personalize templates based on your specific use cases.

@@ -1,3 +1,7 @@
+---
+description: "Learn about Acceptable Use Policy in Keepnet Labs human risk management documentation."
+---
+
 # Acceptable Use Policy
 
 This Keepnet Acceptable Use Policy ("AUP") applies to the use of any product, service or website provided by us (Keepnet), whether we provide it directly or use another party to provide it to you (each, a "Keepnet Service"). This AUP is designed to ensure compliance with the laws and regulations that apply to the Keepnet Service. This AUP also protects the interests of all of our clients and their customers, as well as our goodwill and reputation. These terms are so important that we cannot provide the Keepnet Service unless you agree to them. By using the Keepnet Service, you are agreeing to these terms.

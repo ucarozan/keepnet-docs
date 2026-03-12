@@ -1,3 +1,7 @@
+---
+description: "Learn about Callback Templates in Keepnet Labs human risk management documentation."
+---
+
 # Callback Templates
 
 The **Callback** **Templates** page will show you all the available templates you have to send to your target users. From this page, you can create, edit, or delete any callback templates that you would like.

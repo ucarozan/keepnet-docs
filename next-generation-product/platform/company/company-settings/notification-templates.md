@@ -1,3 +1,7 @@
+---
+description: "Learn about Notification Templates in Keepnet Labs human risk management documentation."
+---
+
 # Notification Templates
 
 Notification Templates are used by the platform to send email messages to users for a variety of purposes. You can create, edit, and delete the templates provided to customize delivery according to your needs and preferences.

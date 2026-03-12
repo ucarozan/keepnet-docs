@@ -1,3 +1,7 @@
+---
+description: "Learn about Privacy Policy in Keepnet Labs human risk management documentation."
+---
+
 # Privacy Policy
 
 We at Keepnet and our affiliates are committed to protecting your privacy. This Privacy Policy applies to the personal information and data collected by Keepnet when you interact with our websites, products and services, and any other sites or services that link to this Privacy Policy. This includes when you:

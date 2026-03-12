@@ -1,3 +1,7 @@
+---
+description: "Learn about Callback Scenarios in Keepnet Labs human risk management documentation."
+---
+
 # Callback Scenarios
 
 The **Callback Simulator > Callback Scenarios > Scenarios** page provides a selection of ready-to-use callback scenarios. These standard system scenarios are available to all clients and can be launched with just a few clicks. You also have the option to customize a scenario to your needs or to create a  callback simulation campaign.

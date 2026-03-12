@@ -1,3 +1,7 @@
+---
+description: "Learn about Okta SCIM Integration in Keepnet Labs human risk management documentation."
+---
+
 # Okta SCIM Integration
 
 The document show step-by-step how to synchronize users' information from the Okta identity provider to the platform.

@@ -1,3 +1,7 @@
+---
+description: "Learn about (Recommended) Add domains to URL Protection in Keepnet Labs human risk management documentation."
+---
+
 # (Recommended) Add domains to URL Protection
 
 {% hint style="info" %}

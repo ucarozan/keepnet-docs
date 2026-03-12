@@ -1,3 +1,7 @@
+---
+description: "Learn about Vishing Campaign Manager in Keepnet Labs human risk management documentation."
+---
+
 # Vishing Campaign Manager
 
 The campaign manager assists admins in launching vishing simulation campaigns to the end users. The settings such as **Save for Later, Send Now, Schedule, Target Groups, Distribution,** or **Call Settings** are set up from here before launching the campaign to end users.

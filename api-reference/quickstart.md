@@ -1,3 +1,7 @@
+---
+description: "Learn about Quickstart in Keepnet Labs human risk management documentation."
+---
+
 # Quickstart
 
 The Keepnet API lets you automate platform operations: pull reports, manage users, onboard customers, and integrate with SIEM, SOAR, or identity systems.

@@ -1,3 +1,7 @@
+---
+description: "Learn about Reports in Keepnet Labs human risk management documentation."
+---
+
 # Reports
 
 This page offers a brief overview of the **Reports** menu, located on the left side of the platform. The **Reports** menu provides advanced reports related to the platform's products, which you can access from the links listed in the **Shortcuts** section below.&#x20;

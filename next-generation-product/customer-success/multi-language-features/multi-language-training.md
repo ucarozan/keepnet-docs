@@ -1,3 +1,7 @@
+---
+description: "Learn about Multi-Language Training in Keepnet Labs human risk management documentation."
+---
+
 # Multi-Language Training
 
 Keepnet makes it simple to deliver training in the languages your employees are most comfortable with. This guide will walk you through setting up training enrollments that allow employees to choose their preferred language directly from the enrollment email. You’ll also learn how to configure which languages are available for each training, ensuring a seamless experience that supports inclusivity and accessibility across your organisation.

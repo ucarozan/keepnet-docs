@@ -1,3 +1,7 @@
+---
+description: "Learn about Product and Services Catalog in Keepnet Labs human risk management documentation."
+---
+
 # Product and Services Catalog
 
 Below, you’ll find the list of products and services that each will lead you to descriptions, feature lists, and any applicable limits.

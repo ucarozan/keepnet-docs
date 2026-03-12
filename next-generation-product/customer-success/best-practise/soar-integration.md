@@ -1,3 +1,7 @@
+---
+description: "Learn about SOAR Integration in Keepnet Labs human risk management documentation."
+---
+
 # SOAR Integration
 
 In case the end user reports an email, the relevant email is analyzed by the services with which the Incident Responder product is integrated. If the analysis result appears to be malicious, the institution's SOC team will apply additional measures such as using antivirus, firewall, EDR, proxy etc. to target this malicious email. This manual process will take a lot of time and will delay the intervention to the incident in a timely manner.

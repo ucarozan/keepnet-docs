@@ -1,3 +1,7 @@
+---
+description: "Learn about Phishing Simulator Widgets in Keepnet Labs human risk management documentation."
+---
+
 # Phishing Simulator Widgets
 
 Your license model determines which widgets are available on the dashboard.

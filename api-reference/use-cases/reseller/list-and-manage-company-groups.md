@@ -1,3 +1,7 @@
+---
+description: "Learn about List and manage company groups in Keepnet Labs human risk management documentation."
+---
+
 # List and manage company groups
 
 As a Reseller you can list, search, export, create, and update company groups and their participants. **Participants** = the companies that belong to the group (company `resourceId` list). Company groups let you share training content, notification templates, and custom roles across multiple customer companies. Use a credential with Client Role = **Reseller**.

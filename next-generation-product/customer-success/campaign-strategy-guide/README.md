@@ -1,3 +1,7 @@
+---
+description: "Learn about 🎯 Campaign Strategy in Keepnet Labs human risk management documentation."
+---
+
 # 🎯 Campaign Strategy
 
 This section explains how to structure phishing awareness campaigns using Keepnet. It introduces three approaches — **Randomised, Targeted, and The Blend** — showing how each helps you:

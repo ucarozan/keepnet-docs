@@ -1,3 +1,7 @@
+---
+description: "Learn about Manage Callback Scenarios in Keepnet Labs human risk management documentation."
+---
+
 # Manage Callback Scenarios
 
 This section will help you comprehend and utilize the fundamental features within the Callback Scenarios page.&#x20;

@@ -1,3 +1,7 @@
+---
+description: "Learn about Allow List for Exchange 2013/2016 in Keepnet Labs human risk management documentation."
+---
+
 # Allow List for Exchange 2013/2016
 
 To complete this procedure, you must have security administrator privileges with the Microsoft Security & Compliance Center or be a member of the Microsoft Exchange Online Organization Management administrator group.

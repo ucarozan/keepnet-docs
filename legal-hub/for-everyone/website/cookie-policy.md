@@ -1,3 +1,7 @@
+---
+description: "Learn about Cookie Policy in Keepnet Labs human risk management documentation."
+---
+
 # Cookie Policy
 
 This Cookie Policy explains how Keepnet, Inc., Keepnet Labs Limited, and our affiliated entities listed on [this page](../../for-customers/data-processing-agreement.md#annex-3-sub-processors) use cookies and similar technologies to recognise you when you visit our Websites (keepnetlabs.com). It explains what these technologies are and why we use them, as well as your rights to control our use of them.&#x20;

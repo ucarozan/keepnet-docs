@@ -1,3 +1,7 @@
+---
+description: "Learn about Customer Help Desk in Keepnet Labs human risk management documentation."
+---
+
 # Customer Help Desk
 
 This page explains how to obtain support from the Keepnet support team, as well as provides information related to the support cycle, support ticket prioritisation and scope.

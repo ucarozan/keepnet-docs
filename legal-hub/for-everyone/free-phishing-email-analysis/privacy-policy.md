@@ -1,3 +1,7 @@
+---
+description: "Learn about Privacy Policy in Keepnet Labs human risk management documentation."
+---
+
 # Privacy Policy
 
 This Privacy Policy governs the use of https://keepnetlabs.com/free-phishing-email-analysis.&#x20;

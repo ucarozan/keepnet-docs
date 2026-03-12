@@ -1,3 +1,7 @@
+---
+description: "Learn about Excluding IP Address in Keepnet Labs human risk management documentation."
+---
+
 # Excluding IP Address
 
 The **Exclude** **IP** **Address** feature is designed to prevent false positive reporting due to security applications that analyze the links in the email in cooperation. It is designed as an alternative option to prevent false positive reporting. The permanent solution is to allow list SMTP IP addresses of the platform to prevent false positive reporting but sometimes admins are not able to configure it on security applications.

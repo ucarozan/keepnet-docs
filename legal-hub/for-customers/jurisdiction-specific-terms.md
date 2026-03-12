@@ -1,3 +1,7 @@
+---
+description: "Learn about Jurisdiction Specific Terms in Keepnet Labs human risk management documentation."
+---
+
 # Jurisdiction Specific Terms
 
 **PLEASE READ THESE TERMS CAREFULLY.**

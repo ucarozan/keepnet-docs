@@ -1,3 +1,7 @@
+---
+description: "Learn about Diagnostic Tool Requirements in Keepnet Labs human risk management documentation."
+---
+
 # Diagnostic Tool Requirements
 
 ## Requirements

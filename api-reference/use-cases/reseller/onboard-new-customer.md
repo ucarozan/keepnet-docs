@@ -1,3 +1,7 @@
+---
+description: "Learn about Create a company in Keepnet Labs human risk management documentation."
+---
+
 # Create a company
 
 As a Reseller you can create a new company (customer) via the API — this is the programmatic way to onboard a new customer. No Company ID is needed for creation; the new company is created under your Reseller account. Use a credential with Client Role = **Reseller**. After creation, use the returned company `resourceId` for license configuration, company groups, and scoped API calls (e.g. `X-KEEPNET-Company-Id`).

@@ -1,3 +1,7 @@
+---
+description: "Learn about Dashboard Widgets in Keepnet Labs human risk management documentation."
+---
+
 # Dashboard Widgets
 
 The widgets available will vary depending on your license type, role, and permissions.

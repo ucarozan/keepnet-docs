@@ -1,3 +1,7 @@
+---
+description: "Learn about How to Deploy the Add-in in Microsoft 365 in Keepnet Labs human risk management documentation."
+---
+
 # How to Deploy the Add-in in Microsoft 365
 
 ## Deploy the Add-in

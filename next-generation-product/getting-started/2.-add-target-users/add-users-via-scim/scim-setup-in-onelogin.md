@@ -1,3 +1,7 @@
+---
+description: "Learn about SCIM Setup in Onelogin in Keepnet Labs human risk management documentation."
+---
+
 # SCIM Setup in Onelogin
 
 The document show step by step how to synchronize users' information from the Onelogin identity provider to the platform.

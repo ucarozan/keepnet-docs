@@ -1,3 +1,7 @@
+---
+description: "Learn about Settings in Keepnet Labs human risk management documentation."
+---
+
 # Settings
 
 This section will help you comprehend and utilize the fundamental features within the **Quishing** **Simulator** **Settings** page. Please see the shortcuts below.

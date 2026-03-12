@@ -1,3 +1,7 @@
+---
+description: "Learn about Phishing Campaign Reports in Keepnet Labs human risk management documentation."
+---
+
 # Phishing Campaign Reports
 
 This section describes the basic functionalities of phishing campaign reports, which you can find from the **Phishing Simulator > Campaign Manager** and click the **Instances** button to access the reports of the phishing campaign.&#x20;

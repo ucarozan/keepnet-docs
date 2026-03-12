@@ -1,3 +1,7 @@
+---
+description: "Learn about How to Configure SAML on ADFS in Keepnet Labs human risk management documentation."
+---
+
 # How to Configure SAML on ADFS
 
 This document explains the steps of integrating the Microsoft AD FS (Microsoft Active Directory Federation Service) identity provider with the platform over SAML to log in to the platform by using your ADFS account.

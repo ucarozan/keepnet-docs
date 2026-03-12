@@ -1,3 +1,7 @@
+---
+description: "Learn about Start Scan on O365 Email Account in Keepnet Labs human risk management documentation."
+---
+
 # Start Scan on O365 Email Account
 
 This document will provide information on how to start the Email Threat Simulator scan to the email inbox by using the **“Continue with Microsoft Office 365”** feature.

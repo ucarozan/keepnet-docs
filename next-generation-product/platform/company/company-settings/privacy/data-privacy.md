@@ -1,3 +1,7 @@
+---
+description: "Learn about Data Privacy in Keepnet Labs human risk management documentation."
+---
+
 # Data Privacy
 
 At Keepnet, we are committed to safeguarding your privacy. This document provides detailed information on our privacy practices, especially regarding the handling of sensitive data such as email addresses, usernames, and similar fields.

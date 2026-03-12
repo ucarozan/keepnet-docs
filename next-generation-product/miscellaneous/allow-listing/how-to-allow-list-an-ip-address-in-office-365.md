@@ -1,3 +1,7 @@
+---
+description: "Learn about How to Allow List an IP Address in Office 365 in Keepnet Labs human risk management documentation."
+---
+
 # How to Allow List an IP Address in Office 365
 
 It's suggested to use all the methods explained in this documentation step by step for allow listing successfully. The customer may skip the related step if there is no feature in their O365 environment due to the license.

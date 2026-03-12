@@ -1,3 +1,7 @@
+---
+description: "Learn about (Optional) Track Opened Emails in Keepnet Labs human risk management documentation."
+---
+
 # (Optional) Track Opened Emails
 
 {% hint style="info" %}

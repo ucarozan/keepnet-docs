@@ -1,3 +1,7 @@
+---
+description: "Learn about 🌎 Multi-Language Features in Keepnet Labs human risk management documentation."
+---
+
 # 🌎 Multi-Language Features
 
 Keepnet makes it simple to deliver security awareness programs that feel authentic and accessible to every employee, anywhere in the world. Our multi-language features ensure your training and phishing simulations are effective across regions, cultures, and languages -without added complexity.

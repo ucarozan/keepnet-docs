@@ -1,3 +1,7 @@
+---
+description: "Learn about Quishing Scenarios in Keepnet Labs human risk management documentation."
+---
+
 # Quishing Scenarios
 
 The **Quishing Simulator > Quishing Scenarios** page provides a selection of ready-to-use quishing campaigns. These standard system scenarios are available to all clients and can be launched with just a few clicks. You also have the option to customize a scenario to your needs or to create a unique quishing campaign.

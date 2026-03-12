@@ -1,3 +1,7 @@
+---
+description: "Learn about Data Processing Agreement in Keepnet Labs human risk management documentation."
+---
+
 # Data Processing Agreement
 
 {% hint style="info" %}

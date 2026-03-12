@@ -1,3 +1,7 @@
+---
+description: "Learn about Advanced Reports in Keepnet Labs human risk management documentation."
+---
+
 # Advanced Reports
 
 **Advanced Reports** is a feature that allows you to create high-level, customizable reports for phishing simulation and training campaign reports. This feature is designed to provide you with comprehensive insights into your organization's phishing and training activities. This feature is beneficial as it provides a comprehensive view of your organization's human risk management activities.

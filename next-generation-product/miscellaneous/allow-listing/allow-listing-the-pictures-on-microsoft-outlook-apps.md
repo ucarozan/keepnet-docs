@@ -1,3 +1,7 @@
+---
+description: "Learn about Whitelisting the Pictures on Microsoft Outlook Apps in Keepnet Labs human risk management documentation."
+---
+
 # Whitelisting the Pictures on Microsoft Outlook Apps
 
 This document provides information about images to be loaded automatically when a user opens the email sent by the platform in **Outlook Application**. This setting will remove the (X) looks on images in **Outlook App** and load the image automatically after the user opens the email.

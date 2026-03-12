@@ -1,3 +1,7 @@
+---
+description: "Learn about Settings in Keepnet Labs human risk management documentation."
+---
+
 # Settings
 
 This section will help you comprehend and utilize the fundamental features within the Smishing Simulator Settings page. Below, we have provided shortcuts to the parameters within the Smishing Simulator Settings page.&#x20;

@@ -1,3 +1,7 @@
+---
+description: "Learn about Step 2. Deploy Phishing Reporter in Keepnet Labs human risk management documentation."
+---
+
 # Step 2. Deploy Phishing Reporter
 
 ## Shortcuts

@@ -1,3 +1,7 @@
+---
+description: "Learn about Incident Responder in Keepnet Labs human risk management documentation."
+---
+
 # Incident Responder
 
 

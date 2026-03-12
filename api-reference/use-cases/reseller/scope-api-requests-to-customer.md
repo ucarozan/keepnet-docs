@@ -1,3 +1,7 @@
+---
+description: "Learn about Scope API requests to a customer in Keepnet Labs human risk management documentation."
+---
+
 # Scope API requests to a customer
 
 As a Reseller you manage multiple customer companies. Most list/report endpoints return data for **all** companies you manage. To get or change data for **one specific customer**, send that customer’s Company ID in the request. This page explains how Reseller scope works and where to pass Company ID.

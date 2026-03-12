@@ -1,3 +1,7 @@
+---
+description: "Learn about DNS and Domains in Keepnet Labs human risk management documentation."
+---
+
 # DNS and Domains
 
 This page explains the capabilities available to create and use **Domains** and **DNS Services** in the Quishing Simulator. You can integrate your DNS service provider if the platform supports it already and then you will be able to create phishing domains on the platform to use them in the quishing campaigns.

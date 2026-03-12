@@ -1,3 +1,7 @@
+---
+description: "Learn about Allow List for Microsoft 365 in Keepnet Labs human risk management documentation."
+---
+
 # Allow List for Microsoft 365
 
 ## How to Allow List Using the Safe Links Feature in Office 365 <a href="#how-to-whitelist-using-the-safe-links-feature-in-office-365" id="how-to-whitelist-using-the-safe-links-feature-in-office-365"></a>

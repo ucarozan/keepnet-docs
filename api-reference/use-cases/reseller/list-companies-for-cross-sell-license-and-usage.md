@@ -1,3 +1,7 @@
+---
+description: "Learn about List companies for cross-sell by license and usage in Keepnet Labs human risk management documentation."
+---
+
 # List companies for cross-sell by license and usage
 
 As a Reseller you list or export companies with license details (license type, license limit, user count, renewal date, tags) to identify cross-sell or upsell opportunities. Use a credential with Client Role = **Reseller**. Use the same company search endpoint; filter or sort by license type, usage, or renewal date to find candidates. Request body: see Endpoints → **Company** for filter and sort options.

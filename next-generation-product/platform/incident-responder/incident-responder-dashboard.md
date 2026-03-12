@@ -1,3 +1,7 @@
+---
+description: "Learn about Incident Responder Dashboard in Keepnet Labs human risk management documentation."
+---
+
 # Incident Responder Dashboard
 
 This section will help you comprehend and utilize the Incident Responder product's fundamental features. To access all details described in this section, please click on **Incident Responder > Incident Responder**.

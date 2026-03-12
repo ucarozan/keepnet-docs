@@ -1,3 +1,7 @@
+---
+description: "Learn about Microsoft 365 in Keepnet Labs human risk management documentation."
+---
+
 # Microsoft 365
 
 You can integrate your Microsoft 365 environment with the Incident Responder product to start an investigation on users' email accounts by following the steps below.

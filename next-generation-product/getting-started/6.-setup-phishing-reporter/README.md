@@ -1,3 +1,7 @@
+---
+description: "Learn about 4. Setup Phishing Reporter in Keepnet Labs human risk management documentation."
+---
+
 # 4. Setup Phishing Reporter
 
 ## What is the Phishing Reporter?

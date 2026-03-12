@@ -1,3 +1,7 @@
+---
+description: "Learn about Platform Requirements in Keepnet Labs human risk management documentation."
+---
+
 # Platform Requirements
 
 ## Minimum Requirements

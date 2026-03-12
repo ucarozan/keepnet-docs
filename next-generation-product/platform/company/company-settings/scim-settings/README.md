@@ -1,3 +1,7 @@
+---
+description: "Learn about SCIM Settings in Keepnet Labs human risk management documentation."
+---
+
 # SCIM Settings
 
 The SCIM (system for cross-domain identity management) is a standard for automating the exchange of user identity information between identity platforms. The platform supports SCIM integration to automate and synchronize target user information from the identity providers to the platform.
@@ -8,7 +12,7 @@ The SCIM (system for cross-domain identity management) is a standard for automat
 * [How to integrate Azure AD SCIM](azure-ad-scim-integration.md)
 * [How to integrate Okta SCIM](okta-scim-integration.md)
 * [How to integrate Onelogin SCIM](onelogin-scim-integration.md)
-* [How to integrate Jumpcloud SCIM](jumpcloud-scim-integration.md)
+* [How to integrate JumpCloud SCIM](jumpcloud-scim-integration.md)
 
 ## FAQ
 

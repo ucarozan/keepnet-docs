@@ -1,3 +1,7 @@
+---
+description: "Learn about Audit Log in Keepnet Labs human risk management documentation."
+---
+
 # Audit Log
 
 This document provides details of the **Audit** **Log** functionality and how it can be used as an analytical tool to assist in your security efforts.&#x20;

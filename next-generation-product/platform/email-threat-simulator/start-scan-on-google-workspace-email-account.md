@@ -1,3 +1,7 @@
+---
+description: "Learn about Start Scan on Google Workspace Email Account in Keepnet Labs human risk management documentation."
+---
+
 # Start Scan on Google Workspace Email Account
 
 This document will provide information on how to start an Email Threat Simulator scan to the email inbox using a Google Workspace account.

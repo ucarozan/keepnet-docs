@@ -1,3 +1,7 @@
+---
+description: "Learn about Pull survey results for a customer in Keepnet Labs human risk management documentation."
+---
+
 # Pull survey results for a customer
 
 As a Reseller you can list a customer's survey enrollments, get the summary report, and pull per-user survey results (status, progress, and question-level responses) for analysis or reporting. Use a credential with Client Role = **Reseller**. Send **`X-KEEPNET-Company-Id`** and **`x-ir-company-id`** (for enrollment search) so results are scoped to that customer.

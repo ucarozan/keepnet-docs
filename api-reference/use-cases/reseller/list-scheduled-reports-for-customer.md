@@ -1,3 +1,7 @@
+---
+description: "Learn about List scheduled reports for a customer in Keepnet Labs human risk management documentation."
+---
+
 # List scheduled reports for a customer
 
 As a Reseller you list scheduled executive reports configured for a customer — schedule name, frequency, report name, next send date, status — for audit or reporting on automated report delivery. Use a credential with Client Role = **Reseller**. When the API provides a dedicated scheduled-report endpoint, send **`X-KEEPNET-Company-Id`** to scope results to that customer.

@@ -1,3 +1,7 @@
+---
+description: "Learn about Splunk Integration in Keepnet Labs human risk management documentation."
+---
+
 # Splunk Integration
 
 The Splunk HTTP Event Collector (HEC) allows you to send data and application events to a Splunk distribution over HTTP and HTTPS protocols. The HEC uses a token-based authentication model.

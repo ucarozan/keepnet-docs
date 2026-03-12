@@ -1,3 +1,7 @@
+---
+description: "Learn about How to Setup Manager Reporting in Keepnet Labs human risk management documentation."
+---
+
 # How to Setup Manager Reporting
 
 **Manager Reporting** lets you **automatically email managers** a scheduled report in excel format that shows **their team’s Phishing Simulation** and/or **Security Awareness Training** statistics. This helps managers track progress, follow up with their team, and supports a stronger security culture with less manual work for system admins.
