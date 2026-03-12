@@ -46,7 +46,7 @@ This graphic compares your company's phishing risk score with the average scores
 
 
 
-<figure><img src="../../../../.gitbook/assets/image19.png" alt=""><figcaption>Phishing Risk Score trend compared with industry and all-industry averages over time.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image19.png" alt="Phishing Risk Score trend compared with industry and all-industry averages over time."><figcaption>Phishing Risk Score trend compared with industry and all-industry averages over time.</figcaption></figure>
 
 This chart is important because it helps you see how your company's phishing risk compares to others. If your company's score is higher than the industry or all-industry average, it means your company might be more vulnerable to phishing attacks and needs to improve its security.&#x20;
 
@@ -69,11 +69,11 @@ The gauge uses a **0–5 scale** with maturity levels from **At Risk** (0–1) t
 
 This graphic shows how well the training program is being completed across the company. You can see different types of charts representing the percentage of users, as well as the various stages of training: Completed, In Progress, and Incomplete.
 
-<figure><img src="../../../../.gitbook/assets/image10 (1).png" alt=""><figcaption>Training completion status — donut or pie chart (Completed, In Progress, Incomplete).</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image10 (1).png" alt="Training completion status — donut or pie chart (Completed, In Progress, Incomplete)."><figcaption>Training completion status — donut or pie chart (Completed, In Progress, Incomplete).</figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image15 (1).png" alt=""><figcaption>Training completion — alternate chart view.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image15 (1).png" alt="Training completion — alternate chart view."><figcaption>Training completion — alternate chart view.</figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image10 (2).png" alt=""><figcaption>Training completion — bar or additional chart.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image10 (2).png" alt="Training completion — bar or additional chart."><figcaption>Training completion — bar or additional chart.</figcaption></figure>
 
 This uses donut, pie, or bar chart styles to show users' training status across the company.&#x20;
 
@@ -87,7 +87,7 @@ The benefit of using this chart is that it allows you to monitor the progress of
 
 This graphic illustrates the average time users take to identify and respond to phishing attempts across multiple campaigns. The vertical axis represents the time in minutes, and the horizontal axis shows different phishing campaigns.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image5 (1).png" alt=""><figcaption>Phishing Dwell Time and Quickest Response Time by campaign.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image5 (1).png" alt="Phishing Dwell Time and Quickest Response Time by campaign."><figcaption>Phishing Dwell Time and Quickest Response Time by campaign.</figcaption></figure>
 
 The chart compares the "Dwell Time Avg," which is the average time users took to respond, with the "Quickest Response" recorded during each campaign.
 
@@ -101,7 +101,7 @@ The benefit of using this graphic is that it provides a clear visual representat
 
 The "Phishing Dwell Time Distribution" graph shows how long users engage with phishing simulation emails before responding, reporting, or falling victim. The X-axis displays dwell time in minutes (0 to 120), while the Y-axis represents the percentage of users. Most users engage for less than 10 minutes, with fewer taking longer. The orange line marks the average dwell time of 25 minutes, indicating that, on average, users take this long to respond.
 
-<figure><img src="../../../../.gitbook/assets/image8 (1).png" alt=""><figcaption>Phishing Dwell Time Distribution — percentage of users by response time.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image8 (1).png" alt="Phishing Dwell Time Distribution — percentage of users by response time."><figcaption>Phishing Dwell Time Distribution — percentage of users by response time.</figcaption></figure>
 
 This graph helps assess an organization's vulnerability to phishing attacks by showing how quickly employees detect phishing attempts. If most users respond in under 25 minutes, it suggests good awareness, while longer times may indicate greater risk, requiring targeted training. Organizations can use this data to improve security awareness programs by focusing on users who take more time.
 
@@ -111,7 +111,7 @@ The graph's primary benefit is providing data-driven insights into employee susc
 
 This graphic displays the human risk score for users who are considered at the highest risk within your organization. The horizontal bars represent individual users, with their corresponding risk scores as percentages. The red bars indicate that these users have reached a critical risk level, suggesting that immediate training is necessary to mitigate their risk.
 
-<figure><img src="../../../../.gitbook/assets/image9 (1).png" alt=""><figcaption>Users with Highest Risk Scores — horizontal bar chart.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image9 (1).png" alt="Users with Highest Risk Scores — horizontal bar chart."><figcaption>Users with Highest Risk Scores — horizontal bar chart.</figcaption></figure>
 
 This chart is important because it identifies specific individuals within your organization who are at the greatest risk of falling for phishing attempts. By highlighting these high-risk users, the chart allows you to prioritize training and intervention efforts where they are most needed. The goal is to reduce their risk scores and ensure that they are better equipped to recognize and avoid security threats.
 
@@ -123,7 +123,7 @@ The benefit of using this graphic is that it provides a clear and actionable ove
 
 This graphic shows a comparison between your company's phishing risk score and an industry average. The graph displays how user responses and report rates from phishing simulations compare against this industry benchmark. The blue dashed line represents the industry average phishing risk score, while the black line shows your company's phishing risk score for each campaign. The red bars indicate specific metrics related to phishing simulations, such as how many users were targeted and how many reported the phishing attempt.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (2).png" alt=""><figcaption>Industry Phishing Risk Score — company vs industry average by campaign.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (2).png" alt="Industry Phishing Risk Score — company vs industry average by campaign."><figcaption>Industry Phishing Risk Score — company vs industry average by campaign.</figcaption></figure>
 
 This chart is important because it provides insights into how well your company is performing in phishing simulations compared to the industry standard. A higher risk score above the industry average suggests that your users are more susceptible to phishing attacks, which might indicate a need for enhanced training or additional security measures. Conversely, a lower risk score means that your company's phishing defenses are stronger than those of the average company in your industry.
 
@@ -137,7 +137,7 @@ This graphic displays the human risk score for users who are considered at the h
 
 This graphic shows the human risk scores for various departments within your organization, highlighting those that are considered at the highest risk. Each bar represents a different department, with the length of the bar indicating the department’s risk score as a percentage. The red bars signal that these departments have reached a critical risk level, suggesting that immediate training is necessary to mitigate their risk.
 
-<figure><img src="../../../../.gitbook/assets/image16.png" alt=""><figcaption>Departments with Highest Risk Scores — bar chart by department.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image16.png" alt="Departments with Highest Risk Scores — bar chart by department."><figcaption>Departments with Highest Risk Scores — bar chart by department.</figcaption></figure>
 
 This chart is important because it identifies specific departments within your organization that are most vulnerable to security threats, such as phishing. By pinpointing these high-risk departments, the chart allows you to prioritize training and intervention efforts where they are most needed, ensuring that these departments receive the attention required to lower their risk levels.
 
@@ -149,9 +149,9 @@ The benefit of using this graphic is that it provides a clear and actionable ove
 
 This graphic displays the proportion of users who have been included in phishing simulations versus those who have not. It can be a pie chart or a bar chart, both illustrating the same data. The big blue section represents the simulated users, while the small yellow section represents the non-simulated users.
 
-<figure><img src="../../../../.gitbook/assets/image2 (2).png" alt=""><figcaption>Simulation Coverage — simulated vs non-simulated users (chart 1).</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image2 (2).png" alt="Simulation Coverage — simulated vs non-simulated users (chart 1)."><figcaption>Simulation Coverage — simulated vs non-simulated users (chart 1).</figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image18.png" alt=""><figcaption>Simulation Coverage — simulated vs non-simulated users (chart 2).</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image18.png" alt="Simulation Coverage — simulated vs non-simulated users (chart 2)."><figcaption>Simulation Coverage — simulated vs non-simulated users (chart 2).</figcaption></figure>
 
 This chart is important because it highlights the extent of coverage your phishing simulation program has within your organization.&#x20;
 
@@ -161,9 +161,9 @@ The benefit of using this graphic is that it provides a clear visual representat
 
 This graphic shows the percentage of users who have repeatedly fallen for phishing simulations, defined here as having failed at least twice. It can be in different visualizations—a stacked bar chart and a pie chart—that represent the same data. The red portion represents repeat offenders, while the blue portion shows all simulated users.
 
-<figure><img src="../../../../.gitbook/assets/image13 (4).png" alt=""><figcaption>Repeat Offenders (Threshold: 2) — stacked bar chart.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image13 (4).png" alt="Repeat Offenders (Threshold: 2) — stacked bar chart."><figcaption>Repeat Offenders (Threshold: 2) — stacked bar chart.</figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image14 (3).png" alt=""><figcaption>Repeat Offenders — pie chart view.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image14 (3).png" alt="Repeat Offenders — pie chart view."><figcaption>Repeat Offenders — pie chart view.</figcaption></figure>
 
 This chart is important because it highlights a specific group of users within your organization who are at higher risk due to their repeated failure to recognize phishing attempts. The small percentage of repeat offenders compared to the total number of simulated users indicates how many individuals might require additional training or intervention to improve their ability to detect phishing threats.
 
@@ -175,7 +175,7 @@ The benefit of using this graphic is that it offers a clear and focused view of 
 
 This chart helps organizations track and reduce repeat offenders of phishing simulations. By identifying these users, it strengthens cybersecurity awareness and mitigates phishing risks.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption>Phishing Simulation Repeat Offenders Rate — PLA and Current Level widget.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt="Phishing Simulation Repeat Offenders Rate — PLA and Current Level widget."><figcaption>Phishing Simulation Repeat Offenders Rate — PLA and Current Level widget.</figcaption></figure>
 
 **What Is It?**
 
@@ -198,7 +198,7 @@ This chart is a powerful tool for organizations to identify, monitor, and reduce
 
 This graphic displays the human risk scores for various companies, highlighting those with the highest risk levels. Each bar represents a different company, with the length of the bar indicating the company's risk score as a percentage. The red bars signify that these companies have reached a critical risk level, suggesting that immediate training is necessary to mitigate their risk.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image21.png" alt=""><figcaption>Companies with Highest Risk Scores — bar chart.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image21.png" alt="Companies with Highest Risk Scores — bar chart."><figcaption>Companies with Highest Risk Scores — bar chart.</figcaption></figure>
 
 This chart is important because it identifies specific companies that are most vulnerable to security threats. High-risk scores indicate that these companies are at greater risk of falling victim to phishing attacks or other cybersecurity threats. By pinpointing these high-risk companies, the chart allows for the prioritization of training and intervention efforts to reduce their risk levels.
 
@@ -210,7 +210,7 @@ The benefit of using this graphic is that it provides a clear and actionable ove
 
 This graphic demonstrates how phishing risk scores have evolved over time within your organization following a 12-month cybersecurity training program. The vertical axis represents the phishing risk score, while the horizontal axis tracks the score across various months. The dashed blue line indicates the industry average phishing risk score, serving as a benchmark to compare your company's performance.
 
-<figure><img src="../../../../.gitbook/assets/image7 (1).png" alt=""><figcaption>Impact of Phishing Awareness Training — risk score over 12 months.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image7 (1).png" alt="Impact of Phishing Awareness Training — risk score over 12 months."><figcaption>Impact of Phishing Awareness Training — risk score over 12 months.</figcaption></figure>
 
 The bars in the chart are color-coded to show different levels of risk over time. Red bars represent higher risk scores at the start of the training, yellow bars indicate moderate risk, and green bars signify lower risk as the training progresses. The chart also provides average risk scores for different three-month intervals, allowing you to see the overall trend in your organization's phishing risk.
 
@@ -224,7 +224,7 @@ The benefit of using this graphic is that it provides a clear and comprehensive 
 
 This presents the average response times of users who clicked on phishing links and submitted data during phishing simulations. The horizontal axis shows the number of users, while the vertical axis represents the time to respond in seconds. The bars are divided into two segments: the lighter red section indicates users who clicked on the phishing link, and the darker red section represents those who also submitted data.
 
-<figure><img src="../../../../.gitbook/assets/image1 (1) (1).png" alt=""><figcaption>Users' Time to Failure — response times (click and data submission).</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image1 (1) (1).png" alt="Users' Time to Failure — response times (click and data submission)."><figcaption>Users' Time to Failure — response times (click and data submission).</figcaption></figure>
 
 The chart also includes two important benchmark lines. The blue dashed line shows the company’s average response time for link clicks and data submission, while the yellow dashed line represents the industry average. The position of these lines relative to the bars provides insight into how quickly your users are being phished compared to the industry average.
 
@@ -236,7 +236,7 @@ The benefit of using this graphic is that it provides a clear visual representat
 
 This graphic tracks the reporting rates from phishing simulations, comparing users who clicked on phishing links with those who did not over a three-month period. The vertical axis represents the phishing report rate, while the horizontal axis shows different months of the year.
 
-<figure><img src="../../../../.gitbook/assets/image11 (1).png" alt=""><figcaption>Phishing Report Rates Over Time — stacked bar by month.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image11 (1).png" alt="Phishing Report Rates Over Time — stacked bar by month."><figcaption>Phishing Report Rates Over Time — stacked bar by month.</figcaption></figure>
 
 The stacked bar chart is divided into three segments: the green section represents users who did not click on the phishing link but reported the phishing attempt, the red section indicates users who clicked on the phishing link, and the gray section shows users who did not report the phishing attempt at all.
 
@@ -250,11 +250,11 @@ The benefit of using this graphic is that it provides a clear, time-based overvi
 
 These graphic presents the reporting rates of suspicious emails across different categories. It can be a bar chart, or  a pie chart that display the same data. The categories include "Undetected," "Malicious," "Phishing," and "Simulation."
 
-<figure><img src="../../../../.gitbook/assets/image3 (3).png" alt=""><figcaption>Total Reported Suspicious Emails — bar chart by category.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image3 (3).png" alt="Total Reported Suspicious Emails — bar chart by category."><figcaption>Total Reported Suspicious Emails — bar chart by category.</figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image12 (3).png" alt=""><figcaption>Total Reported Suspicious Emails — pie chart.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image12 (3).png" alt="Total Reported Suspicious Emails — pie chart."><figcaption>Total Reported Suspicious Emails — pie chart.</figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image17 (1).png" alt=""><figcaption>Total Reported Suspicious Emails — alternate chart.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image17 (1).png" alt="Total Reported Suspicious Emails — alternate chart."><figcaption>Total Reported Suspicious Emails — alternate chart.</figcaption></figure>
 
 This chart is important because it provides a clear overview of how well users are identifying and reporting different types of suspicious emails. The higher reporting rates for phishing and simulation emails suggest that users are generally aware and responsive to potential threats. However, the presence of undetected emails highlights a potential area for improvement in user awareness or training.
 
@@ -264,7 +264,7 @@ The benefit of using these graphics is that they provide actionable insights int
 
 This graphic demonstrates how a small percentage of employees are responsible for the majority of security incidents within an organization. The graph uses total percentages to highlight the disproportionate distribution of incidents. It shows the percentages  of incidents caused by employees, represented by the intersection of the gold and red lines. The blue line represents the total incidents, indicating how incidents accumulate as more employees are considered.
 
-<figure><img src="../../../../.gitbook/assets/image20.png" alt=""><figcaption>Incident Distribution Among Employees — cumulative incidents by employee share.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image20.png" alt="Incident Distribution Among Employees — cumulative incidents by employee share."><figcaption>Incident Distribution Among Employees — cumulative incidents by employee share.</figcaption></figure>
 
 This visualization is significant for identifying high-risk individuals within the organization, allowing for targeted training and interventions to reduce overall security risks. By understanding the data presented in this graph, you can allocate resources more effectively, focusing efforts on the small group of employees who contribute most to security incidents.
 

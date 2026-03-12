@@ -47,7 +47,7 @@ The following permissions are required for customers using the **Microsoft** **3
 
 Microsoft bundles permissions together. The following Microsoft screenshot shows a '**Mail**' permission group. There's no separate **Write** permission — only the **Mail.ReadWrite** permission, which handles **Write** **actions**.&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/mail.readwrite.png" alt=""><figcaption>Microsoft permission group — Mail.ReadWrite for DEC.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/mail.readwrite.png" alt="Microsoft permission group — Mail.ReadWrite for DEC."><figcaption>Microsoft permission group — Mail.ReadWrite for DEC.</figcaption></figure>
 
 The following permissions are required for customers using the **Microsoft** **Exchange** **Online** email server.
 
@@ -73,7 +73,7 @@ To view the activity of the DEC application created by the platform and confirm 
 
 In the logs, you should see activities such as **"Created mailbox item"**, confirming the application's behavior. For example:
 
-<figure><img src="../../../../../.gitbook/assets/unnamed (2).png" alt=""><figcaption>Microsoft Compliance Portal — audit log showing "Created mailbox item" for DEC app.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/unnamed (2).png" alt="Microsoft Compliance Portal — audit log showing Created mailbox item for DEC app."><figcaption>Microsoft Compliance Portal — audit log showing "Created mailbox item" for DEC app.</figcaption></figure>
 
 This log indicates that the application is only creating mailbox items and not accessing or reading mailboxes.
 

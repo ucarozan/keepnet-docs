@@ -80,7 +80,7 @@ To do this, please follow the steps below.
 
 Here is a screenshot reference of the above rule:
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2025-10-23 at 11.26.51.png" alt="" width="375"><figcaption>Mail flow rule — subject/body pattern for forwarding only simulation emails to Keepnet.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-10-23 at 11.26.51.png" alt="Mail flow rule — subject/body pattern for forwarding only simulation emails to Keepnet." width="375"><figcaption>Mail flow rule — subject/body pattern for forwarding only simulation emails to Keepnet.</figcaption></figure>
 
 Now, when an employee reports an email by using the Microsoft Phishing Reporter button, only simulation emails will be sent to Keepnet; any other emails will not be sent to Keepnet.
 

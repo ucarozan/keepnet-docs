@@ -76,7 +76,7 @@ Keepnet's platform is designed for **high scalability, reliability, and security
 
 Keepnet also hosts one of its other production environments within Microsoft Azure Cloud for the USA. Microsoft Azure Cloud uses the [Shared Responsibility Model](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility), and manages the cloud security.
 
-<figure><img src="../.gitbook/assets/keepnet high level design for usa.png" alt=""><figcaption><p>Microsoft Azure - High-level Design for USA</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/keepnet high level design for usa.png" alt="Microsoft Azure — High-level Design for USA."><figcaption><p>Microsoft Azure - High-level Design for USA</p></figcaption></figure>
 
 Keepnet is responsible for security in the cloud, and you can find more details on the platform security page.
 
@@ -88,7 +88,7 @@ Keepnet has an on-premise installation that gives the ability to host the produc
 
 Keepnet hosts the production environment within Microsoft Azure Cloud in the UK and Europe. Microsoft Azure Cloud uses the [Shared Responsibility Model](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility), and manages the cloud security.
 
-<figure><img src="../.gitbook/assets/AZUREHighLevel.png" alt=""><figcaption><p>Microsoft Azure - High-level Design for the UK and Europe</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/AZUREHighLevel.png" alt="Microsoft Azure — High-level Design for the UK and Europe."><figcaption><p>Microsoft Azure - High-level Design for the UK and Europe</p></figcaption></figure>
 
 Keepnet is responsible for security in the cloud, and you can find more details on platform security.
 

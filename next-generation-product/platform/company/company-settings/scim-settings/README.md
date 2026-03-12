@@ -8,7 +8,7 @@ The SCIM (system for cross-domain identity management) is a standard for automat
 * [How to integrate Azure AD SCIM](azure-ad-scim-integration.md)
 * [How to integrate Okta SCIM](okta-scim-integration.md)
 * [How to integrate Onelogin SCIM](onelogin-scim-integration.md)
-* [How to integrate Jumpcloud SCIM](jumpcloud-scim-integration.md)
+* [How to integrate JumpCloud SCIM](jumpcloud-scim-integration.md)
 
 ## FAQ
 
