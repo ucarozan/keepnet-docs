@@ -14,7 +14,7 @@
 
 Go to **Company > Company Settings > Direct Email Creation** from the main menu. Click on **+ NEW** to create a direct email creation setting.
 
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FXriRwZsAJwPZfjBHZc8B%2FDEC%20step%201.gif?alt=media&#x26;token=cb569e01-98e0-493c-bf3a-189156e51641" alt="Direct Email Creation — Company Settings, + NEW, create DEC setting."><figcaption></figcaption></figure>
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FXriRwZsAJwPZfjBHZc8B%2FDEC%20step%201.gif?alt=media&#x26;token=cb569e01-98e0-493c-bf3a-189156e51641" alt="Direct Email Creation — Company Settings, + NEW, create DEC setting."><figcaption>Direct Email Creation — Company Settings, + NEW, create DEC setting.</figcaption></figure>
 
 #### **Step 2.**
 
@@ -34,13 +34,13 @@ Name your DEC, select which domains you will send phishing simulation emails to 
 * **Message:** Enter a message.
 * Click **SAVE** to create configuration settings.
 
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FdThslnbhmjb5z08eWaQx%2Fdec%20step%202.gif?alt=media&#x26;token=9661f21c-7a4e-47b9-9a47-4339270dce6e" alt="Connect Account and DEC configuration — name, domains, test email."><figcaption></figcaption></figure>
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FdThslnbhmjb5z08eWaQx%2Fdec%20step%202.gif?alt=media&#x26;token=9661f21c-7a4e-47b9-9a47-4339270dce6e" alt="Connect Account and DEC configuration — name, domains, test email."><figcaption>Connect Account and DEC configuration — name, domains, test email.</figcaption></figure>
 
 #### **Step 4.**
 
 Make Direct Email Creation your **Default** Delivery Method - this will save you lots of time and remove delivery errors when you start sending phishing campaigns.
 
-<figure><img src="../../../../.gitbook/assets/default dec.gif" alt="Set Direct Email Creation as default delivery method."><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/default dec.gif" alt="Set Direct Email Creation as default delivery method."><figcaption>Set Direct Email Creation as default delivery method.</figcaption></figure>
 
 {% hint style="info" %}
 **Top Tip:** Make sure to select **Direct Email Creation** in your **Email Delivery** settings when running a new phishing campaign.&#x20;
@@ -58,7 +58,7 @@ The following permissions are required for customers using the **Microsoft** **3
 
 Microsoft bundles permissions together. The following Microsoft screenshot shows a '**Mail**' permission group. There's no separate **Write** permission — only the **Mail.ReadWrite** permission, which handles **Write** **actions**.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/mail.readwrite.png" alt="Microsoft Mail permission group — Mail.ReadWrite for DEC."><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/mail.readwrite.png" alt="Microsoft Mail permission group — Mail.ReadWrite for DEC."><figcaption>Microsoft Mail permission group — Mail.ReadWrite for DEC.</figcaption></figure>
 
 The following permissions are required for customers using the **Microsoft** **Exchange** **Online** email server.
 
@@ -80,7 +80,7 @@ To view the activity of the DEC application created by the platform and confirm 
 
 In the logs, you should see activities such as **"Created mailbox item"**, confirming the application's behavior. For example:
 
-<figure><img src="../../../../.gitbook/assets/unnamed (2).png" alt="Microsoft Compliance Portal — audit log Created mailbox item for DEC app."><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/unnamed (2).png" alt="Microsoft Compliance Portal — audit log Created mailbox item for DEC app."><figcaption>Microsoft Compliance Portal — audit log Created mailbox item for DEC app.</figcaption></figure>
 
 This log indicates that the application is only creating mailbox items and not accessing or reading mailboxes.
 

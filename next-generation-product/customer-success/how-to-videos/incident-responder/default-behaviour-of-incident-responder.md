@@ -6,7 +6,7 @@
 2. Keepnet analysis the reported email for malicious content in seconds using 5+ integrations simultaneously
 3. Keepnet automatically shares the analysis result with the employee via email&#x20;
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/image (2).png" alt="Incident Responder — employee reports email, analysis result sent." width="375"><figcaption>Incident Responder — employee reports email, analysis result sent.</figcaption></figure></div>
 
 ### **🔎 Investigate**
 
@@ -14,5 +14,5 @@
 2. Once investigation is complete, Keepnet System Admins receive Investigation Report
 3. Keepnet System Admin can then log into Keepnet and delete all instances of malicious emails in a few clicks
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/image (3).png" alt="Incident Responder — investigation report, delete malicious instances." width="375"><figcaption>Incident Responder — investigation report, delete malicious instances.</figcaption></figure></div>
 

@@ -10,7 +10,7 @@ description: >-
 
 A: This error message appears when customers try to access keepnet using their "account creation" link on the original email you received when joining Keepnet. Instead, navigate to dash.keepnetlabs.com to login and you won't have any issues!&#x20;
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (85).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (85).png" alt="Login — use dash.keepnetlabs.com to avoid invalid token." width="375"><figcaption>Login — use dash.keepnetlabs.com to avoid invalid token.</figcaption></figure></div>
 
 **Q: I added the new Just-in-time Red Flags landing page as a 2nd landing page for a data submission campaign. However, the email template didn't pull through when I tested.**
 

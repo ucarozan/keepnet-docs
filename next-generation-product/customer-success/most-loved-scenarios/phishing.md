@@ -74,5 +74,5 @@ OpenAI: Invited to a ChatGPT Team
 
 ### **Example:** Sharepoint: IT Support shared “To be completed
 
-<div align="left"><figure><img src="../../../.gitbook/assets/Screenshot 2025-09-19 at 11.33.11.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/Screenshot 2025-09-19 at 11.33.11.png" alt="Phishing scenario example — Sharepoint IT Support shared document." width="375"><figcaption>Phishing scenario example — Sharepoint IT Support shared document.</figcaption></figure></div>
 

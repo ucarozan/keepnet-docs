@@ -19,7 +19,7 @@ Log in to [https://portal.azure.com/](https://portal.azure.com/) as an **Azure**
 3. On the drop down select **Enterprise Application**.
 4. Click on **+Create your own application.**
 
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FuNfGntXnc8sF4FpwJPhC%2Fscim%20step%202.gif?alt=media&#x26;token=5889f92b-5204-447f-b47f-a6649d36418c" alt="Azure — Add Enterprise Application, Create your own application."><figcaption></figcaption></figure>
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FuNfGntXnc8sF4FpwJPhC%2Fscim%20step%202.gif?alt=media&#x26;token=5889f92b-5204-447f-b47f-a6649d36418c" alt="Azure — Add Enterprise Application, Create your own application."><figcaption>Azure — Add Enterprise Application, Create your own application.</figcaption></figure>
 
 #### **Step 3: Create your own application**
 
@@ -27,7 +27,7 @@ Log in to [https://portal.azure.com/](https://portal.azure.com/) as an **Azure**
 2. Select **‘Integrate any other application you don't find in the gallery (Non-gallery)’** option.
 3. Click the **Create** button to create the application.
 
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FEhQ3oE5Bx5qlPoMYsj23%2FScreenshot%202024-03-08%20at%2015.36.13.png?alt=media&#x26;token=8ac06147-4e42-4a7c-89b0-996651acbd45" alt="Create your own application — name and Non-gallery option."><figcaption></figcaption></figure>
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FEhQ3oE5Bx5qlPoMYsj23%2FScreenshot%202024-03-08%20at%2015.36.13.png?alt=media&#x26;token=8ac06147-4e42-4a7c-89b0-996651acbd45" alt="Create your own application — name and Non-gallery option."><figcaption>Create your own application — name and Non-gallery option.</figcaption></figure>
 
 ## **Provisioning Settings** <a href="#provisioning-settings" id="provisioning-settings"></a>
 
@@ -40,7 +40,7 @@ Log in to [https://portal.azure.com/](https://portal.azure.com/) as an **Azure**
 
 3. Click the **‘Test Connection’** button to test your configuration. If it’s successful, click the **Save** button to save settings.
 
-<figure><img src="../../../../.gitbook/assets/provisioning step 1.gif" alt="Provisioning settings — Tenant URL, Secret Token, Test Connection."><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/provisioning step 1.gif" alt="Provisioning settings — Tenant URL, Secret Token, Test Connection."><figcaption>Provisioning settings — Tenant URL, Secret Token, Test Connection.</figcaption></figure>
 
 ## **Synchronize Users and Groups**
 
@@ -65,7 +65,7 @@ When synchronizing users, customers have 2 options:
 5. Most customers find it useful to use Groups - if you select a Group, any new members of this group will automatically be added to Keepnet
 6. Click Select then Assign on the bottom of the page
 
-<figure><img src="../../../../.gitbook/assets/scim users groups.gif" alt="Users and groups — Add users/groups, assign groups for SCIM sync."><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/scim users groups.gif" alt="Users and groups — Add users/groups, assign groups for SCIM sync."><figcaption>Users and groups — Add users/groups, assign groups for SCIM sync.</figcaption></figure>
 
 ## Start Provisioning
 

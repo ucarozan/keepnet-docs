@@ -8,7 +8,7 @@
 
 Navigate to **Company > Target Users** on the left hand side menu. Click the **"+New"** blue button.
 
-<figure><img src="../../../.gitbook/assets/Target Users- Step 1.gif" alt="Target Users — add users step 1."><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Target Users- Step 1.gif" alt="Target Users — add users step 1."><figcaption>Target Users — add users step 1.</figcaption></figure>
 
 #### **Step 2.**
 
@@ -28,18 +28,18 @@ Select **Add users manually** to add target users one by one. Alternatively, sel
 * All Users - to easily send campaigns to all employees
 * Department Specific e.g. Finance - to easily send targeted campaigns to specific departments&#x20;
 
-<figure><img src="../../../.gitbook/assets/Add New Group.gif" alt="Add New Group."><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Add New Group.gif" alt="Add New Group."><figcaption>Add New Group.</figcaption></figure>
 
 **Step 4.**&#x20;
 
 **Field Mapping:** Ensure the fields you are adding in are matched with the correct heading. For example, the user's first name matched with the heading, 'First Name'. Click Next once complete.
 
-<figure><img src="../../../.gitbook/assets/Mapping.gif" alt="CSV column mapping for target users."><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Mapping.gif" alt="CSV column mapping for target users."><figcaption>CSV column mapping for target users.</figcaption></figure>
 
 **Step 5.**
 
 **Import Users:** Either pick the users you wish to add and click **Import Selected**, or click **Import All** to add all the users.&#x20;
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-11-18 at 15.18.56.png" alt="Target users CSV upload result."><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-11-18 at 15.18.56.png" alt="Target users CSV upload result."><figcaption>Target users CSV upload result.</figcaption></figure>
 
 ✅ **You have now added your first Target Users. Now you need to** [**ensure users are able to receive emails from Keepnet**](../3.-email-deliverability/) **successfully ➡️**

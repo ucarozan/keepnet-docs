@@ -23,7 +23,7 @@ To make customisations, please go to:
 5. Once you're happy with your edits, Save the template
 6. Set this template as default by click on the 3 dots and selecting "Make Default" - don't forget this step!&#x20;
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image (4).png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/image (4).png" alt="Notification Templates — Incident Responder category, duplicate and make default." width="563"><figcaption>Notification Templates — Incident Responder category, duplicate and make default.</figcaption></figure></div>
 
 {% hint style="warning" %}
 Please note: If you have not purchased the Incident Responder, you will not be able to see Notification Templates for the Incident Responder module.

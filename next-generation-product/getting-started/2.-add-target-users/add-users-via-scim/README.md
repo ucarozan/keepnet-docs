@@ -11,7 +11,7 @@ By setting up a SCIM integration, you can ensure all new employees are added in 
 
 Go to **Company > Company Settings > SCIM Settings** page. Click the **‘+New’** button to create a SCIM setting.
 
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FcfJ6v1frE5N19HfDr8iL%2Fscim%20step%201.gif?alt=media&#x26;token=bd96034a-3496-4639-824a-0965b5c22e5b" alt="SCIM Settings — Create new SCIM setting (+ New)."><figcaption></figcaption></figure>
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FcfJ6v1frE5N19HfDr8iL%2Fscim%20step%201.gif?alt=media&#x26;token=bd96034a-3496-4639-824a-0965b5c22e5b" alt="SCIM Settings — Create new SCIM setting (+ New)."><figcaption>SCIM Settings — Create new SCIM setting (+ New).</figcaption></figure>
 
 #### **Step 2: Map a Field (Optional)**
 
@@ -26,13 +26,13 @@ Some of our customers add custom fields to add information in addition to email,
 * **Select a SCIM field to determine user groups:** Group users by department (or a custom mapped field such as location). This will group all users by the Entra ID property "Department"
 * **Synchronise groups with identity management platform:** Groups are mirrored directly from Entra ID. If you select a group called "Keepnet UK" on Entra ID, this group will be named exactly the same in Keepnet and contain the exact same users.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-09 at 16.54.19.png" alt="SCIM Group Settings and Grouping Criteria."><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-09 at 16.54.19.png" alt="SCIM Group Settings and Grouping Criteria."><figcaption>SCIM Group Settings and Grouping Criteria.</figcaption></figure>
 
 #### **Step 4: Copy your Secret Token**
 
 Click **Save** and make sure to **copy the unique token information.**
 
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FrEvHb8iFGYuuosH4OohG%2FScreenshot%202024-03-08%20at%2015.23.13.png?alt=media&#x26;token=0d9e56cd-210b-4bb5-91bf-fc59c77baa8a" alt="Copy Secret Token after Save."><figcaption></figcaption></figure>
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FrEvHb8iFGYuuosH4OohG%2FScreenshot%202024-03-08%20at%2015.23.13.png?alt=media&#x26;token=0d9e56cd-210b-4bb5-91bf-fc59c77baa8a" alt="Copy Secret Token after Save."><figcaption>Copy Secret Token after Save.</figcaption></figure>
 
 ✅ **You can now use the following shortcuts to complete the final settings on your identity provider platform.**
 

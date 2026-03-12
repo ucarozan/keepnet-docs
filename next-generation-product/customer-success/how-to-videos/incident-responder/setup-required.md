@@ -6,7 +6,7 @@ For successful analysis, you need to integrate one or many Threat Intel Partners
 
 Navigate to **Incident Responder > Integrations.** Click the blue **New** button. You can find all our Threat Intel partners under **Integration Type**.
 
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FO9zvAviIbw4c4O7141yr%2Fthreat%20intel%20step%201.gif?alt=media&#x26;token=67ad44ca-841f-49a9-96d9-86204d2ec467" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FO9zvAviIbw4c4O7141yr%2Fthreat%20intel%20step%201.gif?alt=media&#x26;token=67ad44ca-841f-49a9-96d9-86204d2ec467" alt="Incident Responder — New integration, select Threat Intel partner type."><figcaption>Incident Responder — New integration, select Threat Intel partner type.</figcaption></figure>
 
 #### **Quick links to install each Threat Intel Partner**
 
