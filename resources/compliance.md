@@ -457,7 +457,7 @@ The purpose of this process is to:&#x20;
 
 Detailed procedure is available upon request.
 
-### IR Incident Management Procedure
+### Incident Management Procedure
 
 The purpose of this procedure is to record and be informed of company information security and personal data breach incidents and perceived weaknesses, to respond to security breaches, to create an action plan against violations and weaknesses, and to take measures against threats with the information obtained.
 
