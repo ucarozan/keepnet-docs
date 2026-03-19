@@ -33,3 +33,15 @@ To remove users from Keepnet when connected to Entra ID, please go to portal.azu
 **Q: Can you share the compliance information for Vishing and Smishing?**
 
 {% file src="../../.gitbook/assets/Vishing and Smishing Platform Security and Compliance (1).pdf" %}
+
+**Q: Are phishing reporter and email templates customizable? Can I add my logo?**
+
+A: Yes! You can fully customize the Phishing Reporter add-in with your logo (60×60px, PNG/JPG, max 2MB), brand name, and dialog text in multiple languages. For email templates, you can customize any of our 16,000+ phishing templates or create your own. See [Phishing Reporter Customization](../../platform/phishing-reporter/phishing-reporter-customization.md) for add-in customization, and [Email Templates](../../platform/phishing-simulator/manage-phishing-scenarios/email-templates.md) and [Localisation](multi-language-features/localisation.md) for template customization.
+
+**Q: What languages are supported? Can campaigns be sent in the user's language?**
+
+A: Keepnet supports **all global languages and locales** with **no limit on language selection**. Campaigns can be automatically delivered in each user's preferred language. You can localize any phishing template into any language, and the platform adapts subject lines, body text, currencies, dates, and tone for cultural accuracy. See [Multi-Language Features](multi-language-features/README.md), [Localisation](multi-language-features/localisation.md), and [Understanding the Preferred Language Setting](../../miscellaneous/understanding-the-preferred-language-setting.md) for details.
+
+**Q: What are the platform limits (e.g. targets per campaign, emails per minute)?**
+
+A: Keepnet's platform is built for high-volume operations with scalable infrastructure. For detailed capacity and performance metrics across email phishing, SMS (Smishing), voice (Vishing), and training services, see [Volume & Performance](../../../resources/volume-and-performance.md).
