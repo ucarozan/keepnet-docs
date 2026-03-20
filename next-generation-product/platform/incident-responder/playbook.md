@@ -53,14 +53,12 @@ Navigate to **Incident Responder > Playbook** and click **+ NEW**.
 * Enter a descriptive rule name, e.g., _Send Analysis Reports to IT Team Only_.
 * Set **Priority** to **Very High** to ensure this rule takes precedence over lower-priority rules.
 * Toggle **Active** on.
-
-Click **Next**.
+* Click **Next**.
 
 #### Step 2 - Conditions
 
 * Set the condition to **From > exists**. This matches all reported emails regardless of sender, ensuring every reported email is caught by this rule.
-
-Click **Next**.
+* Click **Next**.
 
 #### Step 3 - Actions
 
@@ -76,8 +74,7 @@ Click **+ ADD ACTION** and add a **Notify** action:
 * Set the recipient type to **Users**.
 * Enter the IT team's email address or distribution group.
 * Select **Default Suspicious Email Analysis Report** as the notification template, or select a custom analysis report template if your organization has configured one.
-
-Click **Save**.
+* Click **Save**.
 
 {% hint style="info" %}
 If you want to stop analysis report emails from being sent to anyone, including employees and the IT team - skip the **Notify** action entirely. Only the **Analyze** action (and **Investigation**, if enabled) will run.
