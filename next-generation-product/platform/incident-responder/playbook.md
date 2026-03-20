@@ -26,7 +26,7 @@ The following parameters can be used to define reported emails:
 
 The conditions can be defined using the following parameters:
 
-<table><thead><tr><th width="152.54879972451124"></th><th width="581.1428571428571"></th></tr></thead><tbody><tr><td>contains</td><td>Contains the specified condition criterion</td></tr><tr><td>does not contain</td><td>Doesn’t contain the specified condition criterion</td></tr><tr><td>is equal to</td><td>Specified condition criteria match exactly</td></tr><tr><td>is not equal to</td><td>Specified condition criterion does not match exactly</td></tr><tr><td>exists</td><td>Specified condition criterion exists</td></tr><tr><td>does not exist</td><td>Specified condition criterion does not exist</td></tr></tbody></table>
+<table><thead><tr><th width="152.54879972451124"></th><th width="581.1428571428571"></th></tr></thead><tbody><tr><td>contains</td><td>Contains the specified condition criterion</td></tr><tr><td>does not contain</td><td>Doesnât contain the specified condition criterion</td></tr><tr><td>is equal to</td><td>Specified condition criteria match exactly</td></tr><tr><td>is not equal to</td><td>Specified condition criterion does not match exactly</td></tr><tr><td>exists</td><td>Specified condition criterion exists</td></tr><tr><td>does not exist</td><td>Specified condition criterion does not exist</td></tr></tbody></table>
 
 ### Actions
 
@@ -41,6 +41,58 @@ To change a playbook rule, select **Incident Responder > Playbook** page from th
 ## Delete a Playbook Rule
 
 To delete a playbook rule, select **Incident Responder > Playbook** page from the left sidebar menu of the dashboard. All of the existing rules will be displayed. Select the rule(s) to be deleted and remove them using the **trash can** icon.
+
+## Use Cases
+
+### Notify the IT Team Only When a Suspicious Email Is Reported
+
+Use this configuration to route analysis reports to the IT team only, rather than to the individual staff members who reported the email. This is useful when organizations want to centralize threat notification and prevent end users from receiving detailed analysis results directly.
+
+**Step 1 — Rule Info**
+
+Navigate to **Incident Responder > Playbook** and click **+ NEW**.
+
+| Field | Value |
+|---|---|
+| Rule Name | Enter a descriptive name, e.g., *Send Results to IT Team Only* |
+| Description | Optional — describe the intent of the rule |
+| Priority | Set to **Very High** to ensure this rule takes precedence over lower-priority rules |
+| Active | Toggle on |
+
+Click **Next**.
+
+**Step 2 — Conditions**
+
+Set the condition to **From > exists**. This matches all reported emails regardless of sender address, ensuring no reported email bypasses the rule.
+
+Click **Next**.
+
+**Step 3 — Actions**
+
+Add an **Analyze** action and configure the following settings:
+
+| Setting | Value |
+|---|---|
+| Integrations | Select all relevant integrations from the **Select Integrations** modal |
+| Investigate according to analyze results | Check this option to trigger an automatic investigation when the analysis result is phishing or malicious |
+| Select Sources | Choose the mail integration configured for your environment (e.g., Outlook) |
+| Target Users | Select **All Users** or restrict to specific departments or groups as needed |
+| Filters | Select **Auto-detect malicious and phishing attributes** or define specific attributes |
+| Duration | Set the number of days the investigation will run |
+
+Click **+ ADD ACTION** and add a **Notify** action:
+
+| Setting | Value |
+|---|---|
+| Notify | **Users** |
+| Recipients | Enter the IT team's email address |
+| Template | Select the appropriate notification email template (e.g., *Default Suspicious Email Analysis Report*) |
+
+Click **Save**.
+
+{% hint style="info" %}
+Set the rule priority to **Very High** if you want it to override any other active playbook rules with overlapping conditions.
+{% endhint %}
 
 ## FAQ
 
