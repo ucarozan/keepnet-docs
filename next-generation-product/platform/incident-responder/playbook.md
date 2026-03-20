@@ -26,7 +26,7 @@ The following parameters can be used to define reported emails:
 
 The conditions can be defined using the following parameters:
 
-<table><thead><tr><th width="152.54879972451124"></th><th width="581.1428571428571"></th></tr></thead><tbody><tr><td>contains</td><td>Contains the specified condition criterion</td></tr><tr><td>does not contain</td><td>DoesnÃÂÃÂ¢ÃÂÃÂÃÂÃÂt contain the specified condition criterion</td></tr><tr><td>is equal to</td><td>Specified condition criteria match exactly</td></tr><tr><td>is not equal to</td><td>Specified condition criterion does not match exactly</td></tr><tr><td>exists</td><td>Specified condition criterion exists</td></tr><tr><td>does not exist</td><td>Specified condition criterion does not exist</td></tr></tbody></table>
+<table><thead><tr><th width="152.54879972451124"></th><th width="581.1428571428571"></th></tr></thead><tbody><tr><td>contains</td><td>Contains the specified condition criterion</td></tr><tr><td>does not contain</td><td>Doesn't contain the specified condition criterion</td></tr><tr><td>is equal to</td><td>Specified condition criteria match exactly</td></tr><tr><td>is not equal to</td><td>Specified condition criterion does not match exactly</td></tr><tr><td>exists</td><td>Specified condition criterion exists</td></tr><tr><td>does not exist</td><td>Specified condition criterion does not exist</td></tr></tbody></table>
 
 ### Actions
 
@@ -44,7 +44,7 @@ To delete a playbook rule, select **Incident Responder > Playbook** page from th
 
 ## Controlling Who Receives Suspicious Email Analysis Reports
 
-When an employee reports a suspicious email, Incident Responder automatically sends an analysis result email back to that employee within a minute. Some organizations want to change this default behavior â redirecting analysis reports to a specific IT team address or distribution group instead of the reporting employee.
+When an employee reports a suspicious email, Incident Responder automatically sends an analysis result email back to that employee within a minute. Some organisations want to change this default behaviour, redirecting analysis reports to a specific IT team address or distribution group instead of the reporting employee.
 
 #### Step 1 - Rule Info
 
@@ -83,7 +83,7 @@ Click **Save**.
 If you want to stop analysis report emails from being sent to anyone, including employees and the IT team - skip the **Notify** action entirely. Only the **Analyze** action (and **Investigation**, if enabled) will run.
 {% endhint %}
 
-## FAQ
+## FAQs
 
 ### Q: Will deleting a playbook rule affect the results of previous investigations?
 
