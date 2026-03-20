@@ -66,9 +66,9 @@ Click **Next**.
 
 Add an **Analyze** action:
 
-* Select all relevant integrations from the **Select Integrations** modal.
+* Select all relevant analysis integrations from the **Select Integrations** modal.
 * Optionally, check **Investigate according to analyze results** to trigger an automatic investigation when the analysis result is phishing or malicious.
-* Under **Select Sources**, choose the mail integration configured for your environment (e.g., Outlook).
+* Under **Select Sources**, choose the [mail integration](mail-configurations/) configured for your environment (e.g., Outlook).
 * Configure **Target Users**, **Filters**, **Email Date Range**, and **Duration** as needed.
 
 Click **+ ADD ACTION** and add a **Notify** action:
@@ -80,7 +80,7 @@ Click **+ ADD ACTION** and add a **Notify** action:
 Click **Save**.
 
 {% hint style="info" %}
-If you want to stop analysis report emails from being sent to anyone â including reporting employees and the IT team â skip the **Notify** action entirely. Only the **Analyze** action (and **Investigation**, if enabled) will run.
+If you want to stop analysis report emails from being sent to anyone, including employees and the IT team - skip the **Notify** action entirely. Only the **Analyze** action (and **Investigation**, if enabled) will run.
 {% endhint %}
 
 ## FAQ
