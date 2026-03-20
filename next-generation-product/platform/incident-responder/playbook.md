@@ -46,36 +46,36 @@ To delete a playbook rule, select **Incident Responder > Playbook** page from th
 
 When an employee reports a suspicious email, Incident Responder automatically sends an analysis result email back to that employee within a minute. Some organizations want to change this default behavior â redirecting analysis reports to a specific IT team address or distribution group instead of the reporting employee.
 
-#### Step 1 â Rule Info
+#### Step 1 - Rule Info
 
 Navigate to **Incident Responder > Playbook** and click **+ NEW**.
 
-- Enter a descriptive rule name, e.g., *Send Analysis Reports to IT Team Only*.
-- Set **Priority** to **Very High** to ensure this rule takes precedence over lower-priority rules.
-- Toggle **Active** on.
+* Enter a descriptive rule name, e.g., _Send Analysis Reports to IT Team Only_.
+* Set **Priority** to **Very High** to ensure this rule takes precedence over lower-priority rules.
+* Toggle **Active** on.
 
 Click **Next**.
 
-#### Step 2 â Conditions
+#### Step 2 - Conditions
 
-- Set the condition to **From > exists**. This matches all reported emails regardless of sender, ensuring every reported email is caught by this rule.
+* Set the condition to **From > exists**. This matches all reported emails regardless of sender, ensuring every reported email is caught by this rule.
 
 Click **Next**.
 
-#### Step 3 â Actions
+#### Step 3 - Actions
 
 Add an **Analyze** action:
 
-- Select all relevant integrations from the **Select Integrations** modal.
-- Optionally, check **Investigate according to analyze results** to trigger an automatic investigation when the analysis result is phishing or malicious.
-- Under **Select Sources**, choose the mail integration configured for your environment (e.g., Outlook).
-- Configure **Target Users**, **Filters**, **Email Date Range**, and **Duration** as needed.
+* Select all relevant integrations from the **Select Integrations** modal.
+* Optionally, check **Investigate according to analyze results** to trigger an automatic investigation when the analysis result is phishing or malicious.
+* Under **Select Sources**, choose the mail integration configured for your environment (e.g., Outlook).
+* Configure **Target Users**, **Filters**, **Email Date Range**, and **Duration** as needed.
 
 Click **+ ADD ACTION** and add a **Notify** action:
 
-- Set the recipient type to **Users**.
-- Enter the IT team's email address or distribution group.
-- Select **Default Suspicious Email Analysis Report** as the notification template, or select a custom analysis report template if your organization has configured one.
+* Set the recipient type to **Users**.
+* Enter the IT team's email address or distribution group.
+* Select **Default Suspicious Email Analysis Report** as the notification template, or select a custom analysis report template if your organization has configured one.
 
 Click **Save**.
 
@@ -104,4 +104,3 @@ A: The priority and criteria assigned when setting the rule govern the actions t
 ### Q: How can I edit or update the notification email templates used with the Notify action?
 
 A: You can go to **Company > Company Settings > Notification Templates** to view and update the template library. You can find additional information [here](../company/company-settings/notification-templates.md).
-
