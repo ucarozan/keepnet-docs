@@ -26,7 +26,7 @@ The following parameters can be used to define reported emails:
 
 The conditions can be defined using the following parameters:
 
-<table><thead><tr><th width="152.54879972451124"></th><th width="581.1428571428571"></th></tr></thead><tbody><tr><td>contains</td><td>Contains the specified condition criterion</td></tr><tr><td>does not contain</td><td>DoesnÃ¢ÂÂt contain the specified condition criterion</td></tr><tr><td>is equal to</td><td>Specified condition criteria match exactly</td></tr><tr><td>is not equal to</td><td>Specified condition criterion does not match exactly</td></tr><tr><td>exists</td><td>Specified condition criterion exists</td></tr><tr><td>does not exist</td><td>Specified condition criterion does not exist</td></tr></tbody></table>
+<table><thead><tr><th width="152.54879972451124"></th><th width="581.1428571428571"></th></tr></thead><tbody><tr><td>contains</td><td>Contains the specified condition criterion</td></tr><tr><td>does not contain</td><td>DoesnÃÂ¢ÃÂÃÂt contain the specified condition criterion</td></tr><tr><td>is equal to</td><td>Specified condition criteria match exactly</td></tr><tr><td>is not equal to</td><td>Specified condition criterion does not match exactly</td></tr><tr><td>exists</td><td>Specified condition criterion exists</td></tr><tr><td>does not exist</td><td>Specified condition criterion does not exist</td></tr></tbody></table>
 
 ### Actions
 
@@ -46,11 +46,7 @@ To delete a playbook rule, select **Incident Responder > Playbook** page from th
 
 When an employee reports a suspicious email, Incident Responder automatically sends an analysis result email back to that employee within a minute. Some organizations want to change this default behavior — redirecting analysis reports to a specific IT team address or distribution group instead of the reporting employee.
 
-### Redirect Analysis Reports to the IT Team
-
-Use this configuration when your organization wants analysis results sent to the IT team's email address or distribution group, rather than to the individual employees who reported the email.
-
-**Step 1 — Rule Info**
+### Step 1 — Rule Info
 
 Navigate to **Incident Responder > Playbook** and click **+ NEW**.
 
@@ -60,18 +56,18 @@ Navigate to **Incident Responder > Playbook** and click **+ NEW**.
 
 Click **Next**.
 
-**Step 2 — Conditions**
+### Step 2 — Conditions
 
 - Set the condition to **From > exists**. This matches all reported emails regardless of sender, ensuring every reported email is caught by this rule.
 
 Click **Next**.
 
-**Step 3 — Actions**
+### Step 3 — Actions
 
 Add an **Analyze** action:
 
 - Select all relevant integrations from the **Select Integrations** modal.
-- Check **Investigate according to analyze results** to trigger an automatic investigation when the analysis result is phishing or malicious.
+- Optionally, check **Investigate according to analyze results** to trigger an automatic investigation when the analysis result is phishing or malicious.
 - Under **Select Sources**, choose the mail integration configured for your environment (e.g., Outlook).
 - Configure **Target Users**, **Filters**, **Email Date Range**, and **Duration** as needed.
 
@@ -79,7 +75,7 @@ Click **+ ADD ACTION** and add a **Notify** action:
 
 - Set the recipient type to **Users**.
 - Enter the IT team's email address or distribution group.
-- Select the notification email template to use for the analysis report.
+- Select **Default Suspicious Email Analysis Report** as the notification template, or select a custom analysis report template if your organization has configured one.
 
 Click **Save**.
 
