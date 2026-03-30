@@ -84,9 +84,3 @@ Here is a screenshot reference of the above rule:
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-10-23 at 11.26.51.png" alt="Mail flow rule — subject/body pattern so only simulation emails are forwarded to Keepnet." width="375"><figcaption><p>Mail flow rule — subject/body pattern so only simulation emails are forwarded to Keepnet.</p></figcaption></figure>
 
 Now, when an employee reports an email by using the Microsoft Phishing Reporter button, only simulation emails will be sent to Keepnet; any other emails will not be sent to Keepnet.
-
-## **FAQs**
-
-### **Q: I have set up the mail flow rule but simulation emails are still not appearing in the Keepnet.**
-
-A: This is usually caused by Microsoft stripping the `X-Keepnet-TID` header before the rule can evaluate it. This happens when users report emails via the native Microsoft button, which re-packages the original message before delivery. To resolve this, complete all steps in the [allow listing guide for Office 365](../../miscellaneous/allow-listing/how-to-allow-list-an-ip-address-in-office-365.md). Each section addresses a different filtering layer and all are required for the rule to work correctly.
