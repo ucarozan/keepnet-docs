@@ -29,7 +29,7 @@ The create-client API **requires** at least one **Client Role**. List roles for 
 {% endopenapi %}
 
 {% hint style="warning" %}
-**`POST /api/roles/search`** may return an error if the request body is incomplete (e.g. missing filter structure). Prefer **`GET /api/roles`** for this flow.
+**`POST /api/roles/search`** may return an error if the request body is incomplete (e.g. missing filter structure). Prefer **`GET /api/roles`** for this flow (pick **`roleResourceIdList`** from the list).
 {% endhint %}
 
 ***
@@ -82,7 +82,37 @@ X-KEEPNET-Company-Id: <customer_companyResourceId>
 
 ## List, update, or delete clients (optional)
 
-* **`POST /api/companies/clients/search`** — List REST API clients for the company; send **`X-KEEPNET-Company-Id`**. Use **`pageNumber`**, **`pageSize`**, optional **`filter`**, **`orderBy`**, **`ascending`**. If the API returns an error with **`filter`: null**, supply a valid **Filter** object as in other search endpoints, or use **`GET /api/companies/clients/{resourceId}`** after create to confirm a single client.
+### POST /api/companies/clients/search
+
+List REST API clients for the company. Send **`X-KEEPNET-Company-Id`**. Do **not** send **`filter`: null** — the API may respond with **`INTERNAL_SERVER_ERROR`**. Use an empty filter shell (same pattern as [View customer's enrollment list and report →](view-customer-enrollment-list-and-report.md)):
+
+```json
+{
+  "pageNumber": 1,
+  "pageSize": 20,
+  "orderBy": "CreateTime",
+  "ascending": false,
+  "filter": {
+    "Condition": "AND",
+    "SearchInputTextValue": "",
+    "FilterGroups": [
+      { "Condition": "AND", "FilterItems": [], "FilterGroups": [] },
+      { "Condition": "OR", "FilterItems": [], "FilterGroups": [] }
+    ]
+  }
+}
+```
+
+CamelCase property names (`condition`, `searchInputTextValue`, `filterGroups`, …) are also accepted if your client serializes that way.
+
+> **Test it:** Endpoints → **Company** → **Retrieves a list of all clients of company** — set **`X-KEEPNET-Company-Id`** and paste the JSON above (replace **`filter`: null** in the playground if needed).
+
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/companies/clients/search" method="post" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
+
+### Other client endpoints
+
 * **`GET /api/companies/clients/{resourceId}`** — Get one client by its **`resourceId`** (returned in the create response **`data.resourceId`**). Send **`X-KEEPNET-Company-Id`** when acting as Reseller.
 * **`PUT /api/companies/clients/{resourceId}`** — Update client (same header when Reseller).
 * **`DELETE /api/companies/clients/{resourceId}`** — Delete client (same header when Reseller).
@@ -93,7 +123,7 @@ Full request bodies: **Endpoints** → **Company** in the API Reference sidebar.
 
 ## Verification note
 
-The full Reseller flow was exercised end-to-end against **`https://api.keepnetlabs.com`** using a Reseller **`client_credentials`** token from **`~/.zhc.env`** (or **`~/zhc.env`**): **`POST /connect/token`** → **`POST /api/companies/search`** → **`GET /api/roles`** (with **`X-KEEPNET-Company-Id`**) → **`GET /api/companies/clients/generate-client-credentials`** → **`POST /api/companies/clients`** (body included **`roleResourceIdList`** from roles, **`statusId`: 1**) → **`GET /api/companies/clients/{resourceId}`** → **`DELETE /api/companies/clients/{resourceId}`** (cleanup). **`POST /api/companies/clients/search`** did not return the new row in one run (empty or server error with **`filter`: null**); **`GET` by `resourceId`** confirmed the client after create.
+The full Reseller flow was exercised end-to-end against **`https://api.keepnetlabs.com`** using a Reseller **`client_credentials`** token from **`~/.zhc.env`** (or **`~/zhc.env`**): **`POST /connect/token`** → **`POST /api/companies/search`** → **`GET /api/roles`** (with **`X-KEEPNET-Company-Id`**) → **`GET /api/companies/clients/generate-client-credentials`** → **`POST /api/companies/clients`** (body included **`roleResourceIdList`** from roles, **`statusId`: 1**) → **`GET /api/companies/clients/{resourceId}`** → **`POST /api/companies/clients/search`** (with the non-null **`filter`** structure above — avoids **`INTERNAL_SERVER_ERROR`**) → **`DELETE /api/companies/clients/{resourceId}`** (cleanup).
 
 To repeat the check locally (creates then deletes a client on the chosen company):
 
@@ -110,5 +140,6 @@ Optional environment variables: **`KEEPNET_TEST_COMPANY_RESOURCE_ID`**, **`KEEPN
 * **403 Forbidden** — Credential is not Reseller, or **`X-KEEPNET-Company-Id`** is not a company you manage. Use a Reseller REST API client for your own calls. [Roles and permissions →](../../../next-generation-product/platform/company/system-users/user-roles.md)
 * **401 Unauthorized** — Missing or invalid token. Request a new token via **`POST /connect/token`**.
 * **400 Bad Request** — Missing required fields, invalid lengths, **`Role should be selected`** (add **`roleResourceIdList`** from **`GET /api/roles`**), or **`Status Id is invalid`** (try **`statusId`: 1** for Active). See **Endpoints** → **Company** → **Creates a new client for company**.
+* **500 / `INTERNAL_SERVER_ERROR` on `POST /api/companies/clients/search`** — Often caused by **`"filter": null`**. Use the **`filter`** JSON object in **POST /api/companies/clients/search** above (empty **`FilterGroups`** / **`FilterItems`** is valid).
 
 **Related:** [Scope API requests to a customer →](scope-api-requests-to-customer.md) · [Add system user for a customer →](add-system-user-for-customer.md) (same **`X-KEEPNET-Company-Id`** pattern)

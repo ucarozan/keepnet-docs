@@ -182,29 +182,36 @@ def main() -> int:
         return 1
     print("OK GET /api/companies/clients/{resourceId}")
 
-    # 7) Optional search (non-fatal)
+    # 7) clients/search — use non-null filter (filter: null causes INTERNAL_SERVER_ERROR)
+    search_body = {
+        "pageNumber": 1,
+        "pageSize": 50,
+        "orderBy": "CreateTime",
+        "ascending": False,
+        "filter": {
+            "Condition": "AND",
+            "SearchInputTextValue": "",
+            "FilterGroups": [
+                {"Condition": "AND", "FilterItems": [], "FilterGroups": []},
+                {"Condition": "OR", "FilterItems": [], "FilterGroups": []},
+            ],
+        },
+    }
     try:
         srch = curl_json(
             "POST",
             f"{base}/api/companies/clients/search",
             scope_headers + ["-H", "Content-Type: application/json"],
-            json.dumps(
-                {
-                    "pageNumber": 1,
-                    "pageSize": 50,
-                    "orderBy": "CreateTime",
-                    "ascending": False,
-                    "filter": None,
-                }
-            ),
+            json.dumps(search_body),
         )
-        if srch.get("Status") == "INTERNAL_SERVER_ERROR" or srch.get("status") == "INTERNAL_SERVER_ERROR":
-            print("WARN POST /api/companies/clients/search server error (known issue with filter null)")
-        else:
-            found = [x for x in ((srch.get("data") or {}).get("results") or []) if x.get("resourceId") == rid]
-            print("OK POST /api/companies/clients/search" if found else "WARN POST /api/companies/clients/search row not in page")
+        if (srch.get("Status") or srch.get("status") or "").upper() == "INTERNAL_SERVER_ERROR":
+            print("ERROR POST /api/companies/clients/search:", srch.get("Message") or srch.get("message"), file=sys.stderr)
+            return 1
+        found = [x for x in ((srch.get("data") or {}).get("results") or []) if x.get("resourceId") == rid]
+        print("OK POST /api/companies/clients/search" if found else "WARN POST /api/companies/clients/search row not in first page")
     except (subprocess.CalledProcessError, json.JSONDecodeError) as e:
-        print("WARN clients/search:", e)
+        print("ERROR clients/search:", e, file=sys.stderr)
+        return 1
 
     # 8) Delete
     curl_json("DELETE", f"{base}/api/companies/clients/{rid}", scope_headers)
