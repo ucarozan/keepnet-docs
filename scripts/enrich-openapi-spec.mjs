@@ -4,7 +4,7 @@
  * Fetches the live Keepnet API spec and adds tags + x-parent to build the GitBook menu hierarchy.
  *
  * Search/list request `example` payloads: minimal `filter` (Condition + SearchInputTextValue: ''),
- * explicit `orderBy` / `ascending`, no `searchInputTextValue: null` — see `.cursor/rules/keepnet-api-search-payloads.mdc`.
+ * explicit `orderBy` / `ascending`, no `searchInputTextValue: null` (team docs standard; not stored in public repo).
  *
  * Usage: node scripts/enrich-openapi-spec.mjs [output-path]
  * Default output: openapi/keepnet-api-spec.json

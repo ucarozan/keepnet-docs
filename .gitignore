@@ -5,6 +5,8 @@ Thumbs.db
 # Editor / IDE
 .idea/
 .vscode/
+# Cursor — local-only (public repo; do not commit rules)
+.cursor/
 *.swp
 *.swo
 *~
