@@ -82,6 +82,19 @@ Content-Type: application/json
 X-KEEPNET-Company-Id: <customer_companyResourceId>
 ```
 
+Example body (replace placeholders with values from **`generate-client-credentials`** and **`GET /api/roles`**; **`hasIpAddressRestriction`** omitted or **`false`** avoids empty-IP **`400`** errors in the playground):
+
+```json
+{
+  "name": "My customer REST API client",
+  "clientId": "<data.clientId from generate-client-credentials>",
+  "clientSecret": "<data.clientSecret from generate-client-credentials>",
+  "statusId": 1,
+  "hasIpAddressRestriction": false,
+  "roleResourceIdList": ["<resourceId from GET /api/roles>"]
+}
+```
+
 ***
 
 ## List, update, or delete clients (optional)
@@ -125,12 +138,14 @@ Full request bodies: **Endpoints** → **Company** in the API Reference sidebar.
 
 ## Verification note
 
-The full Reseller flow was exercised end-to-end against **`https://api.keepnetlabs.com`** using a Reseller **`client_credentials`** token from **`~/.zhc.env`** (or **`~/zhc.env`**): **`POST /connect/token`** → **`POST /api/companies/search`** → **`GET /api/roles`** (with **`X-KEEPNET-Company-Id`**) → **`GET /api/companies/clients/generate-client-credentials`** → **`POST /api/companies/clients`** (body included **`roleResourceIdList`** from roles, **`statusId`: 1**) → **`GET /api/companies/clients/{resourceId}`** → **`POST /api/companies/clients/search`** (minimal **`filter`** with **`Condition`** + **`SearchInputTextValue`**: **`""`**) → **`DELETE /api/companies/clients/{resourceId}`** (cleanup).
+The full Reseller flow was exercised end-to-end against **`https://api.keepnetlabs.com`** using a Reseller **`client_credentials`** token from **`~/.zhc.env`** (or **`~/zhc.env`**): **`POST /connect/token`** → **`POST /api/companies/search`** → **`GET /api/roles`** (with **`X-KEEPNET-Company-Id`**) → **`GET /api/companies/clients/generate-client-credentials`** → **`POST /api/companies/clients`** (body included **`roleResourceIdList`** from roles, **`statusId`: 1**, **`hasIpAddressRestriction`**: **`false`**) → **`GET /api/companies/clients/{resourceId}`** → **`POST /api/companies/clients/search`** (minimal **`filter`**: **`Condition`** + **`SearchInputTextValue`**: **`""`**, **`pageSize`**: **`10`**) → **`DELETE /api/companies/clients/{resourceId}`** (cleanup).
+
+**Last automated check** (**`2026-04-01T15:01Z`**, repo script, exit code **0**): each step printed **`OK`** through **`ALL_OK`** for `python3 scripts/test-reseller-rest-api-client-e2e.py` (including **`POST /api/companies/clients`** and **`POST /api/companies/clients/search`**).
 
 To repeat the check locally (creates then deletes a client on the chosen company):
 
 ```bash
-python3 scripts/test-reseller-rest-api-client-e2e.py
+cd keepnet-docs && python3 scripts/test-reseller-rest-api-client-e2e.py
 ```
 
 Optional environment variables: **`KEEPNET_TEST_COMPANY_RESOURCE_ID`**, **`KEEPNET_TEST_ROLE_RESOURCE_ID`**, **`KEEPNET_API_BASE_URL`** (default `https://api.keepnetlabs.com`). Credentials: **`KEEPNET_CLIENT_ID`** / **`KEEPNET_CLIENT_SECRET`** or **`CLIENT_ID`** / **`CLIENT_SECRET`** in the env file.
@@ -143,6 +158,6 @@ Optional environment variables: **`KEEPNET_TEST_COMPANY_RESOURCE_ID`**, **`KEEPN
 * **401 Unauthorized** — Missing or invalid token. Request a new token via **`POST /connect/token`**.
 * **400 Bad Request — `POST /api/companies/clients`** — Typical when the body still has empty **`name`**, **`clientId`**, or **`clientSecret`** (use values from **`GET /api/companies/clients/generate-client-credentials`**), when **`roleResourceIdList`** is missing (**`Role should be selected`**), when **`statusId`** is invalid (try **`1`** for Active), or when **`hasIpAddressRestriction`** is **`true`** but **`allowedIpAddresses`** contains empty or invalid entries (**`Invalid ip address`**). Response may include **`validationMessages`** with these hints.
 * **400 Bad Request — `POST /api/companies/clients/search`** — Often **`Content-Type: application/json-patch+json`** (switch to **`application/json`**) or a **`filter`** object that includes **`null`** for **`condition`** / **`searchInputTextValue`** / nested fields; use the sample JSON above with **`""`** and **`"AND"`** / **`"OR"`** strings, not **`null`**.
-* **500 / `INTERNAL_SERVER_ERROR` on `POST /api/companies/clients/search`** — Often caused by **`"filter": null`**. Use the **`filter`** JSON object in **POST /api/companies/clients/search** above (empty **`FilterGroups`** / **`FilterItems`** is valid).
+* **500 / `INTERNAL_SERVER_ERROR` on `POST /api/companies/clients/search`** — Often caused by **`"filter": null`**. Use the non-null minimal **`filter`** in **POST /api/companies/clients/search** above (**`Condition`** + **`SearchInputTextValue`**: **`""`**).
 
 **Related:** [Scope API requests to a customer →](scope-api-requests-to-customer.md) · [Add system user for a customer →](add-system-user-for-customer.md) (same **`X-KEEPNET-Company-Id`** pattern)
