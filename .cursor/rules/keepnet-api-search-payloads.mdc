@@ -1,0 +1,42 @@
+---
+description: Keepnet search/list API request bodies — minimal contract, no null-heavy filters (docs + OpenAPI examples)
+globs: "**/*.md,.gitbook/assets/*.json,scripts/**/*.{py,mjs,js},openapi/**/*"
+alwaysApply: false
+---
+
+# Keepnet API — search / list request body contract (documentation)
+
+When editing **API Reference** pages, **Quickstart**, **OpenAPI** examples embedded in `keepnet-api-spec.json`, or **automation scripts** that call `*/search` endpoints:
+
+## Do not use (legacy / breaks current backend)
+
+- **`orderBy`: `null`** — omitting or null often yields **400**; always send a **non-null string** (e.g. **`"CreateTime"`**, **`"Email"`** — match the endpoint schema).
+- **`filter`: `null`** on endpoints that now expect a **filter object** — may yield **500** or **400**; prefer a **minimal filter object** (see below), not `null`.
+- **`searchInputTextValue`: `null`** (or camelCase equivalent) — use **`""`** (empty string).
+- **`condition` / `Condition`: `null`** — use **`"AND"`** (or **`"OR"`** where the API defines it), not null.
+- **Deeply nested `filterGroups` / `FilterItems` filled with `null`** — avoid; start with the **minimal filter**, add **empty arrays** for groups only if the endpoint still requires them after testing.
+- **`"ascending": true`** as an undocumented default — make **sort direction explicit** in examples (`true` / `false`) and align with the use-case (e.g. newest first → **`"orderBy": "CreateTime"`**, **`"ascending": false`**).
+- **GitBook / Scalar default `Content-Type: application/json-patch+json`** — document switching to **`application/json`** where **400** / **INPUT_ERROR** appears despite `200` on other endpoints.
+
+## Prefer (minimal, explicit)
+
+```json
+{
+  "pageNumber": 1,
+  "pageSize": 10,
+  "orderBy": "CreateTime",
+  "ascending": false,
+  "filter": {
+    "Condition": "AND",
+    "SearchInputTextValue": ""
+  }
+}
+```
+
+- Add endpoint-specific fields **only when required** (e.g. **`enrollmentType`**, **`isTargetUserCountExceededLimit`**, **`trainingType`**) with **concrete values** in examples.
+- **PascalCase** (`Condition`, `SearchInputTextValue`) or **camelCase** may both be accepted; keep examples **consistent** on a page and **never mix null placeholders** with “empty” intent.
+- **OpenAPI `example` / enriched spec:** Prefer **inline examples** that avoid **`$ref` circular** explosions in “Try it”; if the UI shows **`[Circular Reference]`**, fix by supplying a **small `example`** on **`application/json`** (and list **`application/json` first** before `application/json-patch+json` when controlling GitBook defaults).
+
+## Verification
+
+- After changing examples, run **`python3 scripts/test-reseller-rest-api-client-e2e.py`** (or the relevant flow) from the **repo root** against **`https://api.keepnetlabs.com`** when credentials are available, and record **date + exit code** in the use-case **Verification** section when appropriate.

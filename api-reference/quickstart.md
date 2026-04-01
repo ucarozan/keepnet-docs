@@ -166,8 +166,8 @@ All API responses include an `isSuccess` field. When `isSuccess` is `false`, che
 | -------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | **Pagination**       | Search endpoints use `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter` in the request body                  |
 | **Search request body** | **Do not send an empty body** for search endpoints. Always include at least `pageNumber`, `pageSize`, `orderBy`, `ascending`, and `filter` (or the structure shown in the endpoint). Empty or missing body can cause errors or unreliable results in automation tools. |
-| **Filter**           | Use `filter: null` for no filtering, or a filter object with operators (`eq`, `neq`, `contains`, `gt`, `lt`, etc.)   |
-| **Sorting**          | `orderBy` is often required — use `CreateTime` for chronological ordering                                            |
+| **Filter**           | **Do not** send **`filter: null`** or **`null`** inside filter fields on search endpoints that expect a filter object — use a **minimal object**: `"Condition": "AND"`, `"SearchInputTextValue": ""` (then add `FilterGroups` / items only if the endpoint requires them). **`searchInputTextValue` must be `""`, not `null`**. |
+| **Sorting**          | **`orderBy`** must be a **non-null string** (e.g. `CreateTime`, `Email`). Set **`ascending`** explicitly (`true` / `false`); do not rely on undocumented defaults. |
 | **Company scope**    | Most endpoints require a company context. Company Admin: automatic. Reseller: include Company ID (header/path/query) |
 
 ***
@@ -179,7 +179,7 @@ When calling the API from automation platforms (Zapier, Make, n8n, custom script
 | Topic | Requirement | If you don't |
 | ----- | ----------- | ------------- |
 | **Token (`POST /connect/token`)** | Body must be **form-encoded** (`application/x-www-form-urlencoded`). Use the **Form** body type in your tool; send `grant_type`, `client_id`, `client_secret`, `scope`. | Sending JSON or Raw with `Content-Type: application/json` returns **500 Internal Server Error**. |
-| **Search endpoints** (e.g. `POST /api/companies/search`) | Send a **non-empty request body** with at least `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter`. Use the example in each endpoint's docs. | Empty body can cause **500** or unreliable/empty results. |
+| **Search endpoints** (e.g. `POST /api/companies/search`) | Send **`pageNumber`**, **`pageSize`**, explicit non-null **`orderBy`**, **`ascending`**, and a **minimal `filter`** (**`Condition`** + **`SearchInputTextValue`: `""`**). Do **not** use **`filter: null`** or null filter fields. | **400** / **500** or **`INPUT_ERROR`**. |
 
 ***
 

@@ -41,7 +41,7 @@ X-KEEPNET-Company-Id: xC5kfGz7w2Nz
 x-ir-company-id: xC5kfGz7w2Nz
 ```
 
-Example body (first page; filter structure required):
+Example body (first page; **explicit `orderBy` / `ascending`**, **no `null` inside `filter`** — use **`SearchInputTextValue`: `""`**):
 
 ```json
 {
@@ -51,14 +51,12 @@ Example body (first page; filter structure required):
   "ascending": false,
   "filter": {
     "Condition": "AND",
-    "SearchInputTextValue": "",
-    "FilterGroups": [
-      { "Condition": "AND", "FilterItems": [], "FilterGroups": [] },
-      { "Condition": "OR", "FilterItems": [], "FilterGroups": [] }
-    ]
+    "SearchInputTextValue": ""
   }
 }
 ```
+
+If your tenant returns **400** for this shape, add empty **`FilterGroups`** (two groups, **`FilterItems`: `[]`**) as in past docs — still **without** `null` conditions or `searchInputTextValue: null`.
 
 From the response, use `enrollmentId` (or `resourceId`) of the enrollment you want to report on.
 
@@ -76,11 +74,7 @@ To restrict the list to **Survey** enrollments (e.g. security culture surveys), 
   "ascending": false,
   "filter": {
     "Condition": "AND",
-    "SearchInputTextValue": "",
-    "FilterGroups": [
-      { "Condition": "AND", "FilterItems": [], "FilterGroups": [] },
-      { "Condition": "OR", "FilterItems": [], "FilterGroups": [] }
-    ]
+    "SearchInputTextValue": ""
   },
   "enrollmentType": "Survey"
 }
@@ -130,18 +124,17 @@ Returns the per-user training (or survey) report for that enrollment — one row
 [keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
 {% endopenapi %}
 
-Example body (first page; filter with `condition` and `filterGroups` as required by the schema):
+Example body (first page; **same contract**: non-null **`orderBy`**, explicit **`ascending`**, **`searchInputTextValue`** is **`""`** not **`null`**):
 
 ```json
 {
   "pageNumber": 1,
   "pageSize": 100,
   "orderBy": "Email",
-  "ascending": true,
+  "ascending": false,
   "filter": {
-    "condition": "and",
-    "searchInputTextValue": null,
-    "filterGroups": []
+    "Condition": "AND",
+    "SearchInputTextValue": ""
   }
 }
 ```

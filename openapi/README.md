@@ -35,7 +35,7 @@ This folder contains the OpenAPI spec enriched with `x-parent` for GitBook API R
 ```
 https://raw.githubusercontent.com/ORGANIZATION/keepnet-docs/BRANCH/openapi/keepnet-api-spec.json
 ```
-The enriched spec includes a minimal body (`pageNumber`, `pageSize`, `orderBy`, `filter: null`). Click **Check for updates**.
+The enriched spec should include **minimal search bodies**: explicit `orderBy`, `ascending`, and a **non-null `filter`** (`Condition` + `SearchInputTextValue: ""`), not `filter: null` or null-heavy nested filters. Click **Check for updates**.
 
 ## Updating the Spec
 

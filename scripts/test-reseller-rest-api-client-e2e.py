@@ -103,7 +103,7 @@ def main() -> int:
                 "pageSize": 5,
                 "orderBy": "CreateTime",
                 "ascending": False,
-                "filter": None,
+                "filter": {"Condition": "AND", "SearchInputTextValue": ""},
             }
         ),
     )

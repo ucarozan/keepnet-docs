@@ -2,6 +2,8 @@
 
 Bu dokümanda **API Reference → Reseller** altındaki tüm use-case sayfaları tek tek ele alınmış; POST/PUT endpoint'lerin **request body** yapıları spec ve dokümantasyonla karşılaştırılmıştır. Eksik/hatalı olanlar düzeltilmiştir.
 
+**Güncel editör kuralı (Cursor):** Arama/liste endpoint’leri için **`orderBy`/`filter`/`searchInputTextValue` alanlarında `null`** kullanma; minimal **`filter`** + açık sıralama — bkz. **`.cursor/rules/keepnet-api-search-payloads.mdc`** (bu repoda).
+
 ## Özet tablo
 
 | Use-case | Endpoint (POST/PUT) | Body kaynağı | Durum |

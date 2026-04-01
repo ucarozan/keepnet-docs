@@ -14,6 +14,21 @@ Returns a paginated list of companies. Set **`orderBy: "CreateTime"`** and **`as
 [keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
 {% endopenapi %}
 
+**Body example** (newest first; **`Content-Type: application/json`**. Avoid **`filter: null`**, **`orderBy: null`**, and **`searchInputTextValue`: `null`**):
+
+```json
+{
+  "pageNumber": 1,
+  "pageSize": 20,
+  "orderBy": "CreateTime",
+  "ascending": false,
+  "filter": {
+    "Condition": "AND",
+    "SearchInputTextValue": ""
+  }
+}
+```
+
 ***
 
 ## POST /api/companies/search/export
@@ -32,6 +47,6 @@ Exports the company list to CSV or Excel with the same order and filter. Use thi
 
 * **403 Forbidden** — Credential is not Reseller. Set Client Role = **Reseller** in **Company → Company Settings → REST API**. [Roles and permissions →](../../../next-generation-product/platform/company/system-users/user-roles.md)
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
-* **400 Bad Request** — Invalid request body. Include `pageNumber`, `pageSize`, `orderBy: "CreateTime"`, `ascending: false`; use `filter: null` or a valid filter structure.
+* **400 Bad Request** — Invalid request body. Send **`pageNumber`**, **`pageSize`**, explicit **`orderBy`** (e.g. **`"CreateTime"`**), **`ascending`**, and a **minimal `filter`** (**`Condition`** + **`SearchInputTextValue`: `""`**) — not **`filter: null`** or null filter fields.
 
 **Related:** [List companies with license details →](list-companies-with-license-details.md). [Export customer list for billing →](export-customer-list-for-billing.md). [Scope API requests to a customer →](scope-api-requests-to-customer.md).

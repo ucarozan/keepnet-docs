@@ -14,6 +14,22 @@ Returns a paginated list of companies that exceed their license limit. Include *
 [keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
 {% endopenapi %}
 
+**Body example** (**`Content-Type: application/json`**. Avoid **`filter: null`** and nulls inside **`filter`**):
+
+```json
+{
+  "pageNumber": 1,
+  "pageSize": 20,
+  "orderBy": "CreateTime",
+  "ascending": false,
+  "isTargetUserCountExceededLimit": true,
+  "filter": {
+    "Condition": "AND",
+    "SearchInputTextValue": ""
+  }
+}
+```
+
 ***
 
 ## POST /api/companies/search/export
@@ -32,7 +48,7 @@ Exports the same overage list to CSV or Excel. Include **`isTargetUserCountExcee
 
 * **403 Forbidden** — Credential is not Reseller. Set Client Role = **Reseller** in **Company → Company Settings → REST API**. [Roles and permissions →](../../../next-generation-product/platform/company/system-users/user-roles.md)
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
-* **400 Bad Request** — Invalid request body. Include `pageNumber`, `pageSize`, `orderBy`, `ascending`, and `isTargetUserCountExceededLimit: true`; use `filter: null` if you do not need date or other filters.
+* **400 Bad Request** — Invalid request body. Include **`pageNumber`**, **`pageSize`**, explicit **`orderBy`**, **`ascending`**, **`isTargetUserCountExceededLimit`: `true`**, and a **minimal `filter`** (**`Condition`** + **`SearchInputTextValue`: `""`**) — not **`filter: null`**.
 
 {% hint style="info" %}
 **Platform UI:** In **Company → Companies**, use the **FILTER EXCEEDING LIMIT** toggle to see the same overage list. [Companies →](../../../next-generation-product/platform/company/companies/)

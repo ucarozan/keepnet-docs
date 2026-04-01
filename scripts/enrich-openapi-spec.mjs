@@ -3,6 +3,9 @@
  * OpenAPI spec enrichment script
  * Fetches the live Keepnet API spec and adds tags + x-parent to build the GitBook menu hierarchy.
  *
+ * Search/list request `example` payloads: minimal `filter` (Condition + SearchInputTextValue: ''),
+ * explicit `orderBy` / `ascending`, no `searchInputTextValue: null` — see `.cursor/rules/keepnet-api-search-payloads.mdc`.
+ *
  * Usage: node scripts/enrich-openapi-spec.mjs [output-path]
  * Default output: openapi/keepnet-api-spec.json
  */
@@ -216,7 +219,7 @@ const COMPANY_GROUPS_SEARCH_EXPORT_EXAMPLE = {
   },
 };
 
-/** Enrollments search — Reseller: list enrollments; filter structure required by API. */
+/** Enrollments search — minimal filter (no nulls; add FilterGroups only if tenant requires). */
 const ENROLLMENTS_SEARCH_EXAMPLE = {
   pageNumber: 1,
   pageSize: 20,
@@ -225,36 +228,30 @@ const ENROLLMENTS_SEARCH_EXAMPLE = {
   filter: {
     Condition: 'AND',
     SearchInputTextValue: '',
-    FilterGroups: [
-      { Condition: 'AND', FilterItems: [], FilterGroups: [] },
-      { Condition: 'OR', FilterItems: [], FilterGroups: [] },
-    ],
   },
 };
 
-/** Training report users search — per-user report for an enrollment; filter required. */
+/** Training report users search — same contract: explicit sort, empty string not null. */
 const TRAINING_REPORTS_USERS_SEARCH_EXAMPLE = {
   pageNumber: 1,
   pageSize: 100,
   orderBy: 'Email',
-  ascending: true,
+  ascending: false,
   filter: {
-    condition: 'and',
-    searchInputTextValue: null,
-    filterGroups: [],
+    Condition: 'AND',
+    SearchInputTextValue: '',
   },
 };
 
-/** Enrollments search export — CSV/Excel; filter uses Common.Core (camelCase). */
+/** Enrollments search export — CSV/Excel; minimal filter. */
 const ENROLLMENTS_SEARCH_EXPORT_EXAMPLE = {
   pageNumber: 1,
   pageSize: 20,
   orderBy: 'CreateTime',
   ascending: false,
   filter: {
-    condition: 'and',
-    searchInputTextValue: null,
-    filterGroups: [],
+    Condition: 'AND',
+    SearchInputTextValue: '',
   },
   reportAllPages: false,
   exportType: 'CSV',
@@ -282,11 +279,10 @@ const TARGET_USERS_TMP_SEARCH_EXAMPLE = {
   pageNumber: 1,
   pageSize: 20,
   orderBy: 'Email',
-  ascending: true,
+  ascending: false,
   filter: {
-    condition: 'and',
-    searchInputTextValue: null,
-    filterGroups: [],
+    Condition: 'AND',
+    SearchInputTextValue: '',
   },
 };
 
@@ -312,16 +308,15 @@ const ENROLLMENT_CREATE_EXAMPLE = {
   sendTeamsNotification: false,
 };
 
-/** Trainings search — minimal paginated search. */
+/** Trainings search — minimal paginated search (no null filter fields). */
 const TRAININGS_SEARCH_EXAMPLE = {
   pageNumber: 1,
   pageSize: 20,
   orderBy: 'Name',
   ascending: true,
   filter: {
-    condition: 'and',
-    searchInputTextValue: null,
-    filterGroups: [],
+    Condition: 'AND',
+    SearchInputTextValue: '',
   },
 };
 
@@ -332,9 +327,8 @@ const TARGET_GROUPS_SEARCH_EXAMPLE = {
   orderBy: 'Name',
   ascending: true,
   filter: {
-    condition: 'and',
-    searchInputTextValue: null,
-    filterGroups: [],
+    Condition: 'AND',
+    SearchInputTextValue: '',
   },
 };
 
@@ -494,7 +488,13 @@ function injectRequestExamples(paths) {
           pageSize: { type: 'integer', example: 10 },
           orderBy: { type: 'string', example: 'CreateTime' },
           ascending: { type: 'boolean', example: false },
-          filter: { type: 'object', nullable: true },
+          filter: {
+            type: 'object',
+            properties: {
+              Condition: { type: 'string', example: 'AND' },
+              SearchInputTextValue: { type: 'string', example: '' },
+            },
+          },
         },
       },
       example: COMPANY_GROUPS_SEARCH_EXAMPLE,
@@ -520,7 +520,13 @@ function injectRequestExamples(paths) {
           pageSize: { type: 'integer', example: 10 },
           orderBy: { type: 'string', example: 'CreateTime' },
           ascending: { type: 'boolean', example: false },
-          filter: { type: 'object', nullable: true },
+          filter: {
+            type: 'object',
+            properties: {
+              Condition: { type: 'string', example: 'AND' },
+              SearchInputTextValue: { type: 'string', example: '' },
+            },
+          },
           reportAllPages: { type: 'boolean', example: false },
           exportType: { type: 'string', example: 'CSV' },
         },
@@ -553,7 +559,6 @@ function injectRequestExamples(paths) {
             properties: {
               Condition: { type: 'string', example: 'AND' },
               SearchInputTextValue: { type: 'string', example: '' },
-              FilterGroups: { type: 'array', items: { type: 'object' } },
             },
           },
           enrollmentType: { type: 'string', example: 'Survey', description: 'Optional: use "Survey" to list only survey enrollments' },
@@ -585,13 +590,12 @@ function injectRequestExamples(paths) {
           pageNumber: { type: 'integer', example: 1 },
           pageSize: { type: 'integer', example: 100 },
           orderBy: { type: 'string', example: 'Email' },
-          ascending: { type: 'boolean', example: true },
+          ascending: { type: 'boolean', example: false },
           filter: {
             type: 'object',
             properties: {
-              condition: { type: 'string', example: 'and' },
-              searchInputTextValue: { type: 'string', nullable: true },
-              filterGroups: { type: 'array', items: { type: 'object' } },
+              Condition: { type: 'string', example: 'AND' },
+              SearchInputTextValue: { type: 'string', example: '' },
             },
           },
           trainingType: { type: 'integer', nullable: true, description: 'Optional: e.g. 0 for Survey enrollment' },
@@ -623,9 +627,8 @@ function injectRequestExamples(paths) {
           filter: {
             type: 'object',
             properties: {
-              condition: { type: 'string', example: 'and' },
-              searchInputTextValue: { type: 'string', nullable: true },
-              filterGroups: { type: 'array', items: { type: 'object' } },
+              Condition: { type: 'string', example: 'AND' },
+              SearchInputTextValue: { type: 'string', example: '' },
             },
           },
           reportAllPages: { type: 'boolean', example: false },
@@ -713,13 +716,12 @@ function injectRequestExamples(paths) {
           pageNumber: { type: 'integer', example: 1 },
           pageSize: { type: 'integer', example: 20 },
           orderBy: { type: 'string', example: 'Email' },
-          ascending: { type: 'boolean', example: true },
+          ascending: { type: 'boolean', example: false },
           filter: {
             type: 'object',
             properties: {
-              condition: { type: 'string', example: 'and' },
-              searchInputTextValue: { type: 'string', nullable: true },
-              filterGroups: { type: 'array', items: { type: 'object' } },
+              Condition: { type: 'string', example: 'AND' },
+              SearchInputTextValue: { type: 'string', example: '' },
             },
           },
         },
