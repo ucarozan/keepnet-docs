@@ -182,20 +182,13 @@ def main() -> int:
         return 1
     print("OK GET /api/companies/clients/{resourceId}")
 
-    # 7) clients/search — use non-null filter (filter: null causes INTERNAL_SERVER_ERROR)
+    # 7) clients/search — minimal filter (verified 200 on api.keepnetlabs.com)
     search_body = {
         "pageNumber": 1,
-        "pageSize": 50,
+        "pageSize": 10,
         "orderBy": "CreateTime",
         "ascending": False,
-        "filter": {
-            "Condition": "AND",
-            "SearchInputTextValue": "",
-            "FilterGroups": [
-                {"Condition": "AND", "FilterItems": [], "FilterGroups": []},
-                {"Condition": "OR", "FilterItems": [], "FilterGroups": []},
-            ],
-        },
+        "filter": {"Condition": "AND", "SearchInputTextValue": ""},
     }
     try:
         srch = curl_json(
@@ -204,8 +197,9 @@ def main() -> int:
             scope_headers + ["-H", "Content-Type: application/json"],
             json.dumps(search_body),
         )
-        if (srch.get("Status") or srch.get("status") or "").upper() == "INTERNAL_SERVER_ERROR":
-            print("ERROR POST /api/companies/clients/search:", srch.get("Message") or srch.get("message"), file=sys.stderr)
+        st = (srch.get("Status") or srch.get("status") or "").upper()
+        if st == "INTERNAL_SERVER_ERROR" or st == "INPUT_ERROR":
+            print("ERROR POST /api/companies/clients/search:", srch.get("Message") or srch.get("message"), srch.get("validationMessages"), file=sys.stderr)
             return 1
         found = [x for x in ((srch.get("data") or {}).get("results") or []) if x.get("resourceId") == rid]
         print("OK POST /api/companies/clients/search" if found else "WARN POST /api/companies/clients/search row not in first page")

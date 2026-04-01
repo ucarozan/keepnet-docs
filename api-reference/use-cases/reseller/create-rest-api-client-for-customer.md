@@ -2,6 +2,10 @@
 
 As a Reseller you can create a **REST API client** (Client ID / Client Secret) for a managed company so that company—or your integration—can call the Keepnet API with OAuth 2.0 client credentials. Use your Reseller token, scope the request with **`X-KEEPNET-Company-Id`**, then generate credentials and register the client. This mirrors **Company → Company Settings → REST API** in the UI; see [REST API](../../../next-generation-product/platform/company/company-settings/rest-api.md) for field meanings (IP restriction, Client Role, status).
 
+{% hint style="warning" %}
+**GitBook “Test it” / OpenAPI playground:** If **Headers** show **`Content-Type: application/json-patch+json`**, change it to **`application/json`**. The patch media type can produce **`400`** with generic **`INPUT_ERROR`** / **`Invalid request`** on **`POST /api/companies/clients`** and **`POST /api/companies/clients/search`** even when other endpoints return **`200`** with the same token.
+{% endhint %}
+
 ***
 
 ## POST /api/companies/search
@@ -62,7 +66,7 @@ Register the REST API client for that company. Send **`X-KEEPNET-Company-Id`** w
 
 **Optional:**
 
-* **`hasIpAddressRestriction`**, **`allowedIpAddresses`** — IP allow list (see [REST API](../../../next-generation-product/platform/company/company-settings/rest-api.md)).
+* **`hasIpAddressRestriction`**, **`allowedIpAddresses`** — IP allow list (see [REST API](../../../next-generation-product/platform/company/company-settings/rest-api.md)). If the playground prefills **`hasIpAddressRestriction`: true** with an empty **`allowedIpAddresses`** entry, either set **`hasIpAddressRestriction`** to **`false`** or supply **valid** IP/CIDR strings; empty strings trigger **`Invalid ip address`** in **`validationMessages`**.
 
 > Creates a new client for the company. **Test it:** Endpoints → **Company** → **Creates a new client for company** — set **`X-KEEPNET-Company-Id`**, paste `clientId` / `clientSecret` from the generate step, set **`name`**, **`statusId`**, and **`roleResourceIdList`** from **`GET /api/roles`**.
 
@@ -84,26 +88,24 @@ X-KEEPNET-Company-Id: <customer_companyResourceId>
 
 ### POST /api/companies/clients/search
 
-List REST API clients for the company. Send **`X-KEEPNET-Company-Id`**. Do **not** send **`filter`: null** — the API may respond with **`INTERNAL_SERVER_ERROR`**. Use an empty filter shell (same pattern as [View customer's enrollment list and report →](view-customer-enrollment-list-and-report.md)):
+List REST API clients for the company. Send **`X-KEEPNET-Company-Id`** and **`Content-Type: application/json`**. Do **not** send **`filter`: null** — the API may respond with **`INTERNAL_SERVER_ERROR`**. Avoid **`null`** inside **`filter`** fields; use **`""`** for **`SearchInputTextValue`** and **`"AND"`** for **`Condition`**. A minimal body that returns **`200`** on **`https://api.keepnetlabs.com`**:
 
 ```json
 {
   "pageNumber": 1,
-  "pageSize": 20,
+  "pageSize": 10,
   "orderBy": "CreateTime",
   "ascending": false,
   "filter": {
     "Condition": "AND",
-    "SearchInputTextValue": "",
-    "FilterGroups": [
-      { "Condition": "AND", "FilterItems": [], "FilterGroups": [] },
-      { "Condition": "OR", "FilterItems": [], "FilterGroups": [] }
-    ]
+    "SearchInputTextValue": ""
   }
 }
 ```
 
-CamelCase property names (`condition`, `searchInputTextValue`, `filterGroups`, …) are also accepted if your client serializes that way.
+You can add **`FilterGroups`** (empty **`FilterItems`**) if your client or older docs require it; the minimal shape above is enough for listing.
+
+CamelCase (`condition`, `searchInputTextValue`, …) is also accepted if your client serializes that way.
 
 > **Test it:** Endpoints → **Company** → **Retrieves a list of all clients of company** — set **`X-KEEPNET-Company-Id`** and paste the JSON above (replace **`filter`: null** in the playground if needed).
 
@@ -123,7 +125,7 @@ Full request bodies: **Endpoints** → **Company** in the API Reference sidebar.
 
 ## Verification note
 
-The full Reseller flow was exercised end-to-end against **`https://api.keepnetlabs.com`** using a Reseller **`client_credentials`** token from **`~/.zhc.env`** (or **`~/zhc.env`**): **`POST /connect/token`** → **`POST /api/companies/search`** → **`GET /api/roles`** (with **`X-KEEPNET-Company-Id`**) → **`GET /api/companies/clients/generate-client-credentials`** → **`POST /api/companies/clients`** (body included **`roleResourceIdList`** from roles, **`statusId`: 1**) → **`GET /api/companies/clients/{resourceId}`** → **`POST /api/companies/clients/search`** (with the non-null **`filter`** structure above — avoids **`INTERNAL_SERVER_ERROR`**) → **`DELETE /api/companies/clients/{resourceId}`** (cleanup).
+The full Reseller flow was exercised end-to-end against **`https://api.keepnetlabs.com`** using a Reseller **`client_credentials`** token from **`~/.zhc.env`** (or **`~/zhc.env`**): **`POST /connect/token`** → **`POST /api/companies/search`** → **`GET /api/roles`** (with **`X-KEEPNET-Company-Id`**) → **`GET /api/companies/clients/generate-client-credentials`** → **`POST /api/companies/clients`** (body included **`roleResourceIdList`** from roles, **`statusId`: 1**) → **`GET /api/companies/clients/{resourceId}`** → **`POST /api/companies/clients/search`** (minimal **`filter`** with **`Condition`** + **`SearchInputTextValue`**: **`""`**) → **`DELETE /api/companies/clients/{resourceId}`** (cleanup).
 
 To repeat the check locally (creates then deletes a client on the chosen company):
 
@@ -139,7 +141,8 @@ Optional environment variables: **`KEEPNET_TEST_COMPANY_RESOURCE_ID`**, **`KEEPN
 
 * **403 Forbidden** — Credential is not Reseller, or **`X-KEEPNET-Company-Id`** is not a company you manage. Use a Reseller REST API client for your own calls. [Roles and permissions →](../../../next-generation-product/platform/company/system-users/user-roles.md)
 * **401 Unauthorized** — Missing or invalid token. Request a new token via **`POST /connect/token`**.
-* **400 Bad Request** — Missing required fields, invalid lengths, **`Role should be selected`** (add **`roleResourceIdList`** from **`GET /api/roles`**), or **`Status Id is invalid`** (try **`statusId`: 1** for Active). See **Endpoints** → **Company** → **Creates a new client for company**.
+* **400 Bad Request — `POST /api/companies/clients`** — Typical when the body still has empty **`name`**, **`clientId`**, or **`clientSecret`** (use values from **`GET /api/companies/clients/generate-client-credentials`**), when **`roleResourceIdList`** is missing (**`Role should be selected`**), when **`statusId`** is invalid (try **`1`** for Active), or when **`hasIpAddressRestriction`** is **`true`** but **`allowedIpAddresses`** contains empty or invalid entries (**`Invalid ip address`**). Response may include **`validationMessages`** with these hints.
+* **400 Bad Request — `POST /api/companies/clients/search`** — Often **`Content-Type: application/json-patch+json`** (switch to **`application/json`**) or a **`filter`** object that includes **`null`** for **`condition`** / **`searchInputTextValue`** / nested fields; use the sample JSON above with **`""`** and **`"AND"`** / **`"OR"`** strings, not **`null`**.
 * **500 / `INTERNAL_SERVER_ERROR` on `POST /api/companies/clients/search`** — Often caused by **`"filter": null`**. Use the **`filter`** JSON object in **POST /api/companies/clients/search** above (empty **`FilterGroups`** / **`FilterItems`** is valid).
 
 **Related:** [Scope API requests to a customer →](scope-api-requests-to-customer.md) · [Add system user for a customer →](add-system-user-for-customer.md) (same **`X-KEEPNET-Company-Id`** pattern)

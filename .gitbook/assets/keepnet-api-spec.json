@@ -7020,14 +7020,24 @@
         ],
         "summary": "Creates a new client for company",
         "requestBody": {
-          "description": "",
+          "description": "Replace clientId/clientSecret with values from GET generate-client-credentials; roleResourceIdList from GET /api/roles. Use Content-Type: application/json. Set hasIpAddressRestriction false unless you supply valid allowedIpAddresses.",
           "content": {
-            "application/json-patch+json": {
+            "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Company.CreateClientRequest"
+              },
+              "example": {
+                "name": "REST API client example",
+                "clientId": "PASTE_FROM_generate_client_credentials",
+                "clientSecret": "PASTE_FROM_generate_client_credentials",
+                "statusId": 1,
+                "hasIpAddressRestriction": false,
+                "roleResourceIdList": [
+                  "PASTE_ROLE_resourceId_FROM_get_api_roles"
+                ]
               }
             },
-            "application/json": {
+            "application/json-patch+json": {
               "schema": {
                 "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Company.CreateClientRequest"
               }
@@ -7211,12 +7221,22 @@
         "requestBody": {
           "description": "",
           "content": {
-            "application/json-patch+json": {
+            "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Company.Search.SearchClientRequest"
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 10,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
               }
             },
-            "application/json": {
+            "application/json-patch+json": {
               "schema": {
                 "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Company.Search.SearchClientRequest"
               }
