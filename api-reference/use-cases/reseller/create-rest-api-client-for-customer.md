@@ -18,6 +18,22 @@ From the response, note **`data.results[].companyResourceId`** for the target cu
 
 ***
 
+## GET /api/roles
+
+The create-client API **requires** at least one **Client Role**. List roles for the **same customer** by calling **`GET /api/roles`** with **`X-KEEPNET-Company-Id`** set to that customer’s **`companyResourceId`**. From the response, pick a role (for example **Company Admin** for that company’s integrations, or **Reseller** if your use case requires it) and copy its **`resourceId`** into **`roleResourceIdList`** when you call **`POST /api/companies/clients`**.
+
+> Returns all roles for the company in **`data`** (array of roles with `name`, `resourceId`, etc.). **Test it:** Endpoints → **SystemRole** → **Retrieves a list of roles of company** — set **`X-KEEPNET-Company-Id`**.
+
+{% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/roles" method="get" expanded="true" %}
+[keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
+{% endopenapi %}
+
+{% hint style="warning" %}
+**`POST /api/roles/search`** may return an error if the request body is incomplete (e.g. missing filter structure). Prefer **`GET /api/roles`** for this flow.
+{% endhint %}
+
+***
+
 ## GET /api/companies/clients/generate-client-credentials
 
 Generate a **Client ID** and **Client Secret** pair for the next step. You must send the customer’s Company ID in **`X-KEEPNET-Company-Id`** so the credentials are created in that company’s context.
@@ -41,14 +57,14 @@ Register the REST API client for that company. Send **`X-KEEPNET-Company-Id`** w
 * **`name`** — Display name for this REST API configuration (1–64 characters).
 * **`clientId`** — From `generate-client-credentials` **`data.clientId`**.
 * **`clientSecret`** — From `generate-client-credentials` **`data.clientSecret`**.
-* **`statusId`** — Client status (e.g. active vs inactive). Use the same integer values as in the UI; if you have an existing client for that company, you can copy **`statusId`** from **`POST /api/companies/clients/search`**. Otherwise confirm the correct value in **Endpoints** → **Company** or the UI.
+* **`statusId`** — Client status in the UI/API. **`1`** is **Active** in environments verified for this flow; use **`2`** or other values only if your tenant/UI indicates them (invalid **`statusId`** returns a validation error).
+* **`roleResourceIdList`** — **Required** by the API (at least one role). Use **`resourceId`** values from **`GET /api/roles`** for that company, e.g. **`["<roleResourceIdFromGetRoles>"]`**.
 
 **Optional:**
 
 * **`hasIpAddressRestriction`**, **`allowedIpAddresses`** — IP allow list (see [REST API](../../../next-generation-product/platform/company/company-settings/rest-api.md)).
-* **`roleResourceIdList`** — API **Client Role** (e.g. Reseller, Company Admin, or custom role resource IDs).
 
-> Creates a new client for the company. **Test it:** Endpoints → **Company** → **Creates a new client for company** — set **`X-KEEPNET-Company-Id`**, paste `clientId` / `clientSecret` from the generate step, set **`name`** and **`statusId`**.
+> Creates a new client for the company. **Test it:** Endpoints → **Company** → **Creates a new client for company** — set **`X-KEEPNET-Company-Id`**, paste `clientId` / `clientSecret` from the generate step, set **`name`**, **`statusId`**, and **`roleResourceIdList`** from **`GET /api/roles`**.
 
 {% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/companies/clients" method="post" expanded="true" %}
 [keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
@@ -66,8 +82,8 @@ X-KEEPNET-Company-Id: <customer_companyResourceId>
 
 ## List, update, or delete clients (optional)
 
-* **`POST /api/companies/clients/search`** — List REST API clients for the company; send **`X-KEEPNET-Company-Id`**. Use **`pageNumber`**, **`pageSize`**, optional **`filter`**, **`orderBy`**, **`ascending`**.
-* **`GET /api/companies/clients/{resourceId}`** — Get one client by its **`resourceId`** (from search). Send **`X-KEEPNET-Company-Id`** when acting as Reseller.
+* **`POST /api/companies/clients/search`** — List REST API clients for the company; send **`X-KEEPNET-Company-Id`**. Use **`pageNumber`**, **`pageSize`**, optional **`filter`**, **`orderBy`**, **`ascending`**. If the API returns an error with **`filter`: null**, supply a valid **Filter** object as in other search endpoints, or use **`GET /api/companies/clients/{resourceId}`** after create to confirm a single client.
+* **`GET /api/companies/clients/{resourceId}`** — Get one client by its **`resourceId`** (returned in the create response **`data.resourceId`**). Send **`X-KEEPNET-Company-Id`** when acting as Reseller.
 * **`PUT /api/companies/clients/{resourceId}`** — Update client (same header when Reseller).
 * **`DELETE /api/companies/clients/{resourceId}`** — Delete client (same header when Reseller).
 
@@ -77,7 +93,15 @@ Full request bodies: **Endpoints** → **Company** in the API Reference sidebar.
 
 ## Verification note
 
-The Reseller flow **token → `POST /api/companies/search` → `GET /api/companies/clients/generate-client-credentials` with `X-KEEPNET-Company-Id`** was exercised against `https://api.keepnetlabs.com` and returned HTTP 200 with **`data.clientId`** and **`data.clientSecret`**. **`POST /api/companies/clients`** was not executed in that run to avoid creating clients on a live tenant; validate create/update on a non-production company before production use.
+The full Reseller flow was exercised end-to-end against **`https://api.keepnetlabs.com`** using a Reseller **`client_credentials`** token from **`~/.zhc.env`** (or **`~/zhc.env`**): **`POST /connect/token`** → **`POST /api/companies/search`** → **`GET /api/roles`** (with **`X-KEEPNET-Company-Id`**) → **`GET /api/companies/clients/generate-client-credentials`** → **`POST /api/companies/clients`** (body included **`roleResourceIdList`** from roles, **`statusId`: 1**) → **`GET /api/companies/clients/{resourceId}`** → **`DELETE /api/companies/clients/{resourceId}`** (cleanup). **`POST /api/companies/clients/search`** did not return the new row in one run (empty or server error with **`filter`: null**); **`GET` by `resourceId`** confirmed the client after create.
+
+To repeat the check locally (creates then deletes a client on the chosen company):
+
+```bash
+python3 scripts/test-reseller-rest-api-client-e2e.py
+```
+
+Optional environment variables: **`KEEPNET_TEST_COMPANY_RESOURCE_ID`**, **`KEEPNET_TEST_ROLE_RESOURCE_ID`**, **`KEEPNET_API_BASE_URL`** (default `https://api.keepnetlabs.com`). Credentials: **`KEEPNET_CLIENT_ID`** / **`KEEPNET_CLIENT_SECRET`** or **`CLIENT_ID`** / **`CLIENT_SECRET`** in the env file.
 
 ***
 
@@ -85,6 +109,6 @@ The Reseller flow **token → `POST /api/companies/search` → `GET /api/compani
 
 * **403 Forbidden** — Credential is not Reseller, or **`X-KEEPNET-Company-Id`** is not a company you manage. Use a Reseller REST API client for your own calls. [Roles and permissions →](../../../next-generation-product/platform/company/system-users/user-roles.md)
 * **401 Unauthorized** — Missing or invalid token. Request a new token via **`POST /connect/token`**.
-* **400 Bad Request** — Missing required fields (`name`, `clientId`, `clientSecret`, `statusId`) or invalid lengths; see **Endpoints** → **Company** → **Creates a new client for company**.
+* **400 Bad Request** — Missing required fields, invalid lengths, **`Role should be selected`** (add **`roleResourceIdList`** from **`GET /api/roles`**), or **`Status Id is invalid`** (try **`statusId`: 1** for Active). See **Endpoints** → **Company** → **Creates a new client for company**.
 
 **Related:** [Scope API requests to a customer →](scope-api-requests-to-customer.md) · [Add system user for a customer →](add-system-user-for-customer.md) (same **`X-KEEPNET-Company-Id`** pattern)
