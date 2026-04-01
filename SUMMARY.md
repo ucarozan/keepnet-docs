@@ -299,6 +299,7 @@
     * [Update a company](api-reference/use-cases/reseller/update-a-company.md)
     * [Delete a company](api-reference/use-cases/reseller/delete-a-company.md)
     * [List and manage company groups](api-reference/use-cases/reseller/list-and-manage-company-groups.md)
+    * [Create a REST API client for a customer](api-reference/use-cases/reseller/create-rest-api-client-for-customer.md)
   * [Users & groups](api-reference/reseller/users-and-groups/README.md)
     * [Add target users for a customer](api-reference/use-cases/reseller/add-target-users-for-customer.md)
     * [Import target users from Excel for a customer](api-reference/use-cases/reseller/import-target-users-from-excel-for-customer.md)
