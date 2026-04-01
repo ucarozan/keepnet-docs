@@ -27,9 +27,9 @@ We have over 16,000 templates you can start using immediately. However, many cus
 
 {% embed url="https://www.loom.com/share/63573d378a8e4e23b5dd1e8c3b6d1e2b?sid=95010646-e161-4f3b-8e81-0fe914110578" %}
 
-{% embed url="https://www.loom.com/share/0727cd6ac5884977897efaf0d3f4ccb8?sid=31c2a7f3-d8fa-4a83-b0b6-2a7010539658" %}
-
 {% embed url="https://www.loom.com/share/e899debb32cb491b8e97c064fabb7a7a?sid=67c87a55-1515-469e-a0e6-1313b1a8f1e7" %}
+
+{% embed url="https://www.loom.com/share/6e1e3f3343474deaa45e8124f033f7f6" %}
 
 ## View Reporting for your Campaigns
 

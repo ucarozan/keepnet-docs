@@ -26,7 +26,7 @@ The following parameters can be used to define reported emails:
 
 The conditions can be defined using the following parameters:
 
-<table><thead><tr><th width="152.54879972451124"></th><th width="581.1428571428571"></th></tr></thead><tbody><tr><td>contains</td><td>Contains the specified condition criterion</td></tr><tr><td>does not contain</td><td>Doesn’t contain the specified condition criterion</td></tr><tr><td>is equal to</td><td>Specified condition criteria match exactly</td></tr><tr><td>is not equal to</td><td>Specified condition criterion does not match exactly</td></tr><tr><td>exists</td><td>Specified condition criterion exists</td></tr><tr><td>does not exist</td><td>Specified condition criterion does not exist</td></tr></tbody></table>
+<table><thead><tr><th width="152.54879972451124"></th><th width="581.1428571428571"></th></tr></thead><tbody><tr><td>contains</td><td>Contains the specified condition criterion</td></tr><tr><td>does not contain</td><td>Doesn't contain the specified condition criterion</td></tr><tr><td>is equal to</td><td>Specified condition criteria match exactly</td></tr><tr><td>is not equal to</td><td>Specified condition criterion does not match exactly</td></tr><tr><td>exists</td><td>Specified condition criterion exists</td></tr><tr><td>does not exist</td><td>Specified condition criterion does not exist</td></tr></tbody></table>
 
 ### Actions
 
@@ -42,7 +42,45 @@ To change a playbook rule, select **Incident Responder > Playbook** page from th
 
 To delete a playbook rule, select **Incident Responder > Playbook** page from the left sidebar menu of the dashboard. All of the existing rules will be displayed. Select the rule(s) to be deleted and remove them using the **trash can** icon.
 
-## FAQ
+## Controlling Who Receives Suspicious Email Analysis Reports
+
+When an employee reports a suspicious email, Incident Responder automatically sends an analysis result email back to that employee within a minute. Some organisations want to change this default behaviour, redirecting analysis reports to a specific IT team address or distribution group instead of the reporting employee.
+
+#### Step 1 - Rule Info
+
+Navigate to **Incident Responder > Playbook** and click **+ NEW**.
+
+* Enter a descriptive rule name, e.g., _Send Analysis Reports to IT Team Only_.
+* Set **Priority** to **Very High** to ensure this rule takes precedence over lower-priority rules.
+* Toggle **Active** on.
+* Click **Next**.
+
+#### Step 2 - Conditions
+
+* Set the condition to **From > exists**. This matches all reported emails regardless of sender, ensuring every reported email is caught by this rule.
+* Click **Next**.
+
+#### Step 3 - Actions
+
+Add an **Analyze** action:
+
+* Select all relevant analysis integrations from the **Select Integrations** modal.
+* Optionally, check **Investigate according to analyze results** to trigger an automatic investigation when the analysis result is phishing or malicious.
+* Under **Select Sources**, choose the [mail integration](mail-configurations/) configured for your environment (e.g., Outlook).
+* Configure **Target Users**, **Filters**, **Email Date Range**, and **Duration** as needed.
+
+Click **+ ADD ACTION** and add a **Notify** action:
+
+* Set the recipient type to **Users**.
+* Enter the IT team's email address or distribution group.
+* Select **Default Suspicious Email Analysis Report** as the notification template, or select a custom analysis report template if your organization has configured one.
+* Click **Save**.
+
+{% hint style="info" %}
+If you want to stop analysis report emails from being sent to anyone, including employees and the IT team - skip the **Notify** action entirely. Only the **Analyze** action (and **Investigation**, if enabled) will run.
+{% endhint %}
+
+## FAQs
 
 ### Q: Will deleting a playbook rule affect the results of previous investigations?
 
@@ -63,4 +101,3 @@ A: The priority and criteria assigned when setting the rule govern the actions t
 ### Q: How can I edit or update the notification email templates used with the Notify action?
 
 A: You can go to **Company > Company Settings > Notification Templates** to view and update the template library. You can find additional information [here](../company/company-settings/notification-templates.md).
-
