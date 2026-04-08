@@ -37,12 +37,29 @@ https://raw.githubusercontent.com/ORGANIZATION/keepnet-docs/BRANCH/openapi/keepn
 ```
 The enriched spec should include **minimal search bodies**: explicit `orderBy`, `ascending`, and a **non-null `filter`** (`Condition` + `SearchInputTextValue: ""`), not `filter: null` or null-heavy nested filters. Click **Check for updates**.
 
+## Do not use the live Swagger URL for GitBook (for now)
+
+[Swagger UI](https://api.keepnetlabs.com/docs/index.html) loads **`https://api.keepnetlabs.com/swagger/v1/swagger.json`**. That response is **not valid JSON** in current environments (e.g. broken `example` values such as `"enrollmentPayload":}`, and the document does not parse with `JSON.parse`). **GitBook OpenAPI** must **not** use that URL as the spec source.
+
+**Use instead:** this repo’s enriched file — **GitHub raw** or upload **`.gitbook/assets/keepnet-api-spec.json`** after running the enrich script (see below).
+
 ## Updating the Spec
 
-When the API changes, regenerate the spec. From the repo root:
+When the API changes, you need a **valid** OpenAPI JSON (from Keepnet once the live spec is fixed, or an internal export). Then enrich:
 
 ```bash
+# If https://api.keepnetlabs.com/swagger/v1/swagger.json parses again:
 node scripts/enrich-openapi-spec.mjs openapi/keepnet-api-spec.json
+
+# Until then — refresh from the last good file in the repo (re-applies examples/tags):
+node scripts/enrich-openapi-spec.mjs --from=.gitbook/assets/keepnet-api-spec.json .gitbook/assets/keepnet-api-spec.json
+cp .gitbook/assets/keepnet-api-spec.json openapi/keepnet-api-spec.json   # optional: sync copy under openapi/
+```
+
+Validate:
+
+```bash
+node scripts/validate-spec.mjs .gitbook/assets/keepnet-api-spec.json
 ```
 
 ## API Reference menu structure

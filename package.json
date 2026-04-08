@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "openapi:enrich": "node scripts/enrich-openapi-spec.mjs openapi/keepnet-api-spec.json",
+    "openapi:enrich:gitbook": "node scripts/enrich-openapi-spec.mjs --from=.gitbook/assets/keepnet-api-spec.json .gitbook/assets/keepnet-api-spec.json",
     "openapi:validate": "node scripts/validate-spec.mjs openapi/keepnet-api-spec.json",
     "openapi": "npm run openapi:enrich && npm run openapi:validate"
   }

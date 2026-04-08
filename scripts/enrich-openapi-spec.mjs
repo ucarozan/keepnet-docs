@@ -6,8 +6,16 @@
  * Search/list request `example` payloads: minimal `filter` (Condition + SearchInputTextValue: ''),
  * explicit `orderBy` / `ascending`, no `searchInputTextValue: null` (team docs standard; not stored in public repo).
  *
- * Usage: node scripts/enrich-openapi-spec.mjs [output-path]
+ * Usage:
+ *   node scripts/enrich-openapi-spec.mjs [output-path]
+ *   node scripts/enrich-openapi-spec.mjs --from=./swagger-export.json [output-path]
+ *
  * Default output: openapi/keepnet-api-spec.json
+ *
+ * The URL behind https://api.keepnetlabs.com/docs/index.html is usually
+ * https://api.keepnetlabs.com/swagger/v1/swagger.json — that file has been invalid
+ * JSON (e.g. `"enrollmentPayload":}`) and may fail to parse. Use --from= with a
+ * fixed export from Keepnet until the live spec is repaired.
  */
 
 const SPEC_URL = 'https://api.keepnetlabs.com/swagger/v1/swagger.json';
@@ -15,10 +23,49 @@ const DEFAULT_OUTPUT = 'openapi/keepnet-api-spec.json';
 const PARENT_TAG = 'endpoints';
 const API_BASE_URL = 'https://api.keepnetlabs.com';
 
-async function fetchSpec() {
+/** Known broken patterns in generated Swagger (NSwag / backend). */
+function repairSwaggerText(text) {
+  return text.replaceAll('"enrollmentPayload":}', '"enrollmentPayload":{}');
+}
+
+function parseSpecJson(text, sourceLabel) {
+  try {
+    return JSON.parse(text);
+  } catch (e) {
+    throw new Error(
+      `${sourceLabel}: invalid JSON (${e.message}). ` +
+        `If this is the live URL, open an issue with Keepnet or use --from=path/to/swagger.json with a valid export. ` +
+        `Do not point GitBook OpenAPI at ${SPEC_URL} until the file parses.`
+    );
+  }
+}
+
+async function loadSpecFromUrl() {
   const res = await fetch(SPEC_URL);
   if (!res.ok) throw new Error(`Spec fetch failed: ${res.status} ${res.statusText}`);
-  return res.json();
+  const text = repairSwaggerText(await res.text());
+  return parseSpecJson(text, SPEC_URL);
+}
+
+async function loadSpecFromFile(filePath) {
+  const fs = await import('fs');
+  const raw = fs.readFileSync(filePath, 'utf8');
+  const text = repairSwaggerText(raw);
+  return parseSpecJson(text, filePath);
+}
+
+function parseCliArgs() {
+  const argv = process.argv.slice(2);
+  let fromPath = null;
+  const positionals = [];
+  for (const a of argv) {
+    if (a.startsWith('--from=')) fromPath = a.slice(7).trim();
+    else if (a === '--from' || a.startsWith('--')) {
+      throw new Error(`Unknown or incomplete flag: ${a} (use --from=file.json)`);
+    } else positionals.push(a);
+  }
+  const outputPath = positionals[positionals.length - 1] || DEFAULT_OUTPUT;
+  return { fromPath, outputPath };
 }
 
 function collectTagsFromPaths(spec) {
@@ -985,13 +1032,13 @@ function injectRequestExamples(paths) {
 }
 
 async function main() {
-  const outputPath = process.argv[2] || DEFAULT_OUTPUT;
-  const spec = await fetchSpec();
+  const { fromPath, outputPath } = parseCliArgs();
+  const spec = fromPath ? await loadSpecFromFile(fromPath) : await loadSpecFromUrl();
   const enriched = enrichSpec(spec);
   const fs = await import('fs');
   const path = await import('path');
   const dir = path.dirname(outputPath);
-  if (dir) fs.mkdirSync(dir, { recursive: true });
+  if (dir && dir !== '.') fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(outputPath, JSON.stringify(enriched, null, 2), 'utf8');
   console.log(`✓ Enriched spec written to ${outputPath} (${enriched.tags.length} tags)`);
 }

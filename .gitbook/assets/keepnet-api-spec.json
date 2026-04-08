@@ -8597,7 +8597,16 @@
                   },
                   "filter": {
                     "type": "object",
-                    "nullable": true
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
                   }
                 }
               },
@@ -8655,7 +8664,16 @@
                   },
                   "filter": {
                     "type": "object",
-                    "nullable": true
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
                   }
                 }
               },
@@ -8713,7 +8731,16 @@
                   },
                   "filter": {
                     "type": "object",
-                    "nullable": true
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
                   }
                 }
               },
@@ -8771,7 +8798,16 @@
                   },
                   "filter": {
                     "type": "object",
-                    "nullable": true
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
                   }
                 }
               },
@@ -8855,7 +8891,16 @@
                   },
                   "filter": {
                     "type": "object",
-                    "nullable": true
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
                   },
                   "reportAllPages": {
                     "type": "boolean",
@@ -8928,7 +8973,16 @@
                   },
                   "filter": {
                     "type": "object",
-                    "nullable": true
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
                   },
                   "reportAllPages": {
                     "type": "boolean",
@@ -9001,7 +9055,16 @@
                   },
                   "filter": {
                     "type": "object",
-                    "nullable": true
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
                   },
                   "reportAllPages": {
                     "type": "boolean",
@@ -9074,7 +9137,16 @@
                   },
                   "filter": {
                     "type": "object",
-                    "nullable": true
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
                   },
                   "reportAllPages": {
                     "type": "boolean",
@@ -11958,12 +12030,6 @@
                       "SearchInputTextValue": {
                         "type": "string",
                         "example": ""
-                      },
-                      "FilterGroups": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
                       }
                     }
                   },
@@ -11981,19 +12047,7 @@
                 "ascending": false,
                 "filter": {
                   "Condition": "AND",
-                  "SearchInputTextValue": "",
-                  "FilterGroups": [
-                    {
-                      "Condition": "AND",
-                      "FilterItems": [],
-                      "FilterGroups": []
-                    },
-                    {
-                      "Condition": "OR",
-                      "FilterItems": [],
-                      "FilterGroups": []
-                    }
-                  ]
+                  "SearchInputTextValue": ""
                 }
               },
               "examples": {
@@ -12006,19 +12060,7 @@
                     "ascending": false,
                     "filter": {
                       "Condition": "AND",
-                      "SearchInputTextValue": "",
-                      "FilterGroups": [
-                        {
-                          "Condition": "AND",
-                          "FilterItems": [],
-                          "FilterGroups": []
-                        },
-                        {
-                          "Condition": "OR",
-                          "FilterItems": [],
-                          "FilterGroups": []
-                        }
-                      ]
+                      "SearchInputTextValue": ""
                     }
                   }
                 },
@@ -12031,19 +12073,7 @@
                     "ascending": false,
                     "filter": {
                       "Condition": "AND",
-                      "SearchInputTextValue": "",
-                      "FilterGroups": [
-                        {
-                          "Condition": "AND",
-                          "FilterItems": [],
-                          "FilterGroups": []
-                        },
-                        {
-                          "Condition": "OR",
-                          "FilterItems": [],
-                          "FilterGroups": []
-                        }
-                      ]
+                      "SearchInputTextValue": ""
                     },
                     "enrollmentType": "Survey"
                   }
@@ -12087,12 +12117,6 @@
                       "SearchInputTextValue": {
                         "type": "string",
                         "example": ""
-                      },
-                      "FilterGroups": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
                       }
                     }
                   },
@@ -12110,19 +12134,7 @@
                 "ascending": false,
                 "filter": {
                   "Condition": "AND",
-                  "SearchInputTextValue": "",
-                  "FilterGroups": [
-                    {
-                      "Condition": "AND",
-                      "FilterItems": [],
-                      "FilterGroups": []
-                    },
-                    {
-                      "Condition": "OR",
-                      "FilterItems": [],
-                      "FilterGroups": []
-                    }
-                  ]
+                  "SearchInputTextValue": ""
                 }
               },
               "examples": {
@@ -12135,19 +12147,7 @@
                     "ascending": false,
                     "filter": {
                       "Condition": "AND",
-                      "SearchInputTextValue": "",
-                      "FilterGroups": [
-                        {
-                          "Condition": "AND",
-                          "FilterItems": [],
-                          "FilterGroups": []
-                        },
-                        {
-                          "Condition": "OR",
-                          "FilterItems": [],
-                          "FilterGroups": []
-                        }
-                      ]
+                      "SearchInputTextValue": ""
                     }
                   }
                 },
@@ -12160,19 +12160,7 @@
                     "ascending": false,
                     "filter": {
                       "Condition": "AND",
-                      "SearchInputTextValue": "",
-                      "FilterGroups": [
-                        {
-                          "Condition": "AND",
-                          "FilterItems": [],
-                          "FilterGroups": []
-                        },
-                        {
-                          "Condition": "OR",
-                          "FilterItems": [],
-                          "FilterGroups": []
-                        }
-                      ]
+                      "SearchInputTextValue": ""
                     },
                     "enrollmentType": "Survey"
                   }
@@ -12216,12 +12204,6 @@
                       "SearchInputTextValue": {
                         "type": "string",
                         "example": ""
-                      },
-                      "FilterGroups": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
                       }
                     }
                   },
@@ -12239,19 +12221,7 @@
                 "ascending": false,
                 "filter": {
                   "Condition": "AND",
-                  "SearchInputTextValue": "",
-                  "FilterGroups": [
-                    {
-                      "Condition": "AND",
-                      "FilterItems": [],
-                      "FilterGroups": []
-                    },
-                    {
-                      "Condition": "OR",
-                      "FilterItems": [],
-                      "FilterGroups": []
-                    }
-                  ]
+                  "SearchInputTextValue": ""
                 }
               },
               "examples": {
@@ -12264,19 +12234,7 @@
                     "ascending": false,
                     "filter": {
                       "Condition": "AND",
-                      "SearchInputTextValue": "",
-                      "FilterGroups": [
-                        {
-                          "Condition": "AND",
-                          "FilterItems": [],
-                          "FilterGroups": []
-                        },
-                        {
-                          "Condition": "OR",
-                          "FilterItems": [],
-                          "FilterGroups": []
-                        }
-                      ]
+                      "SearchInputTextValue": ""
                     }
                   }
                 },
@@ -12289,19 +12247,7 @@
                     "ascending": false,
                     "filter": {
                       "Condition": "AND",
-                      "SearchInputTextValue": "",
-                      "FilterGroups": [
-                        {
-                          "Condition": "AND",
-                          "FilterItems": [],
-                          "FilterGroups": []
-                        },
-                        {
-                          "Condition": "OR",
-                          "FilterItems": [],
-                          "FilterGroups": []
-                        }
-                      ]
+                      "SearchInputTextValue": ""
                     },
                     "enrollmentType": "Survey"
                   }
@@ -12345,12 +12291,6 @@
                       "SearchInputTextValue": {
                         "type": "string",
                         "example": ""
-                      },
-                      "FilterGroups": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
                       }
                     }
                   },
@@ -12368,19 +12308,7 @@
                 "ascending": false,
                 "filter": {
                   "Condition": "AND",
-                  "SearchInputTextValue": "",
-                  "FilterGroups": [
-                    {
-                      "Condition": "AND",
-                      "FilterItems": [],
-                      "FilterGroups": []
-                    },
-                    {
-                      "Condition": "OR",
-                      "FilterItems": [],
-                      "FilterGroups": []
-                    }
-                  ]
+                  "SearchInputTextValue": ""
                 }
               },
               "examples": {
@@ -12393,19 +12321,7 @@
                     "ascending": false,
                     "filter": {
                       "Condition": "AND",
-                      "SearchInputTextValue": "",
-                      "FilterGroups": [
-                        {
-                          "Condition": "AND",
-                          "FilterItems": [],
-                          "FilterGroups": []
-                        },
-                        {
-                          "Condition": "OR",
-                          "FilterItems": [],
-                          "FilterGroups": []
-                        }
-                      ]
+                      "SearchInputTextValue": ""
                     }
                   }
                 },
@@ -12418,19 +12334,7 @@
                     "ascending": false,
                     "filter": {
                       "Condition": "AND",
-                      "SearchInputTextValue": "",
-                      "FilterGroups": [
-                        {
-                          "Condition": "AND",
-                          "FilterItems": [],
-                          "FilterGroups": []
-                        },
-                        {
-                          "Condition": "OR",
-                          "FilterItems": [],
-                          "FilterGroups": []
-                        }
-                      ]
+                      "SearchInputTextValue": ""
                     },
                     "enrollmentType": "Survey"
                   }
@@ -12857,19 +12761,13 @@
                   "filter": {
                     "type": "object",
                     "properties": {
-                      "condition": {
+                      "Condition": {
                         "type": "string",
-                        "example": "and"
+                        "example": "AND"
                       },
-                      "searchInputTextValue": {
+                      "SearchInputTextValue": {
                         "type": "string",
-                        "nullable": true
-                      },
-                      "filterGroups": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
+                        "example": ""
                       }
                     }
                   },
@@ -12893,9 +12791,8 @@
                 "orderBy": "CreateTime",
                 "ascending": false,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 },
                 "reportAllPages": false,
                 "exportType": "CSV"
@@ -12909,9 +12806,8 @@
                     "orderBy": "CreateTime",
                     "ascending": false,
                     "filter": {
-                      "condition": "and",
-                      "searchInputTextValue": null,
-                      "filterGroups": []
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
                     },
                     "reportAllPages": false,
                     "exportType": "CSV"
@@ -12950,19 +12846,13 @@
                   "filter": {
                     "type": "object",
                     "properties": {
-                      "condition": {
+                      "Condition": {
                         "type": "string",
-                        "example": "and"
+                        "example": "AND"
                       },
-                      "searchInputTextValue": {
+                      "SearchInputTextValue": {
                         "type": "string",
-                        "nullable": true
-                      },
-                      "filterGroups": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
+                        "example": ""
                       }
                     }
                   },
@@ -12986,9 +12876,8 @@
                 "orderBy": "CreateTime",
                 "ascending": false,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 },
                 "reportAllPages": false,
                 "exportType": "CSV"
@@ -13002,9 +12891,8 @@
                     "orderBy": "CreateTime",
                     "ascending": false,
                     "filter": {
-                      "condition": "and",
-                      "searchInputTextValue": null,
-                      "filterGroups": []
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
                     },
                     "reportAllPages": false,
                     "exportType": "CSV"
@@ -13043,19 +12931,13 @@
                   "filter": {
                     "type": "object",
                     "properties": {
-                      "condition": {
+                      "Condition": {
                         "type": "string",
-                        "example": "and"
+                        "example": "AND"
                       },
-                      "searchInputTextValue": {
+                      "SearchInputTextValue": {
                         "type": "string",
-                        "nullable": true
-                      },
-                      "filterGroups": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
+                        "example": ""
                       }
                     }
                   },
@@ -13079,9 +12961,8 @@
                 "orderBy": "CreateTime",
                 "ascending": false,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 },
                 "reportAllPages": false,
                 "exportType": "CSV"
@@ -13095,9 +12976,8 @@
                     "orderBy": "CreateTime",
                     "ascending": false,
                     "filter": {
-                      "condition": "and",
-                      "searchInputTextValue": null,
-                      "filterGroups": []
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
                     },
                     "reportAllPages": false,
                     "exportType": "CSV"
@@ -13136,19 +13016,13 @@
                   "filter": {
                     "type": "object",
                     "properties": {
-                      "condition": {
+                      "Condition": {
                         "type": "string",
-                        "example": "and"
+                        "example": "AND"
                       },
-                      "searchInputTextValue": {
+                      "SearchInputTextValue": {
                         "type": "string",
-                        "nullable": true
-                      },
-                      "filterGroups": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
+                        "example": ""
                       }
                     }
                   },
@@ -13172,9 +13046,8 @@
                 "orderBy": "CreateTime",
                 "ascending": false,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 },
                 "reportAllPages": false,
                 "exportType": "CSV"
@@ -13188,9 +13061,8 @@
                     "orderBy": "CreateTime",
                     "ascending": false,
                     "filter": {
-                      "condition": "and",
-                      "searchInputTextValue": null,
-                      "filterGroups": []
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
                     },
                     "reportAllPages": false,
                     "exportType": "CSV"
@@ -37807,9 +37679,8 @@
                 "orderBy": "Name",
                 "ascending": true,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 }
               }
             },
@@ -37864,9 +37735,8 @@
                 "orderBy": "Name",
                 "ascending": true,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 }
               }
             },
@@ -37921,9 +37791,8 @@
                 "orderBy": "Name",
                 "ascending": true,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 }
               }
             },
@@ -37978,9 +37847,8 @@
                 "orderBy": "Name",
                 "ascending": true,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 }
               }
             }
@@ -39284,24 +39152,18 @@
                   },
                   "ascending": {
                     "type": "boolean",
-                    "example": true
+                    "example": false
                   },
                   "filter": {
                     "type": "object",
                     "properties": {
-                      "condition": {
+                      "Condition": {
                         "type": "string",
-                        "example": "and"
+                        "example": "AND"
                       },
-                      "searchInputTextValue": {
+                      "SearchInputTextValue": {
                         "type": "string",
-                        "nullable": true
-                      },
-                      "filterGroups": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
+                        "example": ""
                       }
                     }
                   }
@@ -39311,11 +39173,10 @@
                 "pageNumber": 1,
                 "pageSize": 20,
                 "orderBy": "Email",
-                "ascending": true,
+                "ascending": false,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 }
               },
               "examples": {
@@ -39325,11 +39186,10 @@
                     "pageNumber": 1,
                     "pageSize": 20,
                     "orderBy": "Email",
-                    "ascending": true,
+                    "ascending": false,
                     "filter": {
-                      "condition": "and",
-                      "searchInputTextValue": null,
-                      "filterGroups": []
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
                     }
                   }
                 }
@@ -39357,24 +39217,18 @@
                   },
                   "ascending": {
                     "type": "boolean",
-                    "example": true
+                    "example": false
                   },
                   "filter": {
                     "type": "object",
                     "properties": {
-                      "condition": {
+                      "Condition": {
                         "type": "string",
-                        "example": "and"
+                        "example": "AND"
                       },
-                      "searchInputTextValue": {
+                      "SearchInputTextValue": {
                         "type": "string",
-                        "nullable": true
-                      },
-                      "filterGroups": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
+                        "example": ""
                       }
                     }
                   }
@@ -39384,11 +39238,10 @@
                 "pageNumber": 1,
                 "pageSize": 20,
                 "orderBy": "Email",
-                "ascending": true,
+                "ascending": false,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 }
               },
               "examples": {
@@ -39398,11 +39251,10 @@
                     "pageNumber": 1,
                     "pageSize": 20,
                     "orderBy": "Email",
-                    "ascending": true,
+                    "ascending": false,
                     "filter": {
-                      "condition": "and",
-                      "searchInputTextValue": null,
-                      "filterGroups": []
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
                     }
                   }
                 }
@@ -39430,24 +39282,18 @@
                   },
                   "ascending": {
                     "type": "boolean",
-                    "example": true
+                    "example": false
                   },
                   "filter": {
                     "type": "object",
                     "properties": {
-                      "condition": {
+                      "Condition": {
                         "type": "string",
-                        "example": "and"
+                        "example": "AND"
                       },
-                      "searchInputTextValue": {
+                      "SearchInputTextValue": {
                         "type": "string",
-                        "nullable": true
-                      },
-                      "filterGroups": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
+                        "example": ""
                       }
                     }
                   }
@@ -39457,11 +39303,10 @@
                 "pageNumber": 1,
                 "pageSize": 20,
                 "orderBy": "Email",
-                "ascending": true,
+                "ascending": false,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 }
               },
               "examples": {
@@ -39471,11 +39316,10 @@
                     "pageNumber": 1,
                     "pageSize": 20,
                     "orderBy": "Email",
-                    "ascending": true,
+                    "ascending": false,
                     "filter": {
-                      "condition": "and",
-                      "searchInputTextValue": null,
-                      "filterGroups": []
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
                     }
                   }
                 }
@@ -39503,24 +39347,18 @@
                   },
                   "ascending": {
                     "type": "boolean",
-                    "example": true
+                    "example": false
                   },
                   "filter": {
                     "type": "object",
                     "properties": {
-                      "condition": {
+                      "Condition": {
                         "type": "string",
-                        "example": "and"
+                        "example": "AND"
                       },
-                      "searchInputTextValue": {
+                      "SearchInputTextValue": {
                         "type": "string",
-                        "nullable": true
-                      },
-                      "filterGroups": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
+                        "example": ""
                       }
                     }
                   }
@@ -39530,11 +39368,10 @@
                 "pageNumber": 1,
                 "pageSize": 20,
                 "orderBy": "Email",
-                "ascending": true,
+                "ascending": false,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 }
               },
               "examples": {
@@ -39544,11 +39381,10 @@
                     "pageNumber": 1,
                     "pageSize": 20,
                     "orderBy": "Email",
-                    "ascending": true,
+                    "ascending": false,
                     "filter": {
-                      "condition": "and",
-                      "searchInputTextValue": null,
-                      "filterGroups": []
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
                     }
                   }
                 }
@@ -40758,9 +40594,8 @@
                 "orderBy": "Name",
                 "ascending": true,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 }
               }
             },
@@ -40815,9 +40650,8 @@
                 "orderBy": "Name",
                 "ascending": true,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 }
               }
             },
@@ -40872,9 +40706,8 @@
                 "orderBy": "Name",
                 "ascending": true,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 }
               }
             },
@@ -40929,9 +40762,8 @@
                 "orderBy": "Name",
                 "ascending": true,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 }
               }
             }
@@ -41963,24 +41795,18 @@
                   },
                   "ascending": {
                     "type": "boolean",
-                    "example": true
+                    "example": false
                   },
                   "filter": {
                     "type": "object",
                     "properties": {
-                      "condition": {
+                      "Condition": {
                         "type": "string",
-                        "example": "and"
+                        "example": "AND"
                       },
-                      "searchInputTextValue": {
+                      "SearchInputTextValue": {
                         "type": "string",
-                        "nullable": true
-                      },
-                      "filterGroups": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
+                        "example": ""
                       }
                     }
                   },
@@ -41995,11 +41821,10 @@
                 "pageNumber": 1,
                 "pageSize": 100,
                 "orderBy": "Email",
-                "ascending": true,
+                "ascending": false,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 }
               },
               "examples": {
@@ -42009,11 +41834,10 @@
                     "pageNumber": 1,
                     "pageSize": 100,
                     "orderBy": "Email",
-                    "ascending": true,
+                    "ascending": false,
                     "filter": {
-                      "condition": "and",
-                      "searchInputTextValue": null,
-                      "filterGroups": []
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
                     }
                   }
                 }
@@ -42044,24 +41868,18 @@
                   },
                   "ascending": {
                     "type": "boolean",
-                    "example": true
+                    "example": false
                   },
                   "filter": {
                     "type": "object",
                     "properties": {
-                      "condition": {
+                      "Condition": {
                         "type": "string",
-                        "example": "and"
+                        "example": "AND"
                       },
-                      "searchInputTextValue": {
+                      "SearchInputTextValue": {
                         "type": "string",
-                        "nullable": true
-                      },
-                      "filterGroups": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
+                        "example": ""
                       }
                     }
                   },
@@ -42076,11 +41894,10 @@
                 "pageNumber": 1,
                 "pageSize": 100,
                 "orderBy": "Email",
-                "ascending": true,
+                "ascending": false,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 }
               },
               "examples": {
@@ -42090,11 +41907,10 @@
                     "pageNumber": 1,
                     "pageSize": 100,
                     "orderBy": "Email",
-                    "ascending": true,
+                    "ascending": false,
                     "filter": {
-                      "condition": "and",
-                      "searchInputTextValue": null,
-                      "filterGroups": []
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
                     }
                   }
                 }
@@ -42125,24 +41941,18 @@
                   },
                   "ascending": {
                     "type": "boolean",
-                    "example": true
+                    "example": false
                   },
                   "filter": {
                     "type": "object",
                     "properties": {
-                      "condition": {
+                      "Condition": {
                         "type": "string",
-                        "example": "and"
+                        "example": "AND"
                       },
-                      "searchInputTextValue": {
+                      "SearchInputTextValue": {
                         "type": "string",
-                        "nullable": true
-                      },
-                      "filterGroups": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
+                        "example": ""
                       }
                     }
                   },
@@ -42157,11 +41967,10 @@
                 "pageNumber": 1,
                 "pageSize": 100,
                 "orderBy": "Email",
-                "ascending": true,
+                "ascending": false,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 }
               },
               "examples": {
@@ -42171,11 +41980,10 @@
                     "pageNumber": 1,
                     "pageSize": 100,
                     "orderBy": "Email",
-                    "ascending": true,
+                    "ascending": false,
                     "filter": {
-                      "condition": "and",
-                      "searchInputTextValue": null,
-                      "filterGroups": []
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
                     }
                   }
                 }
@@ -42206,24 +42014,18 @@
                   },
                   "ascending": {
                     "type": "boolean",
-                    "example": true
+                    "example": false
                   },
                   "filter": {
                     "type": "object",
                     "properties": {
-                      "condition": {
+                      "Condition": {
                         "type": "string",
-                        "example": "and"
+                        "example": "AND"
                       },
-                      "searchInputTextValue": {
+                      "SearchInputTextValue": {
                         "type": "string",
-                        "nullable": true
-                      },
-                      "filterGroups": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
+                        "example": ""
                       }
                     }
                   },
@@ -42238,11 +42040,10 @@
                 "pageNumber": 1,
                 "pageSize": 100,
                 "orderBy": "Email",
-                "ascending": true,
+                "ascending": false,
                 "filter": {
-                  "condition": "and",
-                  "searchInputTextValue": null,
-                  "filterGroups": []
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
                 }
               },
               "examples": {
@@ -42252,11 +42053,10 @@
                     "pageNumber": 1,
                     "pageSize": 100,
                     "orderBy": "Email",
-                    "ascending": true,
+                    "ascending": false,
                     "filter": {
-                      "condition": "and",
-                      "searchInputTextValue": null,
-                      "filterGroups": []
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
                     }
                   }
                 }
