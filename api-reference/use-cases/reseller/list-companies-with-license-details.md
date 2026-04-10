@@ -9,7 +9,7 @@ As a Reseller you can retrieve all companies you manage with license information
 > Retrieves a paginated, filterable, sortable list of all companies with license details. **Test it:** Authorize with Client ID/Secret, then Send — request body is pre-filled (`pageNumber: 1`, `pageSize: 10`, `orderBy: CreateTime`).
 
 {% hint style="warning" %}
-**Automation tools (Zapier, Make, scripts):** This endpoint **requires a non-empty request body**. Do not send an empty body or `{}`. Include at least `pageNumber`, `pageSize`, `orderBy`, `ascending`, and `filter` (use the example in the schema below, or `filter: { "Condition": "AND", "SearchInputTextValue": "" }`). Empty body can cause 500 errors or unreliable results. See [Quickstart → Integration and automation](../quickstart.md#integration-and-automation) for general rules.
+**Automation tools (Zapier, Make, scripts):** This endpoint **requires a non-empty request body**. Do not send an empty body or `{}`. Include at least `pageNumber`, `pageSize`, `orderBy`, `ascending`, and `filter` (use the example in the schema below, or `filter: { "Condition": "AND", "SearchInputTextValue": "" }`). Empty body can cause 500 errors or unreliable results. See [Quickstart → Integration and automation](../../quickstart.md#integration-and-automation) for general rules.
 {% endhint %}
 
 {% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/companies/search" method="post" expanded="true" %}
