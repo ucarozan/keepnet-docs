@@ -22,46 +22,46 @@ The product provides the capability to customize and target a phishing campaign 
 
 ## FAQ
 
-## Q: When executing a phishing simulator attack, you will receive a “test” email prior to execution. Is there a way currently to turn that off?
+### Q: When executing a phishing simulator attack, you will receive a “test” email prior to execution. Is there a way currently to turn that off?
 
 A: Currently, no - it’s mandatory to see the campaign tested before making any mistake. You will receive the email on the Delivery Settings page. The system automatically sends a test email and notifies you about this action
 
-## Q: Some subdomains are banned such as Microsoft.domain.com. Is it possible for these to be unbanned?
+### Q: Some subdomains are banned such as Microsoft.domain.com. Is it possible for these to be unbanned?
 
 A: If the microsoft name is used in a subdomain there are many threat intelligence services, chromium based browsers, URL filtering tools easily detect and block this domain. If you need this, please reach out to [support@keepnetlabs.com](mailto:support@keepnetlabs.com)
 
-## Q: What would be the steps to get additional URLs added to Keepnet’s Phishing Simulator? For example, if you already own several through GoDaddy.
+### Q: What would be the steps to get additional URLs added to Keepnet’s Phishing Simulator? For example, if you already own several through GoDaddy.
 
 A: We can only host domains verified through Cloudflare. Please refer to [this document](settings/dns-services-and-domains.md) for more information.
 
-## Q: How can I combine the Email Template and Landing Page to create a phishing scenario?
+### Q: How can I combine the Email Template and Landing Page to create a phishing scenario?
 
 A: You can easily create a customized phishing scenario to suit your organization. You will find the instructions [here](manage-phishing-scenarios/phishing-scenarios.md).
 
-## Q: Can I delete System Scenarios/Email/Landing Pages?
+### Q: Can I delete System Scenarios/Email/Landing Pages?
 
 A: The System templates can't be deleted by the admin users. The admins are able to delete their custom templates.
 
-## Q: Which tracking domain is used for Attachment type campaigns?
+### Q: Which tracking domain is used for Attachment type campaigns?
 
 A: The platform automatically generates unique tracking links for attached files for each target user for Attachment type campaigns. The domain that is used for the attachment type campaign are dynamics. Please make sure you allow list all the simulation domains.&#x20;
 
-## Q: Emails do not arrive to the target users
+### Q: Emails do not arrive to the target users
 
 A: The delivery status can be checked on Sending Report menu in the campaign report to see if the emails have been delivered successfully to the users. If the emails are successfully delivered, please check your [allow listing settings](../../miscellaneous/allow-listing/).
 
-## Q: Why the domain that is used for the campaign gives a red screen on Google?
+### Q: Why the domain that is used for the campaign gives a red screen on Google?
 
 A: If the campaign contains an HTML page where it contains any words, pictures or links related to Google, Facebook, Twitter, Apple, Microsoft or other such major companies, Google will easily identify it as suspicious and as a result, the user will see red screen after click the link in the simulated phishing email.&#x20;
 
 * Please make sure not to use real words, pictures or links that are related to major companies.
 * The platform offers approximately fifty domains to be used in campaigns. The admin can also try to change the phishing domain to a new one and then launch the campaign with the new domain.
 
-## Q: Why I see phishing email looks not properly in Outlook Desktop App?
+### Q: Why I see phishing email looks not properly in Outlook Desktop App?
 
 A: The Outlook Desktop application doesn't read CSS styles which cause sometimes the email not to look properly as it was seen on the platform. You may contact the support team to check if the phishing email could be optimized.
 
-## Q: How Is the Difficulty Level Determined?
+### Q: How Is the Difficulty Level Determined?
 
 A: The difficulty level of email templates and landing pages is determined based on several factors, including but not limited to:
 
@@ -70,7 +70,7 @@ A: The difficulty level of email templates and landing pages is determined based
 * **Design and Presentation:** For landing pages, the visual design and how closely it mimics legitimate websites play a crucial role. High-quality designs that closely resemble real sites increase the difficulty level.
 * **Context and Relevance:** Attempts that leverage current events, believable scenarios, or target specific job roles can be harder to identify as phishing, especially if they align closely with the recipient's expectations or experiences.
 
-#### Criteria for Difficulty Levels
+**Criteria for Difficulty Levels**
 
 * **Easy:** These attempts may contain obvious signs of phishing, such as poor spelling and grammar, generic greetings, or implausible requests. They are typically easier for users to identify with basic awareness training.
 * **Medium:** These attempts are more sophisticated, with fewer obvious errors and more believable scenarios. They might have email addresses and websites that look like they are real, but if you look closely, you can still find some mistakes.
