@@ -85,3 +85,13 @@ When a message is forwarded as an attachment in the Outlook desktop application,
 To ensure the original message and its headers remain intact, save the message to your desktop first, compress it (we recommend adding it to a .zip archive), and then send the compressed file as an attachment. The Outlook Desktop client will not modify the message within a zip file, ensuring that the complete message with all headers arrives at its destination.
 
 For more details, please refer to the following article: [https://learn.microsoft.com/en-us/archive/blogs/eopfieldnotes/1986](https://learn.microsoft.com/en-us/archive/blogs/eopfieldnotes/1986)
+
+### **Q: How does failure tracking work in attachment-based phishing simulations?**
+
+A: Tracking behaviour depends on the file type:
+
+<table><thead><tr><th width="101.17578125">File Type</th><th>Must Be Opened In</th><th>Action Required to Register Failure</th></tr></thead><tbody><tr><td><code>.docx</code></td><td>Microsoft Word (desktop)</td><td>Click <strong>Enable Editing</strong></td></tr><tr><td><code>.xlsx</code></td><td>Microsoft Excel (desktop)</td><td>Click <strong>Enable Editing</strong></td></tr><tr><td><code>.pptx</code></td><td>Microsoft PowerPoint (desktop)</td><td>Click <strong>Enable Editing</strong></td></tr><tr><td><code>.html</code></td><td>Any modern browser</td><td>Open the file on browser.</td></tr></tbody></table>
+
+For Office files, simply opening the attachment is not enough. Microsoft opens files in **Protected View** by default, which blocks all external connections including Keepnet's tracking link. The failure is only recorded once the user clicks **Enable Editing**.
+
+Attachment tracking is not supported for users opening files via Google Docs, Google Sheets, or Gmail, as these environments strip out external tracking links. For Google Workspace organisations, use Click-Only, Data Submission, or MFA-based simulations instead.
