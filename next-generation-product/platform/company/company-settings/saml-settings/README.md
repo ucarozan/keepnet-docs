@@ -8,7 +8,7 @@ The platform supports single sign-on (SSO) authentication, which enables adminis
 
 ## How to Configure SAML
 
-From the main menu, go to **Company > Company Settings > SAML Settings** and then click the **+ NEW** button to create a new SAML configuration.&#x20;
+From the main menu, go to **Company > Company Settings > SAML Settings** and then click the **+ NEW** button to create a new SAML configuration.
 
 The details of the SAML configuration edit page are provided in the table below.
 
@@ -50,3 +50,7 @@ A: The admin email address must be created in the platform under the Company > S
 ### Q: Does the platform still require MFA with SSO/SAML integration?
 
 **A**: No, MFA is only required for email and password logins. With SSO/SAML, all authentication, including MFA, is managed by the SSO provider.
+
+### **Q: I can't log in to the platform via SSO. Can I bypass it and sign in with my credentials?**
+
+A: Yes. If SSO login fails for any reason, use [https://dash.keepnetlabs.com/login?bypasssaml=true](https://dash.keepnetlabs.com/login?bypasssaml=true) to bypass SSO authentication and sign in with your email and password.
