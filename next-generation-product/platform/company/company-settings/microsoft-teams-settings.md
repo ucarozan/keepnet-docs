@@ -57,13 +57,7 @@ If the app takes longer than 12 hours to deploy, it could be due to a conflictin
 Once the Keepnet Security Awareness App is added to your Microsoft Admin Centre and waited a few hours or 12 hours, you can test it by entering your business email address and clicking the 'SEND TEST MESSAGE' button on the Company > Company Settings > Microsoft Teams Settings page.
 {% endhint %}
 
-## How Training Assignment Looks on the Microsoft Teams App <a href="#how-microsoft-page-view-phishing-reporter-buttons-look-on-outlook-platforms" id="how-microsoft-page-view-phishing-reporter-buttons-look-on-outlook-platforms"></a>
-
-This section visually demonstrates how a training assignment appears on a user's Microsoft Teams application. When an admin assigns a training via Microsoft Teams, enrolled employees receive a notification on their **Activity** page — as shown in the screenshot below.
-
-<figure><img src="../../../../.gitbook/assets/teams_activity_clean.png" alt=""><figcaption></figcaption></figure>
-
-## Additional Settings
+## Additional Microsoft Teams Settings
 
 The following settings can be customised and used within the **Company > Company Settings > Microsoft Teams Settings** page.
 
@@ -86,6 +80,12 @@ If Keepnet releases an integration update for Microsoft Teams, you may see an **
 
 * If you need to remove Keepnet’s permissions from your Microsoft Teams tenant for some reason, click the **Disable** **Access** button.
 * You can re-enable it later by repeating **Enable the integration**.
+
+## How Training Assignment Looks on the Microsoft Teams App <a href="#how-microsoft-page-view-phishing-reporter-buttons-look-on-outlook-platforms" id="how-microsoft-page-view-phishing-reporter-buttons-look-on-outlook-platforms"></a>
+
+This section visually demonstrates how a training assignment appears on a user's Microsoft Teams application. When an admin assigns a training via Microsoft Teams, enrolled employees receive a notification on their **Activity** page — as shown in the screenshot below.
+
+<figure><img src="../../../../.gitbook/assets/teams_activity_clean.png" alt=""><figcaption></figcaption></figure>
 
 ## How to Launch Training via Microsoft Teams
 
