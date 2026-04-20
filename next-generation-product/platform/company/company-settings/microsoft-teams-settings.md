@@ -85,7 +85,7 @@ If Keepnet releases an integration update for Microsoft Teams, you may see an **
 
 This section visually demonstrates how a training assignment appears on a user's Microsoft Teams application. When an admin assigns a training via Microsoft Teams, enrolled employees receive a notification on their **Activity** page — as shown in the screenshot below.
 
-<figure><img src="../../../../.gitbook/assets/teams_activity_clean.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/teams_activity_clean (1).png" alt=""><figcaption></figcaption></figure>
 
 ## How to Launch Training via Microsoft Teams
 
