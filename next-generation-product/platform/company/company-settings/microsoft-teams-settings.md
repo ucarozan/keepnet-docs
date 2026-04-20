@@ -57,6 +57,12 @@ If the app takes longer than 12 hours to deploy, it could be due to a conflictin
 Once the Keepnet Security Awareness App is added to your Microsoft Admin Centre and waited a few hours or 12 hours, you can test it by entering your business email address and clicking the 'SEND TEST MESSAGE' button on the Company > Company Settings > Microsoft Teams Settings page.
 {% endhint %}
 
+## How Training Assignment Looks on the Microsoft Teams App <a href="#how-microsoft-page-view-phishing-reporter-buttons-look-on-outlook-platforms" id="how-microsoft-page-view-phishing-reporter-buttons-look-on-outlook-platforms"></a>
+
+This section visually demonstrates how a training assignment appears on a user's Microsoft Teams application. When an admin assigns a training via Microsoft Teams, enrolled employees receive a notification on their **Activity** page — as shown in the screenshot below.
+
+<figure><img src="../../../../.gitbook/assets/teams_activity_clean.png" alt=""><figcaption></figcaption></figure>
+
 ## Additional Settings
 
 The following settings can be customised and used within the **Company > Company Settings > Microsoft Teams Settings** page.
@@ -65,7 +71,7 @@ The following settings can be customised and used within the **Company > Company
 
 Choose the display name that users will see as the sender in Teams.
 
-1. In **Bot Name**, enter a clear name (e.g., **Keepnet Training Delivery Bot**).&#x20;
+1. In **Bot Name**, enter a clear name (e.g., **Keepnet Training Delivery Bot**).
 2. Click **Update** to save.
 
 {% hint style="warning" %}
