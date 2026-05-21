@@ -19839,24 +19839,276 @@
         "requestBody": {
           "description": "",
           "content": {
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaign.PhishingCampaignSearchRequest"
-              }
-            },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaign.PhishingCampaignSearchRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaign.PhishingCampaignSearchRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaign.PhishingCampaignSearchRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             }
           }
@@ -19929,24 +20181,324 @@
         "requestBody": {
           "description": "",
           "content": {
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
-              }
-            },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "CSV"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                },
+                "reportAllPages": false,
+                "exportType": "CSV"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    },
+                    "reportAllPages": false,
+                    "exportType": "CSV"
+                  }
+                }
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "CSV"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                },
+                "reportAllPages": false,
+                "exportType": "CSV"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    },
+                    "reportAllPages": false,
+                    "exportType": "CSV"
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "CSV"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                },
+                "reportAllPages": false,
+                "exportType": "CSV"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    },
+                    "reportAllPages": false,
+                    "exportType": "CSV"
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "CreateTime"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "CSV"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "CreateTime",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                },
+                "reportAllPages": false,
+                "exportType": "CSV"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "CreateTime",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    },
+                    "reportAllPages": false,
+                    "exportType": "CSV"
+                  }
+                }
               }
             }
           }
@@ -20967,24 +21519,276 @@
         "summary": "Retrieves campaign job's list.",
         "requestBody": {
           "content": {
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobReportRequest"
-              }
-            },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobReportRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Name",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "Name",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Name",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "Name",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobReportRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Name",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "Name",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobReportRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 20
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 20,
+                "orderBy": "Name",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 20,
+                    "orderBy": "Name",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             }
           }
@@ -21011,24 +21815,324 @@
         "summary": "Export phishing campaign job report list",
         "requestBody": {
           "content": {
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
-              }
-            },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "CSV"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Name",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                },
+                "reportAllPages": false,
+                "exportType": "CSV"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Name",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    },
+                    "reportAllPages": false,
+                    "exportType": "CSV"
+                  }
+                }
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "CSV"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Name",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                },
+                "reportAllPages": false,
+                "exportType": "CSV"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Name",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    },
+                    "reportAllPages": false,
+                    "exportType": "CSV"
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "CSV"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Name",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                },
+                "reportAllPages": false,
+                "exportType": "CSV"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Name",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    },
+                    "reportAllPages": false,
+                    "exportType": "CSV"
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "CSV"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Name",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                },
+                "reportAllPages": false,
+                "exportType": "CSV"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Name",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    },
+                    "reportAllPages": false,
+                    "exportType": "CSV"
+                  }
+                }
               }
             }
           }
@@ -21128,24 +22232,276 @@
         "requestBody": {
           "description": "",
           "content": {
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobUsersRequest"
-              }
-            },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobUsersRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobUsersRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobUsersRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             }
           }
@@ -21203,24 +22559,324 @@
         "requestBody": {
           "description": "",
           "content": {
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
-              }
-            },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "CSV"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Name",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                },
+                "reportAllPages": false,
+                "exportType": "CSV"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Name",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    },
+                    "reportAllPages": false,
+                    "exportType": "CSV"
+                  }
+                }
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "CSV"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Name",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                },
+                "reportAllPages": false,
+                "exportType": "CSV"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Name",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    },
+                    "reportAllPages": false,
+                    "exportType": "CSV"
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "CSV"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Name",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                },
+                "reportAllPages": false,
+                "exportType": "CSV"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Name",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    },
+                    "reportAllPages": false,
+                    "exportType": "CSV"
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.Export.ExportRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Name"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  },
+                  "reportAllPages": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "exportType": {
+                    "type": "string",
+                    "example": "CSV"
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Name",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                },
+                "reportAllPages": false,
+                "exportType": "CSV"
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Name",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    },
+                    "reportAllPages": false,
+                    "exportType": "CSV"
+                  }
+                }
               }
             }
           }
@@ -21259,24 +22915,276 @@
         "requestBody": {
           "description": "",
           "content": {
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobUsersRequest"
-              }
-            },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobUsersRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobUsersRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobUsersRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             }
           }
@@ -21371,24 +23279,276 @@
         "requestBody": {
           "description": "",
           "content": {
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobUsersRequest"
-              }
-            },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobUsersRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobUsersRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobUsersRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             }
           }
@@ -21427,24 +23587,276 @@
         "requestBody": {
           "description": "",
           "content": {
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobUsersRequest"
-              }
-            },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobUsersRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobUsersRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KeepnetLabs.DistributedService.Rest.Models.PhishingCampaignJob.SearchPhishingCampaignJobUsersRequest"
+                "type": "object",
+                "required": [
+                  "pageNumber",
+                  "pageSize",
+                  "orderBy",
+                  "ascending",
+                  "filter"
+                ],
+                "properties": {
+                  "pageNumber": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "example": 100
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "example": "Email"
+                  },
+                  "ascending": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "filter": {
+                    "type": "object",
+                    "properties": {
+                      "Condition": {
+                        "type": "string",
+                        "example": "AND"
+                      },
+                      "SearchInputTextValue": {
+                        "type": "string",
+                        "example": ""
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "pageNumber": 1,
+                "pageSize": 100,
+                "orderBy": "Email",
+                "ascending": false,
+                "filter": {
+                  "Condition": "AND",
+                  "SearchInputTextValue": ""
+                }
+              },
+              "examples": {
+                "default": {
+                  "summary": "Minimal (works with Send after Authorize)",
+                  "value": {
+                    "pageNumber": 1,
+                    "pageSize": 100,
+                    "orderBy": "Email",
+                    "ascending": false,
+                    "filter": {
+                      "Condition": "AND",
+                      "SearchInputTextValue": ""
+                    }
+                  }
+                }
               }
             }
           }

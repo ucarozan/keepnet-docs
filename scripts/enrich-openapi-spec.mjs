@@ -391,6 +391,70 @@ const PHISHING_SCENARIO_SEARCH_EXAMPLE = {
   },
 };
 
+/** Phishing campaign search — list campaigns. */
+const PHISHING_CAMPAIGN_SEARCH_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 20,
+  orderBy: 'CreateTime',
+  ascending: false,
+  filter: {
+    Condition: 'AND',
+    SearchInputTextValue: '',
+  },
+};
+
+/** Phishing campaign job report search — orderBy Name (CreateTime returns 400). */
+const PHISHING_CAMPAIGN_JOB_REPORT_SEARCH_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 20,
+  orderBy: 'Name',
+  ascending: false,
+  filter: {
+    Condition: 'AND',
+    SearchInputTextValue: '',
+  },
+};
+
+/** Per-user behavior lists (Opened / Clicked / All / …). */
+const PHISHING_CAMPAIGN_JOB_USERS_SEARCH_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 100,
+  orderBy: 'Email',
+  ascending: false,
+  filter: {
+    Condition: 'AND',
+    SearchInputTextValue: '',
+  },
+};
+
+/** Export job report list or per-behavior export. */
+const PHISHING_CAMPAIGN_JOB_REPORT_EXPORT_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 100,
+  orderBy: 'Name',
+  ascending: false,
+  filter: {
+    Condition: 'AND',
+    SearchInputTextValue: '',
+  },
+  reportAllPages: false,
+  exportType: 'CSV',
+};
+
+/** Phishing campaign search export. */
+const PHISHING_CAMPAIGN_SEARCH_EXPORT_EXAMPLE = {
+  pageNumber: 1,
+  pageSize: 20,
+  orderBy: 'CreateTime',
+  ascending: false,
+  filter: {
+    Condition: 'AND',
+    SearchInputTextValue: '',
+  },
+  reportAllPages: false,
+  exportType: 'CSV',
+};
+
 /** Phishing campaign create — minimal body for Test it. */
 const PHISHING_CAMPAIGN_CREATE_EXAMPLE = {
   name: 'Q1 Phishing Simulation',
@@ -444,6 +508,49 @@ const DEC_TEST_EXAMPLE = {
   tenantId: 'a1b2c3d4-e5f6-7890-abcd-ef1234567890',
   type: 1,
 };
+
+/** Inline schema + example so GitBook Test it does not resolve $ref to [Circular Reference]. */
+function minimalPaginatedSearchContentDef(example, extraProperties = {}) {
+  return {
+    schema: {
+      type: 'object',
+      required: ['pageNumber', 'pageSize', 'orderBy', 'ascending', 'filter'],
+      properties: {
+        pageNumber: { type: 'integer', example: example.pageNumber },
+        pageSize: { type: 'integer', example: example.pageSize },
+        orderBy: { type: 'string', example: example.orderBy },
+        ascending: { type: 'boolean', example: example.ascending },
+        filter: {
+          type: 'object',
+          properties: {
+            Condition: { type: 'string', example: 'AND' },
+            SearchInputTextValue: { type: 'string', example: '' },
+          },
+        },
+        ...extraProperties,
+      },
+    },
+    example,
+    examples: {
+      default: {
+        summary: 'Minimal (works with Send after Authorize)',
+        value: example,
+      },
+    },
+  };
+}
+
+function applyRequestBodyExample(pathItem, method, contentDef) {
+  const op = pathItem?.[method];
+  if (!op?.requestBody?.content) return;
+  const keys = Object.keys(op.requestBody.content);
+  const ordered = ['application/json', ...keys.filter((k) => k !== 'application/json')];
+  const next = {};
+  for (const key of ordered) {
+    next[key] = { ...contentDef };
+  }
+  op.requestBody.content = next;
+}
 
 function injectRequestExamples(paths) {
   const result = { ...paths };
@@ -919,6 +1026,60 @@ function injectRequestExamples(paths) {
     for (const key of Object.keys(result['/api/phishing-simulator/phishing-scenario/search'].post.requestBody.content)) {
       result['/api/phishing-simulator/phishing-scenario/search'].post.requestBody.content[key] = { ...scenarioSearchContent };
     }
+  }
+
+  applyRequestBodyExample(
+    result['/api/phishing-simulator/phishing-campaign/search'],
+    'post',
+    minimalPaginatedSearchContentDef(PHISHING_CAMPAIGN_SEARCH_EXAMPLE)
+  );
+
+  applyRequestBodyExample(
+    result['/api/phishing-simulator/phishing-campaign/search/export'],
+    'post',
+    minimalPaginatedSearchContentDef(PHISHING_CAMPAIGN_SEARCH_EXPORT_EXAMPLE, {
+      reportAllPages: { type: 'boolean', example: false },
+      exportType: { type: 'string', example: 'CSV' },
+    })
+  );
+
+  applyRequestBodyExample(
+    result['/api/phishing-simulator/phishing-campaign-job-report/search'],
+    'post',
+    minimalPaginatedSearchContentDef(PHISHING_CAMPAIGN_JOB_REPORT_SEARCH_EXAMPLE)
+  );
+
+  applyRequestBodyExample(
+    result['/api/phishing-simulator/phishing-campaign-job-report/search/export'],
+    'post',
+    minimalPaginatedSearchContentDef(PHISHING_CAMPAIGN_JOB_REPORT_EXPORT_EXAMPLE, {
+      reportAllPages: { type: 'boolean', example: false },
+      exportType: { type: 'string', example: 'CSV' },
+    })
+  );
+
+  applyRequestBodyExample(
+    result['/api/phishing-simulator/phishing-campaign-job-report/{searchType}/search/{resourceId}/{instanceGroup}'],
+    'post',
+    minimalPaginatedSearchContentDef(PHISHING_CAMPAIGN_JOB_USERS_SEARCH_EXAMPLE)
+  );
+
+  applyRequestBodyExample(
+    result['/api/phishing-simulator/phishing-campaign-job-report/{searchType}/search/export/{resourceId}/{instanceGroup}'],
+    'post',
+    minimalPaginatedSearchContentDef(PHISHING_CAMPAIGN_JOB_REPORT_EXPORT_EXAMPLE, {
+      reportAllPages: { type: 'boolean', example: false },
+      exportType: { type: 'string', example: 'CSV' },
+    })
+  );
+
+  const emailDetailPaths = [
+    '/api/phishing-simulator/phishing-campaign-job-report/search-email-opened/{resourceId}',
+    '/api/phishing-simulator/phishing-campaign-job-report/search-email-clicked/{resourceId}',
+    '/api/phishing-simulator/phishing-campaign-job-report/search-email-submitted/{resourceId}',
+  ];
+  for (const p of emailDetailPaths) {
+    applyRequestBodyExample(result[p], 'post', minimalPaginatedSearchContentDef(PHISHING_CAMPAIGN_JOB_USERS_SEARCH_EXAMPLE));
   }
 
   if (result['/api/phishing-simulator/phishing-campaign']?.post?.requestBody?.content) {
