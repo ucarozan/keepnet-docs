@@ -69,38 +69,52 @@ Returns a paginated list of target users for the campaign job filtered by behavi
 [keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
 {% endopenapi %}
 
-Example: `POST /api/phishing-simulator/phishing-campaign-job-report/Opened/search/xHJe83nmj0W7/1`. Paginate until `pageNumber` reaches `totalNumberOfPages` or `results` is empty.
+Example: `POST /api/phishing-simulator/phishing-campaign-job-report/Opened/search/xHJe83nmj0W7/1`. Paginate until `pageNumber` reaches `totalNumberOfPages` or `results` is empty. From a user row, note **`resourceId`** for the email detail endpoints below.
 
 ***
 
 ## POST /api/phishing-simulator/phishing-campaign-job-report/search-email-opened/{resourceId}
 
-## POST /api/phishing-simulator/phishing-campaign-job-report/search-email-clicked/{resourceId}
+Event-level **opened** detail for one target user. Path **`resourceId`** is the user’s **`resourceId`** from the behavior search above, not `phishingCampaignResourceId`.
 
-## POST /api/phishing-simulator/phishing-campaign-job-report/search-email-submitted/{resourceId}
-
-Event-level detail for **one target user**. Path **`resourceId`** is the user’s **`resourceId`** from a user list row (`Opened` / `Clicked` / `All` search), not `phishingCampaignResourceId`. Using the campaign job ID here returns **404** (`Phishing campaign instance user not found`).
-
-> Search Phishing Campaign User Email Opened / Clicked / Submitted. **Test it:** Set path `resourceId` to a user `resourceId` from the behavior search response; request body is pre-filled.
+> Search Phishing Campaign User Email Opened. **Test it:** Set path `resourceId` from the user list; request body is pre-filled.
 
 {% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/phishing-simulator/phishing-campaign-job-report/search-email-opened/{resourceId}" method="post" expanded="true" %}
 [keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
 {% endopenapi %}
 
+***
+
+## POST /api/phishing-simulator/phishing-campaign-job-report/search-email-clicked/{resourceId}
+
+Event-level **clicked** detail for the same user. Same path **`resourceId`** as the opened endpoint.
+
+> Search Phishing Campaign User Email Clicked. **Test it:** Set path `resourceId` from the user list; request body is pre-filled.
+
 {% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/phishing-simulator/phishing-campaign-job-report/search-email-clicked/{resourceId}" method="post" expanded="true" %}
 [keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
 {% endopenapi %}
+
+***
+
+## POST /api/phishing-simulator/phishing-campaign-job-report/search-email-submitted/{resourceId}
+
+Event-level **submitted** detail for the same user. Same path **`resourceId`** as above. Using the campaign job ID here returns **404** (`Phishing campaign instance user not found`).
+
+> Search Phishing Campaign User Email Submitted. **Test it:** Set path `resourceId` from the user list; request body is pre-filled.
 
 {% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/phishing-simulator/phishing-campaign-job-report/search-email-submitted/{resourceId}" method="post" expanded="true" %}
 [keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
 {% endopenapi %}
 
-### Export job and behavior lists
+***
+
+## Export
 
 * **Export job report list:** `POST /api/phishing-simulator/phishing-campaign-job-report/search/export` — same body shape as job search (see **Endpoints** → **PhishingCampaignJobReport**).
 * **Export per behavior list:** `POST /api/phishing-simulator/phishing-campaign-job-report/{searchType}/search/export/{resourceId}/{instanceGroup}` (for example `Opened` with the same `phishingCampaignResourceId` and `instanceGroup`).
 
-Smishing and quishing have equivalent paths under `smishing-simulator` and `quishing-simulator`.
+Smishing and quishing have equivalent export paths under `smishing-simulator` and `quishing-simulator`.
 
 ***
 
