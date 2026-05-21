@@ -68,4 +68,4 @@ A: No, you can't change the validity period of the token.
 
 ### Q: What is the default token validity period?
 
-A: It is 24hr.
+A: It is 1 hour (3600 seconds). Check `expires_in` in the token response from `POST /connect/token`.
