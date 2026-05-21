@@ -235,7 +235,7 @@ Same flow with a different base path (and the same **`searchType`** / job ID pat
 
 ## Verification
 
-Live checks against `https://api.keepnetlabs.com` (script: `scripts/test-company-phishing-campaign-report-e2e.py`; credentials from `~/.zhc.env`):
+Live checks against `https://api.keepnetlabs.com`:
 
 | Step | HTTP |
 | --- | --- |
