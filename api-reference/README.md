@@ -7,7 +7,7 @@ REST API documentation for the Keepnet platform: Quickstart, use-cases (Reseller
 ## Adding a new use-case
 
 1. **Choose role and sub-group**  
-   Reseller → `use-cases/reseller/`. Company Admin (later) → `use-cases/company/`.  
+   Reseller → `use-cases/reseller/`. Company Admin → `use-cases/company/`.  
    Sub-groups: Companies, Users & groups, Training, Phishing simulation, Reports, Billing.
 
 2. **Create the page**  

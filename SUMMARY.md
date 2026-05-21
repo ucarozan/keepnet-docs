@@ -330,3 +330,6 @@
     * [Get total monthly user count across customers](api-reference/use-cases/reseller/get-total-monthly-user-count-across-customers.md)
     * [List customers with renewals in the next N days](api-reference/use-cases/reseller/list-customers-with-renewals-in-next-n-days.md)
     * [List customers with expired licenses](api-reference/use-cases/reseller/list-customers-with-expired-licenses.md)
+* [Company](api-reference/company/README.md)
+  * [Phishing simulation](api-reference/company/phishing-simulation/README.md)
+    * [Pull phishing campaign user behaviors](api-reference/use-cases/company/pull-phishing-campaign-user-behaviors.md)

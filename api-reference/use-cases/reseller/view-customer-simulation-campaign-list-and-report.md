@@ -93,4 +93,4 @@ Smishing and quishing have equivalent paths under `smishing-simulator` and `quis
 * **401 Unauthorized** — Missing or invalid token. Request a new token via `POST /connect/token`.
 * **404 Not Found** / **400 Bad Request** — Invalid Company ID or campaign/job ID. Verify Company ID from `POST /api/companies/search` and job `resourceId`/`instanceGroup` from the campaign-job-report search; ensure you send `X-KEEPNET-Company-Id` for the customer that owns the campaign.
 
-**Related:** [Scope API requests to a customer →](scope-api-requests-to-customer.md). Endpoint details: see **Endpoints** → **PhishingCampaign**, **PhishingCampaignJobReport** (and equivalent paths under smishing-simulator, quishing-simulator).
+**Related:** [Scope API requests to a customer →](scope-api-requests-to-customer.md). **Company Admin (your own organization):** [Pull phishing campaign user behaviors →](../company/pull-phishing-campaign-user-behaviors.md). Endpoint details: see **Endpoints** → **PhishingCampaign**, **PhishingCampaignJobReport** (and equivalent paths under smishing-simulator, quishing-simulator).
