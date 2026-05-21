@@ -81,7 +81,7 @@ Example: `POST /api/phishing-simulator/phishing-campaign-job-report/Opened/searc
 
 Event-level detail for **one target user**. Path **`resourceId`** is the user’s **`resourceId`** from a user list row (`Opened` / `Clicked` / `All` search), not `phishingCampaignResourceId`. Using the campaign job ID here returns **404** (`Phishing campaign instance user not found`).
 
-> Search Phishing Campaign User Email Opened / Clicked / Submitted. **Test it:** Set path `resourceId` to a user `resourceId` from the behavior search response.
+> Search Phishing Campaign User Email Opened / Clicked / Submitted. **Test it:** Set path `resourceId` to a user `resourceId` from the behavior search response; request body is pre-filled.
 
 {% openapi src="../../../.gitbook/assets/keepnet-api-spec.json" path="/api/phishing-simulator/phishing-campaign-job-report/search-email-opened/{resourceId}" method="post" expanded="true" %}
 [keepnet-api-spec.json](../../../.gitbook/assets/keepnet-api-spec.json)
