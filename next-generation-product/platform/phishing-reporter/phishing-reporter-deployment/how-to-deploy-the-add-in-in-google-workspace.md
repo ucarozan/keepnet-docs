@@ -3,7 +3,7 @@
 This document explains how to deploy **Keepnet's Phishing Reporter** button in Google Workspace to **all employees** or to **specific Organisation Units/Groups**.
 
 {% hint style="warning" %}
-This installation requires a Google Workspace Admin account.&#x20;
+This installation requires a Google Workspace Admin account.
 {% endhint %}
 
 ## Keepnet Phishing Reporter Settings
@@ -18,15 +18,15 @@ This installation requires a Google Workspace Admin account.&#x20;
 To deploy the Phishing Reporter add-in to users in Google Workspace, follow these steps:
 
 * Go to[ script.google.com](http://script.google.com) and click on the **New Project** button.
-* **Enter a name** for your new project (e.g Keepnet Phishing Reporter Button)
-* Open the downloaded Keepnet zip file, **edit the Code.gs** **file**, copy all the code, paste it into the **Code.gs file of the new project,** and click the **Save** button to save the changes.
+* Click "**Untitled** **Document**" in the top-left corner and rename your project (e.g. "Keepnet Phishing Reporter Button").
+* Open the downloaded **Keepnet zip file**, edit the **Code.js** file with your favourite editor (not on a browser), copy all the code, paste it into the **Code.js** file of the new projec&#x74;**,** and click the **Save** button to save the changes.
 * While on the project page, on the left-hand side, click the **Project** **Settings** button, then enable the **'Show 'appsscript.json' manifest file in editor'** option under the **General Settings** tab.
 * Open the downloaded Keepnet zip file, **edit the Appscript.json** **file**, copy all the code, return to the **Editor** page, paste it into the **Appsscript.json file of the new project**, and click the **Save** button to save the changes.
 
 ### Step 2: Create Project
 
-* Go to [console.cloud.google.com](https://console.cloud.google.com/) and create **a New Project**.&#x20;
-* **Name your project** (e.g Keepnet Phishing Reporter Button) and select the location. Then click on **Create** to start your project.&#x20;
+* Go to [console.cloud.google.com](https://console.cloud.google.com/) and create **a New Project**.
+* **Name your project** (e.g Keepnet Phishing Reporter Button) and select the location. Then click on **Create** to start your project.
 * Go to the **APIs and Services** page. Open the **OAuth content screen** page from the left menu and click the **Get Started** button.
 * **Step 1: App Information**, please fill in the following fields, then click **Next**.
   * **App Name:** Enter a name (e.g Keepnet Phishing Reporter Button)
@@ -40,7 +40,7 @@ To deploy the Phishing Reporter add-in to users in Google Workspace, follow thes
 * While you are on the **OAuth Consent Screen** page, click the **Branding** option on the left menu.
 * Fill in the required fields below.
   * **App Name:** Enter a name (e.g Keepnet Phishing Reporter Button)
-  * **User Support Email:** Select an email account that is listed on this option.&#x20;
+  * **User Support Email:** Select an email account that is listed on this option.
   * **App Logo:** You can upload your company logo or use Keepnet's default logo; see the attachment below.
   * **Developer Contact Information:** Add your email address or the security team's email address.
 * Click the **Save** button to apply changes.
@@ -88,7 +88,7 @@ The add-in will appear on your Gmail account shortly. You can remove the add-in 
   * **App Details:** Extend this option and follow the steps below.
     * **Language:** Select a language such as **English**.
     * **Application Name:** Keepnet Phishing Reporter Button
-    * **Short Description:** Keepnet Phishing Reporter helps you to report suspicious emails to the security team.&#x20;
+    * **Short Description:** Keepnet Phishing Reporter helps you to report suspicious emails to the security team.
     * **Detailed Description:** Keepnet Phishing Reporter helps you to report suspicious emails to the security team for automated or manual analysis. Thank you for reporting suspicious emails to protect our organization against email-based attacks.
     * Click the **Done** button.
   * **Pricing:** Select the **Paid** option.
@@ -108,14 +108,14 @@ Default Phishing Reporter Add-In Logos
 
 ### Step 7: Deploy Add-in
 
-Please follow the following steps to deploy the add-in to your target users.&#x20;
+Please follow the following steps to deploy the add-in to your target users.
 
-* To deploy the add-in, go to [mail.google.com](https://mail.google.com/) and click on the **Google Apps** icon in the top right-hand corner of the screen.&#x20;
-* Scroll down to [**More from Google Workspace Marketplace**](https://workspace.google.com/u/1/marketplace) and click on it.&#x20;
+* To deploy the add-in, go to [mail.google.com](https://mail.google.com/) and click on the **Google Apps** icon in the top right-hand corner of the screen.
+* Scroll down to [**More from Google Workspace Marketplace**](https://workspace.google.com/u/1/marketplace) and click on it.
 * Click **Internal Apps** and find the add-in. If you don't see the add-in, wait a few minutes for it to appear.
-* Click the **Admin Install** button to start the deployment process.&#x20;
+* Click the **Admin Install** button to start the deployment process.
 * Click **Continue** to start the distribution of the reporter button. You can deploy the add-in to the organisation as a whole or to specific groups/organisation units.
-* Accept the required permissions to complete the deployment.&#x20;
+* Accept the required permissions to complete the deployment.
 
 {% hint style="warning" %}
 It may take up to 24 hours for this app to be installed for your entire Google Workspace domain or organisational unit.
@@ -126,7 +126,7 @@ It may take up to 24 hours for this app to be installed for your entire Google W
 If you wish to uninstall the Keepnet Phishing Reporter button from all users' inboxes, please follow the steps below.
 
 * Go to Google **Admin > Apps > Google Workspace Marketplace apps >** [App list](https://admin.google.com/u/3/ac/apps/gmail/marketplace/domaininstall) on the left menu.
-* Click on the **Phishing Reporter** add-in you want to uninstall.&#x20;
+* Click on the **Phishing Reporter** add-in you want to uninstall.
 * Click the **Delete** **App** to complete the process.
 
 {% hint style="warning" %}
