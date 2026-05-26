@@ -4,15 +4,13 @@ Notification Templates are pre-configured Email, DEC and Microsoft Teams types o
 
 ## Notification Templates Page
 
-You can preview, duplicate, make default, edit, or delete any notification templates at the **Company > Company Settings > Notification Templates** page.
+The **Notification Templates** page, accessible at **Company > Company Settings > Notification Templates**, lists all templates configured for your organization. From here, you can preview, duplicate, set as default, edit, or delete any template.
 
 <table><thead><tr><th width="169"></th><th width="579.1428571428571"></th></tr></thead><tbody><tr><td>Template Name</td><td>The name assigned to the notification template.</td></tr><tr><td>Category</td><td>The product category the template belongs to, indicating which platform module uses it.</td></tr><tr><td>Template Type</td><td>The type of notification the template delivers within the selected product.</td></tr><tr><td>Subject</td><td>The subject line of the notification email as it appears to recipients.</td></tr><tr><td>Languages</td><td>The language variants configured for the template. Admins can add multiple languages using the localization feature so the email is delivered in each recipient's preferred language.</td></tr><tr><td>Tags</td><td>Custom labels assigned to the template for easier filtering and discovery on the Notification Templates page.</td></tr><tr><td>Date Created</td><td>The date and time the template was created.</td></tr><tr><td>Created By</td><td>The name of the company that created the template.</td></tr><tr><td>Available For</td><td>The number of companies with access to this template.</td></tr><tr><td>Actions</td><td>Options available for the template: edit, preview, duplicate, set as default, or delete.</td></tr></tbody></table>
 
 ## **How to Create a Notification Template**
 
-Click on the **+ NEW** button to create a notification template on the notification template page.
-
-The components of the **Notification Templates** page are explained in the table below.
+Notification templates can be created from scratch using the **+ NEW** button on the Notification Templates page. Each template requires a name, type, delivery method, and email content — the fields are described in the table below.
 
 <table data-header-hidden><thead><tr><th width="150"></th><th width="581.1428571428571"></th></tr></thead><tbody><tr><td>Template Name</td><td>The name assigned to the notification template.</td></tr><tr><td>Template Type</td><td>The type of notification the template delivers within the selected product, either Email or Microsoft Teams can be selected.</td></tr><tr><td>Email Delivery</td><td>The <a href="smtp-settings.md">SMTP</a> or <a href="direct-email-creation/">DEC</a> configuration through which the notification email will be sent.</td></tr><tr><td>Tags</td><td>Custom labels assigned to the template for easier filtering and discovery on the Notification Templates page.</td></tr><tr><td>Make Available For</td><td>This option is valid only for users with Reseller permissions. Specify the companies or company groups that will have access to the template.</td></tr><tr><td>Email Template</td><td><ul><li><strong>Subject:</strong> The subject line the recipient sees in their inbox.</li><li><strong>From Name:</strong> The sender name displayed to the recipient.</li><li><strong>From Email:</strong> The sender email address displayed to the recipient.</li><li><strong>Email Template:</strong> The body content of the notification email.</li></ul></td></tr></tbody></table>
 
@@ -33,7 +31,7 @@ The **Make Default** option designates which template the platform will use when
 The **Localize** feature allows admins to create language-specific versions of a notification template. When a target user has a **Preferred Language** configured in their profile, the platform automatically delivers the notification email in that language. Users without a Preferred Language, or whose language does not match any localized template, receive the email in the **company's default language.**
 
 {% hint style="info" %}
-**Prerequisite:** Target users must have a **Preferred Language** set in their profile for this feature to work. To learn how to configure this, see [Adding Target Users](https://doc.keepnetlabs.com/next-generation-product/platform/awareness-educator/pages/WpvNbKjn8eIuEJrWCOjZ#id-2.-adding-target-users-manually).
+**Prerequisite:** Target users must have a **Preferred Language** set in their profile for this feature to work. To learn how to configure this, see [Adding Target Users](../target-users.md#id-2.-adding-target-users-manually).
 {% endhint %}
 
 For the full step-by-step localization guide — including which templates to localize, how to set them as default, and how to test the feature — see [**How to Localize Training Notification Templates**](https://doc.keepnetlabs.com/next-generation-product/platform/awareness-educator/training-library#how-to-localize-training-notification-templates).
