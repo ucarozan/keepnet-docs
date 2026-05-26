@@ -1,6 +1,6 @@
 # Notification Templates
 
-Notification Templates are used by the platform to send email messages to users for a variety of purposes. You can create, edit, and delete the templates provided to customize delivery according to your needs and preferences.
+Notification Templates are pre-configured Email, DEC and Microsoft Teams types of templates that the platform uses to communicate with users (employees, system admins) across a range of scenarios — from training enrollments and reminders to security alerts and investigation updates. Admins can create, edit, duplicate, and delete notification templates, configure delivery via SMTP or Direct Email Creation, and localize content so each recipient receives notifications in their preferred language.
 
 ## Notification Templates Page
 
