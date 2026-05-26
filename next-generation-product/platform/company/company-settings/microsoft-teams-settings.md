@@ -123,3 +123,7 @@ A: No. It adds Microsoft Teams as an additional training-delivery channel.
 ### **Q: Can I limit which users receive Teams messages?**
 
 A: Yes. You control the target groups when launching or scheduling a training. Please create target groups for your employees, and launch the training to those groups via Microsoft Teams.
+
+### **Q: Can I Add My Company Logo to the Microsoft Teams Notifications?**
+
+A: Yes. To use a customized Teams notification template with your company branding, navigate to **Company > Company Settings > Notification Templates**. Search for the relevant Teams template (e.g. _Teams Enrollment Notification_, _Teams Learning Path Enrollment_), open it to customize, and mark it as default. Once set as default, the system will automatically use your customized template — including your company logo — for all outgoing Microsoft Teams notifications.
