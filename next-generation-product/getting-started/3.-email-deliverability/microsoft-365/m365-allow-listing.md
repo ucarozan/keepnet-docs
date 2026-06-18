@@ -19,7 +19,7 @@ To complete this procedure, you must have security administrator privileges with
 3. Click the **Policies & rules** item on the left sidebar menu.
 4. Go to **Threat policies > Advanced delivery**.
 5. Click the **Phishing simulations** tab and click **Edit**.
-6. Add the **IP address** to **Sending IP** section**.**
+6. Add the **IP address** to **Sending IP** section\*\*.\*\*
 7. Add the **Domain** address (also known as the **MAIL** **FROM** address) used in the phishing campaign into the **Domains** section.
 8. Add the **phishing domains** [here](../../../miscellaneous/allow-listing/allow-listing-in-other-security-solutions.md#whitelisting-platform-addresses) by using **\*.domain.com/\*** wildcard syntax to **Simulation URLs to allow** section.
 9. Click **Save** to complete the process.
@@ -42,7 +42,7 @@ To complete this procedure, you must have security administrator privileges with
 
 ## How to Allow List Using the Spam Filter Bypass Feature in Office 365
 
-The below instructions will show you how to allow list the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by allow listing the **Sender** **IPs** in the O365 environment in the **Bypass Spam Filter f**eature.
+The below instructions will show you how to allow list the emails such as notification, training, or phishing simulation emails that will be sent from the platform to users by allow listing the **Sender** **IPs** in the O365 environment in the **Bypass Spam Filter** feature.
 
 {% hint style="info" %}
 To complete this procedure, you must have security administrator privileges with the Microsoft Security & Compliance Center or be a Microsoft Exchange Online Organization Management administrator group member.
@@ -50,7 +50,7 @@ To complete this procedure, you must have security administrator privileges with
 
 1. Sign in to the [admin](https://admin.microsoft.com/AdminPortal/) portal.
 2. Go to **Exchange > Mail flow > Rules** and click the **+ Add a rule** butto&#x6E;**.**
-3. Select the **Bypass Spam Filter** option.
+3. Click the **"Create a New rule"** option.
 4. Enter a name for your allow listing rule.
 5. Scroll down to the **"Apply this rule if..."** section and select "**The** **sender"** and then select **"IP address is in any of these ranges or exactly matches"**
    1. To the right you'll see **"Enter text...",** click **"Enter Words"** to bring up a new window labeled **specify** **IP** **address** **ranges,** and enter the **IPs** listed [here](../../../miscellaneous/allow-listing/#ip-addresses-and-domains-to-allow) and then click the **Save** button.
