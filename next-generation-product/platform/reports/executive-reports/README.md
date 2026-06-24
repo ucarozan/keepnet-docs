@@ -65,11 +65,11 @@ The gauge uses a **0–5 scale** with maturity levels from **At Risk** (0–1) t
 
 This graphic shows how well the training program is being completed across the company. You can see different types of charts representing the percentage of users, as well as the various stages of training: Completed, In Progress, and Incomplete.
 
-<figure><img src="../../../../.gitbook/assets/image10 (1).png" alt="Training completion status — donut or pie chart (Completed, In Progress, Incomplete)."><figcaption><p>Training completion status — donut or pie chart (Completed, In Progress, Incomplete).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image62.png" alt="Training completion status — donut or pie chart (Completed, In Progress, Incomplete)."><figcaption><p>Training completion status — donut or pie chart (Completed, In Progress, Incomplete).</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image15 (1).png" alt="Training completion — alternate chart view."><figcaption><p>Training completion — alternate chart view.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image63.png" alt="Training completion — alternate chart view."><figcaption><p>Training completion — alternate chart view.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image10 (2).png" alt="Training completion — bar or additional chart."><figcaption><p>Training completion — bar or additional chart.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image62.png" alt="Training completion — bar or additional chart."><figcaption><p>Training completion — bar or additional chart.</p></figcaption></figure>
 
 This uses donut, pie, or bar chart styles to show users' training status across the company.
 
@@ -145,9 +145,9 @@ The benefit of using this graphic is that it provides a clear and actionable ove
 
 This graphic displays the proportion of users who have been included in phishing simulations versus those who have not. It can be a pie chart or a bar chart, both illustrating the same data. The big blue section represents the simulated users, while the small yellow section represents the non-simulated users.
 
-<figure><img src="../../../../.gitbook/assets/image2 (2).png" alt="Simulation Coverage — simulated vs non-simulated users (chart 1)."><figcaption><p>Simulation Coverage — simulated vs non-simulated users (chart 1).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s.png" alt="Simulation Coverage — simulated vs non-simulated users (chart 1)."><figcaption><p>Simulation Coverage — simulated vs non-simulated users (chart 1).</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image18.png" alt="Simulation Coverage — simulated vs non-simulated users (chart 2)."><figcaption><p>Simulation Coverage — simulated vs non-simulated users (chart 2).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s1 (3).png" alt="Simulation Coverage — simulated vs non-simulated users (chart 2)."><figcaption><p>Simulation Coverage — simulated vs non-simulated users (chart 2).</p></figcaption></figure>
 
 This chart is important because it highlights the extent of coverage your phishing simulation program has within your organization.
 
@@ -157,9 +157,9 @@ The benefit of using this graphic is that it provides a clear visual representat
 
 This graphic shows the percentage of users who have repeatedly fallen for phishing simulations, defined here as having failed at least twice. It can be in different visualizations—a stacked bar chart and a pie chart—that represent the same data. The red portion represents repeat offenders, while the blue portion shows all simulated users.
 
-<figure><img src="../../../../.gitbook/assets/image13 (4).png" alt="Repeat Offenders (Threshold: 2) — stacked bar chart."><figcaption><p>Repeat Offenders (Threshold: 2) — stacked bar chart.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image13 (2).png" alt="Repeat Offenders (Threshold: 2) — stacked bar chart."><figcaption><p>Repeat Offenders (Threshold: 2) — stacked bar chart.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image14 (3).png" alt="Repeat Offenders — pie chart view."><figcaption><p>Repeat Offenders — pie chart view.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image14 (1).png" alt="Repeat Offenders — pie chart view."><figcaption><p>Repeat Offenders — pie chart view.</p></figcaption></figure>
 
 This chart is important because it highlights a specific group of users within your organization who are at higher risk due to their repeated failure to recognize phishing attempts. The small percentage of repeat offenders compared to the total number of simulated users indicates how many individuals might require additional training or intervention to improve their ability to detect phishing threats.
 
@@ -246,11 +246,11 @@ The benefit of using this graphic is that it provides a clear, time-based overvi
 
 These graphic presents the reporting rates of suspicious emails across different categories. It can be a bar chart, or a pie chart that display the same data. The categories include "Undetected," "Malicious," "Phishing," and "Simulation."
 
-<figure><img src="../../../../.gitbook/assets/image3 (3).png" alt="Total Reported Suspicious Emails — bar chart by category."><figcaption><p>Total Reported Suspicious Emails — bar chart by category.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image3 (1).png" alt="Total Reported Suspicious Emails — bar chart by category."><figcaption><p>Total Reported Suspicious Emails — bar chart by category.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image12 (3).png" alt="Total Reported Suspicious Emails — pie chart."><figcaption><p>Total Reported Suspicious Emails — pie chart.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image12 (1).png" alt="Total Reported Suspicious Emails — pie chart."><figcaption><p>Total Reported Suspicious Emails — pie chart.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image17 (1).png" alt="Total Reported Suspicious Emails — alternate chart."><figcaption><p>Total Reported Suspicious Emails — alternate chart.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image17.png" alt="Total Reported Suspicious Emails — alternate chart."><figcaption><p>Total Reported Suspicious Emails — alternate chart.</p></figcaption></figure>
 
 This chart is important because it provides a clear overview of how well users are identifying and reporting different types of suspicious emails. The higher reporting rates for phishing and simulation emails suggest that users are generally aware and responsive to potential threats. However, the presence of undetected emails highlights a potential area for improvement in user awareness or training.
 

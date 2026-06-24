@@ -14,7 +14,7 @@
 
 Go to **Company > Company Settings > Direct Email Creation** from the main menu. Click on **+ NEW** to create a direct email creation setting.
 
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FXriRwZsAJwPZfjBHZc8B%2FDEC%20step%201.gif?alt=media&#x26;token=cb569e01-98e0-493c-bf3a-189156e51641" alt="Direct Email Creation — Company Settings, + NEW, create DEC setting."><figcaption>Direct Email Creation — Company Settings, + NEW, create DEC setting.</figcaption></figure>
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FXriRwZsAJwPZfjBHZc8B%2FDEC%20step%201.gif?alt=media&#x26;token=cb569e01-98e0-493c-bf3a-189156e51641" alt="Direct Email Creation — Company Settings, + NEW, create DEC setting."><figcaption><p>Direct Email Creation — Company Settings, + NEW, create DEC setting.</p></figcaption></figure>
 
 #### **Step 2.**
 
@@ -34,16 +34,16 @@ Name your DEC, select which domains you will send phishing simulation emails to 
 * **Message:** Enter a message.
 * Click **SAVE** to create configuration settings.
 
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FdThslnbhmjb5z08eWaQx%2Fdec%20step%202.gif?alt=media&#x26;token=9661f21c-7a4e-47b9-9a47-4339270dce6e" alt="Connect Account and DEC configuration — name, domains, test email."><figcaption>Connect Account and DEC configuration — name, domains, test email.</figcaption></figure>
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2FdThslnbhmjb5z08eWaQx%2Fdec%20step%202.gif?alt=media&#x26;token=9661f21c-7a4e-47b9-9a47-4339270dce6e" alt="Connect Account and DEC configuration — name, domains, test email."><figcaption><p>Connect Account and DEC configuration — name, domains, test email.</p></figcaption></figure>
 
 #### **Step 4.**
 
 Make Direct Email Creation your **Default** Delivery Method - this will save you lots of time and remove delivery errors when you start sending phishing campaigns.
 
-<figure><img src="../../../../.gitbook/assets/default dec.gif" alt="Set Direct Email Creation as default delivery method."><figcaption>Set Direct Email Creation as default delivery method.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/default dec.gif" alt="Set Direct Email Creation as default delivery method."><figcaption><p>Set Direct Email Creation as default delivery method.</p></figcaption></figure>
 
 {% hint style="info" %}
-**Top Tip:** Make sure to select **Direct Email Creation** in your **Email Delivery** settings when running a new phishing campaign.&#x20;
+**Top Tip:** Make sure to select **Direct Email Creation** in your **Email Delivery** settings when running a new phishing campaign.
 
 <img src="../../../../.gitbook/assets/how to configure dec.gif" alt="How to configure DEC in Email Delivery settings." data-size="original">
 {% endhint %}
@@ -56,9 +56,9 @@ The following permissions are required for customers using the **Microsoft** **3
 
 <table data-header-hidden><thead><tr><th width="189"></th><th></th></tr></thead><tbody><tr><td>Read and write all applications</td><td>It is used only when the customer uses a custom domain instead of dash.keepnetlabs.com to access the platform. This ensures that the customer can successfully configure the DEC settings on the platform while using the custom whitelabeled domain.</td></tr><tr><td>Read domains</td><td>It is used to fetch the domains that the customer owns in Microsoft 365 and allows the customer to select the relevant domains so the platform can create simulation emails in the user's inbox under the selected domains.</td></tr><tr><td>Read and write mail in all mailboxes</td><td>It is used to create a simulation email in the user's inbox. Please see following screenshot for more information about this permission</td></tr><tr><td>Read all users' full profiles</td><td>It is used to read the user's profile information, retrieve email account details (e.g., email address), and switch to the user's profile to create simulation emails in their inbox.</td></tr><tr><td>Sign in and read user profile<br></td><td>It is used to read basic company information of the signed-in user who grants permission.</td></tr></tbody></table>
 
-Microsoft bundles permissions together. The following Microsoft screenshot shows a '**Mail**' permission group. There's no separate **Write** permission — only the **Mail.ReadWrite** permission, which handles **Write** **actions**.&#x20;
+Microsoft bundles permissions together. The following Microsoft screenshot shows a '**Mail**' permission group. There's no separate **Write** permission — only the **Mail.ReadWrite** permission, which handles **Write** **actions**.
 
-<figure><img src="../../../../.gitbook/assets/mail.readwrite.png" alt="Microsoft Mail permission group — Mail.ReadWrite for DEC."><figcaption>Microsoft Mail permission group — Mail.ReadWrite for DEC.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/mail.readwrite.png" alt="Microsoft Mail permission group — Mail.ReadWrite for DEC."><figcaption><p>Microsoft Mail permission group — Mail.ReadWrite for DEC.</p></figcaption></figure>
 
 The following permissions are required for customers using the **Microsoft** **Exchange** **Online** email server.
 
@@ -80,7 +80,7 @@ To view the activity of the DEC application created by the platform and confirm 
 
 In the logs, you should see activities such as **"Created mailbox item"**, confirming the application's behavior. For example:
 
-<figure><img src="../../../../.gitbook/assets/unnamed (2).png" alt="Microsoft Compliance Portal — audit log Created mailbox item for DEC app."><figcaption>Microsoft Compliance Portal — audit log Created mailbox item for DEC app.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/unnamed (1).png" alt="Microsoft Compliance Portal — audit log Created mailbox item for DEC app."><figcaption><p>Microsoft Compliance Portal — audit log Created mailbox item for DEC app.</p></figcaption></figure>
 
 This log indicates that the application is only creating mailbox items and not accessing or reading mailboxes.
 
@@ -116,9 +116,9 @@ A: You can check and make sure you selected the related domain addresses in the 
 
 ### Q: What are the security risks if we authorize the DEC feature on the O365 server?
 
-A: Authorizing the DEC feature on the O365 server doesn’t involve any potential security considerations. Keepnet provides encryption to secure data and prevent unauthorized access to keep your data safe.&#x20;
+A: Authorizing the DEC feature on the O365 server doesn’t involve any potential security considerations. Keepnet provides encryption to secure data and prevent unauthorized access to keep your data safe.
 
-First, we encrypt data and apply it to our [cryptography policy](https://doc.keepnetlabs.com/resources/compliance#cryptography-policy) and [data protection policy](https://doc.keepnetlabs.com/resources/compliance#data-protection-policy) to make data secure and prevent potential vulnerabilities.&#x20;
+First, we encrypt data and apply it to our [cryptography policy](https://doc.keepnetlabs.com/resources/compliance#cryptography-policy) and [data protection policy](https://doc.keepnetlabs.com/resources/compliance#data-protection-policy) to make data secure and prevent potential vulnerabilities.
 
 Furthermore, we have a strict access policy and do not allow unauthorized gain access to sensitive data; please see our access policy [here](https://doc.keepnetlabs.com/resources/compliance#access-management-procedure).
 

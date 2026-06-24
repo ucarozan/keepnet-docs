@@ -3,7 +3,7 @@
 This page explains how to use the **Direct** **Email** **Creation** feature in **Microsoft 365**. Please follow the steps below to set up DEC settings within your Microsoft 365.
 
 {% hint style="info" %}
-The Microsoft 365 settings section requires global administrator privileges.&#x20;
+The Microsoft 365 settings section requires global administrator privileges.
 {% endhint %}
 
 ## Connect Your O365 with the DEC App
@@ -30,7 +30,7 @@ The configuration will be created if the requested permissions are established s
 
 ## How to Launch Phishing Campaign by DEC Settings
 
-Go to **Phishing Simulator > Campaign Manager** from the main menu. Click on **+ NEW** to create a phishing campaign and launch it to your target users.&#x20;
+Go to **Phishing Simulator > Campaign Manager** from the main menu. Click on **+ NEW** to create a phishing campaign and launch it to your target users.
 
 * Please complete the first, second, and third sections step by step. For more information about how to use each menu, see [here](../../../phishing-simulator/phishing-campaign-manager.md).
 * When you get to the **Delivery** **Settings** page, inside of the **Email** **Delivery** field, select your **DEC** **settings.**
@@ -45,9 +45,9 @@ The following permissions are required for customers using the **Microsoft** **3
 
 <table data-header-hidden><thead><tr><th width="189"></th><th></th></tr></thead><tbody><tr><td>Read domains</td><td>It is used to fetch the domains that the customer owns in Microsoft 365 and allows the customer to select the relevant domains so the platform can create simulation emails in the user's inbox under the selected domains.</td></tr><tr><td>Read and write mail in all mailboxes</td><td>It is used to create a simulation email in the user's inbox. Please see following screenshot for more information about this permission</td></tr><tr><td>Read all users' full profiles</td><td>It is used to read the user's profile information, retrieve email account details (e.g., email address), and switch to the user's profile to create simulation emails in their inbox.</td></tr><tr><td>Sign in and read user profile<br></td><td>It is used to read basic company information of the signed-in user who grants permission.</td></tr></tbody></table>
 
-Microsoft bundles permissions together. The following Microsoft screenshot shows a '**Mail**' permission group. There's no separate **Write** permission — only the **Mail.ReadWrite** permission, which handles **Write** **actions**.&#x20;
+Microsoft bundles permissions together. The following Microsoft screenshot shows a '**Mail**' permission group. There's no separate **Write** permission — only the **Mail.ReadWrite** permission, which handles **Write** **actions**.
 
-<figure><img src="../../../../../.gitbook/assets/mail.readwrite.png" alt="Microsoft permission group — Mail.ReadWrite for DEC."><figcaption>Microsoft permission group — Mail.ReadWrite for DEC.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/mail.readwrite.png" alt="Microsoft permission group — Mail.ReadWrite for DEC."><figcaption><p>Microsoft permission group — Mail.ReadWrite for DEC.</p></figcaption></figure>
 
 The following permissions are required for customers using the **Microsoft** **Exchange** **Online** email server.
 
@@ -73,7 +73,7 @@ To view the activity of the DEC application created by the platform and confirm 
 
 In the logs, you should see activities such as **"Created mailbox item"**, confirming the application's behavior. For example:
 
-<figure><img src="../../../../../.gitbook/assets/unnamed (2).png" alt="Microsoft Compliance Portal — audit log showing Created mailbox item for DEC app."><figcaption>Microsoft Compliance Portal — audit log showing "Created mailbox item" for DEC app.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/unnamed (1).png" alt="Microsoft Compliance Portal — audit log showing Created mailbox item for DEC app."><figcaption><p>Microsoft Compliance Portal — audit log showing "Created mailbox item" for DEC app.</p></figcaption></figure>
 
 This log indicates that the application is only creating mailbox items and not accessing or reading mailboxes.
 
@@ -107,13 +107,12 @@ A: You can check and make sure you selected the related domain addresses in the 
 
 ### Q: What are the security risks if we authorize the DEC feature on the O365 server?
 
-A: Authorizing the DEC feature on the O365 server doesn’t involve any potential security considerations. Keepnet Labs provides encryption to secure data and prevent unauthorized access to keep your data safe.&#x20;
+A: Authorizing the DEC feature on the O365 server doesn’t involve any potential security considerations. Keepnet Labs provides encryption to secure data and prevent unauthorized access to keep your data safe.
 
-First, we encrypt data and apply it to our [cryptography policy](https://doc.keepnetlabs.com/resources/compliance#cryptography-policy) and [data protection policy](https://doc.keepnetlabs.com/resources/compliance#data-protection-policy) to make data secure and prevent potential vulnerabilities.&#x20;
+First, we encrypt data and apply it to our [cryptography policy](https://doc.keepnetlabs.com/resources/compliance#cryptography-policy) and [data protection policy](https://doc.keepnetlabs.com/resources/compliance#data-protection-policy) to make data secure and prevent potential vulnerabilities.
 
 Furthermore, we have a strict access policy and do not allow unauthorized gain access to sensitive data; please see our access policy [here](https://doc.keepnetlabs.com/resources/compliance#access-management-procedure).
 
 Keepnet does its best to maintain rigorous security protocols such as regular audits of access rights, continuous monitoring for abnormal activities, and thorough vulnerability assessments.
 
 You can see other data security measures on our [platform security page](../../../../../resources/compliance.md).
-

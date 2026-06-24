@@ -25,7 +25,7 @@ This flexible approach allows your organization to respond quickly to threats us
 
 ## What Happens When Users Report Simulated Emails?
 
-If you are running simulated phishing campaigns such as [**Phishing Simulator**](../../phishing-simulator/), [Callback Simulator](../../callback-simulator/), [Quishing Simulator ](../../quishing-simulator/)through Keepnet, the **Phishing Reporter** can automatically detect and log when a user reports a simulated phishing emails.&#x20;
+If you are running simulated phishing campaigns such as [**Phishing Simulator**](../../phishing-simulator/), [Callback Simulator](../../callback-simulator/), [Quishing Simulator ](../../quishing-simulator/)through Keepnet, the **Phishing Reporter** can automatically detect and log when a user reports a simulated phishing emails.
 
 This allows you to:
 
@@ -36,7 +36,7 @@ This allows you to:
 This feature helps improve your organization’s overall security posture by providing **real-time insight into user vigilance**. Please see the following hint for the **'real-time insights into user vigilance'** explanation.
 
 {% hint style="info" %}
-If the **"Turn off email forwarding for reported Phishing Simulation Emails"** option is enabled by the admin while customizing the phishing reporter button, a pop-up message will appear thanking the user for their awareness each time they report simulation emails, reinforcing positive behavior.  Please [see here](../phishing-reporter-customization.md#add-in-settings) for more information about this option.
+If the **"Turn off email forwarding for reported Phishing Simulation Emails"** option is enabled by the admin while customizing the phishing reporter button, a pop-up message will appear thanking the user for their awareness each time they report simulation emails, reinforcing positive behavior. Please [see here](../phishing-reporter-customization.md#add-in-settings) for more information about this option.
 {% endhint %}
 
 ## What Happens When an Employee Reports an Email
@@ -47,7 +47,7 @@ When an employee uses the **Page View Phishing Reporter Add-in** to report a sus
 If you purchased the [Keepnet Incident Responder](../../incident-responder/) product, the email will also be sent for automated analysis, automated response, and case management.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-05-22 at 17.38.50.png" alt="Example of reported email content sent to SOC/IT — attachment and report structure."><figcaption>Example of reported email content sent to SOC/IT — attachment and report structure.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-05-22 at 17.38.50.png" alt="Example of reported email content sent to SOC/IT — attachment and report structure."><figcaption><p>Example of reported email content sent to SOC/IT — attachment and report structure.</p></figcaption></figure>
 
 The email that is sent to the SOC/IT team inbox includes:
 
@@ -72,7 +72,7 @@ Here is an example view of the **Microsoft Page View Phishing Reporter** button 
 **User Principal Name (UPN) and primary email:** For the Phishing Reporter add-in to work, each user's **Microsoft Entra ID (Azure AD) User Principal Name** must match their **primary email address** in Outlook. If they differ, the add-in may not work for those users. Identification steps and resolution are described in the Troubleshooting section below.
 {% endhint %}
 
-### How to Install the Microsoft Page View Phishing Reporter&#x20;
+### How to Install the Microsoft Page View Phishing Reporter
 
 1. Before deploying the button, we recommend customizing it. This can be done in the **Add-In Settings** tab under the [Phishing Reporter](../phishing-reporter-customization.md) menu on the Keepnet platform.
 2. Once customization is complete, stay on the **Settings** tab. Scroll down to the bottom and click **Manage and Download**. A pop-up will appear — select **Authorize** for **Delegated** **Access** to proceed.
@@ -86,11 +86,11 @@ Suggested to authorize **Application-Level Access** only for organizations using
 3. Log in to your [Microsoft 365](https://admin.microsoft.com/) account using your **global admin credentials**.
 4. Once you log in, the **Permissions** **requested** pop-up window will display. Read the permissions, then click **Accept**.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-05-28 at 11.34.26.png" alt="Required Graph API permissions for Microsoft Page View Phishing Reporter button." width="375"><figcaption><p>Picture 4: Required Graph API Permissions for <br>Microsoft Page View Phishing Reporter button</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-05-28 at 11.34.26.png" alt="Required Graph API permissions for Microsoft Page View Phishing Reporter button." width="375"><figcaption><p>Picture 4: Required Graph API Permissions for<br>Microsoft Page View Phishing Reporter button</p></figcaption></figure>
 
-#### Understanding Required Microsoft Graph API Permissions&#x20;
+#### Understanding Required Microsoft Graph API Permissions
 
-The **Microsoft Page View Phishing Reporter** requires specific Microsoft Graph API permissions to function effectively within an organization’s Microsoft 365 environment. These permissions allow the application to interact with users’ emails, retrieve necessary details for reporting phishing attempts, and ensure smooth integration with the email infrastructure.&#x20;
+The **Microsoft Page View Phishing Reporter** requires specific Microsoft Graph API permissions to function effectively within an organization’s Microsoft 365 environment. These permissions allow the application to interact with users’ emails, retrieve necessary details for reporting phishing attempts, and ensure smooth integration with the email infrastructure.
 
 Below is a breakdown of the permissions required and their purpose:
 
@@ -125,7 +125,7 @@ Below is a breakdown of the permissions required and their purpose:
 
 <figure><img src="../../../../.gitbook/assets/image7.png" alt="Add-ins button access on Integrated Apps page."><figcaption><p>Picture 7: Add-Ins button access on Integrated Apps page</p></figcaption></figure>
 
-11. On the add-ins page, click **Deploy** **Add-In**.&#x20;
+11. On the add-ins page, click **Deploy** **Add-In**.
 
 <figure><img src="../../../../.gitbook/assets/image5.png" alt="Click deploy add-in button."><figcaption><p>Picture 8: Click deploy add-In button</p></figcaption></figure>
 
@@ -141,7 +141,7 @@ Below is a breakdown of the permissions required and their purpose:
 
 <figure><img src="../../../../.gitbook/assets/image14.png" alt="Uploading XML file to deploy the Microsoft Page View Phishing Reporter add-in."><figcaption><p>Picture 11: Uploading XML file to deploy the Microsoft Page View Phishing Reporter add-in</p></figcaption></figure>
 
-15. Click **Upload** to install the **Microsoft** **Page** **View** **Phishing** **Reporter** add-in.&#x20;
+15. Click **Upload** to install the **Microsoft** **Page** **View** **Phishing** **Reporter** add-in.
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.11.21.png" alt="Deployment Settings for Microsoft Page View Phishing Reporter add-in."><figcaption><p>Picture 12: Deployment Settings for Microsoft Page View Phishing Reporter add-in</p></figcaption></figure>
 
@@ -154,7 +154,7 @@ We recommend that you **allow all users** to access the Phishing Reporter. We al
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-05-21 at 14.44.50.png" alt="List of permissions used by the Microsoft Page View Phishing Reporter add-in."><figcaption><p>Picture 13: The list of permissions that are used by the Microsoft Page View Phishing Reporter add-in</p></figcaption></figure>
 
 17. Click **Next**, and additional app permissions will display.
-18. Once you have read the permissions, click **Save**.&#x20;
+18. Once you have read the permissions, click **Save**.
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.11.29.png" alt="Successful deployment message for Microsoft Page View Phishing Reporter add-in."><figcaption><p>Picture 14: Successful deployment message of Microsoft Page View Phishing Reporter add-in</p></figcaption></figure>
 
@@ -183,7 +183,7 @@ This is common when:
 * The organization enforces device compliance via Intune or Azure AD.
 * The user accessing the Phishing Reporter add-in is considered an external identity.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (3).png" alt="Screenshot reference of the error:" width="375"><figcaption>Error or troubleshooting screenshot for Page View Phishing Reporter (e.g. AADSTS530004).</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (2).png" alt="Screenshot reference of the error:" width="375"><figcaption><p>Error or troubleshooting screenshot for Page View Phishing Reporter (e.g. AADSTS530004).</p></figcaption></figure>
 
 #### What Is Application-Level Access?
 
@@ -310,7 +310,7 @@ In the redesigned **New Outlook** interface, the **Phishing** **Reporter** butto
 3. Click the **Apps icon** (grid icon) on the right-hand side panel.
 4. Choose **Phishing** **Reporter** from the list.
 
-<div align="center" data-full-width="false"><figure><img src="../../../../.gitbook/assets/s5 (2).png" alt="Page View Phishing Reporter — New Outlook, Apps panel and Phishing Reporter option." width="563"><figcaption>Page View Phishing Reporter — New Outlook, Apps panel and Phishing Reporter option.</figcaption></figure></div>
+<div align="center" data-full-width="false"><figure><img src="../../../../.gitbook/assets/s5.png" alt="Page View Phishing Reporter — New Outlook, Apps panel and Phishing Reporter option." width="563"><figcaption><p>Page View Phishing Reporter — New Outlook, Apps panel and Phishing Reporter option.</p></figcaption></figure></div>
 
 ### Classic Outlook
 
@@ -320,7 +320,7 @@ In the **Classic** **Outlook** interface, the button is integrated into the **ri
 2. Open the email you want to report.
 3. Click the **Phishing Reporter** button on the ribbon at the top of the message window.
 
-<figure><img src="../../../../.gitbook/assets/s4.png" alt="Page View Phishing Reporter — Classic Outlook, ribbon toolbar." width="563"><figcaption>Page View Phishing Reporter — Classic Outlook, ribbon toolbar.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s4.png" alt="Page View Phishing Reporter — Classic Outlook, ribbon toolbar." width="563"><figcaption><p>Page View Phishing Reporter — Classic Outlook, ribbon toolbar.</p></figcaption></figure>
 
 ### Outlook Web App (OWA)
 
@@ -331,7 +331,7 @@ For users accessing **Outlook via a web browser**:
 3. Click the **Apps icon** (grid icon) located in the message view panel.
 4. Click on **Phishing Reporter**.
 
-<figure><img src="../../../../.gitbook/assets/s1 (2).png" alt="Page View Phishing Reporter — Outlook Web App (OWA), Apps icon and Phishing Reporter." width="563"><figcaption>Page View Phishing Reporter — Outlook Web App (OWA), Apps icon and Phishing Reporter.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s1.png" alt="Page View Phishing Reporter — Outlook Web App (OWA), Apps icon and Phishing Reporter." width="563"><figcaption><p>Page View Phishing Reporter — Outlook Web App (OWA), Apps icon and Phishing Reporter.</p></figcaption></figure>
 
 ### Outlook for Mac
 
@@ -341,7 +341,7 @@ In **macOS** versions of Outlook, the button is accessible through the top toolb
 2. Click the **three-dot icon (•••)** in the top-right corner.
 3. Select **Phishing Reporter** from the dropdown menu.
 
-<figure><img src="../../../../.gitbook/assets/s3.png" alt="Page View Phishing Reporter — Outlook for Mac, three-dot menu and Phishing Reporter." width="563"><figcaption>Page View Phishing Reporter — Outlook for Mac, three-dot menu and Phishing Reporter.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s3.png" alt="Page View Phishing Reporter — Outlook for Mac, three-dot menu and Phishing Reporter." width="563"><figcaption><p>Page View Phishing Reporter — Outlook for Mac, three-dot menu and Phishing Reporter.</p></figcaption></figure>
 
 ### Outlook Mobile (iOS / Android)
 
@@ -350,7 +350,7 @@ On mobile devices, the reporting option is available via the message action menu
 1. While viewing the suspicious email, tap the **three-dot menu (•••)** in the top-right corner.
 2. Tap on the **Phishing Reporter** icon from the list of options.
 
-<div data-full-width="true"><figure><img src="../../../../.gitbook/assets/s2.png" alt="Page View Phishing Reporter — Outlook Mobile, three-dot menu and Phishing Reporter icon." width="188"><figcaption>Page View Phishing Reporter — Outlook Mobile, three-dot menu and Phishing Reporter icon.</figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../../../.gitbook/assets/s2.png" alt="Page View Phishing Reporter — Outlook Mobile, three-dot menu and Phishing Reporter icon." width="188"><figcaption><p>Page View Phishing Reporter — Outlook Mobile, three-dot menu and Phishing Reporter icon.</p></figcaption></figure></div>
 
 ## Why Do Some Users See a Popup or Redirection?
 
@@ -384,7 +384,7 @@ No. Once a user has signed in and given the necessary permissions, their session
 
 #### Bottom Line
 
-Popups or redirections are not errors — they’re part of Microsoft’s secure identity verification process. They ensure that only authorized users can access sensitive data and perform actions like reporting emails.&#x20;
+Popups or redirections are not errors — they’re part of Microsoft’s secure identity verification process. They ensure that only authorized users can access sensitive data and perform actions like reporting emails.
 
 Keepnet follows Microsoft’s best practices to provide the most seamless experience possible, while maintaining strict security and compliance.
 
@@ -396,7 +396,7 @@ Keepnet follows Microsoft’s best practices to provide the most seamless experi
 
 ### Q: Does the Microsoft Page View Phishing Reporter work on Outlook Mobile for iPhone or Android?
 
-A: Yes, it works. Please visit [here](./#comparison-ribbon-vs-page-view-vs-msi-outlook-phishing-reporter-microsoft-365) to view the supported Outlook environments.&#x20;
+A: Yes, it works. Please visit [here](./#comparison-ribbon-vs-page-view-vs-msi-outlook-phishing-reporter-microsoft-365) to view the supported Outlook environments.
 
 ### Q: Can I customize the Microsoft Page View Phishing Reporter side panel message, such as setting a fixed width and height?
 
@@ -408,7 +408,7 @@ A: No, Microsoft does not allow customization of the size of the side panel. Its
 
 ### Q: If we set the Phishing Reporter button to delete reported emails automatically, can the email be recovered?
 
-A: Yes, if you use the **'Delete reported emails'** option with **'Automatically**'**,** the reported email will be deleted automatically. The email will be sent to the **Trash** folder, where you can visit the folder and restore the deleted email.&#x20;
+A: Yes, if you use the **'Delete reported emails'** option with **'Automatically**'**,** the reported email will be deleted automatically. The email will be sent to the **Trash** folder, where you can visit the folder and restore the deleted email.
 
 ### Q: Does the Microsoft Page View Phishing Reporter button work on the native Mail client of Apple on IOS mobile?
 

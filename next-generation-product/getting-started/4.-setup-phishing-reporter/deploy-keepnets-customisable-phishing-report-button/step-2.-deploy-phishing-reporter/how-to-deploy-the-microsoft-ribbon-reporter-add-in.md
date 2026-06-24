@@ -1,58 +1,58 @@
 # How to Deploy the Microsoft Ribbon Reporter Add-In
 
-### How to Install the Microsoft Ribbon Phishing Reporter&#x20;
+### How to Install the Microsoft Ribbon Phishing Reporter
 
 1. Customize [Phishing Reporter](../../../../platform/phishing-reporter/phishing-reporter-customization.md) for your organization's needs
 2. Go to **Phishing Reporter > Manage and Download** section and click **“Connect Account”**
 
-<figure><img src="../../../../../.gitbook/assets/image11.png" alt="Phishing Reporter Manage and Download — Connect Account."><figcaption>Phishing Reporter Manage and Download — Connect Account.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image11.png" alt="Phishing Reporter Manage and Download — Connect Account."><figcaption><p>Phishing Reporter Manage and Download — Connect Account.</p></figcaption></figure>
 
 3. Log in to your Microsoft 365 account using your admin credentials.
 4. Once you log in, the **Permissions** **requested** pop-up window will display. Read the permissions, then click **Accept**.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-05-28 at 11.34.26 (1).png" alt="Permissions requested pop-up — Accept to grant Graph API permissions." width="375"><figcaption>Permissions requested pop-up — Accept to grant Graph API permissions.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-05-28 at 11.34.26.png" alt="Permissions requested pop-up — Accept to grant Graph API permissions." width="375"><figcaption><p>Permissions requested pop-up — Accept to grant Graph API permissions.</p></figcaption></figure>
 
 5. Once you accept the permissions, the GRAPH Authorization Successful window will display.
 
-<figure><img src="../../../../../.gitbook/assets/image2.png" alt="Graph Authorization Successful window."><figcaption>Graph Authorization Successful window.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image2.png" alt="Graph Authorization Successful window."><figcaption><p>Graph Authorization Successful window.</p></figcaption></figure>
 
 6. Click the **Download** icon below the **Microsoft** **Ribbon** **Phishing** **Reporter** option to download the **PhishingReporterRibbon.xml** file.
 7. In a new tab of your browser, log in to your **Microsoft 365 admin center**.
 
-<figure><img src="../../../../../.gitbook/assets/image12.png" alt="Microsoft 365 admin center."><figcaption>Microsoft 365 admin center.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image12.png" alt="Microsoft 365 admin center."><figcaption><p>Microsoft 365 admin center.</p></figcaption></figure>
 
 8. From the menu on the left side of the page, click **Settings**.
 9. From the **Settings** drop-down menu, select **Integrated** **apps**.
 
-<figure><img src="../../../../../.gitbook/assets/image6.png" alt="Settings — Integrated apps menu."><figcaption>Settings — Integrated apps menu.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image6.png" alt="Settings — Integrated apps menu."><figcaption><p>Settings — Integrated apps menu.</p></figcaption></figure>
 
 10. Click Add-ins at the top-right corner of the page. The Add-ins page will open
 
-<figure><img src="../../../../../.gitbook/assets/image7.png" alt="Add-ins button on Integrated Apps page."><figcaption>Add-ins button on Integrated Apps page.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image7.png" alt="Add-ins button on Integrated Apps page."><figcaption><p>Add-ins button on Integrated Apps page.</p></figcaption></figure>
 
 11. On the Add-ins page, click Deploy Add-In. The Deploy a new add-in pop-up window will open.
 
-<figure><img src="../../../../../.gitbook/assets/image5.png" alt="Deploy Add-In button."><figcaption>Deploy Add-In button.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image5.png" alt="Deploy Add-In button."><figcaption><p>Deploy Add-In button.</p></figcaption></figure>
 
 12. In the pop-up window, click Next.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.10.27.png" alt="Deploy a new add-in pop-up — Next."><figcaption>Deploy a new add-in pop-up — Next.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.10.27.png" alt="Deploy a new add-in pop-up — Next."><figcaption><p>Deploy a new add-in pop-up — Next.</p></figcaption></figure>
 
 13. Click Upload custom apps.
 
-<figure><img src="../../../../../.gitbook/assets/image3.png" alt="Upload custom apps option."><figcaption>Upload custom apps option.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image3.png" alt="Upload custom apps option."><figcaption><p>Upload custom apps option.</p></figcaption></figure>
 
 14. Select the **I have the manifest file (.xml) on this device** option. Then, click **Choose** **File** and select the **PhishingReporterRibbon.xml** file that you downloaded in step 6.
 
-<figure><img src="../../../../../.gitbook/assets/image14.png" alt="Choose File to select PhishingReporterRibbon.xml."><figcaption>Choose File to select PhishingReporterRibbon.xml.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image14.png" alt="Choose File to select PhishingReporterRibbon.xml."><figcaption><p>Choose File to select PhishingReporterRibbon.xml.</p></figcaption></figure>
 
 15. Click **Upload** to install the Phishing Reporter. The **Configure** **add-in** pop-up window will open.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.11.21.png" alt="Configure add-in pop-up after upload."><figcaption>Configure add-in pop-up after upload.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.11.21.png" alt="Configure add-in pop-up after upload."><figcaption><p>Configure add-in pop-up after upload.</p></figcaption></figure>
 
 16. From the pop-up window, select which users will have access to the Phishing Reporter and which method you would like to use to deploy the Phishing Reporter.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.10.59 (1).png" alt="Deploy Phishing Reporter — select users and deployment method."><figcaption>Deploy Phishing Reporter — select users and deployment method.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.10.59 (1).png" alt="Deploy Phishing Reporter — select users and deployment method."><figcaption><p>Deploy Phishing Reporter — select users and deployment method.</p></figcaption></figure>
 
 {% hint style="info" %}
 We recommend that you allow all users to access the Phishing Reporter. We also recommend that you use the Fixed deployment method.
@@ -61,7 +61,7 @@ We recommend that you allow all users to access the Phishing Reporter. We also r
 17. Click **Next**, and additional app permissions will display.
 18. Once you have read the permissions, click **Save**. The **Deploy** Phishing Reporter pop-up window will open.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.11.29.png" alt="Add-in successfully installed message."><figcaption>Add-in successfully installed message.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.11.29.png" alt="Add-in successfully installed message."><figcaption><p>Add-in successfully installed message.</p></figcaption></figure>
 
 {% hint style="warning" %}
 The expected timeframe for the Phishing Reporter to deploy is 24 hours, but timeframes can vary. For more information about deploying add-ins, see Microsoft's [Deploy add-ins in the Microsoft 365 admin center](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#deploy-an-office-add-in-using-the-admin-center) article.
@@ -69,7 +69,7 @@ The expected timeframe for the Phishing Reporter to deploy is 24 hours, but time
 
 19. Once the pop-up window displays a confirmation that the add-in successfully deployed, click **Next**. The **Announce** **add-in** pop-up window will open and display a message about announcement recommendations from Microsoft.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.15.27.png" alt="Announce add-in pop-up — Microsoft recommendation message."><figcaption>Announce add-in pop-up — Microsoft recommendation message.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.15.27.png" alt="Announce add-in pop-up — Microsoft recommendation message."><figcaption><p>Announce add-in pop-up — Microsoft recommendation message.</p></figcaption></figure>
 
 {% hint style="info" %}
 After you install and deploy the Phishing Reporter, you might receive an email from your mail service provider that contains information you can use to help you announce the Phishing Reporter add-in to your users. Keepnet does not send the email about the Phishing Reporter’s intended usage and benefits.
@@ -83,7 +83,7 @@ After you install and deploy the Phishing Reporter, you might receive an email f
 
 **"We were unable to process this item. Please try again later."** message in the Ribbon Phishing Reporter in Outlook.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-03-31 171409.png" alt="Troubleshooting — We were unable to process this item Ribbon error."><figcaption>Troubleshooting — We were unable to process this item Ribbon error.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-03-31 171409.png" alt="Troubleshooting — We were unable to process this item Ribbon error."><figcaption><p>Troubleshooting — We were unable to process this item Ribbon error.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/phish report ribbon error.png" alt="We were unable to process this item issue on Microsoft Ribbon Phishing Reporter."><figcaption><p><strong>We were unable to process this item issue on Microsoft Ribbon Phishing Reporter</strong></p></figcaption></figure>
 

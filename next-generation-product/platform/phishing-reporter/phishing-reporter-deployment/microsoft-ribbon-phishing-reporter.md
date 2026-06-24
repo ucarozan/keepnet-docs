@@ -1,8 +1,8 @@
 # Microsoft Ribbon Phishing Reporter
 
-The **Microsoft** **Ribbon** **Phishing** **Reporter** allows your users to easily report suspicious emails and help protect your organization from cyberattacks. When you integrate the Phishing Reporter with Microsoft's integrated spam-reporting feature, the Phishing Reporter will appear in the Outlook ribbon.&#x20;
+The **Microsoft** **Ribbon** **Phishing** **Reporter** allows your users to easily report suspicious emails and help protect your organization from cyberattacks. When you integrate the Phishing Reporter with Microsoft's integrated spam-reporting feature, the Phishing Reporter will appear in the Outlook ribbon.
 
-When your users click the Phishing Reporter to report an email, they can provide your IT team with an early warning about potential threats. You can receive reported emails in the Microsoft 365 Defender platform and the Keepnet Incident Responder page.&#x20;
+When your users click the Phishing Reporter to report an email, they can provide your IT team with an early warning about potential threats. You can receive reported emails in the Microsoft 365 Defender platform and the Keepnet Incident Responder page.
 
 To learn how to install the Microsoft Ribbon Phishing Reporter and how your users can use the Phishing Reporter in their mail clients, see the sections below.
 
@@ -12,11 +12,11 @@ If you use the phishing feature in the Keepnet Incident Responder menu, the Micr
 
 Here is an example view of the ribbon phishing reporter on Outlook.
 
-<figure><img src="../../../../.gitbook/assets/image4.png" alt="Ribbon Phishing Reporter button in Outlook."><figcaption>Ribbon Phishing Reporter button in Outlook.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image4.png" alt="Ribbon Phishing Reporter button in Outlook."><figcaption><p>Ribbon Phishing Reporter button in Outlook.</p></figcaption></figure>
 
 * When using the new Outlook Ribbon, clicking the Phishing Report button opens a pop-up window instead of a side panel.
 
-<figure><img src="../../../../.gitbook/assets/image10.png" alt="Phishing Report pop-up window on new Outlook Ribbon."><figcaption>Phishing Report pop-up window on new Outlook Ribbon.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image10.png" alt="Phishing Report pop-up window on new Outlook Ribbon."><figcaption><p>Phishing Report pop-up window on new Outlook Ribbon.</p></figcaption></figure>
 
 * The pop-up provides the same reporting options but appears as a temporary dialog in the center of the screen.
 * This is the default experience for some Outlook versions, including Outlook on Windows with the new Ribbon UI.
@@ -46,7 +46,7 @@ Before you can install the Microsoft Ribbon Phishing Reporter for your organizat
 The Microsoft Ribbon Phishing Reporter supports installation for [shared mailboxes](https://learn.microsoft.com/en-us/microsoft-365/admin/email/about-shared-mailboxes?view=o365-worldwide). This feature requires that Graph API and Nested App Authentication single sign-on (NAA-SSO) permissions are authorized in your Microsoft 365 tenant. See installation steps 5 through 9 below for how to authorize these permissions.
 {% endhint %}
 
-### How to Install the Microsoft Ribbon Phishing Reporter&#x20;
+### How to Install the Microsoft Ribbon Phishing Reporter
 
 1. Customize [Phishing Reporter](../phishing-reporter-customization.md) for your organization's needs
 2. Go to **Phishing Reporter,** scroll down to the bottom and click the **Manage and Download** button.
@@ -56,54 +56,54 @@ The Microsoft Ribbon Phishing Reporter supports installation for [shared mailbox
 Suggested to authorize **Application-Level Access** only for organizations using Conditional Access or Advanced Identity Policies, since managed device or policy restrictions may cause token acquisition to fail when using delegated permissions. Please click [here](microsoft-ribbon-phishing-reporter.md#troubleshooting-microsoft-graph-authentication-error-aadsts530004) for more information.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 10.17.18.png" alt="Authorize (Delegated Access) button on Phishing Reporter Manage and Download panel." width="563"><figcaption>Authorize (Delegated Access) button on Phishing Reporter Manage and Download panel.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 10.17.18.png" alt="Authorize (Delegated Access) button on Phishing Reporter Manage and Download panel." width="563"><figcaption><p>Authorize (Delegated Access) button on Phishing Reporter Manage and Download panel.</p></figcaption></figure>
 
 3. Log in to your Microsoft 365 account using your admin credentials.
 4. Once you log in, the **Permissions** **requested** pop-up window will display. Read the permissions, then click **Accept**.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-05-28 at 11.34.26 (1).png" alt="Permissions requested pop-up — Accept to grant Graph API permissions." width="375"><figcaption>Permissions requested pop-up — Accept to grant Graph API permissions.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-05-28 at 11.34.26.png" alt="Permissions requested pop-up — Accept to grant Graph API permissions." width="375"><figcaption><p>Permissions requested pop-up — Accept to grant Graph API permissions.</p></figcaption></figure>
 
 5. Once you accept the permissions, the GRAPH APIs Authorization Successful window will display.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 10.31.25.png" alt="Graph APIs Authorization Successful window." width="563"><figcaption>Graph APIs Authorization Successful window.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 10.31.25.png" alt="Graph APIs Authorization Successful window." width="563"><figcaption><p>Graph APIs Authorization Successful window.</p></figcaption></figure>
 
 6. Click the **Download** icon below the **Microsoft** **Ribbon** **Phishing** **Reporter** option to download the **PhishingReporterRibbon.xml** file.
 7. In a new tab of your browser, log in to your **Microsoft 365 admin center**.
 
-<figure><img src="../../../../.gitbook/assets/image12.png" alt="Microsoft 365 admin center — entry point for Integrated apps."><figcaption>Microsoft 365 admin center — entry point for Integrated apps.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image12.png" alt="Microsoft 365 admin center — entry point for Integrated apps."><figcaption><p>Microsoft 365 admin center — entry point for Integrated apps.</p></figcaption></figure>
 
 8. From the menu on the left side of the page, click **Settings**.
 9. From the **Settings** drop-down menu, select **Integrated** **apps**.
 
-<figure><img src="../../../../.gitbook/assets/image6.png" alt="Settings — Integrated apps menu."><figcaption>Settings — Integrated apps menu.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image6.png" alt="Settings — Integrated apps menu."><figcaption><p>Settings — Integrated apps menu.</p></figcaption></figure>
 
 10. Click Add-ins at the top-right corner of the page. The Add-ins page will open
 
-<figure><img src="../../../../.gitbook/assets/image7.png" alt="Add-ins button on Integrated Apps page."><figcaption>Add-ins button on Integrated Apps page.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image7.png" alt="Add-ins button on Integrated Apps page."><figcaption><p>Add-ins button on Integrated Apps page.</p></figcaption></figure>
 
 11. On the Add-ins page, click Deploy Add-In. The Deploy a new add-in pop-up window will open.
 
-<figure><img src="../../../../.gitbook/assets/image5.png" alt="Deploy Add-In button."><figcaption>Deploy Add-In button.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image5.png" alt="Deploy Add-In button."><figcaption><p>Deploy Add-In button.</p></figcaption></figure>
 
 12. In the pop-up window, click Next.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.10.27.png" alt="Deploy a new add-in pop-up — Next."><figcaption>Deploy a new add-in pop-up — Next.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.10.27.png" alt="Deploy a new add-in pop-up — Next."><figcaption><p>Deploy a new add-in pop-up — Next.</p></figcaption></figure>
 
 13. Click Upload custom apps.
 
-<figure><img src="../../../../.gitbook/assets/image3.png" alt="Upload custom apps option."><figcaption>Upload custom apps option.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image3.png" alt="Upload custom apps option."><figcaption><p>Upload custom apps option.</p></figcaption></figure>
 
 14. Select the **I have the manifest file (.xml) on this device** option. Then, click **Choose** **File** and select the **PhishingReporterRibbon.xml** file that you downloaded in step 6.
 
-<figure><img src="../../../../.gitbook/assets/image14.png" alt="Choose File to select PhishingReporterRibbon.xml."><figcaption>Choose File to select PhishingReporterRibbon.xml.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image14.png" alt="Choose File to select PhishingReporterRibbon.xml."><figcaption><p>Choose File to select PhishingReporterRibbon.xml.</p></figcaption></figure>
 
 15. Click **Upload** to install the Phishing Reporter. The **Configure** **add-in** pop-up window will open.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.11.21.png" alt="Configure add-in pop-up after upload."><figcaption>Configure add-in pop-up after upload.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.11.21.png" alt="Configure add-in pop-up after upload."><figcaption><p>Configure add-in pop-up after upload.</p></figcaption></figure>
 
 16. From the pop-up window, select which users will have access to the Phishing Reporter and which method you would like to use to deploy the Phishing Reporter.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.10.59 (1).png" alt="Deploy Phishing Reporter — select users and deployment method."><figcaption>Deploy Phishing Reporter — select users and deployment method.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.10.59 (1).png" alt="Deploy Phishing Reporter — select users and deployment method."><figcaption><p>Deploy Phishing Reporter — select users and deployment method.</p></figcaption></figure>
 
 {% hint style="info" %}
 We recommend that you allow all users to access the Phishing Reporter. We also recommend that you use the Fixed deployment method.
@@ -112,7 +112,7 @@ We recommend that you allow all users to access the Phishing Reporter. We also r
 17. Click **Next**, and additional app permissions will display.
 18. Once you have read the permissions, click **Save**. The **Deploy** Phishing Reporter pop-up window will open.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.11.29.png" alt="Add-in successfully installed message."><figcaption>Add-in successfully installed message.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.11.29.png" alt="Add-in successfully installed message."><figcaption><p>Add-in successfully installed message.</p></figcaption></figure>
 
 {% hint style="warning" %}
 The expected timeframe for the Phishing Reporter to deploy is 24 hours, but timeframes can vary. For more information about deploying add-ins, see Microsoft's [Deploy add-ins in the Microsoft 365 admin center](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#deploy-an-office-add-in-using-the-admin-center) article.
@@ -120,7 +120,7 @@ The expected timeframe for the Phishing Reporter to deploy is 24 hours, but time
 
 19. Once the pop-up window displays a confirmation that the add-in successfully deployed, click **Next**. The **Announce** **add-in** pop-up window will open and display a message about announcement recommendations from Microsoft.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.15.27.png" alt="Announce add-in pop-up — Microsoft recommendation message."><figcaption>Announce add-in pop-up — Microsoft recommendation message.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-03 at 18.15.27.png" alt="Announce add-in pop-up — Microsoft recommendation message."><figcaption><p>Announce add-in pop-up — Microsoft recommendation message.</p></figcaption></figure>
 
 {% hint style="info" %}
 After you install and deploy the Phishing Reporter, you might receive an email from your mail service provider that contains information you can use to help you announce the Phishing Reporter add-in to your users. Keepnet does not send the email about the Phishing Reporter’s intended usage and benefits.
@@ -134,7 +134,7 @@ After you install and deploy the Phishing Reporter, you might receive an email f
 
 **"We were unable to process this item. Please try again later."** message in the Ribbon Phishing Reporter in Outlook.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-31 171409.png" alt="Troubleshooting — We were unable to process this item or related Ribbon error."><figcaption>Troubleshooting — "We were unable to process this item" or related Ribbon error.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-31 171409.png" alt="Troubleshooting — We were unable to process this item or related Ribbon error."><figcaption><p>Troubleshooting — "We were unable to process this item" or related Ribbon error.</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/phish report ribbon error.png" alt="We were unable to process this item issue on Microsoft Ribbon Phishing Reporter."><figcaption><p><strong>We were unable to process this item issue on Microsoft Ribbon Phishing Reporter</strong></p></figcaption></figure>
 
@@ -174,7 +174,7 @@ This is common when:
 * The organization enforces device compliance via Intune or Azure AD.
 * The user accessing the Phishing Reporter add-in is considered an external identity.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 16.05.58.png" alt="Screenshot reference of the error:" width="375"><figcaption>Error or issue reference when using Phishing Reporter (e.g. Conditional Access).</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 16.05.58.png" alt="Screenshot reference of the error:" width="375"><figcaption><p>Error or issue reference when using Phishing Reporter (e.g. Conditional Access).</p></figcaption></figure>
 
 #### What Is Application-Level Access?
 
@@ -265,7 +265,7 @@ In the redesigned **New Outlook** interface, the Phishing Reporter button is pla
 2. Select the suspicious email.
 3. Click the **Phishing Reporter** button in the toolbar at the top.
 
-<div align="center" data-full-width="false"><figure><img src="../../../../.gitbook/assets/image.webp" alt="New Outlook — Phishing Reporter button in toolbar when viewing an email." width="563"><figcaption>New Outlook — Phishing Reporter button in toolbar when viewing an email.</figcaption></figure></div>
+<div align="center" data-full-width="false"><figure><img src="../../../../.gitbook/assets/image.webp" alt="New Outlook — Phishing Reporter button in toolbar when viewing an email." width="563"><figcaption><p>New Outlook — Phishing Reporter button in toolbar when viewing an email.</p></figcaption></figure></div>
 
 ### Classic Outlook
 
@@ -275,7 +275,7 @@ In **Classic Outlook**, the reporter button is accessible directly from the ribb
 2. Open the email you want to report.
 3. Click the **Phishing Reporter** button on the ribbon toolbar.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).webp" alt="Classic Outlook — Phishing Reporter button on ribbon toolbar." width="563"><figcaption>Classic Outlook — Phishing Reporter button on ribbon toolbar.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).webp" alt="Classic Outlook — Phishing Reporter button on ribbon toolbar." width="563"><figcaption><p>Classic Outlook — Phishing Reporter button on ribbon toolbar.</p></figcaption></figure>
 
 ### Outlook Web App (OWA)
 
@@ -285,7 +285,7 @@ If you’re using **Outlook on the web**, the reporter button is clearly visible
 2. Open the suspicious email.
 3. Click the **Phishing Reporter** icon in the top menu.
 
-<figure><img src="../../../../.gitbook/assets/image (2).webp" alt="Outlook Web App (OWA) — Phishing Reporter in action toolbar." width="563"><figcaption>Outlook Web App (OWA) — Phishing Reporter in action toolbar.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).webp" alt="Outlook Web App (OWA) — Phishing Reporter in action toolbar." width="563"><figcaption><p>Outlook Web App (OWA) — Phishing Reporter in action toolbar.</p></figcaption></figure>
 
 ### Outlook for Mac
 
@@ -295,7 +295,7 @@ For **Outlook on macOS**, the reporter button is available under the **Report** 
 2. Click the **Report** dropdown from the top toolbar.
 3. Choose **Phishing Reporter**.
 
-<figure><img src="../../../../.gitbook/assets/image (3).webp" alt="Outlook for Mac — Report dropdown and Phishing Reporter option." width="563"><figcaption>Outlook for Mac — Report dropdown and Phishing Reporter option.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).webp" alt="Outlook for Mac — Report dropdown and Phishing Reporter option." width="563"><figcaption><p>Outlook for Mac — Report dropdown and Phishing Reporter option.</p></figcaption></figure>
 
 ### Outlook Mobile (iOS / Android)
 
@@ -304,7 +304,7 @@ The mobile version of Outlook provides access to the reporter through the contex
 1. While viewing a suspicious email, tap the **three dots** (•••) in the upper-right.
 2. Tap on the **Suspicious Email Reporter** icon.
 
-<div data-full-width="true"><figure><img src="../../../../.gitbook/assets/image (4).webp" alt="Outlook Mobile — Suspicious Email Reporter in three-dot menu." width="188"><figcaption>Outlook Mobile — Suspicious Email Reporter in three-dot menu.</figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../../../.gitbook/assets/image (4).webp" alt="Outlook Mobile — Suspicious Email Reporter in three-dot menu." width="188"><figcaption><p>Outlook Mobile — Suspicious Email Reporter in three-dot menu.</p></figcaption></figure></div>
 
 ## Frequently Asked Questions (FAQs)
 
@@ -342,9 +342,9 @@ A: In **classic Outlook on Windows**, the **Phishing Reporter** processes one re
 
 To report multiple emails, please wait for the current report to complete before submitting the next one. This limitation ensures that each report is properly processed without conflicts.
 
-### Q: What Permissions are Required for Microsoft Graph API&#x20;
+### Q: What Permissions are Required for Microsoft Graph API
 
-A: The **Microsoft Ribbon Phishing Reporter** requires specific Microsoft Graph API permissions to function effectively within an organization’s Microsoft 365 environment. These permissions allow the application to interact with users’ emails, retrieve necessary details for reporting phishing attempts, and ensure smooth integration with the email infrastructure.&#x20;
+A: The **Microsoft Ribbon Phishing Reporter** requires specific Microsoft Graph API permissions to function effectively within an organization’s Microsoft 365 environment. These permissions allow the application to interact with users’ emails, retrieve necessary details for reporting phishing attempts, and ensure smooth integration with the email infrastructure.
 
 Below is a breakdown of the permissions required and their purpose:
 
