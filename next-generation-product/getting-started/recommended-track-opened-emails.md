@@ -88,7 +88,7 @@ Notes:
 * The script only affects users who are in the group when it runs. For longer campaigns, re-run it periodically (for example, when new people join).
 * After applying, send a phishing test campaign and confirm that opens are recorded.
 
-## Option B: Group Policy
+### Option B: Group Policy
 
 If you manage **Classic Outlook clients** through **Group** **Policy**, you can deploy the **Safe** **Senders** **list** centrally instead of using PowerShell. Rather than repeat the steps here, follow Microsoft's official guide:
 
