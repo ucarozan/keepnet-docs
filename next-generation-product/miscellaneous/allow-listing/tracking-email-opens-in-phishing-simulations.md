@@ -21,12 +21,12 @@ Most users may not click "Download Pictures," so opens often go unrecorded by th
 
 The default behavior is the same in every client: external images are blocked until the **sender is trusted** or the user loads them manually. To make trusted-sender images load automatically, choose the method that matches your users' Outlook client.
 
-| Your Outlook Client         | Method to Use                                   |
-| --------------------------- | ----------------------------------------------- |
-| Classic Outlook for Windows | Trusted Zone **or** Safe Senders (either works) |
-| New Outlook for Windows     | Safe Senders only                               |
-| Outlook on the web (OWA)    | Safe Senders only                               |
-| Outlook for iOS / Android   | Safe Senders only                               |
+| Your Outlook Client         | Method to Use                               |
+| --------------------------- | ------------------------------------------- |
+| Classic Outlook for Windows | Trusted Zone or Safe Senders (either works) |
+| New Outlook for Windows     | Safe Senders only                           |
+| Outlook on the web (OWA)    | Safe Senders only                           |
+| Outlook for iOS / Android   | Safe Senders only                           |
 
 **Why the difference?** The Trusted Zone method relies on Internet Explorer security zones and the classic Outlook Trust Center, which exist **only in classic Outlook**. New Outlook, OWA, and Outlook mobile are web-based clients that do not have those components; in them, automatic image loading is governed **only** by the mailbox **Safe Senders** list. The image URL or hosting domain does not change this; the decision is based on whether the message sender is trusted.
 
