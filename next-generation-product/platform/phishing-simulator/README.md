@@ -34,6 +34,10 @@ A: If the microsoft name is used in a subdomain there are many threat intelligen
 
 A: We can only host domains verified through Cloudflare. Please refer to [this document](settings/dns-services-and-domains.md) for more information.
 
+### Q: What is a Double Barrel scenario?
+
+A: Double Barrel is a phishing Method that sends two emails in sequence within the same thread — a **Lure** email that builds trust without any link, followed by a **Payload** email that carries the phishing link. It simulates a multi-stage social-engineering attack. You build the two-email template on the Email Templates page and configure send order, delay, and other options under Double Barrel Settings when you launch the campaign. [Click here for more information.](manage-phishing-scenarios/email-templates.md#how-to-add-a-double-barrel-email-template)
+
 ### Q: How can I combine the Email Template and Landing Page to create a phishing scenario?
 
 A: You can easily create a customized phishing scenario to suit your organization. You will find the instructions [here](manage-phishing-scenarios/phishing-scenarios.md).
@@ -44,7 +48,7 @@ A: The System templates can't be deleted by the admin users. The admins are able
 
 ### Q: Which tracking domain is used for Attachment type campaigns?
 
-A: The platform automatically generates unique tracking links for attached files for each target user for Attachment type campaigns. The domain that is used for the attachment type campaign are dynamics. Please make sure you allow list all the simulation domains.&#x20;
+A: The platform automatically generates unique tracking links for attached files for each target user for Attachment type campaigns. The domain that is used for the attachment type campaign are dynamics. Please make sure you allow list all the simulation domains.
 
 ### Q: Emails do not arrive to the target users
 
@@ -52,7 +56,7 @@ A: The delivery status can be checked on Sending Report menu in the campaign rep
 
 ### Q: Why the domain that is used for the campaign gives a red screen on Google?
 
-A: If the campaign contains an HTML page where it contains any words, pictures or links related to Google, Facebook, Twitter, Apple, Microsoft or other such major companies, Google will easily identify it as suspicious and as a result, the user will see red screen after click the link in the simulated phishing email.&#x20;
+A: If the campaign contains an HTML page where it contains any words, pictures or links related to Google, Facebook, Twitter, Apple, Microsoft or other such major companies, Google will easily identify it as suspicious and as a result, the user will see red screen after click the link in the simulated phishing email.
 
 * Please make sure not to use real words, pictures or links that are related to major companies.
 * The platform offers approximately fifty domains to be used in campaigns. The admin can also try to change the phishing domain to a new one and then launch the campaign with the new domain.
