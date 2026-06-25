@@ -4,7 +4,7 @@ The [**Phishing Simulator**](https://keepnetlabs.com/products/phishing-simulator
 
 The components of the **Email Templates** page are explained below.
 
-<table><thead><tr><th width="150"></th><th width="590.1428571428571"></th></tr></thead><tbody><tr><td>Template name</td><td>Name of the email template</td></tr><tr><td>Method</td><td><p>The phishing technique employed.</p><ul><li><strong>Data Submit =</strong> Used to detect target users who submit data on the landing page</li><li><strong>Attachment =</strong> Used to detect target users who download the attachment in the phishing simulation email</li><li><strong>Click-Only =</strong> Used to detect target users who click unknown links in the phishing email</li></ul></td></tr><tr><td>Languages</td><td>Filter email templates based on your preferred languages.</td></tr><tr><td>Tags</td><td>Tags can be added to the email template to enable viewing using related tag lists.</td></tr><tr><td>Difficulty</td><td>The level of difficulty to recognize a phishing attempt <strong>(Easy, Medium, Hard).</strong> Please <a href="../#q-how-is-the-difficulty-level-determined">click here</a> to see how the difficulty level is determined.</td></tr><tr><td>Creation Type</td><td>Filter email templates based on their creation type (e.g., Manual or AI Ally).</td></tr><tr><td>Created By</td><td><p><strong>System:</strong> Standard phishing email templates are provided with the product.</p><p></p><p><strong>Custom:</strong> Phishing email created or customized by users</p></td></tr><tr><td>Date Created</td><td>The date and time the email template was created</td></tr></tbody></table>
+<table><thead><tr><th width="150"></th><th width="590.1428571428571"></th></tr></thead><tbody><tr><td>Template name</td><td>Name of the email template</td></tr><tr><td>Method</td><td><p>The phishing technique employed.</p><ul><li><strong>Data Submit =</strong> Used to detect target users who submit data on the landing page</li><li><strong>Attachment =</strong> Used to detect target users who download the attachment in the phishing simulation email</li><li><strong>Click-Only =</strong> Used to detect target users who click unknown links in the phishing email</li><li><strong>Double Barrel =</strong> A two-email template — a Lure email (no links) followed by a Payload email that carries the phishing link — used to run multi-stage attack simulations.</li></ul></td></tr><tr><td>Languages</td><td>Filter email templates based on your preferred languages.</td></tr><tr><td>Tags</td><td>Tags can be added to the email template to enable viewing using related tag lists.</td></tr><tr><td>Difficulty</td><td>The level of difficulty to recognize a phishing attempt <strong>(Easy, Medium, Hard).</strong> Please <a href="../#q-how-is-the-difficulty-level-determined">click here</a> to see how the difficulty level is determined.</td></tr><tr><td>Creation Type</td><td>Filter email templates based on their creation type (e.g., Manual or AI Ally).</td></tr><tr><td>Created By</td><td><p><strong>System:</strong> Standard phishing email templates are provided with the product.</p><p><strong>Custom:</strong> Phishing email created or customized by users</p></td></tr><tr><td>Date Created</td><td>The date and time the email template was created</td></tr></tbody></table>
 
 ## Email Template Actions
 
@@ -37,12 +37,33 @@ Follow the steps below to create a new email template for use in a new or existi
    2. **From Name:** Sender name that will be visible to the target recipient
    3. **From Email Address:** Sender email address information that will be visible to the target recipient
    4. **CC:** Add a CC email address to your phishing simulation email.
-   5. **Attach File:** If desired, you can attach a file to the phishing email. This option is only available if the email template method type is set to **Attachment**.
+   5. **Attach File:** If desired, you can attach a file to the phishing email. This option is available when the email template method is **Attachment**, and on the **Payload Email** of a **Double Barrel** template. Supported files: Word, Excel, PowerPoint, or HTML, up to 5 MB.
    6. **View/Edit Template:** View and edit the available email templates in localized languages.
-   7. **Localize:** Localize your main email template to different languages. Click [here](https://localization.keepnetlabs.com/) to learn the benefits of the feature and more information.&#x20;
+   7. **Localize:** Localize your main email template to different languages. Click [here](https://localization.keepnetlabs.com/) to learn the benefits of the feature and more information.
    8. **Show Red Flags:** Let AI Ally scan the email template and highlight suspicious elements—such as mismatched sender addresses, fake buttons, or misleading icons—while employees are expected to spot these red flags on their own.
    9. **Import Email:** Use the three-dot button to import an MSG or EML file and customize it.
 4. Click **Edit** to make any changes or **Save** to complete the process.
+
+### How to Add a Double Barrel Email Template
+
+A Double Barrel template is made up of two emails sent in sequence within the same conversation thread: a **Lure Email** and a **Payload Email**. The Lure email builds trust without asking the user to do anything, and the Payload email — sent later — delivers the phishing link. This mimics a multi-stage social-engineering attack and gives a more realistic test than a single email.
+
+When you create or edit a Double Barrel email template, the **Email Settings** page shows two tabs:
+
+* **Lure Email** — the first message. It **must not contain links or the {PHISHINGURL} tag**. Set its Subject, From Name, From Email Address, and CC here.
+* **Payload Email** — the follow-up message. It **may contain links and the {PHISHINGURL} tag**. Its sender (From and CC) is **inherited from the Lure email**, so you do not set those again. You can also attach a file on this tab (Word, Excel, PowerPoint, or HTML, up to 5 MB).
+
+To create one:
+
+1. Click the **+New** button on the **Phishing Simulator > Phishing Scenarios > Email Templates** page.
+2. On the **Template Info** page, set the method to **Double Barrel**, complete the required fields, then click **Next**.
+3. On the **Lure Email** tab, write the trust-building message and set the Subject, From Name, From Email Address, and CC. Do not add any link or the {PHISHINGURL} tag.
+4. Switch to the **Payload Email** tab and write the message that contains the phishing link {PHISHINGURL}. Add an attachment here if needed. The sender details carry over from the Lure email.
+5. Click **Save** to finish.
+
+{% hint style="info" %}
+The Lure email is intentionally restricted from containing links or the {PHISHINGURL} tag. Keep the call-to-action and the phishing link in the Payload email. Delivery order and timing of the two emails are configured per campaign under Double Barrel Settings.
+{% endhint %}
 
 ## How to Add Email Template with Red Flags
 
