@@ -11,7 +11,7 @@ By default, no IP restrictions are configured and users can sign in from any IP 
 Allowed ranges are defined in **CIDR** notation (for example, `192.168.1.0/24`) or as a single IP address. The restriction applies to the entire company account and is enforced both when a user signs in and on subsequent requests, so a user who changes networks after signing in loses access on their next request.
 
 {% hint style="warning" %}
-⚠️ **Important:** Before you save an IP restriction, make sure your own current IP address or range is included in the allowed list. If you save a configuration that does not cover your network, you will be locked out of the company account on your next sign-in. If this happens, contact the [Keepnet support team](../../../../resources/keepnet-support-help-desk.md) for assistance.
+Before you save an IP restriction, make sure your own current IP address or range is included in the allowed list. If you save a configuration that does not cover your network, you will be locked out of the company account on your next sign-in. If this happens, contact the [Keepnet support team](../../../../resources/keepnet-support-help-desk.md) for assistance.
 {% endhint %}
 
 ## IP Restrictions Page
