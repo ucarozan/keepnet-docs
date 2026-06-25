@@ -196,6 +196,7 @@
       * [Notification Templates](next-generation-product/platform/company/company-settings/notification-templates.md)
       * [Microsoft Teams Settings](next-generation-product/platform/company/company-settings/microsoft-teams-settings.md)
       * [Google User Provisioning](next-generation-product/platform/company/company-settings/google-user-provisioning.md)
+      * [IP Restrictions](next-generation-product/platform/company/company-settings/ip-restrictions.md)
       * [REST API](next-generation-product/platform/company/company-settings/rest-api.md)
       * [White Labeling](next-generation-product/platform/company/company-settings/white-labeling.md)
       * [Proxy Settings](next-generation-product/platform/company/company-settings/proxy-settings.md)
