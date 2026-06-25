@@ -9,3 +9,5 @@ This section will help you comprehend and utilize the fundamental features withi
 * [How to see or create phishing landing pages](landing-pages.md)
 * [How to see or create red flag email templates](email-templates.md#how-to-add-a-new-email-template-with-red-flags)
 * [How to see or create red flag landing page templates](landing-pages.md#how-to-add-a-new-landing-page-template-with-red-flags)
+* [How to create a Double Barrel email template](email-templates.md#how-to-add-a-double-barrel-email-template)
+

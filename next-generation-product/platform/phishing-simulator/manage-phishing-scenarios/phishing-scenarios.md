@@ -76,7 +76,7 @@ Phishing scenarios have two components: the phishing email template and the land
       2. **Data Submission:** Redirect users to a page where they must enter requested credentials and see who submits this information in the report.
       3. **Attachment:** Redirect users to download a file attached within the simulated email, and see who opens the file within the report.
       4. **MFA:** Redirect users to a Multi-Factor Authentication (MFA) page where they must input a received MFA code to continue, and see who submits MFA codes in the report.
-      5. **Double Barrel:** Send two emails in sequence — a Lure email that builds trust without any link, then a Payload email containing the phishing link. See How to Add a Double Barrel Email Template to build the two-email template, and configure delivery under Double Barrel Settings.
+      5. **Double Barrel:** Send two emails in sequence — a Lure email that builds trust without any link, then a Payload email containing the phishing link. See [How to Add a Double Barrel Email Template](email-templates.md#how-to-add-a-double-barrel-email-template) to build the two-email template, and configure delivery under Double Barrel Settings.
    5. **Roles:** Add roles to the scenario that fit specific roles.
    6. **Tags:** Define tags for the scenario.
    7. **Make Available For:** Make your scenario available to be used by the other customers under your organization. This feature is only available to admins who have Reseller permissions.
