@@ -4,7 +4,7 @@ This section explains the functionality of **IP Restrictions** and provides some
 
 ## What is "IP Restrictions" used for?
 
-**IP Restrictions** let you control the networks from which users can access your company account. When you define one or more allowed IP ranges, sign-in is permitted only from those networks — any attempt from an IP address outside the allowed ranges is rejected. This allows organizations to enforce network-based access policies, such as limiting platform access to the corporate network or VPN.
+**IP Restrictions** let you control the networks from which users can access your company account in the platform. When you define one or more allowed IP ranges, sign-in is permitted only from those networks — any attempt from an IP address outside the allowed ranges is rejected. This allows organizations to enforce network-based access policies, such as limiting platform access to the corporate network or VPN.
 
 By default, no IP restrictions are configured and users can sign in from any IP address. Restrictions take effect only after you add at least one allowed range and save your changes.
 
