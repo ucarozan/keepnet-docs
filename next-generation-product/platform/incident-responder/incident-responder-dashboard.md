@@ -28,9 +28,9 @@ In order for this feature to produce accurate results, you need to arrange the t
 
 <table data-header-hidden><thead><tr><th width="150"></th><th width="582.1428571428571"></th></tr></thead><tbody><tr><td>Average hours saved per reported email(hours)</td><td>You can enter how much time a SOC team member spends time on each reported suspicious email to analyze, investigate, delete or other such actions.</td></tr><tr><td>Average total cost per hour($)</td><td>You can enter how much money it cost the company when a SOC team member spends time (hours) on each reported suspicious email to analyze, investigate, delete or other such actions.</td></tr></tbody></table>
 
-An example from real life scenario. There is a **SOC team** who has **five members** and only **one person** is dedicated to taking these **"analyze, share results with the reporter, investigate, delete phishing email"** actions of **each** **email** reported by employees.&#x20;
+An example from real life scenario. There is a **SOC team** who has **five members** and only **one person** is dedicated to taking these **"analyze, share results with the reporter, investigate, delete phishing email"** actions of **each** **email** reported by employees.
 
-The person spends approximately **one** **hour** on each email, and depending on the salary, the person's one hour is equal to **200$** to the company**,** then set the **"average hours = 1 hour"** and set the **"average total cost = 200$"** in the widget settings.
+The person spends approximately **one** **hour** on each email, and depending on the salary, the person's one hour is equal to **200$** to the company\*\*,\*\* then set the **"average hours = 1 hour"** and set the **"average total cost = 200$"** in the widget settings.
 
 The product will calculate based on this information how much money and time is saved by using the Incident Responder based on the each reported email to the product.
 
@@ -54,17 +54,17 @@ The **Reported Email Trends** widget presents a monthly breakdown of Undetected,
 
 This table contains all emails and analysis statuses reported to the Incident Responder product. This table includes information such as who reported suspicious emails, the status of the email analysis, and other details.
 
+The table below contains comprehensive information on each field.
+
+<table data-header-hidden><thead><tr><th width="150"></th><th width="583.1428571428571"></th></tr></thead><tbody><tr><td>Subject</td><td>Name of the subject</td></tr><tr><td>Attachment</td><td>Indicates whether the reported email includes a file attachment.</td></tr><tr><td>Reporter By</td><td>The email address of the user reported the incident.</td></tr><tr><td>Sender IP</td><td>The IP address the reported email was sent from.</td></tr><tr><td>Case ID</td><td>It is the case number that is created specific to the case.</td></tr><tr><td>Analysis Source</td><td>Analysis source detail that is automatic or linked to a Playbook rule.</td></tr><tr><td>Result</td><td>Analysis result of the case.</td></tr><tr><td>Risk Level</td><td>The risk level assigned to the reported email by the automatic AI analysis (for example, Low). Shown for tenants with an active AI license.</td></tr><tr><td>AI Analysis</td><td>For tenants with an active AI license, each reported email is automatically analyzed by AI on submission and the verdict is shown here with a short reason (for example, "No Threat Detected – Benign Email"). This lets analysts triage reported emails faster without starting analysis manually.</td></tr><tr><td>Status</td><td>Analysis status of the case. The status can be open, closed, in analysis, false positive, or in progress.</td></tr><tr><td>Tags</td><td>This is the area where you can add reminder tag information.</td></tr><tr><td>Notes</td><td>This is the area where the analyst can write their notes for this case.</td></tr><tr><td>Notify Reporting User About This Update</td><td>A feature where the notification message can be sent to the person who reported the incident using default templates by default or custom templates by clicking the <strong>change</strong> button and choosing the custom template.</td></tr><tr><td>Add Custom Message</td><td>Area where you can add a custom message in the email notification to be sent to the person reported the incident.</td></tr><tr><td>Date Created</td><td>The report date of the incident.</td></tr><tr><td>Last Update</td><td>The date of the last update on the incident.</td></tr></tbody></table>
+
 ### **Actions**
 
 You can take manual action on suspicious emails reported to the Incident Responder. You can click the buttons under the action and take the appropriate steps you want to perform.
 
 #### **Edit**
 
-The incident that was reported to the Incident Responder can be edited. You can add a tag or make notes on the case, as well as amend the analysis result or status of the related case. The table below contains comprehensive information on each field.
-
-<table data-header-hidden><thead><tr><th width="150"></th><th width="583.1428571428571"></th></tr></thead><tbody><tr><td>Subject</td><td>Name of the subject</td></tr><tr><td>Reporter By</td><td>The email address of the user reported the incident.</td></tr><tr><td>Case ID</td><td>It is the case number that is created specific to the case.</td></tr><tr><td>Analysis Source</td><td>Analysis source detail that is automatic or linked to a Playbook rule.</td></tr><tr><td>Result</td><td>Analysis result of the case.</td></tr><tr><td>Status</td><td>Analysis status of the case.  The status can be open, closed, in analysis, false positive, or in progress.</td></tr><tr><td>Tags</td><td>This is the area where you can add reminder tag information.</td></tr><tr><td>Notes</td><td>This is the area where the analyst can write their notes for this case.</td></tr><tr><td>Notify Reporting User About This Update</td><td>A feature where the notification message can be sent to the person who reported the incident using default templates by default or custom templates by clicking the <strong>change</strong> button and choosing the custom template.</td></tr><tr><td>Add Custom Message</td><td>Area where you can add a custom message in the email notification to be sent to the person reported the incident.</td></tr><tr><td>Date Created</td><td>The report date of the incident.</td></tr><tr><td>Last Update</td><td>The date of the last update on the incident.</td></tr></tbody></table>
-
-You have the option to see the incident, look over its specifics, begin researching it, and take actions like rescanning the incident for integrations. By selecting the **three dots** “**︙**” button next to the Action title, you can execute actions on the related titles below.
+The incident that was reported to the Incident Responder can be edited. You can add a tag or make notes on the case, as well as amend the analysis result or status of the related case.
 
 #### **Preview Email**
 
@@ -76,9 +76,7 @@ By clicking the **Details** button, you can visit the page with the details of t
 
 The information on the reporting page is detailed in the table below.
 
-<table data-header-hidden><thead><tr><th width="150"></th><th width="581.7800776196638"></th></tr></thead><tbody><tr><td>Details</td><td><p>This is the area where the details of the email are shown. See the following information:</p><p></p><ul><li>Analysis date of the reported email</li><li>From</li><li>From Name</li><li>To</li><li>CC</li><li>BCC</li><li>The date and time the user received the email</li><li>Sender IP of the email</li><li>The name of the folder where the email is located</li><li>The number of attachments</li><li>The number of URLs</li><li>The location of the sender IP address.</li></ul><p><br>At the same time, the email server IP address to which the email is sent, blacklist control is performed in analysis services. You can see the results on this screen under the <strong>Sender</strong> <strong>IP</strong> <strong>Blacklist</strong> <strong>Check</strong> title.</p></td></tr><tr><td>Header</td><td>The header information of the email is displayed in this field.</td></tr><tr><td>Email Preview</td><td>The preview of the email is shown in this area.</td></tr><tr><td>URLs</td><td>URLs and their analysis results in the email are displayed in this field. If the main domain redirects, each subsequent domain in the redirection chain is extracted and scanned until the final destination.</td></tr><tr><td>Attachments</td><td>The name of the attachment files and their hash information as well as analysis results are displayed in this field.</td></tr></tbody></table>
-
-
+<table data-header-hidden><thead><tr><th width="150"></th><th width="581.7800776196638"></th></tr></thead><tbody><tr><td>Details</td><td><p>This is the area where the details of the email are shown. See the following information:</p><ul><li>Analysis date of the reported email</li><li>From</li><li>From Name</li><li>To</li><li>CC</li><li>BCC</li><li>The date and time the user received the email</li><li>Sender IP of the email</li><li>The name of the folder where the email is located</li><li>The number of attachments</li><li>The number of URLs</li><li>The location of the sender IP address.</li></ul><p><br>At the same time, the email server IP address to which the email is sent, blacklist control is performed in analysis services. You can see the results on this screen under the <strong>Sender</strong> <strong>IP</strong> <strong>Blacklist</strong> <strong>Check</strong> title.</p></td></tr><tr><td>Header</td><td>The header information of the email is displayed in this field.</td></tr><tr><td>Email Preview</td><td>The preview of the email is shown in this area.</td></tr><tr><td>URLs</td><td>URLs and their analysis results in the email are displayed in this field. If the main domain redirects, each subsequent domain in the redirection chain is extracted and scanned until the final destination.</td></tr><tr><td>Attachments</td><td>The name of the attachment files and their hash information as well as analysis results are displayed in this field.</td></tr></tbody></table>
 
 #### **Investigate**
 
@@ -90,7 +88,7 @@ By clicking the Re-analyze button, you can re-analyze the incident using analysi
 
 ### **Cluster View**
 
-You can utilize **Cluster View** to view notifications more clearly when there are too many of them on the Incident Responder screen. By selecting the  “⇩”  button located in the top right corner of the **Reported Emails** table, you can take the following actions.
+You can utilize **Cluster View** to view notifications more clearly when there are too many of them on the Incident Responder screen. By selecting the “⇩” button located in the top right corner of the **Reported Emails** table, you can take the following actions.
 
 #### **Cluster by Subject**
 
@@ -138,6 +136,10 @@ A: No, the email reported by your users is never sent to any other service.
 
 A: Automatic analysis starts only when the analysis result is determined to be Phishing and Malicious, and the relevant malicious email is automatically searched throughout the company.
 
+### Q: Does Incident Responder analyze reported emails with AI automatically?
+
+A: Yes, for tenants with an active AI license. Each reported email is analyzed by AI as soon as it is submitted, and the result appears in the **AI Analysis** column along with a **Risk Level**. This is separate from the automatic investigation, which is triggered only when an email is found to be Phishing or Malicious. The AI analysis helps analysts triage reported emails faster without starting analysis manually. More details are available when you go to the Details of the reported email and find the AI Analysis menu.
+
 ### **Q: How Sandbox analyzes my suspicious emails?**
 
 A: We analyze suspicious email by header, body and attachments using our third-party analysis engines integrated into our platform. The reported email itself is not forwarded to the integrations. Our platform parses the URL, Attachment and Sender IP and makes the analysis.
@@ -156,7 +158,7 @@ A: Incident Responder product extracts and scans every domain in the redirection
 
 ### Q: How does the Incident Responder handle the QR code emails?
 
-A:  Incident Responder product extracts and scans the QR codes by default. It can scan the QR code that is added to the body of the email or attached.&#x20;
+A: Incident Responder product extracts and scans the QR codes by default. It can scan the QR code that is added to the body of the email or attached.
 
 ### **Q: Why doesn't Keepnet automatically start an investigation when an email is marked as malicious?**
 
