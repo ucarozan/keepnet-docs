@@ -57,7 +57,7 @@ Safeguards are **mandatory** controls that ensure ethical, compliant, and predic
 
 Save the tab to apply your settings across the organization. Changes take effect immediately for new AI actions.
 
-### How Execution Mode and Safeguards Work Together
+## How Execution Mode and Safeguards Work Together
 
 The execution mode sets _who approves_ AI actions; safeguards set _what AI is allowed to do_.
 
