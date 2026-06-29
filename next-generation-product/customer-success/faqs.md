@@ -51,3 +51,11 @@ A: Keepnet's platform is built for high-volume operations with scalable infrastr
 To change the information which pulls through to each field in Keepnet, you will need to update the attribute mapping on your Keepnet SCIM Enterprise Application on portal.azure.com. Here's a walkthrough guide on how to set this up:
 
 {% embed url="https://www.loom.com/share/f2cb08b336ef4e76813a02f3e92e5aa4" %}
+
+### **Q: Can I attach an HTML file to an attachment phishing scenario instead of a Word or Office document?**
+
+Yes. Keepnet supports HTML files as attachments in attachment-method phishing scenarios, alongside Word, PowerPoint, and Excel files.
+
+To use an HTML attachment, set the scenario method to **Attachment** when creating your phishing scenario, then import your HTML file into the email template. You can include custom HTML, CSS, and JavaScript in the file, so it is well suited to replicating a convincing login page, document preview, or any other browser-rendered content.
+
+Always send the scenario to yourself as a test before launching to your target group to confirm the tracking pixel fires correctly in your environment.
