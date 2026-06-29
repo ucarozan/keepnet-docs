@@ -12,7 +12,7 @@ The platform will notify the system user to validate the email domains after cre
 
 ## Methods for Adding Target Users
 
-### 1. Adding Target Users via  XLS(x) or CSV Files
+### 1. Adding Target Users via XLS(x) or CSV Files
 
 You can easily add target users to the system by importing a list on an Excel file. To use this option, please follow the steps below:
 
@@ -41,8 +41,8 @@ After your file is ready, please follow the steps below:
 * Click the **"New"** button.
 * Click the "**Import from a file"** option.
 * Click **Upload** **File**, choose the file on your computer, and click **NEXT.**
-* The **Map Fields** tab will require you to match the titles to the fields on the platform.&#x20;
-* When you complete matching the fields, click **NEXT**.&#x20;
+* The **Map Fields** tab will require you to match the titles to the fields on the platform.
+* When you complete matching the fields, click **NEXT**.
 * Then either pick the users you wish to add and click **IMPORT SELECTED**, or click **IMPORT ALL** to add all the users to the platform.
 
 ### 2. Adding Target Users Manually
@@ -53,7 +53,7 @@ After your file is ready, please follow the steps below:
 
 ### 3. Adding Target Users via SCIM
 
-SCIM (System for Cross-domain Identity Management) is a standard that automates the sharing of user identity information (e.g., first name, last name, email, phone number) across multiple identity platforms. Keepnet's platform supports SCIM integration to automate and synchronize target user data from identity providers to the platform.&#x20;
+SCIM (System for Cross-domain Identity Management) is a standard that automates the sharing of user identity information (e.g., first name, last name, email, phone number) across multiple identity platforms. Keepnet's platform supports SCIM integration to automate and synchronize target user data from identity providers to the platform.
 
 To use this option, please follow the steps below:
 
@@ -61,7 +61,7 @@ To use this option, please follow the steps below:
 * Click the **"New"** button.
 * Click the "**SCIM Sync"** option.
 
-Please click [here](company-settings/scim-settings/) to learn how to set up or synchronize your employees' information via SCIM on the platform.&#x20;
+Please click [here](company-settings/scim-settings/) to learn how to set up or synchronize your employees' information via SCIM on the platform.
 
 ### 4. Adding Target Users via Google Workspace
 
@@ -101,7 +101,7 @@ Use your own domain if you are using an on-premise version. e.g. https://api.PLA
 
 <mark style="color:green;">**POST**</mark> **​/api​/target-users**
 
-* Go to the Swagger [link](https://api.keepnetlabs.com/docs/index.html).&#x20;
+* Go to the Swagger [link](https://api.keepnetlabs.com/docs/index.html).
 * Click the **Authorize** button on the top right side of the page.
 * Complete the authorization step with the **Client ID** and **Client Secret** key that you created on the platform.
 * Make sure that the **api1** option is checked (✓) on the **Scopes** section.
@@ -115,7 +115,7 @@ The most up-to-date format of the body content that you need to use for requesti
 
 <mark style="color:green;">**POST**</mark> **​/api​/target-users​/search**
 
-* Go to the Swagger [link](https://api.keepnetlabs.com/docs/index.html).&#x20;
+* Go to the Swagger [link](https://api.keepnetlabs.com/docs/index.html).
 * Click the **Authorize** button on the top right side of the page.
 * Complete the authorization step with the **Client ID** and **Client Secret** key that you created on the platform.
 * Make sure that the **api1** option is checked (✓) on the **Scopes** section.
@@ -129,7 +129,7 @@ The most up-to-date format of the body content that you need to use for requesti
 
 <mark style="color:orange;">**PUT**</mark> **​/api​/target-users​/{resourceId}**
 
-* Go to the Swagger [link](https://api.keepnetlabs.com/docs/index.html).&#x20;
+* Go to the Swagger [link](https://api.keepnetlabs.com/docs/index.html).
 * Click the **Authorize** button on the top right side of the page.
 * Complete the authorization step with the **Client ID** and **Client Secret** key that you created on the platform.
 * Make sure that the **api1** option is checked (✓) on the **Scopes** section.
@@ -143,7 +143,7 @@ The most up-to-date format of the body content that you need to use for requesti
 
 <mark style="color:red;">**DELETE**</mark> **​/api​/target-users​/{resourceId}**
 
-* Go to the Swagger [link](https://api.keepnetlabs.com/docs/index.html).&#x20;
+* Go to the Swagger [link](https://api.keepnetlabs.com/docs/index.html).
 * Click the **Authorize** button on the top right side of the page.
 * Complete the authorization step with the **Client ID** and **Client Secret** key that you created on the platform.
 * Make sure that the **api1** option is checked (✓) on the **Scopes** section.
@@ -173,7 +173,7 @@ Deleting a target user group will not delete the users defined in the group. It 
 
 ## **Repeat Offenders**
 
-**Repeat Offenders** is an automated target group that includes users who have been phished two or more times in the last 3 months across all phishing simulation campaigns such as from Vishing Simulator, Quishing Simulator, Phishing Simulator, Callback Simulator and Smishing Simulator. You can view the risky users and send them training more frequently.&#x20;
+**Repeat Offenders** is an automated target group that includes users who have been phished two or more times in the last 3 months across all phishing simulation campaigns such as from Vishing Simulator, Quishing Simulator, Phishing Simulator, Callback Simulator and Smishing Simulator. You can view the risky users and send them training more frequently.
 
 There are two ways to see the repeat offender users.
 
@@ -189,7 +189,7 @@ The training and simulations for this group are selected and assigned by system 
 To view the **New** **Hires** group:
 
 1. Go to **Company > Target Users > Groups**
-   * Here, you will find the **New** **Hires** group listed.&#x20;
+   * Here, you will find the **New** **Hires** group listed.
 
 By using the **New** **Hires** group, you can ensure that your newest team members are equipped with the knowledge and skills necessary to maintain a strong security posture from day one.
 
@@ -227,8 +227,8 @@ The new **User Activity Timeline** button under the **Company > Target Users > A
 
 When you view **Company > Target Users**, users who have been deleted from the platform are still listed for reporting and audit purposes. Deleted users appear with:
 
-- **Disabled or greyed-out rows** — So you can quickly distinguish them from active and inactive users.
-- **Status text** such as **"This user has been deleted"** — Shown in the user row or status column.
+* **Disabled or greyed-out rows** — So you can quickly distinguish them from active and inactive users.
+* **Status text** such as **"This user has been deleted"** — Shown in the user row or status column.
 
 You cannot perform **Delete User** or **Add to Group** on already deleted users. This avoids "Not Found" errors and makes it clear that deleted users are no longer manageable.
 
@@ -255,11 +255,11 @@ The **Target Users** are those who receive e-mails that will be sent through the
 
 A: You can only add e-mail addresses with authorized domains. Contact your Account Manager or Support Team if you wish to add users with a different domain address.
 
-### Q: Would the remaining license count increase when a target user is deleted?
+### **Q: What happens to my licenses when I delete a target user?**
 
-A: No, when a target user is added, your remaining license is reduced appropriately, but your license is not increased when the target user is deleted.
+A: Deleting a user releases their seat. Your **total purchased licenses stay the same** — deleting does not add new licenses to your plan. But the deleted user no longer counts toward your usage, so that **seat becomes available** to assign to another user, with no extra purchase.
 
-### Q: What will happen when the license count is exceeded?
+### Q: What happens when I exceed my license count?
 
 A: The system will warn the admin when add a new user although the license count is exceeded. If the admin goes further and adds new users, each unique user will be charged. Please contact the support team for the additional license.
 
