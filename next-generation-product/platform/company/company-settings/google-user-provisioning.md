@@ -19,11 +19,12 @@ Please follow the steps below.
    1. **Sync all users to target users:** This will sync all users from the selected organizational units or groups.
    2. **Sync all users to a target group:** This will sync all users from the selected organizational units or groups and add them to the selected target group on the platform.
    3. **Sync users and create a matching group:** This option will sync users from the selected organizational units or groups, and the system will automatically create target groups with the same names on the platform. The users will then be assigned to the corresponding groups or organizational units on the platform.
+   4. **Create Target Group per Organizational Unit:** Available when your sync source is **Organizational Units (OU)**. The platform creates a separate **Target** **Group** for **each selected organizational unit** and syncs the users assigned directly to that unit into the matching group.&#x20;
 7. Now, click the **START SYNC** button to begin synchronization.
 
 The synchronization may take some time depending on the number of target users. Once the synchronization is complete, you can view the synced users on the **Company > Target Users** page.
 
-The synchronization automatically repeats every 24 hours to ensure all users are updated with the latest information from Google Workspace, or to remove any target users who are no longer available in Google Workspace.&#x20;
+The synchronization automatically repeats every 24 hours to ensure all users are updated with the latest information from Google Workspace, or to remove any target users who are no longer available in Google Workspace.
 
 If you wish to sync the user's latest information to the platform immediately without waiting 24 hours, please click the **SYNC NOW** button.
 
