@@ -188,6 +188,7 @@
       * [Privacy](next-generation-product/platform/company/company-settings/privacy/README.md)
         * [Account Privacy](next-generation-product/platform/company/company-settings/privacy/account-privacy.md)
         * [Data Privacy](next-generation-product/platform/company/company-settings/privacy/data-privacy.md)
+      * [Agentic AI Settings](next-generation-product/platform/company/company-settings/agentic-ai-settings.md)
       * [AI Ally Settings](next-generation-product/platform/company/company-settings/ai-ally-settings.md)
       * [SMTP Settings](next-generation-product/platform/company/company-settings/smtp-settings.md)
       * [Direct Email Creation](next-generation-product/platform/company/company-settings/direct-email-creation/README.md)
