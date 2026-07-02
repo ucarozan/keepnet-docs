@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Keepnet values customers' privacy and takes important steps to protect all customer data. Our main job is to keep any data secure. From this point of view, securing customers' data is one of the crucial jobs our company does. &#x20;
+Keepnet values customers' privacy and takes important steps to protect all customer data. Our main job is to keep any data secure. From this point of view, securing customers' data is one of the crucial jobs our company does.
 
 Keeping our systems and customers' data secure is vital to our operations and business. Please also review our [Privacy Policy](https://doc.keepnetlabs.com/legal-hub/for-everyone/website/privacy-policy).
 
@@ -29,7 +29,7 @@ Keepnet maintains rigorous compliance standards to ensure the integrity of its p
 
 ## Keepnet ISO 27001
 
-ISO 27001 is a global security standard that is recognized internationally for managing security risks to data. Certification to ISO 27001 proves that we are managing the information security in line with the security standards and adopting a process-based approach for establishing, implementing, operating, monitoring, maintaining, and improving  Information Security Management System.&#x20;
+ISO 27001 is a global security standard that is recognized internationally for managing security risks to data. Certification to ISO 27001 proves that we are managing the information security in line with the security standards and adopting a process-based approach for establishing, implementing, operating, monitoring, maintaining, and improving Information Security Management System.
 
 {% file src="../.gitbook/assets/Keepnet - 27001 Cert.pdf" %}
 Download our ISO 27001 certificate.
@@ -40,7 +40,7 @@ Download our ISO 27001 certificate.
 ISO/IEC 27017 is a standard created for cloud service providers and users to secure the cloud-based environment and minimize the potential risk of a security incident. This standard is designed to assist in the recommendation and implementation of controls for cloud-based organizations. This is relevant not only to organizations that store information in the cloud but also to providers which offer cloud-based services to other companies that may have sensitive information.
 
 {% file src="../.gitbook/assets/Keepnet - 27017 Cert.pdf" %}
-Download our ISO 27017 certificate.&#x20;
+Download our ISO 27017 certificate.
 {% endfile %}
 
 ## Keepnet ISO 27018
@@ -48,7 +48,7 @@ Download our ISO 27017 certificate.&#x20;
 ISO 27018 is the first international standard developed particularly for data privacy in the cloud. According to the [International Organization for Standardization (ISO)](https://www.iso.org/standard/76559.html), the purpose of this standard is to establish “commonly accepted control objectives, controls, and guidelines for implementing measures to protect Personally Identifiable Information (PII).” ISO 27018 defines best practices for information security management on the cloud. ISO 27018 adds new guidelines, enhancements, and security controls to the ISO/IEC 27001 and ISO/IEC 27002 standards, which help cloud service providers better manage the data security risks unique to PII in cloud computing.
 
 {% file src="../.gitbook/assets/Keepnet - 27018 Cert.pdf" %}
-Download our ISO 27018 certificate.&#x20;
+Download our ISO 27018 certificate.
 {% endfile %}
 
 ## **Keepnet ISO/IEC 42001:2023**
@@ -80,7 +80,7 @@ Keepnet also hosts one of its other production environments within Microsoft Azu
 
 Keepnet is responsible for security in the cloud, and you can find more details on the platform security page.
 
-<table><thead><tr><th width="115.33333333333331" align="center">Product</th><th width="153" align="center">Production</th><th align="center">Disaster Recovery</th></tr></thead><tbody><tr><td align="center">Keepnet Products</td><td align="center">Microsoft Azure Data Center in Central US and East US 2</td><td align="center"><p><strong>We use Microsoft Azure's Geo-restore</strong></p><p></p><p>The geo-restore feature restores the server using geo-redundant backups. The backups are hosted in your server's <a href="https://learn.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure">paired region</a>. You can restore from these backups to any other region. The geo-restore creates a new server with the data from the backups. Learn more about geo-restore from the <a href="https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-backup">backup and restore concepts article</a>.</p></td></tr></tbody></table>
+<table><thead><tr><th width="115.33333333333331" align="center">Product</th><th width="153" align="center">Production</th><th align="center">Disaster Recovery</th></tr></thead><tbody><tr><td align="center">Keepnet Products</td><td align="center">Microsoft Azure Data Center in Central US and East US 2</td><td align="center"><p><strong>We use Microsoft Azure's Geo-restore</strong></p><p>The geo-restore feature restores the server using geo-redundant backups. The backups are hosted in your server's <a href="https://learn.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure">paired region</a>. You can restore from these backups to any other region. The geo-restore creates a new server with the data from the backups. Learn more about geo-restore from the <a href="https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-backup">backup and restore concepts article</a>.</p></td></tr></tbody></table>
 
 Keepnet has an on-premise installation that gives the ability to host the product in your own environment. Moreover, it is possible to host it on Google Cloud, Microsoft Azure, and any other virtualization platform. Please get in touch with us at support@keepnetlabs.com for any questions.
 
@@ -92,7 +92,7 @@ Keepnet hosts the production environment within Microsoft Azure Cloud in the UK 
 
 Keepnet is responsible for security in the cloud, and you can find more details on platform security.
 
-<table><thead><tr><th width="119.33333333333331" align="center">Product</th><th width="165" align="center">Production</th><th align="center">Disaster Recovery</th></tr></thead><tbody><tr><td align="center">Keepnet Products</td><td align="center">Microsoft Azure Data Center in the West and South of the UK</td><td align="center"><p><strong>We use Microsoft Azure's Geo-restore</strong></p><p></p><p>The geo-restore feature restores the server using geo-redundant backups. The backups are hosted in your server's <a href="https://learn.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure">paired region</a>. You can restore from these backups to any other region. The geo-restore creates a new server with the data from the backups. Learn more about geo-restore from the <a href="https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-backup">backup and restore concepts article</a>.</p></td></tr></tbody></table>
+<table><thead><tr><th width="119.33333333333331" align="center">Product</th><th width="165" align="center">Production</th><th align="center">Disaster Recovery</th></tr></thead><tbody><tr><td align="center">Keepnet Products</td><td align="center">Microsoft Azure Data Center in the West and South of the UK</td><td align="center"><p><strong>We use Microsoft Azure's Geo-restore</strong></p><p>The geo-restore feature restores the server using geo-redundant backups. The backups are hosted in your server's <a href="https://learn.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure">paired region</a>. You can restore from these backups to any other region. The geo-restore creates a new server with the data from the backups. Learn more about geo-restore from the <a href="https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-backup">backup and restore concepts article</a>.</p></td></tr></tbody></table>
 
 Keepnet has an on-premise installation that gives the ability to host the product in your own environment. Moreover, it is possible to host it on Google Cloud, Microsoft Azure, and any other virtualization platform. Please get in touch with us at support@keepnetlabs.com for any questions.
 
@@ -117,23 +117,23 @@ To further enhance security, Keepnet also implements the following protocols and
 
 By integrating these advanced tools and rigorous policies, Keepnet ensures that all data in transit is well-protected against a wide range of digital threats, maintaining client data’s confidentiality, integrity, and availability.
 
-## **Data at Rest Encryption Flow**&#x20;
+## **Data at Rest Encryption Flow**
 
-We use  persisting encrypting/decrypting data.&#x20;
+We use persisting encrypting/decrypting data.
 
-Data is encrypted/decrypted and persisted as encrypted on the database with Data Encryption Key. Without this key, the data can’t be visible as plain text.&#x20;
+Data is encrypted/decrypted and persisted as encrypted on the database with Data Encryption Key. Without this key, the data can’t be visible as plain text.
 
 ![Data Encryption Flow](<../.gitbook/assets/Data Encryption.png>)
 
 The Data Encryption Key is sent to the database by the Application to encrypt/decrypt data.
 
-The encryption method is symmetric encryption with the AES-256 algorithm.&#x20;
+The encryption method is symmetric encryption with the AES-256 algorithm.
 
 The Data Encryption Key is a cryptography random string with a certain length salted with another random cryptographically string.
 
 The data, like credentials, email addresses, and company names, are encrypted.
 
-For more information about  encryption options, please check [this official guide](https://www.postgresql.org/docs/8.1/encryption-options.html).
+For more information about encryption options, please check [this official guide](https://www.postgresql.org/docs/8.1/encryption-options.html).
 
 ## Data at Rest Encryption for Files
 
@@ -161,9 +161,17 @@ We require all passwords to meet the following complexity requirements:
 
 #### Password Expiration
 
-We understand that frequent password changes can sometimes lead to less secure behaviors, such as users choosing simpler passwords or reusing old ones. Therefore, we do not enforce a mandatory password expiration period. However, we strongly recommend that you change your password periodically and whenever you suspect that your account may have been compromised.&#x20;
+We understand that frequent password changes can sometimes lead to less secure behaviors, such as users choosing simpler passwords or reusing old ones. Therefore, we do not enforce a mandatory password expiration period. However, we strongly recommend that you change your password periodically and whenever you suspect that your account may have been compromised.
 
 Remember, choosing a unique and complex password and updating it regularly is one of the most effective ways to secure your account.
+
+#### Network Access Control (IP Restrictions)
+
+The platform lets organizations control which networks users can sign in from. Administrators define one or more allowed IP addresses or CIDR ranges, and sign-in is permitted only from those networks — any attempt from an address outside the allowed ranges is rejected. The restriction is enforced both at sign-in and on subsequent requests, so a session that moves to an unapproved network loses access on its next request.
+
+IP Restrictions apply to every user regardless of authentication method — password, SSO, or MFA — because they control which network a user connects from rather than who the user is. For accounts that must connect from outside the corporate network, such as a remote administrator or a service account, a per-user Bypass IP Restriction option grants an exception without changing the company-wide policy.
+
+Organizations use this to enforce network-based access policies — for example, limiting platform access to a corporate network or a VPN with a static egress IP. IP Restrictions are configured under Company > Company Settings > IP Restrictions; for full configuration steps and use cases, see [IP Restrictions](../next-generation-product/platform/company/company-settings/ip-restrictions.md).
 
 #### Account Lockout Policy
 
@@ -177,7 +185,7 @@ For more information, please click [here](compliance.md#next-generation-ui-data-
 
 #### Two-Factor Authentication (2FA)
 
-We take the security of your account very seriously. To provide an additional layer of protection, we have implemented mandatory two-factor authentication (2FA) using Multi-Factor Authentication (MFA) for all accounts.&#x20;
+We take the security of your account very seriously. To provide an additional layer of protection, we have implemented mandatory two-factor authentication (2FA) using Multi-Factor Authentication (MFA) for all accounts.
 
 When you log in, you'll be asked to enter a code from your MFA application in addition to your password. This ensures that even if someone else knows your password, they won't be able to access your account without the MFA code.
 
@@ -241,11 +249,11 @@ This policy ensures appropriate measures for health, safety, environmental, and 
 
 Keepnet is committed to preventing and eradicating modern slavery and human trafficking within its operations and supply chains. Full policy text is available to customers upon request.
 
-### Acceptable Use Policy&#x20;
+### Acceptable Use Policy
 
-We have outlined the acceptable use of information and IT resources for our employees/contractors. All employees/contractors are required to comply with the requirements in this policy. &#x20;
+We have outlined the acceptable use of information and IT resources for our employees/contractors. All employees/contractors are required to comply with the requirements in this policy.
 
-This policy is intended to limit the use of information and IT resources. The objective of this policy is to outline the acceptable use of computer equipment at our company.  These rules are in place to protect the employee/contractor and our company. Inappropriate use exposes the company to risks, including virus attacks, compromise of network systems and services, and legal issues.
+This policy is intended to limit the use of information and IT resources. The objective of this policy is to outline the acceptable use of computer equipment at our company. These rules are in place to protect the employee/contractor and our company. Inappropriate use exposes the company to risks, including virus attacks, compromise of network systems and services, and legal issues.
 
 Full policy text is available to customers upon request.
 
@@ -263,13 +271,13 @@ Full policy text is available to customers upon request.
 
 Web application vulnerabilities account for the largest portion of attack vectors outside of malware. It is crucial that any web application is assessed for vulnerabilities and any vulnerabilities by remediated prior to production deployment.
 
-The purpose of this policy is to define web application security assessments within the platform. Web application assessments are performed to identify potential or realized weaknesses as a result of inadvertent misconfiguration, weak authentication, insufficient error handling, sensitive information leakage, etc.  Discovery and subsequent mitigation of these issues will limit the attack surface of our services available.
+The purpose of this policy is to define web application security assessments within the platform. Web application assessments are performed to identify potential or realized weaknesses as a result of inadvertent misconfiguration, weak authentication, insufficient error handling, sensitive information leakage, etc. Discovery and subsequent mitigation of these issues will limit the attack surface of our services available.
 
 Full policy text is available to customers upon request.
 
 ### System Documentation Policy
 
-This policy defines the level of system documentation required, such as configuration information and services that are running.&#x20;
+This policy defines the level of system documentation required, such as configuration information and services that are running.
 
 This policy is designed to provide service stability by ensuring that system documentation is complete and current. This policy complements business continuity management and disaster recovery by ensuring that documentation is available in the event that systems should need to be rebuilt. This policy will help reduce troubleshooting time by ensuring that appropriate personnel is notified when changes are made to any system.
 
@@ -277,7 +285,7 @@ Full policy text is available to customers upon request.
 
 ### Supplier Security Policy
 
-This policy specifies controls to reduce the information security risks associated with outsourcing.&#x20;
+This policy specifies controls to reduce the information security risks associated with outsourcing.
 
 Supplier security policy applies to our employees and outsourcers, including hardware and software support and maintenance staff, external consultants and contractors, IT or business process outsourcing firms, and temporary staff.
 
@@ -285,39 +293,39 @@ Full policy text is available to customers upon request.
 
 ### Remote Working Policy
 
-This policy has been developed to protect sensitive or valuable data and maintain the overall security of our data and equipment whilst employees/contractors are working remotely. In addition, this policy recognizes and defines our duty and care to the remote working employees in regard to their health and safety and fair treatment.&#x20;
+This policy has been developed to protect sensitive or valuable data and maintain the overall security of our data and equipment whilst employees/contractors are working remotely. In addition, this policy recognizes and defines our duty and care to the remote working employees in regard to their health and safety and fair treatment.
 
 Employees/contractors must ensure the security of information and systems accessed through mobile and remote working arrangements are given due consideration. This policy emphasizes the importance of staff understanding our current information security policies and procedures and each individual’s responsibilities in relation to these, which must be adhered to at all times.
 
 ### Media Protection Policy
 
-The information resides in many forms and can be stored in different ways. Media controls are protective measures specifically designed to safeguard electronic data and hardcopy information. This policy addresses the protection, marking, sanitization, production input/output, and disposal of media containing sensitive information. &#x20;
+The information resides in many forms and can be stored in different ways. Media controls are protective measures specifically designed to safeguard electronic data and hardcopy information. This policy addresses the protection, marking, sanitization, production input/output, and disposal of media containing sensitive information.
 
 This policy applies to all our employees/contractors and affiliates.
 
 Full policy text is available to customers upon request.
 
-### Database Credentials' Security Policy&#x20;
+### Database Credentials' Security Policy
 
-Database authentication credentials are a necessary part of authorizing an application to connect to internal databases. However, incorrect use, storage, and transmission of such credentials could lead to the compromise of very sensitive assets and be a springboard to wider compromise within the organization. &#x20;
+Database authentication credentials are a necessary part of authorizing an application to connect to internal databases. However, incorrect use, storage, and transmission of such credentials could lead to the compromise of very sensitive assets and be a springboard to wider compromise within the organization.
 
 This policy states the requirements for securely storing and retrieving database credentials for use by a program that will access a database running on our networks. Software applications running on our networks may require access to one of the many internal database servers. In order to access these databases, a program must authenticate to the database by presenting acceptable credentials. If the credentials are improperly stored, the credentials may be compromised, leading to a compromise of the database.
 
 Full policy text is available to customers upon request.
 
-### Data Protection Policy&#x20;
+### Data Protection Policy
 
-We are committed to compliance with all relevant EU and Member State laws in respect of personal data and the protection of the “rights and freedoms” of individuals whose information we collect and process in accordance with the General Data Protection Regulation (GDPR). To do this, we comply with the Data Protection Principles which are set out in this policy. &#x20;
+We are committed to compliance with all relevant EU and Member State laws in respect of personal data and the protection of the “rights and freedoms” of individuals whose information we collect and process in accordance with the General Data Protection Regulation (GDPR). To do this, we comply with the Data Protection Principles which are set out in this policy.
 
 The purpose of this policy is to set out our obligations and to demonstrate its commitment to compliance with it. The policy aims to fulfil the data protection requirements for personal data, which we collect and process in accordance with the General Data Protection Regulation (GDPR).
 
 Full policy text is available to customers upon request.
 
-### Cryptography Policy&#x20;
+### Cryptography Policy
 
-The purpose of this Policy is to protect the confidentiality, integrity and availability of our information by applying appropriate levels of cryptographic controls.&#x20;
+The purpose of this Policy is to protect the confidentiality, integrity and availability of our information by applying appropriate levels of cryptographic controls.
 
-**As part of our Cryptography Policy, we keep all data encrypted in our database.**&#x20;
+**As part of our Cryptography Policy, we keep all data encrypted in our database.**
 
 The scope of this policy applies to information system resources, including but not limited to data networks, servers, personal computers, mobile devices located at our, and not our locations, where these resources are under the jurisdiction and/or ownership of ours. Third parties with access to high or critical data owned by us shall also adhere to this policy.
 
@@ -331,21 +339,21 @@ Full policy text is available to customers upon request.
 
 ### Clean Desk Policy
 
-A clean desk policy can be an important tool to ensure that all confidential/restricted materials are removed from an end-user workspace and locked away when the items are not in use or an employee/contractor leaves his/her workstation. It is one of the top strategies to utilize when trying to reduce the risk of security breaches in the workplace. Such a policy can also increase employee’s/contractor's awareness about protecting sensitive information. &#x20;
+A clean desk policy can be an important tool to ensure that all confidential/restricted materials are removed from an end-user workspace and locked away when the items are not in use or an employee/contractor leaves his/her workstation. It is one of the top strategies to utilize when trying to reduce the risk of security breaches in the workplace. Such a policy can also increase employee’s/contractor's awareness about protecting sensitive information.
 
 The purpose of this policy is to establish the minimum requirements for maintaining a clean desk – where sensitive/critical information about our employees/contractors, our intellectual property, our customers and our vendors is secure in locked areas and out of site. A Clean Desk policy is not only ISO 27001 compliant, but it is also part of standard basic privacy controls.
 
 Full policy text is available to customers upon request.
 
-### Change Management Policy&#x20;
+### Change Management Policy
 
-We recognise that changes (the addition, modification, or removal of anything) to the organisation, business processes, information processing facilities, and systems that affect information security needs to be effectively managed and is extremely important in ensuring the quality delivery of our services.  We are aware that ineffective and uncontrolled change management could potentially result in significant system disruption, data corruption or loss. We have, therefore, formulated this Change Management Policy / Process in order to address the opportunities and associated risks. We will continue to formally manage changes to its Information Technology (“IT”) / business resources to prevent disruptions to the stability, confidentiality, integrity and availability of our IT systems, business processes and data.
+We recognise that changes (the addition, modification, or removal of anything) to the organisation, business processes, information processing facilities, and systems that affect information security needs to be effectively managed and is extremely important in ensuring the quality delivery of our services. We are aware that ineffective and uncontrolled change management could potentially result in significant system disruption, data corruption or loss. We have, therefore, formulated this Change Management Policy / Process in order to address the opportunities and associated risks. We will continue to formally manage changes to its Information Technology (“IT”) / business resources to prevent disruptions to the stability, confidentiality, integrity and availability of our IT systems, business processes and data.
 
 ### Cloud Asset Management Policy
 
-We have developed this policy to provide guidance on the use of cloud technology.&#x20;
+We have developed this policy to provide guidance on the use of cloud technology.
 
-The objectives of our cloud asset management program include:&#x20;
+The objectives of our cloud asset management program include:
 
 * Ensuring that cloud-based assets are included in the IT asset management program.
 * Optimizing the cost of and value received from cloud services.
@@ -373,7 +381,7 @@ Detailed procedure is available upon request.
 
 ### Information Security Roles & Responsibilities
 
-The purpose of this document is to clearly define the roles and responsibilities that are essential to the implementation and continuation of the information security system in our platform.&#x20;
+The purpose of this document is to clearly define the roles and responsibilities that are essential to the implementation and continuation of the information security system in our platform.
 
 Detailed procedure is available upon request.
 
@@ -397,7 +405,7 @@ This procedure sets out the arrangements for conducting periodic formal manageme
 
 Detailed procedure is available upon request.
 
-### Continual  Improvement Procedure
+### Continual Improvement Procedure
 
 To describe the process by which our Management System considers every problem, such as systematic problems or opportunities for improvement, audit findings, etc., to ensure that the problem is identified, investigated and prevented from reoccurring.
 
@@ -415,9 +423,7 @@ Detailed procedure is available upon request.
 
 This document explains the procedure to be followed by information system owners or any other relevant users of the organization to implement the requirement specified in the information security policy regarding monitoring system access and use.
 
-This procedure applies to all users of Keepnet Labs’ information systems and information assets regardless of location, third parties in respect of the service that they provide and asset owners with respect to the assets that they own.
-Detailed procedure is available upon request.
-
+This procedure applies to all users of Keepnet Labs’ information systems and information assets regardless of location, third parties in respect of the service that they provide and asset owners with respect to the assets that they own. Detailed procedure is available upon request.
 
 ### Internal Audit Procedure
 
@@ -429,9 +435,9 @@ Detailed procedure is available upon request.
 
 ### Data Retention and Disposal Procedure
 
-The purpose of this procedure is to detail the activities for the retention and disposal of information to ensure that Keepnet Labs LTD carries this out consistently and documents relevant actions taken. Unless otherwise specified, the retention and disposal policy refers to both hard and soft copy documents.&#x20;
+The purpose of this procedure is to detail the activities for the retention and disposal of information to ensure that Keepnet Labs LTD carries this out consistently and documents relevant actions taken. Unless otherwise specified, the retention and disposal policy refers to both hard and soft copy documents.
 
-Keepnet Labs LTD will ensure that information is not kept for longer than is necessary and will retain the minimum amount of information that it requires to carry out its business functions.&#x20;
+Keepnet Labs LTD will ensure that information is not kept for longer than is necessary and will retain the minimum amount of information that it requires to carry out its business functions.
 
 Detailed procedure is available upon request.
 
@@ -439,20 +445,20 @@ Detailed procedure is available upon request.
 
 Business Continuity Management is in place to counteract interruptions to business activities and to protect critical business processes from the effects of major failures or disasters.
 
-This business continuity strategy provides a framework that is consistent with corporate governance best practice.  It is closely linked to risk management and information security (the company is aligned to ISO27001), the disciplines complementing each other.  Business continuity plans provide structured guidance and procedures to help the company protect the welfare and deliver a minimum level of service in its critical functions following a disruptive incident.  They also help the company to recover in an organised manner.  An effective response will rely on a coordinated approach across different parts of the company, therefore provides a focal point for the validation and review of the Company’s business continuity activities.
+This business continuity strategy provides a framework that is consistent with corporate governance best practice. It is closely linked to risk management and information security (the company is aligned to ISO27001), the disciplines complementing each other. Business continuity plans provide structured guidance and procedures to help the company protect the welfare and deliver a minimum level of service in its critical functions following a disruptive incident. They also help the company to recover in an organised manner. An effective response will rely on a coordinated approach across different parts of the company, therefore provides a focal point for the validation and review of the Company’s business continuity activities.
 
-It is the policy of the company to take all reasonable steps to ensure that in the event of a service interruption, the organisation will be able to maintain essential services and restore normal services as soon as possible in the circumstances prevailing at the time. The Business Continuity Management (BCM) Policy aims to introduce the concept of BCM to the company.&#x20;
+It is the policy of the company to take all reasonable steps to ensure that in the event of a service interruption, the organisation will be able to maintain essential services and restore normal services as soon as possible in the circumstances prevailing at the time. The Business Continuity Management (BCM) Policy aims to introduce the concept of BCM to the company.
 
 Detailed procedure is available upon request.
 
 ### Access Management Procedure
 
-The purpose of this process is to:&#x20;
+The purpose of this process is to:
 
-* Clearly outline the steps that Keepnet will take to manage user access to Keepnet’s systems and data;&#x20;
-* Provide details of approval mechanisms, the process by which access is granted, modified and deleted and key roles and responsibilities;&#x20;
-* Apply the principle of least privilege to limit the access or functionality that different users have;&#x20;
-* Protect confidentiality, integrity and availability by managing access rights;&#x20;
+* Clearly outline the steps that Keepnet will take to manage user access to Keepnet’s systems and data;
+* Provide details of approval mechanisms, the process by which access is granted, modified and deleted and key roles and responsibilities;
+* Apply the principle of least privilege to limit the access or functionality that different users have;
+* Protect confidentiality, integrity and availability by managing access rights;
 * Review access permissions to ensure they are correct.
 
 Detailed procedure is available upon request.
