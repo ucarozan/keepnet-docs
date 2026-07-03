@@ -58,7 +58,7 @@ Please follow the steps below to set up SAML settings correctly on the platform.
 
 Check whether the configuration works or not by following the steps below.
 
-* Make sure the admin who will log in to the platform over SAML is created in the platform under the Company > System Users page.
+* Make sure the admin who will log in to the platform over SAML is created in the platform under the **Company > System Users** page.
 * Go to the login page of the platform.
 * Enter the email address. The email **domain** must be the one that is defined in the SAML settings.
 * The platform will redirect you to the Google Workspace SSO page to authenticate.
