@@ -123,6 +123,8 @@ The **Files** area holds the documents that guide Agentic AI decisions — polic
 
 Common documents to add: phishing simulation policy, security awareness policy, acceptable use policy, and internal writing or style guidelines.
 
+Files you upload are stored on the Keepnet platform, scoped to your company so no other company can access them. During generation, text is extracted and used as reference context only — held transiently, not stored elsewhere. Files remain until you delete them, and deletion removes them completely.
+
 ### Knowledge base
 
 The **Knowledge base** lets you ask a question and see exactly what your agents retrieve from your documents. Search runs over the documents that have **Use in generation** enabled in Files, and the results are the passages an agent grounds its answer in, shown with their source document. Use it to verify what context the agents are drawing on before you rely on an output.
@@ -201,3 +203,7 @@ A: Start with documents that define how you want content produced: phishing simu
 ### Q: Can we use our own AI provider key?
 
 A: Yes. Use **Bring Your Own Key** to run AI traffic on your own provider key, billed to your own account. When no key is set, traffic runs on the platform key.
+
+### **Q: Where are the policies and files we upload stored?**
+
+A: Uploaded files are stored on the Keepnet platform, on the cloud infrastructure Keepnet operates. Each file is stored in a location scoped to your company, and every list, read, and delete operation is filtered by your company — so one company can never see or access another company's files. When Agentic AI generates training, simulations, or reports, it extracts the text from your files on Keepnet's servers and provides it to the AI model as reference context for that generation only; the extracted text is held transiently during generation and is not permanently stored elsewhere. Files remain stored until you delete them — there is no automatic expiry — and deleting a file removes it from both storage and the database.
