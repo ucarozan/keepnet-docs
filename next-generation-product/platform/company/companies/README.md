@@ -20,7 +20,7 @@ The authority to create and manage companies is only available to Resellers. Eac
 
 The following details of all companies created can be viewed on the **Company > Companies** page.
 
-<table><thead><tr><th width="151.1145874071177"></th><th width="580.5714285714286"></th></tr></thead><tbody><tr><td>Company Name</td><td>Name of the company</td></tr><tr><td>Reseller Name</td><td>The name of the Reseller company that manages the customer account.</td></tr><tr><td>Industry</td><td>Industry sector of the company</td></tr><tr><td>License Type</td><td>Information of the product license owned by the company</td></tr><tr><td>Target Users</td><td>The number of target users that are active on the customer account.</td></tr><tr><td>Inactive Users</td><td>The number of target users that are inactive on the customer account.</td></tr><tr><td>Deleted Users</td><td>The number of target users that are deleted on the customer account.</td></tr><tr><td>Monthly Users</td><td>The number of target users were added to the customer account during the selected month, regardless of whether they are currently Active, Inactive, or Deleted. You can change the month using the selector. Monthly Users data is available starting from December for all customers.</td></tr><tr><td>License Limit</td><td>The number of total target users permitted to be uploaded to the platform by the customer account.</td></tr><tr><td>Tags</td><td>The tags can be added to the companies for easier filtering or any other purposes.</td></tr><tr><td>Renewal Date</td><td>The date and time when the customer account’s license expires.</td></tr><tr><td>Date Created</td><td>Date the company was created</td></tr><tr><td>Action</td><td><p>The specifics of an existing company can be revised. Click on the the window that opens when the three-dot icon for the following options.</p><ul><li><strong>Add to a company group =</strong> Add the selected company to a previously created company groups</li><li><strong>Switch to company:</strong> Switch to this company to manage the company.</li><li><strong>Create a new company group with company =</strong> Create a new company group with the selected company</li><li><strong>Switch</strong> <strong>to</strong> <strong>company</strong> <strong>=</strong> Simulate the selected company to manage</li><li><strong>Delete</strong> <strong>=</strong> Delete the selected company</li><li><strong>Migrate data residency =</strong> Move the company's user data to a different regional database.</li><li><strong>Data residency report =</strong> View an auditable report confirming the company's data is confined to its region.</li></ul></td></tr><tr><td>Download Options</td><td>You can export the company list from <strong>Company > Companies</strong> to Excel or CSV. The exported file includes all columns visible in the list.</td></tr></tbody></table>
+<table><thead><tr><th width="151.1145874071177"></th><th width="580.5714285714286"></th></tr></thead><tbody><tr><td>Company Name</td><td>Name of the company</td></tr><tr><td>Reseller Name</td><td>The name of the Reseller company that manages the customer account.</td></tr><tr><td>Industry</td><td>Industry sector of the company</td></tr><tr><td>License Type</td><td>Information of the product license owned by the company</td></tr><tr><td>Target Users</td><td>The number of target users that are active on the customer account.</td></tr><tr><td>Inactive Users</td><td>The number of target users that are inactive on the customer account.</td></tr><tr><td>Deleted Users</td><td>The number of target users that are deleted on the customer account.</td></tr><tr><td>Monthly Users</td><td>The number of target users were added to the customer account during the selected month, regardless of whether they are currently Active, Inactive, or Deleted. You can change the month using the selector. Monthly Users data is available starting from December for all customers.</td></tr><tr><td>License Limit</td><td>The number of total target users permitted to be uploaded to the platform by the customer account.</td></tr><tr><td>Tags</td><td>The tags can be added to the companies for easier filtering or any other purposes.</td></tr><tr><td>Renewal Date</td><td>The date and time when the customer account’s license expires.</td></tr><tr><td>Date Created</td><td>Date the company was created</td></tr><tr><td>Action</td><td><p>The specifics of an existing company can be revised. Click on the the window that opens when the three-dot icon for the following options.</p><ul><li><strong>Add to a company group =</strong> Add the selected company to a previously created company groups</li><li><strong>Switch to company:</strong> Switch to this company to manage the company.</li><li><strong>Create a new company group with company =</strong> Create a new company group with the selected company</li><li><strong>Switch</strong> <strong>to</strong> <strong>company</strong> <strong>=</strong> Simulate the selected company to manage</li><li><strong>Delete</strong> <strong>=</strong> Delete the selected company</li></ul></td></tr><tr><td>Download Options</td><td>You can export the company list from <strong>Company > Companies</strong> to Excel or CSV. The exported file includes all columns visible in the list.</td></tr></tbody></table>
 
 ## **How to Create a New Company**
 
@@ -30,7 +30,7 @@ Go to the **Company > Companies** page and click on the **+ NEW** button to crea
 
 Complete each field described below.
 
-<table><thead><tr><th width="150"></th><th width="580.5714285714286"></th></tr></thead><tbody><tr><td>Company Name</td><td>Name of the company to be created</td></tr><tr><td>Description</td><td>Description of the company</td></tr><tr><td>Industry</td><td>The industry sector of the company</td></tr><tr><td>Country</td><td>Country location of the company. When you select a country, the platform automatically sets a default <strong>Date Format</strong> and <strong>Time Format</strong> based on that country's regional conventions. You can still change these formats manually in company settings if needed.</td></tr><tr><td>Data residency</td><td>Region where the new company's user data is stored. Defaults to central (UK South, London). Select a region to store the company's user data regionally and meet data-residency requirements. This option is currently managed by Keepnet Support. See the <a href="./#data-residency">Data Residency</a> section below.</td></tr><tr><td>Address</td><td>Mailing address of the company</td></tr><tr><td>Website URL</td><td>Website address of the company</td></tr><tr><td>Company Logo</td><td><p>Option to upload a company logo. The aspect ratio is set automatically. For best results, the size should be 180px (w):60px (h).</p><p>The maximum disk image size is 2 MB. .Gif, .png, .jpg and .svg formats are supported.</p></td></tr><tr><td>Active</td><td>A company may be registered as inactive or active. Active status is required for the use of the platform.</td></tr><tr><td>Tags</td><td>Add tags to your company to easily search for it later using the Tags column.</td></tr></tbody></table>
+<table><thead><tr><th width="150"></th><th width="580.5714285714286"></th></tr></thead><tbody><tr><td>Company Name</td><td>Name of the company to be created</td></tr><tr><td>Description</td><td>Description of the company</td></tr><tr><td>Industry</td><td>The industry sector of the company</td></tr><tr><td>Country</td><td>Country location of the company. When you select a country, the platform automatically sets a default <strong>Date Format</strong> and <strong>Time Format</strong> based on that country's regional conventions. You can still change these formats manually in company settings if needed.</td></tr><tr><td>Address</td><td>Mailing address of the company</td></tr><tr><td>Website URL</td><td>Website address of the company</td></tr><tr><td>Company Logo</td><td><p>Option to upload a company logo. The aspect ratio is set automatically. For best results, the size should be 180px (w):60px (h).</p><p>The maximum disk image size is 2 MB. .Gif, .png, .jpg and .svg formats are supported.</p></td></tr><tr><td>Active</td><td>A company may be registered as inactive or active. Active status is required for the use of the platform.</td></tr><tr><td>Tags</td><td>Add tags to your company to easily search for it later using the Tags column.</td></tr></tbody></table>
 
 Click **Next** to proceed to the License step.
 
@@ -84,42 +84,6 @@ Once a company has been created, you can edit the specific settings described be
 
 You can complete the process with the **Close** button, return to the **First System User** page with the **Back** button, or select **Cancel** to rescind the configuration.
 
-## Data Residency
-
-Data Residency lets you store a company's user data in a specific geographic region. This helps organizations that must keep personal data within a defined location to meet regulatory, contractual, or internal data-protection requirements.
-
-A region can be selected when the company is created (Step 1: Company Info), or an existing company can be migrated to a different region later. For each company, a Data Residency Report confirms — in an auditable form — that its data is stored in the expected region.
-
-{% hint style="info" %}
-**Availability.** Data Residency is currently managed by Keepnet Support. Reseller and Company Admins cannot set, migrate, or view residency themselves yet — self-service for the Reseller role is planned for a future release. To place a company in a region, migrate a company, request a residency report, or ask for a region that is not yet listed, contact [Keepnet Support](../../../../resources/keepnet-support-help-desk.md).
-{% endhint %}
-
-### **Supported Regions**
-
-Data residency defaults to central (UK South, London). The available regions are:
-
-<table><thead><tr><th width="175.5234375">Region</th><th>Location</th></tr></thead><tbody><tr><td>UK South</td><td>London</td></tr><tr><td>Canada Central</td><td>Toronto</td></tr><tr><td>Central US</td><td>Lowa</td></tr><tr><td>West Europe</td><td>Netherlands</td></tr><tr><td>UAE North</td><td>Dubai</td></tr><tr><td>Türkiye</td><td>Istanbul</td></tr></tbody></table>
-
-When a company is assigned to a region, the personal data of its target users — such as email address, name, phone number, and manager details and any other personal information related to target users — is stored only in that region. No other region holds the company's personal data.
-
-### **Migrating a Company to Another Region**
-
-An existing company can be moved to a different region using **Migrate data residency**:
-
-1. Go to **Company > Companies** and open the three-dot actions menu for the company.
-2. Select the **Migrate data residency** option.
-3. Choose the **Target** **region**, then select **Queue** **Migration**.
-
-The migration runs in the background and large companies may take several minutes. Once it finishes, the company's data is stored in the new region.
-
-### **Data Residency Report**
-
-Open the **Data residency report** from the three-dot actions menu for a company. It gives an auditable PASS or FAIL result confirming that the company's personal data is confined to its selected region and is not present in any other region. The report includes audit details — the region, a report identifier, who generated it, and the generation time — making it suitable for sharing with auditors or regulators. If a report returns FAIL, contact [Keepnet Support.](../../../../resources/keepnet-support-help-desk.md)
-
-### **Requesting a New Region**
-
-If your organization needs a region that Keepnet does not yet support, contact [Keepnet Support](../../../../resources/keepnet-support-help-desk.md). The team reviews the request, assesses whether the region can be added, and keeps you informed.
-
 ## FAQs
 
 ### Q: I created a company account, can I delete it at any time?
@@ -141,7 +105,3 @@ A: Yes, you can see and manage if the company is created by another Reseller und
 ### **Q:** How can I filter companies that have exceeded their user limits?
 
 A: Go to the **Companies** menu, then click **"Exceeding User Limit"** button from the filter options to see companies that have exceeded their user limits.
-
-### **Q: Can I choose where a company's data is stored?**
-
-A: Yes. Using Data Residency, a company's user data can be stored in a specific region to meet data-residency requirements. This is currently arranged through Keepnet Support, either when the company is created or by migrating an existing company. See the [Data Residency](./#data-residency) section above.
