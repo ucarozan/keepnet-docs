@@ -53,7 +53,7 @@ The Microsoft Ribbon Phishing Reporter supports installation for [shared mailbox
 3. Click '**Authorize'** for **Delegated Access** permissions.
 
 {% hint style="warning" %}
-Suggested to authorize **Application-Level Access** only for organizations using Conditional Access or Advanced Identity Policies, since managed device or policy restrictions may cause token acquisition to fail when using delegated permissions. Please click [here](microsoft-ribbon-phishing-reporter.md#troubleshooting-microsoft-graph-authentication-error-aadsts530004) for more information.
+Suggested to authorize **Application-Level Access** only for organizations using Conditional Access or Advanced Identity Policies, since managed device or policy restrictions may cause token acquisition to fail when using delegated permissions. Please click [here](microsoft-ribbon-phishing-reporter.md#what-is-application-level-access) for more information.
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-10-21 at 10.17.18.png" alt="Authorize (Delegated Access) button on Phishing Reporter Manage and Download panel." width="563"><figcaption><p>Authorize (Delegated Access) button on Phishing Reporter Manage and Download panel.</p></figcaption></figure>
@@ -290,6 +290,13 @@ The mobile version of Outlook provides access to the reporter through the contex
 ### Q: Can I show a confirmation prompt before deleting a reported email?
 
 A: No, Microsoft Ribbon Phishing Reporter automatically deletes the reported email and does not provide an option to prompt employees for confirmation before deletion.
+
+### **Q: When do I need to re-deploy or update the Phishing Reporter add-in?**
+
+**A:** You need to re-deploy the add-in whenever the manifest file changes. This applies in two cases:
+
+1. **You changed the customization settings** — if you update the Phishing Reporter settings on the platform (**Phishing Reporter** → **Settings**) after the add-in was already deployed, download the updated file again and update your current add-in or re-deploy it.
+2. **You changed the authorization type** — if you authorized **Application-Level Access** after the add-in was already deployed, the manifest must be regenerated. Download the new XML file and re-deploy it.
 
 ### Q: Does the Ribbon work on Outlook Mobile for iPhone or Android?
 

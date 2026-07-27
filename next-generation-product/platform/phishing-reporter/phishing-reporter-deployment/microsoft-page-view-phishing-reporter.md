@@ -68,7 +68,7 @@ Here is an example view of the **Microsoft Page View Phishing Reporter** button 
 
 <figure><img src="../../../../.gitbook/assets/2 (1) (1).png" alt="Reporting side panel of Microsoft Page View Phishing Reporter on New Outlook Desktop App."><figcaption><p>Picture 2: Reporting side panel of Microsoft Page View Phishing Reporter Button on New Outlook Desktop App</p></figcaption></figure>
 
-### How to Install the Microsoft Page View Phishing Reporter
+## How to Install the Microsoft Page View Phishing Reporter
 
 1. Before deploying the button, we recommend customizing it. This can be done in the **Add-In Settings** tab under the [Phishing Reporter](../phishing-reporter-customization.md) menu on the Keepnet platform.
 2. Once customization is complete, stay on the **Settings** tab. Scroll down to the bottom and click **Manage and Download**. A pop-up will appear — select **Authorize** for **Delegated** **Access** to proceed.
@@ -368,6 +368,13 @@ Keepnet follows Microsoft’s best practices to provide the most seamless experi
 ### Q: Can I show a confirmation prompt before deleting a reported email?
 
 **A:** Yes. To enable a confirmation prompt, go to the **Phishing Reporter** menu and select the **Settings** tab. Within the tab, scroll down to the **Dialog Box Settings** section. Locate the **Delete Reported Emails** option, and select **With Confirmation** from the dropdown menu.
+
+### **Q: When do I need to re-deploy or update the Phishing Reporter add-in?**
+
+**A:** You need to re-deploy the add-in whenever the manifest file changes. This applies in two cases:
+
+1. **You changed the customization settings** — if you update the Phishing Reporter settings on the platform (**Phishing Reporter** → **Settings**) after the add-in was already deployed, download the updated file again and update your current add-in or re-deploy it.
+2. **You changed the authorization type** — if you authorized **Application-Level Access** after the add-in was already deployed, the manifest must be regenerated. Download the new XML file and re-deploy it.
 
 ### Q: Does the Microsoft Page View Phishing Reporter work on Outlook Mobile for iPhone or Android?
 
