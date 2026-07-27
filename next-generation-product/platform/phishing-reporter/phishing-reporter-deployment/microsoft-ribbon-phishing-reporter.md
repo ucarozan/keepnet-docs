@@ -296,7 +296,7 @@ A: No, Microsoft Ribbon Phishing Reporter automatically deletes the reported ema
 **A:** You need to re-deploy the add-in whenever the manifest file changes. This applies in two cases:
 
 1. **You changed the customization settings** — if you update the Phishing Reporter settings on the platform (**Phishing Reporter** → **Settings**) after the add-in was already deployed, download the updated file again and update your current add-in or re-deploy it.
-2. **You changed the authorization type** — if you authorized **Application-Level Access** after the add-in was already deployed, the manifest must be regenerated. Download the new XML file and re-deploy it.
+2. **You changed the authorization type** — if you authorized **Application-Level Access** or **Delegated** **Access** after the add-in was already deployed, the manifest must be regenerated. Download the new XML file and re-deploy it.
 
 ### Q: Does the Ribbon work on Outlook Mobile for iPhone or Android?
 
