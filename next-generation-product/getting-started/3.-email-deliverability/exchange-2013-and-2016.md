@@ -4,7 +4,7 @@
 To complete this procedure, you must have security administrator privileges with the Microsoft Security & Compliance Center or be a member of the Microsoft Exchange Online Organization Management administrator group.
 {% endhint %}
 
-1. Note the [IP addresses](https://app.gitbook.com/o/-LMcQ_WBbT5jibln-2Mt/s/lKFxOYqYqSykikkXpwjG/next-generation-product/getting-started/3.-ensure-email-deliverability/exchange-2013-and-2016) to be allowed.
+1. Note the [IP addresses](../../miscellaneous/allow-listing/#phishing-simulation-ip-addresses-for-allow-listing) to be allowed.
 2. Log in to your exchange admin center.
 3. From the left sidebar menu, go to **Mail flow > Connectors**.
 4. Click **Add a connector**.
