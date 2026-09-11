@@ -3,6 +3,7 @@ description: >-
   Technical documentation for the Keepnet Vishing Simulator, detailing setup,
   phone call scenario configuration, campaign execution, and analysis of
   simulated voice phishing tests.
+noIndex: true
 ---
 
 # Vishing Simulator
