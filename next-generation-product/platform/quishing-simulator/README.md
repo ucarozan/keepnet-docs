@@ -3,6 +3,7 @@ description: >-
   Technical documentation for the Keepnet Quishing Simulator, outlining setup,
   QR phishing scenario configuration, campaign execution, and analysis of
   simulated quishing test results.
+noIndex: true
 ---
 
 # Quishing Simulator
