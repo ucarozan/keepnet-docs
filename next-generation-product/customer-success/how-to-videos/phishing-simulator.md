@@ -3,6 +3,7 @@ description: >-
   Explore our quick step-by-step videos to get the most out of the Phishing
   Simulator. From sending campaigns to customising templates and reviewing
   reports, these guides make it easy to launch & manage
+noIndex: true
 ---
 
 # Phishing Simulator
