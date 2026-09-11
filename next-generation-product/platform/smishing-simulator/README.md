@@ -3,6 +3,7 @@ description: >-
   Technical documentation for the Keepnet Smishing Simulator, describing setup
   steps, SMS phishing scenario configuration, campaign execution, and analysis
   of simulation results.
+noIndex: true
 ---
 
 # Smishing Simulator
@@ -50,7 +51,7 @@ A: QR codes are not supported in our SMS phishing simulator. For QR code simulat
 
 A: Email addresses are not directly required for smishing itself; however, they are needed to create target user profiles in the system.
 
-### **Q: If smishes are reported as junk by target users from other companies, will it affect the delivery of my campaigns?**&#x20;
+### **Q: If smishes are reported as junk by target users from other companies, will it affect the delivery of my campaigns?**
 
 A: Yes, if the sending phone number has been previously used and blocked by cellular providers due to reports from target users at other companies, it may affect your campaign's deliverability. To prevent this, create a test group with numbers from various providers (e.g., AT\&T, Verizon, Vodafone) to check if the number is blocked. Change the number as necessary.
 
@@ -121,4 +122,3 @@ To reduce future delivery issues, Keepnet follows best practices, such as:
 * Implementing adaptive message templates that reduce filtering risks.
 
 By proactively monitoring message logs, analyzing failures, and refining content, Keepnet ensures smishing simulations reach intended recipients effectively, enhancing security awareness training and real-world preparedness.
-
