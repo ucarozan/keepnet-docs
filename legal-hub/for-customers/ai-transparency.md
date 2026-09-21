@@ -6,8 +6,6 @@ description: >-
 
 # AI Transparency
 
-Last updated: \[date of merge]
-
 ### Our commitment
 
 We do not use Customer Data to train artificial intelligence or machine learning models, whether our own or those of any third party. Every Sub-Processor we engage is contractually prohibited from doing so. The full list is in Annex 3 of our Data Processing Agreement.
