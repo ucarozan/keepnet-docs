@@ -122,11 +122,13 @@ We use your account information and Customer Data to provide the products or ser
 
 #### c. To Improve and Develop Our Products and Services
 
-We collect usage data about how you or your users interact with our products and services. We use this data to develop and improve our products and services. For example, we use usage data to assess trends and usage across the product to help us determine what new features or integrations our users may be interested in.
+We use Usage Data, meaning information about how the Subscription Service is used, to operate and improve it. This includes debugging to identify and repair errors that impair existing intended functionality, monitoring performance and availability, maintaining the quality and safety of the service, and deciding which features to build next.
 
-We use Customer Data for machine learning that supports certain products and development of features and functionality with the Subscription Service and similar products and services. For example, machine learning helps power the business card scanner tool if you use our mobile apps and allows for easier imports of data into your Keepnet account. You may opt-out of having your Customer Data used for machine learning by emailing privacy@Keepnet.com.
+We use Customer Data, meaning the content you and your Users submit to the Subscription Service, only to provide the service to you and to resolve the issues you report to us. We do not use Customer Data to train artificial intelligence or machine learning models, whether our own or those of any third party. Our providers, including AI assistants and customer support platforms, act as our sub-processors and are contractually prohibited from doing so. They are listed at [https://doc.keepnetlabs.com/legal-hub/sub-processors](https://doc.keepnetlabs.com/legal-hub/for-customers/data-processing-agreement#annex-3-sub-processors)&#x20;
 
-We may publish data about how our products or services are being used across our customer base. When we share statistical information externally in this way, the data will be aggregated and we will not identify individual users or customers. For example, we may publish blog posts on trends or insights into how users are interacting with our product.
+We may publish aggregated and de-identified statistics about how our products are used across our customer base. This never identifies an individual user or customer.
+
+Where the GDPR or UK GDPR applies, we rely on Article 6(1)(b) for processing necessary to provide the Subscription Service and on Article 6(1)(f) for keeping the service secure and reliable and for developing features our customers ask for. Contact privacy@keepnetlabs.com for information about the balancing test.
 
 #### d. To Secure and Protect our Platform (including Products and Services) and Keepnet Users
 
@@ -342,8 +344,7 @@ Please use the contact details below, or see Section 7 "Your Privacy Rights and 
 
 If you have any questions about this Privacy Policy or our privacy practices, or if you have a disability and need to access this notice in a different format:
 
-* for Keepnet contact us on privacy@keepnetlabs.com;
-* for the Hustle and Trends please contact us at privacy@thehustle.co; or
+* for Keepnet contact us on privacy@keepnetlabs.com; or
 
 You may also contact us by postal mail for all Keepnet brands (including Keepnet, Inc.) write to us by mail at Keepnet, 124 City Road, London, EC1V 2NX, Attn: Privacy and Data Protection Officer.
 

@@ -222,7 +222,7 @@ We may collect information about you and your Users when you interact with the S
 
 5.3.2 Artificial Intelligence and Machine Learning.
 
-We do not use Customer Data to train artificial intelligence or machine learning models, and we do not permit our service providers to do so. Where we use third-party tools, including AI assistants, to respond to your support requests, they process only the data necessary for that request, act as our sub-processors under written contract, and are contractually prohibited from using Customer Data for model training. We may use aggregated and de-identified data to operate and improve the Subscription Service.
+We do not use Customer Data to train artificial intelligence or machine learning models, and we do not make Customer Data available to any third party for the training of their models. Where we use third party service providers, including AI assistants and customer support platforms, to respond to your requests or to deliver AI-assisted features, those providers act as our Sub-Processors, process only the data necessary for that purpose on our documented instructions, and are contractually prohibited from using Customer Data to train their models. Our current Sub-Processors are listed in Annex 3 of the Data Processing Agreement.
 
 5.3.3 Privacy Policy.
 

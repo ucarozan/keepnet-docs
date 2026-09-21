@@ -277,6 +277,7 @@
   * [Acceptable Use Policy](legal-hub/for-customers/acceptable-use-policy.md)
   * [Keepnet Security Program](legal-hub/for-customers/keepnet-security-program.md)
   * [Microsoft CoPilot Usage Policy](legal-hub/for-customers/microsoft-copilot-usage-policy.md)
+  * [AI Transparency](legal-hub/for-customers/ai-transparency.md)
 * [For Everyone](legal-hub/for-everyone/README.md)
   * [Website](legal-hub/for-everyone/website/README.md)
     * [Terms of Use](legal-hub/for-everyone/website/terms-of-use.md)
