@@ -1,14 +1,10 @@
----
-hidden: true
----
-
 # Keepnet SMS/Call Reporter
 
 [Smishing (SMS phishing) ](smishing-simulator/)and [Vishing (voice phishing) ](vishing-simulator/)reach employees on their phones, outside the email gateway and outside the reporting workflow built around the inbox. An employee who receives a scam text has no equivalent of the [Phishing Reporter button](phishing-reporter/) — the options are to screenshot it and email IT, forward it, or delete it and say nothing.
 
 The **Keepnet SMS/Call Reporter** closes that gap. It is a free app that lets an employee report a suspicious SMS or an unknown call in one tap and get a plain-language answer back on the same phone. No Keepnet licence, no Keepnet account, no management profile.
 
-<figure><img src="../../.gitbook/assets/download.jpeg" alt="Keepnet SMS/Call Reporter — report suspicious SMS messages and calls in one tap." width="315"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/download.jpeg" alt="Keepnet SMS/Call Reporter — report suspicious SMS messages and calls in one tap." width="210"><figcaption></figcaption></figure>
 
 This page follows the app from installation to reporting to the result, and ends with how to roll it out across an organization.
 
@@ -79,7 +75,7 @@ _Whichever channel the report came from, the result arrives the same way._
 
 Tapping the notification, or opening a report in the app, shows the Security Analysis screen: who sent it and when, whether it was an SMS or a call, the message text with links shown but not tappable, a **Reference No** for support requests, and the result with its reasons and a recommended action.
 
-<figure><img src="../../.gitbook/assets/download (4).jpeg" alt="Security Analysis — the result, the signals behind it, and the recommended action." width="315"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/download (4).jpeg" alt="Security Analysis — the result, the signals behind it, and the recommended action." width="210"><figcaption></figcaption></figure>
 
 Every report resolves into one of four results.
 
@@ -91,11 +87,11 @@ _Every result is kept, so the employee can look back at what they reported._
 
 ## 6. Report history and analytics
 
-<figure><img src="../../.gitbook/assets/download (5).jpeg" alt="My Reports — every report, searchable and filterable." width="315"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/download (5).jpeg" alt="My Reports — every report, searchable and filterable." width="210"><figcaption></figcaption></figure>
 
 **My Reports** holds every report from that device, grouped under Today, Yesterday, and older. It filters by type (SMS or call), by time (24 hours, 7 days, 30 days, all), and by result, and searches by sender, message text, or reference number. The coloured strip on each card shows risk — red for malicious, amber for suspicious, green where nothing was found. On the Home screen the same strip shows the channel instead: blue for SMS, orange for calls.
 
-<figure><img src="../../.gitbook/assets/download (6).jpeg" alt="Analytics — volume, risk detection rate, and threat distribution." width="315"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/download (6).jpeg" alt="Analytics — volume, risk detection rate, and threat distribution." width="210"><figcaption></figcaption></figure>
 
 **Analytics** summarizes a chosen period: how many reports were sent and what share carried risk, the split between SMS and calls, a 14-day trend with the two channels separated, and the breakdown by result.
 
