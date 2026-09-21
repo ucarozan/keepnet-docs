@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Keepnet SMS/Call Reporter
 
 [Smishing (SMS phishing) ](smishing-simulator/)and [Vishing (voice phishing) ](vishing-simulator/)reach employees on their phones, outside the email gateway and outside the reporting workflow built around the inbox. An employee who receives a scam text has no equivalent of the [Phishing Reporter button](phishing-reporter/) — the options are to screenshot it and email IT, forward it, or delete it and say nothing.
