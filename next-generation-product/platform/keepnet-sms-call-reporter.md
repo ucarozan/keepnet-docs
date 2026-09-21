@@ -1,10 +1,10 @@
 # Keepnet SMS/Call Reporter
 
-[Smishing (SMS phishing) ](smishing-simulator/)and [Vishing (voice phishing) ](vishing-simulator/)reach employees on their phones, outside the email gateway and outside the reporting workflow built around the inbox. An employee who receives a scam text has no equivalent of the [Phishing Reporter button](phishing-reporter/) — the options are to screenshot it and email IT, forward it, or delete it and say nothing.
+[Smishing (SMS phishing)](smishing-simulator/) and [Vishing (voice phishing)](vishing-simulator/) reach employees on their phones, outside the email gateway and outside the reporting workflow built around the inbox. An employee who receives a scam text has no equivalent of the Phishing Reporter button — the options are to screenshot it and email IT, forward it, or delete it and say nothing.
 
 The **Keepnet SMS/Call Reporter** closes that gap. It is a free app that lets an employee report a suspicious SMS or an unknown call in one tap and get a plain-language answer back on the same phone. No Keepnet licence, no Keepnet account, no management profile.
 
-<figure><img src="../../.gitbook/assets/download.jpeg" alt="Keepnet SMS/Call Reporter — report suspicious SMS messages and calls in one tap." width="210"><figcaption></figcaption></figure>
+<div align="center"><figure><img src="../../.gitbook/assets/download.jpeg" alt="Keepnet SMS/Call Reporter — report suspicious SMS messages and calls in one tap." width="210"><figcaption><p>Keepnet SMS/Call Reporter — report suspicious SMS messages and calls in one tap.</p></figcaption></figure></div>
 
 This page follows the app from installation to reporting to the result, and ends with how to roll it out across an organization.
 
@@ -26,7 +26,7 @@ _The first step is getting the app onto the phone._
 
 ## 2. Setting up on an iPhone
 
-Five steps. The third one is mandatory: skip it and no reporting option appears inside Messages or Phone.
+Five steps. **The third one is mandatory:** skip it and no reporting option appears inside Messages or Phone.
 
 1. **Install from the App Store.** Search for **Keepnet SMS/Call Reporter** by **KEEPNET LABS LTD**, or open [keepnetlabs.com/app](https://keepnetlabs.com/app) on the phone. It is free and needs iOS 16.4 or later.
 2. **Pass the welcome screen.** Tap **Get Started** and grant the permission it asks for. Setup cannot continue without it.
@@ -38,11 +38,31 @@ Five steps. The third one is mandatory: skip it and no reporting option appears 
 **Check it worked.** Open a conversation from an unknown sender in Messages. If a reporting link appears below the messages, setup is done. If it does not, go back to step 3.
 {% endhint %}
 
-An Android version has been submitted to Google Play and is not published yet. The Android steps and store link are added here once it goes live; the reporting flow and the results are the same on both platforms.
+{% hint style="info" %}
+**An Android version has been submitted to Google Play and is not published yet.** The Android steps and store link are added here once it goes live; the reporting flow and the results are the same on both platforms.
+{% endhint %}
 
-_With the extension enabled, the employee can report from the two places where these attacks arrive — Messages and Phone._
+_Before the first report, it helps to know what the app itself holds._
 
-## 3. Reporting a suspicious SMS
+## 3. Finding your way around the app
+
+The app has four tabs along the bottom.
+
+<figure><img src="../../.gitbook/assets/download (7).jpeg" alt="Home — account status, the two counters, and the most recent reports." width="210"><figcaption><p>Home — account status, the two counters, and the most recent reports.</p></figcaption></figure>
+
+**Home** opens first. It shows whether the person is signed in or using the app as a **Guest**, two counters — how many reports they have sent, and how many of those came back confirmed as malicious or phishing — and the most recent reports underneath, filterable by All, SMS, or Call. The coloured strip on each card here shows the channel: blue for SMS, orange for calls.
+
+**My Reports** and **Analytics** hold the full history and the summary figures; both are covered in section 7.
+
+**Settings** is where the account, the interface language, the theme, and the data operations live. Exporting or deleting report data is done from here.
+
+{% hint style="info" %}
+An empty list is not an error. Until the first report is sent there is nothing to show; the cards start appearing from the first report onwards.
+{% endhint %}
+
+_Reporting itself happens outside the app, in Messages and Phone._
+
+## 4. Reporting a suspicious SMS
 
 Reporting happens inside the Messages app, not inside the Keepnet app.
 
@@ -59,7 +79,7 @@ The reporting link only appears for senders that are not in the contacts list �
 
 _Calls follow the same pattern, from a different screen._
 
-## 4. Reporting a suspicious call
+## 5. Reporting a suspicious call
 
 1. **Open the Recents list** in the Phone app.
 2. **Select the unknown number.** It does not have to be written down first.
@@ -71,47 +91,52 @@ Three things show up again and again in voice fraud, and are worth reporting on 
 
 _Whichever channel the report came from, the result arrives the same way._
 
-## 5. Reading the result
+## 6. Reading the result
 
 Tapping the notification, or opening a report in the app, shows the Security Analysis screen: who sent it and when, whether it was an SMS or a call, the message text with links shown but not tappable, a **Reference No** for support requests, and the result with its reasons and a recommended action.
 
-<figure><img src="../../.gitbook/assets/download (4).jpeg" alt="Security Analysis — the result, the signals behind it, and the recommended action." width="210"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/download (8).jpeg" alt="Security Analysis — the result, the signals behind it, and the recommended action." width="210"><figcaption><p>Security Analysis — the result, the signals behind it, and the recommended action.</p></figcaption></figure>
 
 Every report resolves into one of four results.
 
-<table><thead><tr><th width="160.30859375">Result</th><th>What it means</th><th>What to do</th></tr></thead><tbody><tr><td><mark style="color:$success;"><strong>No threat detected</strong></mark></td><td>The message or number did not match known threat indicators.</td><td>Stay cautious. A very new attack may not have reached the intelligence sources yet.</td></tr><tr><td><mark style="color:$warning;"><strong>Suspicious</strong></mark></td><td>Something is off — brand imitation, a mismatched link — but not enough evidence to call it an attack.</td><td>Do not tap the link. Verify the sender through the organization's official channel.</td></tr><tr><td><mark style="background-color:$warning;"><strong>Spam</strong></mark></td><td>Unsolicited bulk messaging rather than a targeted attack.</td><td>Do not reply. Use the mobile operator's blocking options if needed.</td></tr><tr><td><mark style="color:$danger;"><strong>Malicious</strong></mark></td><td>Linked to a known attack — a phishing site, payment fraud, or credential harvesting.</td><td>Do not tap the link and do not reply. If it was already opened, change the password, turn on multi-factor authentication, and tell the bank if card details were entered.</td></tr></tbody></table>
+<table><thead><tr><th width="159.95703125">Result</th><th>What it means</th><th>What to do</th></tr></thead><tbody><tr><td><mark style="color:$success;"><strong>No threat detected</strong></mark></td><td>The message or number did not match known threat indicators.</td><td>Stay cautious. A very new attack may not have reached the intelligence sources yet.</td></tr><tr><td><mark style="color:$warning;"><strong>Suspicious</strong></mark></td><td>Something is off — brand imitation, a mismatched link — but not enough evidence to call it an attack.</td><td>Do not tap the link. Verify the sender through the organization's official channel.</td></tr><tr><td><mark style="color:orange;"><strong>Spam</strong></mark></td><td>Unsolicited bulk messaging rather than a targeted attack.</td><td>Do not reply. Use the mobile operator's blocking options if needed.</td></tr><tr><td><mark style="color:$danger;"><strong>Malicious</strong></mark></td><td>Linked to a known attack — a phishing site, payment fraud, or credential harvesting.</td><td>Do not tap the link and do not reply. If it was already opened, change the password, turn on multi-factor authentication, and tell the bank if card details were entered.</td></tr></tbody></table>
 
 A result describes the reported item, not the sender's intent. **No threat detected** is not a guarantee that a message is safe; verifying an unexpected message with the organization it claims to come from is still the safest move. If a result looks wrong, feedback can be sent from the same screen and is used to improve the analysis rules.
 
 _Every result is kept, so the employee can look back at what they reported._
 
-## 6. Report history and analytics
+## 7. Report history and analytics
 
-<figure><img src="../../.gitbook/assets/download (5).jpeg" alt="My Reports — every report, searchable and filterable." width="210"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/download (9).jpeg" alt="My Reports — every report, searchable and filterable." width="210"><figcaption><p>My Reports — every report, searchable and filterable.</p></figcaption></figure>
 
 **My Reports** holds every report from that device, grouped under Today, Yesterday, and older. It filters by type (SMS or call), by time (24 hours, 7 days, 30 days, all), and by result, and searches by sender, message text, or reference number. The coloured strip on each card shows risk — red for malicious, amber for suspicious, green where nothing was found. On the Home screen the same strip shows the channel instead: blue for SMS, orange for calls.
 
-<figure><img src="../../.gitbook/assets/download (6).jpeg" alt="Analytics — volume, risk detection rate, and threat distribution." width="210"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/download (6).jpeg" alt="Analytics — volume, risk detection rate, and threat distribution." width="210"><figcaption><p>Analytics — volume, risk detection rate, and threat distribution.</p></figcaption></figure>
 
 **Analytics** summarizes a chosen period: how many reports were sent and what share carried risk, the split between SMS and calls, a 14-day trend with the two channels separated, and the breakdown by result.
 
 _The question employees ask before any of this is what the app can see._
 
-## 7. What leaves the phone
+## 8. What leaves the phone
 
 The most frequent question about the app is whether it reads messages. It does not.
 
-<table><thead><tr><th width="207.08984375"></th><th></th></tr></thead><tbody><tr><td><strong>Inbox access</strong></td><td>None. The app neither reads nor scans the SMS inbox, and Apple's privacy framework blocks background access to messages.</td></tr><tr><td><strong>When anything is sent</strong></td><td>Only when the check mark on the confirmation screen is tapped.</td></tr><tr><td><strong>What is sent</strong></td><td>The sender, content, and timestamp of the reported messages, encrypted.</td></tr><tr><td><strong>How long it is kept</strong></td><td>90 days, then deleted automatically.</td></tr><tr><td><strong>Export and deletion</strong></td><td>Report data can be exported or deleted from the app at any time. Deleting the account removes the reports from the server too.</td></tr></tbody></table>
+<table><thead><tr><th width="220.6484375"></th><th></th></tr></thead><tbody><tr><td><strong>Inbox access</strong></td><td>None. The app neither reads nor scans the SMS inbox, and Apple's privacy framework blocks background access to messages.</td></tr><tr><td><strong>When anything is sent</strong></td><td>Only when the check mark on the confirmation screen is tapped.</td></tr><tr><td><strong>What is sent</strong></td><td>The sender, content, and timestamp of the reported messages, encrypted.</td></tr><tr><td><strong>How long it is kept</strong></td><td>90 days, then deleted automatically.</td></tr><tr><td><strong>Export and deletion</strong></td><td>Report data can be exported or deleted from the <strong>Settings</strong> tab at any time. Deleting the account removes the reports from the server too.</td></tr></tbody></table>
 
 Telling employees this first — the inbox is not read, only the reported item is sent — is what moves adoption. It belongs at the top of any announcement.
 
 _That announcement is part of rolling the app out._
 
-## 8. Rolling it out to an organization
+## 9. Rolling it out to an organization
 
 Two routes. Employees install it themselves from the App Store, or the organization pushes it to managed iPhones. Nothing is configured on the Keepnet side either way, and no enterprise certificate or custom build is involved.
 
-Reports currently come back to the employee inside the app. Central visibility of SMS and Call reports alongside reported emails in Incident Responder is planned for a future release. To discuss reporting requirements across an organization, [contact the Keepnet team](../../resources/keepnet-support-help-desk.md).
+Reports come back to the employee inside the app and stay there. The app is not integrated with the Keepnet platform yet, which has two consequences worth setting expectations on before a rollout:
+
+* Reports do not appear anywhere in platform reporting, so administrators cannot see what employees have reported.
+* A simulated smishing message reported through the app is **not** counted as a report against the Smishing Simulator campaign it came from. Campaign reporting rates are unaffected by the app.
+
+Central visibility of SMS and call reports alongside reported emails in Incident Responder is planned for a future release. To discuss reporting requirements across an organization, [contact the Keepnet team](https://claude.ai/resources/keepnet-support-help-desk).
 
 ### Employees install it themselves
 
@@ -155,7 +180,7 @@ How quiet the install is depends on enrolment type.
 
 **Afterwards:** acquire a few more licences than there are devices to cover replacements; keep automatic app updates on in the Apple Business Manager token settings, since a device-licensed app only updates through the MDM channel and can take 24 hours to reach a device; and unassigning the app reclaims the licence and removes the managed copy. Android devices cannot be covered yet — the app is not on Google Play, and those steps are documented here once it is.
 
-## 9. FAQs
+## 10. FAQs
 
 ### Q: Is a Keepnet account required?
 
@@ -201,6 +226,14 @@ A: Usually seconds. Cases needing deep analysis can take a minute or two.
 
 A: 90 days, then deleted automatically. They can also be deleted manually at any time.
 
-### Q: What should I share when contacting support?
+### Q: An employee reported a simulated smishing message through the app. Does it count in the campaign report?
 
-A: The **Reference No** from the result screen, which locates the record immediately.
+A: No. The app is not integrated with the Keepnet platform yet, so reports made through it do not reach platform reporting and do not count towards a Smishing Simulator campaign's reported figures.
+
+### Q: Can administrators see what employees have reported?
+
+A: Not yet. Reports stay in the employee's own app. Central visibility in Incident Responder is planned for a future release.
+
+### Q: Where do I get help?
+
+A: Through the [Keepnet Support Help Desk](../../resources/keepnet-support-help-desk.md), or at support@keepnetlabs.com. Include the **Reference No** from the result screen — it locates the record immediately.
