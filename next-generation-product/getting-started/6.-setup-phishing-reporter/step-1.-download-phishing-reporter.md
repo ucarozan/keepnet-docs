@@ -4,7 +4,7 @@
 
 To download the Phishing Reporter, go to the **Phishing Reporter** tab on the left hand side and select **Configure Add-in** (or click on Settings).​
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-04-10 at 11.06.42.png" alt="Phishing Reporter Configure Add-in or Settings — first step to download."><figcaption>Phishing Reporter > Configure Add-in (or Settings) — first step to download.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-04-10 at 11.06.42.png" alt="Phishing Reporter Configure Add-in or Settings — first step to download."><figcaption><p>Phishing Reporter > Configure Add-in (or Settings) — first step to download.</p></figcaption></figure>
 
 #### **Step 2.**
 
@@ -34,6 +34,6 @@ The **Diagnostic Tool** provides information about the status of the add-in. For
 The Diagnostic Tool is designed only for use on Outlook Desktop add-in with the MSI extension. When the add-in is distributed over Office 365 or Google Workspace, it is automatically installed and active for all users.
 {% endhint %}
 
-**✅ You have now customised the Phishing Reporter.**&#x20;
+**✅ You have now customised the Phishing Reporter.**
 
-**Now, go to** [**Deployment**](step-2.-deploy-phishing-reporter/) **➡️**
+**Now, go to** [**Deployment**](https://github.com/ucarozan/keepnet-docs/blob/main/next-generation-product/getting-started/6.-setup-phishing-reporter/step-2.-deploy-phishing-reporter) **➡️**

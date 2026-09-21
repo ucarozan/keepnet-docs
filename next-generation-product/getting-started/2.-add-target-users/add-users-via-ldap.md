@@ -82,7 +82,7 @@ This option fetches unique email users that are in certain groups in your active
     * Use the filters to create criteria to filter users out of all users to synchronize and then use the **View Users** button to see filtered users that will be synchronized.
     * Click **‘+ Add Condition’** to add more conditions for filtering the users.
 
-✅ **You have now added your first Target Users. Now you need to** [**ensure they are able to receive emails from Keepnet**](../3.-email-deliverability/) **successfully ➡️**
+✅ **You have now added your first Target Users. Now you need to** [**ensure they are able to receive emails from Keepnet**](https://github.com/ucarozan/keepnet-docs/blob/main/next-generation-product/getting-started/3.-email-deliverability) **successfully ➡️**
 
 ## Video Tutorial
 

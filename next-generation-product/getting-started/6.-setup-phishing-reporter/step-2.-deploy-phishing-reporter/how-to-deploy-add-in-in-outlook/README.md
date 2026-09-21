@@ -45,7 +45,7 @@ Once the installation is complete, you can confirm that the diagnostic tool has 
 
 To view the **Diagnostic Tool** information, go to **Phishing Reporter > Users** and look under the **Add-in Status** column. When hovering the mouse over this column under the desired user, you will see the following information below.
 
-<table data-header-hidden><thead><tr><th width="150.5"></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>Add-in is installed and</td><td><ul><li>User is online</li><li>User is offline</li></ul></td><td></td></tr><tr><td>HKLM Number</td><td><p>List of possible <a href="https://learn.microsoft.com/en-us/visualstudio/vsto/registry-entries-for-vsto-add-ins?redirectedfrom=MSDN&#x26;view=vs-2022#LoadBehavior">values</a>:</p><p></p><p>1: Active: Don't load automatically</p><p>2: Disabled: Load at startup</p><p>3: Active: Load at startup</p></td><td></td></tr><tr><td>Boot time</td><td>How long it takes for the add-in to start</td><td></td></tr><tr><td>Outlook version</td><td>Version information of Outlook application</td><td></td></tr><tr><td>Outlook Architecture</td><td><p>Either:</p><ul><li>X32</li><li>X64</li></ul></td><td></td></tr><tr><td>OS version</td><td>User’s operating system version information</td><td></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="150.5"></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>Add-in is installed and</td><td><ul><li>User is online</li><li>User is offline</li></ul></td><td></td></tr><tr><td>HKLM Number</td><td><p>List of possible <a href="https://learn.microsoft.com/en-us/visualstudio/vsto/registry-entries-for-vsto-add-ins?redirectedfrom=MSDN&#x26;view=vs-2022#LoadBehavior">values</a>:</p><p>1: Active: Don't load automatically</p><p>2: Disabled: Load at startup</p><p>3: Active: Load at startup</p></td><td></td></tr><tr><td>Boot time</td><td>How long it takes for the add-in to start</td><td></td></tr><tr><td>Outlook version</td><td>Version information of Outlook application</td><td></td></tr><tr><td>Outlook Architecture</td><td><p>Either:</p><ul><li>X32</li><li>X64</li></ul></td><td></td></tr><tr><td>OS version</td><td>User’s operating system version information</td><td></td></tr></tbody></table>
 
 The Diagnostic Tool has been successfully installed, operated and can communicate with the platform to help you obtain Phishing Reporter status information for all target users.
 
@@ -55,11 +55,9 @@ For troubleshooting purposes, you can provide the support team with the log and 
 
 * C:\Program Files (x86)\Keepnet Labs\KeepnetLabs Phishing Reporter Diagnostic Service
 
-
-
 **✅ You have now deployed the Phishing Reporter**
 
-**Next step is to** [**Setup Incident Responder**](../../../7.-incident-responder-setup/) **(only for customers who have purchased the Incident Responder or SOC package)**
+**Next step is to** [**Setup Incident Responder**](https://github.com/ucarozan/keepnet-docs/blob/main/next-generation-product/getting-started/7.-incident-responder-setup) **(only for customers who have purchased the Incident Responder or SOC package)**
 
 ## Tutorial Video
 

@@ -6,9 +6,6 @@ Setup is super simple:
 
 [step-1.-download-phishing-reporter.md](../../6.-setup-phishing-reporter/step-1.-download-phishing-reporter.md "mention")
 
-[Step 2. Deploy Phishing Reporter](../../6.-setup-phishing-reporter/step-2.-deploy-phishing-reporter/)
-
-
+[Step 2. Deploy Phishing Reporter](https://github.com/ucarozan/keepnet-docs/blob/main/next-generation-product/getting-started/6.-setup-phishing-reporter/step-2.-deploy-phishing-reporter)
 
 For our full technical documentation on Phishing Reporter Button, please see below
-

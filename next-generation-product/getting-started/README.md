@@ -7,10 +7,10 @@ This Getting Started guide will be your key resource in successfully implementin
 **The steps you will follow:**
 
 1. ​[Invite System Users​](1.-invite-system-users.md)
-2. ​[Add Target Users​](2.-add-target-users/)
-3. ​[Email Deliverability​](3.-email-deliverability/)
-4. ​[Setup Phishing Reporter​](6.-setup-phishing-reporter/)
-5. [​Incident Responder Setup](7.-incident-responder-setup/) (Only for customers who have Incident Responder product)&#x20;
+2. ​[Add Target Users​](https://github.com/ucarozan/keepnet-docs/blob/main/next-generation-product/getting-started/2.-add-target-users)
+3. ​[Email Deliverability​](https://github.com/ucarozan/keepnet-docs/blob/main/next-generation-product/getting-started/3.-email-deliverability)
+4. ​[Setup Phishing Reporter​](https://github.com/ucarozan/keepnet-docs/blob/main/next-generation-product/getting-started/6.-setup-phishing-reporter)
+5. [​Incident Responder Setup](https://github.com/ucarozan/keepnet-docs/blob/main/next-generation-product/getting-started/7.-incident-responder-setup) (Only for customers who have Incident Responder product)
 
 (Recommended) [Track Opened Emails](recommended-track-opened-emails.md)
 

@@ -225,6 +225,7 @@
     * [Job Log](next-generation-product/platform/company/job-log.md)
   * [Free Phishing Email Analysis Service](next-generation-product/platform/free-phishing-email-analysis-service.md)
   * [Agentic AI](next-generation-product/platform/agentic-ai.md)
+  * [Keepnet SMS/Call Reporter](next-generation-product/platform/keepnet-sms-call-reporter.md)
 * [Miscellaneous](next-generation-product/miscellaneous/README.md)
   * [Allow Listing](next-generation-product/miscellaneous/allow-listing/README.md)
     * [How to Allow List an IP Address in Office 365](next-generation-product/miscellaneous/allow-listing/how-to-allow-list-an-ip-address-in-office-365.md)

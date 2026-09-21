@@ -1,6 +1,6 @@
 # How to Deploy the Microsoft Page View Add-In
 
-### How to Install the Microsoft Page View Phishing Reporter&#x20;
+### How to Install the Microsoft Page View Phishing Reporter
 
 1. Before deploying the button, we recommend customizing it. This can be done in the **Add-In Settings** tab under the [Phishing Reporter](../../../platform/phishing-reporter/phishing-reporter-customization.md) menu on the Keepnet platform.
 2. Once customization is complete, stay on the **Settings** tab. Scroll down to the bottom and click **Manage and Download**. A pop-up will appear—select **Connect** **Account** to proceed.
@@ -10,11 +10,11 @@
 3. Log in to your [Microsoft 365](https://admin.microsoft.com/) account using your **global admin credentials**.
 4. Once you log in, the **Permissions** **requested** pop-up window will display. Read the permissions, then click **Accept**.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-05-28 at 11.34.26.png" alt="Required Graph API permissions for Microsoft Page View Phishing Reporter button." width="375"><figcaption><p>Picture 4: Required Graph API Permissions for <br>Microsoft Page View Phishing Reporter button</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-05-28 at 11.34.26.png" alt="Required Graph API permissions for Microsoft Page View Phishing Reporter button." width="375"><figcaption><p>Picture 4: Required Graph API Permissions for<br>Microsoft Page View Phishing Reporter button</p></figcaption></figure>
 
-#### Understanding Required Microsoft Graph API Permissions&#x20;
+#### Understanding Required Microsoft Graph API Permissions
 
-The **Microsoft Page View Phishing Reporter** requires specific Microsoft Graph API permissions to function effectively within an organization’s Microsoft 365 environment. These permissions allow the application to interact with users’ emails, retrieve necessary details for reporting phishing attempts, and ensure smooth integration with the email infrastructure.&#x20;
+The **Microsoft Page View Phishing Reporter** requires specific Microsoft Graph API permissions to function effectively within an organization’s Microsoft 365 environment. These permissions allow the application to interact with users’ emails, retrieve necessary details for reporting phishing attempts, and ensure smooth integration with the email infrastructure.
 
 Below is a breakdown of the permissions required and their purpose:
 
@@ -42,7 +42,7 @@ Below is a breakdown of the permissions required and their purpose:
 10. Select **I have the manifesto.xml file**.
 11. Click **Upload**.
 
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2Fa7mDhuhEs201oU8fKZQT%2Fadd-in%20step%201.gif?alt=media&#x26;token=c263c2cd-424f-4a1a-9471-390720123089" alt="Add-in deployment — step 1 (authorize or download)."><figcaption>Add-in deployment — step 1 (authorize or download).</figcaption></figure>
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlKFxOYqYqSykikkXpwjG%2Fuploads%2Fa7mDhuhEs201oU8fKZQT%2Fadd-in%20step%201.gif?alt=media&#x26;token=c263c2cd-424f-4a1a-9471-390720123089" alt="Add-in deployment — step 1 (authorize or download)."><figcaption><p>Add-in deployment — step 1 (authorize or download).</p></figcaption></figure>
 
 12. **Assign the users** who will have access to the add-in. We recommend selecting **Everyone** so the add-in will be installed on every user under the Microsoft 365 tenant.
 13. **Select Deployment Method.** We recommend selecting Fixed which is the default option.
@@ -50,9 +50,9 @@ Below is a breakdown of the permissions required and their purpose:
 
 You will receive an email notification confirming your successful deployment. **It may take up to 24 hours for the add-in to be displayed** on the users' email applications. Users may need to relaunch email applications.
 
-​✅ **You have now deployed the Phishing Reporter.**&#x20;
+​✅ **You have now deployed the Phishing Reporter.**
 
-**Next step is to** [**Setup Incident Responder**](../../7.-incident-responder-setup/) **(only for customers who have purchased the Incident Responder or xHRM package)**
+**Next step is to** [**Setup Incident Responder**](https://github.com/ucarozan/keepnet-docs/blob/main/next-generation-product/getting-started/7.-incident-responder-setup) **(only for customers who have purchased the Incident Responder or xHRM package)**
 
 ## Video Tutorial <a href="#video-tutorial" id="video-tutorial"></a>
 

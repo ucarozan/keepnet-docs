@@ -20,6 +20,6 @@ You can find the phishing simulation domains by logging into the platform and th
 
 System administrators may upload the target users' first name, last name, email address, department, or such other information to the platform; however, because [DLP](https://digitalguardian.com/blog/what-data-loss-prevention-dlp-definition-data-loss-prevention) can be very sensitive, the platform domain information should be allow listed to ensure DLP allows you to upload these pieces of information to the platform.
 
-✅ **You have now Allow List Domains so your target users can successfully open Keepnet email links. Please also Allow List in your security solutions if you haven't already.**&#x20;
+✅ **You have now Allow List Domains so your target users can successfully open Keepnet email links. Please also Allow List in your security solutions if you haven't already.**
 
-**Next step is to** [**Setup your Phishing Reporter**](../6.-setup-phishing-reporter/) **➡️**
+**Next step is to** [**Setup your Phishing Reporter**](https://github.com/ucarozan/keepnet-docs/blob/main/next-generation-product/getting-started/6.-setup-phishing-reporter) **➡️**

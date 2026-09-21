@@ -48,7 +48,7 @@ The most up-to-date format of the body content that you need to use for requesti
 The most up-to-date format of the body content that you need to use for requesting an API is available on the Swagger interface.
 {% endhint %}
 
-​✅ **You have now added your first Target Users. Now you need to** [**ensure they are able to receive emails from Keepnet**](../3.-email-deliverability/) **successfully ➡️**
+​✅ **You have now added your first Target Users. Now you need to** [**ensure they are able to receive emails from Keepnet**](https://github.com/ucarozan/keepnet-docs/blob/main/next-generation-product/getting-started/3.-email-deliverability) **successfully ➡️**
 
 ### Video Tutorial <a href="#video-tutorial" id="video-tutorial"></a>
 

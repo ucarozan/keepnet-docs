@@ -21,9 +21,9 @@ To make customisations, please go to:
    4. **From Email Address** (must be keepnetlabs.com unless you have selected [Direct Email Creation](../../../platform/company/company-settings/direct-email-creation/) or [setup your own SMTP](../../../platform/company/company-settings/smtp-settings.md#how-to-configure-the-smtp))
    5. **Body of the Email**
 5. Once you're happy with your edits, Save the template
-6. Set this template as default by click on the 3 dots and selecting "Make Default" - don't forget this step!&#x20;
+6. Set this template as default by click on the 3 dots and selecting "Make Default" - don't forget this step!
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image (4).png" alt="Notification Templates — Incident Responder category, duplicate and make default." width="563"><figcaption>Notification Templates — Incident Responder category, duplicate and make default.</figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/image (4).png" alt="Notification Templates — Incident Responder category, duplicate and make default." width="563"><figcaption><p>Notification Templates — Incident Responder category, duplicate and make default.</p></figcaption></figure></div>
 
 {% hint style="warning" %}
 Please note: If you have not purchased the Incident Responder, you will not be able to see Notification Templates for the Incident Responder module.
@@ -47,7 +47,7 @@ To set this up, please follow the below instructions:
    1. Select "Analyse" from the drop down
    2. Select all Integrations (if you don't have any setup, please follow [these steps](../../../getting-started/7.-incident-responder-setup/step-1.-integrate-threat-intel-partners.md))
    3. Tick the box - "Investigate according to analyze results"
-   4. Select Sources > Select the [Mail Integration](../../../getting-started/7.-incident-responder-setup/step-2.-mail-configurations/) you have setup
+   4. Select Sources > Select the [Mail Integration](https://github.com/ucarozan/keepnet-docs/blob/main/next-generation-product/getting-started/7.-incident-responder-setup/step-2.-mail-configurations) you have setup
    5. Actions > Delete Email
    6. SAVE
 

@@ -23,6 +23,6 @@ You must complete the following steps once the **connector** is defined.
 6. Set the value information to **true** with the enter text option on the right.
 7. Click **Save** to complete the process.
 
-✅ **You have now Allow List Domains so your target users can successfully open Keepnet email links. Please also Allow List in your security solutions if you haven't already.**&#x20;
+✅ **You have now Allow List Domains so your target users can successfully open Keepnet email links. Please also Allow List in your security solutions if you haven't already.**
 
-**Next step is to** [**Setup your Phishing Reporter**](../6.-setup-phishing-reporter/) **➡️**
+**Next step is to** [**Setup your Phishing Reporter**](https://github.com/ucarozan/keepnet-docs/blob/main/next-generation-product/getting-started/6.-setup-phishing-reporter) **➡️**

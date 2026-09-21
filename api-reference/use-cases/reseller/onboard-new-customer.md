@@ -22,7 +22,7 @@ Example (conceptual — actual request is multipart/form-data): **Name** `Acme C
 
 > Update the new company's details or license (type, user limit, expiry). Replace `{resourceId}` with the company ID from the create response.
 
-[keepnet-api-spec.json](../../../openapi/keepnet-api-spec.json)
+[keepnet-api-spec.json](https://github.com/ucarozan/keepnet-docs/blob/main/openapi/keepnet-api-spec.json)
 
 ***
 

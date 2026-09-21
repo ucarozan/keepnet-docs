@@ -8,11 +8,11 @@
 
 Navigate to **Company > Target Users** on the left hand side menu. Click the **"+New"** blue button.
 
-<figure><img src="../../../.gitbook/assets/Target Users- Step 1.gif" alt="Target Users — add users step 1."><figcaption>Target Users — add users step 1.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Target Users- Step 1.gif" alt="Target Users — add users step 1."><figcaption><p>Target Users — add users step 1.</p></figcaption></figure>
 
 #### **Step 2.**
 
-Select **Add users manually** to add target users one by one. Alternatively, select **Import from file** to upload a CSV or XLS(x) file.&#x20;
+Select **Add users manually** to add target users one by one. Alternatively, select **Import from file** to upload a CSV or XLS(x) file.
 
 {% hint style="info" %}
 **Top Tip:** Download a CSV template by clicking **Import from file** and selecting 'Download Example Sheet'.
@@ -26,20 +26,20 @@ Select **Add users manually** to add target users one by one. Alternatively, sel
 
 * Test Group - for your cyber team to test phishing campaigns
 * All Users - to easily send campaigns to all employees
-* Department Specific e.g. Finance - to easily send targeted campaigns to specific departments&#x20;
+* Department Specific e.g. Finance - to easily send targeted campaigns to specific departments
 
-<figure><img src="../../../.gitbook/assets/Add New Group.gif" alt="Add New Group."><figcaption>Add New Group.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Add New Group.gif" alt="Add New Group."><figcaption><p>Add New Group.</p></figcaption></figure>
 
-**Step 4.**&#x20;
+**Step 4.**
 
 **Field Mapping:** Ensure the fields you are adding in are matched with the correct heading. For example, the user's first name matched with the heading, 'First Name'. Click Next once complete.
 
-<figure><img src="../../../.gitbook/assets/Mapping.gif" alt="CSV column mapping for target users."><figcaption>CSV column mapping for target users.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Mapping.gif" alt="CSV column mapping for target users."><figcaption><p>CSV column mapping for target users.</p></figcaption></figure>
 
 **Step 5.**
 
-**Import Users:** Either pick the users you wish to add and click **Import Selected**, or click **Import All** to add all the users.&#x20;
+**Import Users:** Either pick the users you wish to add and click **Import Selected**, or click **Import All** to add all the users.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-11-18 at 15.18.56.png" alt="Target users CSV upload result."><figcaption>Target users CSV upload result.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-11-18 at 15.18.56.png" alt="Target users CSV upload result."><figcaption><p>Target users CSV upload result.</p></figcaption></figure>
 
-✅ **You have now added your first Target Users. Now you need to** [**ensure users are able to receive emails from Keepnet**](../3.-email-deliverability/) **successfully ➡️**
+✅ **You have now added your first Target Users. Now you need to** [**ensure users are able to receive emails from Keepnet**](https://github.com/ucarozan/keepnet-docs/blob/main/next-generation-product/getting-started/3.-email-deliverability) **successfully ➡️**

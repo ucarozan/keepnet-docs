@@ -22,6 +22,6 @@ To complete this procedure, you must have security administrator privileges with
 8. Add the **phishing domains** by using **\*.domain.com/\*** wildcard syntax to the **Do not rewrite the following URLs** section.
 9. Click the **Next** button and select **Submit** to complete the process.
 
-✅ **You have now Allow List Domains so your target users can successfully open Keepnet email links. Please also Allow List in your security solutions if you haven't already.**&#x20;
+✅ **You have now Allow List Domains so your target users can successfully open Keepnet email links. Please also Allow List in your security solutions if you haven't already.**
 
-**Next step is to** [**Setup your Phishing Reporter**](../6.-setup-phishing-reporter/) **➡️**
+**Next step is to** [**Setup your Phishing Reporter**](https://github.com/ucarozan/keepnet-docs/blob/main/next-generation-product/getting-started/6.-setup-phishing-reporter) **➡️**

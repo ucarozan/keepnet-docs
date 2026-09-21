@@ -27,7 +27,7 @@ Okta configuration has been successfully finished. You can proceed with the foll
 1. Go to the **Assignments** menu and click on the **Assign** button to assign **Users or Groups** to this SCIM application which will be synchronized to the platform.
 2. To import **user(s)** or **group(s)**, click on the **Assign** button to synchronize users or groups to synchronize to the platform.
 
-✅ **You have now added your first Target Users. Now you need to**[ **ensure they are able to receive emails from Keepnet**](../../3.-email-deliverability/) **successfully ➡️**
+✅ **You have now added your first Target Users. Now you need to**[ **ensure they are able to receive emails from Keepnet**](https://github.com/ucarozan/keepnet-docs/blob/main/next-generation-product/getting-started/3.-email-deliverability) **successfully ➡️**
 
 ### Tutorial Video <a href="#tutorial-video" id="tutorial-video"></a>
 
