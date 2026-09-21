@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Keepnet SMS/Call Reporter
 
 The **Keepnet SMS/Call Reporter** is a free mobile app that lets employees report a suspicious SMS message or an unknown phone call in one tap and receive a plain-language analysis result on the same device. It is available on iPhone today, and an Android version is on the way.
@@ -58,12 +62,7 @@ Because the app is published on the App Store, it can be assigned to managed iPh
 
 #### Before starting
 
-| Requirement                             | Detail                                                                                                                             |
-| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Apple Business Manager                  | An active account with a Content Manager role that can acquire licences in Apps and Books.                                         |
-| MDM connected to Apple Business Manager | The MDM must hold a current location token from Apple Business Manager. Tokens are valid for one year.                             |
-| Enrolled devices                        | Devices already enrolled in the MDM. Company-owned devices enrolled through Automated Device Enrollment give the smoothest result. |
-| iOS 16.4 or later                       | iPhones below this version do not receive the app.                                                                                 |
+<table><thead><tr><th width="215.7421875">Requirement</th><th>Detail</th></tr></thead><tbody><tr><td>Apple Business Manager</td><td>An active account with a Content Manager role that can acquire licences in Apps and Books.</td></tr><tr><td>MDM connected to Apple Business Manager</td><td>The MDM must hold a current location token from Apple Business Manager. Tokens are valid for one year.</td></tr><tr><td>Enrolled devices</td><td>Devices already enrolled in the MDM. Company-owned devices enrolled through Automated Device Enrollment give the smoothest result.</td></tr><tr><td>iOS 16.4 or later</td><td>iPhones below this version do not receive the app.</td></tr></tbody></table>
 
 #### Deployment steps
 
@@ -83,7 +82,9 @@ How quiet the installation is depends on the enrolment type. Fully silent instal
 | Personal device (BYOD), device licensed        | Employee accepts once | No                                                                                                     |
 | User Enrollment devices                        | Employee accepts once | Yes — device licensing is not supported here, so a user licence with a Managed Apple Account is needed |
 
-> **One step cannot be pushed centrally.** Enabling the reporting extension under **Settings > Apps > Phone > SMS/Call Reporting** is a per-user choice on iOS. An MDM deployment installs the app, but each employee still has to enable Keepnet there before the reporting option appears in Messages and Phone. Cover this step explicitly in the rollout communication.
+{% hint style="info" %}
+**One step cannot be pushed centrally.** Enabling the reporting extension under **Settings > Apps > Phone > SMS/Call Reporting** is a per-user choice on iOS. An MDM deployment installs the app, but each employee still has to enable Keepnet there before the reporting option appears in Messages and Phone. Cover this step explicitly in the rollout communication.
+{% endhint %}
 
 #### Operational notes
 
