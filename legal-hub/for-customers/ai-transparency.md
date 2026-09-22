@@ -52,8 +52,6 @@ Email analysis processes the reported email as it was received, including any at
 
 We do not retain your input or output for model development.
 
-\[Pick one, depending on the AI Gateway setting: A. Our AI Gateway is configured to store request metadata only. The content of your prompts and the model responses is not stored in the gateway. B. Our AI Gateway stores request and response content for \[n] days for troubleshooting and abuse prevention, after which it is deleted.]
-
 Providers apply their own limited retention for safety and abuse monitoring. OpenAI and Azure OpenAI Service retain abuse monitoring logs for up to 30 days under access controls. These logs are not used to train models.
 
 ### Human oversight and accuracy
