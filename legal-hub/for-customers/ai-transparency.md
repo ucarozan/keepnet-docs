@@ -26,13 +26,13 @@ Requests are served in one of three ways:
 
 All AI-assisted features in the Subscription Service are delivered through AI Ally.
 
-| Feature                   | What it does                                                   | What data is sent                                                   | Provider                     | Region                                     |
-| ------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------- | ------------------------------------------ |
-| Training content          | Generates awareness training content from your prompt          | Your prompt, selected language and tone                             | Azure OpenAI Service, OpenAI | Azure: UK, EU or US. OpenAI: United States |
-| Phishing email simulation | Generates simulation emails and landing pages from your prompt | Your prompt, selected language, tone and template settings          | Azure OpenAI Service, OpenAI | Azure: UK, EU or US. OpenAI: United States |
-| Voice phishing simulation | Generates the synthetic voice used in vishing simulations      | The script you provide and the voice settings you select            | ElevenLabs                   | United States                              |
-| Email analysis            | Analyses a reported email and returns a verdict and summary    | The reported email in full, including headers, body and attachments | Cloudflare Workers AI        | Cloudflare global network                  |
-| Customer support          | Helps our team respond to and resolve your support requests    | Your name, contact details and the content of your request          | Intercom, Anthropic, OpenAI  | United States and Ireland                  |
+| Feature                   | What it does                                                   | What data is sent                                                   | Provider                     | Region                      |
+| ------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------- | --------------------------- |
+| Training content          | Generates awareness training content from your prompt          | Your prompt, selected language and tone                             | Azure OpenAI Service         | Azure: West-Europe, East-US |
+| Phishing email simulation | Generates simulation emails and landing pages from your prompt | Your prompt, selected language, tone and template settings          | Azure OpenAI Service, OpenAI | Azure: West-Europe, East-US |
+| Voice phishing simulation | Generates the synthetic voice used in vishing simulations      | The script you provide and the voice settings you select            | ElevenLabs                   | Europe, US                  |
+| Email analysis            | Analyses a reported email and returns a verdict and summary    | The reported email in full, including headers, body and attachments | Azure OpenAI Service         | Azure: West-Europe, East-US |
+| Customer support          | Helps our team respond to and resolve your support requests    | Your name, contact details and the content of your request          | Intercom, Anthropic Claude   | US                          |
 
 Email analysis processes the reported email as it was received, including any attachments, because the attachment is often the part that carries the threat. If your organisation does not want attachments analysed, contact us and we will go through the options available for your account.
 
