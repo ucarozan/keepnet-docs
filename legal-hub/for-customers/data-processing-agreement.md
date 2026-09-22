@@ -317,6 +317,8 @@ Our products are designed to ensure redundancy and seamless failover. The server
 
 ## Annex 3 - Sub-Processors
 
+Last Modified: September 22, 2026
+
 This Annex 3 is incorporated into the [DPA](data-processing-agreement.md) and [Agreement](https://doc.keepnetlabs.com/legal-hub/for-everyone/website/terms-of-use). This annex explains how Keepnet engages with Sub-Processors.
 
 1. [Infrastructure Sub-Processors](data-processing-agreement.md#id-1.-infrastructure-sub-processors)
