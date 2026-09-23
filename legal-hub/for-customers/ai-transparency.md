@@ -37,15 +37,15 @@ Email analysis processes the reported email as it was received, including any at
 
 ### Providers
 
-| Provider                         | Role                                                          | Trains on your data |
-| -------------------------------- | ------------------------------------------------------------- | ------------------- |
-| Cloudflare (AI Gateway)          | Routes and authenticates every AI request we make             | No                  |
-| Cloudflare (Workers AI)          | Runs open-weight models on Cloudflare infrastructure          | No                  |
-| OpenAI                           | Model provider, reached through the gateway                   | No                  |
-| Microsoft (Azure OpenAI Service) | Runs OpenAI models inside our Azure tenant                    | No                  |
-| ElevenLabs                       | Voice generation for vishing simulations                      | No                  |
-| Intercom                         | Support platform used to receive and respond to your requests | No                  |
-| Anthropic                        | AI assistant used to help our team resolve support requests   | No                  |
+| Provider                         | Role                                                                                     | Trains on your data |
+| -------------------------------- | ---------------------------------------------------------------------------------------- | ------------------- |
+| Cloudflare (AI Gateway)          | Routes and authenticates every AI request we make                                        | No                  |
+| Cloudflare (Workers AI)          | Runs open-weight models on Cloudflare infrastructure                                     | No                  |
+| OpenAI                           | Only where the customer configures their own API key (BYOK); reached through the gateway | No                  |
+| Microsoft (Azure OpenAI Service) | Runs OpenAI models inside our Azure tenant                                               | No                  |
+| ElevenLabs                       | Voice generation for vishing simulations                                                 | No                  |
+| Intercom                         | Support platform used to receive and respond to your requests                            | No                  |
+| Anthropic                        | AI assistant used to help our team resolve support requests                              | No                  |
 
 ### Retention
 
