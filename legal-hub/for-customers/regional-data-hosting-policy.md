@@ -2,44 +2,89 @@
 
 **PLEASE READ THESE TERMS CAREFULLY**
 
-Our Keepnet Regional Data Hosting Policy ("Policy") explains where Keepnet will host customer data. This Policy sets out our commitment to hosting Customer Data in a specific location and the exceptions to that commitment.&#x20;
+**Last Modified:** 23 September 2026
 
-We offer customers a location-specific regional data hosting service (“Regional Data Hosting”) as part of their subscription.
+Our Keepnet Regional Data Hosting Policy ("Policy") explains where Keepnet hosts Customer Data for the Subscription Service, how you select a hosting region, and the limited exceptions to regional hosting. This Policy forms part of the Keepnet Customer Terms of Service (the "Agreement"). Terms not defined here have the meaning given in the Agreement and the Data Processing Agreement ("DPA").
 
-Any terms not defined in this Policy will have the same meaning as set out in the Keepnet Customer Terms of Service. In the event of a conflict between this Policy and the Agreement, this Policy will control. We may periodically update this Policy. We will post any changes on this page and, if the changes are material, we will provide an update through the notification app in your Keepnet account.
+In the event of a conflict between this Policy and the Agreement about where Customer Data is primarily stored, this Policy will control. We may update this Policy by posting a revised version on this page and, if the changes are material, by email or in-product notice.
 
-## 1. Regional Data Hosting Location and Customer Data
+### 1. Available hosting regions
 
-1.1 Definitions
+1.1 Keepnet offers the following standard hosting regions for Customer Data ("Standard Regions"):
 
-"Location" means the region or geographic area where your Customer Data is primarily stored within our cloud infrastructure (e.g., North America, Europe, etc.). The location will be indicated on your Order Form or in your Keepnet account. If no location is specified in your order form, your customer data will be hosted in Europe.
+| Region code | Location             | Cloud region                              |
+| ----------- | -------------------- | ----------------------------------------- |
+| **UK**      | United Kingdom       | Microsoft Azure UK South (London)         |
+| **US**      | United States        | Microsoft Azure Central US (Iowa)         |
+| **EU**      | European Union / EEA | Microsoft Azure West Europe (Netherlands) |
+| **CA**      | Canada               | Microsoft Azure Canada Central (Toronto)  |
+| **UAE**     | United Arab Emirates | Microsoft Azure UAE North (Dubai)         |
+| **TR**      | Türkiye              | Amazon Web Services Istanbul Local Zone   |
 
-"Exclusions" means the services and processing not covered by the Regional Data Hosting Policy and will continue outside the Location, as described in the ‘Exclusions’ section below.
+1.2 The Location for your tenant is shown in your Order Form. Sub-Processors used for hosting and related processing are listed in Annex 3 of the [DPA](https://doc.keepnetlabs.com/legal-hub/for-customers/data-processing-agreement#annex-3-sub-processors).
 
-1.2  If you purchase your Subscription Service after July 19, 2021, and you are located in Europe (including Switzerland and the United Kingdom), Russia, the Middle East, and Africa (based on your IP address on sign up) we will store Customer Data within Europe for the duration of your Subscription Term in accordance with the terms of this Policy. You agree that for the purposes of the DPA, this Policy constitutes your Instructions in relation to the storage of Customer Data. The Location will be indicated on your Order Form. If no Location is specified in your Order Form your Customer Data will be hosted in the USA. Your Location will also be indicated in your Keepnet account. Your Customer Data will be replicated for disaster recovery and back-up purposes to other data centers within the Location.&#x20;
+### 2. How your Location is chosen
 
-1.3 You understand and agree that while Customer Data will be primarily stored and processed in the Location: (i) Keepnet, Inc. is located in the USA and certain storage and processing may continue outside of the Location, including in the USA and other regions where we, our Affiliates and Sub-processors operate; (ii) we may change Sub-processors in order to provide the Subscription Service, in accordance with the DPA; (iii) Customer Data may be accessed outside of the Location if Users accessing the Subscription Service are located outside of Europe; (iv) except as otherwise agreed only Customer Data that was submitted or collected after Regional Data Hosting was included as part of your subscription will be stored in the Location; and (v) we make no warranty that Regional Data Hosting will meet your data residency requirements. Regional Data Hosting does not apply to the Exclusions, see the ‘Exclusions’ section below for further information.&#x20;
+2.1 "**Location**" means the Standard Region (or Custom Region under section 3) where your Customer Data is primarily stored for the Subscription Service.
 
-1.4 This Policy does not apply if you previously agreed to the Keepnet Regional Data Hosting Beta Terms. In that case, the terms in this Policy do not apply to you and the Keepnet Regional Data Hosting Beta Terms will continue to apply until either (i) your Keepnet account is migrated to the Location, or (ii) we notify you of the end of the Keepnet Regional Data Hosting Beta Program. The Keepnet Regional Data Hosting Beta Terms will then cease to apply and this Policy will apply.
+2.2 You select your Location when you purchase or configure the Subscription Service. The selected Location will appear on your Order Form. You may request a change of Location subject to a migration plan, applicable fees, and technical feasibility; a Location change may require a new Order or written amendment.
 
-## 2. Exclusions
+2.3 If your Order Form does not specify a Location, Keepnet will confirm a Standard Region with you in writing before production go-live.
 
-2.1 Keepnet, Inc. is located in the USA and certain storage and processing may continue outside the Location, including in the USA and other regions where Keepnet, its Affiliates and Sub-Processors operate. Customer Data may be transferred and/or accessed outside the Location for the following Exclusions:&#x20;
+2.4 Customer Data submitted or collected after Regional Data Hosting applies to your subscription will be stored in the Location, subject to the exclusions in section 5. Historical data created before a Location was enabled may remain in its prior region until migrated under an agreed plan.
 
-(i) Customer and Product Development Support: In order to provide customer support and product development support, Keepnet employees from other office locations and Sub-Processors may access your Keepnet account and Customer Data. For example, we may access your Keepnet account if you call Keepnet Support and have a question about how to use a certain feature or to fix a bug.&#x20;
+### 3. Customers outside the Standard Regions and Custom Regions
 
-(ii) Security and Abuse Prevention: Keepnet employees from other office locations may access your Keepnet account and Customer Data to investigate or remediate security incidents and/or product abuse.&#x20;
+3.1 If your organisation is located in a country that is not mapped one-to-one to a Standard Region, one of the following applies, as set out in your Order Form or a separate service agreement / statement of work:
 
-(iii) Integrations: If you choose to use integrations that process Customer Data, those integrations may process and/or store Customer Data in locations other than the Location. Before installing integrations, you should investigate how data is being passed to these integrations and where the data will be stored and/or processed. You are responsible for any integrations you use in conjunction with your Keepnet account.
+**(a) Mapped Standard Region.** Keepnet and you agree that Customer Data will be hosted in one of the Standard Regions (typically **UK**, **EU**, or **US**), selected in the Order Form; or
 
-(iv) User Access: Your Users may log in to your Keepnet account from areas outside of the Location. This means that data may be accessed and transferred from the User’s location. User access is your responsibility.
+**(b) Custom Region.** Where you require Customer Data to be hosted in a Microsoft Azure or Amazon Web Services region that is not listed as a Standard Region, and that region is supported by the relevant cloud provider for the Keepnet services you purchase, Keepnet may provide regional hosting in that Azure or Amazon Web Services region under a written service agreement (including scope, timeline, fees, and any service limitations). That Azure or Amazon Web Services region then becomes your Location for the purposes of this Policy ("Custom Region").
 
-(v) Usage Data: As described in the ‘Customer Data’ section of the Customer Terms of Service, we may collect data about how you use and interact with the Subscription Service. This usage data will be transferred from the Location to the USA.&#x20;
+3.2 Custom Region deployments use the same Keepnet security programme and control set described in section 4 and in our [Platform Security](https://doc.keepnetlabs.com/resources/compliance) documentation, unless the service agreement expressly documents a deviation.
 
-(vi) Sub-Processors: Keepnet uses Sub-Processors to provide the Subscription Service and Consulting Services. These Sub-Processors may process Customer Data (which may contain Personal Data). As a Keepnet Customer, your Customer Data will be stored and processed by these Sub-Processors within the Location, except for those listed in the table below.&#x20;
+### 4. Security, high availability, and encryption (all Locations)
 
-You can review the list of Sub-Processors in Annex 3 of the DPA. You may choose to not use  certain features or integrations supported by the Sub-Processors included in the table below. If you wish to use the features or integrations supported by these Sub-Processors, you acknowledge your Customer Data will be processed and/or stored outside of the Location.
+4.1 The same Keepnet security controls apply across Standard Regions and Custom Regions, including access control, logging, vulnerability management, and encryption in transit and at rest, as described in Annex 2 of the DPA and on our [Platform Security](https://doc.keepnetlabs.com/resources/compliance) page.
 
-<table><thead><tr><th>Third Party Sub- Processor</th><th>Purpose</th><th width="196">Applicable Service</th><th>US Data Center Sub-Processor Location: United States</th><th>EU Data Center Sub-Processor Location: EU UK or Other</th></tr></thead><tbody><tr><td>Microsoft Azure</td><td>Hosting &#x26; Infrastructure</td><td>Used as an on- demand cloud computing platforms and APIs</td><td>United States</td><td>United Kingdom,  Germany</td></tr><tr><td>Cloudflare, Inc.</td><td>Content Delivery Network</td><td>Used as a web infrastructure and website security, providing content delivery network services, DDoS mitigation, internet security, and distributed</td><td>United States</td><td>Local **Data Centers located all around the world. Traffic will be automatically routed to the</td></tr><tr><td>Google LLC</td><td></td><td>Used as an on- demand cloud computing platforms and APIs</td><td>United States</td><td>United Kingdom,  Germany</td></tr><tr><td>OpenAI, LLC</td><td></td><td>Used to offer AI integration to our products and services.</td><td>United States</td><td></td></tr><tr><td>Stripe, Inc.</td><td></td><td>Used to collect payment for a service or subscription</td><td>United States</td><td>Europe</td></tr><tr><td>Twilio, Inc.</td><td>Emailing, Calling, and SMS Functionality</td><td>Used to support Keepnet’s emailing, calling, and SMS functionality</td><td>United States</td><td>*United States</td></tr><tr><td>Amazon AWS</td><td>Content Delivery, Storage, Message Queuing Service,</td><td>Used to support platforms content delivery through CDN and to that need to store files on S3, and utilize queuing service for messaging</td><td>United States</td><td>Europe,  United Kingdom</td></tr><tr><td>Microsoft PowerBI</td><td>Reporting</td><td>Used to support creating advanced reports</td><td></td><td>Europe</td></tr></tbody></table>
+4.2 For the US, UK, EU, CA and UAE regions, Customer Data is hosted on Microsoft Azure. Keepnet designs for high availability within the Location, using zone-redundant deployment patterns, and encrypts Customer Data at rest and in transit.
 
-\*see https://www.cloudflare.com/network/ for further information on Cloudflare.
+4.3 For the TR region, Customer Data is hosted on Amazon Web Services. Equivalent high availability, encryption at rest and encryption in transit controls are applied within the Location.
+
+4.4 Backups and disaster recovery for Customer Data are maintained within the Location.
+
+### 5. Exclusions (processing that may occur outside the Location)
+
+5.1 Keepnet, its Affiliates, and Sub-Processors may access or process Customer Data outside the Location only as needed for the following exclusions. These exclusions do not change your primary storage Location stated on the Order Form.
+
+**(i) Customer support and product engineering.** Keepnet personnel and support Sub-Processors may access your account and Customer Data to answer support requests, fix defects, or deliver agreed professional services.
+
+**(ii) Security and abuse prevention.** Keepnet may access Customer Data from other office locations to investigate or remediate security incidents, fraud, or product abuse.
+
+**(iii) Integrations and optional features.** If you enable an integration, engine, or feature that relies on a Sub-Processor outside the Location (see DPA Annex 3), that Sub-Processor may process relevant Customer Data outside the Location. You control whether to enable those features.
+
+**(iv) User access.** Your Users may sign in from outside the Location; session access then occurs from the User’s network location.
+
+**(v) Usage Data.** Operational telemetry about how the Subscription Service is used (as described in the Agreement) may be processed in Keepnet’s global operations environments, which may include the United States.
+
+**(vi) Content delivery and edge security.** CDN, DNS, WAF, bot management, and similar edge services (for example Cloudflare) may cache or inspect traffic at edge locations worldwide to deliver and protect the service. See https://www.cloudflare.com/network/ for Cloudflare’s network map.
+
+**(vii) AI-assisted features.** By default, AI-assisted features run OpenAI models through Microsoft Azure OpenAI Service (Azure West Europe and East US) and Cloudflare Workers AI, as described on our [AI Transparency](https://doc.keepnetlabs.com/legal-hub/for-customers/ai-transparency) page. If you configure your own OpenAI API key (Bring Your Own Key), requests are routed through our AI gateway to OpenAI under your own agreement with OpenAI, and may be processed outside the Location.
+
+**(viii) Message delivery.** By default, simulation and notification emails are delivered through Keepnet's email delivery Sub-Processor listed in DPA Annex 3, which may process message content and recipient details outside the Location. You may configure your own email delivery service and set it as the default, in which case your provider's terms govern that processing. SMS and call simulations are delivered through the SMS and calling Sub-Processors listed in DPA Annex 3, which may process message content and recipient details outside the Location. Voice generation for vishing simulations is performed by the voice generation Sub-Processor listed in DPA Annex 3.
+
+**(ix) Application error monitoring.** Error and performance diagnostics are processed by our error monitoring Sub-Processor in the United States. Personal Data is not sent by default, but limited Personal Data may be included incidentally in error messages.
+
+5.2 The authoritative list of Sub-Processors is Annex 3 of the [DPA](https://doc.keepnetlabs.com/legal-hub/for-customers/data-processing-agreement#annex-3-sub-processors). This Policy does not maintain a second competing list.
+
+### 6. Instructions for the DPA
+
+For the purposes of the DPA, your selection of a Location (Standard Region or Custom Region) under this Policy and your Order Form constitutes your documented Instructions regarding the primary storage location of Customer Data, subject to section 5.
+
+### 7. No warranty of regulatory “adequacy” by geography alone
+
+Regional Data Hosting helps you meet contractual data-residency preferences. It does not by itself guarantee that the Location will satisfy every law, sector rule, or internal policy that applies to you. You remain responsible for determining whether the selected Location meets your compliance requirements.
+
+### 8. Contact
+
+Questions about this Policy: privacy@keepnetlabs.com or [Keepnet Support](https://doc.keepnetlabs.com/resources/keepnet-support-help-desk).
