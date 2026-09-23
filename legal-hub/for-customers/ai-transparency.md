@@ -18,7 +18,6 @@ Every AI request from the Subscription Service is routed through Cloudflare AI G
 
 Requests are served in one of three ways:
 
-* Through OpenAI, under OpenAI's API terms. Data submitted through the API is not used to train OpenAI models.
 * Through Azure OpenAI Service, which runs OpenAI models inside our Microsoft Azure tenant. Data processed this way is not shared with OpenAI.
 * Through Cloudflare Workers AI, which runs open-weight models on Cloudflare infrastructure. Data processed this way is not shared with the developers of those models.
 
@@ -26,13 +25,13 @@ Requests are served in one of three ways:
 
 All AI-assisted features in the Subscription Service are delivered through AI Ally.
 
-| Feature                   | What it does                                                   | What data is sent                                                   | Provider                     | Region                      |
-| ------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------- | --------------------------- |
-| Training content          | Generates awareness training content from your prompt          | Your prompt, selected language and tone                             | Azure OpenAI Service         | Azure: West-Europe, East-US |
-| Phishing email simulation | Generates simulation emails and landing pages from your prompt | Your prompt, selected language, tone and template settings          | Azure OpenAI Service, OpenAI | Azure: West-Europe, East-US |
-| Voice phishing simulation | Generates the synthetic voice used in vishing simulations      | The script you provide and the voice settings you select            | ElevenLabs                   | Europe, US                  |
-| Email analysis            | Analyses a reported email and returns a verdict and summary    | The reported email in full, including headers, body and attachments | Azure OpenAI Service         | Azure: West-Europe, East-US |
-| Customer support          | Helps our team respond to and resolve your support requests    | Your name, contact details and the content of your request          | Intercom, Anthropic Claude   | US                          |
+| Feature                   | What it does                                                   | What data is sent                                                   | Provider                   | Region                      |
+| ------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------- | -------------------------- | --------------------------- |
+| Training content          | Generates awareness training content from your prompt          | Your prompt, selected language and tone                             | Azure OpenAI Service       | Azure: West-Europe, East-US |
+| Phishing email simulation | Generates simulation emails and landing pages from your prompt | Your prompt, selected language, tone and template settings          | Azure OpenAI Service       | Azure: West-Europe, East-US |
+| Voice phishing simulation | Generates the synthetic voice used in vishing simulations      | The script you provide and the voice settings you select            | ElevenLabs                 | Europe, US                  |
+| Email analysis            | Analyses a reported email and returns a verdict and summary    | The reported email in full, including headers, body and attachments | Azure OpenAI Service       | Azure: West-Europe, East-US |
+| Customer support          | Helps our team respond to and resolve your support requests    | Your name, contact details and the content of your request          | Intercom, Anthropic Claude | US                          |
 
 Email analysis processes the reported email as it was received, including any attachments, because the attachment is often the part that carries the threat. If your organisation does not want attachments analysed, contact us and we will go through the options available for your account.
 

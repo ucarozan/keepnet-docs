@@ -4,7 +4,7 @@
 
 Depending on your location, some of these Jurisdiction Specific Terms will apply to you. They form part of the Keepnet Customer Terms of Service and are hereby incorporated as part of the Agreement.
 
-We periodically update this page by posting a revised copy at https://doc.keepnetlabs.com/jurisdiction-specific-terms, so please check back here for current information. If you’re looking for definitions of the terms used here, you can find them in the General Terms available at https://doc.keepnetlabs.com/terms-of-service.
+We periodically update this page, so please check back here for current information. If you’re looking for definitions of the terms used here, you can find them in the General Terms available at [Terms of Service](../for-everyone/free-phishing-email-analysis/terms-of-service.md).
 
 1\. CONTRACTING ENTITY; APPLICABLE LAW; ADDITIONAL TERMS. Your physical address (entered into your Keepnet Account as the "Company Address") will determine (i) the Keepnet entity entering into this Agreement, (ii) the address to which you should direct notices under this Agreement, (iii) the law that will apply in any dispute or lawsuit arising out of or in connection with this Agreement, and (iv) the courts that have jurisdiction over any such dispute or lawsuit, as set out in the table below. For this Agreement, ‘Customer Location’ means your shipping or physical address.
 
