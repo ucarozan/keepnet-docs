@@ -80,7 +80,7 @@ These restrictions apply regardless of your intent and whether or not you act in
 
 ## 6. Proper Usage of the Keepnet Service
 
-You will respect the limits that apply to your use of the Keepnet Service as specified in the Product and Services Catalog available at http://doc.keepnetlabs.com/product-and-services-catalog (the “Service Limits”). We may update or change these Service Limits by updating http://doc.keepnetlabs.com/product-and-services-catalog, so we encourage you to review this page periodically.
+You will respect the limits that apply to your use of the Keepnet products and services, as set out in your Order Form or otherwise communicated to you by Keepnet (the "Service Limits"). We may update these Service Limits from time to time.
 
 In addition, and without limiting the other requirements in this AUP, you may not (directly or indirectly) use the Keepnet Service with content, or in a manner that:
 
@@ -132,4 +132,4 @@ a. Suspension. We may immediately suspend your access to the Keepnet Service if 
 
 b. Content. We may choose to remove any prohibited materials and deny access to any person who violates this AUP, and we further reserve all other rights.
 
-c. Updates. We may update and change any part or all of this AUP. If we update or change this AUP, the updated AUP will be posted at http://doc.keepnetlabs.com/acceptable-use. If you have a Keepnet subscription, we will let you know through the Notification app in your Keepnet account used to access your Keepnet subscription. If you do not have a Keepnet subscription, we will let you know by posting the revised copy on our website. When we change this AUP, the "Last Modified" date above will be updated to reflect the date of the most recent version. We encourage you to review this AUP periodically.
+c. Updates. We may update and change any part or all of this AUP. If we update or change this AUP, the updated AUP will be posted on [this page](acceptable-use-policy.md). If you have a Keepnet subscription, we will let you know through the Notification app in your Keepnet account used to access your Keepnet subscription. If you do not have a Keepnet subscription, we will let you know by posting the revised copy on our website. When we change this AUP, the "Last Modified" date above will be updated to reflect the date of the most recent version. We encourage you to review this AUP periodically.
