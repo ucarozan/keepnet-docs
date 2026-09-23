@@ -14,7 +14,7 @@ We update this Privacy Policy from time to time and we encourage you to review t
 
 If you have any questions about this Privacy Policy or to exercise the privacy rights and choices we offer please contact us as follows:
 
-* for Keepnet, including our websites, products or services, please email [privacy@keepnetlabs.com](mailto:privacy@keepnetlabs.com) (or use this URL [https://support.keepnetlabs.com/portal/en/home](https://support.keepnetlabs.com/portal/en/home) ); or
+* for Keepnet, including our websites, products or services, please email [privacy@keepnetlabs.com](mailto:privacy@keepnetlabs.com) (or use this URL [https://support.keepnetlabs.com/](https://support.keepnetlabs.com/) ); or
 * for all Keepnet brands (including Keepnet, Inc.) write to us by mail at Keepnet, 124 City Road, London, EC1V 2NX, Attn: Privacy and Data Protection Officer.
 
 ## 1. What Information We Collect and Process
@@ -190,33 +190,19 @@ All the above categories exclude text messaging originator opt-in data and conse
 
 ## 4. How We Transfer Personal Data Internationally
 
-#### a. International Transfers within the Keepnet Group
+**a. International Transfers within the Keepnet Group**
 
-To facilitate our global operations, we may transfer information to other Keepnet Affiliates where we have operations for the purposes described in this policy. Please see [our Customer Data Processing Agreement](../../for-customers/data-processing-agreement.md) for a list of Keepnet Affiliates and their locations.
+To support our global operations, we may transfer Personal Data to other Keepnet Affiliates for the purposes described in this Privacy Policy. Keepnet Affiliates and their locations are listed in Annex 3 of our Data Processing Agreement.
 
-This Privacy Policy will apply even if we transfer Personal Data to other countries. We have taken appropriate safeguards to require that your Personal Data will remain protected wherever it is transferred. When we share Personal Data of individuals in the European Economic Area ("EEA"), Switzerland or the United Kingdom ("UK") within and among Keepnet’s Affiliates, we rely upon the Standard Contractual Clauses (approved by the European Commission and Swiss authorities) and UK Addendum to the Standard Contractual Clauses (approved by the UK authorities) where required, as well as additional safeguards where appropriate (such as commercial industry standard secure encryption methods to protect customer data at rest and in transit, TLS for Keepnet hosted sites, web application firewall protection, and other appropriate contractual and organizational measures), as described more in detail [here](../../../resources/compliance.md).
+This Privacy Policy applies wherever we transfer Personal Data. When we transfer Personal Data of individuals in the European Economic Area ("EEA"), Switzerland or the United Kingdom ("UK") within the Keepnet group, we rely on the European Commission's Standard Contractual Clauses and the UK Addendum to those clauses, together with technical and organisational safeguards such as encryption at rest and in transit, as described on our Platform Security page.
 
-#### b. International Transfers to Third Parties
+**b. International Transfers to Third Parties**
 
-Some of the third parties described in this Privacy Policy, which provide services to us under contract, are based in other countries that may not have equivalent privacy and data protection laws to the country in which you reside. When we share Personal Data of individuals in the EEA, Switzerland or UK with third parties, we use a variety of legal mechanisms to safeguard the transfer including the European Commission-approved Data Privacy Framework Standard Contractual Clauses, as well as additional safeguards where appropriate. For transfers to or from the United Kingdom, we make use of the UK Addendum. For transfers to or from Canada, we make use of the standard contractual clauses. With respect to personal data received from or transferred to Canada, Keepnet is subject to the regulatory enforcement powers of the Office of the Privacy Commissioner of Canada. Please contact us if you need more information about the legal mechanisms we rely on to transfer personal data outside the EEA, Switzerland, Canada, and UK.
+Some of the third parties described in this Privacy Policy are located in countries that may not have data protection laws equivalent to those of the country in which you live. When we transfer Personal Data of individuals in the EEA, Switzerland or UK to a country without an adequacy decision, we rely on the European Commission's Standard Contractual Clauses and, for UK transfers, the UK Addendum or the UK International Data Transfer Agreement, together with additional safeguards where appropriate. For transfers to or from Canada, we also rely on the Standard Contractual Clauses, and Keepnet is subject to the enforcement powers of the Office of the Privacy Commissioner of Canada for Personal Data received from or transferred to Canada. Please contact us if you would like more information about the transfer mechanisms we rely on.
 
-#### c. Data Privacy Framework Notice
+**c. Requests from Public Authorities**
 
-Keepnet complies with the EU-U.S. Data Privacy Framework (“EU-U.S. DPF”), the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. Data Privacy Framework (“Swiss-U.S. DPF”) as set forth by the U.S. Department of Commerce (collectively “the Data Privacy Framework”).
-
-Keepnet has certified to the U.S. Department of Commerce that it adheres to the EU-US DPF Principles with regard to the processing of Personal Data received from the European Union, and the United Kingdom (and Gibraltar) and to the Swiss-US DPF Principles with regard to the processing of Personal Data received from Switzerland. If there is any conflict between this Privacy Policy and the DPF Principles, the DPF Principles will govern. To learn more about the Data Privacy Framework, and to view our certification, please visit [https://www.dataprivacyframework.gov/](https://www.dataprivacyframework.gov/).
-
-If you are located in the EU, UK or Switzerland, you have the right to request access to the Personal Data that we hold about you and request that we correct, amend or delete your Personal Data if it is inaccurate or processed in violation of the DPF Principles. We will give you an opportunity to opt out where Personal Data we control about you is to be disclosed to an independent third party or used for a purpose that is materially different from those set out in this Privacy Policy. If you would like to exercise any of your rights, please contact us via the details provided below.
-
-In compliance with the DPF Principles, Keepnet commits to resolve DPF Principles-related complaints about our collection and use of your Personal Data. We will investigate and attempt to resolve any DPF Principles-related complaints within 45 days. EU, UK and Swiss individuals with inquiries or complaints regarding our handling of Personal Data received in reliance on the DPF Principles should first contact Keepnet [here](https://support.keepnetlabs.com/portal/en/home).
-
-In compliance with the Data Privacy Framework, Keepnet commits to refer unresolved complaints concerning our handling of personal data received in reliance on the Data Privacy Framework to an alternative dispute resolution provider based in the United States. If you do not receive timely acknowledgment of your DPF Principles-related complaint from us, or if we have not addressed your DPF Principles-related complaint to your satisfaction, please visit [https://feedback-form.truste.com/watchdog/request](https://feedback-form.truste.com/watchdog/request) for more information or to file a complaint. The services of TRUSTe Dispute Resolution, are provided at no cost to you.
-
-Under certain conditions, more fully described on the DPF website, you may be entitled to invoke binding arbitration when other dispute resolution procedures have been exhausted. The Federal Trade Commission has jurisdiction over Keepnet’s compliance with the DPF Principles.
-
-In the context of an onward transfer, Keepnet is responsible for the processing of Personal Data it receives under the DPF Principles and subsequently transfers to a third party acting as an agent on our behalf. Keepnet will remain liable under the DPF Principles if our agent processes your Personal Data in a manner inconsistent with the DPF Principles, unless Keepnet is not responsible for the event giving rise to the damage.
-
-Please note that under certain circumstances, we may be required to disclose your Personal Data in response to lawful requests by public authorities, including to meet national security or law enforcement requirements. As part of our commitment to transparency and protecting your privacy, Keepnet Labs adheres to strict guidelines regarding the disclosure of your Personal Data.For more information on how we handle such requests and ensure transparency, please refer to our [Transparency Policy](../transparency-report.md).
+We may be required to disclose Personal Data in response to lawful requests by public authorities, including to meet national security or law enforcement requirements. Keepnet follows strict guidelines when responding to such requests. For more information, please see our Transparency Report.
 
 ## 5. How We Store and Secure Personal Data
 
@@ -284,7 +270,7 @@ You may unsubscribe from our marketing communications through one of the followi
 
 * by clicking on the "unsubscribe" link located on the bottom of our e-mails;
 * updating your communication preferences;
-* for Keepnet, by contacting us [here](https://support.keepnetlabs.com/portal/en/home);
+* for Keepnet, by contacting us [here](https://support.keepnetlabs.com/);
 * for all Keepnet brands (including Keepnet, Inc.) write to us by mail at Keepnet, 124 City Road, London, EC1V 2NX, Attn: Privacy and Data Protection Officer.
 
 Customers cannot opt out of receiving transactional emails related to their account with us or the Subscription Service.
@@ -356,11 +342,11 @@ We will never sell your Personal Data to any third party. Your mobile informatio
 
 #### b. Information About Children
 
-The websites, products and services are not intended for or targeted at children under 16, and we do not knowingly or intentionally collect Personal Data about children under 16. If you believe that we have collected Personal Data about a child under 16, please contact us [here](https://support.keepnetlabs.com/portal/en/home), so that we may delete the information.
+The websites, products and services are not intended for or targeted at children under 16, and we do not knowingly or intentionally collect Personal Data about children under 16. If you believe that we have collected Personal Data about a child under 16, please contact us [here](https://support.keepnetlabs.com/), so that we may delete the information.
 
-#### c. Third Party Dispute Resolution
+&#x63;**. Complaints**
 
-If you have an unresolved privacy or data use concern that we have not addressed satisfactorily, please contact our U.S.-based third party dispute resolution provider (free of charge) at [https://feedback-form.truste.com/watchdog/request](https://feedback-form.truste.com/watchdog/request).
+If you have a privacy concern that we have not resolved to your satisfaction, you may lodge a complaint with your local data protection authority. In the UK, this is the [Information Commissioner's Office](https://ico.org.uk/make-a-complaint/).
 
 ## 11. Use of Google Workspace API Data
 

@@ -30,10 +30,6 @@ The term of this DPA will follow the term of the Agreement. Terms not otherwise 
 
 “Controller” means the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the Processing of Personal Data.
 
-“Data Privacy Framework” means the EU-U.S. Data Privacy Framework, the Swiss-U.S. Data Privacy Framework and the UK Extension to the EU-U.S. Data Privacy Framework self-certification programs (as applicable) operated by the U.S. Department of Commerce; as may be amended, superseded or replaced.
-
-“Data Privacy Framework Principles” means the Principles and Supplemental Principles contained in the relevant Data Privacy Framework; as may be amended, superseded or replaced.
-
 “Data Protection Laws” means all applicable worldwide legislation relating to data protection and privacy which applies to the respective party in the role of Processing Personal Data in question under the Agreement, including without limitation European Data Protection Laws, the CCPA and other applicable U.S. federal and state privacy laws, and the data protection and privacy laws of Australia, Singapore, and Japan, in each case as amended, repealed, consolidated or replaced from time to time; with regard to Keepnet, Data Protection Laws exclude laws governing Sensitive Information, as defined in the [General Terms](customer-terms-of-service.md).
 
 “Data Subject” means the individual to whom Personal Data relates.
@@ -63,7 +59,7 @@ similarly as personal data, personal information or personally identifiable info
 
 “Sub-Processor” means any Processor engaged by us or our Affiliates to assist in fulfilling our obligations with respect to the provision of the Subscription Services under the Agreement. Sub-Processors may include third parties or our Affiliates but will exclude any Keepnet employee or consultant.
 
-“UK Addendum” means the International Data Transfer Addendum issued by the UK Information Commissioner under section 119A(1) of the Data Protection Act 2018 currently found at https://ico.org.uk/media/for- organisations/documents/4019539/international-data-transfer-addendum.pdf, as may be amended, superseded, or replaced.
+“UK Addendum” means the International Data Transfer Addendum to the European Commission Standard Contractual Clauses issued by the UK Information Commissioner under section 119A(1) of the Data Protection Act 2018, as amended, superseded or replaced from time to time.
 
 ## 2. Customer Responsibilities
 
@@ -89,7 +85,7 @@ In particular but without prejudice to the generality of the foregoing, you ackn
 
 **f. Deletion or Return of Personal Data**. We will delete or return all Customer Data, including Personal Data (including copies thereof) Processed pursuant to this DPA, on termination or expiration of your Subscription Service in accordance with the procedures set out in our [Product Specific Terms](product-specific-terms.md). This term will apply except where we are required by applicable law to retain some or all of the Customer Data, or where we have archived Customer Data on back-up systems, which data we will securely isolate and protect from any further Processing and delete in accordance with our deletion practices. You may request the deletion of your Keepnet account after expiration or termination of your subscription by sending a request using our privacy policy at https://keepnetlabs.com/privacy-policy.\
 \
-If you need help retrieving your Customer Data during the Subscription Term, we will provide reasonable assistance to you, at your cost, and in accordance with the ‘Confidentiality’ section of the [Terms\&Conditions](https://doc.keepnetlabs.com/legal-hub/for-everyone/website/terms-of-use).
+If you need help retrieving your Customer Data during the Subscription Term, we will provide reasonable assistance to you, at your cost, and in accordance with the ‘Confidentiality’ section of the [Customer Terms of Service](customer-terms-of-service.md).
 
 ## 4. Data Subject Requests
 
@@ -167,7 +163,7 @@ f. **Not a Sale.** The parties acknowledge and agree that the disclosure of Cali
 
 ## 10. General Provisions
 
-a. **Amendments**. Notwithstanding anything else to the contrary in the Agreement and without prejudice to the ‘Compliance with Instructions’ or ‘Security’ sections of this DPA, we reserve the right to make any updates and changes to this DPA and the terms that apply in the ‘Amendment; No Waiver’ section of the [Terms & Conditions](https://doc.keepnetlabs.com/legal-hub/for-everyone/website/terms-of-use) will apply.
+a. **Amendments**. Notwithstanding anything else to the contrary in the Agreement and without prejudice to the ‘Compliance with Instructions’ or ‘Security’ sections of this DPA, we reserve the right to make any updates and changes to this DPA and the terms that apply in the ‘Amendment; No Waiver’ section of the [Customer Terms of Service](https://doc.keepnetlabs.com/legal-hub/for-customers/customer-terms-of-service) will apply.
 
 b. **Severability**. If any individual provisions of this DPA are determined to be invalid or unenforceable, the validity and enforceability of the other provisions of this DPA will not be affected.
 
@@ -225,7 +221,7 @@ Your Contacts and other end users including your employees, contractors, collabo
 
 You may submit Personal Data to the Subscription Services, the extent of which is determined and controlled by you in your sole discretion, and which may include but is not limited to the following categories of Personal Data:
 
-1. Contact Information (as defined in the [Terms & Conditions](https://doc.keepnetlabs.com/legal-hub/for-everyone/website/terms-of-use)).
+1. Contact Information (as defined in the [Customer Terms of Service](https://doc.keepnetlabs.com/legal-hub/for-customers/customer-terms-of-service)).
 2. Any other Personal Data submitted by, sent to, or received by you, or your end users, via the Subscription Service.
 
 **Sensitive Data transferred and applied restrictions or safeguards**
@@ -253,7 +249,7 @@ Subject to the 'Deletion or Return of Personal Data' section of this DPA, we wil
 
 ## Annex 2 - Security Measures
 
-We currently observe the Security Measures described in this Annex 2. All capitalized terms not otherwise defined herein will have the meanings as set forth in the [Terms & Conditions](https://doc.keepnetlabs.com/legal-hub/for-everyone/website/terms-of-use). For more information on these security measures, please refer to Keepnet’s ISO 27001, Platform Security Overview, Policies available at [doc.keepnetlabs.com](https://doc.keepnetlabs.com/).
+We currently observe the Security Measures described in this Annex 2. All capitalized terms not otherwise defined herein will have the meanings as set forth in the [Customer Terms of Service](https://doc.keepnetlabs.com/legal-hub/for-customers/customer-terms-of-service). For more information on these security measures, please refer to Keepnet’s ISO 27001, Platform Security Overview, Policies available at [Platform Security](https://doc.keepnetlabs.com/resources/compliance).
 
 **a) Access Control**
 
@@ -319,7 +315,7 @@ Our products are designed to ensure redundancy and seamless failover. The server
 
 Last Modified: September 22, 2026
 
-This Annex 3 is incorporated into the [DPA](data-processing-agreement.md) and [Agreement](https://doc.keepnetlabs.com/legal-hub/for-everyone/website/terms-of-use). This annex explains how Keepnet engages with Sub-Processors.
+This Annex 3 is incorporated into the [DPA](data-processing-agreement.md) and [Agreement](customer-terms-of-service.md). This annex explains how Keepnet engages with Sub-Processors.
 
 1. [Infrastructure Sub-Processors](data-processing-agreement.md#id-1.-infrastructure-sub-processors)
 2. [Feature Specific Sub-Processors](data-processing-agreement.md#id-2.-feature-specific-sub-processors)
@@ -357,4 +353,4 @@ To help Keepnet deliver the Subscription Service, we engage Keepnet Affiliates a
 
 Due to the nature of our global business and our ongoing efforts to delight our customers, our business needs and services providers may change from time to time. For example, we may deprecate a service provider to consolidate and minimize our use of service providers. Similarly, we may add a service provider if we believe that doing so will enhance our ability to deliver our Subscription Service.
 
-For more information on Keepnet’s privacy practices, please visit our [Privacy Policy](https://doc.keepnetlabs.com/legal-hub/for-everyone/website/privacy-policy). If you have any questions regarding this page, please contact us at [privacy@keepnetlabs.com](http://privacy@keepnetlabs.com).
+If you have any questions regarding this page, please contact us at [privacy@keepnetlabs.com](mailto:privacy@keepnetlabs.com)

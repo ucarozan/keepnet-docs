@@ -106,6 +106,14 @@ If you need help retrieving your Customer Data during the Subscription Term, we 
 
 We strongly recommend retrieving your Customer Data prior to the end of your Subscription Term; for the Keepnet Subscription Services and Free Services, we will not provide you with any access to Customer Data after termination or expiration of your Subscription Term.
 
+**Deactivation and Deletion of Customer Data**
+
+When your Subscription Term ends (termination or expiration), we will deactivate your account and soft-delete Customer Data so that it is no longer available to you in the production Subscription Service. Soft-deleted Customer Data is retained in an inactive state and is not used to provide the Subscription Service, except as needed for security, fraud prevention, dispute handling, or compliance with applicable law.
+
+We do not hard-delete Customer Data solely because the Subscription Term ended. Hard deletion from production systems occurs only after we receive and verify your written deletion request (for example via privacy@keepnetlabs.com or [Keepnet Support](https://doc.keepnetlabs.com/resources/keepnet-support-help-desk)). After a verified hard-deletion request, we will hard-delete Customer Data from production systems without undue delay. Copies that remain in backups will be securely isolated from further Processing and removed as those backups expire under our backup rotation schedule.
+
+As stated under ‘Retrieval of Customer Data’, we will not provide you with access to Customer Data after termination or expiration of your Subscription Term; retrieve what you need before the Subscription Term ends.
+
 ### 3. KEEPNET SEATS
 
 Keepnet Seats facilitate streamlined access to Keepnet Subscription Services, featuring pricing options tailored to users. A "Seat" represents the specific type and level of access granted to target users for the Subscription Services. We provide a variety of seat options, each corresponding to different Subscription Services available. These options are detailed in our Product and Services Catalog, allowing you to choose the most appropriate access level and services for your needs.

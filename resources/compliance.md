@@ -72,29 +72,18 @@ Keepnet's platform is designed for **high scalability, reliability, and security
 
 ## Data Center Location
 
-### Microsoft Azure Data Center for the USA
+Keepnet hosts Customer Data in the region selected on your Order Form. The available regions and the terms that apply to them are set out in our Regional Data Hosting Policy.
 
-Keepnet also hosts one of its other production environments within Microsoft Azure Cloud for the USA. Microsoft Azure Cloud uses the [Shared Responsibility Model](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility), and manages the cloud security.
+| Region               | Cloud region                              | Disaster recovery                                     |
+| -------------------- | ----------------------------------------- | ----------------------------------------------------- |
+| United Kingdom       | Microsoft Azure UK South (London)         | Geo-redundant backups in Azure UK West                |
+| United States        | Microsoft Azure Central US (Iowa)         | Geo-redundant backups in Azure East US 2              |
+| European Union / EEA | Microsoft Azure West Europe (Netherlands) | Geo-redundant backups in Azure North Europe (Ireland) |
+| Canada               | Microsoft Azure Canada Central (Toronto)  | Geo-redundant backups in Azure Canada East            |
+| United Arab Emirates | Microsoft Azure UAE North (Dubai)         | Geo-redundant backups in Azure UAE Central            |
+| Türkiye              | Amazon Web Services Istanbul Local Zone   | Backups within Türkiye                                |
 
-<figure><img src="../.gitbook/assets/keepnet high level design for usa.png" alt="Microsoft Azure — High-level Design for USA."><figcaption><p>Microsoft Azure - High-level Design for USA</p></figcaption></figure>
-
-Keepnet is responsible for security in the cloud, and you can find more details on the platform security page.
-
-<table><thead><tr><th width="115.33333333333331" align="center">Product</th><th width="153" align="center">Production</th><th align="center">Disaster Recovery</th></tr></thead><tbody><tr><td align="center">Keepnet Products</td><td align="center">Microsoft Azure Data Center in Central US and East US 2</td><td align="center"><p><strong>We use Microsoft Azure's Geo-restore</strong></p><p>The geo-restore feature restores the server using geo-redundant backups. The backups are hosted in your server's <a href="https://learn.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure">paired region</a>. You can restore from these backups to any other region. The geo-restore creates a new server with the data from the backups. Learn more about geo-restore from the <a href="https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-backup">backup and restore concepts article</a>.</p></td></tr></tbody></table>
-
-Keepnet has an on-premise installation that gives the ability to host the product in your own environment. Moreover, it is possible to host it on Google Cloud, Microsoft Azure, and any other virtualization platform. Please get in touch with us at support@keepnetlabs.com for any questions.
-
-### Microsoft Azure Data Center for the UK and Europe
-
-Keepnet hosts the production environment within Microsoft Azure Cloud in the UK and Europe. Microsoft Azure Cloud uses the [Shared Responsibility Model](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility), and manages the cloud security.
-
-<figure><img src="../.gitbook/assets/AZUREHighLevel.png" alt="Microsoft Azure — High-level Design for the UK and Europe."><figcaption><p>Microsoft Azure - High-level Design for the UK and Europe</p></figcaption></figure>
-
-Keepnet is responsible for security in the cloud, and you can find more details on platform security.
-
-<table><thead><tr><th width="119.33333333333331" align="center">Product</th><th width="165" align="center">Production</th><th align="center">Disaster Recovery</th></tr></thead><tbody><tr><td align="center">Keepnet Products</td><td align="center">Microsoft Azure Data Center in the West and South of the UK</td><td align="center"><p><strong>We use Microsoft Azure's Geo-restore</strong></p><p>The geo-restore feature restores the server using geo-redundant backups. The backups are hosted in your server's <a href="https://learn.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure">paired region</a>. You can restore from these backups to any other region. The geo-restore creates a new server with the data from the backups. Learn more about geo-restore from the <a href="https://learn.microsoft.com/en-us/azure/postgresql/single-server/concepts-backup">backup and restore concepts article</a>.</p></td></tr></tbody></table>
-
-Keepnet has an on-premise installation that gives the ability to host the product in your own environment. Moreover, it is possible to host it on Google Cloud, Microsoft Azure, and any other virtualization platform. Please get in touch with us at support@keepnetlabs.com for any questions.
+Backups and disaster recovery stay within the same region. Microsoft Azure and Amazon Web Services operate under a shared responsibility model: the cloud provider secures the underlying infrastructure, and Keepnet is responsible for security in the cloud, as described on this page.
 
 ## Data in Transit
 
