@@ -154,7 +154,7 @@ We share your data with third parties when you give us consent to do so.
 
 #### g. Legal Basis for Processing Personal Data (EEA and UK visitors only)
 
-If you are a website visitor located in the European Economic Area ("EEA") or United Kingdom ("UK"), Keepnet Labs LTD is the data controller of your Personal Data. Keepnet's Data Protection Officer can be contacted via email at privacy@keepnetlabs.com.
+If you are a website visitor located in the European Economic Area ("EEA") or United Kingdom ("UK"), Keepnet Labs Ltd is the data controller of your Personal Data. Keepnet's Data Protection Officer can be contacted via email at privacy@keepnetlabs.com.
 
 Our legal basis for collecting and using the Personal Data described above will depend on the Personal Data concerned and the specific context in which we collect it. However, we will normally collect Personal Data from you only where we have your consent to do so, where we need the Personal Data to perform a contract with you, or where the processing is in our legitimate interests and not overridden by your data protection interests or fundamental rights and freedoms. In some cases, we may also have a legal obligation to collect Personal Data from you.
 
