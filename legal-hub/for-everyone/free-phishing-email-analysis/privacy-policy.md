@@ -46,7 +46,7 @@ This Privacy Policy explains how Keepnet Labs Ltd ("Keepnet", "we", "us" or "our
 
 5.1 **Keepnet analysis.** Your submission is analysed by Keepnet's own analysis engines and by AI models run through Microsoft Azure OpenAI Service, as described on our AI Transparency page.
 
-5.2 **Third-party threat analysis engines.** To check whether your email is malicious, we may send indicators extracted from it (such as URLs, file hashes, file names, attachments and sender IP addresses) to third-party threat analysis engines. These providers process that data under their own terms and privacy policies.
+5.2 **Third-party analysis services.** To analyse your email, we send indicators extracted from it, such as URLs, domains, IP addresses, file hashes and attachments, to third-party threat analysis services (for example VirusTotal, FortiSandbox and Google Web Risk). The services we use may change over time. These providers process what they receive under their own terms and privacy policies, which may allow them to retain it and make it available to their own users.
 
 5.3 **Service providers.** We use service providers for hosting, content delivery, security and analytics, including Microsoft Azure, Cloudflare and Google Analytics. They process personal data only on our instructions.
 
@@ -54,13 +54,13 @@ This Privacy Policy explains how Keepnet Labs Ltd ("Keepnet", "we", "us" or "our
 
 ### 6. International transfers
 
-6.1 Personal data submitted through the Service is stored in \[STORAGE REGION]. Some of our service providers and threat analysis engines process data in other countries, including the United States.
+6.1 Personal data submitted through the Service is stored on Keepnet's cloud infrastructure. Some of our service providers and threat analysis engines process data in other countries, including the United States.
 
 6.2 Where we transfer personal data from the UK or EEA to a country without an adequacy decision, we rely on the European Commission's Standard Contractual Clauses, the UK International Data Transfer Addendum or the UK International Data Transfer Agreement, as applicable.
 
 ### 7. Retention
 
-7.1 We keep submitted emails and analysis results for \[RETENTION PERIOD] and then delete them.
+7.1 We keep submitted emails and analysis results only for as long as necessary for the purposes described in section 3, and then delete them.
 
 7.2 We may keep threat indicators extracted from submissions (such as malicious URLs, domains and file hashes) for longer to improve our threat detection. These indicators do not identify you.
 

@@ -2,7 +2,7 @@
 
 **PLEASE READ THESE WEBSITE TERMS OF USE CAREFULLY.**
 
-Hello and welcome to the Keepnet Website Terms of Use (“Terms of Use”) that applies to keepnetlabs.com, dash.keepnetlabs.com, doc.keepnetlabs.com, and any website where we display these terms (each a "Site"). Keepnet Labs Ltd and Keepnet Inc. ("Keepnet" or “we”) operate each Site to provide online access to information about Keepnet and the products, services, and opportunities we offer.
+Hello and welcome to the Keepnet Website Terms of Use (“Terms of Use”) that applies to keepnetlabs.com, dash.keepnetlabs.com, doc.keepnetlabs.com, and any website where we display these terms (each a "Site"). Keepnet Labs Ltd and Keepnet, Inc. ("Keepnet" or “we”) operate each Site to provide online access to information about Keepnet and the products, services, and opportunities we offer.
 
 Please note, use of the Keepnet Subscription Services (free or paid) is governed by our [Customer Terms of Service](../../for-customers/customer-terms-of-service.md).
 
