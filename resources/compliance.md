@@ -435,9 +435,9 @@ Detailed procedure is available upon request.
 
 ### Data Retention and Disposal Procedure
 
-The purpose of this procedure is to detail the activities for the retention and disposal of information to ensure that Keepnet Labs LTD carries this out consistently and documents relevant actions taken. Unless otherwise specified, the retention and disposal policy refers to both hard and soft copy documents.
+The purpose of this procedure is to detail the activities for the retention and disposal of information to ensure that Keepnet Labs Ltd carries this out consistently and documents relevant actions taken. Unless otherwise specified, the retention and disposal policy refers to both hard and soft copy documents.
 
-Keepnet Labs LTD will ensure that information is not kept for longer than is necessary and will retain the minimum amount of information that it requires to carry out its business functions.
+Keepnet Labs Ltd will ensure that information is not kept for longer than is necessary and will retain the minimum amount of information that it requires to carry out its business functions.
 
 Detailed procedure is available upon request.
 
