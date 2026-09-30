@@ -2,7 +2,7 @@
 
 **Last updated:** 30 September 2026
 
-\{% hint style="danger" %\} **Security testing of Keepnet systems is not permitted without prior written authorisation from Keepnet.** This policy is not an invitation to scan or test our websites, platform, APIs, add-ins, applications or infrastructure. Keepnet does not run a bug bounty programme. \{% endhint %\}
+**Security testing of Keepnet systems is not permitted without prior written authorisation from Keepnet.** This policy is not an invitation to scan or test our websites, platform, APIs, add-ins, applications or infrastructure. Keepnet does not run a bug bounty programme.
 
 ### 1. Legal notice
 
@@ -35,7 +35,7 @@ To request authorisation, email [security@keepnetlabs.com](mailto:security@keepn
 
 Do not start testing until you receive a signed authorisation letter from Keepnet.
 
-\{% hint style="info" %\} **Keepnet customers** who want to test their own account should contact their Customer Success Manager. Customer testing is carried out under the Keepnet Security Testing Rules of Engagement. \{% endhint %\}
+**Keepnet customers** who want to test their own account should contact their Customer Success Manager. Customer testing is carried out under the Keepnet Security Testing Rules of Engagement.
 
 ### 4. Reporting an issue you noticed
 
@@ -57,7 +57,7 @@ We acknowledge valid reports within 5 business days.
 
 Keepnet does not run a bug bounty programme and does not pay for reports. We do not respond to requests for payment.
 
-\{% hint style="warning" %\} A demand for payment in exchange for vulnerability details, or a threat to publish a vulnerability or data, will be referred to law enforcement. \{% endhint %\}
+A demand for payment in exchange for vulnerability details, or a threat to publish a vulnerability or data, will be referred to law enforcement.
 
 ### 6. Out of scope
 
@@ -83,8 +83,8 @@ This policy does not limit any rights or protections that apply to you under the
 
 ### 9. Contact
 
-|                  |                                                                                                      |
-| ---------------- | ---------------------------------------------------------------------------------------------------- |
-| Security reports | [security@keepnetlabs.com](mailto:security@keepnetlabs.com)                                          |
-| security.txt     | [https://keepnetlabs.com/.well-known/security.txt](https://keepnetlabs.com/.well-known/security.txt) |
-| Company          | Keepnet Labs Ltd, company number 11047987, 124 City Road, London, EC1V 2NX, United Kingdom           |
+**Security reports:** [security@keepnetlabs.com](mailto:security@keepnetlabs.com)
+
+**security.txt:** [https://keepnetlabs.com/.well-known/security.txt](https://keepnetlabs.com/.well-known/security.txt)
+
+**Company:** Keepnet Labs Ltd, company number 11047987, 124 City Road, London, EC1V 2NX, United Kingdom
