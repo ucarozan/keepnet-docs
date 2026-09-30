@@ -28,10 +28,13 @@ By accessing a Site, you agree that you will not:
 * Use a Site in any manner that damages, disables, overburdens, or impairs any Keepnet website or interferes with any other party's use and enjoyment of a Site;
 * Mirror or frame a Site or any part of it on any other web site or web page.\
   Attempt to gain unauthorized access to a Site;
+* Probe, scan, monitor or test the vulnerability of a Site or any system or network connected to it, or breach or bypass any security or authentication measure, without Keepnet's prior written authorization, as set out in the [Keepnet Security Policy](https://doc.keepnetlabs.com/legal-hub/for-everyone/security-policy);
 * Access a Site by any means other than through the interface that is provided by Keepnet for use in accessing a Site;
 * Use a Site for any purpose or in any manner that is unlawful or prohibited by this Agreement.
 
-Any unauthorized use of any Content or a Site may violate patent, copyright, trademark, and other laws.
+Any access to or use of a Site in breach of this section is unauthorized for the purposes of the Computer Misuse Act 1990 and equivalent laws in other countries. We may block access, keep records of the activity and report it to law enforcement.
+
+Any unauthorised use of any Content or a Site may violate patent, copyright, trademark, and other laws.
 
 ## 3. Copyrights and Trademarks
 

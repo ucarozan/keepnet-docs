@@ -287,6 +287,7 @@
     * [Terms of Service](legal-hub/for-everyone/free-phishing-email-analysis/terms-of-service.md)
     * [Privacy Policy](legal-hub/for-everyone/free-phishing-email-analysis/privacy-policy.md)
   * [Transparency Report](legal-hub/for-everyone/transparency-report.md)
+  * [Security Policy](legal-hub/for-everyone/security-policy.md)
 
 ## 🔌 API REFERENCE
 

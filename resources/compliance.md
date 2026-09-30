@@ -457,3 +457,7 @@ Detailed procedure is available upon request.
 The purpose of this procedure is to record and be informed of company information security and personal data breach incidents and perceived weaknesses, to respond to security breaches, to create an action plan against violations and weaknesses, and to take measures against threats with the information obtained.
 
 Detailed procedure is available upon request.
+
+{% hint style="info" %}
+To report a security issue, contact [security@keepnetlabs.com](mailto:security@keepnetlabs.com). See our [Security Policy](https://doc.keepnetlabs.com/legal-hub/for-everyone/security-policy).
+{% endhint %}
