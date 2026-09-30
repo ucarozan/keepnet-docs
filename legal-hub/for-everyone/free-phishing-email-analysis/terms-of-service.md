@@ -4,7 +4,7 @@
 
 **PLEASE READ THESE TERMS CAREFULLY**
 
-**Last Modified:** 23 September 2026
+Last updated: 30 September 2026
 
 These Terms of Service ("Terms") govern your use of the Free Phishing Email Analysis service at [https://keepnetlabs.com/free-phishing-email-analysis](https://keepnetlabs.com/free-phishing-email-analysis) (the "Service"), provided by Keepnet Labs Ltd ("Keepnet", "we", "us" or "our"). By uploading a file to the Service, you agree to these Terms and to our Privacy Policy. If you do not agree, do not use the Service.
 
@@ -28,7 +28,7 @@ These Terms of Service ("Terms") govern your use of the Free Phishing Email Anal
 
 (b) submit files in bulk or by automated means, or exceed reasonable use limits;
 
-(c) attempt to disrupt, overload, probe or gain unauthorised access to the Service or its infrastructure;
+(c) attempt to disrupt, overload, probe, scan or test the vulnerability of, or gain unauthorised access to, the Service, our Site or its infrastructure, or breach or bypass any security measure, without Keepnet's prior written authorisation, as set out in the [Keepnet Security Policy](https://doc.keepnetlabs.com/legal-hub/for-everyone/security-policy);
 
 (d) reverse engineer, copy or scrape the Service or its results; or
 
