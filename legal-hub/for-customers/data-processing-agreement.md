@@ -4,6 +4,8 @@
 
 **Last Modified:** 5 October 2026
 
+{% file src="../../.gitbook/assets/Keepnet - Data Processing Agreement.pdf" %}
+
 This Data Processing Agreement (the "DPA") forms part of the agreement between the Customer and the Keepnet contracting entity (the "Agreement") and governs the Processing of Personal Data that Keepnet carries out on the Customer's behalf when providing the Services. It applies to Processing subject to UK GDPR, EU GDPR, the Swiss Federal Act on Data Protection (FADP) and applicable US state privacy laws. Capitalised terms not defined here have the meaning given in the Agreement. If there is a conflict, this DPA prevails over the Agreement on data protection, and the Standard Contractual Clauses prevail over this DPA on restricted transfers.
 
 ## 1. Definitions
