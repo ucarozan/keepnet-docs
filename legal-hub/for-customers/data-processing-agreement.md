@@ -187,15 +187,3 @@ Keepnet maintains, and keeps current, measures including:
 **B.** UK Addendum. The UK Addendum to the EU SCCs applies to transfers subject to UK GDPR. Table 1 is populated by Annex 1; Tables 2 and 3 by the SCCs and Annexes above; Table 4 (ending the Addendum): the importer may end it. The UK-US Data Bridge is relied on where the US importer is certified.
 
 **C.** Switzerland. For transfers subject to the Swiss FADP, the EU SCCs apply with the Swiss amendments in clause 11.4, or the Swiss-US DPF where the US importer is certified.
-
-## Signatures
-
-This DPA is entered into and agreed by the parties through their duly authorised representatives, and takes effect on the later signature date below (the "Effective Date"). Where the Standard Contractual Clauses or the UK Addendum apply, the parties' signature of this DPA is also treated as signature of those clauses, which are incorporated by reference as set out in Annex 4. A signed PDF copy of this DPA, for execution and return, is available from the download link on this page.
-
-|                              | The Customer (Data Exporter) | Keepnet (Data Importer)           |
-| ---------------------------- | ---------------------------- | --------------------------------- |
-| Company / legal entity       |                              | Keepnet Labs Ltd or Keepnet, Inc. |
-| Name of authorised signatory |                              |                                   |
-| Title                        |                              |                                   |
-| Signature                    |                              |                                   |
-| Date                         |                              |                                   |
