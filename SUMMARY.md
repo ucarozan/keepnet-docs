@@ -74,6 +74,7 @@
     * [Multi-Language Training](next-generation-product/customer-success/multi-language-features/multi-language-training.md)
     * [Localisation](next-generation-product/customer-success/multi-language-features/localisation.md)
     * [Hyper-Personalisation](next-generation-product/customer-success/multi-language-features/hyper-personalisation.md)
+    * [Admin Console in Your Language](next-generation-product/customer-success/multi-language-features/admin-console-in-your-language.md)
   * [💬 Communication Tips](next-generation-product/customer-success/communication-tips/README.md)
     * [New Phishing Reporter Button Announcement](next-generation-product/customer-success/communication-tips/new-phishing-reporter-button-announcement.md)
     * [New Training Provider Announcement](next-generation-product/customer-success/communication-tips/new-training-provider-announcement.md)
