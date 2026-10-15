@@ -3,6 +3,7 @@ description: >-
   Technical documentation for the Keepnet Incident Responder, explaining
   incident investigation workflows, response actions, case management, and tools
   for tracking and resolving security events.
+noIndex: true
 ---
 
 # Incident Responder
@@ -61,15 +62,13 @@ A: There are no dependencies that is required to download on users computer in o
 
 A: This depends on your company policy. If the user has a right to disable it, then it can be disabled. Many organisations handle these processes by GPO.
 
-### **Q: When this tool is running, it will be using a certain port. What port will it be?**&#x20;
+### **Q: When this tool is running, it will be using a certain port. What port will it be?**
 
 A: Add-in to connect to the server is through https (default port 443).
 
 ### Q: Can emails reported on the Incident Responder be sent to Proofpoint for analysis?
 
 A: Yes, you can use [Keepnet Labs' APIs](../company/company-settings/rest-api.md) to retrieve reported emails, including **Links**, **Sender** **IP**, and **Attachments**, and then submit them to **Proofpoint via their APIs** for analysis.
-
-
 
 ## Use cases
 
@@ -95,13 +94,13 @@ Incident Analysis is then carried out on the suspicious email within the Inciden
 
 ### **Use Case: I want a system that integrates with my other Threat Intelligence / Sharing and incident response solutions**
 
-Integrations are commonplace in the information security community, and Incident Responder is no different in being flexible to be used in alliance with other platforms.  The New Integration feature walks users through the stages of integrating another cybersecurity solution. Remember to make active the new Integration as the last step to complete Threat Intelligence and Incident Response coverage.
+Integrations are commonplace in the information security community, and Incident Responder is no different in being flexible to be used in alliance with other platforms. The New Integration feature walks users through the stages of integrating another cybersecurity solution. Remember to make active the new Integration as the last step to complete Threat Intelligence and Incident Response coverage.
 
 ### **Use Case: I want to make sure that the privacy of users is protected**
 
 Privacy concerns are of paramount importance in an incident response platform, and Incident Responder addresses these. Both Users and Company Administrators who manage the platform do not have access to the contents of any emails in the users’ inboxes.
 
-### **Use case: I want the service to work on mobile as well as desktop devices**&#x20;
+### **Use case: I want the service to work on mobile as well as desktop devices**
 
 The Incident Responder service can be used on both mobile as well as desktop devices.
 

@@ -3,6 +3,7 @@ description: >-
   Our Customer Success team have put together a page of resources to help you
   hit the ground running with Keepnet. Learn how to setup your campaigns and
   enrollments to align with you business goals!
+noIndex: true
 ---
 
 # 📽️ How-to Videos

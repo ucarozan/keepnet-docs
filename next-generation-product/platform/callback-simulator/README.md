@@ -3,6 +3,7 @@ description: >-
   Technical documentation for the Keepnet Callback Simulator, covering setup,
   callback scenario configuration, triggers, execution flow, and analyzing
   simulated callback test results.
+noIndex: true
 ---
 
 # Callback Simulator
@@ -13,7 +14,7 @@ The product provides the capability to customize and target a callback phishing 
 
 ## Shortcuts
 
-* [How to see or create callback phishing scenarios ](manage-callback-scenarios/)
+* [How to see or create callback phishing scenarios](manage-callback-scenarios/)
 * [How to see or create callback phishing email templates](manage-callback-scenarios/callback-email-templates.md)
 * [How to see or create callback phishing templates](manage-callback-scenarios/callback-templates.md)
 * [How to launch a campaign to target users with advanced options](callback-campaign-manager.md)

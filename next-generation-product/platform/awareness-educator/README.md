@@ -3,11 +3,12 @@ description: >-
   Technical documentation for the Keepnet Awareness Educator, covering
   configuration, content management, training campaigns, assessment settings,
   and reporting for user security awareness.
+noIndex: true
 ---
 
 # Awareness Educator
 
-This section provides a brief description of the Awareness Educator and other documents that will guide the admins to use the product more effectively.&#x20;
+This section provides a brief description of the Awareness Educator and other documents that will guide the admins to use the product more effectively.
 
 [Awareness Educator](https://keepnetlabs.com/products/security-awareness-training) is a security awareness training tool that improves the security awareness of an organization and its employees. Utilizing Awareness Educator strengthens the organization's defenses against hacker attempts to carry out fraudulent activities, including various malicious threats like phishing, spear-phishing, whaling, baiting, and ransomware.
 
@@ -27,7 +28,7 @@ Each employee receives a unique training URL which will open their training in a
 
 ### Q: How do I resend training to employees if they each have their own unique training URL?
 
-You can resend training to employees by going into Enrolment Reports and using the Resend button on the summary page. From here you can bulk re-send training to groups of people (e.g. those who have not completed or those who have not responded). Alternatively, you can click into Sending Report and send to individual users. Top Tip: search for users by email in the search bar!&#x20;
+You can resend training to employees by going into Enrolment Reports and using the Resend button on the summary page. From here you can bulk re-send training to groups of people (e.g. those who have not completed or those who have not responded). Alternatively, you can click into Sending Report and send to individual users. Top Tip: search for users by email in the search bar!
 
 ### Q: What is the 'You have exceeded available time' prompt message that target users see while they watch the training?
 
