@@ -1,3 +1,7 @@
+---
+noRobotsIndex: true
+---
+
 # Volume & Performance
 
 Keepnet's platform is built to support high-volume operations with optimized performance across all its cybersecurity simulations and training services. Our infrastructure ensures seamless scalability, allowing organizations to conduct phishing, smishing, vishing simulations, and security training efficiently and securely. Below is a detailed breakdown of our platform's capacity and speed across different services.
@@ -8,8 +12,6 @@ Keepnet's platform is built to support high-volume operations with optimized per
 * If **Direct Email Campaign (DEC)** is selected, the sending limit is **130,000 requests per 10 seconds**, but this is configurable based on requirements.
 * Configurable in **Phishing Campaign > Campaign Settings > Delivery**, optimized automatically for better delivery.
   * [Phishing Simulator Delivery Settings](https://doc.keepnetlabs.com/next-generation-product/platform/phishing-simulator/phishing-campaign-manager#delivery-settings)
-
-
 
 ## **SMS Phishing Simulation (Smishing)**
 
@@ -41,8 +43,6 @@ Keepnet's platform is built to support high-volume operations with optimized per
 * Handles thousands to millions of emails per day via **SMTP**, with a delivery speed of up to 100,000 emails per minute under ideal conditions.
 * If **Direct Email Campaign (DEC)** is selected, the sending limit is **130,000 requests per 10 seconds**, but this is configurable based on requirements.
 * Optimized automatically for high-speed, reliable delivery.
-
-
 
 ## **Training Content Delivery (AWS CloudFront CDN)**
 

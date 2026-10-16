@@ -1,3 +1,7 @@
+---
+noRobotsIndex: true
+---
+
 # Release Notes
 
 This page contains release notes of the platform for each year and each month. You can simply click the following shortcuts to go to release notes for that year or simply use the left menu.

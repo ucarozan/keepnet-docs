@@ -1,6 +1,10 @@
+---
+noRobotsIndex: true
+---
+
 # Product Update/Maintenance
 
-We're dedicated to providing you with reliable and seamless service. Regular maintenance is essential for keeping our solutions up-to-date and secure. Please be aware that during our scheduled maintenance windows, there may be brief interruptions in access to the platform.&#x20;
+We're dedicated to providing you with reliable and seamless service. Regular maintenance is essential for keeping our solutions up-to-date and secure. Please be aware that during our scheduled maintenance windows, there may be brief interruptions in access to the platform.
 
 Your patience during updates is invaluable to us!
 

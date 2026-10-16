@@ -1,3 +1,7 @@
+---
+noRobotsIndex: true
+---
+
 # Getting Started
 
 Welcome to Keepnet! We're excited to be partnering with you on your human-risk management strategy.

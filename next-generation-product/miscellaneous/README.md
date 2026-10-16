@@ -1,2 +1,6 @@
+---
+noRobotsIndex: true
+---
+
 # Miscellaneous
 

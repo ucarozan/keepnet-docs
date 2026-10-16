@@ -1,10 +1,14 @@
+---
+noRobotsIndex: true
+---
+
 # Customer Help Desk
 
 This page explains how to obtain support from the Keepnet support team, as well as provides information related to the support cycle, support ticket prioritisation and scope.
 
 ## How to Use **Keepnet Help Desk**
 
-**Keepnet Help Desk** helps users to create support tickets and get support requests. **Users will soon** be able to create their own user account to access their support portal through the help desk website, where they can create, track, delete, or reopen their support requests.&#x20;
+**Keepnet Help Desk** helps users to create support tickets and get support requests. **Users will soon** be able to create their own user account to access their support portal through the help desk website, where they can create, track, delete, or reopen their support requests.
 
 For now, see how to get support from Keepnet below:
 
@@ -17,23 +21,23 @@ Alternatively, you can send your support request through email to **support@keep
 
 ## Support Scope
 
-The following detailed service parameters are the responsibility of us to the customer (unless otherwise specified).&#x20;
+The following detailed service parameters are the responsibility of us to the customer (unless otherwise specified).
 
-### 1.  Telephone support:&#x20;
+### 1. Telephone support:
 
-* 8:30 A.M. to 5:30 P.M. Monday – Friday (GMT) (UK Based Customers)&#x20;
-* Calls received out of office hours will create a ticket in the queue&#x20;
+* 8:30 A.M. to 5:30 P.M. Monday – Friday (GMT) (UK Based Customers)
+* Calls received out of office hours will create a ticket in the queue
 
-### 2. Ticket support:&#x20;
+### 2. Ticket support:
 
-* 6:00 A.M. to 4:00 P.M. Monday – Friday (EST/EDT) (US Based Operations)&#x20;
-* 9:00 A.M. to 6:00 P.M. Monday – Friday (GMT) (UK Based Operations)&#x20;
+* 6:00 A.M. to 4:00 P.M. Monday – Friday (EST/EDT) (US Based Operations)
+* 9:00 A.M. to 6:00 P.M. Monday – Friday (GMT) (UK Based Operations)
 
 Tickets received outside of office hours will be worked by the next available operations centre, and support is prioritised by level and impact or Priority.
 
 ### 3. Remote Support
 
-Our team may provide remote support using various remote working tools manly Zoom, Google Meet, Skype, Webex or any tool that the customer prefers. &#x20;
+Our team may provide remote support using various remote working tools manly Zoom, Google Meet, Skype, Webex or any tool that the customer prefers.
 
 {% hint style="info" %}
 The support team may demand the customer to download and run our [Maintenance tool ](../next-generation-product/miscellaneous/maintenance-tool.md)to analyze and understand the problem.
@@ -41,7 +45,7 @@ The support team may demand the customer to download and run our [Maintenance to
 
 ## Support Cycle
 
-The support process is started once requests are taken from multiple sites like email,  phone or web portal, a ticket is created. See the support cycle below.
+The support process is started once requests are taken from multiple sites like email, phone or web portal, a ticket is created. See the support cycle below.
 
 ![Figure 3. Support Cycle](<../.gitbook/assets/Keepnet Support Chart (1) (1).png>)
 
@@ -49,7 +53,7 @@ The support process is started once requests are taken from multiple sites like 
 
 To conclude whether something is a value-add, it is crucial to determine, prioritise, and measure the activities; therefore, prioritisation is essential for IT and business requirements that reveals the relative importance of an incident to respond and address in the right way.
 
-Support Table is designed according to Urgency and Impact and divided into three as High, Medium and Low. Support is provided by Priority Level. See the  **Support Table** below.&#x20;
+Support Table is designed according to Urgency and Impact and divided into three as High, Medium and Low. Support is provided by Priority Level. See the **Support Table** below.
 
 {% file src="../.gitbook/assets/Keepnet Support Table.pdf" %}
 Click on to download Support Table

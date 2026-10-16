@@ -1,3 +1,7 @@
+---
+noRobotsIndex: true
+---
+
 # Platform Security
 
 ## Introduction

@@ -1,3 +1,7 @@
+---
+noRobotsIndex: true
+---
+
 # Quickstart
 
 The Keepnet API lets you automate platform operations: pull reports, manage users, onboard customers, and integrate with SIEM, SOAR, or identity systems.
@@ -93,7 +97,7 @@ const { access_token } = await response.json();
 {% endtabs %}
 
 {% hint style="warning" %}
-**Integration tools (Zapier, Make, n8n, Postman, etc.)**  
+**Integration tools (Zapier, Make, n8n, Postman, etc.)**\
 The token endpoint accepts **only** `application/x-www-form-urlencoded`. Do **not** send a JSON body or use "Raw" with `Content-Type: application/json` — that returns a **500 Internal Server Error**. In your tool, choose **Form** (or form-urlencoded) as the body type and send the fields: `grant_type`, `client_id`, `client_secret`, `scope`.
 {% endhint %}
 
@@ -162,13 +166,13 @@ All API responses include an `isSuccess` field. When `isSuccess` is `false`, che
 
 ## Common conventions
 
-| Convention           | Description                                                                                                          |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **Pagination**       | Search endpoints use `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter` in the request body                  |
-| **Search request body** | **Do not send an empty body** for search endpoints. Always include at least `pageNumber`, `pageSize`, `orderBy`, `ascending`, and `filter` (or the structure shown in the endpoint). Empty or missing body can cause errors or unreliable results in automation tools. |
-| **Filter**           | **Do not** send **`filter: null`** or **`null`** inside filter fields on search endpoints that expect a filter object — use a **minimal object**: `"Condition": "AND"`, `"SearchInputTextValue": ""` (then add `FilterGroups` / items only if the endpoint requires them). **`searchInputTextValue` must be `""`, not `null`**. |
-| **Sorting**          | **`orderBy`** must be a **non-null string** (e.g. `CreateTime`, `Email`). Set **`ascending`** explicitly (`true` / `false`); do not rely on undocumented defaults. |
-| **Company scope**    | Most endpoints require a company context. Company Admin: automatic. Reseller: include Company ID (header/path/query) |
+| Convention              | Description                                                                                                                                                                                                                                                                                                                     |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Pagination**          | Search endpoints use `pageNumber`, `pageSize`, `orderBy`, `ascending`, `filter` in the request body                                                                                                                                                                                                                             |
+| **Search request body** | **Do not send an empty body** for search endpoints. Always include at least `pageNumber`, `pageSize`, `orderBy`, `ascending`, and `filter` (or the structure shown in the endpoint). Empty or missing body can cause errors or unreliable results in automation tools.                                                          |
+| **Filter**              | **Do not** send **`filter: null`** or **`null`** inside filter fields on search endpoints that expect a filter object — use a **minimal object**: `"Condition": "AND"`, `"SearchInputTextValue": ""` (then add `FilterGroups` / items only if the endpoint requires them). **`searchInputTextValue` must be `""`, not `null`**. |
+| **Sorting**             | **`orderBy`** must be a **non-null string** (e.g. `CreateTime`, `Email`). Set **`ascending`** explicitly (`true` / `false`); do not rely on undocumented defaults.                                                                                                                                                              |
+| **Company scope**       | Most endpoints require a company context. Company Admin: automatic. Reseller: include Company ID (header/path/query)                                                                                                                                                                                                            |
 
 ***
 
@@ -176,10 +180,10 @@ All API responses include an `isSuccess` field. When `isSuccess` is `false`, che
 
 When calling the API from automation platforms (Zapier, Make, n8n, custom scripts, etc.), follow these rules to avoid common errors:
 
-| Topic | Requirement | If you don't |
-| ----- | ----------- | ------------- |
-| **Token (`POST /connect/token`)** | Body must be **form-encoded** (`application/x-www-form-urlencoded`). Use the **Form** body type in your tool; send `grant_type`, `client_id`, `client_secret`, `scope`. | Sending JSON or Raw with `Content-Type: application/json` returns **500 Internal Server Error**. |
-| **Search endpoints** (e.g. `POST /api/companies/search`) | Send **`pageNumber`**, **`pageSize`**, explicit non-null **`orderBy`**, **`ascending`**, and a **minimal `filter`** (**`Condition`** + **`SearchInputTextValue`: `""`**). Do **not** use **`filter: null`** or null filter fields. | **400** / **500** or **`INPUT_ERROR`**. |
+| Topic                                                    | Requirement                                                                                                                                                                                                                        | If you don't                                                                                     |
+| -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| **Token (`POST /connect/token`)**                        | Body must be **form-encoded** (`application/x-www-form-urlencoded`). Use the **Form** body type in your tool; send `grant_type`, `client_id`, `client_secret`, `scope`.                                                            | Sending JSON or Raw with `Content-Type: application/json` returns **500 Internal Server Error**. |
+| **Search endpoints** (e.g. `POST /api/companies/search`) | Send **`pageNumber`**, **`pageSize`**, explicit non-null **`orderBy`**, **`ascending`**, and a **minimal `filter`** (**`Condition`** + **`SearchInputTextValue`: `""`**). Do **not** use **`filter: null`** or null filter fields. | **400** / **500** or **`INPUT_ERROR`**.                                                          |
 
 ***
 
@@ -250,13 +254,13 @@ The access token is a **JWT**. Decode it to read company context, role, and othe
 
 Tokens expire after **1 hour**. No refresh token — request a new one when the current token expires.
 
-| HTTP status                          | Cause                            | Action                                                              |
-| ------------------------------------ | -------------------------------- | ------------------------------------------------------------------- |
-| `400 Bad Request` — `invalid_client` | Wrong or placeholder credentials | Use real credentials from **Company → Company Settings → REST API** |
-| `401 Unauthorized`                   | Missing or invalid token         | Re-authenticate and retry                                           |
-| `403 Forbidden`                      | Insufficient role permissions    | Check the Client Role in platform settings                          |
+| HTTP status                            | Cause                                              | Action                                                                                                             |
+| -------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `400 Bad Request` — `invalid_client`   | Wrong or placeholder credentials                   | Use real credentials from **Company → Company Settings → REST API**                                                |
+| `401 Unauthorized`                     | Missing or invalid token                           | Re-authenticate and retry                                                                                          |
+| `403 Forbidden`                        | Insufficient role permissions                      | Check the Client Role in platform settings                                                                         |
 | `500 Internal Server Error` (on token) | Token request sent with JSON or wrong Content-Type | Use **form-encoded** body only: `Content-Type: application/x-www-form-urlencoded` and Form body type in your tool. |
-| `429 Too Many Requests`              | Rate limit exceeded              | Back off and retry after a delay                                    |
+| `429 Too Many Requests`                | Rate limit exceeded                                | Back off and retry after a delay                                                                                   |
 
 ***
 
