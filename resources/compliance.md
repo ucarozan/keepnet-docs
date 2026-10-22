@@ -110,23 +110,27 @@ To further enhance security, Keepnet also implements the following protocols and
 
 By integrating these advanced tools and rigorous policies, Keepnet ensures that all data in transit is well-protected against a wide range of digital threats, maintaining client data’s confidentiality, integrity, and availability.
 
-## **Data at Rest Encryption Flow**
+## **Data at Rest Encryption**
 
-We use persisting encrypting/decrypting data.
+Customer Data stored in the platform databases is encrypted at rest. In the Microsoft Azure hosting regions (United Kingdom, United States, European Union, Canada and United Arab Emirates), encryption is applied at the storage level, is always on, and cannot be disabled.
 
-Data is encrypted/decrypted and persisted as encrypted on the database with Data Encryption Key. Without this key, the data can’t be visible as plain text.
+**What is encrypted**
 
-![Data Encryption Flow](<../.gitbook/assets/Data Encryption.png>)
+* All platform databases, including read replicas
+* Database server logs and write-ahead (transaction) logs
+* Database backups, including geo-redundant backups stored in the paired region (see [Data Center Location](compliance.md#data-center-location))
 
-The Data Encryption Key is sent to the database by the Application to encrypt/decrypt data.
+**Encryption standard**
 
-The encryption method is symmetric encryption with the AES-256 algorithm.
+* AES-256 (256-bit Advanced Encryption Standard), FIPS 140-2 compliant
 
-The Data Encryption Key is a cryptography random string with a certain length salted with another random cryptographically string.
+**Key management**
 
-The data, like credentials, email addresses, and company names, are encrypted.
+* Encryption keys are service-managed: Microsoft Azure generates, stores, protects and rotates them in line with its compliance requirements.
+* Keepnet personnel do not have access to the encryption keys.
+* Customer-managed encryption keys (BYOK) are not offered for platform data.
 
-For more information about encryption options, please check [this official guide](https://www.postgresql.org/docs/8.1/encryption-options.html).
+For how data is protected while it moves between users and the platform, see [Data in Transit](compliance.md#data-in-transit).
 
 ## Data at Rest Encryption for Files
 
