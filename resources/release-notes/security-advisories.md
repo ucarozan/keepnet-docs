@@ -35,6 +35,6 @@ Server-side validation and authorization checks were added for the affected head
 
 **Credit**
 
-Responsibly disclosed by an independent security researcher.
+An external researcher, not engaged or authorised by Keepnet, reported an authentication issue to us on 28 August.
 
 </details>
