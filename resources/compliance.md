@@ -78,16 +78,16 @@ Keepnet's platform is designed for **high scalability, reliability, and security
 
 Keepnet hosts Customer Data in the region selected on your Order Form. The available regions and the terms that apply to them are set out in our Regional Data Hosting Policy.
 
-| Region               | Cloud region                              | Disaster recovery                                     |
-| -------------------- | ----------------------------------------- | ----------------------------------------------------- |
-| United Kingdom       | Microsoft Azure UK South (London)         | Geo-redundant backups in Azure UK West                |
-| United States        | Microsoft Azure Central US (Iowa)         | Geo-redundant backups in Azure East US 2              |
-| European Union / EEA | Microsoft Azure West Europe (Netherlands) | Geo-redundant backups in Azure North Europe (Ireland) |
-| Canada               | Microsoft Azure Canada Central (Toronto)  | Geo-redundant backups in Azure Canada East            |
-| United Arab Emirates | Microsoft Azure UAE North (Dubai)         | Geo-redundant backups in Azure UAE Central            |
-| Türkiye              | Amazon Web Services Istanbul Local Zone   | Backups within Türkiye                                |
+| Region               | Cloud region                              | Disaster recovery                                                            |
+| -------------------- | ----------------------------------------- | ---------------------------------------------------------------------------- |
+| United Kingdom       | Microsoft Azure UK South (London)         | Zone-redundant high availability, and geo-redundant backups in Azure UK West |
+| United States        | Microsoft Azure Central US (Iowa)         | Geo-redundant backups in Azure East US 2                                     |
+| European Union / EEA | Microsoft Azure West Europe (Netherlands) | Geo-redundant backups in Azure North Europe (Ireland)                        |
+| Canada               | Microsoft Azure Canada Central (Toronto)  | Geo-redundant backups in Azure Canada East                                   |
+| United Arab Emirates | Microsoft Azure UAE North (Dubai)         | Geo-redundant backups in Azure UAE Central                                   |
+| Türkiye              | Amazon Web Services Istanbul Local Zone   | Backups within Türkiye                                                       |
 
-Backups and disaster recovery stay within the same region. Microsoft Azure and Amazon Web Services operate under a shared responsibility model: the cloud provider secures the underlying infrastructure, and Keepnet is responsible for security in the cloud, as described on this page.
+Backups and disaster recovery stay within the same country or geography as the hosting region. Microsoft Azure and Amazon Web Services operate under a shared responsibility model: the cloud provider secures the underlying infrastructure, and Keepnet is responsible for security in the cloud, as described on this page.
 
 ## Data in Transit
 
