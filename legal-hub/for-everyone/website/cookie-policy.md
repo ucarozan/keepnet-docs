@@ -1,6 +1,6 @@
 # Cookie Policy
 
-This Cookie Policy explains how Keepnet, Inc., Keepnet Labs Ltd and our affiliated entities listed on [this page](../../for-customers/data-processing-agreement.md#annex-3-sub-processors) use cookies and similar technologies to recognise you when you visit our Websites (keepnetlabs.com). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
+This Cookie Policy explains how Keepnet Labs Ltd and our affiliated entities listed on [this page](../../for-customers/data-processing-agreement.md#annex-3-sub-processors) use cookies and similar technologies to recognise you when you visit our Websites (keepnetlabs.com). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
 
 **What are cookies?**
 
@@ -18,23 +18,40 @@ We use first party and third party cookies for several reasons. Some cookies are
 
 The specific types of first and third party cookies served through our Websites and the purposes they perform.
 
+**Keepnet platform (dash.keepnetlabs.com).** The platform uses only strictly necessary cookies, plus Intercom (in-app support chat) and Sentry (error monitoring). It does not use advertising or analytics cookies. Intercom and Sentry are listed as Sub-Processors in Annex 3 of our Data Processing Agreement. Our Websites (keepnetlabs.com) are different: they use analytics and marketing cookies, such as Google Analytics, Google Ads, Microsoft Clarity, Microsoft Advertising, HubSpot and LinkedIn, as listed in the table below.
+
 #### List of the cookies used by Keepnet
 
-| Cookie Name               | Domain                                   | Vendor              | Purpose   | Category           |
-| ------------------------- | ---------------------------------------- | ------------------- | --------- | ------------------ |
-| ANONCHK                   | .c.clarity.ms                            | Microsoft           | Marketing | Targeting          |
-| CLID                      | [www.clarity.ms](http://www.clarity.ms/) | Microsoft           | Marketing | Targeting          |
-| MR                        | .c.clarity.ms                            | Microsoft           | Marketing | Functionality      |
-| MUID                      | .clarity.ms                              | Microsoft           | Marketing | Targeting          |
-| SM                        | .c.clarity.ms                            | Microsoft           | Marketing | Functionality      |
-| \_clck                    | .keepnetlabs.com                         | Microsoft           | Marketing | Targeting          |
-| \_clsk                    | .keepnetlabs.com                         | Microsoft           | Marketing | Targeting          |
-| messagesUtk               | .landing.keepnetlabs.com                 | Hubspot             | Marketing | Targeting          |
-| cf\_zaraz                 | .keepnetlabs.com                         | Cloudflare          | Consent   | Consent Management |
-| cfz\_google-analytics\_v4 | .keepnetlabs.com                         | Cloudflare + Google | Marketing | Targeting          |
+| Cookie Name               | Domain                                   | Vendor                            | Purpose     | Category           |
+| ------------------------- | ---------------------------------------- | --------------------------------- | ----------- | ------------------ |
+| ANONCHK                   | .c.clarity.ms                            | Microsoft                         | Marketing   | Targeting          |
+| CLID                      | [www.clarity.ms](http://www.clarity.ms/) | Microsoft                         | Marketing   | Targeting          |
+| MR                        | .c.clarity.ms                            | Microsoft                         | Marketing   | Functionality      |
+| MUID                      | .clarity.ms                              | Microsoft                         | Marketing   | Targeting          |
+| SM                        | .c.clarity.ms                            | Microsoft                         | Marketing   | Functionality      |
+| \_clck                    | .keepnetlabs.com                         | Microsoft                         | Marketing   | Targeting          |
+| \_clsk                    | .keepnetlabs.com                         | Microsoft                         | Marketing   | Targeting          |
+| messagesUtk               | .landing.keepnetlabs.com                 | Hubspot                           | Marketing   | Targeting          |
+| cf\_zaraz                 | .keepnetlabs.com                         | Cloudflare                        | Consent     | Consent Management |
+| cfz\_google-analytics\_v4 | .keepnetlabs.com                         | Cloudflare + Google               | Marketing   | Targeting          |
+| \_ga                      | .keepnetlabs.com                         | Google                            | Analytics   | Performance        |
+| \_ga\_L9K0ER5MP3          | .keepnetlabs.com                         | Google                            | Analytics   | Performance        |
+| \_ga\_NDTSG8EW68          | .keepnetlabs.com                         | Google                            | Analytics   | Performance        |
+| \_gcl\_au                 | .keepnetlabs.com                         | Google                            | Advertising | Targeting          |
+| \_uetvid                  | .keepnetlabs.com                         | Microsoft (Microsoft Advertising) | Advertising | Targeting          |
+| \_\_hstc                  | .keepnetlabs.com                         | Hubspot                           | Marketing   | Targeting          |
+| hubspotutk                | .keepnetlabs.com                         | Hubspot                           | Marketing   | Targeting          |
+| cf\_consent               | .keepnetlabs.com                         | Cloudflare                        | Consent     | Consent Management |
+| li\_sugr                  | .linkedin.com                            | LinkedIn                          | Advertising | Targeting          |
+| bcookie                   | .linkedin.com                            | LinkedIn                          | Advertising | Targeting          |
+| lidc                      | .linkedin.com                            | LinkedIn                          | Advertising | Functionality      |
+| UserMatchHistory          | .linkedin.com                            | LinkedIn                          | Advertising | Targeting          |
+| AnalyticsSyncHistory      | .linkedin.com                            | LinkedIn                          | Analytics   | Targeting          |
+| li\_fat\_id               | .linkedin.com                            | LinkedIn                          | Advertising | Targeting          |
 
-More information about Microsoft and Hubspot cookies
+More information about Microsoft, Hubspot and LinkedIn cookies
 
+* https://www.linkedin.com/legal/l/cookie-table&#x20;
 * https://learn.microsoft.com/en-us/clarity/setup-and-installation/cookie-list
 * https://knowledge.hubspot.com/privacy-and-consent/what-cookies-does-hubspot-set-in-a-visitor-s-browser
 

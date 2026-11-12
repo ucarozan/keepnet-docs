@@ -15,7 +15,7 @@ We update this Privacy Policy from time to time and we encourage you to review t
 If you have any questions about this Privacy Policy or to exercise the privacy rights and choices we offer please contact us as follows:
 
 * for Keepnet, including our websites, products or services, please email [privacy@keepnetlabs.com](mailto:privacy@keepnetlabs.com) (or use this URL [https://support.keepnetlabs.com/](https://support.keepnetlabs.com/) ); or
-* for all Keepnet brands (including Keepnet, Inc.) write to us by mail at Keepnet, 124 City Road, London, EC1V 2NX, Attn: Privacy and Data Protection Officer.
+* by mail, write to us at Keepnet Labs Ltd, 124 City Road, London, EC1V 2NX, Attn: Privacy and Data Protection Officer.
 
 ## 1. What Information We Collect and Process
 
@@ -252,7 +252,7 @@ We do not sell personal information.
 To exercise any of these rights:
 
 * for Keepnet, including our websites and products or services, please contact support@keepnetlabs.com;
-* for all Keepnet brands (including Keepnet, Inc.) write to us by mail at Keepnet, 124 City Road, London, EC1V 2NX, Attn: Privacy and Data Protection Officer.
+* by mail, write to us at Keepnet Labs Ltd, 124 City Road, London, EC1V 2NX, Attn: Privacy and Data Protection Officer.
 
 Please note that to protect personal information, we may verify your identity by a method appropriate to the type of request you are making. Depending on where you reside, you may be entitled to empower an “authorized agent” to submit requests on your behalf. We will require authorized agents to confirm their identity and authority, in accordance with applicable laws. You are entitled to exercise the rights described above free from discrimination.
 
@@ -271,7 +271,7 @@ You may unsubscribe from our marketing communications through one of the followi
 * by clicking on the "unsubscribe" link located on the bottom of our e-mails;
 * updating your communication preferences;
 * for Keepnet, by contacting us [here](https://support.keepnetlabs.com/);
-* for all Keepnet brands (including Keepnet, Inc.) write to us by mail at Keepnet, 124 City Road, London, EC1V 2NX, Attn: Privacy and Data Protection Officer.
+* by mail, write to us at Keepnet Labs Ltd, 124 City Road, London, EC1V 2NX, Attn: Privacy and Data Protection Officer.
 
 Customers cannot opt out of receiving transactional emails related to their account with us or the Subscription Service.
 
@@ -332,7 +332,7 @@ If you have any questions about this Privacy Policy or our privacy practices, or
 
 * for Keepnet contact us on privacy@keepnetlabs.com; or
 
-You may also contact us by postal mail for all Keepnet brands (including Keepnet, Inc.) write to us by mail at Keepnet, 124 City Road, London, EC1V 2NX, Attn: Privacy and Data Protection Officer.
+You may also contact us by postal mail at Keepnet Labs Ltd, 124 City Road, London, EC1V 2NX, Attn: Privacy and Data Protection Officer.
 
 ## 10. Other Important Privacy Information
 

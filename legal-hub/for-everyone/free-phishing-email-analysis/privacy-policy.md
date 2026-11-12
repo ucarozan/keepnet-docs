@@ -4,13 +4,13 @@
 
 **PLEASE READ THIS POLICY CAREFULLY**
 
-**Last Modified:** 23 September 2026
+**Last Modified: 12 November 2026**
 
 This Privacy Policy explains how Keepnet Labs Ltd ("Keepnet", "we", "us" or "our") processes personal data when you use the Free Phishing Email Analysis service at [https://keepnetlabs.com/free-phishing-email-analysis](https://keepnetlabs.com/free-phishing-email-analysis) (the "Service"). Our website Privacy Policy applies to your use of keepnetlabs.com more generally, and our Cookie Policy explains how we use cookies.
 
 ### 1. Who we are
 
-1.1 Keepnet Labs Ltd, a company registered in England and Wales with company number 11047987, of 124 City Road, London, England, EC1V 2NX, is the controller of personal data processed through the Service. Keepnet Labs Ltd owns Keepnet, Inc., a Delaware corporation.
+1.1 Keepnet Labs Ltd, a company registered in England and Wales with company number 11047987, of 124 City Road, London, England, EC1V 2NX, is the controller of personal data processed through the Service.
 
 1.2 The Service does not require an account. We do not ask for your name or email address to use it.
 

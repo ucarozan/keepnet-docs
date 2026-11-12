@@ -2,7 +2,7 @@
 
 **PLEASE READ THESE WEBSITE TERMS OF USE CAREFULLY.**
 
-Hello and welcome to the Keepnet Website Terms of Use (“Terms of Use”) that applies to keepnetlabs.com, dash.keepnetlabs.com, doc.keepnetlabs.com, and any website where we display these terms (each a "Site"). Keepnet Labs Ltd and Keepnet, Inc. ("Keepnet" or “we”) operate each Site to provide online access to information about Keepnet and the products, services, and opportunities we offer.
+Hello and welcome to the Keepnet Website Terms of Use (“Terms of Use”) that applies to keepnetlabs.com, dash.keepnetlabs.com, doc.keepnetlabs.com, and any website where we display these terms (each a "Site"). Keepnet Labs Ltd ("Keepnet" or “we”) operates each Site to provide online access to information about Keepnet and the products, services, and opportunities we offer.
 
 Please note, use of the Keepnet Subscription Services (free or paid) is governed by our [Customer Terms of Service](../../for-customers/customer-terms-of-service.md).
 
@@ -96,7 +96,7 @@ If you believe that your work has been copied in a way that constitutes infringe
 
 **Contact Keepnet:**
 
-The Keepnet Copyright Agent for notice of claims of copyright infringement on or relating to this website ("Notifications") can be reached either by sending an e-mail to copyright@keepnetlabs.com or by sending a letter to Keepnet, Inc. 600 1st Ave Ste 102-2315 Seattle, WA 98104 United States or Keepnet Labs Ltd, 124 City Road, London, EC1V 2NX, United Kingdom
+The Keepnet Copyright Agent for notice of claims of copyright infringement on or relating to this website ("Notifications") can be reached either by sending an e-mail to copyright@keepnetlabs.com or by sending a letter to Keepnet Labs Ltd, 124 City Road, London, EC1V 2NX, United Kingdom
 
 **Submission of Notification:**
 

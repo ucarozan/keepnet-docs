@@ -358,7 +358,7 @@ The 'Limitation of Liability' sub-section in the ‘Disclaimers; Limitations of 
 
 ## APPENDIX 2: U.S. GOVERNMENT CUSTOMER ADDITIONAL TERMS
 
-You are contracting with Keepnet, Inc. and this Agreement is governed by the laws applicable to you as a Government Customer, or if no such laws are specified, then the laws of the State of Delaware, U.S.A., without reference to conflicts of law principles. Government Customer agrees that we have standing and privity of contract to bring a claim directly against Government Customer in a court or body of competent jurisdiction.
+You are contracting with Keepnet Labs Ltd and this Agreement is governed by the laws applicable to you as a Government Customer, or if no such laws are specified, then the laws of England, without reference to conflicts of law principles. Government Customer agrees that we have standing and privity of contract to bring a claim directly against Government Customer in a court or body of competent jurisdiction.
 
 These terms apply to the extent required by applicable law.
 
@@ -378,4 +378,4 @@ The 'Limitation of Liability' sub-section in the ‘Disclaimers; Limitations of 
 
 The ‘Contracting Entity and Applicable Law’ section of the [Jurisdiction Specific Terms](jurisdiction-specific-terms.md) is revised to read as follows:
 
-You are contracting with Keepnet, Inc. and this Agreement is governed by the laws applicable to you as a Government Customer, or if no such laws are specified, then the laws of the State of Delaware, U.S.A., without reference to conflicts of law principles. Government Customer agrees that we have standing and privity of contract to bring a claim directly against Government Customer in a court or body of competent jurisdiction.
+You are contracting with Keepnet Labs Ltd and this Agreement is governed by the laws applicable to you as a Government Customer, or if no such laws are specified, then the laws of England, without reference to conflicts of law principles. Government Customer agrees that we have standing and privity of contract to bring a claim directly against Government Customer in a court or body of competent jurisdiction.
