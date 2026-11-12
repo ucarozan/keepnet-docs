@@ -4,7 +4,7 @@
 
 **Last Modified:** 12 November 2026
 
-{% file src="../../.gitbook/assets/Keepnet - Data Processing Agreement (1).pdf" %}
+{% file src="../../.gitbook/assets/Keepnet - Data Processing Agreement (2).pdf" %}
 
 This Data Processing Agreement (the "DPA") forms part of the agreement between the Customer and the Keepnet contracting entity (the "Agreement") and governs the Processing of Personal Data that Keepnet carries out on the Customer's behalf when providing the Services. It applies to Processing subject to UK GDPR, EU GDPR, the Swiss Federal Act on Data Protection (FADP) and applicable US state privacy laws. Capitalised terms not defined here have the meaning given in the Agreement. If there is a conflict, this DPA prevails over the Agreement on data protection, and the Standard Contractual Clauses prevail over this DPA on restricted transfers.
 
@@ -155,14 +155,19 @@ Keepnet will:
 
 ## Annex 2 - Technical and organisational measures
 
-Keepnet maintains, and keeps current, measures including:
+Keepnet maintains, and keeps current, the technical and organisational measures below. Evidence of the measures, such as certificates, audit reports or extracts from independent assessments, can be provided on the Customer's request.
 
-* Access control: role-based and least-privilege access; multi-factor authentication; just-in-time privileged access; regular review of privileged and administrative access; background checks where permitted by law.
-* Encryption: TLS in transit for all logins and hosted sites; encryption at rest; key management.
-* Network and application security: web application firewall; static code analysis; at least annual penetration testing; and a published vulnerability disclosure policy and bug bounty program.
-* Logging and monitoring: logging of authentication and application activity; alerting on anomalous or malicious activity; incident tracking.
-* Availability and resilience: high-availability infrastructure with contractual uptime targets; redundant power, network and cooling; backups replicated across availability zones and to a paired region within the same geography as the hosting region; regularly tested disaster recovery.
-* Organisational: security policies and training; supplier security management; secure development; change management; and an ISO/IEC 27001 certified management system.
+* Access control: role-based and least-privilege access; multi-factor authentication; just-in-time privileged access; documented approval, modification, revocation and regular revalidation of access; time-limited, logged and monitored privileged access; background checks where permitted by law.
+* Encryption: TLS in transit for all logins and hosted sites; encryption at rest; key management; and encrypted, authenticated remote connectivity to Keepnet environments.
+* Network and application security: web application firewall; network segmentation; firewalls and controlled remote access; static code analysis; at least annual penetration testing; and a published vulnerability disclosure policy and bug bounty program.
+* Physical and data-centre security: production services are hosted on Microsoft Azure and Amazon Web Services, whose data centres are independently audited and provide 24x7 onsite security, controlled and staffed points of access, multi-factor authentication and monitored CCTV. Keepnet operates no data centres of its own.
+* Logging and monitoring: logging of authentication and application activity; logging and monitoring of environments that hold personal data; alerting on anomalous or malicious activity; and incident tracking.
+* Availability and resilience: high-availability infrastructure with contractual uptime targets; redundant power, network and cooling; backups replicated across availability zones and to a paired region within the same geography as the hosting region, and encrypted before off-site transport; and defined, documented and annually tested business continuity and disaster recovery plans.
+* Media handling: protection of portable and mobile media from damage, destruction, theft and unauthorised copying; encryption of personal data on portable media; secure sanitisation of media intended for reuse; and destruction of media not intended for reuse.
+* Endpoint protection: end-user devices are protected and monitored against Keepnet's security standard, including disk encryption, screen locks, anti-malware and firewall software, control of unauthenticated file sharing and appropriate patch levels, with detection and remediation of deviations.
+* Privacy by design: privacy by design principles are applied from the earliest stage of development, and all employees complete security and privacy training annually.
+* Threat and vulnerability management: patch management; anti-malware; threat notifications; vulnerability scanning of internal systems and periodic penetration testing of internet-facing systems, with remediation of identified vulnerabilities.
+* Organisational: security policies and training; supplier security management; secure development; change management; and an information security management system certified to ISO/IEC 27001, with ISO/IEC 27017, 27018 and 42001 certifications, audited annually by an independent certification body.
 
 ## Annex 3 - Sub-Processors
 
