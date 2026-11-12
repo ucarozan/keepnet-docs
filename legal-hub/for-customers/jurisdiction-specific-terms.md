@@ -2,6 +2,8 @@
 
 **PLEASE READ THESE TERMS CAREFULLY.**
 
+Last Modified: 12 November 2026
+
 Depending on your location, some of these Jurisdiction Specific Terms will apply to you. They form part of the Keepnet Customer Terms of Service and are hereby incorporated as part of the Agreement.
 
 We periodically update this page, so please check back here for current information. If you’re looking for definitions of the terms used here, you can find them in the General Terms available at [Customer Terms of Service](customer-terms-of-service.md).

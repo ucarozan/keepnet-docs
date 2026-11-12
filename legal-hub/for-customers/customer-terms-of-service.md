@@ -2,6 +2,8 @@
 
 **PLEASE READ THESE CUSTOMER TERMS OF SERVICE CAREFULLY.**
 
+Last Modified: 12 November 2026
+
 Our Customer Terms of Service is a contract that governs our customers' use of the Keepnet products and services. It consists of the following documents:
 
 * [**General Terms:**](customer-terms-of-service.md) These contain the core legal and commercial terms that apply to your use of our products and services. Any references to Main Terms means these General Terms.
@@ -86,7 +88,7 @@ You must ensure that all access, use and receipt by your Users is subject to and
 
 2.2 Additional Features. You may subscribe to additional features of the Subscription Service by placing an additional Order or activating the additional features from within your account (if this option is made available by us.). This Agreement will apply to all additional Order(s) and all additional features that you activate from within your account.
 
-2.3 Availability and Uptime. For details of ’s Service Uptime Commitment, please see the [Product Specific Terms](product-specific-terms.md).
+2.3 Availability and Uptime. For details of Keepnet’s Service Uptime Commitment, please see the [Product Specific Terms](product-specific-terms.md).
 
 2.4 Limits. The limits that apply to you will be specified in your Order Form, this Agreement or in our [Product and Services Catalog](product-and-services-catalog.md), and for our Free Subscriptions, these limits may also be designated only from within the product itself. For further information on the limits that apply to your subscription, please refer to the [Product Specific Terms](product-specific-terms.md).
 
@@ -328,7 +330,7 @@ To you: your address as provided in our Keepnet Subscription account information
 
 11.12 Authority. Each party represents and warrants to the other that it has full power and authority to enter into this Agreement and that it is binding upon such party and enforceable in accordance with its terms. You further warrant and represent that you have the authority to procure your Affiliates compliance with the terms of this Agreement.
 
-11.13 Insurance. During the term of this Agreement, we will, at our own cost and expense, obtain and maintain in full force and effect, with reputable insurers having A.M. best ratings of at least A (VII) or better, liability insurance with coverage and minimum limits of liability as follows: (i) Commercial General Liability Insurance (Primary & Umbrella) or equivalent, with minimum limits of $1,000,000 Each Occurrence and $2,000,000 Aggregate; (ii) Workers' Compensation & Employers Liability Insurance (as required by the state), with minimum limits of $500,000 Each Accident, $500,000 Disease-Policy Limit and $500,000 Disease-Each Employee; (iii) Professional Liability (cyber/errors and omissions liability insurance), with a limit of $5,000,000; and (iv) Umbrella/Excess Liability Insurance, with a minimum limit of $2,000,000.
+11.13 Insurance. During the term of this Agreement, we will, at our own cost, maintain with reputable insurers the insurance that is appropriate to our business, including professional indemnity (technology errors and omissions), cyber liability, employers' liability, and public and products liability insurance. The limits of cover are set out in our certificates of insurance, which we will provide on request. Any specific insurance requirements agreed with you will be set out in your Order Form.
 
 11.14 U.S. Government Entities. If you are a U.S. local, state or federal government entity, then the Keepnet Government Customer Additional Terms available at Appendix 2 to these [General Terms](customer-terms-of-service.md) will apply to your Agreement. If these terms apply to you, then they are incorporated into the Agreement and will control in the event of any conflict with the Agreement.
 

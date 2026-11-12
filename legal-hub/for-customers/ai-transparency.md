@@ -6,7 +6,9 @@ description: >-
 
 # AI Transparency
 
-### Our commitment
+Last Modified: 12 November 2026
+
+#### Our commitment
 
 We do not use Customer Data to train artificial intelligence or machine learning models, whether our own or those of any third party. Every Sub-Processor we engage is contractually prohibited from doing so. The full list is in Annex 3 of our Data Processing Agreement. Apart from reported email analysis, AI-assisted features in the Subscription Service do not receive personal data of your employees.
 
@@ -20,6 +22,7 @@ Requests are served in one of three ways:
 
 * Through Azure OpenAI Service, which runs OpenAI models inside our Microsoft Azure tenant. Data processed this way is not shared with OpenAI.
 * Through Cloudflare Workers AI, which runs open-weight models on Cloudflare infrastructure. Data processed this way is not shared with the developers of those models.
+* Through OpenAI, only where the customer configures its own OpenAI API key (bring your own key). These requests still pass through our gateway and are processed under the customer's own agreement with OpenAI.
 
 ### Where AI is used
 

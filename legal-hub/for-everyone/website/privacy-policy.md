@@ -1,5 +1,7 @@
 # Privacy Policy
 
+Last Modified: 12 November 2026
+
 We at Keepnet and our affiliates are committed to protecting your privacy. This Privacy Policy applies to the personal information and data collected by Keepnet when you interact with our websites, products and services, and any other sites or services that link to this Privacy Policy. This includes when you:
 
 * interact with us on our websites or through other channels (for example, by communicating with us or attending one of our events);
@@ -194,7 +196,7 @@ All the above categories exclude text messaging originator opt-in data and conse
 
 To support our global operations, we may transfer Personal Data to other Keepnet Affiliates for the purposes described in this Privacy Policy. Keepnet Affiliates and their locations are listed in Annex 3 of our Data Processing Agreement.
 
-This Privacy Policy applies wherever we transfer Personal Data. When we transfer Personal Data of individuals in the European Economic Area ("EEA"), Switzerland or the United Kingdom ("UK") within the Keepnet group, we rely on the European Commission's Standard Contractual Clauses and the UK Addendum to those clauses, together with technical and organisational safeguards such as encryption at rest and in transit, as described on our Platform Security page.
+This Privacy Policy applies wherever we transfer Personal Data. When we transfer Personal Data of individuals in the European Economic Area ("EEA"), Switzerland or the United Kingdom ("UK") within the Keepnet group, we rely on the European Commission's Standard Contractual Clauses and, for UK transfers, the UK Addendum to those clauses or the UK International Data Transfer Agreement, together with technical and organisational safeguards such as encryption at rest and in transit, as described on our Platform Security page.
 
 **b. International Transfers to Third Parties**
 
@@ -313,7 +315,7 @@ The right of correction means that you have the right to request that we correct
 
 The right to non-discrimination means that you will not receive any discriminatory treatment when you exercise one of your privacy rights.
 
-Keepnet does not sell or share Personal Information to third parties (pursuant to California Civil Code §§ 1798.100–1798.199, also known as the California Consumer Privacy Act of 2018).
+Keepnet does not sell Personal Information. With your consent, our website uses advertising cookies and pixels from LinkedIn, Google and Microsoft to measure and target our advertising. Under the CCPA this may count as "sharing" Personal Information for cross-context behavioral advertising. You can opt out at any time by rejecting advertising cookies in the cookie banner on our website, or by contacting us as described below.
 
 #### d. How to Exercise your California Rights
 

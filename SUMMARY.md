@@ -279,7 +279,6 @@
   * [Regional Data Hosting Policy](legal-hub/for-customers/regional-data-hosting-policy.md)
   * [Product and Services Catalog](legal-hub/for-customers/product-and-services-catalog.md)
   * [Acceptable Use Policy](legal-hub/for-customers/acceptable-use-policy.md)
-  * [Microsoft CoPilot Usage Policy](legal-hub/for-customers/microsoft-copilot-usage-policy.md)
   * [AI Transparency](legal-hub/for-customers/ai-transparency.md)
 * [For Everyone](legal-hub/for-everyone/README.md)
   * [Website](legal-hub/for-everyone/website/README.md)

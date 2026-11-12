@@ -1,5 +1,7 @@
 # Cookie Policy
 
+Last Modified: 12 November 2026
+
 This Cookie Policy explains how Keepnet Labs Ltd and our affiliated entities listed on [this page](../../for-customers/data-processing-agreement.md#annex-3-sub-processors) use cookies and similar technologies to recognise you when you visit our Websites (keepnetlabs.com). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
 
 **What are cookies?**
