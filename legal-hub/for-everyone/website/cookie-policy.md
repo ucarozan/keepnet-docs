@@ -51,7 +51,7 @@ The specific types of first and third party cookies served through our Websites 
 
 More information about Microsoft, Hubspot and LinkedIn cookies
 
-* https://www.linkedin.com/legal/l/cookie-table&#x20;
+* [https://www.linkedin.com/legal/l/cookie-table](https://www.linkedin.com/legal/l/cookie-table)
 * https://learn.microsoft.com/en-us/clarity/setup-and-installation/cookie-list
 * https://knowledge.hubspot.com/privacy-and-consent/what-cookies-does-hubspot-set-in-a-visitor-s-browser
 
