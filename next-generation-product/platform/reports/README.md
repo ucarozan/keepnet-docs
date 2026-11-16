@@ -1,6 +1,6 @@
 # Reports
 
-This page offers a brief overview of the **Reports** menu, located on the left side of the platform. The **Reports** menu provides advanced reports related to the platform's products, which you can access from the links listed in the **Shortcuts** section below.&#x20;
+This page offers a brief overview of the **Reports** menu, located on the left side of the platform. The **Reports** menu provides advanced reports related to the platform's products, which you can access from the links listed in the **Shortcuts** section below.
 
 Additionally, this page includes important information on the metrics used in these reports, explaining how they are calculated and displayed. For a deeper understanding of these calculations, please refer to the "[Understanding Risk Scores](./#understanding-risk-scores)" section.
 
@@ -15,14 +15,14 @@ Additionally, this page includes important information on the metrics used in th
 
 **Mark as Test** (or **Marked As Test**) campaign and training report data is **not included** in platform reports. Specifically:
 
-- **Simulation campaigns** (Phishing, Smishing, Quishing, Vishing, Callback): If a campaign is marked as "Mark as Test" when created or edited, its statistics are not used in dashboard widgets, Advanced Reports, Executive Reports, or risk score / KPI calculations.
-- **Training reports (Awareness Educator):** If "Mark as Test" is selected when creating an enrollment, that training report's statistics are not included in platform reports or metrics.
+* **Simulation campaigns** (Phishing, Smishing, Quishing, Vishing, Callback): If a campaign is marked as "Mark as Test" when created or edited, its statistics are not used in dashboard widgets, Advanced Reports, Executive Reports, or risk score / KPI calculations.
+* **Training reports (Awareness Educator):** If "Mark as Test" is selected when creating an enrollment, that training report's statistics are not included in platform reports or metrics.
 
 Use test campaigns only for trial or demo purposes; they do not affect real KPI or reporting numbers.
 
 ## Understanding Risk Scores
 
-This document explains the purpose and calculations of **Phishing Risk Scores** and **Human** **Cyber Risk Scores**. It details metrics used in phishing simulations (email phishing, smishing, quishing, vishing, and callback phishing) to evaluate user responses and assess training effectiveness.&#x20;
+This document explains the purpose and calculations of **Phishing Risk Scores** and **Human** **Cyber Risk Scores**. It details metrics used in phishing simulations (email phishing, smishing, quishing, vishing, and callback phishing) to evaluate user responses and assess training effectiveness.
 
 Additionally, it outlines how these risk scores are calculated to identify and quantify risky behaviors during phishing simulations.
 
@@ -125,6 +125,16 @@ For example, if a user engages in risky behavior during one out of three phishin
 <table><thead><tr><th>Target User</th><th width="98">QR Phishing</th><th>Voice Phishing</th><th>SMS Phishing</th><th width="118">Formula</th><th>Phishing Susceptibility (%)</th></tr></thead><tbody><tr><td>Simon</td><td>No</td><td>No</td><td>Yes</td><td>(1 / 3) * 100</td><td>33%</td></tr><tr><td>Josh</td><td>Yes</td><td>Yes</td><td>No</td><td>(2 / 3) * 100</td><td>67%</td></tr></tbody></table>
 
 The table above showcases whether each user fell for various phishing tactics and calculates their overall susceptibility.
+
+### Using risk scores responsibly
+
+Risk scores show where training and support will help most. They are not a measure of an employee's performance or intent.
+
+* Use scores to plan training, nudges and support. Do not use a score as the only basis for a disciplinary, HR or employment decision.
+* If a score contributes to a decision about an individual, have a person review the underlying events and give the employee a chance to explain.
+* Tell employees in your privacy notice that simulations run and how the results are used.
+* Scores are rule-based and explainable. Each score is calculated from recorded simulation behaviours as described above. No AI model produces risk scores.
+* Your organisation is the controller for this processing. If you carry out a data protection impact assessment (DPIA), Keepnet will provide the information you need on how scores are calculated, as set out in our Data Processing Agreement.
 
 ## FAQ
 
