@@ -2,7 +2,7 @@
 
 **PLEASE READ THIS AGREEMENT CAREFULLY**
 
-**Last Modified:** 12 November 2026
+**Last Modified:** 24 November 2026
 
 {% file src="../../.gitbook/assets/Keepnet - Data Processing Agreement (2).pdf" %}
 
@@ -107,7 +107,7 @@ Keepnet will:
 
 **12.1** Keepnet will not use Customer Data, including Personal Data, to train, fine-tune or improve any artificial intelligence or machine-learning model, whether its own or a third party's.
 
-**12.2** Where Keepnet uses AI Sub-Processors to provide the Services (listed in Annex 3 and in Keepnet's AI Transparency notice), those Sub-Processors are contractually prohibited from using Customer Data to train their models. Customer Data is retained by AI Sub-Processors only as needed to provide the feature, as described in the AI Transparency notice. Where AI drafts a support reply, Keepnet personnel review it before it is sent. Intercom Fin may answer support questions automatically, and the Customer can ask for a Keepnet team member at any time.
+**12.2** Where Keepnet uses AI Sub-Processors to provide the Services (listed in Annex 3 and in Keepnet's AI Transparency notice), those Sub-Processors are contractually prohibited from using Customer Data to train their models. Customer Data is retained by AI Sub-Processors only as needed to provide the feature, as described in the AI Transparency notice. Where AI drafts a support reply, Keepnet personnel review it before it is sent.
 
 ## 13. Deletion and return of Customer Data
 
@@ -182,7 +182,7 @@ Keepnet maintains, and keeps current, the technical and organisational measures 
 | Telesign Corporation; Infobip Limited; Telnyx LLC           | Calling and SMS                                                                                                                                   | US / EU                                                                                        | EU SCCs + UK Addendum                                                                 |
 | ElevenLabs, Inc.                                            | AI voice generation for vishing simulations (AI Sub-Processor)                                                                                    | EU, US                                                                                         | DPF (incl. UK Extension); EU SCCs + UK Addendum                                       |
 | Anthropic, PBC                                              | AI-assisted support drafting (AI Sub-Processor)                                                                                                   | US                                                                                             | EU SCCs + UK Addendum                                                                 |
-| Intercom R\&D Unlimited Company (Fin)                       | Customer support, including AI-assisted support (AI Sub-Processor)                                                                                | Ireland, US                                                                                    | DPF (incl. UK Extension); EU SCCs + UK Addendum                                       |
+| Intercom R\&D Unlimited Company                             | Customer support ticketing and messaging                                                                                                          | Ireland, US                                                                                    | DPF (incl. UK Extension); EU SCCs + UK Addendum                                       |
 | IBM X-Force; VMRay; FortiSandbox; Google Safe Browsing      | Malware and URL threat analysis                                                                                                                   | IBM X-Force (US); VMRay (Germany); FortiSandbox (US); Google Safe Browsing (US)                | EU SCCs + UK Addendum; DPF where applicable                                           |
 | Functional Software, Inc. (Sentry)                          | Error monitoring                                                                                                                                  | US                                                                                             | EU SCCs + UK Addendum                                                                 |
 | Keepnet affiliates                                          | Service, support and development                                                                                                                  | Keepnet Labs Ltd (UK); Keepnet Labs Siber Güvenlik A.Ş. (Türkiye)                              | International Data Transfer Agreement (10 November 2026) and transfer risk assessment |
